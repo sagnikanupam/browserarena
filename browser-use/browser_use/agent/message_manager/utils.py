@@ -26,18 +26,31 @@ def extract_json_from_model_output(content: str) -> dict:
 			# Remove language identifier if present (e.g., 'json\n')
 			if '\n' in content:
 				content = content.split('\n', 1)[1]
+		if "<|python_start|>" in content:
+			content = content.split("<|python_start|>")[1]
+		if "<|python_end|>" in content:
+			content = content.split("<|python_end|>")[0]
 		# Parse the cleaned content
-		return json.loads(content)
+		parsed_content = json.loads(content)
+  
+		# Sometimes LLMs return a dict without a key "current_state" in the first level
+		if isinstance(parsed_content, dict):
+			if "current_state" not in parsed_content.keys():
+				for key in parsed_content.keys():
+					if isinstance(parsed_content[key], dict) and "current_state" in parsed_content[key].keys():
+						return parsed_content[key]
+		
+		return parsed_content
 	except json.JSONDecodeError as e:
-		logger.warning(f'Failed to parse model output: {content} {str(e)}')
+		logger.warning(f'Failed to parse model output: {content} with {str(e)}, could not extract JSON.')
 		raise ValueError('Could not parse response.')
 
 
-def convert_input_messages(input_messages: list[BaseMessage], model_name: Optional[str]) -> list[BaseMessage]:
+def convert_input_messages(input_messages: list[BaseMessage], model_name: Optional[str], conversion: bool = False) -> list[BaseMessage]:
 	"""Convert input messages to a format that is compatible with the planner model"""
 	if model_name is None:
 		return input_messages
-	if model_name == 'deepseek-reasoner' or 'deepseek-r1' in model_name:
+	if conversion or model_name == 'deepseek-reasoner' or 'deepseek-r1' in model_name:
 		converted_input_messages = _convert_messages_for_non_function_calling_models(input_messages)
 		merged_input_messages = _merge_successive_messages(converted_input_messages, HumanMessage)
 		merged_input_messages = _merge_successive_messages(merged_input_messages, AIMessage)

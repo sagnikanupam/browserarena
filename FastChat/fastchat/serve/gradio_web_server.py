@@ -8,20 +8,16 @@ import datetime
 import hashlib
 import json
 import os
-import random
 import time
 import uuid
 from typing import List, Dict
 
 import gradio as gr
 import requests
-from langchain_openai import ChatOpenAI
-from browser_use import Agent
 import asyncio
 from dotenv import load_dotenv
 load_dotenv()
 import os, json
-import string
 import logging
 
 from fastchat.constants import (
@@ -52,6 +48,8 @@ from fastchat.utils import (
     parse_gradio_auth_creds,
     load_image,
 )
+
+from fastchat.serve.browser_use_functions import call_browser
 
 logger = build_logger("gradio_web_server", "gradio_web_server.log")
 
@@ -120,7 +118,7 @@ api_endpoint_info = {}
 
 
 class State:
-    def __init__(self, model_name, is_vision=False):
+    def __init__(self, model_name, is_vision=False, *, prompt_id_text: str | None = None, unique_run_index: str | None = None):
         self.conv = get_conversation_template(model_name)
         self.conv_id = uuid.uuid4().hex
         self.skip_next = False
@@ -137,6 +135,8 @@ class State:
         if "browsing" in model_name:
             self.regen_support = False
         self.init_system_prompt(self.conv, is_vision)
+        self.prompt_id = prompt_id_text
+        self.unique_run_index = unique_run_index
 
     def update_ans_models(self, ans: str) -> None:
         self.ans_models.append(ans)
@@ -448,15 +448,6 @@ def is_limit_reached(model_name, ip):
         logger.info(f"monitor error: {e}")
         return None
 
-async def call_browser(task_prompt: str = "Compare the price of gpt-4o and DeepSeek-V3", unique_run_index: str = "abc123"):
-    agent = Agent(
-        generate_gif = True,
-        task = task_prompt,
-        llm=ChatOpenAI(model="gpt-4o-mini"),
-        unique_run_index = unique_run_index,
-    )
-    await agent.run()
-
 def bot_response(
     state: State,
     temperature,
@@ -576,10 +567,10 @@ def bot_response(
         logger.info(f"The prompt is: {prompt}")
     
     task_prompt = prompt[0]["content"]
-    unique_identifier = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
-    random_suffix = ''.join(random.choices(population=string.ascii_letters, k=3))
-    unique_run_index = f"{unique_identifier}_{random_suffix}"
-    asyncio.run(call_browser(task_prompt=task_prompt, unique_run_index=unique_run_index))
+    prompt_id_text = state.prompt_id
+    unique_run_index = state.unique_run_index if state.unique_run_index != None else "None"
+    
+    asyncio.run(call_browser(task_prompt=task_prompt, model = model_name, unique_run_index = unique_run_index))
     from pathlib import Path
     gr.set_static_paths(paths=[Path.cwd().absolute()/"gifs"])
     logger.info(f"GIF path: {Path.cwd().absolute()/'gifs'}")
@@ -593,7 +584,7 @@ def bot_response(
         text_output = f.read()
         image = '\n' + f'<img src="/gradio_api/file=gifs/{unique_run_index}.gif" alt="GIF" />'
         with open(f"prompts_and_outputs/{unique_run_index}.json", "w") as f:
-            json.dump({"prompt": prompt, "output": text_output, "image": image}, f)
+            json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}"}, f)
         output = text_output + image
     
     conv.update_last_message(output)

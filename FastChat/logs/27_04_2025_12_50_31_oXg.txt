@@ -1,0 +1,10 @@
+🧠 Starting an agent with main_model=deepseek/deepseek-r1:free, planner_model=None, extraction_model=deepseek/deepseek-r1:free
+🚀 Starting task: What is the capital of Paris?
+📍 Step 1
+👍 Eval: Success - The user's query has been processed and the answer is determined.
+🧠 Memory: 1 out of 1 tasks completed. The capital of France is identified as Paris.
+🎯 Next goal: Provide the answer to the user's query using the 'done' action.
+🛠️  Action 1/1: {"done":{"text":"The capital of France is Paris.","success":true}}
+📄 Result: The capital of France is Paris.
+✅ Task completed
+✅ Successfully

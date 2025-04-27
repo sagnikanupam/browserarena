@@ -5,9 +5,11 @@ Users chat with two chosen models.
 
 import json
 import time
-
+import datetime
+import random
 import gradio as gr
 import numpy as np
+import string
 
 from fastchat.constants import (
     MODERATION_MSG,
@@ -152,7 +154,7 @@ def share_click(state0, state1, model_selector0, model_selector1, request: gr.Re
 
 
 def add_text(
-    state0, state1, model_selector0, model_selector1, text, request: gr.Request
+    state0, state1, model_selector0, model_selector1, text, prompt_id_text, request: gr.Request
 ):
     ip = get_ip(request)
     logger.info(f"add_text (named). ip: {ip}. len: {len(text)}")
@@ -162,7 +164,10 @@ def add_text(
     # Init states if necessary
     for i in range(num_sides):
         if states[i] is None:
-            states[i] = State(model_selectors[i])
+            unique_identifier = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
+            random_suffix = ''.join(random.choices(population=string.ascii_letters, k=3))
+            unique_run_index = f"{unique_identifier}_{random_suffix}"
+            states[i] = State(model_selectors[i], prompt_id_text = prompt_id_text, unique_run_index = unique_run_index)
 
     if len(text) <= 0:
         for i in range(num_sides):
@@ -198,6 +203,7 @@ def add_text(
             states
             + [x.to_gradio_chatbot() for x in states]
             + [CONVERSATION_LIMIT_MSG]
+            + []
             + [
                 no_change_btn,
             ]
@@ -208,18 +214,56 @@ def add_text(
     for i in range(num_sides):
         states[i].conv.append_message(states[i].conv.roles[0], text)
         states[i].conv.append_message(states[i].conv.roles[1], None)
+        states[i].prompt_id = prompt_id_text
         states[i].skip_next = False
 
     return (
         states
         + [x.to_gradio_chatbot() for x in states]
-        + [""]
+        + [""] * 2
         + [
             disable_btn,
         ]
         * 6
     )
 
+def add_feedback(state0, state1, left_text, right_text, request: gr.Request):
+    
+    ip = get_ip(request)
+    logger.info(f"add_text (named). ip: {ip}. len: {len(left_text) + len(right_text)}")
+    states = [state0, state1]
+    feedback = [left_text, right_text]
+
+    # Init states if necessary
+    for i in range(num_sides):
+        if states[i] is None:
+            raise ValueError(f"State {i} is None. Please initialize the state before adding feedback.")
+        
+    for state_index in range(len(states)):
+        state = states[state_index]
+        unique_run_index = state.unique_run_index
+        try:
+            with open(f"prompts_and_outputs/{unique_run_index}.json", "r+") as f:
+                current_prompt_dict = json.load(f)
+                try:
+                    parsed_feedback = json.loads(feedback[state_index])
+                except Exception as e:
+                    logger.error(f"Error parsing feedback: {e}")
+                    parsed_feedback = feedback[state_index]
+                current_prompt_dict["feedback"] = parsed_feedback
+                f.seek(0)
+                json.dump(current_prompt_dict, f)
+        except Exception as e:
+            logger.error(f"Error writing feedback to file /gradio_api/file=prompts_and_outputs/{unique_run_index}.json: {e}")
+
+    return (
+        states
+        + [""] * 2
+        + [
+            no_change_btn,
+        ]
+        * 6
+    )
 
 def bot_response_multi(
     state0,
@@ -379,11 +423,29 @@ def build_side_by_side_ui_named(models):
         )
 
     with gr.Row():
+        left_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent A performed incorrectly as a list (for example, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong) and press ENTER",
+            elem_id="input_box",
+        )
+        right_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent B performed incorrectly as a list (for example, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong) and press ENTER",
+            elem_id="input_box",
+        )
+        feedback_send_btn = gr.Button(value="Send", variant="primary", scale=0)
+    
+    with gr.Row():
         textbox = gr.Textbox(
             show_label=False,
             placeholder="👉 Enter your prompt and press ENTER",
             elem_id="input_box",
         )
+        prompt_id_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the prompt ID",
+            elem_id="prompt_id_box",
+        ) 
         send_btn = gr.Button(value="Send", variant="primary", scale=0)
 
     with gr.Row() as button_row:
@@ -486,10 +548,10 @@ function (a, b, c, d) {
             clear_history, None, states + chatbots + [textbox] + btn_list
         )
 
-    textbox.submit(
+    prompt_id_box.submit(
         add_text,
-        states + model_selectors + [textbox],
-        states + chatbots + [textbox] + btn_list,
+        states + model_selectors + [textbox, prompt_id_box],
+        states + chatbots + [textbox, prompt_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
@@ -499,8 +561,8 @@ function (a, b, c, d) {
     )
     send_btn.click(
         add_text,
-        states + model_selectors + [textbox],
-        states + chatbots + [textbox] + btn_list,
+        states + model_selectors + [textbox, prompt_id_box],
+        states + chatbots + [textbox, prompt_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
@@ -508,5 +570,20 @@ function (a, b, c, d) {
     ).then(
         flash_buttons, [], btn_list
     )
-
+    
+    right_steps_box.submit(
+        add_feedback,
+        states + [left_steps_box, right_steps_box],
+        states + [left_steps_box, right_steps_box] + btn_list,
+    ).then(
+        flash_buttons, [], btn_list
+    )
+    feedback_send_btn.click(
+        add_feedback,
+        states + [left_steps_box, right_steps_box],
+        states + [left_steps_box, right_steps_box] + btn_list,
+    ).then(
+        flash_buttons, [], btn_list
+    )
+    
     return states + model_selectors

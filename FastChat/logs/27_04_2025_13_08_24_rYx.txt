@@ -1,0 +1,15 @@
+🧠 Starting an agent with main_model=meta-llama/llama-4-maverick:free, planner_model=None, extraction_model=meta-llama/llama-4-maverick:free
+🚀 Starting task: What is the capital of france?
+📍 Step 1
+🤷 Eval: No previous goal to evaluate
+🧠 Memory: Starting the task to find the capital of France. I need to search for this information.
+🎯 Next goal: Search for 'capital of France' on Google
+🛠️  Action 1/1: {"search_google":{"query":"capital of France"}}
+📍 Step 2
+👍 Eval: Success - I searched for 'capital of France' on Google and found the information
+🧠 Memory: The search results show that Paris is the capital of France. Multiple sources confirm this: Wikipedia, Britannica, and other educational websites.
+🎯 Next goal: Provide the final answer using the done action
+🛠️  Action 1/1: {"done":{"text":"Paris is the capital of France.","success":true}}
+📄 Result: Paris is the capital of France.
+✅ Task completed
+✅ Successfully

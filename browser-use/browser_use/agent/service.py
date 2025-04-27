@@ -153,6 +153,8 @@ class Agent(Generic[Context]):
 		memory_interval: int = 10,
 		memory_config: Optional[dict] = None,
         unique_run_index: str = "abc123",
+        max_steps: int = 20,
+        conversion: bool = False
 	):
 		if page_extraction_llm is None:
 			page_extraction_llm = llm
@@ -279,6 +281,8 @@ class Agent(Generic[Context]):
 		# Telemetry
 		#self.telemetry = ProductTelemetry()
 
+		self.max_steps = max_steps
+		self.conversion = conversion
 		if self.settings.save_conversation_path:
 			logger.info(f'Saving conversation to {self.settings.save_conversation_path}')
 
@@ -621,17 +625,17 @@ class Agent(Generic[Context]):
 		text = re.sub(self.STRAY_CLOSE_TAG, '', text)
 		return text.strip()
 
-	def _convert_input_messages(self, input_messages: list[BaseMessage]) -> list[BaseMessage]:
+	def _convert_input_messages(self, input_messages: list[BaseMessage], conversion: bool = False) -> list[BaseMessage]:
 		"""Convert input messages to the correct format"""
 		if self.model_name == 'deepseek-reasoner' or 'deepseek-r1' in self.model_name:
-			return convert_input_messages(input_messages, self.model_name)
+			return convert_input_messages(input_messages, self.model_name, conversion=conversion)
 		else:
 			return input_messages
 
 	@time_execution_async('--get_next_action (agent)')
 	async def get_next_action(self, input_messages: list[BaseMessage]) -> AgentOutput:
 		"""Get next action from LLM based on current state"""
-		input_messages = self._convert_input_messages(input_messages)
+		input_messages = self._convert_input_messages(input_messages, conversion=self.conversion)
 
 		if self.tool_calling_method == 'raw':
 			logger.debug(f'Using {self.tool_calling_method} for {self.chat_model_library}')
@@ -639,7 +643,7 @@ class Agent(Generic[Context]):
 				output = self.llm.invoke(input_messages)
 				response = {'raw': output, 'parsed': None}
 			except Exception as e:
-				logger.error(f'Failed to invoke model: {str(e)}')
+				logger.error(f'Failed to invoke model: {str(e)} for model {self.model_name}')
 				raise LLMException(401, 'LLM API call failed') from e
 			# TODO: currently invoke does not return reasoning_content, we should override invoke
 			output.content = self._remove_think_tags(str(output.content))
@@ -648,7 +652,7 @@ class Agent(Generic[Context]):
 				parsed = self.AgentOutput(**parsed_json)
 				response['parsed'] = parsed
 			except (ValueError, ValidationError) as e:
-				logger.warning(f'Failed to parse model output: {output} {str(e)}')
+				logger.warning(f'Failed to parse model output: {output} with error {str(e)}, try again.')
 				raise ValueError('Could not parse response.')
 
 		elif self.tool_calling_method is None:
@@ -759,6 +763,7 @@ class Agent(Generic[Context]):
 	) -> AgentHistoryList:
 		"""Execute the task with maximum number of steps"""
 
+		max_steps = self.max_steps		
 		loop = asyncio.get_event_loop()
 
 		# Set up the Ctrl+C signal handler with callbacks specific to this agent

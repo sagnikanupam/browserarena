@@ -1,0 +1,15 @@
+🧠 Starting an agent with main_model=deepseek/deepseek-chat-v3-0324:free, planner_model=None, extraction_model=deepseek/deepseek-chat-v3-0324:free
+🚀 Starting task: Compare the pricing of gpt-4o and deepseek v3
+📍 Step 1
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 2669, 'total_tokens': 2669, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-chat-v3-0324:free', 'system_fingerprint': None, 'id': 'gen-1745761779-disPAMQYDlfyZLGaB8a9', 'finish_reason': None, 'logprobs': None} id='run-c787e26f-dffe-4ca1-a47e-ff9af47a4ee1-0' usage_metadata={'input_tokens': 2669, 'output_tokens': 0, 'total_tokens': 2669, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 2686, 'total_tokens': 2686, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-chat-v3-0324:free', 'system_fingerprint': None, 'id': 'gen-1745761782-SNhw7NuH35GzicptXl29', 'finish_reason': None, 'logprobs': None} id='run-8c34e55f-4cad-4d15-8c4b-180ff224b6d7-0' usage_metadata={'input_tokens': 2686, 'output_tokens': 0, 'total_tokens': 2686, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 2703, 'total_tokens': 2703, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-chat-v3-0324:free', 'system_fingerprint': None, 'id': 'gen-1745761784-FHZCbXAch6RNLKYVlx6J', 'finish_reason': None, 'logprobs': None} id='run-c9e2597f-6054-4eb6-a962-0c6796a4689a-0' usage_metadata={'input_tokens': 2703, 'output_tokens': 0, 'total_tokens': 2703, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
