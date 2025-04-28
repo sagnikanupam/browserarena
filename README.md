@@ -40,8 +40,9 @@ cd ..
 python3.11 -m pip install -e browser-use --use-pep517
 playwright install-deps
 playwright install chromium
-python3.11 -m pip install polyglot pyicu pycld2
 ```
+
+If there is a `pyo3_runtime.PanicException: Python API call failed` error, it can be fixed by `python3.11 -m pip install pyopenssl cryptography --upgrade`.
 ## Execute BrowserArena
 
 First, in `FastChat/api_endpoint.json`, add the OpenRouter Models you want to evaluate on:

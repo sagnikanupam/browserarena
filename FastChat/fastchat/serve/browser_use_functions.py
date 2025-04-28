@@ -38,9 +38,7 @@ async def call_browser(task_prompt: str = "Compare the price of gpt-4o and DeepS
         unique_run_index = unique_run_index,
         max_steps = 15,
         conversion = True if "deepseek" in model else False,
-        browser_context=BrowserContext(
-		    browser=Browser(config=BrowserConfig(headless=True)),
-	    ), 
-        anonymous=anonymous   
+        anonymous=anonymous,   
     )
+    #headless_param browser_context=BrowserContext( browser=Browser(config=BrowserConfig(headless=True)),), 
     await agent.run()
