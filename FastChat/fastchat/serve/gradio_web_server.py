@@ -586,6 +586,9 @@ def bot_response(
         image = '\n' + f'<img src="/gradio_api/file=gifs/{unique_run_index}.gif" alt="GIF" />'
         with open(f"prompts_and_outputs/{unique_run_index}.json", "w") as f:
             json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}"}, f)
+            text_output = text_output.replace("```", "\n```\n")
+            text_output = text_output.replace("$$", "\n$$\n")
+            
         output = text_output + image
     
     conv.update_last_message(output)
@@ -966,12 +969,12 @@ def build_single_model_ui(models, add_promotion_links=False):
             height=650,
             show_copy_button=True,
             latex_delimiters=[
-                {"left": "$", "right": "$", "display": False},
                 {"left": "$$", "right": "$$", "display": True},
                 {"left": r"\(", "right": r"\)", "display": False},
                 {"left": r"\[", "right": r"\]", "display": True},
             ],
         )
+        #{"left": "$", "right": "$", "display": False},
     with gr.Row():
         textbox = gr.Textbox(
             show_label=False,
