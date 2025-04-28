@@ -1,0 +1,12 @@
+[
+  {
+    "model_a": "deepseek/deepseek-r1:free",
+    "model_b": "meta-llama/llama-4-maverick:free",
+    "winner": "model_a",
+    "judge": "arena_user_127.0.0.1",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1745795925.847
+  }
+]
