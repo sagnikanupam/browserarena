@@ -176,6 +176,7 @@ def add_text(
             states
             + [x.to_gradio_chatbot() for x in states]
             + ["", None]
+            + [""]
             + [
                 no_change_btn,
             ]
@@ -203,7 +204,7 @@ def add_text(
             states
             + [x.to_gradio_chatbot() for x in states]
             + [CONVERSATION_LIMIT_MSG]
-            + []
+            + [""]
             + [
                 no_change_btn,
             ]
@@ -227,7 +228,7 @@ def add_text(
         * 6
     )
 
-def add_feedback(state0, state1, left_text, right_text, request: gr.Request):
+def add_feedback(state0, state1, left_text, right_text, user_id_text, request: gr.Request):
     
     ip = get_ip(request)
     logger.info(f"add_text (named). ip: {ip}. len: {len(left_text) + len(right_text)}")
@@ -251,6 +252,7 @@ def add_feedback(state0, state1, left_text, right_text, request: gr.Request):
                     logger.error(f"Error parsing feedback: {e}")
                     parsed_feedback = feedback[state_index]
                 current_prompt_dict["feedback"] = parsed_feedback
+                current_prompt_dict["user_id"] = user_id_text
                 f.seek(0)
                 json.dump(current_prompt_dict, f)
         except Exception as e:
@@ -259,6 +261,7 @@ def add_feedback(state0, state1, left_text, right_text, request: gr.Request):
     return (
         states
         + [""] * 2
+        + [user_id_text]
         + [
             no_change_btn,
         ]
@@ -421,19 +424,6 @@ def build_side_by_side_ui_named(models):
         bothbad_btn = gr.Button(
             value="👎  Both are bad", visible=False, interactive=False
         )
-
-    with gr.Row():
-        left_steps_box = gr.Textbox(
-            show_label=False,
-            placeholder="👉 Enter the steps agent A performed incorrectly as a list (for example, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong) and press ENTER",
-            elem_id="input_box",
-        )
-        right_steps_box = gr.Textbox(
-            show_label=False,
-            placeholder="👉 Enter the steps agent B performed incorrectly as a list (for example, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong) and press ENTER",
-            elem_id="input_box",
-        )
-        feedback_send_btn = gr.Button(value="Send", variant="primary", scale=0)
     
     with gr.Row():
         textbox = gr.Textbox(
@@ -448,19 +438,38 @@ def build_side_by_side_ui_named(models):
         ) 
         send_btn = gr.Button(value="Send", variant="primary", scale=0)
 
+    with gr.Row():
+        left_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent A performed incorrectly as a list: [] if no steps were wrong, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong",
+            elem_id="input_box",
+        )
+        right_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent B performed incorrectly as a list: [] if no steps were wrong, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong",
+            elem_id="input_box",
+        )
+        user_id_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter your unique dataset contribution ID",
+            elem_id="input_box",
+        )
+        feedback_send_btn = gr.Button(value="Send Feedback", variant="primary", scale=0)
+        
     with gr.Row() as button_row:
         clear_btn = gr.Button(value="🗑️  Clear history", interactive=False)
         regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
         share_btn = gr.Button(value="📷  Share")
 
-    with gr.Accordion("Parameters", open=False) as parameter_row:
+    with gr.Accordion("Parameters", open=False, visible=False) as parameter_row:
         temperature = gr.Slider(
             minimum=0.0,
             maximum=1.0,
-            value=0.7,
+            value=1.0,
             step=0.1,
             interactive=True,
             label="Temperature",
+            visible=False,
         )
         top_p = gr.Slider(
             minimum=0.0,
@@ -469,16 +478,18 @@ def build_side_by_side_ui_named(models):
             step=0.1,
             interactive=True,
             label="Top P",
+            visible=False,
         )
         max_output_tokens = gr.Slider(
             minimum=16,
-            maximum=2048,
-            value=1024,
+            maximum=4096,
+            value=2000,
             step=64,
             interactive=True,
+            visible=False,
             label="Max output tokens",
         )
-
+    
     gr.Markdown(acknowledgment_md, elem_id="ack_markdown")
 
     # Register listeners
@@ -573,15 +584,15 @@ function (a, b, c, d) {
     
     right_steps_box.submit(
         add_feedback,
-        states + [left_steps_box, right_steps_box],
-        states + [left_steps_box, right_steps_box] + btn_list,
+        states + [left_steps_box, right_steps_box, user_id_box],
+        states + [left_steps_box, right_steps_box, user_id_box] + btn_list,
     ).then(
         flash_buttons, [], btn_list
     )
     feedback_send_btn.click(
         add_feedback,
-        states + [left_steps_box, right_steps_box],
-        states + [left_steps_box, right_steps_box] + btn_list,
+        states + [left_steps_box, right_steps_box, user_id_box],
+        states + [left_steps_box, right_steps_box, user_id_box] + btn_list,
     ).then(
         flash_buttons, [], btn_list
     )

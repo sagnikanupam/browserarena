@@ -1,4 +1,6 @@
 from browser_use import Agent
+from browser_use.browser.browser import Browser, BrowserConfig
+from browser_use.browser.context import BrowserContext
 import asyncio
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
@@ -27,7 +29,7 @@ class ChatOpenRouter(ChatOpenAI):
         openai_api_key = os.environ.get("OPENROUTER_API_KEY") # openai_api_key or os.environ.get("OPENROUTER_API_KEY")
         super().__init__(base_url="https://openrouter.ai/api/v1", openai_api_key=openai_api_key, **kwargs)
 
-async def call_browser(task_prompt: str = "Compare the price of gpt-4o and DeepSeek-V3", model="deepseek/deepseek-r1:free", unique_run_index: str = "abc123"):
+async def call_browser(task_prompt: str = "Compare the price of gpt-4o and DeepSeek-V3", model="deepseek/deepseek-r1:free", unique_run_index: str = "abc123", anonymous: bool = False):
     agent = Agent(
         generate_gif = True,
         tool_calling_method = "raw",
@@ -36,5 +38,9 @@ async def call_browser(task_prompt: str = "Compare the price of gpt-4o and DeepS
         unique_run_index = unique_run_index,
         max_steps = 15,
         conversion = True if "deepseek" in model else False,
+        browser_context=BrowserContext(
+		    browser=Browser(config=BrowserConfig(headless=True)),
+	    ), 
+        anonymous=anonymous   
     )
     await agent.run()

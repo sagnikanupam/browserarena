@@ -7,6 +7,9 @@ import json
 import time
 import re
 
+import datetime
+import random
+import string
 import gradio as gr
 import numpy as np
 
@@ -193,7 +196,10 @@ OUTAGE_MODELS = []
 def get_sample_weight(model, outage_models, sampling_weights, sampling_boost_models=[]):
     if model in outage_models:
         return 0
-    weight = sampling_weights.get(model, 0)
+    if model in sampling_weights.keys():
+        weight = sampling_weights.get(model, 0)
+    else:
+        weight = 1
     if model in sampling_boost_models:
         weight *= 5
     return weight
@@ -267,7 +273,7 @@ def get_battle_pair(
 
 
 def add_text(
-    state0, state1, model_selector0, model_selector1, text, request: gr.Request
+    state0, state1, model_selector0, model_selector1, text, prompt_id_text, request: gr.Request
 ):
     ip = get_ip(request)
     logger.info(f"add_text (anony). ip: {ip}. len: {len(text)}")
@@ -285,9 +291,18 @@ def add_text(
             SAMPLING_WEIGHTS,
             SAMPLING_BOOST_MODELS,
         )
+        
+        unique_identifier_1 = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
+        random_suffix_1 = ''.join(random.choices(population=string.ascii_letters, k=3))
+        unique_run_index_1 = f"{unique_identifier_1}_{random_suffix_1}"
+        
+        unique_identifier_2 = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
+        random_suffix_2 = ''.join(random.choices(population=string.ascii_letters, k=3))
+        unique_run_index_2 = f"{unique_identifier_2}_{random_suffix_2}"
+        
         states = [
-            State(model_left),
-            State(model_right),
+            State(model_left, prompt_id_text = prompt_id_text, unique_run_index = unique_run_index_1),
+            State(model_right, prompt_id_text = prompt_id_text, unique_run_index = unique_run_index_2),
         ]
 
     if len(text) <= 0:
@@ -296,22 +311,22 @@ def add_text(
         return (
             states
             + [x.to_gradio_chatbot() for x in states]
-            + ["", None]
+            + [""] * 2
             + [
                 no_change_btn,
             ]
             * 6
-            + [""]
         )
 
     model_list = [states[i].model_name for i in range(num_sides)]
+    logger.info(f"Model List is {model_list}")
     # turn on moderation in battle mode
     all_conv_text_left = states[0].conv.get_prompt()
-    all_conv_text_right = states[0].conv.get_prompt()
+    all_conv_text_right = states[1].conv.get_prompt()
     all_conv_text = (
         all_conv_text_left[-1000:] + all_conv_text_right[-1000:] + "\nuser: " + text
     )
-    flagged = moderation_filter(all_conv_text, model_list, do_moderation=True)
+    flagged = moderation_filter(all_conv_text, model_list)
     if flagged:
         logger.info(f"violate moderation (anony). ip: {ip}. text: {text}")
         # overwrite the original text
@@ -326,17 +341,18 @@ def add_text(
             states
             + [x.to_gradio_chatbot() for x in states]
             + [CONVERSATION_LIMIT_MSG]
+            + [""]
             + [
                 no_change_btn,
             ]
             * 6
-            + [""]
         )
 
     text = text[:BLIND_MODE_INPUT_CHAR_LEN_LIMIT]  # Hard cut-off
     for i in range(num_sides):
         states[i].conv.append_message(states[i].conv.roles[0], text)
         states[i].conv.append_message(states[i].conv.roles[1], None)
+        states[i].prompt_id = prompt_id_text
         states[i].skip_next = False
 
     hint_msg = ""
@@ -346,14 +362,52 @@ def add_text(
     return (
         states
         + [x.to_gradio_chatbot() for x in states]
-        + [""]
+        + [""]*2
         + [
             disable_btn,
         ]
         * 6
-        + [hint_msg]
     )
 
+def add_feedback(state0, state1, left_text, right_text, user_id_text, request: gr.Request):
+    
+    ip = get_ip(request)
+    logger.info(f"add_text (named). ip: {ip}. len: {len(left_text) + len(right_text)}")
+    states = [state0, state1]
+    feedback = [left_text, right_text]
+
+    # Init states if necessary
+    for i in range(num_sides):
+        if states[i] is None:
+            raise ValueError(f"State {i} is None. Please initialize the state before adding feedback.")
+        
+    for state_index in range(len(states)):
+        state = states[state_index]
+        unique_run_index = state.unique_run_index
+        try:
+            with open(f"prompts_and_outputs/{unique_run_index}.json", "r+") as f:
+                current_prompt_dict = json.load(f)
+                try:
+                    parsed_feedback = json.loads(feedback[state_index])
+                except Exception as e:
+                    logger.error(f"Error parsing feedback: {e}")
+                    parsed_feedback = feedback[state_index]
+                current_prompt_dict["feedback"] = parsed_feedback
+                current_prompt_dict["user_id"] = user_id_text
+                f.seek(0)
+                json.dump(current_prompt_dict, f)
+        except Exception as e:
+            logger.error(f"Error writing feedback to file /gradio_api/file=prompts_and_outputs/{unique_run_index}.json: {e}")
+
+    return (
+        states
+        + [""] * 2
+        + [user_id_text]
+        + [
+            no_change_btn,
+        ]
+        * 6
+    )
 
 def bot_response_multi(
     state0,
@@ -387,6 +441,7 @@ def bot_response_multi(
                 request,
                 apply_rate_limit=False,
                 use_recommended_config=True,
+                anonymous=True,
             )
         )
 
@@ -515,8 +570,31 @@ def build_side_by_side_ui_anony(models):
             placeholder="👉 Enter your prompt and press ENTER",
             elem_id="input_box",
         )
+        prompt_id_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the prompt ID",
+            elem_id="prompt_id_box",
+        ) 
         send_btn = gr.Button(value="Send", variant="primary", scale=0)
 
+    with gr.Row():
+        left_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent A performed incorrectly as a list: [] if no steps were wrong, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong",
+            elem_id="input_box",
+        )
+        right_steps_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter the steps agent B performed incorrectly as a list: [] if no steps were wrong, [1, 2] if steps 1 and 2 were wrong, [3] if 3 was wrong",
+            elem_id="input_box",
+        )
+        user_id_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter your unique dataset contribution ID",
+            elem_id="input_box",
+        )
+        feedback_send_btn = gr.Button(value="Send Feedback", variant="primary", scale=0)
+    
     with gr.Row() as button_row:
         clear_btn = gr.Button(value="🎲 New Round", interactive=False)
         regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
@@ -526,10 +604,11 @@ def build_side_by_side_ui_anony(models):
         temperature = gr.Slider(
             minimum=0.0,
             maximum=1.0,
-            value=0.7,
+            value=1.0,
             step=0.1,
             interactive=True,
             label="Temperature",
+            visible=False,
         )
         top_p = gr.Slider(
             minimum=0.0,
@@ -538,16 +617,18 @@ def build_side_by_side_ui_anony(models):
             step=0.1,
             interactive=True,
             label="Top P",
+            visible=False,
         )
         max_output_tokens = gr.Slider(
             minimum=16,
-            maximum=2048,
+            maximum=4096,
             value=2000,
             step=64,
             interactive=True,
+            visible=False,
             label="Max output tokens",
         )
-
+    
     gr.Markdown(acknowledgment_md, elem_id="ack_markdown")
 
     # Register listeners
@@ -626,28 +707,40 @@ function (a, b, c, d) {
 """
     share_btn.click(share_click, states + model_selectors, [], js=share_js)
 
-    textbox.submit(
+    prompt_id_box.submit(
         add_text,
-        states + model_selectors + [textbox],
-        states + chatbots + [textbox] + btn_list + [slow_warning],
+        states + model_selectors + [textbox, prompt_id_box],
+        states + chatbots + [textbox, prompt_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
         states + chatbots + btn_list,
     ).then(
-        flash_buttons,
-        [],
-        btn_list,
+        flash_buttons, [], btn_list
     )
-
     send_btn.click(
         add_text,
-        states + model_selectors + [textbox],
-        states + chatbots + [textbox] + btn_list,
+        states + model_selectors + [textbox, prompt_id_box],
+        states + chatbots + [textbox, prompt_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
         states + chatbots + btn_list,
+    ).then(
+        flash_buttons, [], btn_list
+    )
+    
+    right_steps_box.submit(
+        add_feedback,
+        states + [left_steps_box, right_steps_box, user_id_box],
+        states + [left_steps_box, right_steps_box, user_id_box] + btn_list,
+    ).then(
+        flash_buttons, [], btn_list
+    )
+    feedback_send_btn.click(
+        add_feedback,
+        states + [left_steps_box, right_steps_box, user_id_box],
+        states + [left_steps_box, right_steps_box, user_id_box] + btn_list,
     ).then(
         flash_buttons, [], btn_list
     )

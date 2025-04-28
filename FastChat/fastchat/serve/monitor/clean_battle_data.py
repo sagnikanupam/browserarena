@@ -340,7 +340,7 @@ def clean_battle_data(
             for data_chunk in data_chunks
         ]
         ret_all = list(tqdm(p.starmap(process_data, args_list), total=len(data_chunks)))
-
+        print("Ret all is: ", ret_all)
         for ret in ret_all:
             sub_battles, sub_count_dict, sub_count_leak, sub_all_ips = ret
             battles.extend(sub_battles)
@@ -352,6 +352,7 @@ def clean_battle_data(
                 else:
                     all_ips[ip]["count"] += sub_all_ips[ip]["count"]
     battles.sort(key=lambda x: x["tstamp"])
+    print(f"Battles is: {battles}")
     last_updated_tstamp = battles[-1]["tstamp"]
 
     last_updated_datetime = datetime.datetime.fromtimestamp(
@@ -404,7 +405,7 @@ if __name__ == "__main__":
             ]:
                 del x[key]
         print("Samples:")
-        for i in range(4):
+        for i in range(len(battles)):
             print(battles[i])
         output = f"clean_battle_{cutoff_date}.json"
     elif args.mode == "conv_release":

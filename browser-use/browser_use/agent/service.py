@@ -154,7 +154,8 @@ class Agent(Generic[Context]):
 		memory_config: Optional[dict] = None,
         unique_run_index: str = "abc123",
         max_steps: int = 20,
-        conversion: bool = False
+        conversion: bool = False,
+        anonymous: bool = False,
 	):
 		if page_extraction_llm is None:
 			page_extraction_llm = llm
@@ -205,10 +206,11 @@ class Agent(Generic[Context]):
 
 		# Model setup
 		self._set_model_names()
-		logger.info(
-			f'🧠 Starting an agent with main_model={self.model_name}, planner_model={self.planner_model_name}, '
-			f'extraction_model={self.settings.page_extraction_llm.model_name if hasattr(self.settings.page_extraction_llm, "model_name") else None}'
-		)
+		self.anonymous = anonymous
+		if self.anonymous:
+			logger.info(f'🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized')
+		else:
+			logger.info(f'🧠 Starting an agent with main_model={self.model_name}, planner_model={self.planner_model_name}, 'f'extraction_model={self.settings.page_extraction_llm.model_name if hasattr(self.settings.page_extraction_llm, "model_name") else None}')
 
 		# LLM API connection setup
 		llm_api_env_vars = REQUIRED_LLM_API_ENV_VARS.get(self.llm.__class__.__name__, [])
@@ -643,7 +645,10 @@ class Agent(Generic[Context]):
 				output = self.llm.invoke(input_messages)
 				response = {'raw': output, 'parsed': None}
 			except Exception as e:
-				logger.error(f'Failed to invoke model: {str(e)} for model {self.model_name}')
+				if self.anonymous:
+					logger.error(f'Failed to invoke model: {str(e)} for model anonymized')
+				else:
+					logger.error(f'Failed to invoke model: {str(e)} for model {self.model_name}')
 				raise LLMException(401, 'LLM API call failed') from e
 			# TODO: currently invoke does not return reasoning_content, we should override invoke
 			output.content = self._remove_think_tags(str(output.content))

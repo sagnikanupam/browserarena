@@ -202,7 +202,7 @@ def set_global_vars(
 
 def get_conv_log_filename(is_vision=False, has_csam_image=False):
     t = datetime.datetime.now()
-    conv_log_filename = f"{t.year}-{t.month:02d}-{t.day:02d}-conv.json"
+    conv_log_filename = f"conv_logs/{t.year}-{t.month:02d}-{t.day:02d}-conv.json"
     if is_vision and not has_csam_image:
         name = os.path.join(LOGDIR, f"vision-tmp-{conv_log_filename}")
     elif is_vision and has_csam_image:
@@ -456,6 +456,7 @@ def bot_response(
     request: gr.Request,
     apply_rate_limit=True,
     use_recommended_config=False,
+    anonymous=False,
 ):
     ip = get_ip(request)
     logger.info(f"bot_response. ip: {ip}")
@@ -570,7 +571,7 @@ def bot_response(
     prompt_id_text = state.prompt_id
     unique_run_index = state.unique_run_index if state.unique_run_index != None else "None"
     
-    asyncio.run(call_browser(task_prompt=task_prompt, model = model_name, unique_run_index = unique_run_index))
+    asyncio.run(call_browser(task_prompt=task_prompt, model = model_name, unique_run_index = unique_run_index, anonymous=anonymous))
     from pathlib import Path
     gr.set_static_paths(paths=[Path.cwd().absolute()/"gifs"])
     logger.info(f"GIF path: {Path.cwd().absolute()/'gifs'}")

@@ -162,6 +162,7 @@ def visualize_average_win_rate(battles, limit_show_number, scale=1):
 
 
 def visualize_bootstrap_elo_rating(df, df_final, limit_show_number, scale=1):
+    print("pd.__version__")
     bars = (
         pd.DataFrame(
             dict(
