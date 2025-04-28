@@ -717,7 +717,7 @@ class Agent(Generic[Context]):
 			parsed.action = parsed.action[: self.settings.max_actions_per_step]
 
 		if not (hasattr(self.state, 'paused') and (self.state.paused or self.state.stopped)):
-			log_response(parsed)
+			log_response(parsed, logger=self.logger)
 
 		return parsed
 
