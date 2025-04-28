@@ -17,18 +17,31 @@ export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"
 unset CC CXX
 ```
-
 ```
 cd FastChat
 python3.11 -m pip install --upgrade pip  # enable PEP 660 support
 python3.11 -m pip install -e ".[model_worker,webui]"
 cd ..
-Python3.11 -m pip install numpy==2.2.4
+python3.11 -m pip install numpy==2.2.4
 python3.11 -m pip install -e browser-use
 playwright install chromium
 python3.11 -m pip install polyglot pyicu pycld2
-````
+```
 
+For Ubuntu:
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.11
+sudo apt install postgresql rustc cmake python3-pip
+cd FastChat
+python3.11 -m pip install -e ".[model_worker,webui]" --use-pep517   
+cd ..
+python3.11 -m pip install -e browser-use --use-pep517
+playwright install-deps
+playwright install chromium
+python3.11 -m pip install polyglot pyicu pycld2
+```
 ## Execute BrowserArena
 
 First, in `FastChat/api_endpoint.json`, add the OpenRouter Models you want to evaluate on:
