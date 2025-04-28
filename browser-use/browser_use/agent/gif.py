@@ -14,7 +14,7 @@ from browser_use.agent.views import (
 if TYPE_CHECKING:
 	from PIL import Image, ImageFont
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 
 def create_history_gif(
@@ -31,6 +31,7 @@ def create_history_gif(
 	goal_font_size: int = 44,
 	margin: int = 40,
 	line_spacing: float = 1.5,
+    logger: logging.Logger = logging.getLogger(__name__),
 ) -> None:
 	"""Create a GIF from the agent's history with overlaid task and goal text."""
 	if not history.history:

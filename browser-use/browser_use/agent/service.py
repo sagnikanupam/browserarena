@@ -95,7 +95,7 @@ class Agent(Generic[Context]):
 		# Optional parameters
 		browser: Browser | None = None,
 		browser_context: BrowserContext | None = None,
-		controller: Controller[Context] = Controller(),
+		controller: Controller[Context] | None = None,
 		# Initial agent run parameters
 		sensitive_data: Optional[Dict[str, str]] = None,
 		initial_actions: Optional[List[Dict[str, Dict[str, Any]]]] = None,
@@ -166,7 +166,7 @@ class Agent(Generic[Context]):
 		# Core components
 		self.task = task
 		self.llm = llm
-		self.controller = controller
+		self.controller = Controller(logger=self.logger)
 		self.sensitive_data = sensitive_data
 
 		self.settings = AgentSettings(
@@ -245,6 +245,7 @@ class Agent(Generic[Context]):
 				available_file_paths=self.settings.available_file_paths,
 			),
 			state=self.state.message_manager_state,
+            logger=self.logger,
 		)
 
 		if self.settings.enable_memory:
@@ -259,6 +260,7 @@ class Agent(Generic[Context]):
 				message_manager=self._message_manager,
 				llm=self.llm,
 				settings=memory_settings,
+                logger=self.logger
 			)
 		else:
 			self.memory = None
@@ -266,9 +268,9 @@ class Agent(Generic[Context]):
 		# Browser setup
 		self.injected_browser = browser is not None
 		self.injected_browser_context = browser_context is not None
-		self.browser = browser or Browser()
+		self.browser = browser or Browser(logger=self.logger)
 		self.browser_context = browser_context or BrowserContext(
-			browser=self.browser, config=self.browser.config.new_context_config
+			browser=self.browser, config=self.browser.config.new_context_config, logger=self.logger
 		)
 
 		# Callbacks
@@ -652,7 +654,7 @@ class Agent(Generic[Context]):
 			# TODO: currently invoke does not return reasoning_content, we should override invoke
 			output.content = self._remove_think_tags(str(output.content))
 			try:
-				parsed_json = extract_json_from_model_output(output.content)
+				parsed_json = extract_json_from_model_output(output.content, logger = self.logger)
 				parsed = self.AgentOutput(**parsed_json)
 				response['parsed'] = parsed
 			except (ValueError, ValidationError) as e:
@@ -704,7 +706,7 @@ class Agent(Generic[Context]):
 
 		if not parsed:
 			try:
-				parsed_json = extract_json_from_model_output(response['raw'].content)
+				parsed_json = extract_json_from_model_output(response['raw'].content, logger = self.logger)
 				parsed = self.AgentOutput(**parsed_json)
 			except Exception as e:
 				self.logger.warning(f'Failed to parse model output: {response["raw"].content} {str(e)}')
@@ -866,7 +868,7 @@ class Agent(Generic[Context]):
 				if isinstance(self.settings.generate_gif, str):
 					output_path = self.settings.generate_gif
 
-				create_history_gif(task=self.task, history=self.state.history, output_path=output_path)
+				create_history_gif(task=self.task, history=self.state.history, output_path=output_path, logger=self.logger)
 
 	# @observe(name='controller.multi_act')
 	@time_execution_async('--multi-act (agent)')

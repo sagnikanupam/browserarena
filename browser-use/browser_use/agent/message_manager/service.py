@@ -18,8 +18,7 @@ from browser_use.agent.views import ActionResult, AgentOutput, AgentStepInfo, Me
 from browser_use.browser.views import BrowserState
 from browser_use.utils import time_execution_sync
 
-logger = logging.getLogger(__name__)
-
+#logger = logging.getLogger(__name__)
 
 class MessageManagerSettings(BaseModel):
 	max_input_tokens: int = 128000
@@ -38,12 +37,13 @@ class MessageManager:
 		system_message: SystemMessage,
 		settings: MessageManagerSettings = MessageManagerSettings(),
 		state: MessageManagerState = MessageManagerState(),
+		logger: logging.Logger = logging.getLogger(__name__),
 	):
 		self.task = task
 		self.settings = settings
 		self.state = state
 		self.system_prompt = system_message
-
+		self.logger = logger
 		# Only initialize messages if state is empty
 		if len(self.state.history.messages) == 0:
 			self._init_messages()
@@ -174,11 +174,11 @@ class MessageManager:
 		msg = [m.message for m in self.state.history.messages]
 		# debug which messages are in history with token count # log
 		total_input_tokens = 0
-		logger.debug(f'Messages in history: {len(self.state.history.messages)}:')
+		self.logger.debug(f'Messages in history: {len(self.state.history.messages)}:')
 		for m in self.state.history.messages:
 			total_input_tokens += m.metadata.tokens
-			logger.debug(f'{m.message.__class__.__name__} - Token count: {m.metadata.tokens}')
-		logger.debug(f'Total input tokens: {total_input_tokens}')
+			self.logger.debug(f'{m.message.__class__.__name__} - Token count: {m.metadata.tokens}')
+		self.logger.debug(f'Total input tokens: {total_input_tokens}')
 
 		return msg
 
@@ -257,7 +257,7 @@ class MessageManager:
 					diff -= self.settings.image_tokens
 					msg.metadata.tokens -= self.settings.image_tokens
 					self.state.history.current_tokens -= self.settings.image_tokens
-					logger.debug(
+					self.logger.debug(
 						f'Removed image with {self.settings.image_tokens} tokens - total tokens now: {self.state.history.current_tokens}/{self.settings.max_input_tokens}'
 					)
 				elif 'text' in item and isinstance(item, dict):
@@ -276,7 +276,7 @@ class MessageManager:
 				f'Max token limit reached - history is too long - reduce the system prompt or task. '
 				f'proportion_to_remove: {proportion_to_remove}'
 			)
-		logger.debug(
+		self.logger.debug(
 			f'Removing {proportion_to_remove * 100:.2f}% of the last message  {proportion_to_remove * msg.metadata.tokens:.2f} / {msg.metadata.tokens:.2f} tokens)'
 		)
 
@@ -293,7 +293,7 @@ class MessageManager:
 
 		last_msg = self.state.history.messages[-1]
 
-		logger.debug(
+		self.logger.debug(
 			f'Added message with {last_msg.metadata.tokens} tokens - total tokens now: {self.state.history.current_tokens}/{self.settings.max_input_tokens} - total messages: {len(self.state.history.messages)}'
 		)
 

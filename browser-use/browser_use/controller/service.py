@@ -37,7 +37,7 @@ from browser_use.controller.views import (
 )
 from browser_use.utils import time_execution_sync
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 
 Context = TypeVar('Context')
@@ -48,9 +48,10 @@ class Controller(Generic[Context]):
 		self,
 		exclude_actions: list[str] = [],
 		output_model: Optional[Type[BaseModel]] = None,
+		logger: logging.Logger = logging.getLogger(__name__)
 	):
 		self.registry = Registry[Context](exclude_actions)
-
+		self.logger = logger
 		"""Register all default browser actions"""
 
 		if output_model is not None:
@@ -92,7 +93,7 @@ class Controller(Generic[Context]):
 			await page.goto(f'https://www.google.com/search?q={params.query}&udm=14')
 			await page.wait_for_load_state()
 			msg = f'🔍  Searched for "{params.query}" in Google'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action('Navigate to URL in the current tab', param_model=GoToUrlAction)
@@ -101,21 +102,21 @@ class Controller(Generic[Context]):
 			await page.goto(params.url)
 			await page.wait_for_load_state()
 			msg = f'🔗  Navigated to {params.url}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action('Go back', param_model=NoParamsAction)
 		async def go_back(_: NoParamsAction, browser: BrowserContext):
 			await browser.go_back()
 			msg = '🔙  Navigated back'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		# wait for x seconds
 		@self.registry.action('Wait for x seconds default 3')
 		async def wait(seconds: int = 3):
 			msg = f'🕒  Waiting for {seconds} seconds'
-			logger.info(msg)
+			self.logger.info(msg)
 			await asyncio.sleep(seconds)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
@@ -125,11 +126,11 @@ class Controller(Generic[Context]):
 			try:
 				await browser.wait_for_element(params.selector, params.timeout)
 				msg = f'👀  Element with selector "{params.selector}" became visible within {params.timeout}ms.'
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
 				err_msg = f'❌  Failed to wait for element "{params.selector}" within {params.timeout}ms: {str(e)}'
-				logger.error(err_msg)
+				self.logger.error(err_msg)
 				raise Exception(err_msg)
 
 		# Element Interaction Actions
@@ -146,7 +147,7 @@ class Controller(Generic[Context]):
 			# if element has file uploader then dont click
 			if await browser.is_file_uploader(element_node):
 				msg = f'Index {params.index} - has an element which opens file upload dialog. To upload files please use a specific function to upload files '
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
 			msg = None
@@ -158,16 +159,16 @@ class Controller(Generic[Context]):
 				else:
 					msg = f'🖱️  Clicked button with index {params.index}: {element_node.get_all_text_till_next_clickable_element(max_depth=2)}'
 
-				logger.info(msg)
-				logger.debug(f'Element xpath: {element_node.xpath}')
+				self.logger.info(msg)
+				self.logger.debug(f'Element xpath: {element_node.xpath}')
 				if len(session.context.pages) > initial_pages:
 					new_tab_msg = 'New tab opened - switching to it'
 					msg += f' - {new_tab_msg}'
-					logger.info(new_tab_msg)
+					self.logger.info(new_tab_msg)
 					await browser.switch_to_tab(-1)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
-				logger.warning(f'Element not clickable with index {params.index} - most likely the page changed')
+				self.logger.warning(f'Element not clickable with index {params.index} - most likely the page changed')
 				return ActionResult(error=str(e))
 
 		@self.registry.action('Click element by selector', param_model=ClickElementBySelectorAction)
@@ -185,12 +186,12 @@ class Controller(Generic[Context]):
 							# Handle with js evaluate if fails to click using playwright
 							await element_node.evaluate('el => el.click()')
 						except Exception as e:
-							logger.warning(f"Element not clickable with css selector '{params.css_selector}' - {e}")
+							self.logger.warning(f"Element not clickable with css selector '{params.css_selector}' - {e}")
 							return ActionResult(error=str(e))
 					msg = f'🖱️  Clicked on element with text "{params.css_selector}"'
 					return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
-				logger.warning(f'Element not clickable with selector {params.css_selector} - most likely the page changed')
+				self.logger.warning(f'Element not clickable with selector {params.css_selector} - most likely the page changed')
 				return ActionResult(error=str(e))
 
 		@self.registry.action('Click on element by xpath', param_model=ClickElementByXpathAction)
@@ -208,12 +209,12 @@ class Controller(Generic[Context]):
 							# Handle with js evaluate if fails to click using playwright
 							await element_node.evaluate('el => el.click()')
 						except Exception as e:
-							logger.warning(f"Element not clickable with xpath '{params.xpath}' - {e}")
+							self.logger.warning(f"Element not clickable with xpath '{params.xpath}' - {e}")
 							return ActionResult(error=str(e))
 					msg = f'🖱️  Clicked on element with text "{params.xpath}"'
 					return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
-				logger.warning(f'Element not clickable with xpath {params.xpath} - most likely the page changed')
+				self.logger.warning(f'Element not clickable with xpath {params.xpath} - most likely the page changed')
 				return ActionResult(error=str(e))
 
 		@self.registry.action('Click element with text', param_model=ClickElementByTextAction)
@@ -234,14 +235,14 @@ class Controller(Generic[Context]):
 							# Handle with js evaluate if fails to click using playwright
 							await element_node.evaluate('el => el.click()')
 						except Exception as e:
-							logger.warning(f"Element not clickable with text '{params.text}' - {e}")
+							self.logger.warning(f"Element not clickable with text '{params.text}' - {e}")
 							return ActionResult(error=str(e))
 					msg = f'🖱️  Clicked on element with text "{params.text}"'
 					return ActionResult(extracted_content=msg, include_in_memory=True)
 				else:
 					return ActionResult(error=f"No element found for text '{params.text}'")
 			except Exception as e:
-				logger.warning(f"Element not clickable with text '{params.text}' - {e}")
+				self.logger.warning(f"Element not clickable with text '{params.text}' - {e}")
 				return ActionResult(error=str(e))
 
 		@self.registry.action(
@@ -258,8 +259,8 @@ class Controller(Generic[Context]):
 				msg = f'⌨️  Input {params.text} into index {params.index}'
 			else:
 				msg = f'⌨️  Input sensitive data into index {params.index}'
-			logger.info(msg)
-			logger.debug(f'Element xpath: {element_node.xpath}')
+			self.logger.info(msg)
+			self.logger.debug(f'Element xpath: {element_node.xpath}')
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		# Save PDF
@@ -275,7 +276,7 @@ class Controller(Generic[Context]):
 			await page.emulate_media('screen')
 			await page.pdf(path=sanitized_filename, format='A4', print_background=False)
 			msg = f'Saving page with URL {page.url} as PDF to ./{sanitized_filename}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		# Tab Management Actions
@@ -286,14 +287,14 @@ class Controller(Generic[Context]):
 			page = await browser.get_current_page()
 			await page.wait_for_load_state()
 			msg = f'🔄  Switched to tab {params.page_id}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action('Open url in new tab', param_model=OpenTabAction)
 		async def open_tab(params: OpenTabAction, browser: BrowserContext):
 			await browser.create_new_tab(params.url)
 			msg = f'🔗  Opened new tab with {params.url}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action('Close an existing tab', param_model=CloseTabAction)
@@ -303,7 +304,7 @@ class Controller(Generic[Context]):
 			url = page.url
 			await page.close()
 			msg = f'❌  Closed tab #{params.page_id} with url {url}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		# Content Actions
@@ -333,12 +334,12 @@ class Controller(Generic[Context]):
 			try:
 				output = page_extraction_llm.invoke(template.format(goal=goal, page=content))
 				msg = f'📄  Extracted from page\n: {output.content}\n'
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
-				logger.debug(f'Error extracting content: {e}')
+				self.logger.debug(f'Error extracting content: {e}')
 				msg = f'📄  Extracted from page\n: {content}\n'
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg)
 
 		# HTML Download
@@ -364,11 +365,11 @@ class Controller(Generic[Context]):
 
 				msg = f'Saved HTML content of page with URL {page.url} to ./{sanitized_filename}'
 
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 			except Exception as e:
 				error_msg = f'Failed to save HTML content: {str(e)}'
-				logger.error(error_msg)
+				self.logger.error(error_msg)
 				return ActionResult(error=error_msg, extracted_content='')
 
 		@self.registry.action(
@@ -384,7 +385,7 @@ class Controller(Generic[Context]):
 
 			amount = f'{params.amount} pixels' if params.amount is not None else 'one page'
 			msg = f'🔍  Scrolled down the page by {amount}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(
 				extracted_content=msg,
 				include_in_memory=True,
@@ -404,7 +405,7 @@ class Controller(Generic[Context]):
 
 			amount = f'{params.amount} pixels' if params.amount is not None else 'one page'
 			msg = f'🔍  Scrolled up the page by {amount}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(
 				extracted_content=msg,
 				include_in_memory=True,
@@ -427,12 +428,12 @@ class Controller(Generic[Context]):
 						try:
 							await page.keyboard.press(key)
 						except Exception as e:
-							logger.debug(f'Error sending key {key}: {str(e)}')
+							self.logger.debug(f'Error sending key {key}: {str(e)}')
 							raise e
 				else:
 					raise e
 			msg = f'⌨️  Sent keys: {params.keys}'
-			logger.info(msg)
+			self.logger.info(msg)
 			return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action(
@@ -455,19 +456,19 @@ class Controller(Generic[Context]):
 							await locator.first.scroll_into_view_if_needed()
 							await asyncio.sleep(0.5)  # Wait for scroll to complete
 							msg = f'🔍  Scrolled to text: {text}'
-							logger.info(msg)
+							self.logger.info(msg)
 							return ActionResult(extracted_content=msg, include_in_memory=True)
 					except Exception as e:
-						logger.debug(f'Locator attempt failed: {str(e)}')
+						self.logger.debug(f'Locator attempt failed: {str(e)}')
 						continue
 
 				msg = f"Text '{text}' not found or not visible on page"
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
 			except Exception as e:
 				msg = f"Failed to scroll to text '{text}': {str(e)}"
-				logger.error(msg)
+				self.logger.error(msg)
 				return ActionResult(error=msg, include_in_memory=True)
 
 		@self.registry.action(
@@ -508,8 +509,8 @@ class Controller(Generic[Context]):
 						)
 
 						if options:
-							logger.debug(f'Found dropdown in frame {frame_index}')
-							logger.debug(f'Dropdown ID: {options["id"]}, Name: {options["name"]}')
+							self.logger.debug(f'Found dropdown in frame {frame_index}')
+							self.logger.debug(f'Dropdown ID: {options["id"]}, Name: {options["name"]}')
 
 							formatted_options = []
 							for opt in options['options']:
@@ -520,24 +521,24 @@ class Controller(Generic[Context]):
 							all_options.extend(formatted_options)
 
 					except Exception as frame_e:
-						logger.debug(f'Frame {frame_index} evaluation failed: {str(frame_e)}')
+						self.logger.debug(f'Frame {frame_index} evaluation failed: {str(frame_e)}')
 
 					frame_index += 1
 
 				if all_options:
 					msg = '\n'.join(all_options)
 					msg += '\nUse the exact text string in select_dropdown_option'
-					logger.info(msg)
+					self.logger.info(msg)
 					return ActionResult(extracted_content=msg, include_in_memory=True)
 				else:
 					msg = 'No options found in any frame for dropdown'
-					logger.info(msg)
+					self.logger.info(msg)
 					return ActionResult(extracted_content=msg, include_in_memory=True)
 
 			except Exception as e:
-				logger.error(f'Failed to get dropdown options: {str(e)}')
+				self.logger.error(f'Failed to get dropdown options: {str(e)}')
 				msg = f'Error getting options: {str(e)}'
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
 		@self.registry.action(
@@ -555,13 +556,13 @@ class Controller(Generic[Context]):
 
 			# Validate that we're working with a select element
 			if dom_element.tag_name != 'select':
-				logger.error(f'Element is not a select! Tag: {dom_element.tag_name}, Attributes: {dom_element.attributes}')
+				self.logger.error(f'Element is not a select! Tag: {dom_element.tag_name}, Attributes: {dom_element.attributes}')
 				msg = f'Cannot select option: Element with index {index} is a {dom_element.tag_name}, not a select'
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
-			logger.debug(f"Attempting to select '{text}' using xpath: {dom_element.xpath}")
-			logger.debug(f'Element attributes: {dom_element.attributes}')
-			logger.debug(f'Element tag: {dom_element.tag_name}')
+			self.logger.debug(f"Attempting to select '{text}' using xpath: {dom_element.xpath}")
+			self.logger.debug(f'Element attributes: {dom_element.attributes}')
+			self.logger.debug(f'Element tag: {dom_element.tag_name}')
 
 			xpath = '//' + dom_element.xpath
 
@@ -569,7 +570,7 @@ class Controller(Generic[Context]):
 				frame_index = 0
 				for frame in page.frames:
 					try:
-						logger.debug(f'Trying frame {frame_index} URL: {frame.url}')
+						self.logger.debug(f'Trying frame {frame_index} URL: {frame.url}')
 
 						# First verify we can find the dropdown in this frame
 						find_dropdown_js = """
@@ -603,10 +604,10 @@ class Controller(Generic[Context]):
 
 						if dropdown_info:
 							if not dropdown_info.get('found'):
-								logger.error(f'Frame {frame_index} error: {dropdown_info.get("error")}')
+								self.logger.error(f'Frame {frame_index} error: {dropdown_info.get("error")}')
 								continue
 
-							logger.debug(f'Found dropdown in frame {frame_index}: {dropdown_info}')
+							self.logger.debug(f'Found dropdown in frame {frame_index}: {dropdown_info}')
 
 							# "label" because we are selecting by text
 							# nth(0) to disable error thrown by strict mode
@@ -616,24 +617,24 @@ class Controller(Generic[Context]):
 							)
 
 							msg = f'selected option {text} with value {selected_option_values}'
-							logger.info(msg + f' in frame {frame_index}')
+							self.logger.info(msg + f' in frame {frame_index}')
 
 							return ActionResult(extracted_content=msg, include_in_memory=True)
 
 					except Exception as frame_e:
-						logger.error(f'Frame {frame_index} attempt failed: {str(frame_e)}')
-						logger.error(f'Frame type: {type(frame)}')
-						logger.error(f'Frame URL: {frame.url}')
+						self.logger.error(f'Frame {frame_index} attempt failed: {str(frame_e)}')
+						self.logger.error(f'Frame type: {type(frame)}')
+						self.logger.error(f'Frame URL: {frame.url}')
 
 					frame_index += 1
 
 				msg = f"Could not select option '{text}' in any frame"
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
 			except Exception as e:
 				msg = f'Selection failed: {str(e)}'
-				logger.error(msg)
+				self.logger.error(msg)
 				return ActionResult(error=msg, include_in_memory=True)
 
 		@self.registry.action(
@@ -665,18 +666,18 @@ class Controller(Generic[Context]):
 
 					if source_count > 0:
 						source_element = await source_locator.first.element_handle()
-						logger.debug(f'Found source element with selector: {source_selector}')
+						self.logger.debug(f'Found source element with selector: {source_selector}')
 					else:
-						logger.warning(f'Source element not found: {source_selector}')
+						self.logger.warning(f'Source element not found: {source_selector}')
 
 					if target_count > 0:
 						target_element = await target_locator.first.element_handle()
-						logger.debug(f'Found target element with selector: {target_selector}')
+						self.logger.debug(f'Found target element with selector: {target_selector}')
 					else:
-						logger.warning(f'Target element not found: {target_selector}')
+						self.logger.warning(f'Target element not found: {target_selector}')
 
 				except Exception as e:
-					logger.error(f'Error finding elements: {str(e)}')
+					self.logger.error(f'Error finding elements: {str(e)}')
 
 				return source_element, target_element
 
@@ -713,7 +714,7 @@ class Controller(Generic[Context]):
 								int(target_box['y'] + target_box['height'] / 2),
 							)
 				except Exception as e:
-					logger.error(f'Error getting element coordinates: {str(e)}')
+					self.logger.error(f'Error getting element coordinates: {str(e)}')
 
 				return source_coords, target_coords
 
@@ -731,9 +732,9 @@ class Controller(Generic[Context]):
 					# Try to move to source position
 					try:
 						await page.mouse.move(source_x, source_y)
-						logger.debug(f'Moved to source position ({source_x}, {source_y})')
+						self.logger.debug(f'Moved to source position ({source_x}, {source_y})')
 					except Exception as e:
-						logger.error(f'Failed to move to source position: {str(e)}')
+						self.logger.error(f'Failed to move to source position: {str(e)}')
 						return False, f'Failed to move to source position: {str(e)}'
 
 					# Press mouse button down
@@ -779,7 +780,7 @@ class Controller(Generic[Context]):
 
 				# Case 1: Element selectors provided
 				if params.element_source and params.element_target:
-					logger.debug('Using element-based approach with selectors')
+					self.logger.debug('Using element-based approach with selectors')
 
 					source_element, target_element = await get_drag_elements(
 						page,
@@ -807,7 +808,7 @@ class Controller(Generic[Context]):
 					coord is not None
 					for coord in [params.coord_source_x, params.coord_source_y, params.coord_target_x, params.coord_target_y]
 				):
-					logger.debug('Using coordinate-based approach')
+					self.logger.debug('Using coordinate-based approach')
 					source_x = params.coord_source_x
 					source_y = params.coord_source_y
 					target_x = params.coord_target_x
@@ -833,7 +834,7 @@ class Controller(Generic[Context]):
 				)
 
 				if not success:
-					logger.error(f'Drag operation failed: {message}')
+					self.logger.error(f'Drag operation failed: {message}')
 					return ActionResult(error=message, include_in_memory=True)
 
 				# Create descriptive message
@@ -842,12 +843,12 @@ class Controller(Generic[Context]):
 				else:
 					msg = f'🖱️ Dragged from ({source_x}, {source_y}) to ({target_x}, {target_y})'
 
-				logger.info(msg)
+				self.logger.info(msg)
 				return ActionResult(extracted_content=msg, include_in_memory=True)
 
 			except Exception as e:
 				error_msg = f'Failed to perform drag and drop: {str(e)}'
-				logger.error(error_msg)
+				self.logger.error(error_msg)
 				return ActionResult(error=error_msg, include_in_memory=True)
 
 	# Register ---------------------------------------------------------------

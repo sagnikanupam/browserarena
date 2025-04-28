@@ -13,10 +13,10 @@ from langchain_core.messages import (
 	ToolMessage,
 )
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 
-def extract_json_from_model_output(content: str) -> dict:
+def extract_json_from_model_output(content: str, logger = logging.getLogger(__name__)) -> dict:
 	"""Extract JSON from model output, handling both plain JSON and code-block-wrapped JSON."""
 	try:
 		# If content is wrapped in code blocks, extract just the JSON part

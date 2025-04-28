@@ -33,7 +33,7 @@ from browser_use.browser.context import BrowserContext, BrowserContextConfig
 from browser_use.browser.utils.screen_resolution import get_screen_resolution, get_window_adjustments
 from browser_use.utils import time_execution_async
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 IN_DOCKER = os.environ.get('IN_DOCKER', 'false').lower()[0] in 'ty1'
 
@@ -125,8 +125,10 @@ class Browser:
 	def __init__(
 		self,
 		config: BrowserConfig | None = None,
+		logger: logging.Logger = logging.getLogger(__name__)
 	):
-		logger.debug('🌎  Initializing new browser')
+		self.logger = logger
+		self.logger.debug('🌎  Initializing new browser')
 		self.config = config or BrowserConfig()
 		self.playwright: Playwright | None = None
 		self.playwright_browser: PlaywrightBrowser | None = None
@@ -161,7 +163,7 @@ class Browser:
 			)
 		if not self.config.cdp_url:
 			raise ValueError('CDP URL is required')
-		logger.info(f'🔌  Connecting to remote browser via CDP {self.config.cdp_url}')
+		self.logger.info(f'🔌  Connecting to remote browser via CDP {self.config.cdp_url}')
 		browser_class = getattr(playwright, self.config.browser_class)
 		browser = await browser_class.connect_over_cdp(self.config.cdp_url)
 		return browser
@@ -170,7 +172,7 @@ class Browser:
 		"""Sets up and returns a Playwright Browser instance with anti-detection measures."""
 		if not self.config.wss_url:
 			raise ValueError('WSS URL is required')
-		logger.info(f'🔌  Connecting to remote browser via WSS {self.config.wss_url}')
+		self.logger.info(f'🔌  Connecting to remote browser via WSS {self.config.wss_url}')
 		browser_class = getattr(playwright, self.config.browser_class)
 		browser = await browser_class.connect(self.config.wss_url)
 		return browser
@@ -188,7 +190,7 @@ class Browser:
 			# Check if browser is already running
 			response = requests.get('http://localhost:9222/json/version', timeout=2)
 			if response.status_code == 200:
-				logger.info('🔌  Reusing existing browser found running on http://localhost:9222')
+				self.logger.info('🔌  Reusing existing browser found running on http://localhost:9222')
 				browser_class = getattr(playwright, self.config.browser_class)
 				browser = await browser_class.connect_over_cdp(
 					endpoint_url='http://localhost:9222',
@@ -196,7 +198,7 @@ class Browser:
 				)
 				return browser
 		except requests.ConnectionError:
-			logger.debug('🌎  No existing Chrome instance found, starting a new one')
+			self.logger.debug('🌎  No existing Chrome instance found, starting a new one')
 
 		# Start a new Chrome instance
 		chrome_launch_cmd = [
@@ -238,7 +240,7 @@ class Browser:
 			)
 			return browser
 		except Exception as e:
-			logger.error(f'❌  Failed to start a new Chrome instance: {str(e)}')
+			self.logger.error(f'❌  Failed to start a new Chrome instance: {str(e)}')
 			raise RuntimeError(
 				'To start chrome in Debug mode, you need to close all existing Chrome instances and try again otherwise we can not connect to the instance.'
 			)
@@ -305,14 +307,14 @@ class Browser:
 				return await self._setup_remote_wss_browser(playwright)
 
 			if self.config.headless:
-				logger.warning('⚠️ Headless mode is not recommended. Many sites will detect and block all headless browsers.')
+				self.logger.warning('⚠️ Headless mode is not recommended. Many sites will detect and block all headless browsers.')
 
 			if self.config.browser_binary_path:
 				return await self._setup_user_provided_browser(playwright)
 			else:
 				return await self._setup_builtin_browser(playwright)
 		except Exception as e:
-			logger.error(f'Failed to initialize Playwright browser: {e}')
+			self.logger.error(f'Failed to initialize Playwright browser: {e}')
 			raise
 
 	async def close(self):
@@ -334,12 +336,12 @@ class Browser:
 						proc.kill()
 					chrome_proc.kill()
 				except Exception as e:
-					logger.debug(f'Failed to terminate chrome subprocess: {e}')
+					self.logger.debug(f'Failed to terminate chrome subprocess: {e}')
 
 			# Then cleanup httpx clients
 			await self.cleanup_httpx_clients()
 		except Exception as e:
-			logger.debug(f'Failed to close browser properly: {e}')
+			self.logger.debug(f'Failed to close browser properly: {e}')
 
 		finally:
 			self.playwright_browser = None
@@ -357,7 +359,7 @@ class Browser:
 				else:
 					asyncio.run(self.close())
 		except Exception as e:
-			logger.debug(f'Failed to cleanup browser in destructor: {e}')
+			self.logger.debug(f'Failed to cleanup browser in destructor: {e}')
 
 	async def cleanup_httpx_clients(self):
 		"""Cleanup all httpx clients"""
@@ -377,4 +379,4 @@ class Browser:
 				try:
 					await client.aclose()
 				except Exception as e:
-					logger.debug(f'Error closing httpx client: {e}')
+					self.logger.debug(f'Error closing httpx client: {e}')

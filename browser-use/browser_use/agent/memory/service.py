@@ -16,7 +16,7 @@ from browser_use.agent.message_manager.service import MessageManager
 from browser_use.agent.message_manager.views import ManagedMessage, MessageMetadata
 from browser_use.utils import time_execution_sync
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 
 class MemorySettings(BaseModel):
@@ -46,12 +46,14 @@ class Memory:
 		message_manager: MessageManager,
 		llm: BaseChatModel,
 		settings: MemorySettings,
+		logger: logging.Logger = logging.getLogger(__name__),
 	):
 		self.message_manager = message_manager
 		self.llm = llm
 		self.settings = settings
 		self._memory_config = self.settings.config or self._get_default_config(llm)
 		self.mem0 = Mem0Memory.from_config(config_dict=self._memory_config)
+		self.logger = logger
 
 	@staticmethod
 	def _get_default_config(llm: BaseChatModel) -> dict:
@@ -70,7 +72,7 @@ class Memory:
 		Args:
 		    current_step: The current step number of the agent
 		"""
-		logger.info(f'Creating procedural memory at step {current_step}')
+		self.logger.info(f'Creating procedural memory at step {current_step}')
 
 		# Get all messages
 		all_messages = self.message_manager.state.history.messages
@@ -89,13 +91,13 @@ class Memory:
 
 		# Need at least 2 messages to create a meaningful summary
 		if len(messages_to_process) <= 1:
-			logger.info('Not enough non-memory messages to summarize')
+			self.logger.info('Not enough non-memory messages to summarize')
 			return
 		# Create a procedural memory
 		memory_content = self._create([m.message for m in messages_to_process], current_step)
 
 		if not memory_content:
-			logger.warning('Failed to create procedural memory')
+			self.logger.warning('Failed to create procedural memory')
 			return
 
 		# Replace the processed messages with the consolidated memory
@@ -113,7 +115,7 @@ class Memory:
 		self.message_manager.state.history.messages = new_messages
 		self.message_manager.state.history.current_tokens -= removed_tokens
 		self.message_manager.state.history.current_tokens += memory_tokens
-		logger.info(f'Messages consolidated: {len(messages_to_process)} messages converted to procedural memory')
+		self.logger.info(f'Messages consolidated: {len(messages_to_process)} messages converted to procedural memory')
 
 	def _create(self, messages: List[BaseMessage], current_step: int) -> Optional[str]:
 		parsed_messages = convert_to_openai_messages(messages)
@@ -128,5 +130,5 @@ class Memory:
 				return results.get('results', [])[0].get('memory')
 			return None
 		except Exception as e:
-			logger.error(f'Error creating procedural memory: {e}')
+			self.logger.error(f'Error creating procedural memory: {e}')
 			return None
