@@ -82,7 +82,11 @@ It must not be used for any illegal, harmful, violent, racist, or sexual purpose
 Please do not upload any private information.
 The service collects user dialogue data, including both text and images, and reserves the right to distribute it under a Creative Commons Attribution (CC-BY) or a similar license.
 
-#### Please report any bug or issue to our [Discord](https://discord.gg/6GXcFg3TH8)/arena-feedback.
+#### Please report any bug or issue in the Qualtrics form
+""" 
+
+"""
+to our [Discord](https://discord.gg/6GXcFg3TH8)/arena-feedback.
 
 ### Acknowledgment
 We thank [UC Berkeley SkyLab](https://sky.cs.berkeley.edu/), [Kaggle](https://www.kaggle.com/), [MBZUAI](https://mbzuai.ac.ae/), [a16z](https://www.a16z.com/), [Together AI](https://www.together.ai/), [Hyperbolic](https://hyperbolic.xyz/), [RunPod](https://runpod.io), [Anyscale](https://www.anyscale.com/), [HuggingFace](https://huggingface.co/) for their generous [sponsorship](https://lmsys.org/donations/).
@@ -118,7 +122,7 @@ api_endpoint_info = {}
 
 
 class State:
-    def __init__(self, model_name, is_vision=False, *, prompt_id_text: str | None = None, unique_run_index: str | None = None):
+    def __init__(self, model_name, is_vision=False, *, prompt_id_text: str | None = None, user_id_text : str | None = None, unique_run_index: str | None = None):
         self.conv = get_conversation_template(model_name)
         self.conv_id = uuid.uuid4().hex
         self.skip_next = False
@@ -136,6 +140,7 @@ class State:
             self.regen_support = False
         self.init_system_prompt(self.conv, is_vision)
         self.prompt_id = prompt_id_text
+        self.user_id = user_id_text
         self.unique_run_index = unique_run_index
 
     def update_ans_models(self, ans: str) -> None:
@@ -217,6 +222,8 @@ def get_model_list(controller_url, register_api_endpoint_file, vision_arena):
     global api_endpoint_info
 
     # Add models from the controller
+    
+    
     if controller_url:
         ret = requests.post(controller_url + "/refresh_all_workers")
         assert ret.status_code == 200
@@ -569,6 +576,8 @@ def bot_response(
     
     task_prompt = prompt[0]["content"]
     prompt_id_text = state.prompt_id
+    user_id_text = state.user_id
+    model_name = state.model_name
     unique_run_index = state.unique_run_index if state.unique_run_index != None else "None"
     
     asyncio.run(call_browser(task_prompt=task_prompt, model = model_name, unique_run_index = unique_run_index, anonymous=anonymous))
@@ -585,11 +594,10 @@ def bot_response(
         text_output = f.read()
         image = '\n' + f'<img src="/gradio_api/file=gifs/{unique_run_index}.gif" alt="GIF" />'
         with open(f"prompts_and_outputs/{unique_run_index}.json", "w") as f:
-            json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}"}, f)
+            json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}", "user_id": user_id_text, "model_name": model_name}, f)
             text_output = text_output.replace("```", "\n```\n")
             text_output = text_output.replace("$$", "\n$$\n")
-            
-        output = text_output + image
+        output = text_output + image + "\n Log ID: " + unique_run_index
     
     conv.update_last_message(output)
     yield (state, state.to_gradio_chatbot()) + (enable_btn,) * 5
@@ -888,60 +896,63 @@ def get_model_description_md(models):
 
 
 def build_about():
-    about_markdown = """
-# About Us
-Chatbot Arena ([lmarena.ai](https://lmarena.ai)) is an open-source platform for evaluating AI through human preference, developed by researchers at UC Berkeley [SkyLab](https://sky.cs.berkeley.edu/) and [LMSYS](https://lmsys.org). We open-source the [FastChat](https://github.com/lm-sys/FastChat) project at GitHub and release open datasets. We always welcome contributions from the community. If you're interested in getting involved, we'd love to hear from you!
+    about_markdown = """"""
+    """
+    # About Us
+    Chatbot Arena ([lmarena.ai](https://lmarena.ai)) is an open-source platform for evaluating AI through human preference, developed by researchers at UC Berkeley [SkyLab](https://sky.cs.berkeley.edu/) and [LMSYS](https://lmsys.org). We open-source the [FastChat](https://github.com/lm-sys/FastChat) project at GitHub and release open datasets. We always welcome contributions from the community. If you're interested in getting involved, we'd love to hear from you!
 
-## Open-source contributors
-- Leads: [Wei-Lin Chiang](https://infwinston.github.io/), [Anastasios Angelopoulos](https://people.eecs.berkeley.edu/~angelopoulos/)
-- Contributors: [Lianmin Zheng](https://lmzheng.net/), [Ying Sheng](https://sites.google.com/view/yingsheng/home), [Lisa Dunlap](https://www.lisabdunlap.com/), [Christopher Chou](https://www.linkedin.com/in/chrisychou), [Tianle Li](https://codingwithtim.github.io/), [Evan Frick](https://efrick2002.github.io/), [Dacheng Li](https://dachengli1.github.io/), [Siyuan Zhuang](https://www.linkedin.com/in/siyuanzhuang)
-- Advisors: [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/), [Joseph E. Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/), [Hao Zhang](https://cseweb.ucsd.edu/~haozhang/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/)
+    ## Open-source contributors
+    - Leads: [Wei-Lin Chiang](https://infwinston.github.io/), [Anastasios Angelopoulos](https://people.eecs.berkeley.edu/~angelopoulos/)
+    - Contributors: [Lianmin Zheng](https://lmzheng.net/), [Ying Sheng](https://sites.google.com/view/yingsheng/home), [Lisa Dunlap](https://www.lisabdunlap.com/), [Christopher Chou](https://www.linkedin.com/in/chrisychou), [Tianle Li](https://codingwithtim.github.io/), [Evan Frick](https://efrick2002.github.io/), [Dacheng Li](https://dachengli1.github.io/), [Siyuan Zhuang](https://www.linkedin.com/in/siyuanzhuang)
+    - Advisors: [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/), [Joseph E. Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/), [Hao Zhang](https://cseweb.ucsd.edu/~haozhang/), [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/)
 
-## Learn more
-- Chatbot Arena [paper](https://arxiv.org/abs/2403.04132), [launch blog](https://blog.lmarena.ai/blog/2023/arena/), [dataset](https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md), [policy](https://blog.lmarena.ai/blog/2024/policy/)
-- LMSYS-Chat-1M dataset [paper](https://arxiv.org/abs/2309.11998), LLM Judge [paper](https://arxiv.org/abs/2306.05685)
+    ## Learn more
+    - Chatbot Arena [paper](https://arxiv.org/abs/2403.04132), [launch blog](https://blog.lmarena.ai/blog/2023/arena/), [dataset](https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md), [policy](https://blog.lmarena.ai/blog/2024/policy/)
+    - LMSYS-Chat-1M dataset [paper](https://arxiv.org/abs/2309.11998), LLM Judge [paper](https://arxiv.org/abs/2306.05685)
 
-## Contact Us
-- Follow our [X](https://x.com/lmsysorg), [Discord](https://discord.gg/6GXcFg3TH8) or email us at `lmarena.ai@gmail.com`
-- File issues on [GitHub](https://github.com/lm-sys/FastChat)
-- Download our datasets and models on [HuggingFace](https://huggingface.co/lmsys)
+    ## Contact Us
+    - Follow our [X](https://x.com/lmsysorg), [Discord](https://discord.gg/6GXcFg3TH8) or email us at `lmarena.ai@gmail.com`
+    - File issues on [GitHub](https://github.com/lm-sys/FastChat)
+    - Download our datasets and models on [HuggingFace](https://huggingface.co/lmsys)
 
-## Acknowledgment
-We thank [SkyPilot](https://github.com/skypilot-org/skypilot) and [Gradio](https://github.com/gradio-app/gradio) team for their system support.
-We also thank [UC Berkeley SkyLab](https://sky.cs.berkeley.edu/), [Kaggle](https://www.kaggle.com/), [MBZUAI](https://mbzuai.ac.ae/), [a16z](https://www.a16z.com/), [Together AI](https://www.together.ai/), [Hyperbolic](https://hyperbolic.xyz/), [RunPod](https://runpod.io), [Anyscale](https://www.anyscale.com/), [HuggingFace](https://huggingface.co/) for their generous sponsorship. Learn more about partnership [here](https://lmsys.org/donations/).
+    ## Acknowledgment
+    We thank [SkyPilot](https://github.com/skypilot-org/skypilot) and [Gradio](https://github.com/gradio-app/gradio) team for their system support.
+    We also thank [UC Berkeley SkyLab](https://sky.cs.berkeley.edu/), [Kaggle](https://www.kaggle.com/), [MBZUAI](https://mbzuai.ac.ae/), [a16z](https://www.a16z.com/), [Together AI](https://www.together.ai/), [Hyperbolic](https://hyperbolic.xyz/), [RunPod](https://runpod.io), [Anyscale](https://www.anyscale.com/), [HuggingFace](https://huggingface.co/) for their generous sponsorship. Learn more about partnership [here](https://lmsys.org/donations/).
 
-<div class="sponsor-image-about">
-    <img src="https://storage.googleapis.com/public-arena-asset/skylab.png" alt="SkyLab">
-    <img src="https://storage.googleapis.com/public-arena-asset/kaggle.png" alt="Kaggle">
-    <img src="https://storage.googleapis.com/public-arena-asset/mbzuai.jpeg" alt="MBZUAI">
-    <img src="https://storage.googleapis.com/public-arena-asset/a16z.jpeg" alt="a16z">
-    <img src="https://storage.googleapis.com/public-arena-asset/together.png" alt="Together AI">
-    <img src="https://storage.googleapis.com/public-arena-asset/hyperbolic_logo.png" alt="Hyperbolic">
-    <img src="https://storage.googleapis.com/public-arena-asset/runpod-logo.jpg" alt="RunPod">
-    <img src="https://storage.googleapis.com/public-arena-asset/anyscale.png" alt="AnyScale">
-    <img src="https://storage.googleapis.com/public-arena-asset/huggingface.png" alt="HuggingFace">
-</div>
-"""
+    <div class="sponsor-image-about">
+        <img src="https://storage.googleapis.com/public-arena-asset/skylab.png" alt="SkyLab">
+        <img src="https://storage.googleapis.com/public-arena-asset/kaggle.png" alt="Kaggle">
+        <img src="https://storage.googleapis.com/public-arena-asset/mbzuai.jpeg" alt="MBZUAI">
+        <img src="https://storage.googleapis.com/public-arena-asset/a16z.jpeg" alt="a16z">
+        <img src="https://storage.googleapis.com/public-arena-asset/together.png" alt="Together AI">
+        <img src="https://storage.googleapis.com/public-arena-asset/hyperbolic_logo.png" alt="Hyperbolic">
+        <img src="https://storage.googleapis.com/public-arena-asset/runpod-logo.jpg" alt="RunPod">
+        <img src="https://storage.googleapis.com/public-arena-asset/anyscale.png" alt="AnyScale">
+        <img src="https://storage.googleapis.com/public-arena-asset/huggingface.png" alt="HuggingFace">
+    </div>
+    """
     gr.Markdown(about_markdown, elem_id="about_markdown")
 
 
 def build_single_model_ui(models, add_promotion_links=False):
     promotion = (
-        f"""
-[Blog](https://blog.lmarena.ai/blog/2023/arena/) | [GitHub](https://github.com/lm-sys/FastChat) | [Paper](https://arxiv.org/abs/2403.04132) | [Dataset](https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md) | [Twitter](https://twitter.com/lmsysorg) | [Discord](https://discord.gg/6GXcFg3TH8) | [Kaggle Competition](https://www.kaggle.com/competitions/lmsys-chatbot-arena)
-
-{SURVEY_LINK}
-
-## 👇 Choose any model to chat
-"""
+        f""""""
         if add_promotion_links
         else ""
     )
+    """        
+    [Blog](https://blog.lmarena.ai/blog/2023/arena/) | [GitHub](https://github.com/lm-sys/FastChat) | [Paper](https://arxiv.org/abs/2403.04132) | [Dataset](https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md) | [Twitter](https://twitter.com/lmsysorg) | [Discord](https://discord.gg/6GXcFg3TH8) | [Kaggle Competition](https://www.kaggle.com/competitions/lmsys-chatbot-arena)
 
-    notice_markdown = f"""
-# 🏔️ Chatbot Arena (formerly LMSYS): Free AI Chat to Compare & Test Best AI Chatbots
-{promotion}
-"""
+    {SURVEY_LINK}
+
+    ## 👇 Choose any model to chat
+    """
+
+    notice_markdown = """""" 
+    # f"""
+    # # 🏔️ Chatbot Arena (formerly LMSYS): Free AI Chat to Compare & Test Best AI Chatbots
+    # {promotion}
+    # """
 
     state = gr.State()
     gr.Markdown(notice_markdown, elem_id="notice_markdown")

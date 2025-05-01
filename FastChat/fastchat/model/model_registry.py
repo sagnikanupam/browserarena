@@ -65,9 +65,27 @@ register_model_info(
 
 register_model_info(
     [
+        "x-ai/grok-3-beta",
+    ],
+    "Grok 3 Beta",
+    "https://x.ai/news/grok-3",
+    "Grok 3 Beta by xAI",
+)
+
+register_model_info(
+    [
         "claude-3-5-sonnet-20240620",
     ],
     "Claude 3.5",
+    "https://www.anthropic.com/news/claude-3-5-sonnet",
+    "Claude by Anthropic",
+)
+
+register_model_info(
+    [
+        "anthropic/claude-3.7-sonnet:thinking",
+    ],
+    "Claude 3.7 Sonnet: Thinking",
     "https://www.anthropic.com/news/claude-3-5-sonnet",
     "Claude by Anthropic",
 )
@@ -91,6 +109,15 @@ register_model_info(
 
 register_model_info(
     [
+        "meta-llama/llama-4-maverick",
+    ],
+    "Llama 4 Maverick",
+    "https://llama.meta.com/",
+    "Open foundation and chat models by Meta",
+)
+
+register_model_info(
+    [
         "gemini-1.5-pro-exp-0827",
         "gemini-1.5-pro-exp-0801",
         "gemini-1.5-flash-exp-0827",
@@ -102,6 +129,7 @@ register_model_info(
         "gemini-1.5-pro-api-0514",
         "gemini-1.5-flash-api-0514",
         "gemini-advanced-0514",
+        "google/gemini-2.5-pro-preview-03-25", 
     ],
     "Gemini",
     "https://deepmind.google/technologies/gemini/",
@@ -164,6 +192,15 @@ register_model_info(
     "Claude",
     "https://www.anthropic.com/news/claude-3-family",
     "Claude by Anthropic",
+)
+
+register_model_info(
+    [
+        "deepseek/deepseek-r1",
+    ],
+    "DeepSeek R1",
+    "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+    "An advanced code model by DeepSeek",
 )
 
 register_model_info(
@@ -999,4 +1036,13 @@ register_model_info(
     "consistency-llm",
     "https://huggingface.co/cllm",
     "consistency-llm is a new generation of parallel decoder LLMs with fast generation speed.",
+)
+
+register_model_info(
+    [
+        "openai/o4-mini",
+    ],
+    "O4-Mini",
+    "https://openai.com/index/introducing-o3-and-o4-mini/",
+    "OpenAI o4-mini is a smaller model than o3 optimized for fast, cost-efficient reasoning."
 )

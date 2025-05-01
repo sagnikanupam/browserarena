@@ -273,7 +273,7 @@ def get_battle_pair(
 
 
 def add_text(
-    state0, state1, model_selector0, model_selector1, text, prompt_id_text, request: gr.Request
+    state0, state1, model_selector0, model_selector1, text, prompt_id_text, user_id_text, request: gr.Request
 ):
     ip = get_ip(request)
     logger.info(f"add_text (anony). ip: {ip}. len: {len(text)}")
@@ -301,8 +301,8 @@ def add_text(
         unique_run_index_2 = f"{unique_identifier_2}_{random_suffix_2}"
         
         states = [
-            State(model_left, prompt_id_text = prompt_id_text, unique_run_index = unique_run_index_1),
-            State(model_right, prompt_id_text = prompt_id_text, unique_run_index = unique_run_index_2),
+            State(model_left, prompt_id_text = prompt_id_text, user_id_text = user_id_text, unique_run_index = unique_run_index_1),
+            State(model_right, prompt_id_text = prompt_id_text, user_id_text = user_id_text, unique_run_index = unique_run_index_2),
         ]
 
     if len(text) <= 0:
@@ -311,7 +311,7 @@ def add_text(
         return (
             states
             + [x.to_gradio_chatbot() for x in states]
-            + [""] * 2
+            + [""] * 3
             + [
                 no_change_btn,
             ]
@@ -326,11 +326,11 @@ def add_text(
     all_conv_text = (
         all_conv_text_left[-1000:] + all_conv_text_right[-1000:] + "\nuser: " + text
     )
-    flagged = moderation_filter(all_conv_text, model_list)
-    if flagged:
-        logger.info(f"violate moderation (anony). ip: {ip}. text: {text}")
-        # overwrite the original text
-        text = MODERATION_MSG
+    # flagged = moderation_filter(all_conv_text, model_list)
+    # if flagged:
+    #    logger.info(f"violate moderation (anony). ip: {ip}. text: {text}")
+    #    # overwrite the original text
+    #    text = MODERATION_MSG
 
     conv = states[0].conv
     if (len(conv.messages) - conv.offset) // 2 >= CONVERSATION_TURN_LIMIT:
@@ -341,7 +341,7 @@ def add_text(
             states
             + [x.to_gradio_chatbot() for x in states]
             + [CONVERSATION_LIMIT_MSG]
-            + [""]
+            + [""]*2
             + [
                 no_change_btn,
             ]
@@ -353,6 +353,7 @@ def add_text(
         states[i].conv.append_message(states[i].conv.roles[0], text)
         states[i].conv.append_message(states[i].conv.roles[1], None)
         states[i].prompt_id = prompt_id_text
+        states[i].user_id = user_id_text
         states[i].skip_next = False
 
     hint_msg = ""
@@ -362,7 +363,7 @@ def add_text(
     return (
         states
         + [x.to_gradio_chatbot() for x in states]
-        + [""]*2
+        + [""]*3
         + [
             disable_btn,
         ]
@@ -495,21 +496,9 @@ def bot_response_multi(
 
 def build_side_by_side_ui_anony(models):
     notice_markdown = f"""
-# ⚔️  Chatbot Arena (formerly LMSYS): Free AI Chat to Compare & Test Best AI Chatbots
-[Blog](https://blog.lmarena.ai/blog/2023/arena/) | [GitHub](https://github.com/lm-sys/FastChat) | [Paper](https://arxiv.org/abs/2403.04132) | [Dataset](https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md) | [Twitter](https://twitter.com/lmsysorg) | [Discord](https://discord.gg/6GXcFg3TH8) | [Kaggle Competition](https://www.kaggle.com/competitions/lmsys-chatbot-arena)
+# ⚔️  BrowserArena
 
-{SURVEY_LINK}
-
-## 📣 News
-- Chatbot Arena now supports images in beta. Check it out [here](https://lmarena.ai/?vision).
-
-## 📜 How It Works
-- **Blind Test**: Ask any question to two anonymous AI chatbots (ChatGPT, Gemini, Claude, Llama, and more).
-- **Vote for the Best**: Choose the best response. You can keep chatting until you find a winner.
-- **Play Fair**: If AI identity reveals, your vote won't count.
-
-## 🏆 Chatbot Arena LLM [Leaderboard](https://lmarena.ai/leaderboard)
-- Backed by over **1,000,000+** community votes, our platform ranks the best LLM and AI chatbots. Explore the top AI models on our LLM [leaderboard](https://lmarena.ai/leaderboard)!
+# A battle arena for AI agents to perform web search tasks.
 
 ## 👇 Chat now!
 """
@@ -567,16 +556,22 @@ def build_side_by_side_ui_anony(models):
     with gr.Row():
         textbox = gr.Textbox(
             show_label=False,
-            placeholder="👉 Enter your prompt and press ENTER",
+            placeholder="👉 Enter your prompt or task description",
             elem_id="input_box",
+        )
+        user_id_box = gr.Textbox(
+            show_label=False,
+            placeholder="👉 Enter your User ID or MTurk Worker ID",
+            elem_id="user_id_box",
         )
         prompt_id_box = gr.Textbox(
             show_label=False,
-            placeholder="👉 Enter the prompt ID",
+            placeholder="👉 Enter a Task ID to uniquely identify this task",
             elem_id="prompt_id_box",
-        ) 
+        )
         send_btn = gr.Button(value="Send", variant="primary", scale=0)
-
+    
+    """
     with gr.Row():
         left_steps_box = gr.Textbox(
             show_label=False,
@@ -594,7 +589,8 @@ def build_side_by_side_ui_anony(models):
             elem_id="input_box",
         )
         feedback_send_btn = gr.Button(value="Send Feedback", variant="primary", scale=0)
-    
+    """
+
     with gr.Row() as button_row:
         clear_btn = gr.Button(value="🎲 New Round", interactive=False)
         regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
@@ -709,8 +705,8 @@ function (a, b, c, d) {
 
     prompt_id_box.submit(
         add_text,
-        states + model_selectors + [textbox, prompt_id_box],
-        states + chatbots + [textbox, prompt_id_box] + btn_list,
+        states + model_selectors + [textbox, prompt_id_box, user_id_box],
+        states + chatbots + [textbox, prompt_id_box, user_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
@@ -720,8 +716,8 @@ function (a, b, c, d) {
     )
     send_btn.click(
         add_text,
-        states + model_selectors + [textbox, prompt_id_box],
-        states + chatbots + [textbox, prompt_id_box] + btn_list,
+        states + model_selectors + [textbox, prompt_id_box, user_id_box],
+        states + chatbots + [textbox, prompt_id_box, user_id_box] + btn_list,
     ).then(
         bot_response_multi,
         states + [temperature, top_p, max_output_tokens],
@@ -730,6 +726,7 @@ function (a, b, c, d) {
         flash_buttons, [], btn_list
     )
     
+    """
     right_steps_box.submit(
         add_feedback,
         states + [left_steps_box, right_steps_box, user_id_box],
@@ -744,5 +741,6 @@ function (a, b, c, d) {
     ).then(
         flash_buttons, [], btn_list
     )
+    """
 
     return states + model_selectors

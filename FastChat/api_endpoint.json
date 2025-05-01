@@ -1,16 +1,44 @@
 {
-    "deepseek/deepseek-r1:free": {
-        "model_name": "deepseek/deepseek-r1:free",
+    "deepseek/deepseek-r1": {
+        "model_name": "deepseek/deepseek-r1",
         "api_base": "",
         "api_type": "",
         "api_key": "",
-        "anony_only": false
+        "anony_only": true
     },
-    "meta-llama/llama-4-maverick:free": {
-        "model_name": "meta-llama/llama-4-maverick:free",
+    "meta-llama/llama-4-maverick": {
+        "model_name": "meta-llama/llama-4-maverick",
         "api_base": "",
         "api_type": "",
         "api_key": "",
-        "anony_only": false
+        "anony_only": true
+    },
+    "anthropic/claude-3.7-sonnet:thinking": {
+        "model_name": "anthropic/claude-3.7-sonnet:thinking",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": true
+    },
+    "x-ai/grok-3-beta": {
+        "model_name": "x-ai/grok-3-beta",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": true
+    },
+    "google/gemini-2.5-pro-preview-03-25": {
+        "model_name": "google/gemini-2.5-pro-preview-03-25",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": true
+    },
+    "openai/o4-mini": {
+        "model_name": "openai/o4-mini",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": true
     }
 }
