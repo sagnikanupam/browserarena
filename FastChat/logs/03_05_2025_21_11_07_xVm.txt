@@ -1,0 +1,24 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the capital of France?
+📍 Step 1
+🤷 Eval: Unknown - Starting fresh session on a blank page with no prior actions
+🧠 Memory: Step 1/15: Initiated task. Need to search for the answer to 'What is the capital of France?'. 0 searches performed so far.
+🎯 Next goal: Search Google for 'capital of France' to find answer
+🛠️  Action 1/1: {"search_google":{"query":"capital of France"}}
+🔍  Searched for "capital of France" in Google
+📍 Step 2
+👍 Eval: Success - Google search for 'capital of France' returned relevant results
+🧠 Memory: Step 2/15: Found multiple search results confirming Paris as the capital. 1 search performed. Ready to extract answer.
+🎯 Next goal: Extract confirmation of France's capital from search results
+🛠️  Action 1/2: {"extract_content":{"goal":"Extract text confirming the capital of France from the first search result","should_strip_link_urls":true}}
+🛠️  Action 2/2: {"done":{"text":"The capital of France is Paris, as confirmed by multiple search results including Wikipedia and Britannica.","success":true}}
+📄  Extracted from page
+: ```json
+{
+  "capital_confirmation": "Paris is the capital and largest city of France."
+}
+```
+
+📄 Result: The capital of France is Paris, as confirmed by multiple search results including Wikipedia and Britannica.
+✅ Task completed
+✅ Successfully

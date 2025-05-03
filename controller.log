@@ -25,3 +25,12 @@
 2025-05-03 13:46:12 | ERROR | stderr |   File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
 2025-05-03 13:46:12 | ERROR | stderr |     lock.acquire()
 2025-05-03 13:46:12 | ERROR | stderr | KeyboardInterrupt:
+2025-05-03 19:05:14 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m64473[0m]
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42014 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42030 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42044 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42052 - "[1mPOST /list_multimodal_models HTTP/1.1[0m" [32m200 OK[0m
