@@ -1042,7 +1042,7 @@ register_model_info(
     [
         "openai/o4-mini",
     ],
-    "O4-Mini",
+    "o4-Mini",
     "https://openai.com/index/introducing-o3-and-o4-mini/",
     "OpenAI o4-mini is a smaller model than o3 optimized for fast, cost-efficient reasoning."
 )

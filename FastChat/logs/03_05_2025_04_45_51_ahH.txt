@@ -1,0 +1,511 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Germini
+📍 Step 1
+🤷 Eval: No previous goal to evaluate. Starting fresh.
+🧠 Memory: Starting with the new task 'Germini'. I need to understand what this task entails and what steps are required to complete it. Currently, I am on a blank page.
+🎯 Next goal: Navigate to Google and search for information related to 'Germini'
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+🔗  Navigated to https://www.google.com
+📍 Step 2
+👍 Eval: Success - I navigated to Google's homepage
+🧠 Memory: I have navigated to Google's homepage. Now, I need to search for information related to 'Germini'
+🎯 Next goal: Search for 'Germini' using Google's search functionality
+🛠️  Action 1/1: {"input_text":{"index":6,"text":"Germini"}}
+⌨️  Input Germini into index 6
+📍 Step 3
+👍 Eval: Success - I input 'Germini' into the search box
+🧠 Memory: I have input 'Germini' into the search box on Google's homepage. Now, I need to initiate the search.
+🎯 Next goal: Submit the search query to retrieve results related to 'Germini'
+🛠️  Action 1/1: {"click_element_by_index":{"index":23}}
+🖱️  Clicked button with index 23: 
+📍 Step 4
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success - I have successfully searched for \'Germini\' on Google", "memory": "The search results for \'Germini\' include information about Gemini, a generative AI chatbot developed by Google, as well as references to flower-related products. I need to analyze these results to determine their relevance to the task.", "next_goal": "Extract relevant information from the search results about \'Germini\'"}, "action": [{"extract_content": {"goal": "Extract information about Gemini AI and any other relevant information from the search results"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 120, 'prompt_tokens': 6540, 'total_tokens': 6660, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': 'fp_a7761c5fa9', 'id': 'gen-1746247635-Men63v6FTfLPneuvHIh0', 'finish_reason': 'stop', 'logprobs': None} id='run-12f17527-cb6c-4558-911f-b3c0f19da329-0' usage_metadata={'input_tokens': 6540, 'output_tokens': 120, 'total_tokens': 6660, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract informa...rom the search results'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success - I have successfully searched for \'Germini\' on Google", "memory": "The search results for \'Germini\' include information about Gemini, a generative AI chatbot developed by Google, as well as references to Germini in the context of flowers (Gerbera). I need to determine which context is relevant to the task.", "next_goal": "Extract relevant information about \'Germini\' from the search results"}, "action": [{"extract_content": {"goal": "Extract information about Gemini, the AI chatbot developed by Google"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 122, 'prompt_tokens': 6558, 'total_tokens': 6680, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': 'fp_a7761c5fa9', 'id': 'gen-1746247638-VCbJiGjh9icgK3cuHvso', 'finish_reason': 'stop', 'logprobs': None} id='run-a8e8b9c4-6daa-48b9-b8ca-4f1a852b7245-0' usage_metadata={'input_tokens': 6558, 'output_tokens': 122, 'total_tokens': 6680, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract informa...ot developed by Google'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+👍 Eval: Success - I have searched for 'Germini' on Google and retrieved relevant results
+🧠 Memory: The search results for 'Germini' have been retrieved. The top results include information about 'Gemini', which is related to Google's AI chatbot, formerly known as Bard. There are also results related to 'Germini' flowers.
+🎯 Next goal: Extract relevant information from the search results to understand what 'Germini' refers to
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract information about 'Germini' from the search results","should_strip_link_urls":false}}
+📄  Extracted from page
+: Germini - Google Search 
+
+Please click [here](/httpservice/retry/enablejs?sei=zJ8VaLvaL9yhptQP3fT1sQ0) if you are not redirected within a few seconds.
+
+Accessibility Links
+===================
+
+Skip to main content[Accessibility help](https://support.google.com/websearch/answer/181196?hl=en)
+
+Accessibility feedback
+
+Press / to jump to the search box
+
+Germini
+
+Choose what you’re giving feedback on
+
+- Delete
+- ---
+
+  See more
+
+  ![]()
+
+  ![]()![]()
+- Delete
+
+---
+
+See more
+
+![]()
+
+![]()![]()
+
+Report inappropriate predictions
+
+Quick Settings
+
+[Sign in](https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DGermini%26sca_esv%3D87f4b43c6e5f5118%26source%3Dhp%26ei%3DwJ8VaOiiF7ugptQP45i1kAw%26iflsig%3DACkRmUkAAAAAaBWt0L32WJJX4m5ljCgiZPDgCyHjBVc3%26ved%3D0ahUKEwjogvWmv4aNAxU7kIkEHWNMDcIQ4dUDCA8%26oq%3DGermini%26gs_lp%3DEgdnd3Mtd2l6IgdHZXJtaW5pMhAQABiABBixAxiDARjJAxgKMg0QABiABBixAxiDARgKMg0QABiABBixAxiDARgKMg0QABiABBixAxiDARgKMg0QABiABBixAxiDARgKMgoQABiABBixAxgKMgoQABiABBixAxgKMgsQABiABBiSAxiKBTIKEC4YgAQYsQMYCjINEAAYgAQYsQMYgwEYCkiXMVAAWABwAHgAkAEAmAFFoAFFqgEBMbgBDMgBAPgBAZgCAaACVpgDAJIHATGgB_UJsgcBMbgHVg%26sclient%3Dgws-wiz%26sei%3Dy58VaIv-KeOiptQPueK8mQU&ec=GAZAAQ)
+
+Filters and Topics
+==================
+
+All
+
+[Images](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQtKgLegQIHxAB)
+
+[Videos](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=7&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQtKgLegQIHhAB)
+
+[News](/search?sca_esv=87f4b43c6e5f5118&q=Germini&tbm=nws&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ0pQJegQIHRAB)
+
+[Shopping](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=28&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&ved=1t:220175&ictx=111)
+
+[Short videos](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=39&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQs6gLegQIGxAB)
+
+[Maps](https://maps.google.com/maps?sca_esv=87f4b43c6e5f5118&output=search&q=Germini&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&entry=mc&ved=1t:200715&ictx=111)
+
+More
+
+[Forums](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=18&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQs6gLegQIaRAB)
+
+[Web](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=14&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQs6gLegQIaBAB)
+
+[Books](/search?sca_esv=87f4b43c6e5f5118&q=Germini&udm=36&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i29MHIoj62rC0KLNSn9Sz5z21EEXLYPrirt-CNWhNAN6Edz2gDLUupOZz08EpaPxxYRoWHLtXI9IAmZ-HAT8GoGf6iWFwBCAC1EhtX31sa2kkgqyuh8unt2H9L9lEi7cKOBZnNBg&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ0pQJegQIZxAB)
+
+Tools
+
+Any time
+
+[Any time](#)
+
+[Past hour](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=qdr:h&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEAY)
+
+[Past 24 hours](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=qdr:d&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEAc)
+
+[Past week](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=qdr:w&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEAg)
+
+[Past month](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=qdr:m&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEAk)
+
+[Past year](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=qdr:y&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEAo)
+
+Custom range...
+
+Custom date range
+
+FromTo
+
+Go
+
+All results
+
+[All results](#)
+
+[Verbatim](/search?q=Germini&sca_esv=87f4b43c6e5f5118&source=lnt&tbs=li:1&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQpwV6BAgEEBE)
+
+Advanced Search
+
+About 0 results (0.11s)
+
+Ctrl+Shift+X to select
+
+Including results for [***Gemini***](/search?sca_esv=87f4b43c6e5f5118&q=Gemini&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ7xYoAHoECAkQAQ)  
+Search only for [Germini](/search?sca_esv=87f4b43c6e5f5118&q=Germini&nirf=Gemini&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8BYoAXoECAkQAg)
+
+Search Results
+==============
+
+Web Result with Site Links
+--------------------------
+
+[### Gemini
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAdVBMVEX////5+Pzi4vKztuC0u+JpdclffM2prdxhdspVfM2cteLFxeZgbsdif85Yg9E6ftC2zeywq9tma8VThtJKitUphdWPvOfo4fHCtN5+bMNxb8ZsestFjNY8kdkmkdoil96bzO/X6/n2+v1RdMsRjdqw0u+dxOoXwiEkAAAAa0lEQVR4AdXLgxHAUAAD0NS27e6/YXEuMsB/5wACkyRwsgxOUcFpOijDtGwQjuv5QYhfUez5SZrln0IqyqpurrLt+mGc5ndZa/ex64ZPeTMWP227NcevMLi6DYTd3j+m7cHtO7hpAjfPENcJ+wwG2aDUGTgAAAAASUVORK5CYII=)
+
+Gemini
+
+https://gemini.google.com](https://gemini.google.com/)
+
+Gemini
+
+https://gemini.google.com
+
+Bard is now Gemini. Get help with writing, planning, learning, and more from Google AI.
+
+|  |
+| --- |
+| [Google's Gemini App](https://gemini.google.com/app)  Bard is now Gemini. Get help with writing, planning, learning, and ... |
+| [Advanced one](https://one.google.com/explore-plan/gemini-advanced)  Sign in. Use your Google Account. Email or phone. Forgot email ... |
+| [More results from google.com »](/search?q=Germini+site:google.com&sca_esv=87f4b43c6e5f5118&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQrAN6BAgLEAE) | |
+
+People also ask
+
+Are gerbera and germini the same?
+
+**Gerbera are available in two sizes - Large Gebera, simply called 'gerbera' and Mini Gerbera, called 'germini'**. Large gerbera are available in diameters up to 12cm and germini up to 7cm. gerbera & germini are the 5th most popular cut flower in the world and are available in lots of varieties and colours.
+
+[### Germinis | Gerbera - Judith Goss Florists
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAYFBMVEX/AJn/AJf/AJb/AJj/Wrj/DZ3/AJX/VLb/cMD/X7n/S7L/////Lqj/AJP/h8v/7/r/zuz/AJH/3/P/sOD/5/j/Z7z/AKL/NbL/JqX/2fH/fMb/kNH/s93/9v7/p9v/gskThcfQAAAAZUlEQVR4Aa1LhQHAMAijLsDc9f8vR3dDcSJQKVRpbQC0LicY64wP0RlnU/5JJG6w7XrCYWQRaAGmeVk1Yd7ECF6Algb0hPvhgYcTl767cgF6L3y8H69oaF+/7cUA3gusWKZhqBMfNn0EdQz4+PYAAAAASUVORK5CYII=)
+
+Judith Goss Florists
+
+https://www.judithgossflorists.co.uk › germinis-gerbera\_...](https://www.judithgossflorists.co.uk/germinis-gerbera_196_0.htm#:~:text=Gerbera%20are%20available%20in%20two,lots%20of%20varieties%20and%20colours.)
+
+Judith Goss Florists
+
+https://www.judithgossflorists.co.uk › germinis-gerbera\_...
+
+What is Gemini used for?
+
+Chat with Gemini to supercharge your ideas. Your Gemini mobile app gives you direct access to Google's best family of AI models on your device so you can: Get help with writing, brainstorming, learning, and more. Summarize and find quick info from Gmail or Google Drive.
+
+[### What you can do with your Gemini mobile app - Android - Google Help
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABuklEQVR4AYWTA69cQRhAt1bU31HbdhvVtm1HtW3btm3bQY3VM67mdCZvZ42T3Ds+39AVjRCiquM4m+T3RX5m4Pssv41AZVcigNKy0zZSoOQySKl4g+8ACMMg9+g+/MN742lbH3eruviH9CDn0G7VpiW3IiQ6suP+i39gN9zNasT90qeMQqOWFFyzjuwb0EV1xNOmHtlb12G+foH59hXZ29bj69MB+8c3oqisom8CsF6sxtuhFu6WteWgl/EWH28/1ivBFwD7UQ2M06XJ3TsSUqMFH5XABLCul8G6WgzhPU84TedlE/3NPJynBUZIcK10gcBzLqVg8v5IwWeAjLvl8V0ty8lXy0jE7OP5KMGyc/la8MEVuGE8e7+I1ofbUftwF5673xHNx98OLRcUzODOR1sL1rqAygCGbdL1wniqH+xI3cPdWPVyN0//vZWy92x5e5i2ezbRZH46Q7flIgQKmYqK+iJtAviX46VbQBLv63ZiOX/ThY6+LvwBlVLXE8BwTA58Okvvy1Ooe6QbajbdL05g27uj5FrBtd8ASqqx0ZJNpEBF1oPjAlRWN0x+H+VnBL4P8lsbXHMY/wFxRv0mPHK4mAAAAABJRU5ErkJggg==)
+
+Google Help
+
+https://support.google.com › gemini › answer](https://support.google.com/gemini/answer/14579631?hl=en&co=GENIE.Platform%3DAndroid#:~:text=Chat%20with%20Gemini%20to%20supercharge,from%20Gmail%20or%20Google%20Drive)
+
+Google Help
+
+https://support.google.com › gemini › answer
+
+Is Gemini AI better than ChatGPT?
+
+While both models produce high-quality content, Gemini is noted for its imaginative responses. **ChatGPT is more terse, concise and accurate in its summaries than Gemini**. The model also enables uploads. Gemini doesn't support file uploads.Feb 28, 2025
+
+[### Gemini vs. ChatGPT: What's the difference? | Informa TechTarget
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEX9/f3////x8/bM0tn5+vvg5ens8PJgcYQAAACvtr+2vcXEy9IyTmrX3OIAADA8Umx2hZbR192KlaIAADZZa4AqTWzFzNMAIUkAAB0ALlQAG0RJYXoAADOVn6tMXnSAjZwACj8AJkwAABl2gpFpeYuTnqtQYnchxH96AAAAtklEQVR4ATWPxQECQRAEp1bOZQ3Occg/RLxfoy3yAii0NhbkA7K80GVVN6bl07dd36K0om7gve8cPtR9TIKrEVLPDrPXhEF0hqix9aYdQphsSLhS6hnH8FZaWJXNZDsoXQfe5Oqwr/xroA/++B5k6uAPm9SDOXFWgGM1Qy3qYtNmp6s9EnJ7UcKt53xHG8JAf0NQ3ZF0ehzWHBcVH+sHa97h+mj5hkvjkNJwydU/Llm1bZXi3T8B8MYKT5xmB8AAAAAASUVORK5CYII=)
+
+TechTarget
+
+https://www.techtarget.com › searchenterpriseai › tip › G...](https://www.techtarget.com/searchenterpriseai/tip/Gemini-vs-ChatGPT-Whats-the-difference#:~:text=While%20both%20models%20produce%20high,noted%20for%20its%20imaginative%20responses.&text=ChatGPT%20is%20more%20terse%2C%20concise,doesn't%20support%20file%20uploads.)
+
+TechTarget
+
+https://www.techtarget.com › searchenterpriseai › tip › G...
+
+What is Gamini?
+
+1. : the third zodiacal constellation that is pictorially represented as the twins Castor and Pollux sitting together, that is visible in the sky on the opposite side of the Milky Way from Taurus and Orion, and that is located between Cancer and Taurus in the zodiac.
+
+[### GEMINI Definition & Meaning - Merriam-Webster
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEX////trq/ibG/jdHftq6343t7eUFT10NH21tbfV1v32trgYmb32drfW199lbrj6O9kgq/5+vzO1+STpcTJ0uGmts+4xdjK3Ovkd3qInr9cfqx0kLeywNXlgIOesMv3///Z3+rHaxW9AAAAdUlEQVR4AW1OgwHAMBC82lac7L9k7fbtP/yTZTuO7Z6p5weLC6N4z5Oj46Sr86/VbN0PcC0vd2zkBcqqbtquH8iyiI62DOCCdpBrQTSKFm3T7QVb88KUBsbUBcjfUURXIdnKzpHLcPNxlm6IQxzkOlISF780AYyRBTGVnUskAAAAAElFTkSuQmCC)
+
+Merriam-Webster
+
+https://www.merriam-webster.com › dictionary › Gemini](https://www.merriam-webster.com/dictionary/Gemini#:~:text=1,and%20Taurus%20in%20the%20zodiac)
+
+Merriam-Webster
+
+https://www.merriam-webster.com › dictionary › Gemini
+
+Feedback
+
+[### Germini | Gerbera | Flowers | All products
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAC30lEQVR4AR2RA4xtVxRA17l+HM8U3xiUQd2gtu02ZhGnMevGTmo3qN2oRvBt+49nrg/70oNtbwHA66vw1l6BVeVAN2w90PXjx2IvuNA42y6cznIjN5dWv2+t+hThL5BPw1O/Inj3aob715KqbGpV1P/iRGPoppVxfxx7PrmpmZE5x2TKMZXW87r8Xhr1PF6wE1UQtNtnsijTjZON4TevG9h42eVDE3TCBmmpSU3G0fIEQ+Ui7TqM99WLd54mH1NGPkEQ7/XlXStaKxpDr13dv+6WO1dcxiVnXEBoO8wvOkYbQ9SmAqHAOTSWwqoVlbODzsofgijq3Lw67r/jvGQjoRzC6IC8gNFBn6qGxAwyFhsqY1kyNTrxe/pTdxTOfB4Mha1HJoMNHVc1cYOSmXyRrDY0u5Y6g1gP45NwduJh6g4DWE56eacw1SPBarHyshExyOAALGcwt5DSbQlwHgvLhrQqIKqRPhQV6ChnIlrNMsVlPg+Mv9yXKO/scIxSKrxAo42gVo65chkvVEjpYVWEsbCkSxq0SFyzGVSiZtEUHFfH2NhehXOSLAvwjMYKhe8JpjlCJSSli+ntkEPZIv+WOwkqq6fndHnm8XKOjt/+/wsqnLZIJXCiYKQ5RKUse91R9umjhO0mkRHTvntg6kpfeFOJF+Ccphu20T3su4Si9Jk3c+QlLKkaF1oiWmjtoyv/50BZ82Ev83VHZdpxOKR1rAnX0vBDZvQpPCGYqzJ0I0cuJfyudlFbmxa1/DDA6u8yI788odJHLZZlUyPxOVTMIcOa/moV+8x+0nqBeak4JeZQyC9Jiu98HjxPOWe2SmcvrpxdUTuD6v2AiKYa5kAxzYFwLzM2Y5YUZfVfOPccLjzlc+968KL5XoA/JHZFafXa1NZBpjSH5TT7xSGWKMmMqo013+DsMwhvN1YhAHj/Woj6ADuA8B4A8ZhAXIig7SDDuc29/z7YT0EsoAp49Af+A99Ct6RvMc+QAAAAAElFTkSuQmCC)
+
+Holex Flower
+
+https://shop.holex.com › Gerbera › Germini › Gerberamini](https://shop.holex.com/en_US/All-products/Flowers/Gerbera/Germini/c/Gerberamini?q=%3Arelevance&page=3&gridView=&matrixView=false)
+
+Holex Flower
+
+https://shop.holex.com › Gerbera › Germini › Gerberamini
+
+葱花 六出花/六出百合/水仙百合 银莲花 红掌 落新妇 星芹 菜花 叶材, 帝王花 菊花 铁线莲 惠兰，兰花，蝴蝶兰和万代兰 大丽花 飞燕 石竹楠、康乃馨 刺芹 洋桔梗 ...
+
+[### Germini Dark Red Black Eye
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAAllBMVEVHcEzZnsbansbansZahyOeiYZchydbhyVchydugEldiChchydchyeVbo6Vbo6Wbo5chydbhyRaiCHZnsXZnsWVbo6Vbo6Vbo7Tnb5chyfZnsXZnsWVbo7ZnsWxlpaVbo5chyfZnsVchyeVbo7fn8tWhxuZbJSXbZGKc31NiAB6e2Obkn1/j1d1eluxlpZjgjq+mabOnLhY6udoAAAAIXRSTlMAMkNfxQxj2aslFuWW0Ho8fPk83nhamfPN8I2sjvR05lACFvlBAAAA9klEQVQokYWR23qCMBCEA4QQClqw1vMpG8BarNr3fzkjB9kkiJOrfPMzsxsI6TQmwxrLYd+XcjQIzOQbYq4AOQ9fA7JW76Q8XUZBA8iRbwMMAPKfY4t82oQC4Fq0gPy2AJor/XaEmeEtbpcyPyFCsx0hRKZOefor+kpc0SgT5+uxmXSmf/9ELu0uG9Q/XSDiH+oafUrnCyFnUCF7c80VIkq1jf1HXETc8uXEfku/q8l2KdAeZNoCHiEJQBofwg8lHLJ+2Fu3ujAKtYxRPKe7hAmnkQE8PcaD3oSqiXFAMm0WgC49mRsu0Bhnx1FQiVLO44RNqve8A43kLJzhElRTAAAAAElFTkSuQmCC)
+
+Potomac Floral Wholesale
+
+https://flowerwholesale.com › ... › Gerberas](https://flowerwholesale.com/germini-dark-red-black-eye/)
+
+Potomac Floral Wholesale
+
+https://flowerwholesale.com › ... › Gerberas
+
+Farm Direct · Fresh Flowers · Wholesale Flowers · Gerberas · *Germini Dark Red Black Eye*. GERMINBURBUR. Germini Dark Red Black Eye. $12.00 / BU. $1.20 / STEM. 10 ...
+
+[### Germini Spider | Gerbera | Flowers | All products
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAC30lEQVR4AR2RA4xtVxRA17l+HM8U3xiUQd2gtu02ZhGnMevGTmo3qN2oRvBt+49nrg/70oNtbwHA66vw1l6BVeVAN2w90PXjx2IvuNA42y6cznIjN5dWv2+t+hThL5BPw1O/Inj3aob715KqbGpV1P/iRGPoppVxfxx7PrmpmZE5x2TKMZXW87r8Xhr1PF6wE1UQtNtnsijTjZON4TevG9h42eVDE3TCBmmpSU3G0fIEQ+Ui7TqM99WLd54mH1NGPkEQ7/XlXStaKxpDr13dv+6WO1dcxiVnXEBoO8wvOkYbQ9SmAqHAOTSWwqoVlbODzsofgijq3Lw67r/jvGQjoRzC6IC8gNFBn6qGxAwyFhsqY1kyNTrxe/pTdxTOfB4Mha1HJoMNHVc1cYOSmXyRrDY0u5Y6g1gP45NwduJh6g4DWE56eacw1SPBarHyshExyOAALGcwt5DSbQlwHgvLhrQqIKqRPhQV6ChnIlrNMsVlPg+Mv9yXKO/scIxSKrxAo42gVo65chkvVEjpYVWEsbCkSxq0SFyzGVSiZtEUHFfH2NhehXOSLAvwjMYKhe8JpjlCJSSli+ntkEPZIv+WOwkqq6fndHnm8XKOjt/+/wsqnLZIJXCiYKQ5RKUse91R9umjhO0mkRHTvntg6kpfeFOJF+Ccphu20T3su4Si9Jk3c+QlLKkaF1oiWmjtoyv/50BZ82Ev83VHZdpxOKR1rAnX0vBDZvQpPCGYqzJ0I0cuJfyudlFbmxa1/DDA6u8yI788odJHLZZlUyPxOVTMIcOa/moV+8x+0nqBeak4JeZQyC9Jiu98HjxPOWe2SmcvrpxdUTuD6v2AiKYa5kAxzYFwLzM2Y5YUZfVfOPccLjzlc+968KL5XoA/JHZFafXa1NZBpjSH5TT7xSGWKMmMqo013+DsMwhvN1YhAHj/Woj6ADuA8B4A8ZhAXIig7SDDuc29/z7YT0EsoAp49Af+A99Ct6RvMc+QAAAAAElFTkSuQmCC)
+
+Holex Flower
+
+https://shop.holex.com › en\_US › Germini Spider](https://shop.holex.com/en_US/All-products/Flowers/Gerbera/Germini-Spider/c/Germini%20Spider)
+
+Holex Flower
+
+https://shop.holex.com › en\_US › Germini Spider
+
+*Germini Spider*. Grower: VIP RosesFlowers from EcuadorGrower: Special Orchids · Germini Spider Assorted. 45 cm. 7 cm. Certified.
+
+[### Germini, Bright white
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAApVBMVEX////+/v706uvkwcPs0NH69PT79/fjycvbtbe/fYK4SEzCYGLCX2GhMzvFgIPan6DJd3mZABGrMjjBWlyeER2+dXnLiIqhKTCmMjnAXV+5UVTFZWeaGSTIamusOkDSenmvQkeySEydISvThYa6U1aiEx3Mmp2/UVPUfn2sMTe/ZGffrK3px8fUk5T13965aGzXpaeSAAC3Q0elIiqvV13Fio20U1jGr3ylAAABYklEQVR4Ac2SBYLDIBBFJy6kGgMCg9Tde/+jLVlrb7D7cd7HgX8nzwnAD8IInOIkTbxX/2fKclLkg+FoPJmWVVWPmtp3APrkt5Rx3omSSORKa5MXLY964hhWjPCSaCVJKxBLRgptZ19wqKuOz8s5YmtbnBPpTJ1dLB0Cf0UtnxOmpUJKDZUdMWvCyo0PAAlaNG6gUhIZ10xKqeb9VCMHgy2fU8YMFUKTkopyvF3t9oejLHo4m3NmiDCUImMo8h30E+7DVeTyk2aMU6pbQ3lhsUo/z9cdVzHAuSlKSYhF149IOdt9XkywOgDA7sBVexGiut7up0q0Yvl1dXF/BeNRt3mkOdZ+DFHRDiZf0MnBtLktAdIyAGd96iY/v6AH91t/FTfXB1Cvztf0HU5P4AppALIt6uMieUHwNw56MMtTmJGRf7yc4JdBeF34bmhzK7yj75r37H1a3+/L6PMrfNpf8A/0AZ7tIcOnpNziAAAAAElFTkSuQmCC)
+
+My Flower Stop
+
+https://www.myflowerstop.com › product › germini-bri...](https://www.myflowerstop.com/product/germini-bright-white/)
+
+My Flower Stop
+
+https://www.myflowerstop.com › product › germini-bri...
+
+*Germini is a smaller version of the Gerbera Daisy*. The flower head of a Germini is between five and seven centimeters with one flower per stem.
+
+[### Germini (mini gerbs)
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAApVBMVEX///9pDyZaDCBQDB3Nq7Pn19v////////asLn16uxyEiqeCDN6CymPCS1hCRthDyWCDSz39fX8+vr15en08PJ7BiGvDTo+ChVvBBxsaT6SkmCjUGJ5e0Xt1NneeYpOOSjktcBmUDiHi0vRi5nDY3nnoKx8ITXCDjeoLErjyc/LtrvPqLDUHkVaJShsPDbEmqOONEi1fIfBM1rMu6+clH25vYKJa1kXtpYIAAAACnRSTlMF////o6P/o6OjD3rtBwAAAbxJREFUKJFlkomSqjAQRe1kRt9kIRuEsKmA4zqupf7/p02DSznPW0UBOdxOc9ODwWjYycYmNibuZfuV4WgwuMOhMcYiNN39DXbu7nL28foCrVttvlHjb2ftf9BsjsXSL7xf/IzHbfwXbuaJ0AlKco7cvUAznQNEvUIIEql9QjeTmoGilBDSf+DH5gFd67kGJihlIqLAQiKK6g5du+ASKCqlKqUMIs0Ox+oGp0vPBUmR0ElWTiihEQn66Dr41XIpE3SxXZ3nebmluC8ky1UH/xWcS6EU2ZX5ucwySiACzZfTO/QSkOVNmZVNTeZACCSnHn7tEepU1fklb5pyAkylKfAb/DwmXbOwQ1vWZDVR2BH3s6qDH4egtCJkW2dlfrmcGT4D97c9Pwr0YTRsfi2z/HzFIIV4OD/3S6mwRYB6gtpiVBj+aWr7EFYF1xgrxeC2aaSUAqb5OL4ltDpIGSjRgOtMYH0m9TPb6qq5xkWIugiJYlh4/zhPi3W5AMo0+hh2o+Vs9Txsuz8ELUBrLdHENT+5lzFx6zP+TEiSkAQh5Wz6d8Dcen0sCu9Pm3Xbuve5jZ2rKpza2LzP7btGg18cIS1Y09+QpAAAAABJRU5ErkJggg==)
+
+florasource.flowers
+
+https://florasource.flowers › ... › Gerbera Daisy](https://florasource.flowers/231-germini-mini-gerbs?srsltid=AfmBOopASAlj7A7wTn5AVgDPF9G0OReCXEsMlV_7zeCHjzg1KM26yVHD)
+
+florasource.flowers
+
+https://florasource.flowers › ... › Gerbera Daisy
+
+*Germini (mini gerbs*) · copy of Gerbera Mini Pastini "aroma" white 80 / 150 stems · copy of Gerbera Mini Pastini "vittoria" salmon 80 / 150 stems.
+
+[### Germini 120 Stems Assorted
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAAllBMVEVHcEzZnsbansbansZahyOeiYZchydbhyVchydugEldiChchydchyeVbo6Vbo6Wbo5chydbhyRaiCHZnsXZnsWVbo6Vbo6Vbo7Tnb5chyfZnsXZnsWVbo7ZnsWxlpaVbo5chyfZnsVchyeVbo7fn8tWhxuZbJSXbZGKc31NiAB6e2Obkn1/j1d1eluxlpZjgjq+mabOnLhY6udoAAAAIXRSTlMAMkNfxQxj2aslFuWW0Ho8fPk83nhamfPN8I2sjvR05lACFvlBAAAA9klEQVQokYWR23qCMBCEA4QQClqw1vMpG8BarNr3fzkjB9kkiJOrfPMzsxsI6TQmwxrLYd+XcjQIzOQbYq4AOQ9fA7JW76Q8XUZBA8iRbwMMAPKfY4t82oQC4Fq0gPy2AJor/XaEmeEtbpcyPyFCsx0hRKZOefor+kpc0SgT5+uxmXSmf/9ELu0uG9Q/XSDiH+oafUrnCyFnUCF7c80VIkq1jf1HXETc8uXEfku/q8l2KdAeZNoCHiEJQBofwg8lHLJ+2Fu3ujAKtYxRPKe7hAmnkQE8PcaD3oSqiXFAMm0WgC49mRsu0Bhnx1FQiVLO44RNqve8A43kLJzhElRTAAAAAElFTkSuQmCC)
+
+Potomac Floral Wholesale
+
+https://flowerwholesale.com › germini-120-stems-assorted](https://flowerwholesale.com/germini-120-stems-assorted/)
+
+Potomac Floral Wholesale
+
+https://flowerwholesale.com › germini-120-stems-assorted
+
+*Germini 120 stems assorted* - potomac floral wholesale. Gerbera Daisies on Sale Right Now!
+
+[### Germini (Mini Gerbs)
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABRFBMVEVHcEzIESPbGivWDB6UKC2NNTrWEiVUFRLUHi6pGCKXIifJDh6vFB+dDxjPGCjZEiKHBQt0GBqGFBXXFiTbFyq8EBtcDAusBxNQBwWQGCCDHSGFDBJWDQ3CDR2QAQhcEA7MBhdtFBavEh1dEA2DDhKnGCP///+bAAWRAgnCAhO5Ag+tAg+rAAOGAQbLARPCAARwAAHgAhnXAxi2AAN8AQWkAw1bAwNrEQ7CnJ6dMzjZAAHTARI9DwlLEA3ioaZmAwTStbj8+fpzEhFPAQH18fLFpqnDj5HhrLCeZGjpARavTFCHDBMmCgbPqKtmKSh9Ojzk19qaEBfw4uTPnJ/gzc/jDiTZxsh7HxuneX7w6+3PPUcPAQC+fX/ICh7XYGmHTVCfVlm3IyncT1nilpvPhY3ZfIHbHi04AACwjY+IZGa+SVGuDh8eSq/FAAAAVnRSTlMAi2z1Iw2r/kdZN856zjHT9pT4XE3A5ODenkbfw7OhcfHKrVub+////////////////////////////////////////////////////////////////pa2dzkAAALDSURBVDiNdVNXW9tAEDzAxvRePgLpyTWdepdsSe4N94IxNh1C+f/vkQ0kBpJ53Jm7nbudBeA15qPgv5ifAmCPo9tgaXFl7h37obGr08Wlsk7cb1RQlKk3fHQZYw7zOocFhWFGhC+zk/TC8j7GPNV9xHhRRDwSKZEnuzSwxPEaU89bFatVqeR0VQ0F09N/BKamYcKXmu1erZ7DUgHmEdPZsLP57H53DfMIeTBbKBSy9obUrMOMjRh96bKpEA7jPMxUmucpn/drhSyEsISoMPPcYUYmYg4mK5nemeRrxlk7mellkw1VXHzilykp9usQZm1NMn1fqgXV+7vmcZupq7Mjn195jiAvCKwNo2yapmHWstaZcZbslnS304kAsJPmlFsrhy54M2UmEol4NXRwDLuBxVRxGAqiCU686edtm08dxRLx+GEXjlAPLMyoGH7oQZp3rpzTy8ejVMgfnpwkxwJo5WzECR0QMXzieMLw4aYm1WLxw8OTzJMgMygxubMFImmjzDxH6UPYS1dHgvtmNwhvCQYPqlycA+vptCFZZdwKD939GpuomkYbHhdyF65cXAULpqRJvZLqjW7NVmPxRMJISQHMnFvMVWa2RllZb1x4yu3YWz1djR2lTK0Am+c5VXBXx2H5SVleVk5DPlkI31pOaUYAB9c2UkV3JRTs6Zj0PcdpQti1+bKkYU1rtxstUaXueBqRjTVOvDp18rD+KBCMkC5oFds6El33ZZwxiTr5y8vjElFkDmHKCZrVF+nS1EvsDF8QHO/mmpBOUcc6Um8rtipPJPtzGlMinuavh3IR8cy+yimYE4S/wY7uHOgECU7Jy3utbGtQFmWCuY+vFmObrRGCnKLCfCSGQ5IpnX4lAAtgaZ8P66qkhQGiyuzb3QrxXdI1yjEDCfOfyMp7HoAf2Ghwy5q+8C/yaUXWQRTMRyZLvwEvAZwLaXwyUQAAAABJRU5ErkJggg==)
+
+Amerilink Floratrader
+
+https://amerilinkfloratrader.com › Flowers](https://amerilinkfloratrader.com/flowers/germini-mini-gerbs/)
+
+Amerilink Floratrader
+
+https://amerilinkfloratrader.com › Flowers
+
+*Germini (Mini Gerbs*) Packaging Latin Name: Gerbera jamesoniiPack: 200Unit of Measure: StemBox Type: WetColors: AssortedGrade: 45+cmCubes: 3,14.
+
+[### Germini Boost can. - SWFlorist
+
+  
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFklEQVR4AWKAAY6Vx2GYB9A3HUA0FIQBHH9bVAECEIikKIQIUkIgISISUKQ1AkAIAtSGsb13T8wEICIASAgAAiBIQBWCSvXDMHa94wf4/s6djzlWWGSSERKS2OkNjFKhQYsmNY6Ypcw/w7BKIO2REaixQEI0UGKPnDQicMJoNMAAhwRaXU1aXSkNpooCFXIuueaGKzpk1BiPB2CHe9754ptPXnngmKGiwAYf/ALwwxMNZkmIBra445k3XnjkljYZp4zFAmX2CVzQoU3ofUgC6yT0PWKVQNo7BEDOLiX6bnBATlogZ7P/BrBNUSDjjAmigXmaZJHBQJ1lSkS/cpgt6qRdTc6pMkOZwo0cZJpV1lhiguHYIv0Bfe+G+GlkurUAAAAASUVORK5CYII=)
+
+swflorist.com
+
+https://www.swflorist.com › Fresh Cuts › Flowering](https://www.swflorist.com/products/germini-boost-can.html)
+
+swflorist.com
+
+https://www.swflorist.com › Fresh Cuts › Flowering
+
+*Germini Choiz can*. Login for pricing. Germini Romily can. Login for pricing. Germini Café can. Login ...
+
+People also ask
+
+Feedback
+
+People also search for
+
+[**Gemini ai**](/search?sca_esv=87f4b43c6e5f5118&q=Gemini+ai&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhiEAE)
+
+[**Gemini Google**](/search?sca_esv=87f4b43c6e5f5118&q=Gemini+Google&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhgEAE)
+
+[**Chatgpt**](/search?sca_esv=87f4b43c6e5f5118&q=Chatgpt&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAheEAE)
+
+[**Gemini app**](/search?sca_esv=87f4b43c6e5f5118&q=Gemini+app&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhWEAE)
+
+[**Gemini AI chatbot**](/search?sca_esv=87f4b43c6e5f5118&q=Gemini+AI+chatbot&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhOEAE)
+
+[**GPT-4**](/search?sca_esv=87f4b43c6e5f5118&q=GPT-4&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhNEAE)
+
+[**DeepSeek**](/search?sca_esv=87f4b43c6e5f5118&q=DeepSeek&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhLEAE)
+
+[**Chat GPT free**](/search?sca_esv=87f4b43c6e5f5118&q=Chat+GPT+free&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ1QJ6BAhDEAE)
+
+Page Navigation
+===============
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | 1 | [2](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=10&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAE) | [3](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=20&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAG) | [4](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=30&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAI) | [5](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=40&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAK) | [6](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=50&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAM) | [7](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=60&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAO) | [8](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=70&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAQ) | [9](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=80&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAS) | [10](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=90&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8tMDegQIZBAU) | [Next](/search?q=Germini&sca_esv=87f4b43c6e5f5118&ei=zJ8VaLvaL9yhptQP3fT1sQ0&start=10&sa=N&sstk=Af40H4Ur0OEDDiHW2w0fQn9Dde0fd-RXdhWxJfW4aJkf-GTe13oys8nRBnyW2PbWbu2AMGRYIM6Y0tNmcG9D590NFh2SNs-pEpFpsg&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQ8NMDegQIZBAW) |
+
+About 1,840,000 results (0.19s)
+
+Choose what you’re giving feedback on
+
+Or give general feedback
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAVCAMAAAAkat3EAAAA5FBMVEX///+NrfKvotk9fuzk6PnDwumLs+7T3/nH0fNNct7x8fqtm9T69/rp7/z9+/sjg+MhhuL5+/7J2fdPkuhOiexra84jeujZr8Etf+eVtvHaprNHleS4rt3X1u91YsXp5fTNzOt7cMuHeMyBgNSWg82hnNr26uu80fV+YcGOcsTz4uXCSl7QdHxenehYl+mVe8jTf4eSu+2nxvHgzd06ceRcbtW6uearkcyifL2cVp2hVpepV5CvU4a9RWLbn6dmo+dcfOBwi+ONjdiaZKy9eqHAVW+pwfShr+mSZ7e8VneIaMHr0djXnE5vAAABmklEQVQ4jZ2SC1eCMBTHL4Eboos3oqSAlfgoSlGzNLWH9PD7f582yFcZefwfzra7c3/87+4GcJCKh6X91tmRXLXmHsV5fr1ePYY79+v+xTEkXPp/HJJgTDLJOoC03dnGKRs1R6bSgwzQBbfZ2oTtzhUdkXIdCEIQ2ijLU2rebBl2bgG6Si+NytnVqtsBrZQo3R8JWoCTWQJVFGm66nnsFovF5IuiRhp0lZ1fQWBblmVQc47H/X5+TqqDgWkOAWoFuBtF9w/jSQngcQqz2Q6nWRwBbNgqcAavqXj+NMip0rMpgX8ChdFLdNp+nTRgMQUnbQlKpIERsohYMXUU6Sqev9HRNb0EfI9YS6nlorICdSY5JnaMqQTKczzbF/PswJKZS0G2VUxB5GzaYge0SIuJN9agsA/8qECg4E1fCLbX0T6wtQWC43y3VdVDalpO1iQLHKegoDiJi6DLNB3ZGvPu9/4HgTiKjpAu6ywFQjssh1a4duyvwBoFP3dAenloNkPa6qRcyLH3rsVJHbHEcocuDD3wcslzKy2htPwCHeYp4yfprxEAAAAASUVORK5CYII=)
+
+Gemini
+
+Chatbot
+
+About this result
+
+Share
+
+Share
+
+[![](https://www.gstatic.com/kpui/social/fb_32x32.png)
+
+Facebook](#)[![](https://www.gstatic.com/kpui/social/whatsapp_solid_bg_36x36.png)
+
+WhatsApp](#)[![](https://www.gstatic.com/kpui/social/x_32x32.png)
+
+X](#)[![](https://www.gstatic.com/images/icons/material/system/1x/email_grey600_24dp.png)
+
+Email](#)
+
+Click to copy link
+
+Share link
+
+Link copied
+
+Send feedback
+
+Gemini, formerly known as Bard, is a generative artificial intelligence chatbot developed by Google. Based on the large language model of the same name, it was launched in 2023 in response to the rise of OpenAI's ChatGPT. It was previously based on the LaMDA and PaLM LLMs.
+
+Source:[Wikipedia](https://en.wikipedia.org/wiki/Gemini_(chatbot))
+
+[Wikipedia](https://en.wikipedia.org/wiki/Gemini_(chatbot))MoreLess
+
+Initial release date: March 21, 2023
+
+Available in: 46 languages; 239 countries and regions
+
+Developer(s): [Google AI](/search?sca_esv=87f4b43c6e5f5118&q=Google+AI&stick=H4sIAAAAAAAAAONgVuLVT9c3NEyprEouMcgpWsTK6Z6fn56TquDoCQBOahgvHQAAAA&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQmxMoAHoECDoQAg)
+
+License: Proprietary
+
+Operating system: [Web](/search?sca_esv=87f4b43c6e5f5118&q=Web&stick=H4sIAAAAAAAAAONgVuLQz9U3sDCyKFvEyhyemgQAXmEREhIAAAA&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQmxMoAHoECDkQAg) app; [Android](/search?sca_esv=87f4b43c6e5f5118&q=Android&stick=H4sIAAAAAAAAAONgVuLSz9U3MCqvKEkvX8TK7piXUpSfmQIAyAsAJhgAAAA&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQmxMoAXoECDkQAw); [iOS](/search?sca_esv=87f4b43c6e5f5118&q=iOS&stick=H4sIAAAAAAAAAONgVuLSz9U3MC5PyjE0WcTKnOkfDABeKS5iFAAAAA&sa=X&ved=2ahUKEwi78Omsv4aNAxXckIkEHV16PdYQmxMoAnoECDkQBA)
+
+People also search for
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAMAAAC5dNAvAAAAaVBMVEX///8AAADQ0NBXV1fMzMyZmZnV1dX29vbY2Njr6+vy8vLc3NxsbGzf39/k5OT6+vqEhIQnJye4uLg+Pj6fn5+qqqp9fX2RkZEzMzN0dHRRUVFLS0vFxcWxsbFEREQODg4YGBhhYWEgICD6qwZxAAAErUlEQVRYhaVY2aKiMAyVRRFZBERwwY3//8iRpkkT2jKMk5d7G+HQJicnbTebJcvO3W0MgjqqHuXigyss7QNudXv8D7BjFVi2/RltsMGmGe5/Q3NMDezxC1qOb9/asEzTMt6e0NP/jtanxldctbPqoufldMvbeCWazmh0kO7iMl/5dU0oY18aj3Yo738HfKkHz5b/7MzN9S9oW3fEh9qT63G5XmARM2cZmfX1zb7MhvOHPEsLfqgnCuFjFcKSfXzghIs5iJnG0w6ICdp1luxW+xMnVtaN8HPGnDvixz2z33irX24OsP0N37sYZ0oF8mpcMzjABOzaQ9Z/rSOn0SifmqTw80y8yhfLPX6rIU9+sHDQBsfXQkGlAZxbHJ8EFXYzoqlwvMQT+r36ofgVghfRRNAmOsu5pnwKbP1Bu9nYcD0PSxE5IvlRHDJjxbVgnNg4h/vwlSWGziObciPZAGSsFRdncBWfhdSAG9VCosYYgEPAhjM4tqgQ6PwxoB0Wg+Iychy4pSF8cOkHljCICm7ZSzoXIIoYSQ9cL14v7xRCpfA5y38jVu6EA5UJKpPjYUTAqJRwMs0OuJ3uYhehACgmU7rUZGN6if53wB1IA75pYJ1tk3TofqlUAKNK5Uk8cL2eRKv/Cvpm94AZQKhqNRx0FVmQp6RUo6i45k3P3Fkm8iW40w6GOoZSREkmdNIfEE0/HJuOzvCVa7kmJM5OPdJ54YQAbI6Sf2x9SA6lfh8fnKXBenEj06NNBj7lUlJX/ysc0FfiKQUFrSM9XAOnV8eK5GFCIOOt4HbLcCQCpn+pJvie/lPkjtCvRvWwDEeqfMIcF2o41RZ0ItTCBMgVFctwuAUiSkQ0Usw2fdzIxyIclBOtCuI5/dfO4kCRWYaLBRxIupII6Nisdsz2azXcpqYc6jME31bF9b/CfYjJuD0RYqE7jKvInHAdixg0Wrc8ss2RzpITrmLPklJLeYQd2kygPHC8XxhZfUt5hA7D5NMLp74F1ZkEzJzyiOLe9h44aK+sX7xph9fxDRJvPd+dky+zIZu3YsptY3V3HUK9OVYx9MEpcmjZxH5h6Ps28ohF0tDiHXAH9ghrPzGdbe5aHnXQ8BTkgQPmHtliI/F6APKoj06GkG64UHxyPw1GPTDdPdAHpUtoAumEE1s6HFK7K+iAAaA8L5UDLqln+buwQKpg0gYpqHhTLT+BDVfAw+xUyNNsFhVoVUbDLivhsLcxsoJEcQFQ9K15NzWHFg5Hp0Zx9FAVMTs4lzs+2tNdxZZPAU08qzer/rsHVmoYYr6Pf6fycX1rkFo4YNT72aHeeSREA2WsnSe5hsQhZ9+j+onsYy5K3mifw80e88IDpI9xdeU+uaPmtdJ9YDUiflDBfPpvKTKcQ2O6DbvCq46Op5cuuHb0an6Os3I/bI3mR/NpQLNaQPsSzZSWNEnnySpXYCy7OtHs+yNQsZcDQdruaYG97CtPHdHQAWABWjO8zKiQ6k+uvRiM2/x2Oj2jDnvRlQGm6Mz9AD4jnpzaeLq0DFtK9g9ovju7YHaqX29797WdxZzVtrXBOveN2DpLWkHvV++TsdVWPKro257qW3d2qZGxP8tNNr1pAx8YAAAAAElFTkSuQmCC)
+
+ChatGPT
+
+![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAE4ATgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAGAAIEBQcBA//EADkQAAIBAgIGBggEBwAAAAAAAAECAwAEBREGEiExQWETFFFxgaEHIjJSkZKx0SNCVMEWQ1Ny4fDx/8QAGgEAAgMBAQAAAAAAAAAAAAAABAUCAwYBAP/EACURAAICAgEDBQADAAAAAAAAAAECAAMEEQUSITETFEFCUhUiMv/aAAwDAQACEQMRAD8A3GlXPGomIYla4fHr3UoQHcOJ7hXQCx0JFmCjZ8SZSoeOmGGD+se5R965/GOGdk/yD71d7W78mD++xv2IRUqGZ9N8IgiaWYzIijMkoNnnVbZ+lLRu5uRC0lzbgnISzw5J4kE5eNd9pfrfQZNMml/8tuHFKmRusiB0YMjDNWBzBFPoeXxUqVKvT0j3lzFZ2stzO2rFEhdjyFY9iuMz4neyXUxPrH1Vz9heAo39JF6Y8NhsUb1rhtZwPcX/ADlWddF30344V1qbG8mZ/lrWdxUPAjusvXOsN20uhroi5UyOXWIo9NpR6Q3TydHagnI+u4+lQYLcdlFWH6DY7jrtfwwRw2zn8Jrh9UuvAgAE5VKvNCMQwuMNeXNgmfsqJWLN4atXrmUj+obvHVONatYCruHHosxA3OjfVJHLSWTmPb7h2r+48KMs6yHRe4u9Hr5po2hkilAWaPXI1gNxBy3jM/GjyPTDDGy1jKmfaueXwrP5mK/qlkGwY4xluNenUgiEdKo9ndwXkImtpVkjO4rUil5BHYy3xMy0znN5jso3pABGvwzPmfKqToeVW1ynT3Msp3u5b4mmC3pa3Ka7AxQ+G1jlj8ytEPKpuDYeL3E7a3Zc1eQa/wDaNp8hXuLflRFobZDrktyRsjTVXvP/ACuU8gbbAgPmSTA7jcLlUIAAAFGwAcKyrSy9a9x66ZWJSNuiXbwXYfPOtNxS6Flh1xcn+XGzAdpy2VkL5sxZtpJzJp1juEfc1XGUdfU5+JGYv2mmFny31IKU0rThMoah7UQx9GU8hkv4GYlAEcA8CcxR9QR6NrYrHe3OWxmWMeG39xRuN1KMtg9xYRHlAC0gQDvbFrW4eJ1yAPqntFeIgo/eNJBk6K3eKjXGH200ZQxKvNRkRWTv4S0sTW/aSS2v7CBYgO4DbRdgdobOxVXGTudZh/vKgy/knsrqSJZXR4yRmrZZ86p73Fb8Icr65HdKar46r21hazufEafxhvUFCAIZ6Z4lEbYYfHIDMzB5FB9lefefpQQ8VPwW3PUzO+bPOxck7zwH0qW8VORlbaHY1Qx06AdysMdN1KsGi5V74VhxvsQgtwDqswL7PyjfRSZJPaXu6qpY/EONE7M2eB2ysuq8g6Rhzbb9quaaqhQANwp1XGY93LsWPzFXDXaVckIC6d2kkE636r+C6hZGH5SOJ8PpQM2vf3KW0GZZzlyA4mtxZVZSrKCDvBFR48OsYiTFZ26E79WJRnQVmGGYspjjG5Y00+mV3qAyW6xQpGnsqAo7qa0VH3U7b9PF8gpdTtf00PyChhx9g+04OTH5me9AWYKozJ2ADjRbo3hJsI2mmGU8nD3R2Vbx20Eba0cMantVQK9aMoxvTO2O4Pk5zXL0gaEVKlSoqAT/2Q==)
+
+Microsoft Copilot
+
+![](data:image/png;base64,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)
+
+Claude
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAMAAAC5dNAvAAAAYFBMVEUAAAD///+7u7vy8vI7OzvGxsawsLC/v7+VlZXd3d0bGxthYWEYGBhwcHC2traenp4mJibn5+cSEhJnZ2f5+flBQUHW1taBgYEyMjJ6enqIiIhZWVlLS0unp6cKCgpSUlK2k5hfAAABvElEQVRYhe2XYZOCIBCGXUnRTM1SJLur//8vr0UtQeZqd5y5uRneLzgwPC3sy0JRFBQUFBT0z3XalFZuSkv3W9KSYlNayp15KOs0rur+uOiTggkbcpjV1HMuJZx5sBYsfZveBBQHdsrBVWZowDFJN4cmlFINttkYG7QM2m5iZVMO+t408tHHWat4rm4ppAHDJYkJbef0xt7feK8rTmuPTm8MTJxJ6pefNvmFoC/frJkGCRWXwtoOjyy0hcYMNVQc2qxa0TCqDMMjFqcbzrFL0GOlA7Yah+40XIdzbjZNdOMXDg003Bk9t+yoXtuP+1DTcKWz3zH0z++cjivs6OTydAi6j7W1d9LyGQ5daDgzZy5qcb8cwcDBPcrvpF7erztrpHKz9ImMWTV+2bDohAOSijM+9lVJc26vVJxZrccP6CDIybQxitY9myYPq7r1gbCIN2717IFZ2tH77tZ1ZgM4S42Os0/uSqSXbq+LbLp0ybUOFY/Vrlxd3Kz7vxhP5dn7CiBLPw9lbT1SpJubj3RoFg+kUjYGJdTAewzflFO793qnWXEZJdR68atSfiAe9Yctadv+9wgKCgoK+gP9AAnDDSIwmFw4AAAAAElFTkSuQmCC)
+
+Grok
+
+---
+
+Show more
+
+Feedback
+
+Footer Links
+============
+
+[Ohio
+
+- From your IP address](#)
+
+ - 
+
+Update location
+
+Can't update your locationLearn more
+
+Updating location...
+
+[Help](https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1)[Send feedback](#)[Privacy](https://policies.google.com/privacy?hl=en&fg=1)[Terms](https://policies.google.com/terms?hl=en&fg=1)
+
+  
+
+Google apps
+
+📍 Step 5
+👍 Eval: Success - I have extracted information about 'Germini' from the search results
+🧠 Memory: The search results for 'Germini' include information about 'Gemini', a generative AI chatbot developed by Google, formerly known as Bard. There are also results related to 'Germini', a type of flower, specifically a smaller version of Gerbera daisy.
+🎯 Next goal: Summarize the findings related to 'Germini' and provide the information to complete the task
+🛠️  Action 1/1: {"done":{"text":"The term 'Germini' has multiple references. It is often associated with 'Gemini', Google's generative AI chatbot, formerly known as Bard. Additionally, 'Germini' refers to a type of flower, a smaller version of Gerbera daisy. Both meanings are relevant and context-dependent.","success":true}}
+📄 Result: The term 'Germini' has multiple references. It is often associated with 'Gemini', Google's generative AI chatbot, formerly known as Bard. Additionally, 'Germini' refers to a type of flower, a smaller version of Gerbera daisy. Both meanings are relevant and context-dependent.
+✅ Task completed
+✅ Successfully

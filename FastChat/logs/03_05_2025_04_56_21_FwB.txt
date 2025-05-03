@@ -1,0 +1,201 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Please tell me the history of the great wall of China 
+📍 Step 1
+🤷 Eval: Unknown - This is the starting point of the task. No previous actions have been taken yet.
+🧠 Memory: Starting a new task to find information about the history of the Great Wall of China. No steps have been completed yet. 0 out of 15 steps taken. Need to begin by searching for relevant information.
+🎯 Next goal: Search for information about the history of the Great Wall of China on Google.
+🛠️  Action 1/1: {"search_google":{"query":"history of the Great Wall of China"}}
+🔍  Searched for "history of the Great Wall of China" in Google
+📍 Step 2
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 2 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 3
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 3 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 4
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 4 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 5
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 5 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 6
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 6 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 7
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 7 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history. 0 out of 1 sources accessed for detailed content extraction.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {}
+📍 Step 8
+👍 Eval: Success - The Google search for 'history of the Great Wall of China' was successfully performed, and relevant search results are visible on the page.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China. Currently at step 8 out of 15. Need to select a reliable source from the search results to extract detailed information. Relevant results include links from History.com, Wikipedia, UNESCO, and Britannica. I will prioritize a comprehensive source like Wikipedia for detailed history. 0 out of 1 sources accessed for detailed content extraction.
+🎯 Next goal: Navigate to the Wikipedia page on the history of the Great Wall of China to extract detailed information.
+🛠️  Action 1/1: {"click_element_by_index":{"index":67}}
+🖱️  Clicked button with index 67: 
+📍 Step 9
+👍 Eval: Success - Successfully navigated to the Wikipedia page on the history of the Great Wall of China. The page contains detailed information relevant to the task.
+🧠 Memory: Completed a Google search for the history of the Great Wall of China and successfully navigated to the Wikipedia page (https://en.wikipedia.org/wiki/History_of_the_Great_Wall_of_China). Currently at step 9 out of 15. Accessed 1 out of 1 primary sources for detailed content extraction. Need to extract comprehensive information about the history of the Great Wall of China from this page to complete the task.
+🎯 Next goal: Extract detailed information about the history of the Great Wall of China from the current Wikipedia page.
+🛠️  Action 1/1: {"extract_content":{"goal":"extract detailed history of the Great Wall of China including key dynasties, construction phases, and significant events","should_strip_link_urls":false}}
+📄  Extracted from page
+: {
+  "extraction_goal": "Detailed history of the Great Wall of China including key dynasties, construction phases, and significant events",
+  "source": "History of the Great Wall of China - Wikipedia",
+  "content": {
+    "overview": {
+      "introduction": "The history of the Great Wall of China began with fortifications built by various states during the Spring and Autumn (771–476 BC) and Warring States periods (475–221 BC). These were connected by Qin Shi Huang, the first emperor of China, to protect the Qin dynasty (221–206 BC) from nomadic incursions from Inner Asia. Subsequent dynasties adopted varying frontier defense policies, with significant rebuilding and expansion during the Han (202 BC – 220 AD), Northern Qi (550–574), Jin (1115–1234), and Ming (1369–1644) dynasties. The wall visible today largely dates from the Ming dynasty, constructed with stone and brick over challenging terrain. Despite its purpose as a deterrent, it failed at times, notably in 1644 when Qing troops passed through Shanhai Pass, ending Ming rule.",
+      "total_length": "According to a 2012 survey, the Great Wall measures approximately 21,196 km long across various sections and dynastic contributions."
+    },
+    "geographical_context": {
+      "description": "The Great Wall's construction was influenced by the geographical divide between fertile agricultural lands of China south of the 15-inch isohyet and the semi-arid grasslands of Inner Asia to the north, leading to contrasting societal developments (settled agriculture vs. nomadic pastoralism). Key areas of concern for defense included Mongolia, Manchuria, and Xinjiang, with Mongolia being the primary focus due to historical threats from groups like the Xiongnu and Mongols. Natural barriers like the Yin Mountains and the Yellow River provided some defense, but strategic areas like the Ordos Loop and Hexi Corridor necessitated extensive fortifications.",
+      "strategic_importance": "Control of the Ordos region was crucial for influence over the steppe and security of China proper. The Shanhai Pass, a narrow coastal strip between the Bohai Sea and Yan Mountains, became critical during later dynasties, especially under the Ming when the capital was in Beijing."
+    },
+    "historical_phases_and_dynasties": {
+      "pre-imperial_china_7th_century_221_bc": {
+        "period": "7th Century – 221 BC",
+        "description": "Early mentions of walls against northern invaders appear in a 7th-century BC poem from the Classic of Poetry during the Western Zhou dynasty (1046–771 BC), where King Xuan ordered General Nan Zhong to build a wall against the Xianyun. Walls were later erected by states like Chu, Qi, Wei, Zhongshan, and Yiqu during the Eastern Zhou (770–256 BC) due to interstate conflicts.",
+        "key_walls": {
+          "yan": "Built after General Qin Kai drove back the Donghu during King Zhao’s reign (311–279 BC), stretching from Liaodong peninsula through Chifeng to northern Hebei, with a southern wall against Zhao.",
+          "zhao": "Constructed under King Wuling (325–299 BC), extending deep into nomadic territory with multiple lines including around the Ordos Loop and along the Yin Mountains.",
+          "qin": "Built by the State of Qin to defend new territories in the Ordos after annexing Yiqu lands, incorporating Wei walls, totaling about 1,775 km from Gansu to the Yellow River."
+        },
+        "significance": "These early walls, mostly of tamped earth, were often built to secure territorial expansions rather than purely for defense, as suggested by archeological evidence of nomadic artifacts within wall boundaries."
+      },
+      "qin_dynasty_221_206_bc": {
+        "period": "221–206 BC",
+        "description": "Qin Shi Huang united China in 221 BC and connected existing northern walls of Qin, Zhao, and Yan to form a continuous barrier from Gansu to Manchuria’s coast by 212 BC. General Meng Tian led construction and campaigns against the Xiongnu, introducing settler colonies in the Ordos. Construction involved forced labor under harsh conditions, with walls made of rammed earth.",
+        "significant_events": "In 215 BC, Meng Tian drove Xiongnu from the Ordos, followed by wall erection beyond the Yellow River’s northern loop. Internal state walls were destroyed to symbolize unity. After Qin Shi Huang’s death in 210 BC, Meng Tian was forced to commit suicide, and his northern settlements were abandoned, allowing Xiongnu return as the Qin empire faced rebellion."
+      },
+      "han_dynasty_206_bc_220_ad": {
+        "period": "206 BC–220 AD",
+        "description": "Under Emperor Gaozu, the Han initially used diplomacy (heqin policy) to appease the Xiongnu, designating the Great Wall as a boundary. Emperor Wu (141–87 BC) shifted to military campaigns during the Han–Xiongnu War, extending and maintaining walls beyond Qin lines, especially in the Ordos and Hexi Corridor up to Yumen Pass, the westernmost fortification.",
+        "construction": "Walls were built with tamped earth and stone frontages, supported by military agricultural colonies (tuntian). By the Eastern Han, frontier lines retreated closer to the modern Ming Wall, abandoning advanced positions in Ordos and northern Shanxi.",
+        "significant_events": "In 127 BC, General Wei Qing reconquered Ordos lands, restoring defenses. The Han–Xiongnu War broke the heqin policy after the failed Battle of Mayi in 133 BC."
+      },
+      "period_of_disunity_to_sui_dynasty_220_618": {
+        "period": "220–618",
+        "northern_wei": {
+          "description": "During the Northern Wei (386–535), walls over 1,080 km were built in 423 to resist the Rouran, following old Zhao routes, and an inner wall in 446 protected the capital Pingcheng, forming the basis for later Ming defenses around Beijing.",
+          "key_areas": "Walls stretched from Chicheng to Wuyuan County and from Yanqing to Pingguan."
+        },
+        "northern_qi_and_zhou": {
+          "description": "Northern Qi (550–575) constructed up to 1,600 km of wall from Shanxi to Shanhai Pass between 552–556, mobilizing 1.8 million men in 555 to build Juyong Pass. Northern Zhou (557–580) repaired Qi walls in 577–580.",
+          "key_areas": "Walls near Gubeikou were later incorporated into the Ming Wall."
+        },
+        "sui_dynasty": {
+          "description": "The Sui (581–618) reunited China and built extensive walls in Hebei, Shanxi, Ordos, and Inner Mongolia between 581–608, mobilizing over a million men, with significant casualties estimated at 500,000.",
+          "significant_events": "In 582, Göktürk leader Ishbara Qaghan raided Gansu and Shaanxi, bypassing new walls, prompting further construction. Emperor Yang’s projects strained the economy, leading to rebellion and his assassination in 618."
+        }
+      },
+      "tang_dynasty_618_907": {
+        "period": "618–907",
+        "description": "The Tang reversed wall-building trends, focusing on mobile military campaigns and walled garrisons rather than extensive fortifications. Emperor Taizong (626–649) dismissed wall repairs as ineffective, citing the Sui failure, and expanded empire to Kazakhstan.",
+        "minor_construction": "During Emperor Xuanzong’s reign (713–742), General Zhang Yue built a 48 km wall north of Huairong, possibly reinforcing existing Northern Qi walls.",
+        "cultural_impact": "Tang poetry (biansai shi) often depicted the neglected Great Wall ruins as symbols of desolation and futility."
+      },
+      "northern_song_960_1127": {
+        "period": "960–1127",
+        "description": "The Song dynasty did not extensively build walls, relying on existing structures as borders with the Liao and Western Xia. The Great Wall Gap saw conflicts during the Song–Liao War (979–1005), and trenches were dug alongside old Qin walls against Western Xia.",
+        "significant_events": "Treaty of Chanyuan (1005) demarcated Song-Liao borders using old walls like the Northern Qi Inner Wall. In 1042, Western Xia used Song trenches against them at the Battle of Dingchuan Fortress."
+      },
+      "liao_western_xia_jin_yuan_907_1368": {
+        "period": "907–1368",
+        "liao": {
+          "description": "The Khitan-led Liao (907–1125) controlled key passes including the Great Wall after acquiring the Sixteen Prefectures, building walls in Manchuria by 1026.",
+          "key_areas": "Walls extended north of Nong’an County to the Songhua River."
+        },
+        "western_xia": {
+          "description": "Tangut-led Western Xia (1038–1227) built walls in the Ordos, with a 100 km segment discovered in Mongolia, dated 1040–1160, made of mud, saxaul, and basalt.",
+          "status": "Incomplete, with no traces of human activity, suggesting unfinished construction."
+        },
+        "jin": {
+          "description": "Jurchen-led Jin (1115–1234) built extensive walls before 1138, with further construction in 1165, 1181, and 1192–1203, creating a 1,400 km network including outer and inner walls with moats and battlements.",
+          "controversy": "High costs and public exhaustion led to calls for suspension during drought, yet construction continued under Emperor Zhangzong."
+        },
+        "yuan": {
+          "description": "Mongol-led Yuan (1271–1368) did not build significant walls, focusing on garrisons against steppe rivals. Kublai Khan faced northern threats but did not enhance the Wall, except for the Cloud Platform at Juyong Pass.",
+          "significant_events": "Mongol conquests (1211–1279) bypassed Jin walls, with key victories like the Battle of Yehuling (1211) and capture of Juyong Pass by ambush."
+        }
+      },
+      "ming_dynasty_1368_1644": {
+        "period": "1368–1644",
+        "description": "The Ming dynasty saw the most significant rebuilding of the Great Wall, replacing earth with stone and brick, extending through rugged terrain, forming the structure visible today. Initial defenses under Hongwu (1368–98) focused on garrisons, shifting to walls after the Tumu Crisis (1449).",
+        "key_construction_phases": {
+          "early_walls": "Hongwu established inner and outer garrisons, evolving into walls by 1373 around Beijing. After the Tumu Crisis, focus shifted to defense with walls in Ordos (1470s) under Yu Zijun, stretching over 1,100 km with 800 strong points by 1474.",
+          "xuanfu_datong_western": "From 1544–1549, Weng Wanda fortified Xuanfu–Datong with 850 km of walls, some doubled or quadrupled, incorporating firearms. Western walls extended to Jiayu Pass in the Hexi Corridor by 1539.",
+          "beijing_shanhai": "Post-1550 raid by Altan Khan near Beijing prompted stone wall upgrades in Jizhou–Changping under Qi Jiguang and Tan Lun (1567–1571), building 1,200 hollow brick watchtowers. Walls covered difficult terrain, enhancing defense."
+        },
+        "significant_events": {
+          "tumu_crisis_1449": "Mongol capture of Zhengtong Emperor shattered Ming military dominance, leading to a defensive shift and wall-building.",
+          "altan_khan_raid_1550": "Failed trade led to Tümed Mongol raid near Beijing via Gubeikou, prompting fortifications.",
+          "manchu_invasion_1644": "Wu Sangui opened Shanhai Pass gates to Manchus, who defeated rebels and ended Ming rule after battles including the Battle of Shanhai Pass.",
+          "peace_with_altan_khan_1571": "Trade agreements reduced raids temporarily, though minor conflicts persisted."
+        },
+        "impact": "The Ming Wall was a major feat but criticized for ultimate failure against Manchu invasion, with historians comparing it to the Maginot Line. Some argue it received disproportionate blame as part of broader foreign policy."
+      },
+      "qing_dynasty_1644_1911": {
+        "period": "1644–1911",
+        "description": "Under Qing rule, the Wall’s defensive role diminished as their territory included areas inside and outside it (China proper, Manchuria, Mongolia). It was repurposed to restrict Han Chinese movement into steppes, with repairs to Liaodong Wall and Willow Palisade for control.",
+        "cultural_shift": "Qing suppressed the Wall’s symbolic divide between civilization and barbarism, showing little interest until Western fascination emerged mid-dynasty.",
+        "western_appreciation": "Western accounts from the 16th century (Gaspar da Cruz, Matteo Ricci) grew hyperbolic by the 17th-18th centuries (Martino Martini, Voltaire), with myths like visibility from space originating. Visits post-Opium Wars popularized sites like Juyong and Shanhai Pass."
+      },
+      "modern_china_1912_present": {
+        "period": "1912–Present",
+        "description": "Post-1911 Revolution, Sun Yat-sen promoted the Wall as a national symbol, though the New Culture Movement criticized it as outdated. It regained patriotic significance during the Sino-Japanese conflict (1931–1945), symbolizing resistance.",
+        "significant_events": {
+          "defense_of_great_wall_1933": "Chinese troops held off Japanese forces using the Wall, delaying their advance despite being overrun, establishing it as a symbol of resilience.",
+          "mao_zedong_reference_1935": "Mao’s poem during the Long March popularized the phrase 'Those who fail to reach the Great Wall are not true men,' enhancing its cultural status.",
+          "cultural_revolution_1966_1976": "Red Guards damaged hundreds of kilometers of the Wall as part of theFour Olds campaign, using materials for construction.",
+          "restoration_efforts": "Repairs began in 1952 under Guo Moruo, with Badaling opening in 1957, becoming a diplomatic site (e.g., Nixon’s 1972 visit). Deng Xiaoping’s 1980s campaign 'Love our China, restore our Great Wall' spurred preservation. UNESCO designated it a World Heritage Site in 1987."
+        },
+        "current_issues": "Tourism has led to over-restoration near Beijing, criticized as artificial. Less prominent sections remain neglected, prompting protective laws in 2003 and inclusion in the World Monuments Fund’s 2002 endangered sites list."
+      }
+    },
+    "significance_and_impact": {
+      "defensive_effectiveness": "While effective against cavalry raids in early centuries, the Wall failed during major invasions, notably in 1644, and was often bypassed by nomadic forces like the Mongols. Its role was as much symbolic and administrative as military.",
+      "cultural_symbol": "Evolving from a criticized relic to a national emblem of resilience and unity, particularly post-20th century conflicts, it remains a global icon drawing millions to sites like Badaling.",
+      "historiography": "Early Chinese studies (Gu Yanwu, 17th century) and modern archeology have refined understanding, though misconceptions of a continuous 2,000-year wall persist. Western scholarship shifted post-Arthur Waldron’s 1990 work debunking myths of antiquity and permanence."
+    }
+  }
+}
+
+📍 Step 10
+Creating procedural memory at step 10
+Messages consolidated: 3 messages converted to procedural memory
+👍 Eval: Success - The extraction of detailed history content about the Great Wall of China from the Wikipedia page was successful. The content covers key dynasties, construction phases, and significant events as intended by the task.
+🧠 Memory: I have initiated a Google search for 'history of the Great Wall of China', navigated to the Wikipedia page, and extracted comprehensive information including an overview, geographical context, historical phases from pre-imperial China to modern times, and cultural significance. The task is complete as I have gathered all necessary details regarding the history of the Great Wall of China. No further steps are needed. Total steps taken: 10 out of 15.
+🎯 Next goal: Finalize the task by summarizing and returning the extracted history of the Great Wall of China.
+🛠️  Action 1/1: {"done":{"text":"Here is a detailed history of the Great Wall of China as extracted from Wikipedia:\n\n**Overview**: The history of the Great Wall began with fortifications by various states during the Spring and Autumn (771–476 BC) and Warring States periods (475–221 BC). These were connected by Qin Shi Huang, the first emperor of China, to protect the Qin dynasty (221–206 BC) from nomadic incursions. Significant rebuilding and expansion occurred during the Han (202 BC – 220 AD), Northern Qi (550–574), Jin (1115–1234), and Ming (1369–1644) dynasties. The wall visible today mostly dates from the Ming dynasty, made of stone and brick. Despite its purpose, it failed notably in 1644 when Qing troops passed through Shanhai Pass, ending Ming rule. The total length is approximately 21,196 km as per a 2012 survey.\n\n**Geographical Context**: The Wall's construction was influenced by the divide between China’s agricultural south and the semi-arid grasslands of Inner Asia, with key defense areas like Mongolia, Manchuria, and Xinjiang. Natural barriers like the Yin Mountains aided defense, but strategic areas like the Ordos Loop and Hexi Corridor required extensive fortifications.\n\n**Historical Phases**:\n- **Pre-imperial China (7th Century–221 BC)**: Early walls were built by states like Chu, Qi, Wei, and Qin against northern invaders, often of tamped earth, for territorial security.\n- **Qin Dynasty (221–206 BC)**: Qin Shi Huang connected existing walls into a barrier from Gansu to Manchuria by 212 BC using forced labor.\n- **Han Dynasty (206 BC–220 AD)**: Extended walls to the west under Emperor Wu during the Han–Xiongnu War, using military colonies.\n- **Period of Disunity to Sui Dynasty (220–618)**: Northern Wei, Qi, and Sui built extensive walls, with Sui mobilizing over a million men.\n- **Tang Dynasty (618–907)**: Focused on mobile campaigns rather than walls, viewing them as ineffective.\n- **Northern Song (960–1127)**: Relied on existing walls as borders rather than new construction.\n- **Liao, Western Xia, Jin, Yuan (907–1368)**: Jin built a 1,400 km network; Yuan did not focus on walls.\n- **Ming Dynasty (1368–1644)**: Significant rebuilding in stone and brick, especially after the Tumu Crisis (1449) and Altan Khan raid (1550), forming today’s visible structure.\n- **Qing Dynasty (1644–1911)**: Diminished defensive role, repurposed for movement control, gained Western fascination.\n- **Modern China (1912–Present)**: Became a national symbol during Sino-Japanese conflict, faced damage during Cultural Revolution, now a UNESCO site and tourist destination with restoration efforts.\n\n**Significance**: While effective against raids, the Wall failed major invasions like in 1644. It evolved from a criticized relic to a symbol of resilience, drawing millions to sites like Badaling.\n\nThis comprehensive history fulfills the request to understand the historical development of the Great Wall of China.","success":true}}
+📄 Result: Here is a detailed history of the Great Wall of China as extracted from Wikipedia:
+
+**Overview**: The history of the Great Wall began with fortifications by various states during the Spring and Autumn (771–476 BC) and Warring States periods (475–221 BC). These were connected by Qin Shi Huang, the first emperor of China, to protect the Qin dynasty (221–206 BC) from nomadic incursions. Significant rebuilding and expansion occurred during the Han (202 BC – 220 AD), Northern Qi (550–574), Jin (1115–1234), and Ming (1369–1644) dynasties. The wall visible today mostly dates from the Ming dynasty, made of stone and brick. Despite its purpose, it failed notably in 1644 when Qing troops passed through Shanhai Pass, ending Ming rule. The total length is approximately 21,196 km as per a 2012 survey.
+
+**Geographical Context**: The Wall's construction was influenced by the divide between China’s agricultural south and the semi-arid grasslands of Inner Asia, with key defense areas like Mongolia, Manchuria, and Xinjiang. Natural barriers like the Yin Mountains aided defense, but strategic areas like the Ordos Loop and Hexi Corridor required extensive fortifications.
+
+**Historical Phases**:
+- **Pre-imperial China (7th Century–221 BC)**: Early walls were built by states like Chu, Qi, Wei, and Qin against northern invaders, often of tamped earth, for territorial security.
+- **Qin Dynasty (221–206 BC)**: Qin Shi Huang connected existing walls into a barrier from Gansu to Manchuria by 212 BC using forced labor.
+- **Han Dynasty (206 BC–220 AD)**: Extended walls to the west under Emperor Wu during the Han–Xiongnu War, using military colonies.
+- **Period of Disunity to Sui Dynasty (220–618)**: Northern Wei, Qi, and Sui built extensive walls, with Sui mobilizing over a million men.
+- **Tang Dynasty (618–907)**: Focused on mobile campaigns rather than walls, viewing them as ineffective.
+- **Northern Song (960–1127)**: Relied on existing walls as borders rather than new construction.
+- **Liao, Western Xia, Jin, Yuan (907–1368)**: Jin built a 1,400 km network; Yuan did not focus on walls.
+- **Ming Dynasty (1368–1644)**: Significant rebuilding in stone and brick, especially after the Tumu Crisis (1449) and Altan Khan raid (1550), forming today’s visible structure.
+- **Qing Dynasty (1644–1911)**: Diminished defensive role, repurposed for movement control, gained Western fascination.
+- **Modern China (1912–Present)**: Became a national symbol during Sino-Japanese conflict, faced damage during Cultural Revolution, now a UNESCO site and tourist destination with restoration efforts.
+
+**Significance**: While effective against raids, the Wall failed major invasions like in 1644. It evolved from a criticized relic to a symbol of resilience, drawing millions to sites like Badaling.
+
+This comprehensive history fulfills the request to understand the historical development of the Great Wall of China.
+✅ Task completed
+✅ Successfully

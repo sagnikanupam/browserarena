@@ -561,7 +561,7 @@ def build_side_by_side_ui_anony(models):
         )
         user_id_box = gr.Textbox(
             show_label=False,
-            placeholder="👉 Enter your User ID or MTurk Worker ID",
+            placeholder="👉 Enter your User ID or MTurk Worker/Prolific ID",
             elem_id="user_id_box",
         )
         prompt_id_box = gr.Textbox(
