@@ -1,0 +1,46 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the capital of France?
+📍 Step 1
+Failed to parse model output: content='{"done":{"text":"The capital of France is Paris.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 291, 'prompt_tokens': 4728, 'total_tokens': 5019, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 256, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746380600-wgwMqHrgtufrg1duhvSA', 'finish_reason': 'stop', 'logprobs': None} id='run-bf41ac89-f478-435a-aacd-e27b51a3f567-0' usage_metadata={'input_tokens': 4728, 'output_tokens': 291, 'total_tokens': 5019, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 256}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: content='{"done":{"text":"The capital of France is Paris.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 227, 'prompt_tokens': 4745, 'total_tokens': 4972, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2432}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746380605-iKu7BLLFxuQNjA4sfO27', 'finish_reason': 'stop', 'logprobs': None} id='run-14830006-c10b-476b-a21a-7d01ad099576-0' usage_metadata={'input_tokens': 4745, 'output_tokens': 227, 'total_tokens': 4972, 'input_token_details': {'cache_read': 2432}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown - no search performed yet
+🧠 Memory: Started ultimate task: find capital of France. 0 out of 1 searches performed
+🎯 Next goal: Search Google for the capital of France
+🛠️  Action 1/1: {"search_google":{"query":"Capital of France"}}
+🔍  Searched for "Capital of France" in Google
+📍 Step 2
+Failed to parse model output: content='{"done": {"text": "The capital of France is Paris.", "success": true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 230, 'prompt_tokens': 6028, 'total_tokens': 6258, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746380617-tsQNQpS22naLRn3XpEe0', 'finish_reason': 'stop', 'logprobs': None} id='run-eff15b3c-bb11-41b5-b9c4-598c77cbac15-0' usage_metadata={'input_tokens': 6028, 'output_tokens': 230, 'total_tokens': 6258, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...ris.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success - Found the answer on the Google results page
+🧠 Memory: Performed 1/1 Google search for the capital of France; answer located
+🎯 Next goal: Finish the ultimate task
+🛠️  Action 1/1: {"done":{"text":"The capital of France is Paris.","success":true}}
+📄 Result: The capital of France is Paris.
+✅ Task completed
+✅ Successfully

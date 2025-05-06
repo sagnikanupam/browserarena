@@ -1,83 +1,10 @@
-2025-04-27 17:16:56 | ERROR | stderr | Traceback (most recent call last):
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
-2025-04-27 17:16:56 | ERROR | stderr |     sock = connection.create_connection(
-2025-04-27 17:16:56 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
-2025-04-27 17:16:56 | ERROR | stderr |     raise err
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
-2025-04-27 17:16:56 | ERROR | stderr |     sock.connect(sa)
-2025-04-27 17:16:56 | ERROR | stderr | ConnectionRefusedError: [Errno 61] Connection refused
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | The above exception was the direct cause of the following exception:
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | Traceback (most recent call last):
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
-2025-04-27 17:16:56 | ERROR | stderr |     response = self._make_request(
-2025-04-27 17:16:56 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 493, in _make_request
-2025-04-27 17:16:56 | ERROR | stderr |     conn.request(
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connection.py", line 445, in request
-2025-04-27 17:16:56 | ERROR | stderr |     self.endheaders()
-2025-04-27 17:16:56 | ERROR | stderr |   File "/opt/homebrew/Cellar/python@3.11/3.11.12/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1298, in endheaders
-2025-04-27 17:16:56 | ERROR | stderr |     self._send_output(message_body, encode_chunked=encode_chunked)
-2025-04-27 17:16:56 | ERROR | stderr |   File "/opt/homebrew/Cellar/python@3.11/3.11.12/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1058, in _send_output
-2025-04-27 17:16:56 | ERROR | stderr |     self.send(msg)
-2025-04-27 17:16:56 | ERROR | stderr |   File "/opt/homebrew/Cellar/python@3.11/3.11.12/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 996, in send
-2025-04-27 17:16:56 | ERROR | stderr |     self.connect()
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connection.py", line 276, in connect
-2025-04-27 17:16:56 | ERROR | stderr |     self.sock = self._new_conn()
-2025-04-27 17:16:56 | ERROR | stderr |                 ^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connection.py", line 213, in _new_conn
-2025-04-27 17:16:56 | ERROR | stderr |     raise NewConnectionError(
-2025-04-27 17:16:56 | ERROR | stderr | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x28ff30650>: Failed to establish a new connection: [Errno 61] Connection refused
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | The above exception was the direct cause of the following exception:
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | Traceback (most recent call last):
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
-2025-04-27 17:16:56 | ERROR | stderr |     resp = conn.urlopen(
-2025-04-27 17:16:56 | ERROR | stderr |            ^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
-2025-04-27 17:16:56 | ERROR | stderr |     retries = retries.increment(
-2025-04-27 17:16:56 | ERROR | stderr |               ^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
-2025-04-27 17:16:56 | ERROR | stderr |     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
-2025-04-27 17:16:56 | ERROR | stderr |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=21001): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x28ff30650>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | During handling of the above exception, another exception occurred:
-2025-04-27 17:16:56 | ERROR | stderr | 
-2025-04-27 17:16:56 | ERROR | stderr | Traceback (most recent call last):
-2025-04-27 17:16:56 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
-2025-04-27 17:16:56 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/FastChat/fastchat/serve/gradio_web_server_multi.py", line 378, in <module>
-2025-04-27 17:16:56 | ERROR | stderr |     text_models, all_text_models = get_model_list(
-2025-04-27 17:16:56 | ERROR | stderr |                                    ^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/FastChat/fastchat/serve/gradio_web_server.py", line 221, in get_model_list
-2025-04-27 17:16:56 | ERROR | stderr |     ret = requests.post(controller_url + "/refresh_all_workers")
-2025-04-27 17:16:56 | ERROR | stderr |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/api.py", line 115, in post
-2025-04-27 17:16:56 | ERROR | stderr |     return request("post", url, data=data, json=json, **kwargs)
-2025-04-27 17:16:56 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/api.py", line 59, in request
-2025-04-27 17:16:56 | ERROR | stderr |     return session.request(method=method, url=url, **kwargs)
-2025-04-27 17:16:56 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-2025-04-27 17:16:56 | ERROR | stderr |     resp = self.send(prep, **send_kwargs)
-2025-04-27 17:16:56 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
-2025-04-27 17:16:56 | ERROR | stderr |     r = adapter.send(request, **kwargs)
-2025-04-27 17:16:56 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:16:56 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/ba_env/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
-2025-04-27 17:16:56 | ERROR | stderr |     raise ConnectionError(e, request=request)
-2025-04-27 17:16:56 | ERROR | stderr | requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=21001): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x28ff30650>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-27 17:17:15 | ERROR | stderr | Traceback (most recent call last):
-2025-04-27 17:17:15 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
-2025-04-27 17:17:15 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
-2025-04-27 17:17:15 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/FastChat/fastchat/serve/gradio_web_server_multi.py", line 378, in <module>
-2025-04-27 17:17:15 | ERROR | stderr |     text_models, all_text_models = get_model_list(
-2025-04-27 17:17:15 | ERROR | stderr |                                    ^^^^^^^^^^^^^^^
-2025-04-27 17:17:15 | ERROR | stderr |   File "/Users/sagnikanupam/browserarena/FastChat/fastchat/serve/gradio_web_server.py", line 235, in get_model_list
-2025-04-27 17:17:15 | ERROR | stderr |     api_endpoint_info = json.load(open(register_api_endpoint_file))
-2025-04-27 17:17:15 | ERROR | stderr |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2025-04-27 17:17:15 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'api_endpoint.json'
+2025-05-04 17:41:13 | ERROR | stderr | Traceback (most recent call last):
+2025-05-04 17:41:13 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
+2025-05-04 17:41:13 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
+2025-05-04 17:41:13 | ERROR | stderr |   File "/home/ubuntu/browserarena/FastChat/fastchat/serve/gradio_web_server_multi.py", line 378, in <module>
+2025-05-04 17:41:13 | ERROR | stderr |     text_models, all_text_models = get_model_list(
+2025-05-04 17:41:13 | ERROR | stderr |                                    ^^^^^^^^^^^^^^^
+2025-05-04 17:41:13 | ERROR | stderr |   File "/home/ubuntu/browserarena/FastChat/fastchat/serve/gradio_web_server.py", line 242, in get_model_list
+2025-05-04 17:41:13 | ERROR | stderr |     api_endpoint_info = json.load(open(register_api_endpoint_file))
+2025-05-04 17:41:13 | ERROR | stderr |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-04 17:41:13 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'api_endpoint.json'
