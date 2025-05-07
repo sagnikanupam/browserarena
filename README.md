@@ -38,6 +38,10 @@ cd FastChat
 python3.11 -m pip install -e ".[model_worker,webui]" --use-pep517   
 cd ..
 python3.11 -m pip install -e browser-use --use-pep517
+```
+
+Add `export PATH="/usr/bin/python3.11:$PATH"` to `~/.bashrc` and `source ~/.bashrc` and restart terminal.
+```
 playwright install-deps
 playwright install chromium
 ```
@@ -74,6 +78,10 @@ python3.11 -m fastchat.serve.controller
 
 ```
 python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
+```
+For headless rendering:
+```
+xvfb-run -a python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
 ```
 
 ## Compute Leaderboard
