@@ -8,3 +8,13 @@
 2025-05-04 17:41:13 | ERROR | stderr |     api_endpoint_info = json.load(open(register_api_endpoint_file))
 2025-05-04 17:41:13 | ERROR | stderr |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 2025-05-04 17:41:13 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'api_endpoint.json'
+2025-05-07 13:44:02 | ERROR | stderr | Traceback (most recent call last):
+2025-05-07 13:44:02 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
+2025-05-07 13:44:02 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
+2025-05-07 13:44:02 | ERROR | stderr |   File "/home/ubuntu/browserarena/FastChat/fastchat/serve/gradio_web_server_multi.py", line 378, in <module>
+2025-05-07 13:44:02 | ERROR | stderr |     text_models, all_text_models = get_model_list(
+2025-05-07 13:44:02 | ERROR | stderr |                                    ^^^^^^^^^^^^^^^
+2025-05-07 13:44:02 | ERROR | stderr |   File "/home/ubuntu/browserarena/FastChat/fastchat/serve/gradio_web_server.py", line 242, in get_model_list
+2025-05-07 13:44:02 | ERROR | stderr |     api_endpoint_info = json.load(open(register_api_endpoint_file))
+2025-05-07 13:44:02 | ERROR | stderr |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-07 13:44:02 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'api_endpoint.json'

@@ -1,0 +1,39 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Which city is the Taj Mahal located in?
+📍 Step 1
+🤷 Eval: Unknown - no actions taken yet
+🧠 Memory: Started task to find the city of the Taj Mahal. 0/1 steps completed.
+🎯 Next goal: Search the query in Google.
+🛠️  Action 1/1: {"search_google":{"query":"Which city is the Taj Mahal located in?"}}
+🔍  Searched for "Which city is the Taj Mahal located in?" in Google
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The Taj Mahal is located in the city of Agra.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 232, 'prompt_tokens': 6168, 'total_tokens': 6400, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746626174-ZI33kUrhuXbPoiLH1rtG', 'finish_reason': 'stop', 'logprobs': None} id='run-a6a362fc-bf50-4e86-9645-db1a116cd67a-0' usage_metadata={'input_tokens': 6168, 'output_tokens': 232, 'total_tokens': 6400, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The Taj Mahal is located in the city of Agra.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 168, 'prompt_tokens': 6185, 'total_tokens': 6353, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 128, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746626188-6zrGuHee0BS5IC5FBYmV', 'finish_reason': 'stop', 'logprobs': None} id='run-4e8d6a85-27a0-4749-b44b-28f35b0f0808-0' usage_metadata={'input_tokens': 6185, 'output_tokens': 168, 'total_tokens': 6353, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 128}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The Taj Mahal is located in the city of Agra.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 232, 'prompt_tokens': 6202, 'total_tokens': 6434, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746626201-Zv3PlZQMHIIxdHIoW8d5', 'finish_reason': 'stop', 'logprobs': None} id='run-be1cbbcf-1f30-4f21-a708-9dab8ad15462-0' usage_metadata={'input_tokens': 6202, 'output_tokens': 232, 'total_tokens': 6434, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The Ta...gra.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

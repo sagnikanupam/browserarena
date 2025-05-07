@@ -1,0 +1,99 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me a summary of top 10 philanthropic foundations that give grants in  favor of LGBTQI community.
+📍 Step 1
+🤷 Eval: Unknown - The page is blank and there are no interactive elements.
+🧠 Memory: Starting the task to find a summary of top 10 philanthropic foundations that give grants in favor of LGBTQI community. Currently on a blank page.
+🎯 Next goal: Navigate to Google to start the search for relevant information.
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+🔗  Navigated to https://www.google.com
+📍 Step 2
+👍 Eval: Success - Navigated to Google homepage
+🧠 Memory: Started the task to find a summary of top 10 philanthropic foundations that give grants in favor of LGBTQI community. Navigated to Google homepage.
+🎯 Next goal: Search for information on top philanthropic foundations supporting LGBTQI community
+🛠️  Action 1/1: {"input_text":{"index":6,"text":"top philanthropic foundations supporting LGBTQI community"}}
+⌨️  Input top philanthropic foundations supporting LGBTQI community into index 6
+📍 Step 3
+Failed to parse model output: {"name": "AgentOutput", "parameters": {"current_state": {"evaluation_previous_goal": "Success - Input the search query into Google search box", "memory": "Navigated to Google homepage and input the search query 'top philanthropic foundations supporting LGBTQI community'", "next_goal": "Perform the search to get relevant results"}, "action": [{"click_element_by_index": {"index": 41}}]}}
+{"type": "function", "name": "click_element_by_index", "parameters": {"index": {"type": "integer", "value": 41}}} with Extra data: line 2 column 1 (char 389), could not extract JSON.
+Failed to parse model output: content='{"name": "AgentOutput", "parameters": {"current_state": {"evaluation_previous_goal": "Success - Input the search query into Google search box", "memory": "Navigated to Google homepage and input the search query \'top philanthropic foundations supporting LGBTQI community\'", "next_goal": "Perform the search to get relevant results"}, "action": [{"click_element_by_index": {"index": 41}}]}}\n{"type": "function", "name": "click_element_by_index", "parameters": {"index": {"type": "integer", "value": 41}}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 119, 'prompt_tokens': 5276, 'total_tokens': 5395, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': None, 'id': 'gen-1746634322-AhibnrWcQ5lr2ecMOaU5', 'finish_reason': 'stop', 'logprobs': None} id='run-271ba25a-b09d-41c7-9f2a-cf4fe391cc81-0' usage_metadata={'input_tokens': 5276, 'output_tokens': 119, 'total_tokens': 5395, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+👍 Eval: Success - Input the search query into the Google search bar
+🧠 Memory: Navigated to Google homepage and input the search query 'top philanthropic foundations supporting LGBTQI community'
+🎯 Next goal: Submit the search query to retrieve relevant results
+🛠️  Action 1/1: {"send_keys":{"keys":"Enter"}}
+⌨️  Sent keys: Enter
+📍 Step 4
+👍 Eval: Success - Successfully searched for top philanthropic foundations supporting LGBTQI community
+🧠 Memory: Searched for top philanthropic foundations supporting LGBTQI community on Google. Retrieved a list of foundations and organizations.
+🎯 Next goal: Extract the names and relevant details of the top philanthropic foundations from the search results
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract the names and details of top 10 philanthropic foundations supporting LGBTQI community","should_strip_link_urls":false}}
+📄  Extracted from page
+: Here is the list of top 10 philanthropic foundations supporting LGBTQI community in JSON format:
+
+```json
+{
+  "top_philanthropic_foundations": [
+    {
+      "name": "Arcus Foundation",
+      "description": "International charitable foundation focused on LGBT rights, social justice, ape conservation, and environmental preservation."
+    },
+    {
+      "name": "Ford Foundation",
+      "description": "American private foundation with the stated goal of advancing human welfare, supporting economic access, leadership development, and awareness programs for LGBTQ communities."
+    },
+    {
+      "name": "Gill Foundation",
+      "description": "American philanthropic foundation based in Denver, Colorado, working to secure full equality for lesbian, gay, bisexual, and transgender people in the United States."
+    },
+    {
+      "name": "Pride Foundation",
+      "description": "LGBTQ philanthropic foundation in the Pacific Northwest, founded in 1985, issuing over $8 million in grants and over $1.65 million to scholarships."
+    },
+    {
+      "name": "Astraea Lesbian Foundation for Justice",
+      "description": "International charitable foundation based in the United States focused on human rights of LGBT people, intersex people, and people of color."
+    },
+    {
+      "name": "Human Rights Campaign",
+      "description": "American LGBTQ advocacy group and the largest LGBTQ political lobbying organization within the United States."
+    },
+    {
+      "name": "Open Society Foundations",
+      "description": "American grantmaking network founded by George Soros, financially supporting civil society groups around the world to advance justice, education, public health, and independent media."
+    },
+    {
+      "name": "The Trevor Project",
+      "description": "American nonprofit organization focused on suicide prevention efforts among LGBTQ+ young people, offering hotlines, chats, and texts 24 hours a day."
+    },
+    {
+      "name": "Ali Forney Center",
+      "description": "Largest LGBT community center helping LGBTQ homeless youth in the United States, managing and developing transitional housing for its clients."
+    },
+    {
+      "name": "Evelyn and Walter Haas Jr. Fund",
+      "description": "Private foundation established in 1953, a leading supporter of gay and lesbian equality, awarding nearly $625 million in philanthropic grants as of 2019."
+    }
+  ]
+}
+```
+
+📍 Step 5
+👍 Eval: Success - Successfully extracted the names and details of top 10 philanthropic foundations supporting LGBTQI community
+🧠 Memory: Extracted the list of top 10 philanthropic foundations supporting LGBTQI community from the Google search results.
+🎯 Next goal: Compile the extracted information into a summary for the final task
+🛠️  Action 1/1: {"done":{"text":"The top 10 philanthropic foundations supporting LGBTQI community are:\n1. Arcus Foundation - International charitable foundation focused on LGBT rights, social justice, ape conservation, and environmental preservation.\n2. Ford Foundation - American private foundation with the stated goal of advancing human welfare, supporting economic access, leadership development, and awareness programs for LGBTQ communities.\n3. Gill Foundation - American philanthropic foundation based in Denver, Colorado, working to secure full equality for lesbian, gay, bisexual, and transgender people in the United States.\n4. Pride Foundation - LGBTQ philanthropic foundation in the Pacific Northwest, founded in 1985, issuing over $8 million in grants and over $1.65 million to scholarships.\n5. Astraea Lesbian Foundation for Justice - International charitable foundation based in the United States focused on human rights of LGBT people, intersex people, and people of color.\n6. Human Rights Campaign - American LGBTQ advocacy group and the largest LGBTQ political lobbying organization within the United States.\n7. Open Society Foundations - American grantmaking network founded by George Soros, financially supporting civil society groups around the world to advance justice, education, public health, and independent media.\n8. The Trevor Project - American nonprofit organization focused on suicide prevention efforts among LGBTQ+ young people, offering hotlines, chats, and texts 24 hours a day.\n9. Ali Forney Center - Largest LGBT community center helping LGBTQ homeless youth in the United States, managing and developing transitional housing for its clients.\n10. Evelyn and Walter Haas Jr. Fund - Private foundation established in 1953, a leading supporter of gay and lesbian equality, awarding nearly $625 million in philanthropic grants as of 2019.","success":true}}
+📄 Result: The top 10 philanthropic foundations supporting LGBTQI community are:
+1. Arcus Foundation - International charitable foundation focused on LGBT rights, social justice, ape conservation, and environmental preservation.
+2. Ford Foundation - American private foundation with the stated goal of advancing human welfare, supporting economic access, leadership development, and awareness programs for LGBTQ communities.
+3. Gill Foundation - American philanthropic foundation based in Denver, Colorado, working to secure full equality for lesbian, gay, bisexual, and transgender people in the United States.
+4. Pride Foundation - LGBTQ philanthropic foundation in the Pacific Northwest, founded in 1985, issuing over $8 million in grants and over $1.65 million to scholarships.
+5. Astraea Lesbian Foundation for Justice - International charitable foundation based in the United States focused on human rights of LGBT people, intersex people, and people of color.
+6. Human Rights Campaign - American LGBTQ advocacy group and the largest LGBTQ political lobbying organization within the United States.
+7. Open Society Foundations - American grantmaking network founded by George Soros, financially supporting civil society groups around the world to advance justice, education, public health, and independent media.
+8. The Trevor Project - American nonprofit organization focused on suicide prevention efforts among LGBTQ+ young people, offering hotlines, chats, and texts 24 hours a day.
+9. Ali Forney Center - Largest LGBT community center helping LGBTQ homeless youth in the United States, managing and developing transitional housing for its clients.
+10. Evelyn and Walter Haas Jr. Fund - Private foundation established in 1953, a leading supporter of gay and lesbian equality, awarding nearly $625 million in philanthropic grants as of 2019.
+✅ Task completed
+✅ Successfully
