@@ -1,0 +1,193 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what is the fastest car in the world?
+📍 Step 1
+🤷 Eval: No previous goal to evaluate. Starting fresh.
+🧠 Memory: The task is to find out 'what is the fastest car in the world?'. I will start by performing a Google search for this information.
+🎯 Next goal: Perform a Google search for 'fastest car in the world'
+🛠️  Action 1/1: {"search_google":{"query":"fastest car in the world"}}
+🔍  Searched for "fastest car in the world" in Google
+📍 Step 2
+👍 Eval: Success - I have performed a Google search for 'fastest car in the world'
+🧠 Memory: The search results provide various information about the fastest cars. The Koenigsegg Jesko Absolut is mentioned as being over 310mph (499km/h). The Thrust SSC is noted for achieving 763 mph. The SSC Tuatara is mentioned as being officially the fastest car at 331MPH. The Bugatti W16 MISTRAL set a record for the fastest open-top car at 453.91 km/h.
+🎯 Next goal: Extract more detailed information from the search results to determine the fastest car in the world.
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract detailed information about the fastest car in the world from the search results.","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "fastest_car_in_the_world": {
+    "top_cars": [
+      {
+        "name": "Koenigsegg Jesko Absolut",
+        "speed": "over 310mph (499km/h)"
+      },
+      {
+        "name": "Thrust SSC",
+        "speed": "763 mph"
+      },
+      {
+        "name": "SSC Tuatara",
+        "speed": "331MPH"
+      },
+      {
+        "name": "Bugatti W16 MISTRAL",
+        "speed": "453.91 km/h"
+      },
+      {
+        "name": "Bugatti Chiron Supersport 300+",
+        "speed": "489 km/hr"
+      }
+    ],
+    "production_car_speed_record": "The current production car speed record is held by the SSC Tuatara, with a speed of 331MPH.",
+    "fastest_open_top_car": "The Bugatti W16 MISTRAL is the fastest open-top car, with a speed of 453.91 km/h.",
+    "top_10_fastest_cars": [
+      "Koenigsegg Jesko Absolut – over 500 km/hr (claimed)",
+      "Bugatti Chiron Supersport 300+ – 489 km/hr",
+      "SSC Tuatara – 474 km/hr",
+      "Koenigsegg CCR",
+      "Pagani Zonda",
+      "Saleen S7",
+      "Bugatti EB 16.4 Veyron",
+      "McLaren Speedtail",
+      "Hennessey Venom GT",
+      "Bristol Fighter T"
+    ]
+  }
+}
+```
+
+The response summarizes the information found on the Google search results page for "fastest car in the world." It includes the top cars mentioned, their speeds, and other relevant information such as production car speed records and the fastest open-top car. The information is based on the search results provided, which include articles from various sources like Carwow, Wikipedia, and Auto Express.
+
+📍 Step 3
+👍 Eval: Success - I have extracted detailed information about the fastest car in the world from the Google search results.
+🧠 Memory: The search results provide various information about the fastest cars. The Koenigsegg Jesko Absolut is mentioned as being over 310mph (499km/h). The Thrust SSC achieved 763 mph. The SSC Tuatara is officially the fastest car at 331MPH. The Bugatti W16 MISTRAL set a record for the fastest open-top car at 453.91 km/h. The extracted information includes a list of top 10 fastest cars and other relevant details.
+🎯 Next goal: Compile the information to answer the question 'what is the fastest car in the world?' and provide a detailed response.
+🛠️  Action 1/1: {"done":{"text":"The fastest car in the world is the Thrust SSC, which achieved a speed of 763 mph in October 1997 over the Black Rock Desert in Nevada. However, if considering production cars, the SSC Tuatara holds the record at 331MPH. The Koenigsegg Jesko Absolut is claimed to be over 310mph (499km/h). The Bugatti W16 MISTRAL is the fastest open-top car at 453.91 km/h.","success":true}}
+📄 Result: The fastest car in the world is the Thrust SSC, which achieved a speed of 763 mph in October 1997 over the Black Rock Desert in Nevada. However, if considering production cars, the SSC Tuatara holds the record at 331MPH. The Koenigsegg Jesko Absolut is claimed to be over 310mph (499km/h). The Bugatti W16 MISTRAL is the fastest open-top car at 453.91 km/h.
+✅ Task completed
+✅ Successfully
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what is the fastest car in the world?
+📍 Step 1
+🤷 Eval: No previous goal to evaluate. Starting fresh.
+🧠 Memory: Task: What is the fastest car in the world?. Step 1/15. Current URL: about:blank
+🎯 Next goal: Navigate to Google and search for the fastest car in the world
+🛠️  Action 1/2: {"go_to_url":{"url":"https://www.google.com"}}
+🛠️  Action 2/2: {"search_google":{"query":"fastest car in the world"}}
+🔗  Navigated to https://www.google.com
+🔍  Searched for "fastest car in the world" in Google
+📍 Step 2
+👍 Eval: Success - I successfully navigated to Google and searched for 'fastest car in the world'
+🧠 Memory: Task: What is the fastest car in the world?. Step 2/15. Current URL: https://www.google.com/search?q=fastest+car+in+the+world&udm=14&sei=aqIbaM6AHLjdptQPuu6xyAg. I have searched for 'fastest car in the world' on Google.
+🎯 Next goal: Extract information about the fastest car in the world from the search results
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract information about the fastest car in the world from the search results","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "fastest_car_in_the_world": {
+    "current_record_holder": {
+      "car_name": "Koenigsegg Jesko Absolut",
+      "top_speed": "over 310mph (499km/h)"
+    },
+    "other_top_contenders": [
+      {
+        "car_name": "Bugatti Chiron Super Sport 300+",
+        "top_speed": "489 km/hr"
+      },
+      {
+        "car_name": "SSC Tuatara",
+        "top_speed": "474 km/hr"
+      },
+      {
+        "car_name": "Rimac Nevera",
+        "top_speed": "416 km/h"
+      }
+    ],
+    "historical_record_holders": [
+      {
+        "car_name": "Thrust SSC",
+        "top_speed": "763 mph"
+      },
+      {
+        "car_name": "Bugatti Veyron 16.4 Super Sport",
+        "top_speed": "267.85 mph"
+      }
+    ]
+  }
+}
+```
+
+The search results provide a wealth of information about the fastest car in the world. The current record holder appears to be the Koenigsegg Jesko Absolut, with a top speed of over 310mph (499km/h). Other top contenders include the Bugatti Chiron Super Sport 300+ and the SSC Tuatara. Historically, the Thrust SSC held the record for the fastest car ever, reaching 763 mph in 1997. The Bugatti Veyron 16.4 Super Sport was also a notable record holder, with a top speed of 267.85 mph.
+
+📍 Step 3
+👍 Eval: Success - I have extracted information about the fastest car in the world from the Google search results
+🧠 Memory: Task: What is the fastest car in the world?. Step 3/15. Current URL: https://www.google.com/search?q=fastest+car+in+the+world&udm=14&sei=aqIbaM6AHLjdptQPuu6xyAg. The current record holder for the fastest car is the Koenigsegg Jesko Absolut with a top speed of over 310mph (499km/h). Other top contenders include Bugatti Chiron Super Sport 300+ and SSC Tuatara. Historically, Thrust SSC held the record at 763 mph.
+🎯 Next goal: Provide the final answer to the task
+🛠️  Action 1/1: {"done":{"text":"The fastest car in the world is the Koenigsegg Jesko Absolut, with a top speed of over 310mph (499km/h). Other top contenders include Bugatti Chiron Super Sport 300+ (489 km/hr) and SSC Tuatara (474 km/hr). Historically, Thrust SSC held the record at 763 mph.","success":true}}
+📄 Result: The fastest car in the world is the Koenigsegg Jesko Absolut, with a top speed of over 310mph (499km/h). Other top contenders include Bugatti Chiron Super Sport 300+ (489 km/hr) and SSC Tuatara (474 km/hr). Historically, Thrust SSC held the record at 763 mph.
+✅ Task completed
+✅ Successfully
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what is the fastest car in the world?
+📍 Step 1
+🤷 Eval: No previous goal to evaluate
+🧠 Memory: Starting with the new task. The current page is about:blank. I need to search for the fastest car in the world.
+🎯 Next goal: Search for 'fastest car in the world' in Google
+🛠️  Action 1/1: {"search_google":{"query":"fastest car in the world"}}
+🔍  Searched for "fastest car in the world" in Google
+📍 Step 2
+👍 Eval: Success - I searched for 'fastest car in the world' in Google
+🧠 Memory: The search results provide information about the fastest cars in the world. The top results include various articles and videos discussing the fastest cars. I need to extract relevant information from these results to answer the question.
+🎯 Next goal: Extract relevant information from the search results to determine the fastest car in the world
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract information about the fastest car in the world from the search results","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "fastest_car_in_the_world": {
+    "top_speed": "over 310mph (499km/h)",
+    "car_name": "Koenigsegg Jesko Absolut",
+    "source": "Carwow",
+    "date": "Oct 23, 2024"
+  },
+  "other_fastest_cars": [
+    {
+      "car_name": "Bugatti Chiron Super Sport 300+",
+      "top_speed": "489 km/hr",
+      "source": "Spinny"
+    },
+    {
+      "car_name": "SSC Tuatara",
+      "top_speed": "474 km/hr",
+      "source": "Spinny"
+    },
+    {
+      "car_name": "Bugatti Veyron 16.4 Super Sport",
+      "top_speed": "267.85 mph",
+      "source": "Detailing Devils"
+    },
+    {
+      "car_name": "Koenigsegg Agera RS",
+      "top_speed": "277.87 MPH",
+      "source": "Autoblog"
+    }
+  ],
+  "fastest_non_production_car": {
+    "car_name": "Thrust SSC",
+    "top_speed": "763 mph",
+    "source": "SuperfastMatt on YouTube"
+  },
+  "fastest_open_top_car": {
+    "car_name": "Bugatti W16 MISTRAL",
+    "top_speed": "453.91 km/h",
+    "source": "Bugatti on YouTube"
+  }
+}
+```
+
+📍 Step 3
+👍 Eval: Success - I have already extracted the relevant information from the search results
+🧠 Memory: The fastest car in the world is the Koenigsegg Jesko Absolut with a top speed of over 310mph (499km/h) according to Carwow. Other fast cars include Bugatti Chiron Super Sport 300+, SSC Tuatara, and Bugatti Veyron 16.4 Super Sport. The fastest non-production car is Thrust SSC at 763 mph.
+🎯 Next goal: Provide the final answer to the task
+🛠️  Action 1/1: {"done":{"text":"The fastest car in the world is the Koenigsegg Jesko Absolut with a top speed of over 310mph (499km/h) according to Carwow. Other fast cars include Bugatti Chiron Super Sport 300+, SSC Tuatara, and Bugatti Veyron 16.4 Super Sport. The fastest non-production car is Thrust SSC at 763 mph.","success":true}}
+📄 Result: The fastest car in the world is the Koenigsegg Jesko Absolut with a top speed of over 310mph (499km/h) according to Carwow. Other fast cars include Bugatti Chiron Super Sport 300+, SSC Tuatara, and Bugatti Veyron 16.4 Super Sport. The fastest non-production car is Thrust SSC at 763 mph.
+✅ Task completed
+✅ Successfully

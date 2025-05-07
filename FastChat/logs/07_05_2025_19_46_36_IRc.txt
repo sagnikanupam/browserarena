@@ -1,0 +1,73 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Find the current local time in Perth, Australia on a reliable time zone website.
+📍 Step 1
+🤷 Eval: Unknown - task just started, no previous actions
+🧠 Memory: Starting task: 0/3 steps completed (search Google query)
+🎯 Next goal: Search for the current local time in Perth, Australia on Google
+🛠️  Action 1/1: {"search_google":{"query":"current local time Perth Australia"}}
+🔍  Searched for "current local time Perth Australia" in Google
+📍 Step 2
+👍 Eval: Success - Google search results displayed reliable time zone websites
+🧠 Memory: Starting task: 1/3 steps completed (searched for current local time and ready to click the result)
+🎯 Next goal: Click the Time and Date result to view the current local time for Perth
+🛠️  Action 1/1: {"click_element_by_index":{"index":32}}
+🖱️  Clicked button with index 32: 
+📍 Step 3
+Failed to parse model output: content='{"done":{"text":"The current local time in Perth, Australia (AWST) is 3:47 am on Thursday, May 8, 2025.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 314, 'prompt_tokens': 5830, 'total_tokens': 6144, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 256, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746647224-ZWlfyWvmb8rgiZZC5r2V', 'finish_reason': 'stop', 'logprobs': None} id='run-3e84984b-9245-4dfc-ae63-c4798c2a360f-0' usage_metadata={'input_tokens': 5830, 'output_tokens': 314, 'total_tokens': 6144, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 256}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{"done": {"text": "The current local time in Perth, Australia, according to timeanddate.com, is 3:47:09 AM AWST on Thursday, May 8, 2025.", "success": true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 389, 'prompt_tokens': 5847, 'total_tokens': 6236, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 320, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746647230-Jr7bYFKo0yuLHQNLpGGm', 'finish_reason': 'stop', 'logprobs': None} id='run-b78ebec3-7ba2-4812-a9ca-1abb6c586b10-0' usage_metadata={'input_tokens': 5847, 'output_tokens': 389, 'total_tokens': 6236, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 320}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+👍 Eval: Success - navigated to timeanddate.com Perth page showing the local time
+🧠 Memory: Starting task: 2/3 steps completed (searched Google and opened the Perth time page on timeanddate.com)
+🎯 Next goal: Extract the current local time displayed on the page for Perth
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract the current local time displayed on the page for Perth","should_strip_link_urls":true}}
+📄  Extracted from page
+: {"location":"Perth, Western Australia, Australia","timezone":"AWST","current_time":"3:47:29 am","date":"Thursday, May 8, 2025"}
+
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"The current local time in Perth, Western Australia, Australia is 3:47:37 am on Thursday, May 8, 2025 (AWST).","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 191, 'prompt_tokens': 6036, 'total_tokens': 6227, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 128, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746647261-JzJN0w7CZRSMFCS8keFq', 'finish_reason': 'stop', 'logprobs': None} id='run-9b2981e6-0698-49ee-81fe-25bd27c5e1e2-0' usage_metadata={'input_tokens': 6036, 'output_tokens': 191, 'total_tokens': 6227, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 128}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The cu...ST).', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The cu...ST).', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"According to the Time and Date website, the current local time in Perth, Western Australia, Australia is 3:47 am AWST on Thursday, May 8, 2025.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 515, 'prompt_tokens': 6053, 'total_tokens': 6568, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 448, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746647267-F1TsKDK4LCIPomwVkmEN', 'finish_reason': 'stop', 'logprobs': None} id='run-f7c4602e-26fb-46da-9e0e-cf40c246c8d6-0' usage_metadata={'input_tokens': 6053, 'output_tokens': 515, 'total_tokens': 6568, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 448}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Accord...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Accord...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"The current local time in Perth, Australia is 3:47:29 am AWST on Thursday, May 8, 2025.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 314, 'prompt_tokens': 6070, 'total_tokens': 6384, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 256, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746647277-VGnMGCvIPvEXT5SSLX9p', 'finish_reason': 'stop', 'logprobs': None} id='run-3e32ba2f-88fe-4761-ab60-14e0f977ebce-0' usage_metadata={'input_tokens': 6070, 'output_tokens': 314, 'total_tokens': 6384, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 256}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The cu...025.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
