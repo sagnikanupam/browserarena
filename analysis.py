@@ -2,7 +2,9 @@ import pandas as pd
 import re
 import json
 
-banned_id_list = ["A", "67e1152fe716c33597b9184a", "67dbb1fef3c51a422079a857", "67f7bb9aaa1cb67247023347", "67d11644421446068e1fec14", "67da6c21bcd71cf297d8db10", "67e1152fe716c33597b9184a", "668914213741d9029705d8b1", "6813ee94347bb13e5862b369"]
+with open("data/banned_ids.json", "r") as f:
+    banned_id_list = [x.lower() for x in json.load(f)["banned_ids"]]
+    print("Length of Banned IDs:", len(banned_id_list))
 
 def get_log_id(log_id_str: str) -> str:
     """
@@ -50,7 +52,9 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
     # Read the CSV file into a DataFrame
     df = pd.read_csv(file_path)
     df = df[df["DistributionChannel"] != "preview"]
-    df = df[df["Q1"].str.strip().str.lower().isin(banned_ids) == False]
+    df = df[df["ResponseId"].str.strip().str.lower().isin(banned_ids) == False]
+    with open("data/replaced_log_ids.json", "r") as f:
+        replaced_log_ids = json.load(f)
     for index, row in df.iterrows():
         correct_left_data_entry = False
         correct_right_data_entry = False
@@ -59,6 +63,9 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
         max_steps_left = 0
         max_steps_right = 0
         if "Yes" in row["Q4"]:
+            if row["ResponseId"] in replaced_log_ids.keys():
+                row['Q7'] = replaced_log_ids[row["ResponseId"]]["left_log_id"]
+                row['Q25'] = replaced_log_ids[row["ResponseId"]]["right_log_id"]
             if "Yes" in row["Q5"]:
                 for i in range(15):
                     if str(row[f"Q{i+8}"]).lower().find("n/a") == -1 and str(row[f"Q{i+8}"]) != "" and str(row[f"Q{i+8}"]) != "nan":
@@ -69,8 +76,10 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
                     max_steps_left = max_steps(f"FastChat/prompts_and_outputs/{get_log_id(str(row['Q7']))}.json")
                     if num_valid_steps_left == max_steps_left:
                         correct_left_data_entry = True
+                    else:
+                        print(f"Num_valid_steps_left != max_steps_left for index {index}, user {row['Q1']}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with num_valid_steps_left {num_valid_steps_left} and max_steps_left {max_steps_left}.")
                 except Exception as e:
-                    print(f"Error processing left data entry for index {index}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with error {e}")
+                    print(f"Error processing left data entry for index {index}, user {row['Q1']}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with error {e}.")
             if "Yes" in row["Q23"]:
                 for i in range(15):
                     if str(row[f"Q{i+26}"]).lower().find("n/a") == -1 and str(row[f"Q{i+26}"]) != "" and str(row[f"Q{i+26}"]) != "nan":
@@ -81,8 +90,10 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
                     max_steps_right = max_steps(f"FastChat/prompts_and_outputs/{get_log_id(str(row['Q25']))}.json")
                     if num_valid_steps_right == max_steps_right:
                         correct_right_data_entry = True
+                    else:
+                        print(f"Num_valid_steps_right != max_steps_right for index {index}, user {row['Q1']}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with num_valid_steps_right {num_valid_steps_right} and max_steps_right {max_steps_right}.")
                 except Exception as e:
-                    print(f"Error processing right data entry for index {index}: {row['Q25']} with log ID {get_log_id(str(row['Q25']))} with error {e}") 
+                    print(f"Error processing right data entry for index {index}, user {row['Q1']}: {row['Q25']} with log ID {get_log_id(str(row['Q25']))} with error {e}") 
         
         # Set correct data entry status in the DataFrame
         df.at[index, "num_valid_steps_left"] = num_valid_steps_left
@@ -106,9 +117,20 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
     print("\nBasic statistics:")
     print(df.describe(include='all'))
 
+    with open("data/unflagged_ids.json", "r") as f:
+        unflagged_ids = json.load(f)
+        for key in unflagged_ids.keys():
+            if key in df["ResponseId"].values:
+                df.loc[df["ResponseId"] == key, "Flagged"] = False
+    df_usable = df[df["Q4"].str.find("No")==-1]
+    df_usable = df_usable[df_usable["Flagged"]!= True]
+    output_file_path = file_path.replace(".csv", "_usable.csv")
+    df_usable.to_csv(output_file_path, index=False) 
+    
 if __name__ == "__main__":
     # Specify the path to your JSONL file
-    file_path = "data/pilot_dataset.csv"
-    
+    #file_path = "data/pilot_dataset.csv"
+    #file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 7, 2025_10.24.csv" 
+    file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 9, 2025_09.16.csv"
     # Call the function to analyze the data
     analyze_data(file_path)

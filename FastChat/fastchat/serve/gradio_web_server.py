@@ -68,6 +68,42 @@ disable_text = gr.Textbox(
     placeholder='Press "🎲 New Round" to start over👇 (Note: Your vote shapes the leaderboard, please vote RESPONSIBLY!)',
 )
 
+IDENTITY_WORDS = [
+    "vicuna",
+    "lmsys",
+    "koala",
+    "uc berkeley",
+    "open assistant",
+    "laion",
+    "chatglm",
+    "chatgpt",
+    "gpt-4",
+    "openai",
+    "anthropic",
+    "claude",
+    "bard",
+    "palm",
+    "lamda",
+    "google",
+    "gemini",
+    "llama",
+    "qianwan",
+    "qwen",
+    "alibaba",
+    "mistral",
+    "zhipu",
+    "KEG lab",
+    "01.AI",
+    "AI2",
+    "Tülu",
+    "Tulu",
+    "deepseek",
+    "hermes",
+    "cohere",
+    "DBRX",
+    "databricks",
+]
+
 controller_url = None
 enable_moderation = False
 use_remote_storage = False
@@ -597,6 +633,9 @@ def bot_response(
             json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}", "user_id": user_id_text, "model_name": model_name}, f)
             text_output = text_output.replace("```", "\n```\n")
             text_output = text_output.replace("$$", "\n$$\n")
+            text_output = text_output.replace(model_name, "anonymized model")
+            for word in IDENTITY_WORDS:
+                text_output = text_output.replace(word, "anonymous LLM company")
         output = text_output + image + "\n Log ID: " + unique_run_index
     
     conv.update_last_message(output)
