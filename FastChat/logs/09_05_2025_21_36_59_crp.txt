@@ -1,0 +1,36 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.
+📍 Step 1
+🤷 Eval: Unknown - Starting fresh with a blank page
+🧠 Memory: Initiating search for sustainable cheese pasta recipes on top cooking websites. 0 out of 3 websites processed.
+🎯 Next goal: Search Google for sustainable cheese pasta recipes targeting AllRecipes, Epicurious, and BBC GoodFood
+🛠️  Action 1/1: {"search_google":{"query":"sustainable cheese pasta recipe site:allrecipes.com OR site:epicurious.com OR site:bbcgoodfood.com"}}
+🔍  Searched for "sustainable cheese pasta recipe site:allrecipes.com OR site:epicurious.com OR site:bbcgoodfood.com" in Google
+📍 Step 2
+👍 Eval: Success - Google search yielded relevant results from BBC GoodFood
+🧠 Memory: Found 3 potential recipes from BBC GoodFood (1st website). Need to analyze recipes 1/3. 0 out of 3 websites fully processed.
+🎯 Next goal: Access first recipe (Super-green mac 'n' cheese) to check sustainability aspects
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: Super-green mac 'n' cheese recipe
+📍 Step 3
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - Accessed BBC GoodFood recipe with sustainability focus (\'super-green\' ingredients)",\n    "memory": "1/3 websites processed (BBC GoodFood). Sustainability indicators found: leafy greens reduce food waste. Next targets: AllRecipes & Epicurious",\n    "next_goal": "Extract recipe details and sustainability notes from current page"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Ingredients list and any sustainability notes about reduced dairy/energy/transportation"\n      }\n    },\n    {\n      "go_back": {}\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 1739, 'prompt_tokens': 3400, 'total_tokens': 5139, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 1595, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': '', 'id': 'gen-1746826734-UQefJtA1KyD5y2nOyDSz', 'finish_reason': 'stop', 'logprobs': None} id='run-d3b38224-ab1a-49cb-9aab-a0dd0257f87e-0' usage_metadata={'input_tokens': 3400, 'output_tokens': 1739, 'total_tokens': 5139, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 1595}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Ingredients lis.../energy/transportation'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{\n  "current_state": {\n    "evaluation_previous_goal": "Success - Successfully accessed BBC GoodFood recipe page",\n    "memory": "Processing first website (BBC GoodFood). Need to extract sustainable recipe details. 0 out of 3 websites fully processed. Next: Analyze ingredients and methods for sustainability features.",\n    "next_goal": "Extract recipe content and verify sustainability aspects"\n  },\n  "action": [\n    {"scroll_down": {"amount": 800}},\n    {"extract_content": {"goal": "Extract full recipe ingredients, method, and sustainability features (plant-based elements, local sourcing, waste reduction)"}}\n  ]\n}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 1249, 'prompt_tokens': 3475, 'total_tokens': 4724, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': '', 'id': 'gen-1746826790-yKVffJip2GmbfaOTKdV3', 'finish_reason': 'stop', 'logprobs': None} id='run-7ba70f37-9d5c-4db1-ad34-7a7d71c69f73-0' usage_metadata={'input_tokens': 3475, 'output_tokens': 1249, 'total_tokens': 4724, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.1.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract full re...cing, waste reduction)'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Partial Success - Recipe page loaded but no indexed elements detected", "memory": "BBC GoodFood recipe accessed (1/3 websites). Need to extract sustainability details. Next: AllRecipes and Epicurious recipes required", "next_goal": "Extract recipe content and sustainability practices from current page"}, "action": [{"extract_content": {"goal": "Recipe ingredients, method, and sustainability aspects (local/seasonal ingredients, low-waste tips)"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 834, 'prompt_tokens': 3497, 'total_tokens': 4331, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': None, 'id': 'gen-1746826860-HPOxI98vRa8TaY9OW3Da', 'finish_reason': 'stop', 'logprobs': {'content': [], 'refusal': []}} id='run-b5bda88b-28bb-4b5b-8fe5-be9fdbeb3a8e-0' usage_metadata={'input_tokens': 3497, 'output_tokens': 834, 'total_tokens': 4331, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Recipe ingredie...ients, low-waste tips)'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

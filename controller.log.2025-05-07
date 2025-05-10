@@ -1,0 +1,86 @@
+2025-05-03 02:44:13 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2025-05-03 02:44:14 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2025-05-03 02:44:14 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2025-05-03 02:44:14 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m39600[0m]
+2025-05-03 02:44:15 | ERROR | stderr | Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+2025-05-03 02:44:15 | ERROR | stderr | Traceback (most recent call last):
+2025-05-03 02:44:15 | ERROR | stderr |   File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+2025-05-03 02:44:15 | ERROR | stderr |     lock.acquire()
+2025-05-03 02:44:15 | ERROR | stderr | KeyboardInterrupt:
+2025-05-03 02:44:34 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-03 02:44:34 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m46572[0m]
+2025-05-03 02:44:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-03 02:44:34 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-03 02:44:34 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-03 02:44:54 | INFO | stdout | [32mINFO[0m:     127.0.0.1:46018 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 02:44:54 | INFO | stdout | [32mINFO[0m:     127.0.0.1:46032 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 02:44:54 | INFO | stdout | [32mINFO[0m:     127.0.0.1:46040 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 02:44:54 | INFO | stdout | [32mINFO[0m:     127.0.0.1:46056 - "[1mPOST /list_multimodal_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 13:46:11 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2025-05-03 13:46:11 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2025-05-03 13:46:11 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2025-05-03 13:46:11 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m46572[0m]
+2025-05-03 13:46:12 | ERROR | stderr | Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+2025-05-03 13:46:12 | ERROR | stderr | Traceback (most recent call last):
+2025-05-03 13:46:12 | ERROR | stderr |   File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+2025-05-03 13:46:12 | ERROR | stderr |     lock.acquire()
+2025-05-03 13:46:12 | ERROR | stderr | KeyboardInterrupt:
+2025-05-03 19:05:14 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m64473[0m]
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-03 19:05:14 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42014 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42030 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42044 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-03 19:05:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42052 - "[1mPOST /list_multimodal_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:38:50 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-04 17:38:50 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m1106[0m]
+2025-05-04 17:38:50 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-04 17:38:50 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-04 17:38:50 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-04 17:39:27 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2025-05-04 17:39:28 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2025-05-04 17:39:28 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2025-05-04 17:39:28 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m1106[0m]
+2025-05-04 17:39:28 | ERROR | stderr | Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+2025-05-04 17:39:28 | ERROR | stderr | Traceback (most recent call last):
+2025-05-04 17:39:28 | ERROR | stderr |   File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+2025-05-04 17:39:28 | ERROR | stderr |     lock.acquire()
+2025-05-04 17:39:28 | ERROR | stderr | KeyboardInterrupt:
+2025-05-04 17:40:26 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-04 17:40:26 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m1120[0m]
+2025-05-04 17:40:26 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-04 17:40:26 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-04 17:40:26 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-04 17:41:13 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51424 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:41:13 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51426 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:41:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:43842 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:41:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:43848 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:41:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:43850 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-04 17:41:56 | INFO | stdout | [32mINFO[0m:     127.0.0.1:43862 - "[1mPOST /list_multimodal_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:42:39 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-07 13:42:39 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m9989[0m]
+2025-05-07 13:42:39 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-07 13:42:39 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-07 13:42:39 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-07 13:43:29 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2025-05-07 13:43:29 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2025-05-07 13:43:29 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2025-05-07 13:43:29 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m9989[0m]
+2025-05-07 13:43:30 | ERROR | stderr | Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+2025-05-07 13:43:30 | ERROR | stderr | Traceback (most recent call last):
+2025-05-07 13:43:30 | ERROR | stderr |   File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+2025-05-07 13:43:30 | ERROR | stderr |     lock.acquire()
+2025-05-07 13:43:30 | ERROR | stderr | KeyboardInterrupt:
+2025-05-07 13:43:35 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2025-05-07 13:43:35 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m10015[0m]
+2025-05-07 13:43:35 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2025-05-07 13:43:35 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2025-05-07 13:43:35 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2025-05-07 13:44:02 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42270 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:44:02 | INFO | stdout | [32mINFO[0m:     127.0.0.1:42284 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:44:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39186 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:44:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39200 - "[1mPOST /list_language_models HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:44:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39212 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2025-05-07 13:44:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:39228 - "[1mPOST /list_multimodal_models HTTP/1.1[0m" [32m200 OK[0m

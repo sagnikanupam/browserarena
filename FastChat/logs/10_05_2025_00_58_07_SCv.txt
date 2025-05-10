@@ -1,0 +1,33 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Who is the current prime minister of canada
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3095, 'total_tokens': 3095, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746838689-cZHMYU1TyPJdWfw7Docd', 'finish_reason': 'stop', 'logprobs': None} id='run-f1f69cba-1295-4dad-900c-e733319b0ca1-0' usage_metadata={'input_tokens': 3095, 'output_tokens': 0, 'total_tokens': 3095, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3109, 'total_tokens': 3109, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746838693-nyYCeHFZhk0zLK1iYlpI', 'finish_reason': 'stop', 'logprobs': None} id='run-75294dad-b73d-4cdb-b8ea-9924f4e435f9-0' usage_metadata={'input_tokens': 3109, 'output_tokens': 0, 'total_tokens': 3109, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: [Current state ends]
+Output:
+Previous steps:
+Summary of plans and actions, previous thoughts and history for the current task.
+I'm at the beginning of the task and I have not done anything yet, besides opening the first page. My task is to find out who the current prime minister of Canada is.
+The last two actions failed because I tried to respond with an invalid JSON format. I need to make sure I follow the specified format.
+This is the first turn in the task.
+Task: Who is the current prime minister of canada
+Current URL: about:blank
+Open Tabs: 
+[TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]
+Interactive Elements:
+empty page
+The current page is blank, which means I need to navigate to a search engine to find the information. I should use Google for this purpose.
+
+{"current_state": {"evaluation_previous_goal": "Unknown - The page is blank, so there's nothing to evaluate.", "memory": "I am at the beginning of the task. I need to find the current prime minister of Canada. No actions have been taken yet.", "next_goal": "Search on Google for 'current prime minister of Canada'."}, "action": [{"search_google": {"query": "current prime minister of Canada"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends]\nOutput:\nPrevious steps:\nSummary of plans and actions, previous thoughts and history for the current task.\nI\'m at the beginning of the task and I have not done anything yet, besides opening the first page. My task is to find out who the current prime minister of Canada is.\nThe last two actions failed because I tried to respond with an invalid JSON format. I need to make sure I follow the specified format.\nThis is the first turn in the task.\nTask: Who is the current prime minister of canada\nCurrent URL: about:blank\nOpen Tabs: \n[TabInfo(page_id=0, url=\'about:blank\', title=\'\', parent_page_id=None)]\nInteractive Elements:\nempty page\nThe current page is blank, which means I need to navigate to a search engine to find the information. I should use Google for this purpose.\n\n{"current_state": {"evaluation_previous_goal": "Unknown - The page is blank, so there\'s nothing to evaluate.", "memory": "I am at the beginning of the task. I need to find the current prime minister of Canada. No actions have been taken yet.", "next_goal": "Search on Google for \'current prime minister of Canada\'."}, "action": [{"search_google": {"query": "current prime minister of Canada"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 288, 'prompt_tokens': 3123, 'total_tokens': 3411, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746838694-41VKX3wpYaD1SjkTzFi9', 'finish_reason': 'stop', 'logprobs': None} id='run-2cec96a0-7b6a-4f5a-ab86-b1d31024f7e6-0' usage_metadata={'input_tokens': 3123, 'output_tokens': 288, 'total_tokens': 3411, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

@@ -1,0 +1,45 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the highest abused drug according to webmd.com
+📍 Step 1
+🤷 Eval: Unknown - I am just starting the task on a blank page.
+🧠 Memory: I need to find information about the highest abused drug according to webmd.com. I am starting on a blank page and need to navigate to webmd.com first.
+🎯 Next goal: Navigate to webmd.com
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.webmd.com"}}
+🔗  Navigated to https://www.webmd.com
+📍 Step 2
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 187, 'prompt_tokens': 5391, 'total_tokens': 5578, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746835179-gRJgDZiyFU6nW5XLTxJS', 'finish_reason': 'stop', 'logprobs': None} id='run-ebb8f2f7-90d4-4c92-b9d0-cdd55a9ade63-0' usage_metadata={'input_tokens': 5391, 'output_tokens': 187, 'total_tokens': 5578, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success - I have successfully navigated to the WebMD homepage as the starting point for my search.
+🧠 Memory: I need to find information about the highest abused drug according to webmd.com. I've navigated to the WebMD homepage and now need to search for this specific information.
+🎯 Next goal: Click on the search button and search for information about the highest abused drug
+🛠️  Action 1/1: {}
+📍 Step 3
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 260, 'prompt_tokens': 5535, 'total_tokens': 5795, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746835200-JAwRJkfR1DEdJpW0wfnJ', 'finish_reason': 'stop', 'logprobs': None} id='run-2ea849b3-fd90-49a1-a4aa-7b2e5aa1a898-0' usage_metadata={'input_tokens': 5535, 'output_tokens': 260, 'total_tokens': 5795, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+🤷 Eval: Unknown - I haven't successfully executed any actions yet. The previous action resulted in an error.
+🧠 Memory: I need to find information about the highest abused drug according to webmd.com. I'm currently on the WebMD homepage and need to search for this specific information. I'll start by checking their Drugs & Supplements section.
+🎯 Next goal: Navigate to the Drugs & Supplements section to look for information about drug abuse
+🛠️  Action 1/1: {"click_element_by_index":{"index":4}}
+🖱️  Clicked button with index 4: Drugs & Supplements
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 262, 'prompt_tokens': 5817, 'total_tokens': 6079, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746835224-jkWjXLbRblGdZmDlEAgg', 'finish_reason': 'stop', 'logprobs': None} id='run-0da88afe-858f-4fcf-aa65-f83542065dd8-0' usage_metadata={'input_tokens': 5817, 'output_tokens': 262, 'total_tokens': 6079, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 262, 'prompt_tokens': 5791, 'total_tokens': 6053, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746835238-45oTwIjscfDUonV1nCPZ', 'finish_reason': 'stop', 'logprobs': None} id='run-2ea25821-df6a-4290-8b35-10fa102f0ec1-0' usage_metadata={'input_tokens': 5791, 'output_tokens': 262, 'total_tokens': 6053, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 241, 'prompt_tokens': 5805, 'total_tokens': 6046, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746835246-JGFiABUGkk6PnA3s9kOe', 'finish_reason': 'stop', 'logprobs': None} id='run-8d3fce74-425a-4a22-8124-4567d04b3d55-0' usage_metadata={'input_tokens': 5805, 'output_tokens': 241, 'total_tokens': 6046, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

@@ -1,0 +1,53 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: find the current top 10 bestselling fiction books on amazon
+📍 Step 1
+🤷 Eval: Unknown - no previous actions yet
+🧠 Memory: Started the task of finding the top 10 bestselling fiction books on Amazon. 0 out of 10 books collected.
+🎯 Next goal: Search Google for Amazon’s current top 10 bestselling fiction books
+🛠️  Action 1/1: {"search_google":{"query":"Amazon top 10 bestselling fiction books"}}
+🔍  Searched for "Amazon top 10 bestselling fiction books" in Google
+📍 Step 2
+👍 Eval: Success - Search results loaded and identified the Best Sellers - Literature & Fiction result
+🧠 Memory: Started the task of finding the top 10 bestselling fiction books on Amazon. 0 out of 10 books collected.
+🎯 Next goal: Open the Amazon Best Sellers Literature & Fiction page
+🛠️  Action 1/1: {"click_element_by_index":{"index":32,"xpath":null}}
+🖱️  Clicked button with index 32: 
+📍 Step 3
+👍 Eval: Success - Amazon Best Sellers Literature & Fiction page loaded
+🧠 Memory: Started the task of finding the top 10 bestselling fiction books on Amazon. 0 out of 10 books collected.
+🎯 Next goal: Extract the top 10 bestselling fiction book titles and authors from the page
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract top 10 bestselling fiction book titles and authors","should_strip_link_urls":true}}
+📄  Extracted from page
+: {"bestsellers":[{"rank":1,"title":"The Tenant","author":"Freida McFadden"},{"rank":2,"title":"Death Row (Alibis collection)","author":"Freida McFadden"},{"rank":3,"title":"Memory in Death (In Death, Book 22)","author":"J. D. Robb"},{"rank":4,"title":"The Short Novels of John Steinbeck: (Penguin Classics Deluxe Edition)","author":"John Steinbeck"},{"rank":5,"title":"Great Big Beautiful Life: Reese's Book Club","author":"Emily Henry"},{"rank":6,"title":"Story of My Life (Story Lake Book 1)","author":"Lucy Score"},{"rank":7,"title":"The Rejected Wife: A Single Dad Nanny Billionaire Romance (The Davenports Book 5)","author":"L. Steele"},{"rank":8,"title":"Rebound: A standalone, second chance romance (Manhattan Ruthless)","author":"Sadie Kincaid"},{"rank":9,"title":"The Housemaid: An absolutely addictive psychological thriller with a jaw-dropping twist","author":"Freida McFadden"},{"rank":10,"title":"Silver Elite","author":"Dani Francis"}]}
+
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"Here are the current top 10 bestselling fiction books on Amazon:\\n1. The Tenant by Freida McFadden\\n2. Death Row (Alibis collection) by Freida McFadden\\n3. Memory in Death (In Death, Book 22) by J. D. Robb\\n4. The Short Novels of John Steinbeck: (Penguin Classics Deluxe Edition) by John Steinbeck\\n5. Great Big Beautiful Life: Reese\'s Book Club by Emily Henry\\n6. Story of My Life (Story Lake Book 1) by Lucy Score\\n7. The Rejected Wife: A Single Dad Nanny Billionaire Romance (The Davenports Book 5) by L. Steele\\n8. Rebound: A standalone, second chance romance (Manhattan Ruthless) by Sadie Kincaid\\n9. The Housemaid: An absolutely addictive psychological thriller with a jaw-dropping twist by Freida McFadden\\n10. Silver Elite by Dani Francis","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 807, 'prompt_tokens': 6690, 'total_tokens': 7497, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 576, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746847174-ITJsg3hU2Kba4cE0fBm8', 'finish_reason': 'stop', 'logprobs': None} id='run-b06aaeb0-0103-4a41-80e9-82f71dfe9ecf-0' usage_metadata={'input_tokens': 6690, 'output_tokens': 807, 'total_tokens': 7497, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 576}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': "Here a...ncis", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': "Here a...ncis", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"Top 10 bestselling fiction books on Amazon:\\n1. The Tenant — Freida McFadden\\n2. Death Row (Alibis collection) — Freida McFadden\\n3. Memory in Death (In Death, Book 22) — J. D. Robb\\n4. The Short Novels of John Steinbeck: (Penguin Classics Deluxe Edition) — John Steinbeck\\n5. Great Big Beautiful Life: Reese\'s Book Club — Emily Henry\\n6. Story of My Life (Story Lake Book 1) — Lucy Score\\n7. The Rejected Wife: A Single Dad Nanny Billionaire Romance (The Davenports Book 5) — L. Steele\\n8. Rebound: A standalone, second chance romance (Manhattan Ruthless) — Sadie Kincaid\\n9. The Housemaid: An absolutely addictive psychological thriller with a jaw-dropping twist — Freida McFadden\\n10. Silver Elite — Dani Francis","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 675, 'prompt_tokens': 6707, 'total_tokens': 7382, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 448, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746847183-Qf3mSdTIDWZY2w5SQoAs', 'finish_reason': 'stop', 'logprobs': None} id='run-06e5ea42-1bd7-4265-96b3-ddabdfce6929-0' usage_metadata={'input_tokens': 6707, 'output_tokens': 675, 'total_tokens': 7382, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 448}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': "Top 10...ncis", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': "Top 10...ncis", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"Here are the current top 10 bestselling fiction books on Amazon:\\n1. The Tenant by Freida McFadden\\n2. Death Row (Alibis collection) by Freida McFadden\\n3. Memory in Death (In Death, Book 22) by J. D. Robb\\n4. The Short Novels of John Steinbeck: (Penguin Classics Deluxe Edition) by John Steinbeck\\n5. Great Big Beautiful Life: Reese’s Book Club by Emily Henry\\n6. Story of My Life (Story Lake Book 1) by Lucy Score\\n7. The Rejected Wife: A Single Dad Nanny Billionaire Romance (The Davenports Book 5) by L. Steele\\n8. Rebound: A standalone, second chance romance (Manhattan Ruthless) by Sadie Kincaid\\n9. The Housemaid: An absolutely addictive psychological thriller with a jaw-dropping twist by Freida McFadden\\n10. Silver Elite by Dani Francis","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 680, 'prompt_tokens': 6724, 'total_tokens': 7404, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 448, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746847194-nxF1r5cidqlnRU5reCjf', 'finish_reason': 'stop', 'logprobs': None} id='run-3b1092bc-6b85-45a8-a804-80cebec87c96-0' usage_metadata={'input_tokens': 6724, 'output_tokens': 680, 'total_tokens': 7404, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 448}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Here a...ncis', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Here a...ncis', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

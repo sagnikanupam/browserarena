@@ -1,0 +1,41 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: a list of top 10 churches 
+📍 Step 1
+🤷 Eval: Unknown - I'm starting with a blank page, so there's no previous action to evaluate.
+🧠 Memory: I'm starting a task to find a list of top 10 churches. I'm beginning with a blank page and need to search for this information.
+🎯 Next goal: Search Google for information about top 10 churches
+🛠️  Action 1/1: {"search_google":{"query":"top 10 most famous churches in the world"}}
+🔍  Searched for "top 10 most famous churches in the world" in Google
+📍 Step 2
+👍 Eval: Success - I successfully searched for 'top 10 most famous churches in the world' and Google has returned relevant search results showing several links that appear to contain lists of top churches.
+🧠 Memory: I'm looking for a list of top 10 churches. I searched Google for 'top 10 most famous churches in the world' and found several promising results. The first result titled 'Top 10 Most Popular Churches' from visitedapp.com shows Notre Dame Cathedral (Paris, France) as #1. Other results include '12 of the Most Beautiful Churches' from Celebrity Cruises, '5 of the Most Famous Churches' listing St. Peter's Basilica, and a YouTube video titled 'Top 10 Famous Churches in the World'.
+🎯 Next goal: Click on the 'Top 10 Most Popular Churches' link to view the complete list
+🛠️  Action 1/1: {}
+📍 Step 3
+👍 Eval: Success - I successfully searched for 'top 10 most famous churches in the world' in Google and now have several promising search results.
+🧠 Memory: I'm looking for a list of top 10 churches. I searched Google for 'top 10 most famous churches in the world' and have found several promising results. The first result from Visited App shows 'Top 10 Most Popular Churches' with Notre Dame Cathedral (Paris, France) listed as #1. Other results include '12 of the Most Beautiful Churches' from Celebrity Cruises, '5 of the Most Famous Churches' listing St. Peter's Basilica, and a YouTube video titled 'Top 10 Famous Churches in the World'.
+🎯 Next goal: Click on the 'Top 10 Most Popular Churches' link to view the complete list
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: Top 10 Most Popular Churches
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully clicked on the \'Top 10 Most Popular Churches\' link and the page has loaded with the content I need.",\n    "memory": "I\'m looking for a list of top 10 churches. I found and clicked on a promising link from Visited App. The page shows \'Top 10 Most Popular Churches\' and has started listing them with Notre Dame Cathedral (Paris, France) as #1. The list is based on data from over one million travelers who use the Visited app. According to the page, all 10 churches are found in Europe. The rest of the list is below the visible portion of the page.",\n    "next_goal": "Extract the complete list of top 10 churches from this page"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract the complete list of top 10 churches with their descriptions"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 541, 'prompt_tokens': 5821, 'total_tokens': 6362, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746826411-vfc6y69XJatgE7VFHHT0', 'finish_reason': 'stop', 'logprobs': None} id='run-05d56d40-ff4b-42f5-9516-9a9138ca53c8-0' usage_metadata={'input_tokens': 5821, 'output_tokens': 541, 'total_tokens': 6362, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the com...ith their descriptions'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully clicked on the \'Top 10 Most Popular Churches\' link and navigated to the Visited App website that contains the list I\'m looking for.",\n    "memory": "I\'m looking for a list of top 10 churches. I searched Google for \'top 10 most famous churches in the world\' and clicked on a promising result from Visited App. I\'m now on the page that contains the \'Top 10 Most Popular Churches\' list. So far I can see that Notre Dame Cathedral (Paris, France) is listed as #1, but I need to extract the complete list of all 10 churches.",\n    "next_goal": "Extract the complete content of the page to get the full list of top 10 churches"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract the complete list of top 10 most popular churches with their locations and any descriptions provided"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 467, 'prompt_tokens': 5835, 'total_tokens': 6302, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746826424-YbNaIUnJlyYzmVtbsiha', 'finish_reason': 'stop', 'logprobs': None} id='run-dfe475a3-c808-485d-b96c-58d4575d7be8-0' usage_metadata={'input_tokens': 5835, 'output_tokens': 467, 'total_tokens': 6302, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the com... descriptions provided'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully navigated to the \'Top 10 Most Popular Churches\' page on Visited App which contains the information I need for my task.",\n    "memory": "I\'m looking for a list of top 10 churches. I searched Google for \'top 10 most famous churches in the world\' and clicked on the \'Top 10 Most Popular Churches\' from Visited App. I can now see Notre Dame Cathedral (Paris, France) is listed as #1, but I need to see the complete list of all 10 churches which appears to continue below the viewport.",\n    "next_goal": "Extract the complete list of top 10 churches from this page"\n  },\n  "action": [{"extract_content": {"goal": "extract the complete list of top 10 most popular churches with their locations and any key information"}}]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 593, 'prompt_tokens': 5849, 'total_tokens': 6442, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746826438-eYyWAPPLOoKd0baCLiHI', 'finish_reason': 'stop', 'logprobs': None} id='run-d60b31a0-f317-4d88-b1aa-cdc699e118cb-0' usage_metadata={'input_tokens': 5849, 'output_tokens': 593, 'total_tokens': 6442, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'extract the com...nd any key information'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

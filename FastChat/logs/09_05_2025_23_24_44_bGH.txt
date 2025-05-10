@@ -1,0 +1,30 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what are the top 20 CNN stories
+📍 Step 1
+🤷 Eval: Unknown - I'm starting with a blank page, so there are no previous goals to evaluate.
+🧠 Memory: I need to find the top 20 CNN stories. I'm starting with a blank page and need to navigate to CNN's website to retrieve this information.
+🎯 Next goal: Navigate to CNN's website to find their top stories
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.cnn.com"}}
+🔗  Navigated to https://www.cnn.com
+📍 Step 2
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I have successfully navigated to CNN\'s homepage which will allow me to find their top stories.",\n    "memory": "I need to find the top 20 CNN stories. I\'m now on CNN\'s homepage (https://www.cnn.com/) where I can see several headline stories including stories about Kushner advising Trump officials, a Tufts University student\'s release from detention, New Jersey mayor\'s arrest, sea level rise, and trending topics like US-Iran nuclear talks and Pope Leo. I need to scroll down or extract content to see more stories since the page indicates there\'s more content below.",\n    "next_goal": "Extract the content of the page to get a comprehensive list of top CNN stories"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "extract all headlines and top stories from the CNN homepage to identify the top 20 CNN stories"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 597, 'prompt_tokens': 5838, 'total_tokens': 6435, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746833233-7IkkSliyuBufeIbzF62Z', 'finish_reason': 'stop', 'logprobs': None} id='run-d02c3bd4-44e6-4f90-ba6f-99690bd9abf7-0' usage_metadata={'input_tokens': 5838, 'output_tokens': 597, 'total_tokens': 6435, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'extract all hea...the top 20 CNN stories'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I have successfully navigated to the CNN website where I can find their top stories.",\n    "memory": "I\'m on CNN\'s homepage looking for the top 20 CNN stories. I can see several headlines on the current page, but need to extract all top stories to compile a complete list.",\n    "next_goal": "Extract content from the page to collect the top CNN stories"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract all current top stories/headlines from CNN\'s homepage"\n      }\n    }\n  ]\n}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 412, 'prompt_tokens': 5852, 'total_tokens': 6264, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746833250-aLEDJzGwbfLDOM8pQzS5', 'finish_reason': 'stop', 'logprobs': None} id='run-a7a6b461-a0d6-404a-b330-63cd1a190f3c-0' usage_metadata={'input_tokens': 5852, 'output_tokens': 412, 'total_tokens': 6264, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract all cur...es from CNN's homepage"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully navigated to CNN\'s website where I can now gather the top stories.",\n    "memory": "I am on CNN.com and need to find the top 20 CNN stories. I can see several headlines displayed on the homepage that appear to be the current top stories. I should extract all the headlines to complete my task.",\n    "next_goal": "Extract all headlines from the CNN homepage to identify the top 20 stories"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "extract all headline stories with their titles from the CNN homepage"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 522, 'prompt_tokens': 5866, 'total_tokens': 6388, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746833262-FRogFAe34BnY3EUmbQ5a', 'finish_reason': 'stop', 'logprobs': None} id='run-f2994ffb-3aef-4bfa-b212-cf29ccde3886-0' usage_metadata={'input_tokens': 5866, 'output_tokens': 522, 'total_tokens': 6388, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'extract all hea... from the CNN homepage'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

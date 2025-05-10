@@ -1,0 +1,22 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the capital of Newfoundland
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: Initiating the task to find the capital of Newfoundland.
+🎯 Next goal: Search for 'capital of Newfoundland' on Google.
+🛠️  Action 1/1: {"search_google":{"query":"capital of Newfoundland"}}
+🔍  Searched for "capital of Newfoundland" in Google
+📍 Step 2
+Failed to parse model output: The ultimate task is: """What is the capital of Newfoundland""".
+[Current state ends here] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The ultimate task is: """What is the capital of Newfoundland""".\n[Current state ends here]' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746838586-S8xOlFAZ4t3v4sQRTNwz', 'finish_reason': 'error', 'logprobs': None} id='run-396ef23a-c123-4b47-8da7-c5fdc0149be9-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: Searched Google for 'capital of Newfoundland'. The search results page is now displayed.
+🎯 Next goal: Extract the capital of Newfoundland from the search results and complete the task using the 'done' action.
+🛠️  Action 1/1: {"done":{"text":"The capital of Newfoundland is St. John's.","success":true}}
+📄 Result: The capital of Newfoundland is St. John's.
+✅ Task completed
+✅ Successfully

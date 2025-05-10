@@ -1,0 +1,130 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Create a list of the top 5 ways to make fast money online in 2025
+📍 Step 1
+🤷 Eval: Unknown - no actions performed yet
+🧠 Memory: Started ultimate task to list top 5 ways to make fast money online in 2025. Completed 0 out of 5 methods.
+🎯 Next goal: Perform Google search for relevant sources
+🛠️  Action 1/1: {"search_google":{"query":"fastest ways to make money online in 2025"}}
+🔍  Searched for "fastest ways to make money online in 2025" in Google
+📍 Step 2
+👍 Eval: Success - performed Google search for relevant sources
+🧠 Memory: Started ultimate task to list top 5 ways to make fast money online in 2025. Completed 0 out of 5 methods.
+🎯 Next goal: Open the NerdWallet result to extract a comprehensive list of ways
+🛠️  Action 1/2: {"scroll_down":{}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":100}}
+🔍  Scrolled down the page by one page
+Element index changed after action 1 / 2, because page changed.
+📍 Step 3
+👍 Eval: Success - Google search executed and relevant results identified
+🧠 Memory: Started ultimate task to list top 5 ways to make fast money online in 2025. Completed 0 out of 5 methods.  Next, open the Nasdaq article to extract a list of ways.
+🎯 Next goal: Click on the Nasdaq article result to view the list of 12 ways
+🛠️  Action 1/1: {"click_element_by_index":{"index":31,"xpath":null}}
+🖱️  Clicked button with index 31: 12 Ways To Make Money Fast in 2025
+📍 Step 4
+👍 Eval: Success - Navigated to the Nasdaq article ‘12 Ways To Make Money Fast in 2025’
+🧠 Memory: Started ultimate task to list top 5 ways to make fast money online in 2025. Completed 0 out of 5 methods. Retrieved article with 12 methods to review and extract.
+🎯 Next goal: Scroll down to reveal and extract the list of the 12 ways from the article.
+🛠️  Action 1/2: {"scroll_down":{}}
+🛠️  Action 2/2: {"extract_content":{"goal":"Extract the 12 ways to make money fast listed in the Nasdaq article","should_strip_link_urls":false}}
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: ```json
+{
+  "ways_to_make_money_fast_2025": [
+    {
+      "title": "Sell Your Gently Used Items on Online Marketplaces",
+      "earnings": "Earnings vary by item",
+      "description": "Got any used items that are still in good shape but you no longer want? Take a few photos, write a brief description and post your items for sale on Craigslist or Facebook Marketplace. You also can make a tidy profit by selling high-quality clothing and accessories on platforms such as Poshmark or Tradesy."
+    },
+    {
+      "title": "Trade in Old Gadgets and Electronics for Cash",
+      "earnings": "Earnings vary by gadget condition and model",
+      "description": "For quick cash with minimal effort, try trading in your old electronics via buyback services like ItsWorthMore, Decluttr, Gazelle or Trademore. You can also price and sell items yourself on eBay or other marketplaces. Common items: phones, iPods, fitness trackers, tablets, game consoles, laptops."
+    },
+    {
+      "title": "Sell Unused Gift Cards",
+      "earnings": "Earnings vary by gift card value",
+      "description": "If you have unwanted gift cards gathering dust, sell them on Craigslist, Facebook Marketplace, eBay or sites like CardCash. You may not get full face value but it’s essentially free money since you didn’t buy them."
+    },
+    {
+      "title": "Work as a Freelancer",
+      "earnings": "Depends on the project",
+      "description": "Platforms like Fiverr let you offer skills—logo design, animation, editing, voice-over—starting at $5 per task. As you build feedback and referrals you can charge more; some top freelancers earn up to $10,000 per project."
+    },
+    {
+      "title": "Track Down Unclaimed Money",
+      "earnings": "Can range from a few dollars to thousands",
+      "description": "About one in seven Americans has unclaimed property held by state governments. Search your state’s unclaimed-money database or use the U.S. government’s central portal to find lost deposits, refunds, insurance payouts, savings bonds and more."
+    },
+    {
+      "title": "Open an Online Dropshipping Store",
+      "earnings": "Average income of $20 per hour",
+      "description": "Use platforms like Amazon or Shopify to set up a store without holding inventory. Products ship directly from suppliers. You’ll need to select reliable products and suppliers, handle marketing, and may use profit calculators provided by Shopify or third-party apps."
+    },
+    {
+      "title": "Become an Affiliate Marketer",
+      "earnings": "Up to $300 a day or more",
+      "description": "Join affiliate programs (Amazon Associates, ClickBank, ShareASale) and promote products on your blog or social channels. Low-level affiliates can make up to $300/day; high-level affiliates report over $3,000/day in commissions."
+    },
+    {
+      "title": "Complete Online Surveys",
+      "earnings": "Up to $16 an hour",
+      "description": "Sites like Survey Junkie and Swagbucks pay cash or gift cards for completing surveys. University research studies may pay around $16/hour via programs like Columbia Business School’s Center for Decision Sciences."
+    },
+    {
+      "title": "Become a Rideshare or Delivery Driver",
+      "earnings": "Average income of $21 per hour",
+      "description": "Drive for services like Uber or Lyft, or deliver for Spark, Amazon Flex, GrubHub, Roadie, Uber Eats, DoorDash. Requirements vary; you can cash out daily. Delivery drivers average $18–23/hour."
+    },
+    {
+      "title": "Tutor Students or Teach Classes Online",
+      "earnings": "Average hourly rate is about $18",
+      "description": "Offer tutoring in academic subjects through platforms like TutorMe (pays $16/hour) or Preply (average $18.30/hour). Alternatively, create and sell how-to video lessons online for passive income."
+    },
+    {
+      "title": "Work as a Virtual Assistant",
+      "earnings": "Average income of $24 per hour",
+      "description": "Perform administrative tasks—customer calls, appointment setting, travel or event planning, social media—for individuals or companies. Virtual assistant roles can be found via job boards and specialist VA agencies."
+    },
+    {
+      "title": "Become a Pet Sitter or Dog Walker",
+      "earnings": "Median income of $15 per hour",
+      "description": "Use pet-sitting platforms like Rover to connect with pet owners. Sitters pay a platform fee (15–25%); the Bureau of Labor Statistics reports a median rate of $15.31/hour, or about $31,830/year."
+    }
+  ]
+}
+```
+
+📍 Step 5
+Failed to parse model output: content='{"done":{"text":"Here are the top 5 ways to make fast money online in 2025, based on speed of payout, ease of entry, and minimal setup time:\\n\\n1. Sell Unused Gift Cards\\n   • Platforms: CardCash, Raise, eBay, Facebook Marketplace\\n   • Why it’s fast: Instant listings and quick payouts via PayPal or direct deposit\\n   • Earnings: Up to 85–95% of face value\\n\\n2. Complete Online Surveys\\n   • Platforms: Swagbucks, Survey Junkie, Pinecone Research\\n   • Why it’s fast: Sign up in minutes and get paid within days via PayPal or gift cards\\n   • Earnings: $1–$5 per 10–20-minute survey (up to $16/hour for specialized studies)\\n\\n3. Trade in Old Electronics for Cash\\n   • Platforms: Decluttr, Gazelle, ItsWorthMore, Trademore, eBay\\n   • Why it’s fast: Instant quotes and free shipping labels; payment upon receipt\\n   • Earnings: Varies by device condition and model (phones, tablets, game consoles)\\n\\n4. Sell Gently Used Items on Online Marketplaces\\n   • Platforms: Facebook Marketplace, Craigslist, Poshmark, Mercari\\n   • Why it’s fast: Local pickup or shipping options; cash or digital payments on the same day\\n   • Earnings: Varies by item—clothing, small appliances, furniture, electronics\\n\\n5. Track Down Unclaimed Money\\n   • Platforms: MissingMoney.com, state unclaimed property portals, TreasuryDirect\\n   • Why it’s fast: Submit an online claim form; processing times can be as short as a few days\\n   • Earnings: From small checks to thousands—money from forgotten bank accounts, insurance payouts, dividends\\n\\nThese methods require little to no upfront investment or specialized skills, and they typically deliver payouts within days or even hours of completing the transaction or claim.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 1010, 'prompt_tokens': 6892, 'total_tokens': 7902, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 576, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746839356-uPrUrdZqOSZIUOzN04zo', 'finish_reason': 'stop', 'logprobs': None} id='run-352668a1-66d3-4f6a-9ef1-13b276645e99-0' usage_metadata={'input_tokens': 6892, 'output_tokens': 1010, 'total_tokens': 7902, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 576}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Here a...aim.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Here a...aim.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 5
+👍 Eval: Success - extracted 12 methods from the Nasdaq article
+🧠 Memory: Started ultimate task to list top 5 ways to make fast money online in 2025. Extracted 12 methods. 0 out of 5 methods selected.
+🎯 Next goal: Select and list the top 5 fastest online money-making methods.
+🛠️  Action 1/1: {"done":{"text":"Top 5 Ways to Make Fast Money Online in 2025:\n\n1. Sell Your Gently Used Items on Online Marketplaces\n   • Turn unwanted good-condition items into cash quickly via Facebook Marketplace, Craigslist, Poshmark, etc.\n\n2. Trade in Old Gadgets and Electronics for Cash\n   • Use buyback services (Decluttr, Gazelle) or sell directly on eBay to get fast payments for phones, tablets, consoles.\n\n3. Sell Unused Gift Cards\n   • Convert gift cards you don’t need into cash on platforms like CardCash, Gift Card Granny, or eBay.\n\n4. Complete Online Surveys\n   • Earn instant payouts or gift cards (up to ~$16/hour) through sites like Survey Junkie, Swagbucks, and university research panels.\n\n5. Work as a Freelancer\n   • Offer digital skills (writing, design, voice-over) on Fiverr or Upwork for quick project-based payouts, with top gigs earning hundreds to thousands per job.","success":true}}
+📄 Result: Top 5 Ways to Make Fast Money Online in 2025:
+
+1. Sell Your Gently Used Items on Online Marketplaces
+   • Turn unwanted good-condition items into cash quickly via Facebook Marketplace, Craigslist, Poshmark, etc.
+
+2. Trade in Old Gadgets and Electronics for Cash
+   • Use buyback services (Decluttr, Gazelle) or sell directly on eBay to get fast payments for phones, tablets, consoles.
+
+3. Sell Unused Gift Cards
+   • Convert gift cards you don’t need into cash on platforms like CardCash, Gift Card Granny, or eBay.
+
+4. Complete Online Surveys
+   • Earn instant payouts or gift cards (up to ~$16/hour) through sites like Survey Junkie, Swagbucks, and university research panels.
+
+5. Work as a Freelancer
+   • Offer digital skills (writing, design, voice-over) on Fiverr or Upwork for quick project-based payouts, with top gigs earning hundreds to thousands per job.
+✅ Task completed
+✅ Successfully

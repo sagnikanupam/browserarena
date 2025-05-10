@@ -1,0 +1,243 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: create a list of the top 20 best selling nintendo switch games
+📍 Step 1
+🤷 Eval: No previous goal to evaluate. Starting fresh.
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 1/15. Current URL: about:blank. No interactive elements available.
+🎯 Next goal: Navigate to Google and search for the top 20 best-selling Nintendo Switch games
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+🔗  Navigated to https://www.google.com
+📍 Step 2
+Failed to parse model output: <function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Success - Navigated to Google homepage", "memory": "Task: Create a list of the top20 best-selling Nintendo Switch games. Step2/15. Current URL: https://www.google.com/. Interactive elements available.", "next_goal": "Search for the top20 best-selling Nintendo Switch games"}, "action": [{"input_text": {"index":6, "text": "top 20 best selling nintendo switch games"}}]}</function> with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='<function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Success - Navigated to Google homepage", "memory": "Task: Create a list of the top20 best-selling Nintendo Switch games. Step2/15. Current URL: https://www.google.com/. Interactive elements available.", "next_goal": "Search for the top20 best-selling Nintendo Switch games"}, "action": [{"input_text": {"index":6, "text": "top 20 best selling nintendo switch games"}}]}</function>' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 108, 'prompt_tokens': 4899, 'total_tokens': 5007, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': 'fp_75ed67d821', 'id': 'gen-1746824310-5weP57G5yB0wVdqYl6Vm', 'finish_reason': 'stop', 'logprobs': None} id='run-9af5bf5a-5904-45b8-8299-8a41b75a3a1d-0' usage_metadata={'input_tokens': 4899, 'output_tokens': 108, 'total_tokens': 5007, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success - Navigated to Google homepage
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 3/15. Current URL: https://www.google.com/. Interactive elements available: search box and buttons.
+🎯 Next goal: Search for 'top 20 best-selling Nintendo Switch games'
+🛠️  Action 1/2: {"input_text":{"index":6,"text":"top 20 best-selling Nintendo Switch games"}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":9}}
+⌨️  Input top 20 best-selling Nintendo Switch games into index 6
+Element index changed after action 1 / 2, because page changed.
+📍 Step 3
+👍 Eval: Success - Input the search query 'top 20 best-selling Nintendo Switch games'
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 4/15. Current URL: https://www.google.com/. Interactive elements available: search box, buttons, and autocomplete suggestions.
+🎯 Next goal: Submit the search query
+🛠️  Action 1/1: {"click_element_by_index":{"index":18}}
+🖱️  Clicked button with index 18: 
+📍 Step 4
+👍 Eval: Success - Successfully searched for 'top 20 best-selling Nintendo Switch games'
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 6/15. Current URL: https://www.google.com/search?q=top+20+best-selling+Nintendo+Switch+games. Interactive elements available: search results, filters, and navigation buttons.
+🎯 Next goal: Navigate to the Wikipedia page for the list of best-selling Nintendo Switch games
+🛠️  Action 1/1: {"click_element_by_index":{"index":80}}
+🖱️  Clicked button with index 80: List of best-selling Nintendo Switch video games
+📍 Step 5
+👍 Eval: Success - Navigated to the Wikipedia page listing best-selling Nintendo Switch games
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 7/15. Current URL: https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games. Interactive elements available: article content, navigation links, and editing buttons.
+🎯 Next goal: Extract the list of the top 20 best-selling Nintendo Switch games from the page
+🛠️  Action 1/1: {"scroll_down":{"amount":12739}}
+🔍  Scrolled down the page by 12739 pixels
+📍 Step 6
+👍 Eval: Success - Navigated to the Wikipedia page listing best-selling Nintendo Switch games
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 7/15. Current URL: https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games. Scrolled down the page to view more content.
+🎯 Next goal: Extract the list of the top 20 best-selling Nintendo Switch games from the page
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract the list of the top 20 best-selling Nintendo Switch games","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "top_20_best_selling_nintendo_switch_games": [
+    {
+      "title": "Mario Kart 8 Deluxe",
+      "copies_sold": "68.20 million",
+      "release_date": "April 28, 2017",
+      "genre": "Kart racing",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Animal Crossing: New Horizons",
+      "copies_sold": "47.82 million",
+      "release_date": "March 20, 2020",
+      "genre": "Social simulation",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Super Smash Bros. Ultimate",
+      "copies_sold": "36.24 million",
+      "release_date": "December 7, 2018",
+      "genre": "Fighting",
+      "developer": ["Bandai Namco Studios", "Sora Ltd."],
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "copies_sold": "32.81 million",
+      "release_date": "March 3, 2017",
+      "genre": "Action-adventure",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Super Mario Odyssey",
+      "copies_sold": "29.28 million",
+      "release_date": "October 27, 2017",
+      "genre": "Platformer",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Pokémon Scarlet and Violet",
+      "copies_sold": "26.79 million",
+      "release_date": "November 18, 2022",
+      "genre": "Role-playing",
+      "developer": "Game Freak",
+      "publisher": ["The Pokémon Company", "Nintendo"]
+    },
+    {
+      "title": "Pokémon Sword and Shield",
+      "copies_sold": "26.72 million",
+      "release_date": "November 15, 2019",
+      "genre": "Role-playing",
+      "developer": "Game Freak",
+      "publisher": ["The Pokémon Company", "Nintendo"]
+    },
+    {
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "copies_sold": "21.73 million",
+      "release_date": "May 12, 2023",
+      "genre": "Action-adventure",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Super Mario Party",
+      "copies_sold": "21.16 million",
+      "release_date": "October 5, 2018",
+      "genre": "Party",
+      "developer": "NDcube",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "New Super Mario Bros. U Deluxe",
+      "copies_sold": "18.25 million",
+      "release_date": "January 11, 2019",
+      "genre": "Platformer",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Nintendo Switch Sports",
+      "copies_sold": "16.27 million",
+      "release_date": "April 29, 2022",
+      "genre": "Sports",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Super Mario Bros. Wonder",
+      "copies_sold": "16.03 million",
+      "release_date": "October 20, 2023",
+      "genre": "Platformer",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Ring Fit Adventure",
+      "copies_sold": "15.38 million",
+      "release_date": "October 18, 2019",
+      "genre": ["Exergame", "role-playing"],
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+      "copies_sold": "15.07 million",
+      "release_date": "November 16, 2018",
+      "genre": "Role-playing",
+      "developer": "Game Freak",
+      "publisher": ["The Pokémon Company", "Nintendo"]
+    },
+    {
+      "title": "Pokémon Brilliant Diamond and Shining Pearl",
+      "copies_sold": "15.06 million",
+      "release_date": "November 19, 2021",
+      "genre": "Role-playing",
+      "developer": "ILCA",
+      "publisher": ["The Pokémon Company", "Nintendo"]
+    },
+    {
+      "title": "Pokémon Legends: Arceus",
+      "copies_sold": "14.83 million",
+      "release_date": "January 28, 2022",
+      "genre": "Action role-playing",
+      "developer": "Game Freak",
+      "publisher": ["The Pokémon Company", "Nintendo"]
+    },
+    {
+      "title": "Luigi's Mansion 3",
+      "copies_sold": "14.25 million",
+      "release_date": "October 31, 2019",
+      "genre": "Action-adventure",
+      "developer": "Next Level Games",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Mario Party Superstars",
+      "copies_sold": "14.00 million",
+      "release_date": "October 29, 2021",
+      "genre": "Party",
+      "developer": "NDcube",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Splatoon 2",
+      "copies_sold": "13.60 million",
+      "release_date": "July 21, 2017",
+      "genre": "Third-person shooter",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    },
+    {
+      "title": "Super Mario 3D World + Bowser's Fury",
+      "copies_sold": "13.47 million",
+      "release_date": "February 12, 2021",
+      "genre": "Platformer",
+      "developer": "Nintendo EPD",
+      "publisher": "Nintendo"
+    }
+  ]
+}
+```
+
+📍 Step 7
+👍 Eval: Success - Extracted the list of the top 20 best-selling Nintendo Switch games from the Wikipedia page
+🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 8/15. Current URL: https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games. Successfully extracted the required information.
+🎯 Next goal: Compile the extracted data into a list and provide it as the final answer
+🛠️  Action 1/1: {"done":{"text":"The list of the top 20 best-selling Nintendo Switch games has been successfully extracted and is provided below:\n\n1. Mario Kart 8 Deluxe - 68.20 million\n2. Animal Crossing: New Horizons - 47.82 million\n3. Super Smash Bros. Ultimate - 36.24 million\n4. The Legend of Zelda: Breath of the Wild - 32.81 million\n5. Super Mario Odyssey - 29.28 million\n6. Pokémon Scarlet and Violet - 26.79 million\n7. Pokémon Sword and Shield - 26.72 million\n8. The Legend of Zelda: Tears of the Kingdom - 21.73 million\n9. Super Mario Party - 21.16 million\n10. New Super Mario Bros. U Deluxe - 18.25 million\n11. Nintendo Switch Sports - 16.27 million\n12. Super Mario Bros. Wonder - 16.03 million\n13. Ring Fit Adventure - 15.38 million\n14. Pokémon: Let's Go, Pikachu! and Let's Go, Eevee! - 15.07 million\n15. Pokémon Brilliant Diamond and Shining Pearl - 15.06 million\n16. Pokémon Legends: Arceus - 14.83 million\n17. Luigi's Mansion 3 - 14.25 million\n18. Mario Party Superstars - 14.00 million\n19. Splatoon 2 - 13.60 million\n20. Super Mario 3D World + Bowser's Fury - 13.47 million\n\nSuccess: true","success":true}}
+📄 Result: The list of the top 20 best-selling Nintendo Switch games has been successfully extracted and is provided below:
+
+1. Mario Kart 8 Deluxe - 68.20 million
+2. Animal Crossing: New Horizons - 47.82 million
+3. Super Smash Bros. Ultimate - 36.24 million
+4. The Legend of Zelda: Breath of the Wild - 32.81 million
+5. Super Mario Odyssey - 29.28 million
+6. Pokémon Scarlet and Violet - 26.79 million
+7. Pokémon Sword and Shield - 26.72 million
+8. The Legend of Zelda: Tears of the Kingdom - 21.73 million
+9. Super Mario Party - 21.16 million
+10. New Super Mario Bros. U Deluxe - 18.25 million
+11. Nintendo Switch Sports - 16.27 million
+12. Super Mario Bros. Wonder - 16.03 million
+13. Ring Fit Adventure - 15.38 million
+14. Pokémon: Let's Go, Pikachu! and Let's Go, Eevee! - 15.07 million
+15. Pokémon Brilliant Diamond and Shining Pearl - 15.06 million
+16. Pokémon Legends: Arceus - 14.83 million
+17. Luigi's Mansion 3 - 14.25 million
+18. Mario Party Superstars - 14.00 million
+19. Splatoon 2 - 13.60 million
+20. Super Mario 3D World + Bowser's Fury - 13.47 million
+
+Success: true
+✅ Task completed
+✅ Successfully

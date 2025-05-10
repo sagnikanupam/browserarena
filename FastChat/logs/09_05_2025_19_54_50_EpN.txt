@@ -1,0 +1,33 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Go to the Guardian's website and give me a summary of today's news.
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: I am starting the task. I need to go to The Guardian's website and extract today's news summary.
+🎯 Next goal: Go to The Guardian's website.
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.theguardian.com"}}
+🔗  Navigated to https://www.theguardian.com
+📍 Step 2
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have successfully navigated to The Guardian\'s website. I need to handle the privacy pop-up and then extract the news.", "next_goal": "Handle privacy pop-up and extract today\'s news."}, "action": [{"click_element_by_text": {"text": "Do not sell or share my personal information"}}, {"extract_content": {"goal": "Extract a summary of today\'s news headlines."}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 183, 'prompt_tokens': 5193, 'total_tokens': 5376, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746820504-GcvaD1aLG7LWNG3EY6xz', 'finish_reason': 'stop', 'logprobs': None} id='run-8afc3d99-644f-4273-b880-f2819fcd013f-0' usage_metadata={'input_tokens': 5193, 'output_tokens': 183, 'total_tokens': 5376, 'input_token_details': {}, 'output_token_details': {}} with error 2 validation errors for AgentOutput
+action.0.click_element_by_text.element_type
+  Field required [type=missing, input_value={'text': 'Do not sell or ...y personal information'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action.1.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract a summa...oday's news headlines."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have successfully navigated to The Guardian\'s website. A privacy pop-up is visible.", "next_goal": "Close the privacy pop-up and then extract the news summary."},\n"action":[{"click_element_by_xpath": {"xpath": "//button[descendant::text()=\'Hide expanded menu\']/following-sibling::button[1]"}}, {"extract_content": {"goal": "Extract a summary of today\'s news headlines and a brief description for each from the main content area of the page."}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 234, 'prompt_tokens': 5207, 'total_tokens': 5441, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746820509-oJwFf5casglcxpVgh0BK', 'finish_reason': 'stop', 'logprobs': None} id='run-b34938dc-0234-4e21-9756-2b37ba2a62d5-0' usage_metadata={'input_tokens': 5207, 'output_tokens': 234, 'total_tokens': 5441, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.1.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract a summa...tent area of the page."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success - I have navigated to The Guardian\'s website.", "memory": "I am on The Guardian\'s website. I need to close the privacy pop-up and then extract today\'s news summary.", "next_goal": "Close the privacy pop-up."},\n"action":[{"click_element_by_xpath": {"xpath": "//button[contains(text(), \'Do not sell or share my personal information\')]/preceding-sibling::button | //button[contains(text(), \'Your privacy\')]/following-sibling::button"}}, {"wait": {"seconds": 2}}, {"extract_content": {"goal": "Extract today\'s news headlines and a brief summary of each."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 231, 'prompt_tokens': 5221, 'total_tokens': 5452, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746820516-uhLyy8onJC2mfQ4E3iAb', 'finish_reason': 'stop', 'logprobs': None} id='run-5877ca60-cf28-4cfe-94df-f74ba0d93395-0' usage_metadata={'input_tokens': 5221, 'output_tokens': 231, 'total_tokens': 5452, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.2.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract today's...brief summary of each."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

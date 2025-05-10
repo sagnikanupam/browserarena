@@ -1,0 +1,46 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what are today's top 10 sports news headlines
+📍 Step 1
+Failed to parse model output: {"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",
+"memory": "I need to find today's top 10 sports news headlines. This is the first step
+of the task.",
+"next_goal": "Search Google for today's top 10 sports news headlines."},
+"action":[{"search_google": {"query": "today's top 10 sports news headlines"}}]}
+ with Invalid control character at: line 2 column 87 (char 170), could not extract JSON.
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",\n"memory": "I need to find today\'s top 10 sports news headlines. This is the first step\nof the task.",\n"next_goal": "Search Google for today\'s top 10 sports news headlines."},\n"action":[{"search_google": {"query": "today\'s top 10 sports news headlines"}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 142, 'prompt_tokens': 4619, 'total_tokens': 4761, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746848500-khyhHpliDvctjuchxglO', 'finish_reason': 'stop', 'logprobs': None} id='run-1dc04a86-dd13-4207-8250-d895ba64f123-0' usage_metadata={'input_tokens': 4619, 'output_tokens': 142, 'total_tokens': 4761, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown - The previous action failed, but the browser started successfully. The page is currently blank.
+🧠 Memory: I need to find today's top 10 sports news headlines. I have not yet started searching.
+🎯 Next goal: Search Google for 'today's top 10 sports news headlines'
+🛠️  Action 1/1: {"search_google":{"query":"today's top 10 sports news headlines"}}
+🔍  Searched for "today's top 10 sports news headlines" in Google
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: I have searched Google for "today's top 10 sports news headlines". Now I need to extract the headlines from one of the search results. I will start with ESPN.
+🎯 Next goal: Click on the ESPN link and extract the top 10 sports news headlines.
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: ESPN - Serving Sports Fans. Anytime. Anywhere.
+📍 Step 3
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have landed on ESPN. I need to extract the top 10 sports news headlines.", "next_goal": "Extract the top headlines from the ESPN page."}, "action": [{"extract_content": {"goal": "Extract the text of the top headlines from the \'Top Headlines\' section."}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 139, 'prompt_tokens': 8497, 'total_tokens': 8636, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746848527-dR5UIlMP7KsAdL8Izpl7', 'finish_reason': 'stop', 'logprobs': None} id='run-91034f16-abe4-41e8-ac3f-bce578511628-0' usage_metadata={'input_tokens': 8497, 'output_tokens': 139, 'total_tokens': 8636, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the tex...op Headlines' section."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success - The ESPN page has loaded.",\n"memory": "I have searched Google and landed on the ESPN page. I need to extract the top 10 sports news headlines. I have identified the section \\"Top Headlines\\" on the page.",\n"next_goal": "Extract the top 10 sports news headlines from the ESPN page."},\n"action":[{"extract_content": {"goal": "Extract the text from the elements with indices 285-293 and present them as a list of headlines."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 191, 'prompt_tokens': 8511, 'total_tokens': 8702, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746848534-bQUCgGa4itJTvKpysCYL', 'finish_reason': 'stop', 'logprobs': None} id='run-60eeb9f2-c7c7-4f74-b53c-77dabd051ad8-0' usage_metadata={'input_tokens': 8511, 'output_tokens': 191, 'total_tokens': 8702, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the tex...s a list of headlines.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success. I navigated to ESPN.com.", "memory": "I have searched Google and landed on ESPN.com. I need to find today\'s top 10 sports news headlines. Currently, 9 headlines are visible. I will extract these, then scroll to see if more appear to reach the target of 10.", "next_goal": "Extract the visible top headlines from the ESPN page and then check if more headlines are available or if I need to find another source."},\n"action":[{"extract_content": {"goal": "Extract all headlines listed under \'Top Headlines\'"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 597, 'prompt_tokens': 8525, 'total_tokens': 9122, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746848542-RgeK9ki7EINKv3dAD657', 'finish_reason': 'stop', 'logprobs': None} id='run-0d993167-4d3d-4fda-a5cc-7252bf8cb85f-0' usage_metadata={'input_tokens': 8525, 'output_tokens': 597, 'total_tokens': 9122, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract all hea... under 'Top Headlines'"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

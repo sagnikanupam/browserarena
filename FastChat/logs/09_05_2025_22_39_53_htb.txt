@@ -1,0 +1,33 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me a summary of this week's best-selling crypto coins.
+📍 Step 1
+Failed to parse model output: Task: Give me a summary of this week's best-selling crypto coins.
+Previous steps: None
+Current URL: about:blank
+Open Tabs: ['about:blank']
+Interactive Elements: empty page
+[Current state ends here] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content="Task: Give me a summary of this week's best-selling crypto coins.\nPrevious steps: None\nCurrent URL: about:blank\nOpen Tabs: ['about:blank']\nInteractive Elements: empty page\n[Current state ends here]" additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 50, 'prompt_tokens': 3102, 'total_tokens': 3152, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746830749-LJmj5rh6h1942NxkzIXq', 'finish_reason': 'stop', 'logprobs': None} id='run-dc6b0824-423a-4b4e-bcd3-fb8c0a465873-0' usage_metadata={'input_tokens': 3102, 'output_tokens': 50, 'total_tokens': 3152, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: Task: Give me a summary of this week's best-selling crypto coins.Previous steps:
+The first response was not a valid JSON.Interactive elements:
+empty page{"current_state": {"evaluation_previous_goal": "Unknown - The previous step failed due to an invalid JSON response format, so the previous goal's success cannot be evaluated. The current page is blank.",
+"memory": "The task is to find a summary of this week's best-selling crypto coins. I need to start by searching on Google. This is the first step of the task.",
+"next_goal": "Search Google for 'this week's best-selling crypto coins'"},
+"action":[{"search_google": {"query": "this week's best-selling crypto coins"}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Task: Give me a summary of this week\'s best-selling crypto coins.Previous steps:\nThe first response was not a valid JSON.Interactive elements:\nempty page{"current_state": {"evaluation_previous_goal": "Unknown - The previous step failed due to an invalid JSON response format, so the previous goal\'s success cannot be evaluated. The current page is blank.",\n"memory": "The task is to find a summary of this week\'s best-selling crypto coins. I need to start by searching on Google. This is the first step of the task.",\n"next_goal": "Search Google for \'this week\'s best-selling crypto coins\'"},\n"action":[{"search_google": {"query": "this week\'s best-selling crypto coins"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 188, 'prompt_tokens': 3116, 'total_tokens': 3304, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746830751-wf8pMtHK2cbeWdTWRBm5', 'finish_reason': 'stop', 'logprobs': None} id='run-325fae9c-5195-4629-8500-61abc3e6641a-0' usage_metadata={'input_tokens': 3116, 'output_tokens': 188, 'total_tokens': 3304, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: Previous steps:
+1. Action error: Return a valid JSON object with the required fields.
+2. Action error: Return a valid JSON object with the required fields.
+
+Task: Give me a summary of this week's best-selling crypto coins.
+[Current state ends] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content="Previous steps:\n1. Action error: Return a valid JSON object with the required fields.\n2. Action error: Return a valid JSON object with the required fields.\n\nTask: Give me a summary of this week's best-selling crypto coins.\n[Current state ends]" additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 59, 'prompt_tokens': 3130, 'total_tokens': 3189, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746830756-Pdbf7P832CCle9kC9jzb', 'finish_reason': 'stop', 'logprobs': None} id='run-f2a0455b-bd82-4d19-bcb5-a82ccb7838fe-0' usage_metadata={'input_tokens': 3130, 'output_tokens': 59, 'total_tokens': 3189, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

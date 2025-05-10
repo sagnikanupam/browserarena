@@ -1,0 +1,41 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: create a list of best things to do in Lison in 3 days
+📍 Step 1
+🤷 Eval: Unknown - There is no previous goal to evaluate as I'm starting on a blank page.
+🧠 Memory: Starting a new task to create a list of best things to do in Lisbon in 3 days. Currently on a blank page with no interactive elements.
+🎯 Next goal: Search for information about the best things to do in Lisbon in 3 days
+🛠️  Action 1/1: {"search_google":{"query":"best things to do in Lisbon in 3 days itinerary"}}
+🔍  Searched for "best things to do in Lisbon in 3 days itinerary" in Google
+📍 Step 2
+👍 Eval: Success - I successfully searched for information about the best things to do in Lisbon in 3 days itinerary and now have several promising search results.
+🧠 Memory: I'm creating a list of best things to do in Lisbon in 3 days. I've searched Google and found several promising results including itineraries from Wheatless Wanderlust, Pack The Suitcases, Bon Traveler, Ruth Nuss, and Reddit recommendations. Common recommendations include exploring Alfama district, visiting Sintra as a day trip, and exploring Belem. I need to click on one of these links to get more detailed information.
+🎯 Next goal: Visit the Bon Traveler article to get detailed information about their 3-day Lisbon itinerary
+🛠️  Action 1/1: {}
+📍 Step 3
+👍 Eval: Success - I successfully searched for information about the best things to do in Lisbon in 3 days and have several promising search results showing various itineraries and recommendations.
+🧠 Memory: I'm creating a list of best things to do in Lisbon in 3 days. I've searched Google and found several promising results including detailed itineraries from Wheatless Wanderlust, Pack The Suitcases, Bon Traveler, Ruth Nuss, and Reddit recommendations. Common themes appear to be exploring Alfama district, visiting Sintra as a day trip, and exploring Belem. I'll click on the Bon Traveler article since it appears to offer a detailed day-by-day breakdown of activities.
+🎯 Next goal: Visit the Bon Traveler article to get detailed information about their 3-day Lisbon itinerary
+🛠️  Action 1/1: {"click_element_by_index":{"index":72}}
+🖱️  Clicked button with index 72: The Ultimate 3 Days in Lisbon Itinerary
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully accessed the Bon Traveler article about a 3-day Lisbon itinerary, which should provide detailed information for creating my list.",\n    "memory": "I\'m creating a list of best things to do in Lisbon in 3 days. After searching Google, I clicked on the Bon Traveler article \'3 Days in Lisbon Itinerary\' which appears to have a comprehensive day-by-day breakdown. I now need to extract the detailed content from this article to compile my list. The page appears to have much more content below what\'s currently visible (36971 pixels below).",\n    "next_goal": "Extract the content from this page to gather comprehensive information about the best things to do in Lisbon over 3 days"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract the complete 3-day Lisbon itinerary including all recommended attractions, activities, restaurants, and tips for each day"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 534, 'prompt_tokens': 5952, 'total_tokens': 6486, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746831469-00msnbGJWNA7tVJgfw9h', 'finish_reason': 'stop', 'logprobs': None} id='run-ec33b882-c9bd-412c-9845-f5422f8d3563-0' usage_metadata={'input_tokens': 5952, 'output_tokens': 534, 'total_tokens': 6486, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the com... and tips for each day'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully navigated to the Bon Traveler article about a 3-day Lisbon itinerary, which is exactly what I need for my task.",\n    "memory": "I\'m creating a list of best things to do in Lisbon in 3 days. So far, I\'ve searched Google and clicked on a promising result from Bon Traveler that has \'The Ultimate 3 Days in Lisbon Itinerary\'. I\'m now on that page and need to extract the detailed content to create my comprehensive list. I\'ve completed 1 step so far (finding a good resource).",\n    "next_goal": "Extract the content of this page to get the detailed 3-day Lisbon itinerary"\n  },\n  "action": [\n    {"extract_content": {"goal": "extract the complete 3-day Lisbon itinerary including all recommended activities, attractions, restaurants, and day trips"}}\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 486, 'prompt_tokens': 5959, 'total_tokens': 6445, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746831489-OA7Euhz0SNwi5YedmUGH', 'finish_reason': 'stop', 'logprobs': None} id='run-b57fbf18-5f47-4951-835a-5678d99fd160-0' usage_metadata={'input_tokens': 5959, 'output_tokens': 486, 'total_tokens': 6445, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'extract the com...aurants, and day trips'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully clicked on the Bon Traveler article about a 3-day Lisbon itinerary and the page has loaded successfully.",\n    "memory": "I\'m creating a list of best things to do in Lisbon in 3 days. I\'ve searched Google and clicked on the Bon Traveler article which has a detailed 3-day Lisbon itinerary. I\'m now on the article page which appears to have the information I need, but most of the content is below the viewport. I need to accept the cookies notice and then extract the content to get the complete itinerary details.",\n    "next_goal": "Accept cookies notice and extract the article content to get the detailed 3-day Lisbon itinerary"\n  },\n  "action": [\n    {"click_element_by_index": {"index": 26}},\n    {"extract_content": {"goal": "Extract the complete 3-day Lisbon itinerary including all recommended attractions, activities, restaurants, and day trips"}}\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 461, 'prompt_tokens': 5973, 'total_tokens': 6434, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746831503-EteApZWOzSJvdK4eFmAH', 'finish_reason': 'stop', 'logprobs': None} id='run-ceb7b09d-6b83-4721-a817-d4e183a09379-0' usage_metadata={'input_tokens': 5973, 'output_tokens': 461, 'total_tokens': 6434, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.1.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the com...aurants, and day trips'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

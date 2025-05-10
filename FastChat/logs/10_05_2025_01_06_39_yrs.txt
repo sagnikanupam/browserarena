@@ -1,0 +1,18 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: gifts under $25 for mother's day
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3097, 'total_tokens': 3097, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746839201-neVeRPTlZXar9a0YOwpH', 'finish_reason': 'stop', 'logprobs': None} id='run-602bb6f7-3906-48c2-b803-35990867ae34-0' usage_metadata={'input_tokens': 3097, 'output_tokens': 0, 'total_tokens': 3097, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3111, 'total_tokens': 3111, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746839209-h0RlK3LFIGs2e5NWX4Br', 'finish_reason': 'stop', 'logprobs': None} id='run-e8997e38-21c2-4d6d-b88f-d34e4dd83198-0' usage_metadata={'input_tokens': 3111, 'output_tokens': 0, 'total_tokens': 3111, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3125, 'total_tokens': 3125, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746839211-2hMufyZ8MgV7UV1xgkeH', 'finish_reason': 'stop', 'logprobs': None} id='run-7e20c4f3-fca0-45fb-9b57-390fa834e7f0-0' usage_metadata={'input_tokens': 3125, 'output_tokens': 0, 'total_tokens': 3125, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

@@ -1,0 +1,36 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: "Give me a summary of the featured article on Wikipedia's homepage
+📍 Step 1
+🤷 Eval: Unknown - This is the first step.
+🧠 Memory: Starting the task. I need to find the featured article on Wikipedia's homepage and summarize it.
+🎯 Next goal: Navigate to Wikipedia's homepage.
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.wikipedia.org"}}
+🔗  Navigated to https://www.wikipedia.org
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: Navigated to Wikipedia's homepage. The goal is to find the featured article and summarize it. Currently, I am on the language selection page.
+🎯 Next goal: Click on the English language link to navigate to the English Wikipedia homepage.
+🛠️  Action 1/1: {"click_element_by_index":{"index":0}}
+🖱️  Clicked button with index 0: 
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Successfully navigated to the English Wikipedia homepage. I can see the featured article: \\"Tesla Model S\\".", "next_goal": "Extract the content of the featured article and then summarize it."},\n"action":[{"extract_content": {"goal": "Extract the text of the featured article about the Tesla Model S"}}, {"done": {"text": "The featured article on Wikipedia\'s homepage is about the Tesla Model S. It is a battery-electric, four-door full-size car produced by Tesla since 2012. It is considered one of the most influential electric cars. Tesla began developing the Model S around 2007 and acquired a facility in Fremont, California, for its production, which started in June 2012. European market assembly was done in Tilburg, the Netherlands, from 2013 to 2021. Key changes include the introduction of Tesla Autopilot in 2015. The Model S was the world\'s best-selling plug-in electric vehicle in 2015 and has received several accolades, including the Motor Trend Car of the Year in 2013 and recognition from Time magazine. Tesla operates a network of fast-charging stations for the Model S.", "success": true}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 347, 'prompt_tokens': 6652, 'total_tokens': 6999, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746836278-Z7qp6eCLTgf1AVsjGR6J', 'finish_reason': 'stop', 'logprobs': None} id='run-4e1ea041-7ec0-42e9-b559-ca0356d47d5d-0' usage_metadata={'input_tokens': 6652, 'output_tokens': 347, 'total_tokens': 6999, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the tex...bout the Tesla Model S'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have navigated to the English Wikipedia homepage. The featured article is about the Tesla Model S.", "next_goal": "Extract the content of the featured article to summarize it."}, "action": [{"extract_content": {"goal": "Extract the summary of the featured article about Tesla Model S from today\'s featured article section."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 150, 'prompt_tokens': 6667, 'total_tokens': 6817, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746836285-LQSTHXlU2zdQGEwUBItA', 'finish_reason': 'stop', 'logprobs': None} id='run-7e48d908-aa11-4a23-9cd1-9162a9a42aae-0' usage_metadata={'input_tokens': 6667, 'output_tokens': 150, 'total_tokens': 6817, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the sum...tured article section."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Navigated to the English Wikipedia homepage. I have identified the featured article as \\"Tesla Model S\\".", "next_goal": "Extract the summary of the featured article about the Tesla Model S."}, "action": [{"extract_content": {"goal": "Extract the summary of the featured article: The Tesla Model S is a battery-electric, four-door full-size car, produced by Tesla since 2012. Considered by critics as one of the most influential electric cars, Tesla began developing the Model S around 2007. To produce the Model S, Tesla acquired a facility in Fremont, California; mass production of the car began there in June 2012. Tesla carried out final assembly for European markets at its facilities in Tilburg, the Netherlands, between 2013 and 2021. Changes to the car have included the introduction of Tesla Autopilot—a partial vehicle automation advanced driver-assistance system, released in 2015. That year, the Model S was the world\'s best-selling plug-in electric vehicle. The car has received accolades, including the Car of the Year Motor Trend award in 2013. Time named it one of the Best 25 Inventions of the Year 2012 and later included it on its list of the 10 Best Gadgets of the 2010s in 2019. To charge the Model S, Tesla operates a network of fast-charging stations."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 435, 'prompt_tokens': 6681, 'total_tokens': 7116, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746836290-r7E6gtmJo9k3N04DXIuV', 'finish_reason': 'stop', 'logprobs': None} id='run-a9690a33-422c-45a5-a5b6-006cf807fa6f-0' usage_metadata={'input_tokens': 6681, 'output_tokens': 435, 'total_tokens': 7116, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the sum...ast-charging stations."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

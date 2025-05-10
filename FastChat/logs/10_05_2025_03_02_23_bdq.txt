@@ -1,0 +1,21 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What were the draw odds for obtaining a hunting license in Alberta, Canada for Mule Deer in WMU 402 and WMU 406, in 2023?
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3126, 'total_tokens': 3126, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846355-6itzo1bz7Y0sS0JCY1Dz', 'finish_reason': 'stop', 'logprobs': None} id='run-011a1468-e193-49a4-8924-0d3e9e1b621d-0' usage_metadata={'input_tokens': 3126, 'output_tokens': 0, 'total_tokens': 3126, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: [Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown",
+"memory": "Starting the task. I need to find draw odds for Mule Deer hunting licenses in Alberta for WMU 402 and WMU 406 in 2023. I have completed 0 out of 2 searches.",
+"next_goal": "Search on Google for Alberta hunting draw odds 2023."},
+"action":[{"search_google": {"query": "Alberta hunting draw odds 2023 Mule Deer WMU 402 WMU 406"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown",\n"memory": "Starting the task. I need to find draw odds for Mule Deer hunting licenses in Alberta for WMU 402 and WMU 406 in 2023. I have completed 0 out of 2 searches.",\n"next_goal": "Search on Google for Alberta hunting draw odds 2023."},\n"action":[{"search_google": {"query": "Alberta hunting draw odds 2023 Mule Deer WMU 402 WMU 406"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 168, 'prompt_tokens': 3140, 'total_tokens': 3308, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846357-sxzzETHLBQjIfgWOXKe9', 'finish_reason': 'stop', 'logprobs': None} id='run-a647d145-1c27-421c-b8fa-f1ea19655bf7-0' usage_metadata={'input_tokens': 3140, 'output_tokens': 168, 'total_tokens': 3308, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3154, 'total_tokens': 3154, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846367-4giQ5JK2jdiCXnGAm16A', 'finish_reason': 'stop', 'logprobs': None} id='run-f4b781cc-a440-4a98-8456-85908d850c43-0' usage_metadata={'input_tokens': 3154, 'output_tokens': 0, 'total_tokens': 3154, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

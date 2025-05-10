@@ -1,0 +1,39 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the capital of Newfoundland
+📍 Step 1
+🤷 Eval: Unknown - no actions performed yet
+🧠 Memory: Started new task to find the capital of Newfoundland. Completed 0/15 steps.
+🎯 Next goal: Search Google for the capital of Newfoundland
+🛠️  Action 1/1: {"search_google":{"query":"capital of Newfoundland"}}
+🔍  Searched for "capital of Newfoundland" in Google
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The capital of Newfoundland is St. John’s.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 102, 'prompt_tokens': 6039, 'total_tokens': 6141, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 64, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746838563-B2LlZfYKaiBDIoB2buOT', 'finish_reason': 'stop', 'logprobs': None} id='run-fa5795a0-058c-4258-999c-bb5de01fa3da-0' usage_metadata={'input_tokens': 6039, 'output_tokens': 102, 'total_tokens': 6141, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 64}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The capital of Newfoundland is St. John’s.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 166, 'prompt_tokens': 6056, 'total_tokens': 6222, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 128, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746838567-rwfMjLyVuat6c3vnQr3J', 'finish_reason': 'stop', 'logprobs': None} id='run-94ec6d0a-c957-473b-bd18-25505fb8fcf9-0' usage_metadata={'input_tokens': 6056, 'output_tokens': 166, 'total_tokens': 6222, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 128}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='{"done":{"text":"The capital of Newfoundland is St. John’s.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 294, 'prompt_tokens': 6073, 'total_tokens': 6367, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 256, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746838571-RxiJygl0VqNUViBzMrVt', 'finish_reason': 'stop', 'logprobs': None} id='run-9d48bdc7-7072-4c8a-8831-cf1a5382cbb9-0' usage_metadata={'input_tokens': 6073, 'output_tokens': 294, 'total_tokens': 6367, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 256}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ca...s.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

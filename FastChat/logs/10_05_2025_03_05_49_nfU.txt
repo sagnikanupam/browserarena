@@ -1,0 +1,46 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Can you give me a summary of the movie Girl Interrupted.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3100, 'total_tokens': 3100, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846353-GdeaYjja5zoWjyK3wLDm', 'finish_reason': 'stop', 'logprobs': None} id='run-3c0b7ee0-1df9-4d6d-8eeb-45c854bf95c1-0' usage_metadata={'input_tokens': 3100, 'output_tokens': 0, 'total_tokens': 3100, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+👍 Eval: Success - The browser started successfully.
+🧠 Memory: I am starting the task to find a summary of the movie 'Girl Interrupted'. This is the first step.
+🎯 Next goal: Search Google for 'Girl Interrupted summary'.
+🛠️  Action 1/1: {"search_google":{"query":"Girl Interrupted summary"}}
+🔍  Searched for "Girl Interrupted summary" in Google
+📍 Step 2
+Failed to parse model output: [Current state ends here] with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846366-nPLHgm2VeDi8CCRksEnM', 'finish_reason': 'error', 'logprobs': None} id='run-57536973-97af-4794-8e0e-6e6f1e21cc1e-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success - I have searched Google for 'Girl Interrupted summary' and the results are displayed.
+🧠 Memory: I have searched Google for 'Girl Interrupted summary'. Now I need to find a reliable source from the search results to get the movie summary. I will try Wikipedia first.
+🎯 Next goal: Click on the Wikipedia link to get the movie summary.
+🛠️  Action 1/1: {"click_element_by_index":{"index":68}}
+🖱️  Clicked button with index 68: Girl, Interrupted (film)
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success - I have successfully navigated to the Wikipedia page for the movie \\"Girl, Interrupted\\".", "memory": "I have searched Google for \\"Girl Interrupted summary\\" and clicked on the Wikipedia link. Now I am on the Wikipedia page for the movie. I need to extract the plot summary from this page.", "next_goal": "Extract the plot summary from the current Wikipedia page."}, "action": [{"extract_content": {"goal": "Extract the plot summary of the movie Girl, Interrupted from the Wikipedia page."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 185, 'prompt_tokens': 5372, 'total_tokens': 5557, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846378-pGYAVMfGWOiXmXu6iOZM', 'finish_reason': 'stop', 'logprobs': None} id='run-bc084304-eb47-42c9-9d88-53176042f483-0' usage_metadata={'input_tokens': 5372, 'output_tokens': 185, 'total_tokens': 5557, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the plo...om the Wikipedia page.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='I have landed on the Wikipedia page for "Girl, Interrupted (film)".\nThe page contains a plot summary, which is what I\'m looking for.\nI will extract the plot summary.```json\n{"current_state": {"evaluation_previous_goal": "Success - I have navigated to the Wikipedia page for \\"Girl, Interrupted (film)\\".", "memory": "I have found the Wikipedia page for \'Girl, Interrupted\'. I need to extract the plot summary from this page.", "next_goal": "Extract the plot summary from the Wikipedia page."}, "action": [{"extract_content": {"goal": "Extract the plot summary of the movie Girl, Interrupted"}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 146, 'prompt_tokens': 5386, 'total_tokens': 5532, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846384-IbnAnXgbEKfTVnJR0XfC', 'finish_reason': 'stop', 'logprobs': None} id='run-cefc98f9-b044-4b96-a3e1-3e0f8a68b38b-0' usage_metadata={'input_tokens': 5386, 'output_tokens': 146, 'total_tokens': 5532, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the plo...ovie Girl, Interrupted'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success - I have successfully navigated to the Wikipedia page for \'Girl, Interrupted\'.",\n"memory": "I am on the Wikipedia page for \'Girl, Interrupted\'. I need to find the plot summary of the movie. The plot section is visible. I will now extract the content focusing on the plot summary.",\n"next_goal": "Extract the plot summary of the movie \'Girl, Interrupted\' from the Wikipedia page."},\n"action":[{"extract_content": {"goal": "Extract the plot summary of the movie \'Girl, Interrupted\'. The plot summary starts with \'In 1967, New England, aimless eighteen-year-old Susanna Kaysen...\'"}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 217, 'prompt_tokens': 6839, 'total_tokens': 7056, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746846390-bOWQScJ05RYCR3JWicCG', 'finish_reason': 'stop', 'logprobs': None} id='run-a6c21cf8-4058-4edf-aeb9-77c3ffb69e4b-0' usage_metadata={'input_tokens': 6839, 'output_tokens': 217, 'total_tokens': 7056, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the plo...old Susanna Kaysen...'"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

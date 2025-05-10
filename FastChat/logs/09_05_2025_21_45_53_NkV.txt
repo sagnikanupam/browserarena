@@ -1,0 +1,41 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: create a list of top ranked league of legends players from Canada
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3099, 'total_tokens': 3099, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827156-nwP6KasMSQRIe26Rtkr3', 'finish_reason': 'stop', 'logprobs': None} id='run-0f083cd1-4d49-49c6-abf0-6ddc79116d76-0' usage_metadata={'input_tokens': 3099, 'output_tokens': 0, 'total_tokens': 3099, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown - The previous step had an error, but it appears to be an internal error, not related to the task itself or my actions. I'm starting a new task.
+🧠 Memory: Starting a new task to find top-ranked League of Legends players from Canada. 0 players found yet.
+🎯 Next goal: Search Google for 'top ranked league of legends players Canada' to find relevant websites or lists.
+🛠️  Action 1/1: {"search_google":{"query":"top ranked league of legends players Canada"}}
+🔍  Searched for "top ranked league of legends players Canada" in Google
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: Searched Google for 'top ranked league of legends players Canada'. The first result, esportsearnings.com, seems promising. I will click on it to find the list of players.
+🎯 Next goal: Click on the first search result link (index 33) to navigate to the esportsearnings.com page and find the list of players.
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: Top Player Rankings from Canada for League of Legends
+📍 Step 3
+Failed to parse model output: content='Summary of previous actions:\n* Clicked on the first search result link (index 33) after searching "top ranked league of legends players Canada". This led to the esportsearnings.com page.\n\nThe ultimate task is: """create a list of top ranked league of legends players from Canada""". If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.\nExample output:```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Successfully navigated to esportsearnings.com, which displays top Canadian League of Legends players. I need to extract these player names.", "next_goal": "Extract the list of top-ranked League of Legends players from Canada from the current page."}, "action": [{"extract_content": {"goal": "Extract the Player ID, Player Name, and their real names from the table \'Top Player Rankings from Canada for League of Legends\'. This should include players like WildTurtle (Jason Tran), Biofrost (Vincent Wang), etc."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 273, 'prompt_tokens': 5290, 'total_tokens': 5563, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827174-ihL7U37xWjlJ85bnAVKp', 'finish_reason': 'stop', 'logprobs': None} id='run-bdfd4bb4-fd5b-4f2e-9c67-9c990b06c4f1-0' usage_metadata={'input_tokens': 5290, 'output_tokens': 273, 'total_tokens': 5563, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the Pla...t (Vincent Wang), etc."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: Previous response:
+Error: action error: return a valid json object with the required fields.
+{"current_state": {"evaluation_previous_goal": "Success", "memory": "Searched Google and found the top player rankings on esportsearnings.com. I'm now on the page with the list of players.", "next_goal": "Extract the list of top Canadian League of Legends players from the current page."}, "action": [{"extract_content": {"goal": "Extract the names and rankings of the top Canadian League of Legends players listed on the page"}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Previous response:\nError: action error: return a valid json object with the required fields.\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Searched Google and found the top player rankings on esportsearnings.com. I\'m now on the page with the list of players.", "next_goal": "Extract the list of top Canadian League of Legends players from the current page."}, "action": [{"extract_content": {"goal": "Extract the names and rankings of the top Canadian League of Legends players listed on the page"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827186-NXOrFE0qLU3skmAA9Bho', 'finish_reason': 'error', 'logprobs': None} id='run-b659e4ca-9f29-4604-999c-f1576e901fb7-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='Previous steps:\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Searched Google for \'top ranked league of legends players Canada\'. The first result, esportsearnings.com, seems promising. I will click on it to find the list of players.", "next_goal": "Click on the first search result link (index 33) to navigate to the esportsearnings.com page and find the list of players."}, "action": [{"click_element_by_index": {"index": 33}}]}```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Navigated to esportsearnings.com, which lists top Canadian League of Legends players. The page displays the top players with their earnings. I will extract this information.", "next_goal": "Extract the list of top-ranked League of Legends players from Canada, including their Player ID, Player Name, and Total (Game) earnings."}, "action": [{"extract_content": {"goal": "Extract the list of top-ranked League of Legends players from Canada, including their Player ID, Player Name, and Total (Game) earnings."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 292, 'prompt_tokens': 5318, 'total_tokens': 5610, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827195-zYTWk8E5zU7B4ey9AJbF', 'finish_reason': 'stop', 'logprobs': None} id='run-9970a3e7-01f0-45d6-8b41-6d74ccc29b5f-0' usage_metadata={'input_tokens': 5318, 'output_tokens': 292, 'total_tokens': 5610, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the lis...Total (Game) earnings.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

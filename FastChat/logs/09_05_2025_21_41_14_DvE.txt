@@ -1,0 +1,318 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa 
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3106, 'total_tokens': 3106, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827196-JDCmre0HOV9h1fNlTUlP', 'finish_reason': 'stop', 'logprobs': None} id='run-ab8f742a-e5d1-4e68-ad1a-5d113eae9aee-0' usage_metadata={'input_tokens': 3106, 'output_tokens': 0, 'total_tokens': 3106, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3120, 'total_tokens': 3120, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827198-Ol1z5316PUiVNa6qxxen', 'finish_reason': 'stop', 'logprobs': None} id='run-ce92907c-b701-49fb-ac6c-ed0657539cc8-0' usage_metadata={'input_tokens': 3120, 'output_tokens': 0, 'total_tokens': 3120, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown - The previous steps resulted in an error, and I am starting from a blank page. I will now begin the task.
+🧠 Memory: I need to find plane ticket prices for a one-way trip from Ontario to Ottawa. I will start by searching for flight websites on Google. 0 websites searched so far.
+🎯 Next goal: Search on Google for flight comparison websites or airline websites.
+🛠️  Action 1/1: {"search_google":{"query":"flights from Ontario to Ottawa one way"}}
+🔍  Searched for "flights from Ontario to Ottawa one way" in Google
+📍 Step 2
+Failed to parse model output: The Google search results page is open. I will now start extracting information from the search results.
+The ultimate task is to "Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa".
+I will open the first link from the search results, Expedia.
+My response will contain current_state and action.
+The evalution_previous_goal will be success as the previous search worked.
+The memory will contain which websites I've visited, "I have not visited any websites yet".
+The next_goal will be to "Click on Expedia and extract price data". with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The Google search results page is open. I will now start extracting information from the search results.\nThe ultimate task is to "Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa".\nI will open the first link from the search results, Expedia.\nMy response will contain current_state and action.\nThe evalution_previous_goal will be success as the previous search worked.\nThe memory will contain which websites I\'ve visited, "I have not visited any websites yet".\nThe next_goal will be to "Click on Expedia and extract price data".' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827210-AeqWzYv4mlBsC4xJ4iZf', 'finish_reason': 'error', 'logprobs': None} id='run-196d932e-a3ad-4af1-abad-c912bd730e81-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: Ultimate task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa
+Previous steps: [{"search_google": {"query": "flights from Ontario to Ottawa one way"}}]
+Current URL: https://www.google.com/search?q=flights%20from%20Ontario%20to%20Ottawa%20one%20way&udm=14&sei=x3ceaOmTAeilptQPp4SCkAw
+Open Tabs: ["flights from Ontario to Ottawa one way - Google Search"]
+Interactive Elements:
+[0]<a Go to Google Home/>
+[1]<textarea q;;Search;combobox;false>flights from Ontario to Ottawa one way/>
+[2]<div />
+[3]<div button; Clear/>
+[4]<span />
+[5]<span />
+[6]<div button;Search by image/>
+[7]<button Search;submit/>
+[8]<div />
+[9]<span />
+[10]<div Settings;button/>
+[11]<div Quick Settings/>
+[12]<span />
+[13]<a false;Google apps;button/>
+[14]<a Sign in/>
+[15]<a link/>
+[16]<div All/>
+[17]<a link/>
+[18]<div Forums/>
+[19]<a link/>
+[20]<div Short videos/>
+[21]<a link/>
+[22]<div Flights/>
+[23]<a link>Web/>
+[24]<a link/>
+[25]<div Finance/>
+[26]<a link/>
+[27]<div News/>
+[28]<div false;button/>
+[29]<div More/>
+[30]<span />
+[31]<div false;button>Tools/>
+[32]<a />
+[33]<h3 Cheap Flights from Ontario to Ottawa (ONT-YOW)/>
+[34]<span />
+[35]<div />
+[36]<img />
+[37]<div />
+[38]<div />
+[39]<span Expedia/>
+[40]<div />
+[41]<cite text>https://www.expedia.com/>
+[42]<span text>› flights › ontario-to-ottawa/>
+[43]<div button;About this result/>
+[44]<span />
+[45]<span />
+[46]<a />
+[47]<div />
+[48]<img />
+Cheap Flights from Ontario (ONT) to Ottawa (YOW)
+start at $361 for one-way
+and $671 for round trip. Earn your airline miles on top of our rewards!
+Starting from $361.00
+[49]<a />
+[50]<h3 Cheap Flight Deals from Ontario to Ottawa (ONT-YOW)/>
+[51]<span />
+[52]<div />
+[53]<img />
+[54]<div />
+[55]<div />
+[56]<span KAYAK/>
+[57]<div />
+[58]<cite text>https://www.kayak.com/>
+[59]<span text>› ... › Canada › Ontario/>
+[60]<div button;About this result/>
+[61]<span />
+[62]<span />
+In the past 3 days, the cheapest round-trip tickets from
+Ontario to Ottawa
+were found on Air Canada ($798) and Delta ($840).
+Starting from $340.00
+[63]<a />
+[64]<h3 Cheap Flights from Ontario International (ONT) to Ottawa .../>
+[65]<div />
+[66]<div />
+[67]<span />
+[68]<div />
+[69]<img />
+[70]<div />
+[71]<div />
+[72]<span skyscanner.com/>
+[73]<div />
+[74]<cite text>https://www.skyscanner.com/>
+[75]<span text>› ... › Ontario International/>
+[76]<div button;About this result/>
+[77]<span />
+[78]<span />
+Flight
+deals from
+Ontario
+International to
+Ottawa
+; $151 per passenger.Departing Mon, May 26.
+One
+-
+way flight
+with Frontier
+Airlines
+. · From $151, select. ; $184 per ...
+[79]<a />
+[80]<h3 Find cheap flights from Ontario to Ottawa with Cheapflights/>
+[81]<span />
+[82]<div />
+[83]<img />
+[84]<div />
+[85]<div />
+[86]<span Cheapflights/>
+[87]<div />
+[88]<cite text>https://www.cheapflights.com/>
+[89]<span text>› ... › Region of Ontario/>
+[90]<div button;About this result/>
+[91]<span />
+[92]<span />
+Find airfare and ticket deals for cheap flights from Ontario to Ottawa.
+Search flight deals from various travel partners
+with one click at $137.
+[93]<a />
+[94]<h3 Cheap flights from Ontario to Ottawa .../>
+[95]<div />
+[96]<div />
+[97]<span />
+[98]<div />
+[99]<img />
+[100]<div />
+[101]<div />
+[102]<span Momondo/>
+[103]<div />
+[104]<cite text>https://www.momondo.com/>
+[105]<span text>› Flights › Flights to Ottawa/>
+[106]<div button;About this result/>
+[107]<span />
+[108]<span />
+The best
+one
+-
+way flight
+to
+Ottawa
+from
+Ontario
+in the past 72 hours is $412. The best round-trip
+flight
+deal from
+Ontario to Ottawa
+found on momondo in the last ...
+Starting from $340.00
+... 1027 pixels below - scroll or extract content to see more ... with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Ultimate task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa\nPrevious steps: [{"search_google": {"query": "flights from Ontario to Ottawa one way"}}]\nCurrent URL: https://www.google.com/search?q=flights%20from%20Ontario%20to%20Ottawa%20one%20way&udm=14&sei=x3ceaOmTAeilptQPp4SCkAw\nOpen Tabs: ["flights from Ontario to Ottawa one way - Google Search"]\nInteractive Elements:\n[0]<a Go to Google Home/>\n[1]<textarea q;;Search;combobox;false>flights from Ontario to Ottawa one way/>\n[2]<div />\n[3]<div button; Clear/>\n[4]<span />\n[5]<span />\n[6]<div button;Search by image/>\n[7]<button Search;submit/>\n[8]<div />\n[9]<span />\n[10]<div Settings;button/>\n[11]<div Quick Settings/>\n[12]<span />\n[13]<a false;Google apps;button/>\n[14]<a Sign in/>\n[15]<a link/>\n[16]<div All/>\n[17]<a link/>\n[18]<div Forums/>\n[19]<a link/>\n[20]<div Short videos/>\n[21]<a link/>\n[22]<div Flights/>\n[23]<a link>Web/>\n[24]<a link/>\n[25]<div Finance/>\n[26]<a link/>\n[27]<div News/>\n[28]<div false;button/>\n[29]<div More/>\n[30]<span />\n[31]<div false;button>Tools/>\n[32]<a />\n[33]<h3 Cheap Flights from Ontario to Ottawa (ONT-YOW)/>\n[34]<span />\n[35]<div />\n[36]<img />\n[37]<div />\n[38]<div />\n[39]<span Expedia/>\n[40]<div />\n[41]<cite text>https://www.expedia.com/>\n[42]<span text>› flights › ontario-to-ottawa/>\n[43]<div button;About this result/>\n[44]<span />\n[45]<span />\n[46]<a />\n[47]<div />\n[48]<img />\nCheap Flights from Ontario (ONT) to Ottawa (YOW)\nstart at $361 for one-way\nand $671 for round trip. Earn your airline miles on top of our rewards!\nStarting from $361.00\n[49]<a />\n[50]<h3 Cheap Flight Deals from Ontario to Ottawa (ONT-YOW)/>\n[51]<span />\n[52]<div />\n[53]<img />\n[54]<div />\n[55]<div />\n[56]<span KAYAK/>\n[57]<div />\n[58]<cite text>https://www.kayak.com/>\n[59]<span text>› ... › Canada › Ontario/>\n[60]<div button;About this result/>\n[61]<span />\n[62]<span />\nIn the past 3 days, the cheapest round-trip tickets from\nOntario to Ottawa\nwere found on Air Canada ($798) and Delta ($840).\nStarting from $340.00\n[63]<a />\n[64]<h3 Cheap Flights from Ontario International (ONT) to Ottawa .../>\n[65]<div />\n[66]<div />\n[67]<span />\n[68]<div />\n[69]<img />\n[70]<div />\n[71]<div />\n[72]<span skyscanner.com/>\n[73]<div />\n[74]<cite text>https://www.skyscanner.com/>\n[75]<span text>› ... › Ontario International/>\n[76]<div button;About this result/>\n[77]<span />\n[78]<span />\nFlight\ndeals from\nOntario\nInternational to\nOttawa\n; $151 per passenger.Departing Mon, May 26.\nOne\n-\nway flight\nwith Frontier\nAirlines\n. · From $151, select. ; $184 per\xa0...\n[79]<a />\n[80]<h3 Find cheap flights from Ontario to Ottawa with Cheapflights/>\n[81]<span />\n[82]<div />\n[83]<img />\n[84]<div />\n[85]<div />\n[86]<span Cheapflights/>\n[87]<div />\n[88]<cite text>https://www.cheapflights.com/>\n[89]<span text>› ... › Region of Ontario/>\n[90]<div button;About this result/>\n[91]<span />\n[92]<span />\nFind airfare and ticket deals for cheap flights from Ontario to Ottawa.\nSearch flight deals from various travel partners\nwith one click at $137.\n[93]<a />\n[94]<h3 Cheap flights from Ontario to Ottawa .../>\n[95]<div />\n[96]<div />\n[97]<span />\n[98]<div />\n[99]<img />\n[100]<div />\n[101]<div />\n[102]<span Momondo/>\n[103]<div />\n[104]<cite text>https://www.momondo.com/>\n[105]<span text>› Flights › Flights to Ottawa/>\n[106]<div button;About this result/>\n[107]<span />\n[108]<span />\nThe best\none\n-\nway flight\nto\nOttawa\nfrom\nOntario\nin the past 72 hours is $412. The best round-trip\nflight\ndeal from\nOntario to Ottawa\nfound on momondo in the last\xa0...\nStarting from $340.00\n... 1027 pixels below - scroll or extract content to see more ...' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827220-7F1ScpvfHLQCsoOO81Jv', 'finish_reason': 'error', 'logprobs': None} id='run-44d1db6a-10cb-49ca-959f-6c43ac7ccac8-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success - The Google search was successful, and I have a list of flight websites.
+🧠 Memory: I have searched for flights on Google. Now I need to visit the individual websites to extract prices. 0 websites visited so far.
+🎯 Next goal: Click on the Expedia link to check flight prices.
+🛠️  Action 1/1: {"click_element_by_index":{"index":32}}
+🖱️  Clicked button with index 32: 
+📍 Step 3
+⚠ Eval: Failed - Expedia presented a captcha page, preventing me from accessing flight information.
+🧠 Memory: I encountered a captcha on Expedia. I will go back to the Google search results and try a different website to find flight prices. 0 websites successfully visited so far.
+🎯 Next goal: Go back to the Google search results page.
+🛠️  Action 1/1: {"go_back":{}}
+🔙  Navigated back
+📍 Step 4
+Failed to parse model output: Ultimate task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa
+Previous steps:
+[
+  {
+    "current_state": {
+      "evaluation_previous_goal": "Unknown - The previous steps resulted in an error, and I am starting from a blank page. I will now begin the task.",
+      "memory": "I need to find plane ticket prices for a one-way trip from Ontario to Ottawa. I will start by searching for flight websites on Google. 0 websites searched so far.",
+      "next_goal": "Search on Google for flight comparison websites or airline websites."
+    },
+    "action": [
+      {
+        "search_google": {
+          "query": "flights from Ontario to Ottawa one way"
+        }
+      }
+    ]
+  },
+  {
+    "current_state": {
+      "evaluation_previous_goal": "Success - The Google search was successful, and I have a list of flight websites.",
+      "memory": "I have searched for flights on Google. Now I need to visit the individual websites to extract prices. 0 websites visited so far.",
+      "next_goal": "Click on the Expedia link to check flight prices."
+    },
+    "action": [
+      {
+        "click_element_by_index": {
+          "index": 32
+        }
+      }
+    ]
+  },
+  {
+    "current_state": {
+      "evaluation_previous_goal": "Failed - Expedia presented a captcha page, preventing me from accessing flight information.",
+      "memory": "I encountered a captcha on Expedia. I will go back to the Google search results and try a different website to find flight prices. 0 websites successfully visited so far.",
+      "next_goal": "Go back to the Google search results page."
+    },
+    "action": [
+      {
+        "go_back": {}
+      }
+    ]
+  }
+]{"current_state": {"evaluation_previous_goal": "Success - I am back on the Google search results page after failing to access Expedia.", "memory": "I encountered a captcha on Expedia. I am back on the Google search results page. I will try a different website from the search results. 0 websites successfully visited so far.", "next_goal": "Click on the KAYAK link to check flight prices."}, "action": [{"click_element_by_index": {"index": 50}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Ultimate task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa\nPrevious steps:\n[\n  {\n    "current_state": {\n      "evaluation_previous_goal": "Unknown - The previous steps resulted in an error, and I am starting from a blank page. I will now begin the task.",\n      "memory": "I need to find plane ticket prices for a one-way trip from Ontario to Ottawa. I will start by searching for flight websites on Google. 0 websites searched so far.",\n      "next_goal": "Search on Google for flight comparison websites or airline websites."\n    },\n    "action": [\n      {\n        "search_google": {\n          "query": "flights from Ontario to Ottawa one way"\n        }\n      }\n    ]\n  },\n  {\n    "current_state": {\n      "evaluation_previous_goal": "Success - The Google search was successful, and I have a list of flight websites.",\n      "memory": "I have searched for flights on Google. Now I need to visit the individual websites to extract prices. 0 websites visited so far.",\n      "next_goal": "Click on the Expedia link to check flight prices."\n    },\n    "action": [\n      {\n        "click_element_by_index": {\n          "index": 32\n        }\n      }\n    ]\n  },\n  {\n    "current_state": {\n      "evaluation_previous_goal": "Failed - Expedia presented a captcha page, preventing me from accessing flight information.",\n      "memory": "I encountered a captcha on Expedia. I will go back to the Google search results and try a different website to find flight prices. 0 websites successfully visited so far.",\n      "next_goal": "Go back to the Google search results page."\n    },\n    "action": [\n      {\n        "go_back": {}\n      }\n    ]\n  }\n]{"current_state": {"evaluation_previous_goal": "Success - I am back on the Google search results page after failing to access Expedia.", "memory": "I encountered a captcha on Expedia. I am back on the Google search results page. I will try a different website from the search results. 0 websites successfully visited so far.", "next_goal": "Click on the KAYAK link to check flight prices."}, "action": [{"click_element_by_index": {"index": 50}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 561, 'prompt_tokens': 5021, 'total_tokens': 5582, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827251-W4jC6cDgLIMS3QclbXHt', 'finish_reason': 'stop', 'logprobs': None} id='run-514f810d-c8c5-4137-9e28-679e8bae996e-0' usage_metadata={'input_tokens': 5021, 'output_tokens': 561, 'total_tokens': 5582, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: Previous result: ""
+[Current state ends] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Previous result: ""\n[Current state ends]' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827260-0EjnCbs6GuUqzQH4iAsU', 'finish_reason': 'error', 'logprobs': None} id='run-6a4dd5cc-a5ee-47c5-8b5d-c3b9d9e88d8a-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: Finally, this are the interactive elements of the full page if you need to scroll:
+[Start of page]
+Accessibility Links
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0]<a Go to Google Home/>
+[1]<textarea q;;Search;combobox;false>flights from Ontario to Ottawa one way/>
+[2]<div />
+[3]<div button; Clear/>
+[4]<span />
+[5]<span />
+[6]<div button;Search by image/>
+[7]<button Search;submit/>
+[8]<div />
+[9]<span />
+[10]<div Settings;button/>
+[11]<div Quick Settings/>
+[12]<span />
+[13]<a false;Google apps;button/>
+[14]<a Sign in/>
+Filters and Topics
+[15]<a link/>
+[16]<div All/>
+[17]<a link/>
+[18]<div Forums/>
+[19]<a link/>
+[20]<div Short videos/>
+[21]<a link/>
+[22]<div Flights/>
+[23]<a link>Web/>
+[24]<a link/>
+[25]<div Finance/>
+[26]<a link/>
+[27]<div News/>
+[28]<div false;button/>
+[29]<div More/>
+[30]<span />
+[31]<div false;button>Tools/>
+People also ask
+[124]<div button>Expand all answers/>
+[109]<div Is it better to fly from Toronto or Ontario to Ottawa?;button/>
+[110]<div How far is the flight from Ontario to Ottawa?;button/>
+[111]<div How far is Ontario Canada from Ottawa?;button/>
+[112]<div How many airports does Ontario California have?;button/>
+Related searches
+Ad·
+[113]<a Fly From Ontario to Ottawa - Best Price Guarantee‎‎Ad/>
+[114]<cite text>https://www.travelation.com/>
+[115]<strong Find Flights from Ontario to Ottawa. Best Price Guarantee. Compare/>
+Prices. Save on Flights.
+[116]<a link/>
+[117]<a link/>
+Other Flight Options
+[118]<a Cheap flights from Ontario to Calgary›/>
+[119]<a Cheap flights from Ontario to Edmonton›/>
+More results
+[120]<a link/>
+[121]<span Show more about/>
+[122]<span Next/>
+[123]<div />
+[End of page] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Finally, this are the interactive elements of the full page if you need to scroll:\n[Start of page]\nAccessibility Links\nSkip to main content\nAccessibility help\nAccessibility feedback\n[0]<a Go to Google Home/>\n[1]<textarea q;;Search;combobox;false>flights from Ontario to Ottawa one way/>\n[2]<div />\n[3]<div button; Clear/>\n[4]<span />\n[5]<span />\n[6]<div button;Search by image/>\n[7]<button Search;submit/>\n[8]<div />\n[9]<span />\n[10]<div Settings;button/>\n[11]<div Quick Settings/>\n[12]<span />\n[13]<a false;Google apps;button/>\n[14]<a Sign in/>\nFilters and Topics\n[15]<a link/>\n[16]<div All/>\n[17]<a link/>\n[18]<div Forums/>\n[19]<a link/>\n[20]<div Short videos/>\n[21]<a link/>\n[22]<div Flights/>\n[23]<a link>Web/>\n[24]<a link/>\n[25]<div Finance/>\n[26]<a link/>\n[27]<div News/>\n[28]<div false;button/>\n[29]<div More/>\n[30]<span />\n[31]<div false;button>Tools/>\nPeople also ask\n[124]<div button>Expand all answers/>\n[109]<div Is it better to fly from Toronto or Ontario to Ottawa?;button/>\n[110]<div How far is the flight from Ontario to Ottawa?;button/>\n[111]<div How far is Ontario Canada from Ottawa?;button/>\n[112]<div How many airports does Ontario California have?;button/>\nRelated searches\nAd·\n[113]<a Fly From Ontario to Ottawa - Best Price Guarantee\u200e\u200eAd/>\n[114]<cite text>https://www.travelation.com/>\n[115]<strong Find Flights from Ontario to Ottawa. Best Price Guarantee. Compare/>\nPrices. Save on Flights.\n[116]<a link/>\n[117]<a link/>\nOther Flight Options\n[118]<a Cheap flights from Ontario to Calgary›/>\n[119]<a Cheap flights from Ontario to Edmonton›/>\nMore results\n[120]<a link/>\n[121]<span Show more about/>\n[122]<span Next/>\n[123]<div />\n[End of page]' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746827264-GsgyIwIjYAzfeIQcDZSU', 'finish_reason': 'error', 'logprobs': None} id='run-acb6f2f2-00f7-4937-ac77-10580f10ed90-0' with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

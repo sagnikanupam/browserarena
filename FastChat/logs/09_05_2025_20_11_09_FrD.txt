@@ -1,0 +1,37 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Maryland and include the hourly rate. 
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: I am starting a new task to find boat rental information for Piney Run Park. This is the first step.
+🎯 Next goal: Search Google for Piney Run Park boat rentals.
+🛠️  Action 1/1: {"search_google":{"query":"Piney Run Park boat rentals Eldersburg Maryland"}}
+🔍  Searched for "Piney Run Park boat rentals Eldersburg Maryland" in Google
+📍 Step 2
+Failed to parse model output: The current page is: https://www.google.com/search?q=Piney%20Run%20Park%20boat%20rentals%20Eldersburg%20Maryland&udm=14&sei=72EeaJ71CMHdptQPwsrviAY - It is a Google search result page.
+The task is to find the types of boats and their hourly rates at Piney Run Park.
+The search results provide relevant information.
+- Result 52 "Welcome to Piney Run Park!" from carrollcountymd.gov lists:
+    - Canoes: $17/hour
+    - Kayaks: $17/hour
+    - Rowboats: $17/hour
+    - Pedal Boats: $30/hour
+- Result 99 "Piney Run Park (2025) - All You Need to Know BEFORE You Go" from tripadvisor.com mentions: rowboats, canoes, paddle boats, and kayaks.
+- Result 118 "Piney Run Reservoir" from dnr.maryland.gov mentions canoes and kayaks.
+
+The information from carrollcountymd.gov appears to be the most direct and official source for rates. I have enough information to answer the task.{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have successfully searched for boat rental information and found details on types of boats and their hourly rates on the Google search results page. The information seems sufficient to complete the task.", "next_goal": "Compile the boat rental information and complete the task."}, "action": [{"done": {"text": "The types of boats available for rent at Piney Run Park and their hourly rates are:\n- Canoes: $17/hour\n- Kayaks: $17/hour\n- Rowboats: $17/hour\n- Pedal Boats: $30/hour", "success": true}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The current page is: https://www.google.com/search?q=Piney%20Run%20Park%20boat%20rentals%20Eldersburg%20Maryland&udm=14&sei=72EeaJ71CMHdptQPwsrviAY - It is a Google search result page.\nThe task is to find the types of boats and their hourly rates at Piney Run Park.\nThe search results provide relevant information.\n- Result 52 "Welcome to Piney Run Park!" from carrollcountymd.gov lists:\n    - Canoes: $17/hour\n    - Kayaks: $17/hour\n    - Rowboats: $17/hour\n    - Pedal Boats: $30/hour\n- Result 99 "Piney Run Park (2025) - All You Need to Know BEFORE You Go" from tripadvisor.com mentions: rowboats, canoes, paddle boats, and kayaks.\n- Result 118 "Piney Run Reservoir" from dnr.maryland.gov mentions canoes and kayaks.\n\nThe information from carrollcountymd.gov appears to be the most direct and official source for rates. I have enough information to answer the task.{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have successfully searched for boat rental information and found details on types of boats and their hourly rates on the Google search results page. The information seems sufficient to complete the task.", "next_goal": "Compile the boat rental information and complete the task."}, "action": [{"done": {"text": "The types of boats available for rent at Piney Run Park and their hourly rates are:\\n- Canoes: $17/hour\\n- Kayaks: $17/hour\\n- Rowboats: $17/hour\\n- Pedal Boats: $30/hour", "success": true}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 427, 'prompt_tokens': 4944, 'total_tokens': 5371, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746821618-YqUdqKETHboEfgZ6YHVS', 'finish_reason': 'stop', 'logprobs': None} id='run-6dc5d54c-f1f2-4195-9b5b-0135adce1410-0' usage_metadata={'input_tokens': 4944, 'output_tokens': 427, 'total_tokens': 5371, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: [Current state ends here] with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 4958, 'total_tokens': 4964, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746821625-sBaifONQNwBtbREZWyOx', 'finish_reason': 'stop', 'logprobs': None} id='run-adac7971-a250-4a75-8faa-53f00c40468a-0' usage_metadata={'input_tokens': 4958, 'output_tokens': 6, 'total_tokens': 4964, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='[Current state ends]```json\n{"current_state": {"evaluation_previous_goal": "Success",\n"memory": "I have searched on Google for Piney Run Park boat rentals. The search results are displayed. The second result from carrollcountymd.gov appears to contain the boat rental information.",\n"next_goal": "Extract the boat types and hourly rates from the search results."},\n"action":[{"extract_content": {"goal": "Extract the types of boats that can be rented and their hourly rates."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 149, 'prompt_tokens': 4972, 'total_tokens': 5121, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746821629-pvwd3oroG2b2iIkOebM9', 'finish_reason': 'stop', 'logprobs': None} id='run-d021e28f-9705-4246-8b18-d1cd1692a4d2-0' usage_metadata={'input_tokens': 4972, 'output_tokens': 149, 'total_tokens': 5121, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the typ...nd their hourly rates.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

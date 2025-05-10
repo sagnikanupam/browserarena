@@ -1,0 +1,16 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the capital of France?
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: I need to find the capital of France. This is the first step.
+🎯 Next goal: Search Google for 'capital of France'
+🛠️  Action 1/1: {"search_google":{"query":"capital of France"}}
+🔍  Searched for "capital of France" in Google
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: I have searched for 'capital of France' on Google. The search results confirm that Paris is the capital.
+🎯 Next goal: Provide the answer and complete the task.
+🛠️  Action 1/1: {"done":{"text":"The capital of France is Paris.","success":true}}
+📄 Result: The capital of France is Paris.
+✅ Task completed
+✅ Successfully
