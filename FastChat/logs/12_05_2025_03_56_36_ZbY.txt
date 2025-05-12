@@ -1,0 +1,32 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Top 5 wildlife rescue 
+📍 Step 1
+Failed to parse model output: Task: Top 5 wildlife rescue 
+Previous action: None
+Current URL: about:blank
+Open Tabs:
+[TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]
+Interactive Elements:
+empty page
+[Current state ends]{"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",
+"memory": "Starting the task to find the top 5 wildlife rescues. 0 out of 5 found.",
+"next_goal": "Search for 'top 5 wildlife rescue' on Google."},
+"action": [{"search_google": {"query": "top 5 wildlife rescue"}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Task: Top 5 wildlife rescue \nPrevious action: None\nCurrent URL: about:blank\nOpen Tabs:\n[TabInfo(page_id=0, url=\'about:blank\', title=\'\', parent_page_id=None)]\nInteractive Elements:\nempty page\n[Current state ends]{"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",\n"memory": "Starting the task to find the top 5 wildlife rescues. 0 out of 5 found.",\n"next_goal": "Search for \'top 5 wildlife rescue\' on Google."},\n"action": [{"search_google": {"query": "top 5 wildlife rescue"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 175, 'prompt_tokens': 3093, 'total_tokens': 3268, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747022199-qogQXxWpU5bbDT0C4Qh9', 'finish_reason': 'stop', 'logprobs': None} id='run-d226c5f2-9682-4c71-9e60-56f506f8c1d1-0' usage_metadata={'input_tokens': 3093, 'output_tokens': 175, 'total_tokens': 3268, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3107, 'total_tokens': 3107, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747022203-u7xIXEAEGNE0kssNKsj1', 'finish_reason': 'stop', 'logprobs': None} id='run-11c4e8a0-f8c8-4d30-bf3a-e79e368c9703-0' usage_metadata={'input_tokens': 3107, 'output_tokens': 0, 'total_tokens': 3107, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: The page is empty. It seems this is the beginning of the task.
+[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown - The page is blank, so no previous goal to evaluate.",
+"memory": "Starting the task. The goal is to find the Top 5 wildlife rescue organizations. No steps have been taken yet.",
+"next_goal": "Search Google for 'Top 5 wildlife rescue'."},
+"action":[{"search_google": {"query": "Top 5 wildlife rescue"}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The page is empty. It seems this is the beginning of the task.\n[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown - The page is blank, so no previous goal to evaluate.",\n"memory": "Starting the task. The goal is to find the Top 5 wildlife rescue organizations. No steps have been taken yet.",\n"next_goal": "Search Google for \'Top 5 wildlife rescue\'."},\n"action":[{"search_google": {"query": "Top 5 wildlife rescue"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 155, 'prompt_tokens': 3121, 'total_tokens': 3276, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747022207-i80grnL1d3RiiTAVQOia', 'finish_reason': 'stop', 'logprobs': None} id='run-64313e41-1ae9-4d81-9964-62f11a059b9f-0' usage_metadata={'input_tokens': 3121, 'output_tokens': 155, 'total_tokens': 3276, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

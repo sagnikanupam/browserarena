@@ -1,0 +1,50 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the current special exhibition at the Museum of Modern Art (MoMA) and what is the price of a general admission ticket for an adult?
+📍 Step 1
+Failed to parse model output: [Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",
+"memory": "I am starting the task to find information about MoMA's special exhibition and ticket prices. This is step 1 of 15.",
+"next_goal": "Search for the official MoMA website."},
+"action":[{"search_google": {"query": "Museum of Modern Art MoMA official website"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown - This is the first step.",\n"memory": "I am starting the task to find information about MoMA\'s special exhibition and ticket prices. This is step 1 of 15.",\n"next_goal": "Search for the official MoMA website."},\n"action":[{"search_google": {"query": "Museum of Modern Art MoMA official website"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 111, 'prompt_tokens': 3117, 'total_tokens': 3228, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983356-a5fm42pI9g5gIxaz1fED', 'finish_reason': 'stop', 'logprobs': None} id='run-d7bc4d26-8b69-4699-bfb4-107060e4f1d1-0' usage_metadata={'input_tokens': 3117, 'output_tokens': 111, 'total_tokens': 3228, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3131, 'total_tokens': 3131, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983360-NgeNdBH19GXOy5hIT0Zf', 'finish_reason': 'stop', 'logprobs': None} id='run-04bb5041-93db-44f7-a661-71f1af7f692b-0' usage_metadata={'input_tokens': 3131, 'output_tokens': 0, 'total_tokens': 3131, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3145, 'total_tokens': 3145, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983362-On6KzgCgfaJpAZgydLb1', 'finish_reason': 'stop', 'logprobs': None} id='run-a857f4e3-fba4-4b88-aa9f-4912e301e571-0' usage_metadata={'input_tokens': 3145, 'output_tokens': 0, 'total_tokens': 3145, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What is the current special exhibition at the Museum of Modern Art (MoMA) and what is the price of a general admission ticket for an adult?
+📍 Step 1
+Failed to parse model output: Here is the previous action, if any:
+None
+[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown",
+"memory": "Starting the task. I need to find the current special exhibition and adult general admission price for MoMA.",
+"next_goal": "Search for MoMA on Google to find their official website."},
+"action":[{"search_google": {"query": "MoMA"}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Here is the previous action, if any:\nNone\n[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown",\n"memory": "Starting the task. I need to find the current special exhibition and adult general admission price for MoMA.",\n"next_goal": "Search for MoMA on Google to find their official website."},\n"action":[{"search_google": {"query": "MoMA"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 142, 'prompt_tokens': 3117, 'total_tokens': 3259, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983901-vPwbZ45OdikQVvPZVFoB', 'finish_reason': 'stop', 'logprobs': None} id='run-0e5f6e31-2373-4090-a54d-0aca4417ed9c-0' usage_metadata={'input_tokens': 3117, 'output_tokens': 142, 'total_tokens': 3259, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: The task is to find the current special exhibition at Museum of Modern Art (MoMA) and the price of a general admission ticket for an adult.
+I will start by searching for "Museum of Modern Art MoMA" to find the official website. with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The task is to find the current special exhibition at Museum of Modern Art (MoMA) and the price of a general admission ticket for an adult.\nI will start by searching for "Museum of Modern Art MoMA" to find the official website.' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983906-y5o5PTIDO5OrMJHd1HYZ', 'finish_reason': 'error', 'logprobs': None} id='run-75dad08d-466d-4ce3-8ff5-9f38dfe7b45d-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: Task: What is the current special exhibition at the Museum of Modern Art (MoMA) and what is the price of a general admission ticket for an adult?
+Previous steps: None
+Current URL: about:blank
+Open Tabs: [TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]
+Interactive Elements: 
+[Current state ends here] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content="Task: What is the current special exhibition at the Museum of Modern Art (MoMA) and what is the price of a general admission ticket for an adult?\nPrevious steps: None\nCurrent URL: about:blank\nOpen Tabs: [TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]\nInteractive Elements: \n[Current state ends here]" additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 86, 'prompt_tokens': 3145, 'total_tokens': 3231, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746983909-IY8qd5M6utDUYXoD74cM', 'finish_reason': 'stop', 'logprobs': None} id='run-9122ca75-e392-4e20-b3ec-245d7ab37ad9-0' usage_metadata={'input_tokens': 3145, 'output_tokens': 86, 'total_tokens': 3231, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

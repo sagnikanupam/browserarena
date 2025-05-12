@@ -1,0 +1,28 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Compare flight prices from Washington DC to Paris, France vs Washington DC to Kyoto Japan in 2025
+📍 Step 1
+Failed to parse model output: [Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown", "memory": "Starting task to compare flight prices. 0 out of 2 flight price comparisons completed.", "next_goal": "Search for flights from Washington DC to Paris, France in 2025."}, "action": [{"search_google": {"query": "flights from Washington DC to Paris, France in 2025"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]{"current_state": {"evaluation_previous_goal": "Unknown", "memory": "Starting task to compare flight prices. 0 out of 2 flight price comparisons completed.", "next_goal": "Search for flights from Washington DC to Paris, France in 2025."}, "action": [{"search_google": {"query": "flights from Washington DC to Paris, France in 2025"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 122, 'prompt_tokens': 3109, 'total_tokens': 3231, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021453-5LxANWwtx1YwlmN0xTcz', 'finish_reason': 'stop', 'logprobs': None} id='run-245988b6-7cf7-413d-8501-79037b615595-0' usage_metadata={'input_tokens': 3109, 'output_tokens': 122, 'total_tokens': 3231, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: Starting a new task to compare flight prices. I will first search for flights from Washington DC to Paris in 2025, then Washington DC to Kyoto in 2025, and finally compare the prices.
+🎯 Next goal: Search for flights from Washington DC to Paris in 2025 using Google.
+🛠️  Action 1/1: {"search_google":{"query":"flights from Washington DC to Paris 2025"}}
+🔍  Searched for "flights from Washington DC to Paris 2025" in Google
+📍 Step 2
+Failed to parse model output: The ultimate task is: """Compare flight prices from Washington DC to Paris, France vs Washington DC to Kyoto Japan in 2025""". If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.
+Example output:{"current_state": {"evaluation_previous_goal": "Success", "memory": "Searched for flights from Washington DC to Paris in 2025. The search results show multiple options. I will now click on the Google Flights link to get more specific pricing information.", "next_goal": "Click on the Google Flights link to find flight prices from Washington DC to Paris in 2025."}, "action": [{"click_element_by_index": {"index": 61}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='The ultimate task is: """Compare flight prices from Washington DC to Paris, France vs Washington DC to Kyoto Japan in 2025""". If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.\nExample output:{"current_state": {"evaluation_previous_goal": "Success", "memory": "Searched for flights from Washington DC to Paris in 2025. The search results show multiple options. I will now click on the Google Flights link to get more specific pricing information.", "next_goal": "Click on the Google Flights link to find flight prices from Washington DC to Paris in 2025."}, "action": [{"click_element_by_index": {"index": 61}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 196, 'prompt_tokens': 4772, 'total_tokens': 4968, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021464-EwUpuqQH5Rx5A0cPrHcS', 'finish_reason': 'stop', 'logprobs': None} id='run-69cbf8c1-d91a-428c-8b15-446822d2e72a-0' usage_metadata={'input_tokens': 4772, 'output_tokens': 196, 'total_tokens': 4968, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+❌ Result failed 2/3 times:
+ browser_use.agent.views.AgentOutput() argument after ** must be a mapping, not list
+📍 Step 2
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 4811, 'total_tokens': 4811, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021481-ZJmA9COBmFDXkCQFA99Z', 'finish_reason': 'stop', 'logprobs': None} id='run-e90cb118-e95a-45e0-b0b0-dd13568b6fe8-0' usage_metadata={'input_tokens': 4811, 'output_tokens': 0, 'total_tokens': 4811, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

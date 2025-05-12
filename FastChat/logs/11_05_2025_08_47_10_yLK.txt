@@ -1,0 +1,30 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What are today's top 20 headlines from CNN?
+📍 Step 1
+🤷 Eval: Unknown - I am at the beginning of the task with a blank page, so there are no previous actions to evaluate.
+🧠 Memory: Starting the task to find today's top 20 headlines from CNN. Currently on a blank page and need to navigate to CNN's website to gather the headlines.
+🎯 Next goal: Navigate to CNN's website to access their headlines
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.cnn.com"}}
+🔗  Navigated to https://www.cnn.com
+📍 Step 2
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I have successfully navigated to the CNN website where I can access today\'s headlines.",\n    "memory": "I have successfully navigated to CNN.com to gather today\'s top 20 headlines. I can now see several headlines on the page, including ones about habeas corpus, India-Pakistan ceasefire, and other current news items. There appears to be more content below the current viewport that I need to extract to compile the complete list of top 20 headlines.",\n    "next_goal": "Extract all headlines from the CNN homepage to compile a list of the top 20 headlines"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract today\'s top 20 headlines from CNN"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 554, 'prompt_tokens': 5928, 'total_tokens': 6482, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746953272-H4J06K0oMt7DJyj7cZgD', 'finish_reason': 'stop', 'logprobs': None} id='run-5ec8f3c7-faf7-4162-9f20-d60310ae633d-0' usage_metadata={'input_tokens': 5928, 'output_tokens': 554, 'total_tokens': 6482, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract today's... 20 headlines from CNN"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I have successfully navigated to CNN\'s website where I can access their current headlines.",\n    "memory": "I am on CNN\'s homepage (https://www.cnn.com/) and can see multiple headlines. I need to extract the top 20 headlines from this page. I can see headlines about habeas corpus, India-Pakistan ceasefire, SNL, and various other topics. There appears to be more content below that I need to access to compile the complete list of top headlines.",\n    "next_goal": "Extract all current news headlines from the CNN homepage to compile the top 20"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract all current news headlines on the CNN homepage"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 569, 'prompt_tokens': 5942, 'total_tokens': 6511, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746953289-zajNARijKtdnNKEpvcab', 'finish_reason': 'stop', 'logprobs': None} id='run-ef4c7cd9-51c0-48a8-bc93-4ba17dff1242-0' usage_metadata={'input_tokens': 5942, 'output_tokens': 569, 'total_tokens': 6511, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract all cur...es on the CNN homepage'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I have successfully navigated to CNN\'s website where I can now collect the headlines.",\n    "memory": "I am on CNN\'s website and need to collect today\'s top 20 headlines. I can see some headlines already visible on the page, including ones about habeas corpus, India-Pakistan ceasefire, and SNL cameos. I need to extract all headlines in a structured format to get the complete top 20.",\n    "next_goal": "Extract all headlines from the CNN homepage to collect the top 20"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract all headline titles from the CNN homepage to collect the top 20 headlines"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 529, 'prompt_tokens': 5956, 'total_tokens': 6485, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746953306-NLrsjWy31XDOOfMEYRh6', 'finish_reason': 'stop', 'logprobs': None} id='run-dae8560f-2fbe-4823-859d-ccb59c0bf877-0' usage_metadata={'input_tokens': 5956, 'output_tokens': 529, 'total_tokens': 6485, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract all hea...t the top 20 headlines'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

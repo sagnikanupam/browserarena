@@ -1,0 +1,47 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Go to YouTube, search for 'machine learning tutorials,' click on the first video in the results, and tell me how many likes it has.
+📍 Step 1
+🤷 Eval: Unknown - starting task
+🧠 Memory: New task: Go to YouTube, search for 'machine learning tutorials', click first video, get likes. Steps completed: 0/5.
+🎯 Next goal: Navigate to YouTube homepage
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.youtube.com"}}
+🔗  Navigated to https://www.youtube.com
+📍 Step 2
+👍 Eval: Success - navigated to YouTube homepage
+🧠 Memory: New task: Go to YouTube, search for 'machine learning tutorials', click first video, get likes. Steps completed: 1/5.
+🎯 Next goal: Enter 'machine learning tutorials' into search box and perform search
+🛠️  Action 1/2: {"input_text":{"index":12,"text":"machine learning tutorials","xpath":null}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":13,"xpath":null}}
+⌨️  Input machine learning tutorials into index 12
+Element index changed after action 1 / 2, because page changed.
+📍 Step 3
+⚠ Eval: Failed - previous input targeted wrong element index, so search was not executed
+🧠 Memory: New task: Go to YouTube, search for 'machine learning tutorials', click first video, get likes. Steps completed: 1/5.
+🎯 Next goal: Enter 'machine learning tutorials' into the search box and perform the search
+🛠️  Action 1/2: {"input_text":{"index":16,"text":"machine learning tutorials","xpath":null}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":21,"xpath":null}}
+⌨️  Input machine learning tutorials into index 16
+🖱️  Clicked button with index 21: 
+📍 Step 4
+👍 Eval: Success - search results for 'machine learning tutorials' are displayed
+🧠 Memory: New task: Go to YouTube, search for 'machine learning tutorials', click first video, get likes. Steps completed: 2/5.
+🎯 Next goal: Click on the first video in the results
+🛠️  Action 1/1: {"click_element_by_selector":{"css_selector":"ytd-video-renderer a#thumbnail"}}
+📍 Step 5
+Failed to parse model output: content='{"done":{"text":"The video has 87,525 likes.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 357, 'prompt_tokens': 8144, 'total_tokens': 8501, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 320, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1747029450-v4nrbOsqPBw8oHBKH3le', 'finish_reason': 'stop', 'logprobs': None} id='run-d99fe8f9-1d97-496f-ad1d-bc8165b1a0f5-0' usage_metadata={'input_tokens': 8144, 'output_tokens': 357, 'total_tokens': 8501, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 320}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The vi...kes.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The vi...kes.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 5
+👍 Eval: Success - the video page is loaded and the like button count is visible
+🧠 Memory: New task: Go to YouTube, search for 'machine learning tutorials', click first video, get likes. Steps completed: 5/5.
+🎯 Next goal: Complete the task
+🛠️  Action 1/1: {"done":{"text":"The video has 87,525 likes (displayed as 87K).","success":true}}
+📄 Result: The video has 87,525 likes (displayed as 87K).
+✅ Task completed
+✅ Successfully

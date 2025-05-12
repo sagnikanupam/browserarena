@@ -1,0 +1,37 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me 10 best tourist attraction site to visit in United States of America during the summer
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3106, 'total_tokens': 3106, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746973890-LA416fdD3PfhXnUfmE1o', 'finish_reason': 'stop', 'logprobs': None} id='run-87143e66-77ce-405f-b0f8-f2e10032f538-0' usage_metadata={'input_tokens': 3106, 'output_tokens': 0, 'total_tokens': 3106, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3120, 'total_tokens': 3120, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746973892-Bfjhj9SnlAziohHEJCue', 'finish_reason': 'stop', 'logprobs': None} id='run-7d633464-b90b-4817-a211-cf22846b40fa-0' usage_metadata={'input_tokens': 3120, 'output_tokens': 0, 'total_tokens': 3120, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3134, 'total_tokens': 3134, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746973894-KjfcmjqgmykN5faOFE5Q', 'finish_reason': 'stop', 'logprobs': None} id='run-8d944647-1318-47ef-9ab5-29b870d406e6-0' usage_metadata={'input_tokens': 3134, 'output_tokens': 0, 'total_tokens': 3134, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me 10 best tourist attraction site to visit in United States of America during the summer
+📍 Step 1
+Failed to parse model output: [Current state ends]
+{"current_state": {"evaluation_previous_goal": "Unknown", "memory": "Starting the task. I need to find the 10 best tourist attraction sites in the USA for summer.", "next_goal": "Search Google for 'best tourist attraction sites in USA for summer'"}, "action": [{"search_google": {"query": "best tourist attraction sites in USA for summer"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends]\n{"current_state": {"evaluation_previous_goal": "Unknown", "memory": "Starting the task. I need to find the 10 best tourist attraction sites in the USA for summer.", "next_goal": "Search Google for \'best tourist attraction sites in USA for summer\'"}, "action": [{"search_google": {"query": "best tourist attraction sites in USA for summer"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 122, 'prompt_tokens': 3106, 'total_tokens': 3228, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746974109-BLWfp12trPvMbVQYxhDc', 'finish_reason': 'stop', 'logprobs': None} id='run-b004fe09-b3b1-43c4-b04a-e2913d990e82-0' usage_metadata={'input_tokens': 3106, 'output_tokens': 122, 'total_tokens': 3228, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3120, 'total_tokens': 3120, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746974113-7Nq3yQk7yafHTyp87ez3', 'finish_reason': 'stop', 'logprobs': None} id='run-c7868ff8-6e80-4466-9e43-2870c2f6352c-0' usage_metadata={'input_tokens': 3120, 'output_tokens': 0, 'total_tokens': 3120, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3134, 'total_tokens': 3134, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746974115-24Ezz0yiKlLDiZNymW9u', 'finish_reason': 'stop', 'logprobs': None} id='run-831f5165-4e36-4c19-bf01-740c514fccf4-0' usage_metadata={'input_tokens': 3134, 'output_tokens': 0, 'total_tokens': 3134, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

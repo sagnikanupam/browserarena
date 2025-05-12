@@ -1,0 +1,18 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Go to the New York times website and find the most recently published book review article. Click into it and summarize the key points or conclusion made about the book.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3119, 'total_tokens': 3119, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746977101-wOBMrfn0l3rdfwgAjS6u', 'finish_reason': 'stop', 'logprobs': None} id='run-30db53e4-ec36-4263-850e-d4e7ce60fc86-0' usage_metadata={'input_tokens': 3119, 'output_tokens': 0, 'total_tokens': 3119, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3133, 'total_tokens': 3133, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746977103-GwIVrAV4sQvEeVkdEB7N', 'finish_reason': 'stop', 'logprobs': None} id='run-71e1968c-8e94-41f0-82af-4f8069279e21-0' usage_metadata={'input_tokens': 3133, 'output_tokens': 0, 'total_tokens': 3133, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: [Current state ends] with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends]' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 5, 'prompt_tokens': 3147, 'total_tokens': 3152, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746977105-1rQguGeAs7RjBmXdE3F6', 'finish_reason': 'stop', 'logprobs': None} id='run-f5ed7f63-d5af-44f4-8d74-5bb188bb4329-0' usage_metadata={'input_tokens': 3147, 'output_tokens': 5, 'total_tokens': 3152, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

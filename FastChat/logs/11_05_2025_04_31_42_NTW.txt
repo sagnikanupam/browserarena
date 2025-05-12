@@ -1,0 +1,157 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me a detailed breakdown of the next 10 professional combat sports (other than professional wrestling)events in Florida and in Colorado. Include prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on a reasonably significant platform (examples: DAZN, ESPN plus, ONE)
+📍 Step 1
+🤷 Eval: No previous goal. Starting fresh.
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 1/15
+🎯 Next goal: Search for upcoming professional combat sports events in Florida and Colorado
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.google.com"}}
+🔗  Navigated to https://www.google.com
+📍 Step 2
+👍 Eval: Success - Navigated to Google.com
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 2/15
+🎯 Next goal: Search for upcoming professional combat sports events in Florida and Colorado
+🛠️  Action 1/1: {"input_text":{"index":13,"text":"upcoming professional combat sports events in Florida and Colorado"}}
+⌨️  Input upcoming professional combat sports events in Florida and Colorado into index 13
+📍 Step 3
+👍 Eval: Success - Input the search query
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 3/15
+🎯 Next goal: Submit the search query to get results
+🛠️  Action 1/1: {"click_element_by_index":{"index":19}}
+🖱️  Clicked button with index 19: 
+📍 Step 4
+👍 Eval: Success - The search results are displayed
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 4/15
+🎯 Next goal: Extract relevant information about upcoming combat sports events from the search results
+🛠️  Action 1/1: {"click_element_by_index":{"index":35}}
+🖱️  Clicked button with index 35: Athletic Commission – Upcoming Events – Professional
+📍 Step 5
+Failed to parse model output: content='<|python_start|>{"name": "AgentOutput", "parameters": {"current_state": {"evaluation_previous_goal": "Success - The page contains a list of upcoming professional combat sports events in Florida", "memory": "Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 5/15. Found events in Florida: 05/10/2025 - Kissimmee, FL (Boxing), Tampa, FL (MMA); 05/16/2025 - Miami, FL (Boxing); 05/17/2025 - Jacksonville, FL (MMA); 05/23/2025 - Miami, FL (Boxing); 05/31/2025 - Jacksonville, FL (Boxing); 06/13/2025 - Tampa, FL (Boxing); 06/21/2025 - St. Petersburg, FL (MMA); 06/28/2025 - Tampa, FL (Boxing); 07/11/2025 - Clearwater, FL (Boxing); 07/25/2025 - Hollywood, FL (Boxing)", "next_goal": "Extract the details of these events and search for their streaming information"}, "action": [{"extract_content": {"goal": "Extract the details of the listed events including date, location, type, and promoter"}}]}}<|python_end|>' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 314, 'prompt_tokens': 5965, 'total_tokens': 6279, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': '', 'id': 'gen-1746937945-cEMMq7uD1mFkHmpOursO', 'finish_reason': 'stop', 'logprobs': None} id='run-e8f44e82-4565-435e-bd3b-accad179ef9c-0' usage_metadata={'input_tokens': 5965, 'output_tokens': 314, 'total_tokens': 6279, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the det...on, type, and promoter'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 5
+👍 Eval: Success - Found list of upcoming professional combat sports events in Florida
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 6/15. Found 10 events in Florida. Now need to find events in Colorado.
+🎯 Next goal: Search for upcoming professional combat sports events in Colorado
+🛠️  Action 1/2: {"extract_content":{"goal":"Extract the list of upcoming professional combat sports events in Florida from the page","should_strip_link_urls":false}}
+🛠️  Action 2/2: {"open_tab":{"url":"https://www.google.com"}}
+📄  Extracted from page
+: ```json
+{
+    "upcoming_events": [
+        {
+            "date": "05/10/2025",
+            "day": "Sat",
+            "location": "Kissimmee, FL",
+            "event_type": "Box",
+            "promoter": "ProBox Promotions"
+        },
+        {
+            "date": "05/10/2025",
+            "day": "Sat",
+            "location": "Tampa, FL",
+            "event_type": "MMA",
+            "promoter": "Flex Fights Inc"
+        },
+        {
+            "date": "05/16/2025",
+            "day": "Fri",
+            "location": "Miami, FL",
+            "event_type": "Box",
+            "promoter": "Brand Risk Entertainment"
+        },
+        {
+            "date": "05/17/2025",
+            "day": "Sat",
+            "location": "Jacksonville, FL",
+            "event_type": "MMA",
+            "promoter": "Combat Night (DBA of Combat Sports Ent. LLC)"
+        },
+        {
+            "date": "05/23/2025",
+            "day": "Sat",
+            "location": "Miami, FL",
+            "event_type": "Box",
+            "promoter": "TCL Team Combat League"
+        },
+        {
+            "date": "05/31/2025",
+            "day": "Sat",
+            "location": "Jacksonville, FL",
+            "event_type": "Box",
+            "promoter": "BYB Extreme (DBA BYB Extreme Fighting Series, LLC)"
+        },
+        {
+            "date": "06/13/2025",
+            "day": "Fri",
+            "location": "Tampa, FL",
+            "event_type": "Box",
+            "promoter": "Alessi Promotions, LLC"
+        },
+        {
+            "date": "06/21/2025",
+            "day": "Sat",
+            "location": "St. Petersburg, FL",
+            "event_type": "MMA",
+            "promoter": "Combat Night (DBA of Combat Sports Ent. LLC)"
+        },
+        {
+            "date": "06/28/2025",
+            "day": "Sat",
+            "location": "Tampa, FL",
+            "event_type": "Box",
+            "promoter": "Market International Promotions, LLC"
+        },
+        {
+            "date": "07/11/2025",
+            "day": "Fri",
+            "location": "Clearwater, FL",
+            "event_type": "Box",
+            "promoter": "Starfight Productions, LLC"
+        },
+        {
+            "date": "07/25/2025",
+            "day": "Fri",
+            "location": "Hollywood, FL",
+            "event_type": "Box",
+            "promoter": "The Heavyweight Factory (DBA of Triton V, LLC)"
+        }
+    ]
+}
+```
+
+🔗  Opened new tab with https://www.google.com
+📍 Step 6
+👍 Eval: Success - Found list of upcoming professional combat sports events in Florida
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 7/15. Found 10+ events in Florida. Now need to find events in Colorado. Have opened a new tab on Google to search for Colorado events.
+🎯 Next goal: Search for upcoming professional combat sports events in Colorado
+🛠️  Action 1/2: {"input_text":{"index":13,"text":"upcoming professional combat sports events in Colorado"}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":16}}
+⌨️  Input upcoming professional combat sports events in Colorado into index 13
+Element index changed after action 1 / 2, because page changed.
+📍 Step 7
+👍 Eval: Success - Input the search query
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 8/15. Found events in Florida. Now searching for events in Colorado.
+🎯 Next goal: Submit the search query to get results for upcoming professional combat sports events in Colorado
+🛠️  Action 1/1: {"click_element_by_index":{"index":18}}
+🖱️  Clicked button with index 18: 
+📍 Step 8
+👍 Eval: Success - The search results for upcoming professional combat sports events in Colorado are displayed
+🧠 Memory: Task: Provide detailed breakdown of the next 10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step: 10/15. Found events in Florida. Now analyzing results for Colorado events.
+🎯 Next goal: Extract relevant information about upcoming combat sports events in Colorado from the search results
+🛠️  Action 1/1: {"click_element_by_index":{"index":29}}
+❌ Result failed 1/3 times:
+ Error executing action click_element_by_index: Element with index 29 does not exist - retry or use alternative actions
+📍 Step 9
+Failed to parse model output: <function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Failed - The element with index29 does not exist. Need to adjust the approach to extract information about upcoming combat sports events in Colorado.", "memory": "Task: Provide detailed breakdown of the next10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step:10/15. Found events in Florida. Now analyzing results for Colorado events.", "next_goal": "Extract relevant information about upcoming combat sports events in Colorado from the search results using alternative methods"}, "action": [{"switch_tab": {"page_id": 0}}]}</function> with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='<function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Failed - The element with index29 does not exist. Need to adjust the approach to extract information about upcoming combat sports events in Colorado.", "memory": "Task: Provide detailed breakdown of the next10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step:10/15. Found events in Florida. Now analyzing results for Colorado events.", "next_goal": "Extract relevant information about upcoming combat sports events in Colorado from the search results using alternative methods"}, "action": [{"switch_tab": {"page_id": 0}}]}</function>' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 155, 'prompt_tokens': 6814, 'total_tokens': 6969, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': 'fp_fcf8b6b0bf', 'id': 'gen-1746938005-7UgOB9EAVRCbLj81U87d', 'finish_reason': 'stop', 'logprobs': None} id='run-abe4c3c7-d0ee-4d8f-a38e-c5a20c290c71-0' usage_metadata={'input_tokens': 6814, 'output_tokens': 155, 'total_tokens': 6969, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 9
+Failed to parse model output: <function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Failed - The element with index29 was not found", "memory": "Task: Provide detailed breakdown of the next10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step:11/15. Found events in Florida. Still need to find events in Colorado.", "next_goal": "Extract relevant information about upcoming combat sports events in Colorado from the search results"}, "action": [{"switch_tab": {"page_id": 0}}]}</function> with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='<function=AgentOutput>{"current_state": {"evaluation_previous_goal": "Failed - The element with index29 was not found", "memory": "Task: Provide detailed breakdown of the next10 professional combat sports events in Florida and Colorado, including prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on significant platforms. Current step:11/15. Found events in Florida. Still need to find events in Colorado.", "next_goal": "Extract relevant information about upcoming combat sports events in Colorado from the search results"}, "action": [{"switch_tab": {"page_id": 0}}]}</function>' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 137, 'prompt_tokens': 6832, 'total_tokens': 6969, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': 'fp_c527aa4474', 'id': 'gen-1746938010-vWYmbDVO9ZjdKK5TaP2G', 'finish_reason': 'stop', 'logprobs': None} id='run-ebf7922e-e3ce-4832-b281-10b6f791d5f9-0' usage_metadata={'input_tokens': 6832, 'output_tokens': 137, 'total_tokens': 6969, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

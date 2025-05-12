@@ -1,0 +1,400 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3109, 'total_tokens': 3109, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021758-njBurTLAlJ06xzvoTXtV', 'finish_reason': 'stop', 'logprobs': None} id='run-b8887a38-7324-448c-9ae7-94fba3a0a372-0' usage_metadata={'input_tokens': 3109, 'output_tokens': 0, 'total_tokens': 3109, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3123, 'total_tokens': 3123, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021760-DmAVAwDydRwVKpDhBjL7', 'finish_reason': 'stop', 'logprobs': None} id='run-1529647a-2e9e-48e5-bc18-83aa506c9e33-0' usage_metadata={'input_tokens': 3123, 'output_tokens': 0, 'total_tokens': 3123, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown - This is the first step, no previous goal to evaluate.
+🧠 Memory: Starting the task. I need to find a list of the 10 best horror movies, including 3 Stephen King movies. 0 out of 10 movies found.
+🎯 Next goal: Search Google for 'best horror movies' to start gathering information.
+🛠️  Action 1/1: {"search_google":{"query":"best horror movies"}}
+🔍  Searched for "best horror movies" in Google
+📍 Step 2
+Failed to parse model output: [Current state ends here] with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 4723, 'total_tokens': 4729, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021768-EiDSsVs8jgL18odXTQiP', 'finish_reason': 'stop', 'logprobs': None} id='run-58a8bb05-a8e4-4cc6-a2f8-1016f3223e16-0' usage_metadata={'input_tokens': 4723, 'output_tokens': 6, 'total_tokens': 4729, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output: Ultimate task: Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.
+Previous steps:
+- Action: Action error: Return a valid JSON object with the required fields.
+- Action: Action error: Return a valid JSON object with the required fields.
+Global Error: The last action was invalid, I will try to recover.
+Current URL: https://www.google.com/search?q=best%20horror%20movies&udm=14
+Open Tabs: ['https://www.google.com/search?q=best%20horror%20movies&udm=14']
+Interactive Elements:
+[33]<a>
+[34]<h3>200 Best Horror Movies of All Time</h3>
+[35]<div>
+[36]<div>
+[37]<span>
+[38]<div>
+[39]<img>
+[40]<div>
+[41]<div>
+[42]<span>Rotten Tomatoes</span>
+[43]<div>
+[44]<cite>https://editorial.rottentomatoes.com/</cite>
+[45]<span>› guide › best-horror...</span>
+[46]<div button;About this result/>
+[47]<span>
+[48]<span>
+It's the
+top horror movies to watch now
+, from Nosferatu to Get Out, and all the Aliens, Psychos, Living Dead, and Its in-between!
+[49]<a>
+[50]<div>Let the Right One In</div>
+[51]<div>
+[52]<a>
+[53]<div>Border</div>
+[54]<div>
+[55]<a>
+[56]<div>Get Out</div>
+[57]<div>
+[58]<a>
+[59]<div>The Wailing</div>
+[60]<div>
+[61]<a>
+[62]<h3>What's the best horror movie you've ever seen?</h3>
+[63]<div>
+[64]<div>
+[65]<span>
+[66]<div>
+[67]<img>
+[68]<div>
+[69]<div>
+[70]<span>Reddit · r/horror</span>
+[71]<div>
+[72]<cite>1.4K+ comments  ·  1 year ago</cite>
+[73]<div button;About this result/>
+[74]<span>
+[75]<span>
+Evil Dead II
+. Sam Raimi's masterpiece blends horror and comedy perfectly, has an amazing acting and physical performance by Bruce Campbell, incredible effects, ...
+[76]<a>
+[77]<h3>Top 50 Horror Movies</h3>
+[78]<span>
+[79]<div>
+[80]<img>
+[81]<div>
+[82]<div>
+[83]<span>IMDb</span>
+[84]<div>
+[85]<cite>https://www.imdb.com/</cite>
+[86]<span>› search › title › genres=horror</span>
+[87]<div button;About this result/>
+[88]<span>
+[89]<span>
+Exclude ·
+1. Sinners
+· 2. Until Dawn · 3. Death of a Unicorn · 4. Weapons · 5. Ash · 6. Final Destination: Bloodlines · 7. Nosferatu · 8. The Substance.
+[90]<a>
+[91]<h3>The 100 Best Horror Movies of All Time: Critics' Pick</h3>
+[92]<div>
+[93]<div>
+[94]<span>
+[95]<div>
+[96]<img>
+[97]<div>
+[98]<div>
+[99]<span>Variety</span>
+[100]<div>
+[101]<cite>https://variety.com/</cite>
+[102]<span>› lists › best-horror-movies-of-all-time</span>
+[103]<div button;About this result/>
+[104]<span>
+[105]<span>
+Oct 9, 2024
+—
+From "The Texas Chain Saw Massacre" to "Get Out," Variety selects the
+100 best horror movies of all time
+.
+[106]<a>
+[107]<h3>The Best Horror Movies For Guaranteed Screams</h3>
+[108]<div>
+[109]<div>
+[110]<span>
+[111]<div>
+[112]<img>
+[113]<div>
+[114]<div>
+[115]<span>BuzzFeed</span>
+[116]<div>
+[117]<cite>https://www.buzzfeed.com/</cite>
+[118]<span>› ravenishak › best-horror-...</span>
+[119]<div button;About this result/>
+[120]<span>
+[121]<span>
+Apr 1, 2025
+—
+People believe to be some of the scariest movies ever created
+, just in case you're looking to have a frightful night in this month.
+IGN
+... 1060 pixels below - scroll or extract content to see more ... with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Ultimate task: Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.\nPrevious steps:\n- Action: Action error: Return a valid JSON object with the required fields.\n- Action: Action error: Return a valid JSON object with the required fields.\nGlobal Error: The last action was invalid, I will try to recover.\nCurrent URL: https://www.google.com/search?q=best%20horror%20movies&udm=14\nOpen Tabs: [\'https://www.google.com/search?q=best%20horror%20movies&udm=14\']\nInteractive Elements:\n[33]<a>\n[34]<h3>200 Best Horror Movies of All Time</h3>\n[35]<div>\n[36]<div>\n[37]<span>\n[38]<div>\n[39]<img>\n[40]<div>\n[41]<div>\n[42]<span>Rotten Tomatoes</span>\n[43]<div>\n[44]<cite>https://editorial.rottentomatoes.com/</cite>\n[45]<span>› guide › best-horror...</span>\n[46]<div button;About this result/>\n[47]<span>\n[48]<span>\nIt\'s the\ntop horror movies to watch now\n, from Nosferatu to Get Out, and all the Aliens, Psychos, Living Dead, and Its in-between!\n[49]<a>\n[50]<div>Let the Right One In</div>\n[51]<div>\n[52]<a>\n[53]<div>Border</div>\n[54]<div>\n[55]<a>\n[56]<div>Get Out</div>\n[57]<div>\n[58]<a>\n[59]<div>The Wailing</div>\n[60]<div>\n[61]<a>\n[62]<h3>What\'s the best horror movie you\'ve ever seen?</h3>\n[63]<div>\n[64]<div>\n[65]<span>\n[66]<div>\n[67]<img>\n[68]<div>\n[69]<div>\n[70]<span>Reddit\xa0·\xa0r/horror</span>\n[71]<div>\n[72]<cite>1.4K+ comments  ·  1 year ago</cite>\n[73]<div button;About this result/>\n[74]<span>\n[75]<span>\nEvil Dead II\n. Sam Raimi\'s masterpiece blends horror and comedy perfectly, has an amazing acting and physical performance by Bruce Campbell, incredible effects,\xa0...\n[76]<a>\n[77]<h3>Top 50 Horror Movies</h3>\n[78]<span>\n[79]<div>\n[80]<img>\n[81]<div>\n[82]<div>\n[83]<span>IMDb</span>\n[84]<div>\n[85]<cite>https://www.imdb.com/</cite>\n[86]<span>› search › title › genres=horror</span>\n[87]<div button;About this result/>\n[88]<span>\n[89]<span>\nExclude ·\n1. Sinners\n· 2. Until Dawn · 3. Death of a Unicorn · 4. Weapons · 5. Ash · 6. Final Destination: Bloodlines · 7. Nosferatu · 8. The Substance.\n[90]<a>\n[91]<h3>The 100 Best Horror Movies of All Time: Critics\' Pick</h3>\n[92]<div>\n[93]<div>\n[94]<span>\n[95]<div>\n[96]<img>\n[97]<div>\n[98]<div>\n[99]<span>Variety</span>\n[100]<div>\n[101]<cite>https://variety.com/</cite>\n[102]<span>› lists › best-horror-movies-of-all-time</span>\n[103]<div button;About this result/>\n[104]<span>\n[105]<span>\nOct 9, 2024\n—\nFrom "The Texas Chain Saw Massacre" to "Get Out," Variety selects the\n100 best horror movies of all time\n.\n[106]<a>\n[107]<h3>The Best Horror Movies For Guaranteed Screams</h3>\n[108]<div>\n[109]<div>\n[110]<span>\n[111]<div>\n[112]<img>\n[113]<div>\n[114]<div>\n[115]<span>BuzzFeed</span>\n[116]<div>\n[117]<cite>https://www.buzzfeed.com/</cite>\n[118]<span>› ravenishak › best-horror-...</span>\n[119]<div button;About this result/>\n[120]<span>\n[121]<span>\nApr 1, 2025\n—\nPeople believe to be some of the scariest movies ever created\n, just in case you\'re looking to have a frightful night in this month.\nIGN\n... 1060 pixels below - scroll or extract content to see more ...' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021771-sVcPx5Q8o28Gs3xZfCLE', 'finish_reason': 'error', 'logprobs': None} id='run-ec4b1355-0af7-4fa7-bb68-faa6c11bd8d8-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: Searched Google for 'best horror movies'. I need to find a list of the 10 best horror movies, including 3 Stephen King movies.  0 out of 10 movies found.
+🎯 Next goal: Click on the Rotten Tomatoes link to find a list of horror movies.
+🛠️  Action 1/1: {"click_element_by_index":{"index":34}}
+🖱️  Clicked button with index 34: 200 Best Horror Movies of All Time
+📍 Step 3
+Failed to parse model output: content='Previous steps:\n    1. 🔍  Searched for "best horror movies" in Google\n    2. 🖱️  Clicked button with index 34: 200 Best Horror Movies of All Time\nUltimate task: Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have clicked on the Rotten Tomatoes link. Now I am on a page listing the 200 best horror movies. I need to find 10 movies total, with 3 of them being Stephen King movies. 0 of 10 movies found.", "next_goal": "Extract the list of horror movies from the current page."}, "action": [{"extract_content": {"goal": "Extract the ranked list of horror movies including their titles and any information that might indicate if they are based on Stephen King\'s work"}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 244, 'prompt_tokens': 4462, 'total_tokens': 4706, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021802-mBWupS5ZUmcEhEL0YWGu', 'finish_reason': 'stop', 'logprobs': None} id='run-eb4cfc79-eaca-49b1-966a-10fb28e2669c-0' usage_metadata={'input_tokens': 4462, 'output_tokens': 244, 'total_tokens': 4706, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': "Extract the ran...on Stephen King's work"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+👍 Eval: Success
+🧠 Memory: I have landed on the Rotten Tomatoes page for the 200 best horror movies. I need to extract movie titles from this page. I still need to find 10 movies, 3 of which must be Stephen King movies.
+🎯 Next goal: Extract all movie titles from the current page.
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract all movie titles from the list of 200 best horror movies on this page.","should_strip_link_urls":true}}
+📄  Extracted from page
+: ```json
+{
+  "movie_titles": [
+    "Jaws",
+    "Let the Right One In",
+    "Alien",
+    "Get Out",
+    "Psycho",
+    "The Silence of the Lambs",
+    "One Cut of the Dead",
+    "King Kong",
+    "Aliens",
+    "A Quiet Place",
+    "Halloween",
+    "What We Do in the Shadows",
+    "Diabolique",
+    "Shaun of the Dead",
+    "The Cabinet of Dr. Caligari",
+    "Nosferatu",
+    "Rosemary's Baby",
+    "The Wailing",
+    "Bride of Frankenstein",
+    "Eyes Without a Face",
+    "The Babadook",
+    "Train to Busan",
+    "Repulsion",
+    "Invasion of the Body Snatchers",
+    "Late Night with the Devil",
+    "The Devil's Backbone",
+    "His House",
+    "The Ring",
+    "Night of the Living Dead",
+    "The Invisible Man",
+    "A Quiet Place Part II",
+    "The Night of the Hunter",
+    "Tigers Are Not Afraid",
+    "Frankenstein",
+    "Vampyr",
+    "Freaks",
+    "Godzilla",
+    "Talk to Me",
+    "The Innocents",
+    "Peeping Tom",
+    "Border",
+    "Strange Darling",
+    "Cure",
+    "Under the Shadow",
+    "When Evil Lurks",
+    "Oddity",
+    "A Girl Walks Home Alone at Night",
+    "A Nightmare on Elm Street",
+    "Suspiria",
+    "Nosferatu the Vampyre",
+    "The Birds",
+    "The Innocents",
+    "Prey",
+    "Pearl",
+    "Zombieland",
+    "Misery",
+    "Re-Animator",
+    "The Fly",
+    "Dawn of the Dead",
+    "The Cabin in the Woods",
+    "It Follows",
+    "M3GAN",
+    "What Ever Happened to Baby Jane?",
+    "Raw",
+    "Dead of Night",
+    "Dracula",
+    "The Host",
+    "Carrie",
+    "10 Cloverfield Lane",
+    "Kwaidan",
+    "X",
+    "28 Days Later",
+    "Don't Look Now",
+    "Huesera: The Bone Woman",
+    "Us",
+    "Thelma",
+    "Upgrade",
+    "The Orphanage",
+    "Werewolf by Night",
+    "Attack the Block",
+    "The Wicker Man",
+    "Evil Dead II",
+    "Ready or Not",
+    "Beast",
+    "Hereditary",
+    "The Lighthouse",
+    "Green Room",
+    "You Won't Be Alone",
+    "Village of the Damned",
+    "The Fly",
+    "Drag Me to Hell",
+    "It",
+    "The Texas Chain Saw Massacre",
+    "Let Me In",
+    "Eraserhead",
+    "Ginger Snaps",
+    "The Phantom of the Opera",
+    "Don't Breathe",
+    "Dead Alive",
+    "Barbarian",
+    "The Conjuring",
+    "Cat People",
+    "Rec",
+    "The Cat and the Canary",
+    "Horror of Dracula",
+    "House",
+    "The Return of the Living Dead",
+    "Dr. Jekyll and Mr. Hyde",
+    "House of Wax",
+    "Grindhouse",
+    "The Thing",
+    "Bone Tomahawk",
+    "Saint Maud",
+    "The Love Witch",
+    "Duel",
+    "The Descent",
+    "The Wolf Man",
+    "The Endless",
+    "The Witch",
+    "The Shining",
+    "Mandy",
+    "Poltergeist",
+    "Santa Sangre",
+    "The Evil Dead",
+    "Mad God",
+    "Hatching",
+    "Violation",
+    "Tucker & Dale vs Evil",
+    "The Blackening",
+    "Martin",
+    "Nanny",
+    "The Dead Zone",
+    "Fear Street Part Two: 1978",
+    "Annihilation",
+    "A Tale of Two Sisters",
+    "Only Lovers Left Alive",
+    "The Invitation",
+    "Island of Lost Souls",
+    "Rare Exports: A Christmas Tale",
+    "Theater of Blood",
+    "The Others",
+    "The Haunting",
+    "Fear Street Part Three: 1666",
+    "Cronos",
+    "The Night House",
+    "Totally Killer",
+    "Sputnik",
+    "Alien: Romulus",
+    "The Mummy",
+    "Gremlins",
+    "The Dark and the Wicked",
+    "Abigail",
+    "Tremors",
+    "The Exorcist",
+    "A Quiet Place: Day One",
+    "The Omen",
+    "The Abominable Dr. Phibes",
+    "Dracula: Pages From a Virgin's Diary",
+    "Three... Extremes",
+    "The Black Phone",
+    "Julia's Eyes",
+    "Carnival of Souls",
+    "Piggy",
+    "Hounds of Love",
+    "Dead Ringers",
+    "Audition",
+    "Evil Dead Rise",
+    "Slither",
+    "Doctor Sleep",
+    "Thanksgiving",
+    "Day of the Dead",
+    "The Bird With the Crystal Plumage",
+    "Cropsey",
+    "The Autopsy of Jane Doe",
+    "Saw X",
+    "Freaky",
+    "Fresh",
+    "Crawl",
+    "The Conjuring 2",
+    "Better Watch Out",
+    "Scream",
+    "Color Out of Space",
+    "Videodrome",
+    "Nope",
+    "The Girl With All the Gifts",
+    "Candyman",
+    "Goodnight Mommy",
+    "Midsommar",
+    "Predator",
+    "The Lost Boys",
+    "Longlegs",
+    "Fright Night",
+    "Warm Bodies",
+    "I Walked With a Zombie",
+    "Near Dark",
+    "Scream VI",
+    "Dog Soldiers",
+    "House of Usher",
+    "Werewolves Within"
+  ]
+}
+```
+
+📍 Step 4
+Failed to parse model output: [Current state ends here] with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends here]' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021848-alcGfv3Ksk8Yckxo2Cbb', 'finish_reason': 'error', 'logprobs': None} id='run-2563604b-573b-4798-8e03-e5d3a5a9f1b5-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 6116, 'total_tokens': 6116, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747021856-CJpgoCsDiTdsQAWmnRTr', 'finish_reason': 'stop', 'logprobs': None} id='run-a50043bd-9c55-4020-b94d-fe72a1f0e560-0' usage_metadata={'input_tokens': 6116, 'output_tokens': 0, 'total_tokens': 6116, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+👍 Eval: Success
+🧠 Memory: I have successfully extracted a list of 200 horror movies from Rotten Tomatoes. From this list, I've identified Stephen King movies: 'Misery', 'Carrie', 'It', 'The Shining', 'The Dead Zone', 'Doctor Sleep'. I will select 'Misery', 'Carrie', and 'It' as the three Stephen King movies. For the remaining 7 movies, I will select the top non-Stephen King movies from the extracted list: 'Jaws', 'Let the Right One In', 'Alien', 'Get Out', 'Psycho', 'The Silence of the Lambs', and 'One Cut of the Dead'. I have now compiled the list of 10 movies. 10 out of 10 movies found.
+🎯 Next goal: Compile the final list and use the 'done' action to complete the task.
+🛠️  Action 1/1: {"done":{"text":"Here is a list of 10 best horror movies, including 3 Stephen King movies:\n\nStephen King Movies:\n1. Misery\n2. Carrie\n3. It\n\nOther Top Horror Movies:\n4. Jaws\n5. Let the Right One In\n6. Alien\n7. Get Out\n8. Psycho\n9. The Silence of the Lambs\n10. One Cut of the Dead","success":true}}
+📄 Result: Here is a list of 10 best horror movies, including 3 Stephen King movies:
+
+Stephen King Movies:
+1. Misery
+2. Carrie
+3. It
+
+Other Top Horror Movies:
+4. Jaws
+5. Let the Right One In
+6. Alien
+7. Get Out
+8. Psycho
+9. The Silence of the Lambs
+10. One Cut of the Dead
+✅ Task completed
+✅ Successfully

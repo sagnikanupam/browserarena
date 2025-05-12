@@ -1,0 +1,45 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Who is the richest musician in the united states
+📍 Step 1
+🤷 Eval: Unknown - starting fresh on about:blank
+🧠 Memory: Started task to identify the richest musician in the United States. Steps completed: 0/10.
+🎯 Next goal: Perform a Google search for the query
+🛠️  Action 1/1: {"search_google":{"query":"richest musician in the United States"}}
+🔍  Searched for "richest musician in the United States" in Google
+📍 Step 2
+👍 Eval: Success - Google search results loaded correctly
+🧠 Memory: Started task to identify the richest musician in the United States. Steps completed: 1/10.
+🎯 Next goal: Open the Wikipedia 'List of music artists by net worth' page
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: 
+📍 Step 3
+Failed to parse model output: content='{"done":{"text":"The richest musician in the United States is Jay-Z, with an estimated net worth of US$2.5 billion as of 2024.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 380, 'prompt_tokens': 6372, 'total_tokens': 6752, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 320, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2432}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746945579-N5pQGOvsLtPahSvCqDMn', 'finish_reason': 'stop', 'logprobs': None} id='run-f301d6bc-f7eb-478f-ad3c-ce2dbec3d9b6-0' usage_metadata={'input_tokens': 6372, 'output_tokens': 380, 'total_tokens': 6752, 'input_token_details': {'cache_read': 2432}, 'output_token_details': {'reasoning': 320}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ri...024.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ri...024.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{"done":{"text":"The richest musician in the United States is Jay-Z, with an estimated net worth of US $2.5 billion (Forbes, 2024).","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 256, 'prompt_tokens': 6389, 'total_tokens': 6645, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746945586-lVJf4CFYwkHp2q4oaxAz', 'finish_reason': 'stop', 'logprobs': None} id='run-797436e9-85d9-4885-8a3e-a70567dd80d8-0' usage_metadata={'input_tokens': 6389, 'output_tokens': 256, 'total_tokens': 6645, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'The ri...24).', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'The ri...24).', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='{"done":{"text":"Jay-Z is the richest musician in the United States, with Forbes estimating his net worth at US $2.5 billion in 2024.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 573, 'prompt_tokens': 6406, 'total_tokens': 6979, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 512, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746945592-yOBkRlO9BWk0X3WRRtjR', 'finish_reason': 'stop', 'logprobs': None} id='run-ab7e5691-995b-49cd-ab0b-fcee68e13cba-0' usage_metadata={'input_tokens': 6406, 'output_tokens': 573, 'total_tokens': 6979, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 512}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Jay-Z ...024.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Jay-Z ...024.', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

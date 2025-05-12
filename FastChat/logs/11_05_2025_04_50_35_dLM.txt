@@ -1,0 +1,30 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Create a list of the top 10 highest rated video games from IGN.
+📍 Step 1
+Failed to parse model output: Task: Create a list of the top 10 highest rated video games from IGN.
+Previous steps:
+Current URL: about:blank
+Open Tabs: [TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]
+Interactive Elements:
+
+The page is blank.
+[Current state ends]
+Output: with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content="Task: Create a list of the top 10 highest rated video games from IGN.\nPrevious steps:\nCurrent URL: about:blank\nOpen Tabs: [TabInfo(page_id=0, url='about:blank', title='', parent_page_id=None)]\nInteractive Elements:\n\nThe page is blank.\n[Current state ends]\nOutput:" additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746939038-iEynnoVoembM487FgIRN', 'finish_reason': 'error', 'logprobs': None} id='run-7786ca8b-f20c-4ca3-a754-6a09f6d8a07f-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3117, 'total_tokens': 3117, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746939042-6pG9oQEcnMClw2Z8qKUK', 'finish_reason': 'stop', 'logprobs': None} id='run-74ac2f03-8224-492d-ac52-ecaf9294c886-0' usage_metadata={'input_tokens': 3117, 'output_tokens': 0, 'total_tokens': 3117, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 1
+Failed to parse model output: User ultimate task: Create a list of the top 10 highest rated video games from IGN.
+Current page state: The current page is blank
+        The current task is to create a list of the top 10 highest rated video games from IGN.
+        To start, I need to search for "IGN top 10 highest rated video games" on Google.
+        I will then navigate to the IGN website from the search results and extract the information. with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='User ultimate task: Create a list of the top 10 highest rated video games from IGN.\nCurrent page state: The current page is blank\n        The current task is to create a list of the top 10 highest rated video games from IGN.\n        To start, I need to search for "IGN top 10 highest rated video games" on Google.\n        I will then navigate to the IGN website from the search results and extract the information.' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746939044-YUNqgtba8uwYsXYUf7hm', 'finish_reason': 'error', 'logprobs': None} id='run-563f2b05-0882-4e3e-bcee-0f598f8d46eb-0' with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

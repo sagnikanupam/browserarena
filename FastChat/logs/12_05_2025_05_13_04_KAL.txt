@@ -1,0 +1,56 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: find me any recipe on food.com 
+📍 Step 1
+Failed to parse model output: [Current state ends]{"current_state": {"evaluation_previous_goal": "Unknown",
+"memory": "Starting the task. The goal is to find a recipe on food.com.",
+"next_goal": "Navigate to food.com"},
+"action":[{"go_to_url": {"url": "https://www.food.com"}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.
+Failed to parse model output: content='[Current state ends]{"current_state": {"evaluation_previous_goal": "Unknown",\n"memory": "Starting the task. The goal is to find a recipe on food.com.",\n"next_goal": "Navigate to food.com"},\n"action":[{"go_to_url": {"url": "https://www.food.com"}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 103, 'prompt_tokens': 3096, 'total_tokens': 3199, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747026786-tdvGapTDNF8M8UEWExCq', 'finish_reason': 'stop', 'logprobs': None} id='run-c26d4578-b5fe-49db-aba3-bd0c97f9b08e-0' usage_metadata={'input_tokens': 3096, 'output_tokens': 103, 'total_tokens': 3199, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: Starting the task. I need to find a recipe on food.com.
+🎯 Next goal: Navigate to food.com
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.food.com"}}
+🔗  Navigated to https://www.food.com
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: I have navigated to food.com. Now I need to find a recipe.
+🎯 Next goal: Click on 'See Them All' to view recipes
+🛠️  Action 1/1: {"click_element_by_index":{"index":4}}
+🖱️  Clicked button with index 4: See Them All
+📍 Step 3
+Failed to parse model output: content='The ultimate task is: """find me any recipe on food.com """. If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.\nMax steps: 15. Current step: 4/15.\nPrevious steps:\n1. {"current_state": {"evaluation_previous_goal": "Unknown", "memory": "Starting the task. I need to find a recipe on food.com.", "next_goal": "Navigate to food.com"}, "action": [{"go_to_url": {"url": "https://www.food.com"}}]}\n2. {"current_state": {"evaluation_previous_goal": "Success", "memory": "I have navigated to food.com. Now I need to find a recipe.", "next_goal": "Click on \'See Them All\' to view recipes"}, "action": [{"click_element_by_index": {"index": 4}}]}\nProcedural memory:\nNone\nCurrent page: https://www.food.com/ideas/all-time-best-dinner-recipes-6009\nThe task is to find any recipe. Since I\'m on a page with "88 All-Time Best Dinner Recipes", any of these recipes would satisfy the task. I\'ll extract the content of the first recipe.```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have navigated to a page with a list of recipes. Now I need to extract information about one of them.", "next_goal": "Extract content for the first recipe on the page."}, "action": [{"extract_content": {"goal": "Extract the name and details of the first recipe (Ground Beef Gyros)."}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 386, 'prompt_tokens': 3725, 'total_tokens': 4111, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747026814-WF91UyxHMZzvGV1yFQ7S', 'finish_reason': 'stop', 'logprobs': None} id='run-2f13b5e6-a548-4ece-ad3a-fd57459eb1ae-0' usage_metadata={'input_tokens': 3725, 'output_tokens': 386, 'total_tokens': 4111, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the nam...e (Ground Beef Gyros).'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+👍 Eval: Success
+🧠 Memory: I have navigated to food.com and then to a page with multiple recipes. Now I need to select one recipe.
+🎯 Next goal: Click on the first recipe link to view a recipe.
+🛠️  Action 1/1: {"click_element_by_index":{"index":24}}
+🖱️  Clicked button with index 24: 
+📍 Step 4
+👍 Eval: Success
+🧠 Memory: I have navigated to food.com, then to a page listing recipes. Now I'm on a page with '88 All-Time Best Dinner Recipes'. I need to select one recipe.
+🎯 Next goal: Click on the first recipe 'Ground Beef Gyros' to view it and complete the task.
+🛠️  Action 1/1: {"click_element_by_index":{"index":19}}
+🖱️  Clicked button with index 19: 
+📍 Step 5
+⚠ Eval: Failed - The previous action did not navigate to a specific recipe page. The URL is still the list of recipes. I intended to click on a specific recipe.
+🧠 Memory: I am on a page listing recipes on food.com. I previously tried to click an element which didn't lead to a specific recipe page. I need to click on a specific recipe link on the current page.
+🎯 Next goal: Click on the 'Ground Beef Gyros' recipe link to view the recipe details.
+🛠️  Action 1/1: {"click_element_by_index":{"index":25}}
+🖱️  Clicked button with index 25: Ground Beef Gyros
+New tab opened - switching to it
+📍 Step 6
+👍 Eval: Success
+🧠 Memory: I have successfully navigated to the 'Ground Beef Gyros' recipe page on food.com. This fulfills the task of finding a recipe.
+🎯 Next goal: Complete the task by providing the recipe found.
+🛠️  Action 1/1: {"done":{"text":"Found the 'Ground Beef Gyros' recipe on food.com: https://www.food.com/recipe/ground-beef-gyros-30081","success":true}}
+📄 Result: Found the 'Ground Beef Gyros' recipe on food.com: https://www.food.com/recipe/ground-beef-gyros-30081
+✅ Task completed
+✅ Successfully

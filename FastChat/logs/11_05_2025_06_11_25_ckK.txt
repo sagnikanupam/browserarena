@@ -1,0 +1,72 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Create a list of top 100 rappers in UK
+📍 Step 1
+🤷 Eval: Unknown - I am just starting the task with a blank page
+🧠 Memory: I need to create a list of top 100 rappers in the UK. I'm starting with a blank page. This is step 1/15.
+🎯 Next goal: Search Google for a comprehensive list of top UK rappers
+🛠️  Action 1/1: {"search_google":{"query":"top 100 UK rappers all time list"}}
+🔍  Searched for "top 100 UK rappers all time list" in Google
+📍 Step 2
+👍 Eval: Success - I searched for 'top 100 UK rappers all time list' in Google and got several potentially useful search results that may help me compile a comprehensive list of UK rappers.
+🧠 Memory: I need to create a list of top 100 rappers in the UK. I've searched Google and found several promising resources: 1) Complex article with 50 Best British Rappers, 2) Ranker article with 65+ Best British Rappers, 3) Reddit discussion about UK rappers, 4) Spotify podcast discussing Complex's list, and 5) IMDb list of top 100 rappers (though this appears to be global, not UK-specific). I am on step 2/15.
+🎯 Next goal: Click on the Ranker article that has 65+ British rappers since it has the most entries to start building my list
+🛠️  Action 1/1: {}
+📍 Step 3
+👍 Eval: Success - I previously searched for 'top 100 UK rappers all time list' in Google and can now see the search results with several promising resources.
+🧠 Memory: I need to create a list of top 100 rappers in the UK. I've searched Google and found several promising resources: 1) Complex article with 50 Best British Rappers, 2) Ranker article with 65+ Best British Rappers (most recent from July 2024, with over 12K voters), 3) Reddit discussion about UK rappers on r/grime, 4) Spotify podcast discussing Complex's list, and 5) IMDb list of top 100 rappers (though this appears to be global, not UK-specific). The Ranker article appears to be the most comprehensive resource with 65+ entries. I am on step 3/15.
+🎯 Next goal: Click on the Ranker article to get the most extensive list of UK rappers as a starting point
+🛠️  Action 1/1: {"click_element_by_index":{"index":49}}
+🖱️  Clicked button with index 49: 
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 281, 'prompt_tokens': 6887, 'total_tokens': 7168, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746943977-BmphcrW2pikuhBKqUpBm', 'finish_reason': 'stop', 'logprobs': None} id='run-7680ceaa-f571-40e1-8e4d-d1144c51ee5f-0' usage_metadata={'input_tokens': 6887, 'output_tokens': 281, 'total_tokens': 7168, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 283, 'prompt_tokens': 6892, 'total_tokens': 7175, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746943987-YrXFXRUEFgLJl0rKeUkU', 'finish_reason': 'stop', 'logprobs': None} id='run-830060d2-99a9-465d-8bd8-2cbf05752391-0' usage_metadata={'input_tokens': 6892, 'output_tokens': 283, 'total_tokens': 7175, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 312, 'prompt_tokens': 6906, 'total_tokens': 7218, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746943996-rPdxMLGNEwEnntGpKfBA', 'finish_reason': 'stop', 'logprobs': None} id='run-767d66f8-e01f-498a-84c6-f43c5eb32de9-0' usage_metadata={'input_tokens': 6906, 'output_tokens': 312, 'total_tokens': 7218, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Create a list of top 100 rappers in UK
+📍 Step 1
+🤷 Eval: Unknown - I am starting with a blank page and have not performed any actions yet.
+🧠 Memory: I need to create a list of top 100 rappers in the UK. I am at step 1/15 with a blank page open. I will search Google for relevant information on UK rappers.
+🎯 Next goal: Search Google for a list of top UK rappers
+🛠️  Action 1/1: {"search_google":{"query":"top 100 UK rappers of all time list"}}
+🔍  Searched for "top 100 UK rappers of all time list" in Google
+📍 Step 2
+👍 Eval: Success - I successfully searched for "top 100 UK rappers of all time list" in Google and received several relevant search results that can help me create the requested list.
+🧠 Memory: I have started the task to create a list of top 100 rappers in UK. I've completed step 1/15 by searching for "top 100 UK rappers of all time list" on Google. I found several promising search results including: 1) Complex UK's "50 Best British Rappers Of All Time" (Dec 2023), 2) Ranker's "The 65+ Best British Rappers of All Time" (July 2024) with over 12K votes, 3) Reddit r/grime discussion about top British rappers, and 4) Other related articles. The Ranker article appears most comprehensive with 65+ rappers ranked.
+🎯 Next goal: Click on the Ranker article to see their comprehensive list of UK rappers since it mentions 65+ rappers and is recent (July 2024)
+🛠️  Action 1/1: {}
+📍 Step 3
+👍 Eval: Success - I successfully searched for "top 100 UK rappers of all time list" in Google and found several relevant search results that can help me create the requested list.
+🧠 Memory: I have started the task to create a list of top 100 rappers in the UK. I'm at step 3/15. I searched for "top 100 UK rappers of all time list" and found several promising search results: 1) Complex UK's "50 Best British Rappers Of All Time" (Dec 2023), 2) Ranker's "The 65+ Best British Rappers of All Time" (July 2024) with over 12K votes showing Dave, Stormzy, and AJ Tracey as top 3, 3) Reddit r/grime discussion about top British rappers, and 4) Other related articles. The Ranker article appears most comprehensive with 65+ rappers and is most recent.
+🎯 Next goal: Click on the Ranker article to get their comprehensive list of UK rappers
+🛠️  Action 1/1: {"click_element_by_index":{"index":50}}
+🖱️  Clicked button with index 50: The 65+ Best British Rappers of All Time, Ranked
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 210, 'prompt_tokens': 6970, 'total_tokens': 7180, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746944290-FivaDURkadnv6vg8EhTH', 'finish_reason': 'stop', 'logprobs': None} id='run-a7b37a48-02a7-4687-bbe0-318ef651729f-0' usage_metadata={'input_tokens': 6970, 'output_tokens': 210, 'total_tokens': 7180, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 391, 'prompt_tokens': 6975, 'total_tokens': 7366, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746944301-NbS5ao4LgiUzSmr5u1BZ', 'finish_reason': 'stop', 'logprobs': None} id='run-607d8f59-19c7-4790-8b7f-ff772eac83eb-0' usage_metadata={'input_tokens': 6975, 'output_tokens': 391, 'total_tokens': 7366, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='```json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - I successfully clicked on the Ranker article about the best British rappers which shows a comprehensive list with 66 rappers ranked by over 12.8K voters, updated recently in July 2024.",\n    "memory": "I\'m creating a list of top 100 rappers in the UK. I\'m at step 6/15. After searching Google for the top UK rappers, I found and clicked on a Ranker article titled \'The 65+ Best British Rappers of All Time, Ranked.\' This article contains 66 ranked British rappers based on 73.6K votes from 12.8K voters and was updated July 25, 2024. The page mentions Dave, Stormzy, and AJ Tracey as examples of top UK rappers. I need to extract the full ranked list which is below my current view (1941 pixels below), then potentially find additional sources to complete my list of 100 UK rappers.",\n    "next_goal": "Extract the content of the current page to get the complete ranked list of 66 British rappers"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Extract the complete ranked list of British rappers with their rankings and any relevant information"\n      }\n    }\n  ]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 667, 'prompt_tokens': 6986, 'total_tokens': 7653, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anthropic/claude-3.7-sonnet:thinking', 'system_fingerprint': None, 'id': 'gen-1746944312-G4GpWHqEQ80l0LIVZ9Jf', 'finish_reason': 'stop', 'logprobs': None} id='run-d8bb4454-17d1-4a48-bcd8-5c6fbc8e7f55-0' usage_metadata={'input_tokens': 6986, 'output_tokens': 667, 'total_tokens': 7653, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'Extract the com...y relevant information'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

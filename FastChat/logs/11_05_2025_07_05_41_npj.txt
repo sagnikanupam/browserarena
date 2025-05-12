@@ -1,0 +1,274 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Give me a list of the top 20 deals currently on ozbargain.com.au
+📍 Step 1
+🤷 Eval: Unknown - starting on blank page
+🧠 Memory: Started task to get top 20 OzBargain deals. 0 out of 20 deals extracted. Steps: 0/3
+🎯 Next goal: Navigate to the OzBargain hot deals page to retrieve the top deals
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.ozbargain.com.au/hot"}}
+🔗  Navigated to https://www.ozbargain.com.au/hot
+📍 Step 2
+⚠ Eval: Failed - /hot returned 404 Not Found, need alternative URL
+🧠 Memory: Attempted to access https://www.ozbargain.com.au/hot (1/1), no deals extracted yet (0/20). Steps: 2/15
+🎯 Next goal: Navigate to the OzBargain homepage to find the Hot Deals section
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.ozbargain.com.au/"}}
+🔗  Navigated to https://www.ozbargain.com.au/
+📍 Step 3
+🤷 Eval: Unknown - no deals page accessed yet
+🧠 Memory: Started task to get top 20 OzBargain deals. 0 out of 20 deals extracted. Steps: 3/15
+🎯 Next goal: Click on the 'Deals' navigation link to view the list of top deals
+🛠️  Action 1/1: {"click_element_by_index":{"index":7,"xpath":null}}
+🖱️  Clicked button with index 7: Deals
+📍 Step 4
+Failed to parse model output: {"current_state":{"evaluation_previous_goal":"Success - navigated to Deals page and identified ‘Popular Deals’ link","memory":"Obtained Deals page. 0 out of 20 top deals extracted. Steps: 4/15","next_goal":"Open the Popular Deals page to display the top deals list"},{"action":[{"click_element_by_index":{"index":13,"xpath":null}}]}]} with Expecting property name enclosed in double quotes: line 1 column 268 (char 267), could not extract JSON.
+Failed to parse model output: content='{"current_state":{"evaluation_previous_goal":"Success - navigated to Deals page and identified ‘Popular Deals’ link","memory":"Obtained Deals page. 0 out of 20 top deals extracted. Steps: 4/15","next_goal":"Open the Popular Deals page to display the top deals list"},{"action":[{"click_element_by_index":{"index":13,"xpath":null}}]}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 809, 'prompt_tokens': 6778, 'total_tokens': 7587, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 704, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746947178-N0VvgbTLeQcFy4nsSUXP', 'finish_reason': 'stop', 'logprobs': None} id='run-140a18b4-fcbf-4f3d-9781-3f16b251e2f3-0' usage_metadata={'input_tokens': 6778, 'output_tokens': 809, 'total_tokens': 7587, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 704}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+👍 Eval: Success - Navigated to Deals page and identified Top Deals section
+🧠 Memory: Accessed OzBargain Deals page. 0 out of 20 top deals extracted. Steps: 5/15
+🎯 Next goal: Scroll down to load full Top Deals section and extract deal titles
+🛠️  Action 1/2: {"scroll_down":{"amount":null}}
+🛠️  Action 2/2: {"extract_content":{"goal":"extract the titles and links of the top 20 deals from the Top Deals section","should_strip_link_urls":false}}
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: {"top_deals":[{"title":"[Prime, PC, XSX, XB1] Free - Wolfenstein II: The New Colossus Digital Deluxe Edition @ Prime Gaming","link":"https://www.ozbargain.com.au/node/904991"},{"title":"Free Mother's Day Card Delivered (First 100 Customers) @ Moonpig","link":"https://www.ozbargain.com.au/node/904600"},{"title":"eGift Cards: 10% off Uber/Uber Eats, 10% off DoorDash (Exp), 3% off Category Choice (Exp), 15% off HelloFresh @ Amazon AU","link":"https://www.ozbargain.com.au/node/904662"},{"title":"Habanero Hot and Crispy Chicken, 10 for $10 @ KFC (Online, Excludes Delivery)","link":"https://www.ozbargain.com.au/node/904653"},{"title":"Whittaker's Chocolate Block Varieties 200g-250g $5.90 ($5.31 Everyday Rewards) + Delivery ($0 C&C/ In-Store/ $65 Order) @ BIG W","link":"https://www.ozbargain.com.au/node/904358"}]}
+
+📍 Step 5
+👍 Eval: Success - Navigated to deals page and main deals are visible
+🧠 Memory: Accessed OzBargain /deals page. 0 out of 20 deals extracted so far. Steps: 6/15
+🎯 Next goal: Scroll down to reveal at least the first 20 deals
+🛠️  Action 1/3: {"scroll_down":{"amount":null}}
+🛠️  Action 2/3: {"scroll_down":{"amount":null}}
+🛠️  Action 3/3: {"extract_content":{"goal":"Extract titles and links of the top 20 deals on the current OzBargain deals page","should_strip_link_urls":false}}
+🔍  Scrolled down the page by one page
+🔍  Scrolled down the page by one page
+❌ Result failed 1/3 times:
+ Error executing action extract_content: Frame.content: Target page, context or browser has been closed
+📍 Step 6
+⚠ Eval: Failed - extract_content action failed due to closed context
+🧠 Memory: Accessed OzBargain /deals page. 0 out of 20 deals extracted so far. Steps: 7/15
+🎯 Next goal: Scroll down to load more deals and extract the top 20 titles and links
+🛠️  Action 1/4: {"scroll_down":{"amount":null}}
+🛠️  Action 2/4: {"scroll_down":{"amount":null}}
+🛠️  Action 3/4: {"scroll_down":{"amount":null}}
+🛠️  Action 4/4: {"extract_content":{"goal":"Extract titles and links of the top 20 deals on the OzBargain deals page","should_strip_link_urls":false}}
+🔍  Scrolled down the page by one page
+🔍  Scrolled down the page by one page
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: ```json
+{
+  "deals": [
+    {
+      "title": "DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders",
+      "link": "https://www.ozbargain.com.au/node/905272"
+    },
+    {
+      "title": "Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings",
+      "link": "https://www.ozbargain.com.au/node/905271"
+    },
+    {
+      "title": "Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905270"
+    },
+    {
+      "title": "[WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP",
+      "link": "https://www.ozbargain.com.au/node/905269"
+    },
+    {
+      "title": "½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths",
+      "link": "https://www.ozbargain.com.au/node/905265"
+    },
+    {
+      "title": "Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks)",
+      "link": "https://www.ozbargain.com.au/node/905262"
+    },
+    {
+      "title": "CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905260"
+    },
+    {
+      "title": "Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack",
+      "link": "https://www.ozbargain.com.au/node/905259"
+    },
+    {
+      "title": "2x Double Power Points USB × 2 & USB C $9.01 Was $39 @ Bunnings",
+      "link": "https://www.ozbargain.com.au/node/905257"
+    },
+    {
+      "title": "NAB Rewards Platinum Card with Velocity – 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12mo, $95 Annual Fee",
+      "link": "https://www.ozbargain.com.au/node/905255"
+    },
+    {
+      "title": "[eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905254"
+    },
+    {
+      "title": "Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips",
+      "link": "https://www.ozbargain.com.au/node/905252"
+    },
+    {
+      "title": "Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers",
+      "link": "https://www.ozbargain.com.au/node/905249"
+    },
+    {
+      "title": "Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards",
+      "link": "https://www.ozbargain.com.au/node/905248"
+    },
+    {
+      "title": "De'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905243"
+    },
+    {
+      "title": "Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905242"
+    },
+    {
+      "title": "[Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop",
+      "link": "https://www.ozbargain.com.au/node/905241"
+    },
+    {
+      "title": "Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU",
+      "link": "https://www.ozbargain.com.au/node/905240"
+    },
+    {
+      "title": "David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack",
+      "link": "https://www.ozbargain.com.au/node/905237"
+    },
+    {
+      "title": "DEEPAL S07 EV MY24 From $49990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal",
+      "link": "https://www.ozbargain.com.au/node/905234"
+    }
+  ]
+}
+```
+
+📍 Step 7
+Failed to parse model output: content='{"done":{"text":"Here are the top 20 deals currently on OzBargain:\\n\\n1. DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders\\n   https://www.ozbargain.com.au/node/905272\\n2. Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings\\n   https://www.ozbargain.com.au/node/905271\\n3. Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Delivery @ BIG W Online | $4.25 @ Amazon AU\\n   https://www.ozbargain.com.au/node/905270\\n4. [WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP\\n   https://www.ozbargain.com.au/node/905269\\n5. ½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths\\n   https://www.ozbargain.com.au/node/905265\\n6. Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store @ BIG W\\n   https://www.ozbargain.com.au/node/905262\\n7. CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU\\n   https://www.ozbargain.com.au/node/905260\\n8. Airbnb eGift Cards: Westpac Bonus Cashback: 4% + 1% Bank Bonus + 1% Challenge @ ShopBack\\n   https://www.ozbargain.com.au/node/905259\\n9. 2x Double Power Points USB × 2 & USB C $9.01 Was $39 @ Bunnings\\n   https://www.ozbargain.com.au/node/905257\\n10. NAB Rewards Platinum Card with Velocity – 60,000 Points ($1000 Spend), +20,000 after 12mo, $95 Annual Fee\\n    https://www.ozbargain.com.au/node/905255\\n11. [eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon AU\\n    https://www.ozbargain.com.au/node/905254\\n12. Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips\\n    https://www.ozbargain.com.au/node/905252\\n13. Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery @ JW Computers\\n    https://www.ozbargain.com.au/node/905249\\n14. Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards\\n    https://www.ozbargain.com.au/node/905248\\n15. De\'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU\\n    https://www.ozbargain.com.au/node/905243\\n16. Soundcore by Anker A20i TWS $27.99 + Delivery @ AnkerDirect AU via Amazon AU\\n    https://www.ozbargain.com.au/node/905242\\n17. [Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop\\n    https://www.ozbargain.com.au/node/905241\\n18. Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 + Delivery @ Amazon AU\\n    https://www.ozbargain.com.au/node/905240\\n19. David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, WBC Bonus 10%/$20, Bank Bonus 2%/$20 @ ShopBack\\n    https://www.ozbargain.com.au/node/905237\\n20. DEEPAL S07 EV MY24 From $49,990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal\\n    https://www.ozbargain.com.au/node/905234","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 1456, 'prompt_tokens': 8382, 'total_tokens': 9838, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 512, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746947275-x5FodGv2sCG2sCXtbBTK', 'finish_reason': 'stop', 'logprobs': None} id='run-b829d19a-1607-4eef-81f6-ea8f80874f27-0' usage_metadata={'input_tokens': 8382, 'output_tokens': 1456, 'total_tokens': 9838, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 512}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': "Here a...5234", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': "Here a...5234", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 7
+👍 Eval: Success - Scrolled to reveal more deals
+🧠 Memory: Accessed OzBargain /deals page. Extracted 0 out of 20 deals so far. Steps: 9/15
+🎯 Next goal: Extract titles and links of the top 20 deals
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract titles and links of the top 20 deals on the OzBargain deals page","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "deals": [
+    {
+      "title": "DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders",
+      "link": "/node/905272"
+    },
+    {
+      "title": "Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings",
+      "link": "/node/905271"
+    },
+    {
+      "title": "Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU",
+      "link": "/node/905270"
+    },
+    {
+      "title": "[WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP",
+      "link": "/node/905269"
+    },
+    {
+      "title": "½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths",
+      "link": "/node/905265"
+    },
+    {
+      "title": "Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks)",
+      "link": "/node/905262"
+    },
+    {
+      "title": "CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU",
+      "link": "/node/905260"
+    },
+    {
+      "title": "Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack",
+      "link": "/node/905259"
+    },
+    {
+      "title": "2x Double Power Points USB x 2 & USB C $9.01 Was $39 @ Bunnings",
+      "link": "/node/905257"
+    },
+    {
+      "title": "NAB Rewards Platinum Card with Velocity - 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12mo, $95 Annual Fee",
+      "link": "/node/905255"
+    },
+    {
+      "title": "[eBook] Free - The Spookiest Book Ever (Sammy Bird) @ Amazon Au",
+      "link": "/node/905254"
+    },
+    {
+      "title": "Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips",
+      "link": "/node/905252"
+    },
+    {
+      "title": "Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers",
+      "link": "/node/905249"
+    },
+    {
+      "title": "Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards",
+      "link": "/node/905248"
+    },
+    {
+      "title": "De'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU",
+      "link": "/node/905243"
+    },
+    {
+      "title": "Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU",
+      "link": "/node/905242"
+    },
+    {
+      "title": "[Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop",
+      "link": "/node/905241"
+    },
+    {
+      "title": "Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU",
+      "link": "/node/905240"
+    },
+    {
+      "title": "David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack",
+      "link": "/node/905237"
+    },
+    {
+      "title": "DEEPAL S07 EV MY24 From $49990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal",
+      "link": "/node/905234"
+    }
+  ]
+}
+```
+
+📍 Step 8
+Failed to parse model output: {"current_state":{"evaluation_previous_goal":"Success - Extracted the top 20 deals","memory":"Extracted 20 out of 20 deals. Steps: 10/15","next_goal":"Complete the task by presenting the list"},"action":[{"done":{"text":"Here are the current top 20 deals on OzBargain.com.au:\n\n1. DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders - https://www.ozbargain.com.au/node/905272\n2. Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings - https://www.ozbargain.com.au/node/905271\n3. Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU - https://www.ozbargain.com.au/node/905270\n4. [WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP - https://www.ozbargain.com.au/node/905269\n5. ½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths - https://www.ozbargain.com.au/node/905265\n6. Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks) - https://www.ozbargain.com.au/node/905262\n7. CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU - https://www.ozbargain.com.au/node/905260\n8. Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack - https://www.ozbargain.com.au/node/905259\n9. 2x Double Power Points USB x 2 & USB C $9.01 Was $39 @ Bunnings - https://www.ozbargain.com.au/node/905257\n10. NAB Rewards Platinum Card with Velocity – 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12mo, $95 Annual Fee - https://www.ozbargain.com.au/node/905255\n11. [eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon Au - https://www.ozbargain.com.au/node/905254\n12. Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips - https://www.ozbargain.com.au/node/905252\n13. Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers - https://www.ozbargain.com.au/node/905249\n14. Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards - https://www.ozbargain.com.au/node/905248\n15. De'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU - https://www.ozbargain.com.au/node/905243\n16. Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU - https://www.ozbargain.com.au/node/905242\n17. [Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop - https://www.ozbargain.com.au/node/905241\n18. Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU - https://www.ozbargain.com.au/node/905240\n19. David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack - https://www.ozbargain.com.au/node/905237\n20. DEEPAL S07 EV MY24 From $49990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal - https://www.ozbargain.com.au/node/905234","success":true}}]}]} with Extra data: line 1 column 3146 (char 3145), could not extract JSON.
+Failed to parse model output: content='{"current_state":{"evaluation_previous_goal":"Success - Extracted the top 20 deals","memory":"Extracted 20 out of 20 deals. Steps: 10/15","next_goal":"Complete the task by presenting the list"},"action":[{"done":{"text":"Here are the current top 20 deals on OzBargain.com.au:\\n\\n1. DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders - https://www.ozbargain.com.au/node/905272\\n2. Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings - https://www.ozbargain.com.au/node/905271\\n3. Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU - https://www.ozbargain.com.au/node/905270\\n4. [WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP - https://www.ozbargain.com.au/node/905269\\n5. ½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths - https://www.ozbargain.com.au/node/905265\\n6. Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks) - https://www.ozbargain.com.au/node/905262\\n7. CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU - https://www.ozbargain.com.au/node/905260\\n8. Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack - https://www.ozbargain.com.au/node/905259\\n9. 2x Double Power Points USB x 2 & USB C $9.01 Was $39 @ Bunnings - https://www.ozbargain.com.au/node/905257\\n10. NAB Rewards Platinum Card with Velocity – 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12mo, $95 Annual Fee - https://www.ozbargain.com.au/node/905255\\n11. [eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon Au - https://www.ozbargain.com.au/node/905254\\n12. Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips - https://www.ozbargain.com.au/node/905252\\n13. Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers - https://www.ozbargain.com.au/node/905249\\n14. Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards - https://www.ozbargain.com.au/node/905248\\n15. De\'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU - https://www.ozbargain.com.au/node/905243\\n16. Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU - https://www.ozbargain.com.au/node/905242\\n17. [Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop - https://www.ozbargain.com.au/node/905241\\n18. Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU - https://www.ozbargain.com.au/node/905240\\n19. David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack - https://www.ozbargain.com.au/node/905237\\n20. DEEPAL S07 EV MY24 From $49990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal - https://www.ozbargain.com.au/node/905234","success":true}}]}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 2273, 'prompt_tokens': 9547, 'total_tokens': 11820, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 1216, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2688}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746947328-bUQqrKbZCApc05pDqGrR', 'finish_reason': 'stop', 'logprobs': None} id='run-177734d8-477c-4f5d-a711-9c5decda4140-0' usage_metadata={'input_tokens': 9547, 'output_tokens': 2273, 'total_tokens': 11820, 'input_token_details': {'cache_read': 2688}, 'output_token_details': {'reasoning': 1216}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 8
+Failed to parse model output: content='{"done":{"text":"Here are the current top 20 deals on OzBargain:\\n\\n1. DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders\\n   https://www.ozbargain.com.au/node/905272\\n2. Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings\\n   https://www.ozbargain.com.au/node/905271\\n3. Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU\\n   https://www.ozbargain.com.au/node/905270\\n4. [WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP\\n   https://www.ozbargain.com.au/node/905269\\n5. ½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths\\n   https://www.ozbargain.com.au/node/905265\\n6. Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks)\\n   https://www.ozbargain.com.au/node/905262\\n7. CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU\\n   https://www.ozbargain.com.au/node/905260\\n8. Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack\\n   https://www.ozbargain.com.au/node/905259\\n9. 2x Double Power Points USB × 2 & USB C $9.01 Was $39 @ Bunnings\\n   https://www.ozbargain.com.au/node/905257\\n10. NAB Rewards Platinum Card with Velocity – 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12mo, $95 Annual Fee\\n    https://www.ozbargain.com.au/node/905255\\n11. [eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon AU\\n    https://www.ozbargain.com.au/node/905254\\n12. Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips\\n    https://www.ozbargain.com.au/node/905252\\n13. Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers\\n    https://www.ozbargain.com.au/node/905249\\n14. Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards\\n    https://www.ozbargain.com.au/node/905248\\n15. De\'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU\\n    https://www.ozbargain.com.au/node/905243\\n16. Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU\\n    https://www.ozbargain.com.au/node/905242\\n17. [Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop\\n    https://www.ozbargain.com.au/node/905241\\n18. Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU\\n    https://www.ozbargain.com.au/node/905240\\n19. David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack\\n    https://www.ozbargain.com.au/node/905237\\n20. DEEPAL S07 EV MY24 From $49,990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal\\n    https://www.ozbargain.com.au/node/905234\\n\\nSuccess: Retrieved the top 20 deals.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 2058, 'prompt_tokens': 9564, 'total_tokens': 11622, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 1024, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746947353-0FsRqj9rGiCqc5oMuAVh', 'finish_reason': 'stop', 'logprobs': None} id='run-c8195df5-a576-46f5-a7a9-bbcbc7158932-0' usage_metadata={'input_tokens': 9564, 'output_tokens': 2058, 'total_tokens': 11622, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 1024}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': "Here a...als.", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': "Here a...als.", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 8
+Failed to parse model output: content='{"done":{"text":"Here are the top 20 deals currently on OzBargain:\\n\\n1. DoorDash Happy Hour Discount (25% off) Can Be Applied to Scheduled Orders\\n   https://www.ozbargain.com.au/node/905272\\n2. Ozito PXC 18V Cordless 5 Piece Kit PX5PAK-650 $269 @ Bunnings\\n   https://www.ozbargain.com.au/node/905271\\n3. Lindt Lindor/Excellence Block 100g Varieties: $3.06 (EDR Code) + Del ($0 C&C/$65) @ BIG W Online | $4.25 ($3.82 S&S) @ Amazon AU\\n   https://www.ozbargain.com.au/node/905270\\n4. [WA] Crumble Dessert Bowl $5.99 (Was $9.99) @ Sakura Desserts, Leederville + Voucher Giveaway @ The Pegs APP\\n   https://www.ozbargain.com.au/node/905269\\n5. ½ Price: Finish Ultimate 0% Free from Dishwasher Tablets 62pk $28.50 @ Woolworths\\n   https://www.ozbargain.com.au/node/905265\\n6. Apple AirPods Pro (2nd Gen, USB-C) $335 Delivered / C&C / In-Store (Excl. ACT, NT) @ BIG W (Price Beat $318.25 @ Officeworks)\\n   https://www.ozbargain.com.au/node/905262\\n7. CORSAIR Vengeance DDR5 64GB (2×32GB) 6000MHz CL30 RAM $241.45 Delivered @ Amazon AU\\n   https://www.ozbargain.com.au/node/905260\\n8. Airbnb eGift Cards: [Westpac] Bonus Cashback: 4% Cashback + 1% Bank Bonus + 1% Challenge @ ShopBack\\n   https://www.ozbargain.com.au/node/905259\\n9. 2x Double Power Points USB × 2 & USB C $9.01 Was $39 @ Bunnings\\n   https://www.ozbargain.com.au/node/905257\\n10. NAB Rewards Platinum Card with Velocity – 60,000 Velocity Points ($1000 Spend in 60 Days), + 20,000 after 12 mo, $95 Annual Fee\\n    https://www.ozbargain.com.au/node/905255\\n11. [eBook] Free – The Spookiest Book Ever (Sammy Bird) @ Amazon AU\\n    https://www.ozbargain.com.au/node/905254\\n12. Philips Hue Play HDMI Sync Box 8K $594 (Was $699.95) Delivered @ Philips\\n    https://www.ozbargain.com.au/node/905252\\n13. Apple Beats Fit Pro True Wireless Earbuds Sage Grey $199 + Delivery ($0 SYD C&C) @ JW Computers\\n    https://www.ozbargain.com.au/node/905249\\n14. Uber Eats: $10 off $30 Min Spend on First Order + $16 USD Cashback for New Customers via Cashrewards\\n    https://www.ozbargain.com.au/node/905248\\n15. De\'Longhi Dedica Electric Coffee Grinder KG521M $89 Delivered @ Amazon AU\\n    https://www.ozbargain.com.au/node/905243\\n16. Soundcore by Anker A20i TWS $27.99 + Delivery ($0 with Prime/ $59 Spend) @ AnkerDirect AU via Amazon AU\\n    https://www.ozbargain.com.au/node/905242\\n17. [Switch] Metal Gear Solid: Master Collection Vol. 1 $63 (30% off) @ Nintendo eShop\\n    https://www.ozbargain.com.au/node/905241\\n18. Sensodyne Rapid Relief, Repair & Protect or Complete Care Toothpaste 100g $6.90 ($6.21 S&S) + Del ($0 Prime/ $59) @ Amazon AU\\n    https://www.ozbargain.com.au/node/905240\\n19. David Jones C&C Cashback/Cap: Flash Sale 12%/$32, Std 6%/$32, [WBC] Bonus 10%/$20, [Bank] Bonus 2%/$20 with Apple Pay @ ShopBack\\n    https://www.ozbargain.com.au/node/905237\\n20. DEEPAL S07 EV MY24 From $49 990 Driveaway + Free 1 Year Public EV Charging (Evie) @ Deepal\\n    https://www.ozbargain.com.au/node/905234\\n\\nThese are the current top 20 deals on OzBargain.","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 1423, 'prompt_tokens': 9581, 'total_tokens': 11004, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 384, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746947384-kVR1K1NWCoG88e0gS3mq', 'finish_reason': 'stop', 'logprobs': None} id='run-6c2706ce-2004-46b3-bbfb-cb4c453c4ec0-0' usage_metadata={'input_tokens': 9581, 'output_tokens': 1423, 'total_tokens': 11004, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 384}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': "Here a...ain.", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': "Here a...ain.", 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

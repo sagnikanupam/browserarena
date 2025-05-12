@@ -1,0 +1,15 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least.
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'xAI'}} for model anonymized
+❌ Result failed 1/3 times:
+ Error 401: LLM API call failed
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'xAI'}} for model anonymized
+❌ Result failed 2/3 times:
+ Error 401: LLM API call failed
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'xAI'}} for model anonymized
+❌ Result failed 3/3 times:
+ Error 401: LLM API call failed
+❌ Stopping due to 3 consecutive failures

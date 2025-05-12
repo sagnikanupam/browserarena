@@ -1,0 +1,1720 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: What are today's top 20 headlines from CNN?
+📍 Step 1
+🤷 Eval: No previous goal to evaluate. Starting fresh.
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 1/15. Current URL: about:blank
+🎯 Next goal: Navigate to CNN website
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.cnn.com"}}
+🔗  Navigated to https://www.cnn.com
+📍 Step 2
+👍 Eval: Success - I navigated to the CNN website
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 2/15. Current URL: https://www.cnn.com/
+🎯 Next goal: Extract the top headlines from the CNN homepage
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract the top 20 headlines from CNN","should_strip_link_urls":false}}
+📄  Extracted from page
+: Breaking News, Latest News and Videos | CNN
+
+
+
+
+### CNN values your feedback
+
+1. How relevant is this ad to you?
+
+2. Did you encounter any technical issues?
+
+No
+
+Video player was slow to load content
+
+
+Video content never loaded
+
+
+Ad froze or did not finish loading
+
+
+Video content did not start after ad
+
+
+Audio on ad was too loud
+
+
+Other issues
+
+Ad never loaded
+
+
+Ad prevented/slowed the page from loading
+
+
+Content moved around while ad loaded
+
+
+Ad was repetitive to ads I've seen previously
+
+
+Other issues
+
+Cancel
+
+Submit
+
+Thank You!
+
+Your effort and contribution in providing this feedback is much
+appreciated.
+
+Close
+
+Ad Feedback
+
+Close icon
+
+[US](https://www.cnn.com/us)
+
+[World](https://www.cnn.com/world)
+
+[Politics](https://www.cnn.com/politics)
+
+[Business](https://www.cnn.com/business)
+
+[Health](https://www.cnn.com/health)
+
+[Entertainment](https://www.cnn.com/entertainment)
+
+[Style](https://www.cnn.com/style)
+
+[Travel](https://www.cnn.com/travel)
+
+[Sports](https://www.cnn.com/sports)
+
+[Science](https://www.cnn.com/science)
+
+[Climate](https://www.cnn.com/climate)
+
+[Weather](https://www.cnn.com/weather)
+
+[Ukraine-Russia War](https://www.cnn.com/world/europe/ukraine)
+
+[Israel-Hamas War](https://www.cnn.com/world/middleeast/israel)
+
+[Underscored](https://www.cnn.com/cnn-underscored)
+
+[Games](https://www.cnn.com/games)
+
+More
+
+[US](https://www.cnn.com/us)
+[World](https://www.cnn.com/world)
+[Politics](https://www.cnn.com/politics)
+[Business](https://www.cnn.com/business)
+[Health](https://www.cnn.com/health)
+[Entertainment](https://www.cnn.com/entertainment)
+[Style](https://www.cnn.com/style)
+[Travel](https://www.cnn.com/travel)
+[Sports](https://www.cnn.com/sports)
+[Science](https://www.cnn.com/science)
+[Climate](https://www.cnn.com/climate)
+[Weather](https://www.cnn.com/weather)
+[Ukraine-Russia War](https://www.cnn.com/world/europe/ukraine)
+[Israel-Hamas War](https://www.cnn.com/world/middleeast/israel)
+[Underscored](https://www.cnn.com/cnn-underscored)
+[Games](https://www.cnn.com/games)
+
+[Watch](https://www.cnn.com/video)
+[Listen](https://www.cnn.com/audio)
+[Live TV](https://www.cnn.com/live-tv)
+
+
+
+
+Subscribe
+
+Sign in
+
+My Account
+
+* [Settings](/account/settings)
+* [Newsletters](/newsletters)
+* [Topics you follow](/follow?iid=fw_var-nav)
+* [Sign out](#)
+
+Your CNN account
+Sign in to your CNN account
+
+---
+
+Sign in
+
+My Account
+
+* [Settings](/account/settings)
+* [Newsletters](/newsletters)
+* [Topics you follow](/follow?iid=fw_var-nav)
+* [Sign out](#)
+
+Your CNN account
+Sign in to your CNN account
+
+---
+
+[Live TV](https://www.cnn.com/live-tv)
+[Listen](https://www.cnn.com/audio)
+[Watch](https://www.cnn.com/video)
+
+
+---
+
+
+
+Edition
+
+[US](https://us.cnn.com?hpt=header_edition-picker)
+
+[International](https://edition.cnn.com?hpt=header_edition-picker)
+
+[Arabic](https://arabic.cnn.com?hpt=header_edition-picker)
+
+[Español](https://cnnespanol.cnn.com/?hpt=header_edition-picker)
+
+Edition
+
+* [US](https://us.cnn.com?hpt=header_edition-picker)
+* [International](https://edition.cnn.com?hpt=header_edition-picker)
+* [Arabic](https://arabic.cnn.com?hpt=header_edition-picker)
+* [Español](https://cnnespanol.cnn.com/?hpt=header_edition-picker)
+
+
+
+---
+
+
+
+* [US](https://www.cnn.com/us)
+  + [Crime + Justice](https://www.cnn.com/us/crime-and-justice)
+* [World](https://www.cnn.com/world)
+  + [Africa](https://www.cnn.com/world/africa)
+  + [Americas](https://www.cnn.com/world/americas)
+  + [Asia](https://www.cnn.com/world/asia)
+  + [Australia](https://www.cnn.com/world/australia)
+  + [China](https://www.cnn.com/world/china)
+  + [Europe](https://www.cnn.com/world/europe)
+  + [India](https://www.cnn.com/world/india)
+  + [Middle East](https://www.cnn.com/world/middle-east)
+  + [United Kingdom](https://www.cnn.com/world/united-kingdom)
+* [Politics](https://www.cnn.com/politics)
+  + [Trump](https://www.cnn.com/politics/president-donald-trump-47)
+  + [Facts First](https://www.cnn.com/politics/fact-check)
+  + [CNN Polls](https://www.cnn.com/polling)
+  + [2025 Elections](https://www.cnn.com/election/2025)
+* [Business](https://www.cnn.com/business)
+  + [Tech](https://www.cnn.com/business/tech)
+  + [Media](https://www.cnn.com/business/media)
+  + [Calculators](https://www.cnn.com/business/financial-calculators)
+  + [Videos](https://www.cnn.com/business/videos)
+* [Markets](https://www.cnn.com/markets)
+  + [Pre-markets](https://www.cnn.com/markets/premarkets)
+  + [After-Hours](https://www.cnn.com/markets/after-hours)
+  + [Fear & Greed](https://www.cnn.com/markets/fear-and-greed)
+  + [Investing](https://www.cnn.com/business/investing)
+  + [Markets Now](https://www.cnn.com/business/markets-now)
+  + [Nightcap](https://www.cnn.com/business/markets/nightcap)
+* [Health](https://www.cnn.com/health)
+  + [Life, But Better](https://www.cnn.com/interactive/life-but-better/)
+  + [Fitness](https://www.cnn.com/health/life-but-better/fitness)
+  + [Food](https://www.cnn.com/health/life-but-better/food)
+  + [Sleep](https://www.cnn.com/health/life-but-better/sleep)
+  + [Mindfulness](https://www.cnn.com/health/life-but-better/mindfulness)
+  + [Relationships](https://www.cnn.com/health/life-but-better/relationships)
+* [Entertainment](https://www.cnn.com/entertainment)
+  + [Movies](https://www.cnn.com/entertainment/movies)
+  + [Television](https://www.cnn.com/entertainment/tv-shows)
+  + [Celebrity](https://www.cnn.com/entertainment/celebrities)
+* [Tech](https://www.cnn.com/business/tech)
+  + [Innovate](https://www.cnn.com/business/tech/innovate)
+  + [Foreseeable Future](https://www.cnn.com/business/tech/foreseeable-future)
+  + [Mission: Ahead](https://www.cnn.com/business/tech/mission-ahead)
+  + [Work Transformed](https://www.cnn.com/business/work-transformed)
+  + [Innovative Cities](https://www.cnn.com/business/tech/innovative-cities)
+* [Style](https://www.cnn.com/style)
+  + [Arts](https://www.cnn.com/style/arts)
+  + [Design](https://www.cnn.com/style/design)
+  + [Fashion](https://www.cnn.com/style/fashion)
+  + [Architecture](https://www.cnn.com/style/architecture)
+  + [Luxury](https://www.cnn.com/style/luxury)
+  + [Beauty](https://www.cnn.com/style/beauty)
+  + [Video](https://www.cnn.com/style/videos)
+* [Travel](https://www.cnn.com/travel)
+  + [Destinations](https://www.cnn.com/travel/destinations)
+  + [Food & Drink](https://www.cnn.com/travel/food-and-drink)
+  + [Stay](https://www.cnn.com/travel/stay)
+  + [Videos](https://www.cnn.com/travel/videos)
+* [Sports](https://www.cnn.com/sports)
+  + [Pro Football](https://bleacherreport.com/nfl)
+  + [College Football](https://bleacherreport.com/college-football)
+  + [Basketball](https://bleacherreport.com/nba)
+  + [Baseball](https://bleacherreport.com/mlb)
+  + [Soccer](https://bleacherreport.com/world-football)
+  + [Olympics](https://www.cnn.com/sport/paris-olympics-2024)
+  + [Hockey](https://bleacherreport.com/nhl)
+* [Science](https://www.cnn.com/science)
+  + [Space](https://www.cnn.com/science/space)
+  + [Life](https://www.cnn.com/science/life)
+  + [Unearthed](https://www.cnn.com/science/unearthed)
+* [Climate](https://www.cnn.com/climate)
+  + [Solutions](https://www.cnn.com/climate/solutions)
+  + [Weather](https://www.cnn.com/weather)
+* [Weather](https://www.cnn.com/weather)
+  + [Video](https://www.cnn.com/weather/video)
+  + [Climate](https://www.cnn.com/climate)
+* [Ukraine-Russia War](https://www.cnn.com/world/europe/ukraine)
+* [Israel-Hamas War](https://www.cnn.com/world/middleeast/israel)
+* [Watch](https://www.cnn.com/videos)
+  + [Live TV](https://www.cnn.com/live-tv)
+  + [CNN Headlines](https://www.cnn.com/videos/fast/cnn-headlines)
+  + [CNN Shorts](https://www.cnn.com/shorts/cnn-shorts)
+  + [Shows A-Z](https://www.cnn.com/specials/tv/all-shows)
+  + [CNN10](https://www.cnn.com/cnn10)
+  + [CNN Max](https://www.max.com/channel/cnn-max)
+  + [CNN TV Schedules](https://www.cnn.com/tv/schedule/cnn)
+  + [FlashDocs](https://www.cnn.com/subscription/video/flashdocs/library)
+* [Listen](https://www.cnn.com/audio)
+  + [CNN 5 Things](https://www.cnn.com/audio/podcasts/5-things)
+  + [Chasing Life with Dr. Sanjay Gupta](https://www.cnn.com/audio/podcasts/chasing-life)
+  + [The Assignment with Audie Cornish](https://www.cnn.com/audio/podcasts/the-assignment)
+  + [One Thing](https://www.cnn.com/audio/podcasts/one-thing)
+  + [Tug of War](https://www.cnn.com/audio/podcasts/tug-of-war)
+  + [CNN Political Briefing](https://www.cnn.com/audio/podcasts/political-briefing)
+  + [The Axe Files](https://www.cnn.com/audio/podcasts/axe-files)
+  + [All There Is with Anderson Cooper](https://www.cnn.com/audio/podcasts/all-there-is-with-anderson-cooper)
+  + [All CNN Audio podcasts](https://www.cnn.com/audio)
+* [CNN Underscored](https://www.cnn.com/cnn-underscored)
+  + [Electronics](https://www.cnn.com/cnn-underscored/electronics)
+  + [Fashion](https://www.cnn.com/cnn-underscored/fashion)
+  + [Beauty](https://www.cnn.com/cnn-underscored/beauty)
+  + [Health & Fitness](https://www.cnn.com/cnn-underscored/health-fitness)
+  + [Home](https://www.cnn.com/cnn-underscored/home)
+  + [Reviews](https://www.cnn.com/cnn-underscored/reviews)
+  + [Deals](https://www.cnn.com/cnn-underscored/deals)
+  + [Gifts](https://www.cnn.com/cnn-underscored/gifts)
+  + [Travel](https://www.cnn.com/cnn-underscored/travel)
+  + [Outdoors](https://www.cnn.com/cnn-underscored/outdoors)
+  + [Pets](https://www.cnn.com/cnn-underscored/pets)
+* [Games](https://www.cnn.com/games)
+  + [Daily Crossword](https://www.cnn.com/games/play/cnn-crossword)
+  + [Jumble Crossword](https://www.cnn.com/games/play/jumble-crossword-daily)
+  + [Sudoblock](https://www.cnn.com/games/play/sudoblock)
+  + [Sudoku](https://www.cnn.com/games/play/gd-sudoku-a197ee3904d04e9d8b64dcd9fa3ace63)
+  + [5 Things Quiz](https://cnn.it/5thingsquiz)
+* [About CNN](https://www.cnn.com/about)
+  + [Subscribe](https://www.cnn.com/subscription?source=sub_web_footersubnav-link)
+  + [Photos](https://www.cnn.com/world/photos)
+  + [Investigations](https://www.cnn.com/us/cnn-investigates)
+  + [CNN Profiles](https://www.cnn.com/profiles)
+  + [CNN Leadership](https://www.cnn.com/profiles/cnn-leadership)
+  + [CNN Newsletters](https://www.cnn.com/newsletters)
+  + [Work for CNN](https://careers.wbd.com/cnnjobs)
+
+
+---
+
+Follow CNN
+
+[Trending
+India-Pakistan ceasefire](/2025/05/10/asia/india-pakistan-ceasefire-explainer-latam-intl)
+
+[Tariffs](/2025/05/10/business/mothers-day-flowers-tariffs)
+
+[Habeas corpus, explained](/2025/05/10/politics/habeas-corpus-explained)
+
+[Pope Leo](/2025/05/10/europe/pope-leo-prevost-cardinals-artificial-intelligence-intl)
+
+[Savy King](/2025/05/10/sport/nwsl-savy-king-collapse-spt)
+
+[Sean ‘Diddy’ Combs](/2025/05/10/entertainment/sean-diddy-combs-timeline-trial)
+
+[NBA playoff ticket prices](/2025/05/10/sport/trendlines-nba-playoff-ticket-prices-spt)
+
+[Mother’s Day gifts](https://www.cnn.com/cnn-underscored/gifts/last-minute-mothers-day-gift-ideas)
+
+[What is habeas corpus, the legal procedure Trump is considering suspending?
+---------------------------------------------------------------------------
+
+Show all](/2025/05/10/politics/habeas-corpus-explained)
+
+[![President Donald Trump speaks during a swearing-in ceremony for the Ambassador to China David Perdue at the White House in Washington, DC, on May 7.](https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2213279817.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+Jim Watson/AFP/Getty Images](/2025/05/10/politics/habeas-corpus-explained)
+[The future of one of the cornerstones of America’s justice system is now up in the air with the administration contemplating an extreme step](/2025/05/10/politics/habeas-corpus-explained)
+
+[Authorities arrest over 100 people on Tennessee roads in support of Trump’s deportation plan](/2025/05/10/us/arrest-tennessee-trumps-deportation)
+
+[Trump says ‘great progress made’ between US and China following first day of trade talks](/2025/05/10/business/china-us-trade-talks-geneva-hnk-intl)
+
+[For Subscribers
+Business leaders and foreign governments are taking notice of changing dynamics in obtaining access to Trump](/2025/05/10/politics/trump-washington-crypto-access)
+
+[Vance called Indian PM to encourage ceasefire talks after receiving alarming intelligence, sources say](/2025/05/10/politics/vance-modi-india-pakistan-intelligence)
+
+[![People gfather for a May Day demonstration near the US Capitol in Washington, DC, on May 1.](https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2212336829.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+Oliver Contreras/AFP/Getty Images](/2025/05/10/politics/federal-employee-pension-benefits-republicans)
+[Trump isn’t the only one targeting federal employees. House Republicans are pushing cuts to pension benefits](/2025/05/10/politics/federal-employee-pension-benefits-republicans)
+
+[![112144_biden the view WIDE.00_00_01_02.Still002.png](https://media.cnn.com/api/v1/images/stellar/prod/112144-biden-the-view-wide-00-00-01-02-still002.png?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+0:55
+
+ABC](/2025/05/08/us/video/biden-takes-responsibility-the-view-digvid)
+[Video
+‘I take responsibility’: Biden addresses Trump’s presidential win
+0:55](/2025/05/08/us/video/biden-takes-responsibility-the-view-digvid)
+
+[![gerbercomp.png](https://media.cnn.com/api/v1/images/stellar/prod/gerbercomp.png?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+1:22
+
+CNN/Getty](/2025/05/09/business/video/trump-ports-trade-shipping-ross-gerber-digvid)
+[Video
+See CEO’s reaction after Trump’s remark about the steep drop in US trade
+1:22](/2025/05/09/business/video/trump-ports-trade-shipping-ross-gerber-digvid)
+
+[![Pakistani citizens celebrate in Hyderabad after the ceasefire with India was announced on Saturday.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2213753840.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+Akram Shahid/AFP via Getty Images](/2025/05/10/asia/india-pakistan-ceasefire-explainer-latam-intl)
+[India and Pakistan agree to a ceasefire, but will it hold? Here’s what to know](/2025/05/10/asia/india-pakistan-ceasefire-explainer-latam-intl)
+
+[Live Updates
+Pakistan observes day of thanksgiving on Sunday after ceasefire reached](/world/live-news/india-pakistan-operation-sindoor-05-10-25)
+
+[Analysis
+The US takes credit for India-Pakistan ceasefire, but this Trump truce may not herald lasting peace](/2025/05/10/india/analysis-us-role-india-pakistan-ceasefire-latam-intl)
+
+[Video
+CNN correspondents explain what we know about the India and Pakistan ceasefire
+5:52](/2025/05/10/world/video/india-pakistan-agree-ceasefire-chance-robertson-digvid)
+
+[![Russian President Vladimir Putin speaks during a Russian-Vietnamese meeting at the Grand Kremlin Palace on May 10, 2025, in Moscow, Russia.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2213751837.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+Getty Images](/2025/05/10/europe/putin-russia-ukraine-direct-talks-intl-hnk)
+[Putin says Russia ready for ‘direct talks’ with Ukraine as US and European leaders press for a ceasefire](/2025/05/10/europe/putin-russia-ukraine-direct-talks-intl-hnk)
+
+[Russia’s European neighbors are lifting bans on landmines. Campaigners are horrified](/2025/05/11/europe/europe-countries-landmine-ban-russia-intl)
+
+[Analysis
+Putin and Trump under pressure following Ukraine ceasefire proposal](/2025/05/10/europe/ukraine-ceasefire-call-intl-latam)
+
+[Video
+‘Europe is confronting us’: Kremlin spokesperson rebukes ceasefire pressure
+2:00](/2025/05/10/world/video/russia-ceasefire-resistant-dmitry-peskov-digvid)
+
+Play
+
+CNN Headlines
+
+- Source:
+[CNN](https://www.cnn.com/)
+
+CNN Headlines
+
+[Watch the latest CNN Headlines
+
+CNN Headlines is a curated channel covering major news events across politics, international, business, and entertainment, and showcasing the most impactful stories of the day.](https://www.cnn.com/videos/fast/cnn-headlines)
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/web-mhpannarbor-6-imageslideshow-fade.mp4?c=original)
+
+AP/Matthaei Botanical Gardens and Nichols Arboretum/Imagn Images/Getty Images/Matthew Wilken](/2025/05/10/travel/ann-arbor-michigan-college-town-tourism)
+[‘It’s a pretty cool place’: Why alumni can’t stay away from this college town](/2025/05/10/travel/ann-arbor-michigan-college-town-tourism)
+
+[![In this government handout photo a soldier checks the vitals of one of five shipwrecked fishermen, who were rescued after being adrift for more than 50 days, at the San Cristobal Naval Base, Galapagos Islands, on May 10.](https://media.cnn.com/api/v1/images/stellar/prod/ap25130790691793.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+Ecuadorean Navy/AP](/2025/05/10/americas/ecuador-fishermen-55-days-adrift-galapagos-latam-intl)
+[Five fishermen who survived 55 days adrift by drinking rain and parboiling passing fish arrive in Galapagos](/2025/05/10/americas/ecuador-fishermen-55-days-adrift-galapagos-latam-intl)
+
+[![NEW YORK, NEW YORK - MAY 05: Zendaya attends the 2025 Met Gala Celebrating "Superfine: Tailoring Black Style" at Metropolitan Museum of Art on May 05, 2025 in New York City.  (Photo by John Shearer/WireImage)](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2213604179.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+John Shearer/WireImage/Getty Images](/2025/05/05/style/met-gala-2025-red-carpet-fashion)
+[Met Gala 2025: The best looks from the red carpet](/2025/05/05/style/met-gala-2025-red-carpet-fashion)
+
+[![Students arrive for school Tuesday, Jan. 21, 2025, in Boston. (AP Photo/Michael Dwyer)](https://media.cnn.com/api/v1/images/stellar/prod/ap25022700072515.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+For Subscribers
+For Subscribers
+
+Michael Dwyer/AP](/2025/05/10/us/ferpa-student-privacy-law-explained-xpn)
+[For Subscribers
+How schools use — or misuse — a 50-year-old law you might not know about](/2025/05/10/us/ferpa-student-privacy-law-explained-xpn)
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/video-evan-longoria-pig-loop.mp4?c=original)
+
+•
+Video
+2:28
+
+CNN](/2025/05/10/travel/video/madrid-searching-for-spain-eva-longoria-baby-pig)
+[Video
+‘It’s not what I thought’: Eva Longoria reacts after chef brings out dish
+2:28](/2025/05/10/travel/video/madrid-searching-for-spain-eva-longoria-baby-pig)
+
+More top stories
+----------------
+
+[![Tufts University doctoral student Rümeysa Öztürk speaks at a press conference at Boston Logan International Airport at on Saturday, May 10, after arriving home from ICE detention in Louisiana.](https://media.cnn.com/api/v1/images/stellar/prod/still-21614425-1029245-343-still.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+WHDH](/2025/05/09/us/rumeysa-ozturk-tufts-bail-release)
+[Tufts University student Rümeysa Öztürk arrives back home after spending six weeks at a Louisiana detention center](/2025/05/09/us/rumeysa-ozturk-tufts-bail-release)
+
+[3 Chinese nationals arrested in Japan after thousands of protected hermit crabs found smuggled in suitcases](/2025/05/10/asia/japan-thousands-hermit-crabs-suitcase-intl-hnk)
+
+[Video
+‘Don’t take the mother’: Crowd clashes with ICE agents in Massachusetts
+1:25](/2025/05/10/us/video/crowd-tried-to-intervene-ice-raid-digvid)
+
+[Homeland Security Dept. accuses lawmakers of ‘storming’ an ICE facility despite oversight laws saying they could be there](/2025/05/10/politics/dhs-lawmakers-ice-newark-mayor-arrest)
+
+[Key prosecutor in Trump’s classified documents case to testify in front of House Judiciary Committee](/2025/05/10/politics/jay-bratt-classified-documents-judiciary-committee)
+
+[Video
+Newark mayor responds to Alina Habba’s claims about his arrest
+1:29](/2025/05/09/politics/video/newark-mayor-ras-baraka-arrest-alina-habba-tweet-src-digvid)
+
+[US communities brace for potential impact if their Ukrainian refugee neighbors are forced to leave](/2025/05/10/politics/ukrainians-us-concerns-trump)
+
+Pope Leo XIV
+------------
+
+[![Pope Leo XIV formally meets with cardinals for the first time in the Vatican on Saturday.](https://media.cnn.com/api/v1/images/stellar/prod/foto-1-20250510122216234.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+Vatican Media](/2025/05/10/europe/pope-leo-prevost-cardinals-artificial-intelligence-intl)
+[Pope Leo explains why he chose his papal name during first meeting with cardinals](/2025/05/10/europe/pope-leo-prevost-cardinals-artificial-intelligence-intl)
+
+[Pope Leo XIV: A White Sox fan who calls his brother daily from Rome](/2025/05/10/us/pope-leo-xiv-robert-prevost-family-profile)
+
+[Video
+These past popes are notable for their exceedingly good - or bad - behavior
+2:31](/2025/05/10/world/video/intriguing-popes-history-digvid)
+
+Mother's Day weekend
+--------------------
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/desktop-20250509-immigrantmothers.mp4?c=original)
+
+Emily Whitney for CNN](https://www.cnn.com/interactive/2025/05/us/immigrant-mothers-cnnphotos-cec/)
+[These moms are facing dark times in their lives. A photographer following them saw something unexpected](https://www.cnn.com/interactive/2025/05/us/immigrant-mothers-cnnphotos-cec/)
+
+Ad Feedback
+
+Ad Feedback
+
+CNN Podcasts
+------------
+
+[![IMG_9767 2.JPG](https://media.cnn.com/api/v1/images/stellar/prod/img-9767-2.JPG?c=16x9&q=h_144,w_256,c_fill)
+
+Pinecrest Academy](https://www.cnn.com/audio/podcasts/5-good-things/episodes/af1762d6-2fdf-11ef-89ae-7bfb249815f2)
+[A second grade conclave elected a kid pope
+
+May 10, 2025](https://www.cnn.com/audio/podcasts/5-good-things/episodes/af1762d6-2fdf-11ef-89ae-7bfb249815f2)
+
+[![Doctor or psychiatrist consulting and diagnostic examining stressful woman patient on obstetric - gynecological female illness, or mental health in medical clinic or hospital healthcare service center](https://media.cnn.com/api/v1/images/stellar/prod/220616025149-01-equals-newsletter-menopause-restricted.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+Chinnapong/Adobe Stock](https://www.cnn.com/audio/podcasts/chasing-life/episodes/b34c47de-37bb-11ef-8219-4fbd394fcfd8)
+[Making sense of menopause
+
+May 9, 2025](https://www.cnn.com/audio/podcasts/chasing-life/episodes/b34c47de-37bb-11ef-8219-4fbd394fcfd8)
+
+[![MENTAL HEALTH](https://media.cnn.com/api/v1/images/stellar/prod/240213150405-mental-health.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+Adobe Stock](https://www.cnn.com/audio/podcasts/the-account/episodes/0bf0a07a-163b-11f0-a572-2bb45c5682d8)
+[The complex relationship between conspiracies and mental health
+
+May 7, 2025](https://www.cnn.com/audio/podcasts/the-account/episodes/0bf0a07a-163b-11f0-a572-2bb45c5682d8)
+
+Ad Feedback
+
+CNN quizzes + games
+-------------------
+
+[![CNN Games-card-01.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-01.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+•
+Sudoblock
+Sudoblock
+
+cnn](https://www.cnn.com/games/play/sudoblock)
+[Sudoblock
+Sudoku + Blocks = addictive tile-matching puzzle](https://www.cnn.com/games/play/sudoblock)
+
+[![CNN Games card_Sudoku.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-sudoku.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+Sudoku
+Sudoku
+
+CNN](https://www.cnn.com/games/play/gd-sudoku-a197ee3904d04e9d8b64dcd9fa3ace63)
+[Sudoku
+A cross-number crossword that will challenge your brain](https://www.cnn.com/games/play/gd-sudoku-a197ee3904d04e9d8b64dcd9fa3ace63)
+
+[![20250508-news_quiz 0508 SPLIT.jpg](https://media.cnn.com/api/v1/images/stellar/prod/20250508-news-quiz-0508-split.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+Quiz
+Quiz
+
+AP/Getty Images](https://www.cnn.com/interactive/2025/05/us/cnn-5-things-news-quiz-may-9-sec/)
+[Quiz
+12.6% of readers who took this week’s news quiz got a perfect score. How will you do?](https://www.cnn.com/interactive/2025/05/us/cnn-5-things-news-quiz-may-9-sec/)
+
+Check these out
+---------------
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/video-symbolic-looks-met-gala-2025-loop.mp4?c=original)
+
+•
+Video
+1:45
+
+Getty Images](/2025/05/06/style/video/symbolic-looks-met-gala-2025-ldn-digvid)
+[Video
+Symbolism, tribute and spectacle: A deeper look at the 2025 Met Gala
+1:45](/2025/05/06/style/video/symbolic-looks-met-gala-2025-ldn-digvid)
+
+[![Ike Barinholtz and Adam Scott in a photo shared to Instagram on Friday, May 9.](https://media.cnn.com/api/v1/images/stellar/prod/screen-shot-2025-05-10-at-1-49-06-pm.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+From Adam Scott/Instagram](/2025/05/10/entertainment/adam-scott-ike-barinholtz-the-studio)
+[Adam Scott shares nostalgic photo with Ike Barinholtz, aka Sal Saperstein, in hilarious nod to ‘The Studio’](/2025/05/10/entertainment/adam-scott-ike-barinholtz-the-studio)
+
+[![FORT LAUDERDALE, FLORIDA - MAY 03: Katie Ledecky sets a World Record in the Women's 800m Freestyle Final at Fort Lauderdale Aquatic Center on May 03, 2025 in Fort Lauderdale, Florida. (Photo by Carmen Mandato/Getty Images)
+
+Tristen](https://media.cnn.com/api/v1/images/stellar/prod/10-010-010-gettyimages-2213277078.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+•
+Gallery
+Gallery
+
+Carmen Mandato/Getty Images](/2025/05/08/world/gallery/photos-this-week-may-1-may-8)
+[Gallery
+US swimming legend breaks her own record. Surreal shot of Vatican Museum staircase. The week in photos](/2025/05/08/world/gallery/photos-this-week-may-1-may-8)
+
+[![The northern hemisphere of Venus is displayed in this view of the planet created with data from NASA's Magellan spacecraft.](https://media.cnn.com/api/v1/images/stellar/prod/pia00271-large.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+PL-Caltech/NASA](/2025/05/09/science/soviet-spacecraft-crash-kosmos-482)
+[A failed Soviet-era spacecraft likely crashed back to Earth overnight](/2025/05/09/science/soviet-spacecraft-crash-kosmos-482)
+
+For Subscribers
+---------------
+
+[![Tourists take photographs on the Rialto Bridge in Venice, Italy, on Saturday, April 8, 2023. Italy's upcoming budget outlook will probably incorporate a higher growth forecast for 2023 followed by a worsened outlook for subsequent years, according to people familiar with the matter. Photographer: Andrea Merola/Bloomberg via Getty Images](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1251552925-20250501141337906.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+•
+For Subscribers
+For Subscribers
+
+Andrea Merola/Bloomberg/Getty Images](/travel/battle-for-the-soul-of-venice)
+[For Subscribers
+The clock is ticking as rising waters and overtourism slowly kill Venice](/travel/battle-for-the-soul-of-venice)
+
+[![Kilmar Abrego Garcia](https://media.cnn.com/api/v1/images/stellar/prod/jennifer-vasquez.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+For Subscribers
+For Subscribers
+
+Courtesy Jennifer Vasquez](/2025/05/07/politics/kilmar-abrego-garcia-life-el-salvador)
+[For Subscribers
+Kilmar Abrego Garcia says he fled gang violence in El Salvador. He became a political flashpoint in the US](/2025/05/07/politics/kilmar-abrego-garcia-life-el-salvador)
+
+[![Chipped paint on a doorway at the Golda Meir School, the school where the first known student to be exposed to a lead hazard was discovered, is seen on Tuesday, May 6, 2025, in Milwaukee, Wis.](https://media.cnn.com/api/v1/images/stellar/prod/albanv-20250506-cnn-mkelead-46.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+For Subscribers
+For Subscribers
+
+Vincent Alban for CNN](/2025/05/09/health/milwaukee-lead-crisis-schools)
+[For Subscribers
+In a city burdened by health hazards of lead, they’re trying to repair school buildings and public trust](/2025/05/09/health/milwaukee-lead-crisis-schools)
+
+Ad Feedback
+
+Ad Feedback
+
+[CNN Underscored](https://www.cnn.com/cnn-underscored)
+------------------------------------------------------
+
+Best-in-class
+-------------
+
+[![best camping chairs](https://media.cnn.com/api/v1/images/stellar/prod/best-camping-chairs-lead-cnnu-badged-2025.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Kai Burkhardt/CNN Underscored](/cnn-underscored/reviews/best-camping-chairs)
+[We found the best camping chairs for your next outdoor retreat or beach trip](/cnn-underscored/reviews/best-camping-chairs)
+
+[11 travel dresses to make traveling more comfortable this summer, according to experts](/cnn-underscored/fashion/best-travel-dresses)
+
+[Yes, you need a solar generator. These 3 emerged as the best after testing](/cnn-underscored/reviews/best-solar-generators)
+
+[Forget the expensive air conditioner. Try one of these powerful cooling fans instead](/cnn-underscored/reviews/best-cooling-fans)
+
+[Do water filter pitchers actually work? We tested 7 popular models to find out](/cnn-underscored/reviews/best-water-filter-pitchers)
+
+Expert-backed guides
+--------------------
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/bestwagons-loop-2.mp4?c=original)
+
+Enrique Perez/CNN Underscored](/cnn-underscored/reviews/best-beach-wagon)
+[We rolled 10 beach wagons through the sand. Only 3 made our lives easier](/cnn-underscored/reviews/best-beach-wagon)
+
+[We tested 12 pairs of men’s sandals. 2 provided comfort and style above the rest](/cnn-underscored/reviews/best-sandals-for-men)
+
+[Skip the salon. We found the best hair dryers that give a flawless blowout every time](/cnn-underscored/reviews/best-hair-dryer)
+
+[18 under-$50 products that will totally upgrade your home, according to an interior designer](/cnn-underscored/home/products-under-50-to-upgrade-your-home)
+
+[The 20 Amazon products our readers couldn’t stop buying last month](/cnn-underscored/home/amazon-reader-favorites-april-2025)
+
+Editors' picks
+--------------
+
+[![Cooling Blankets Lead.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cooling-blankets-lead.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Michelle Rae Uy/CNN Underscored](/cnn-underscored/home/best-cooling-blankets)
+[A cooling blanket might be your ticket to better sleep. We rounded up 12, starting from $17](/cnn-underscored/home/best-cooling-blankets)
+
+[This lightweight jumpsuit is perfect for spring and summer. I loved it so much I bought 3](/cnn-underscored/reviews/pretty-garden-jumpsuit)
+
+[Anyone with achy feet can benefit from these 12 podiatrist-approved recovery sandals](/cnn-underscored/health-fitness/best-recovery-sandals-2025)
+
+[Want to quiet a snoring bed partner? We asked doctors for the best anti-snoring products](/cnn-underscored/health-fitness/anti-snoring-products)
+
+[Don’t settle for a drugstore beach umbrella. Try these 3 instead](/cnn-underscored/reviews/best-beach-umbrella)
+
+[Business
+--------
+
+Show all](https://www.cnn.com/business)
+
+[![A cargo ship moors at the container terminal berth of Lianyungang Port for loading and unloading containers in Lianyungang City, Jiangsu Province, China, on May 9, 2025.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2213552030.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Costfoto/NurPhoto/Getty Images](/2025/05/10/business/zero-ships-china-trade-ports-pandemic)
+[Zero ships from China are bound for California’s top ports. Officials haven’t seen that since the pandemic](/2025/05/10/business/zero-ships-china-trade-ports-pandemic)
+
+[Bill Gates warns Elon Musk’s DOGE cuts will cause ‘millions of deaths’](/2025/05/09/tech/bill-gates-elon-musk-usaid-cuts-criticism)
+
+[THC drinks are flying off shelves. Can it last?](/2025/05/10/business/thc-drinks-legal-farm-bill)
+
+[FedEx board member David Steiner to be next US postmaster general](/2025/05/09/politics/usps-postmaster-general-david-steiner)
+
+[Entertainment
+-------------
+
+Show all](https://www.cnn.com/entertainment)
+
+[![Jeff Bridges promotes the upcoming film "Tron: Ares" at the Disney presentation during CinemaCon on April 3, 2025 in Las Vegas, Nevada.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2208757481.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Ethan Miller/Getty Images](/2025/05/10/entertainment/jeff-bridges-cancer-covid-update-wellness)
+[Jeff Bridges says he’s ‘feeling good’ nearly 5 years after cancer diagnosis, but dealing with ‘long-term’ Covid effects](/2025/05/10/entertainment/jeff-bridges-cancer-covid-update-wellness)
+
+[Sean ‘Diddy’ Combs timeline: The key events and allegations against the hip-hop mogul now on trial](/2025/05/10/entertainment/sean-diddy-combs-timeline-trial)
+
+[Taylor Swift subpoenaed in Blake Lively and Justin Baldoni case](/2025/05/09/entertainment/taylor-swift-subpoenaed-lively-baldoni-case)
+
+[Ellen DeGeneres shares a look at her life in the country](/2025/05/09/entertainment/ellen-degeneres-new-look-farm)
+
+Ad Feedback
+
+[Space and Science
+-----------------
+
+Show all](https://www.cnn.com/science)
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/underwatervolcanoloopv2-compressed.mp4?c=original)
+
+Axial Seamount's hydrothermal vents are teeming with small plants, animals and microbes that thrive off plumes of mineral-rich gases.
+
+
+UW/NSF-OOI/WHOI, V18](/2025/05/08/science/underwater-volcano-erupt-oregon-coast)
+[Mile-wide underwater volcano ready to erupt off the West Coast](/2025/05/08/science/underwater-volcano-erupt-oregon-coast)
+
+[Medieval tale of Merlin and King Arthur found hiding as a book cover](/2025/05/09/science/merlin-king-arthur-medieval-manuscript-cambridge)
+
+[Did South Korea’s legendary female free divers evolve for a life underwater? Scientists find new evidence](/2025/05/07/science/haenyeo-south-korea-divers-evolution)
+
+[What fueled T. rex’s gigantic size, according to a new study](/2025/05/06/science/t-rex-ancestors-asia-study-scli-intl)
+
+[Travel
+------
+
+Show all](https://www.cnn.com/travel)
+
+[![April-17,-2025---Neuschwanstein-Castle-in-Germany](https://media.cnn.com/api/v1/images/stellar/prod/april-17-2025-neuschwanstein-castle-in-germany.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Savery Moore](/travel/strangers-friendship-train-travel-world-chance-encounters)
+[They travel together and people assume they’re married. ‘We know what we are’](/travel/strangers-friendship-train-travel-world-chance-encounters)
+
+[Global Airlines promised luxurious flights on a fleet of A380 superjumbos. The launch is somewhat different](/2025/05/09/travel/global-airlines-a380-superjumbos-fleet-launch)
+
+[Disney announces first new resort in a generation](/2025/05/07/travel/disney-earnings-new-themepark-abu-dhabi)
+
+[Super-sized cruise ships are becoming the norm. Is there an end in sight?](/2025/05/07/travel/mega-cruise-ships-coming-soon)
+
+[Style
+-----
+
+Show all](https://www.cnn.com/style)
+
+[![Blake Lively stars as 'Emily' in ANOTHER SIMPLE FAVOR.](https://media.cnn.com/api/v1/images/stellar/prod/ansf-2025-ut-240410-sislor-03437-f-3000.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Lorenzo Sisti/Amazon Prime Video](/2025/05/08/style/another-simple-favor-fashion-blake-lively)
+[Blake Lively packs her outrageously big hat for the destination wedding film of the year](/2025/05/08/style/another-simple-favor-fashion-blake-lively)
+
+[Shortlisted designs for Queen Elizabeth II’s official London memorial unveiled](/2025/05/09/style/queen-elizabeth-ii-memorial-london-shortlist)
+
+[Video
+Symbolism, tribute and spectacle: A look back at the 2025 Met Gala
+1:45](/2025/05/06/style/video/symbolic-looks-met-gala-2025-ldn-digvid)
+
+[Why men are shaving off their eyelashes](/2025/04/30/style/male-beauty-standards-eyelashes)
+
+health and wellness
+-------------------
+
+[![Superfood, Ceylon-Zimt, Zimt, Pulver, Stangen, Schälchen, schwarzer Untergrund, Schiefer](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-709127183.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Westend61/Getty Images](/2025/05/08/health/cinnamon-interactions-medications-wellness)
+[Cinnamon could interact with some prescription medications, according to a new study](/2025/05/08/health/cinnamon-interactions-medications-wellness)
+
+[Shingles vaccine reduces risk of heart disease by 23%, study of 1 million people finds](/2025/05/09/health/shingles-heart-disease-vaccine-shots-wellness)
+
+[Did 8 Italian physicists make the perfect cacio e pepe? I tested their experiment to find out](/2025/05/09/health/cacio-e-pepe-recipe-pasta-test-wellness)
+
+[Parkinson’s disease prevention may ‘begin at the dinner table’](/2025/05/07/health/ultraprocessed-food-parkinsons-disease-wellness)
+
+[More Politics
+-------------
+
+Show all](https://www.cnn.com/politics)
+
+[![The Bushehr nuclear power plant is seen in Bushehr province, south of Tehran, Iran, on April 29, 2024.](https://media.cnn.com/api/v1/images/stellar/prod/shutterstock-editorial-14461083c.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Morteza Nikoubazl/NurPhoto/Shutterstock](/2025/05/10/middleeast/us-iran-nuclear-talks-latam-intl)
+[US ‘not genuine’ in talks over Tehran’s nuclear program, Iranian official says](/2025/05/10/middleeast/us-iran-nuclear-talks-latam-intl)
+
+[Judge halts drastic cuts to agencies being done under Trump executive order](/2025/05/09/politics/judge-halts-agency-cuts-trump-executive-order)
+
+[CNN Exclusive
+Jared Kushner quietly advising Trump admin ahead of Middle East trip](/2025/05/09/politics/jared-kushner-trump-middle-east-trip)
+
+[Analysis
+Souter’s influence still resonating 16 years after he left the Supreme Court](/2025/05/10/politics/souters-influence-supreme-court-analysis)
+
+[Pentagon considers shifting Greenland to US Northern Command, sparking concerns over Trump’s ambitions for the territory](/2025/05/09/politics/pentagon-greenland-northern-command)
+
+[US
+--
+
+Show all](https://www.cnn.com/us)
+
+[![A mild 4.1 magnitude earthquake just southeast of Greenback, Tennessee, was felt across the southeastern region of the United States Saturday morning from Knoxville and Chattanooga, Tennessee, to Atlanta, Georgia; Asheville, North Carolina; and Greenville, South Carolina.](https://media.cnn.com/api/v1/images/stellar/prod/image-20250510140142134.png?c=16x9&q=h_438,w_780,c_fill)
+
+CNN Weather](/2025/05/10/us/earthquake-tennessee-southeast-us-saturday)
+[Tennessee earthquake sends rumbles across the Southeast](/2025/05/10/us/earthquake-tennessee-southeast-us-saturday)
+
+[The crisis at Newark Airport could mean weeks, if not months, of misery for travelers](/2025/05/10/us/newark-airport-air-traffic-control-crisis)
+
+[Newark mayor released after arrest at immigration facility protest, says, ‘I didn’t do anything wrong’](/2025/05/09/us/new-jersey-mayor-arrested-at-ice-detention-center)
+
+[Tracking measles cases in the United States](/health/measles-cases-us-dg)
+
+[Measles outbreak in North Dakota prompts local health officials to quarantine unvaccinated schoolchildren](/2025/05/09/health/measles-outbreak-north-dakota)
+
+[World
+-----
+
+Show all](https://www.cnn.com/world)
+
+[![Britain's Prime Minister Keir Starmer, France's President Emmanuel Macron and Germany's Chancellor Friedrich Merz arrive at Kyiv railway station on May 10, 2025.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2213695824.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Ludovic Marin/Pool/AFP/Getty Images](/2025/05/10/europe/european-leaders-kyiv-ukraine-visit-intl)
+[European leaders visit Kyiv, and tell Russia: 30-day ceasefire now or face massive sanctions](/2025/05/10/europe/european-leaders-kyiv-ukraine-visit-intl)
+
+[Trains held, roads blocked and events canceled: Toxic cloud of chlorine forced 160,000 people in Spain to stay inside after fire](/2025/05/10/europe/chlorine-cloud-fire-spain-intl)
+
+[Diver dies in preliminary operations to recover tech tycoon’s sunken superyacht](/2025/05/09/europe/diver-dies-superyacht-recovery-bayesian-italy-intl)
+
+[CNN podcasts
+------------
+
+Show all](https://www.cnn.com/audio)
+
+[![IMG_9767 2.JPG](https://media.cnn.com/api/v1/images/stellar/prod/img-9767-2.JPG?c=16x9&q=h_438,w_780,c_fill)
+
+Pinecrest Academy](https://www.cnn.com/audio/podcasts/5-good-things/episodes/af1762d6-2fdf-11ef-89ae-7bfb249815f2)
+[A second grade conclave elected a kid pope](https://www.cnn.com/audio/podcasts/5-good-things/episodes/af1762d6-2fdf-11ef-89ae-7bfb249815f2)
+
+[The ‘big, beautiful bill’ turns ugly](https://www.cnn.com/audio/podcasts/political-briefing/episodes/cb3e6ab2-cef0-11ef-bcce-83fd4970648e)
+
+[What’s behind a renewed interest in Catholicism](https://www.cnn.com/audio/podcasts/the-assignment/episodes/9a52d0f2-25e7-11f0-b0c8-3b5db0f1e519)
+
+[The complex relationship between conspiracies and mental health](https://www.cnn.com/audio/podcasts/the-account/episodes/0bf0a07a-163b-11f0-a572-2bb45c5682d8)
+
+[The book that ‘pope pilled’ the internet](https://www.cnn.com/audio/podcasts/one-thing/episodes/533e1f06-2a91-11f0-be57-db6103ea8d94)
+
+[Sports
+------
+
+Show all](https://bleacherreport.com/?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+[![Jose Aldo announces retirement after controversial loss](https://media.cnn.com/api/v1/images/stellar/bleacherreport/20250511035716082-null.png?c=16x9&q=h_438,w_780,c_fill)](https://bleacherreport.com/articles/25193910-jose-aldo-announces-retirement-after-controversial-loss-aiemann-zahabi-ufc-315?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+[Jose Aldo announces retirement after controversial loss](https://bleacherreport.com/articles/25193910-jose-aldo-announces-retirement-after-controversial-loss-aiemann-zahabi-ufc-315?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+[Derek Carr retiring from NFL](https://bleacherreport.com/articles/25194618-saints-derek-carr-retires-nfl-age-34-amid-injury-after-discussing-wife?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+[WWE fan ejected for throwing bottle at John Cena](https://bleacherreport.com/articles/25194613-wwe-fan-ejected-throwing-beer-bottle-john-cena-video-during-wwe-smackdown?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+[NFL rookies drafted by the wrong team](https://bleacherreport.com/articles/25194063-which-nfl-teams-wish-they-could-have-do-over-2025-draft?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+[Charlie Woods fails to qualify for U.S. Open](https://bleacherreport.com/articles/25194495-tiger-woods-son-charlie-fails-qualify-2025-us-open-after-shooting-75?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial)
+
+Video
+-----
+
+[![Money.jpg](https://media.cnn.com/api/v1/images/stellar/prod/money.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+1:23
+
+CNN](/2025/05/07/business/video/money-conversations-partner-conflict-digvid)
+[Video
+How to avoid fights about money
+1:23](/2025/05/07/business/video/money-conversations-partner-conflict-digvid)
+
+[![MHP FL Thumb 4.jpg](https://media.cnn.com/api/v1/images/stellar/prod/mhp-fl-thumb-4.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+2:43
+
+CNN](/2025/04/25/travel/video/florida-keys-scuba-diving-boris-sanchez-digvid)
+[Video
+‘Florida oozes from my pores’: CNN anchor shows us his favorite place to visit
+2:43](/2025/04/25/travel/video/florida-keys-scuba-diving-boris-sanchez-digvid)
+
+[![NEW YORK, NY - MAY 04:  Rihanna attends the "China: Through The Looking Glass" Costume Institute Benefit Gala at the Metropolitan Museum of Art on May 4, 2015 in New York City.  (Photo by Mike Coppola/Getty Images)](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-472971948.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+3:11
+
+Mike Coppola/Getty Images North America/Getty Images](/2025/05/05/style/video/memorable-met-gala-moments-history-ldn-digivid)
+[Video
+Why a 'naked' dress stands out in Met Gala history
+3:11](/2025/05/05/style/video/memorable-met-gala-moments-history-ldn-digivid)
+
+[![LC snake bite and blood.mxf.00_00_21_25.Still002.jpg](https://media.cnn.com/api/v1/images/stellar/prod/lc-snake-bite-and-blood-mxf-00-00-21-25-still002.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Video
+2:49
+
+Time Friede](/2025/05/03/science/video/snake-bite-expert-universal-antivenom-digvid)
+[Video
+A man injected himself with snake venom for nearly two decades. He explains why
+2:49](/2025/05/03/science/video/snake-bite-expert-universal-antivenom-digvid)
+
+[Food and Home](https://www.cnn.com/wbd/food-network)
+-----------------------------------------------------
+
+[![FNK_PANCAKE_CAKE_W_BERRIES_s4x3.jpeg](https://media.cnn.com/api/v1/images/stellar/prod/fnk-pancake-cake-w-berries-s4x3.jpeg?c=16x9&q=h_438,w_780,c_fill)
+
+Food Network](/wbd/6-next-level-pancakes-for-a-mothers-day-brunch)
+[6 next-level pancakes for a Mother’s Day brunch](/wbd/6-next-level-pancakes-for-a-mothers-day-brunch)
+
+[![VB1213_Smoky-Caprese-Sandwiches_s4x3.jpg](https://media.cnn.com/api/v1/images/stellar/prod/vb1213-smoky-caprese-sandwiches-s4x3.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Food Network](/wbd/mothers-day-picnic-recipes-to-perfect-this-spring)
+[Mother’s Day picnic recipes to perfect this spring](/wbd/mothers-day-picnic-recipes-to-perfect-this-spring)
+
+[![There’s no better way to thank Mom for all that she does than with a homemade treat. From classics like carrot cake and hummingbird cake to Bundts drizzled with icing, these recipes are sure to make her day extra special.](https://media.cnn.com/api/v1/images/stellar/prod/je402-double-chocolate-red-wine-bundt-cake-s4x3-20240507161521426.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Melissa Libertelli / Food Network](/wbd/mothers-day-cakes-that-will-show-mom-just-how-much-you-care)
+[Mother’s Day cakes that will show mom just how much you care](/wbd/mothers-day-cakes-that-will-show-mom-just-how-much-you-care)
+
+Paid Content
+------------
+
+Paid Content Recommendations
+
+More from CNN
+-------------
+
+The Vatican
+-----------
+
+[![Newly elected Pope Leo XIV, Cardinal Robert F. Prevost of the U.S., appears on the balcony of St. Peter's Basilica at the Vatican, May 8, 2025. Vatican Media/­Handout via REUTERS ATTENTION EDITORS - THIS IMAGE WAS PROVIDED BY A THIRD PARTY. TPX IMAGES OF THE DAY](https://media.cnn.com/api/v1/images/stellar/prod/01-2025-05-08t181008z-1727703098-rc2tdeazsa6n-rtrmadp-3-pope-succession-leo.JPG?c=16x9&q=h_438,w_780,c_fill)
+
+Francesco Sforza/Vatican Media via Reuters](https://www.cnn.com/world/live-news/new-pope-conclave-day-two-05-08-25#cmafogwyk00053b76y0af2hsb)
+[What we can learn from Pope Leo’s papal garb](https://www.cnn.com/world/live-news/new-pope-conclave-day-two-05-08-25#cmafogwyk00053b76y0af2hsb)
+
+[![Pope Francis' coffin is carried into St. Peter's Square by the Gentlemen of His Holiness — butlers or valets to the pope. (Bernadette Tuazon/CNN)](https://media.cnn.com/api/v1/images/stellar/prod/bpt103-saturday-04262025.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+•
+Gallery
+Gallery
+
+Bernadette Tuazon/CNN](/2025/04/21/world/gallery/pope-francis-death-reaction)
+[Gallery
+The world mourns Pope Francis](/2025/04/21/world/gallery/pope-francis-death-reaction)
+
+[![Pope Francis waves from the popemobile car as he makes a tour of St. Peter's Square following the Easter Sunday mass on April 9, 2023.](https://media.cnn.com/api/v1/images/stellar/prod/01-gettyimages-1251105344.JPG?c=16x9&q=h_144,w_256,c_fill)
+
+Andreas Solaro/AFP via Getty Images](/2025/04/21/europe/pope-francis-obituary-intl)
+[Francis: The ‘outsider’ pope who faced fierce resistance to his reforms](/2025/04/21/europe/pope-francis-obituary-intl)
+
+Wealth Coach
+------------
+
+[![An aerial view of a residential housing development on April 03, 2025 in Los Angeles, California. Across the country, more home purchase deals are falling through than usual.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2208413221.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Mario Tama/Getty Images](/2025/04/27/economy/tariff-stock-market-volatility-spring-home-shopping)
+[Tariffs and stock market volatility are clouding spring home shopping season](/2025/04/27/economy/tariff-stock-market-volatility-spring-home-shopping)
+
+[![Traders work on the floor of the New York Stock Exchange (NYSE) in New York, US, on Thursday, April 17, 2025. US stocks traded steady, reversing gains from earlier in the day, as Wall Street traders weighed the latest earnings results and the impact of President Donald Trump's tariffs on Corporate America. Photographer: Michael Nagle/Bloomberg via Getty Images](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2210075144.jpg?c=16x9&q=h_144,w_256,c_fill)
+
+Michael Nagle/Bloomberg/Getty Images](/2025/04/18/money/how-to-protect-your-money-safe-havens)
+[How to protect your money when markets get rocky](/2025/04/18/money/how-to-protect-your-money-safe-havens)
+
+[![Tax experts are concerned a staff exodus at the IRS amid a speedy transformation of its systems may at least initially compromise the agency's ability to conduct audits in ways that protect taxpayer rights.](https://media.cnn.com/api/v1/images/stellar/prod/2025-02-20t181645z-962444936-rc2hycat9wtc-rtrmadp-3-usa-trump-irs.JPG?c=16x9&q=h_144,w_256,c_fill)
+
+Kent Nishimura/Reuters](/2025/04/25/business/how-likely-are-you-to-be-audited-by-the-irs)
+[With all the changes at the IRS, how likely are you to be audited? It’s unclear](/2025/04/25/business/how-likely-are-you-to-be-audited-by-the-irs)
+
+Ad Feedback
+
+[Photos](https://www.cnn.com/world/photos)
+------------------------------------------
+
+[![Newly elected Pope Leo waves from the balcony of St. Peter's Basilica on Thursday.](https://media.cnn.com/api/v1/images/stellar/prod/2025-05-08t184456z-930902147-rc2tdeaebcov-rtrmadp-3-pope-succession-leo.JPG?c=16x9&q=h_438,w_780,c_fill)
+
+•
+Gallery
+Gallery
+
+Francesco Sforza/Vatican Media/Reuters](https://www.cnn.com/interactive/2025/05/world/conclave-pope-cnnphotos/)
+[Gallery
+In pictures: A new pope is chosen](https://www.cnn.com/interactive/2025/05/world/conclave-pope-cnnphotos/)
+
+[![Pope Francis' coffin is carried into St. Peter's Square by the Gentlemen of His Holiness — butlers or valets to the pope. (Bernadette Tuazon/CNN)](https://media.cnn.com/api/v1/images/stellar/prod/bpt103-saturday-04262025.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Bernadette Tuazon/CNN](https://edition.cnn.com/interactive/2025/04/world/pope-francis-funeral-cnnphotos/)
+[Saying farewell to Pope Francis](https://edition.cnn.com/interactive/2025/04/world/pope-francis-funeral-cnnphotos/)
+
+[![A race fan walks though the grounds at Churchill Downs before the 151st running of the Kentucky Derby horse race Saturday, May 3, 2025, in Louisville, Ky. (AP Photo/Brynn Anderson)](https://media.cnn.com/api/v1/images/stellar/prod/29-029-028-ap25123690469662.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+•
+Gallery
+Gallery
+
+Brynn Anderson/AP](/2025/05/08/world/gallery/photos-this-week-may-1-may-8)
+[Gallery
+The week in 39 photos](/2025/05/08/world/gallery/photos-this-week-may-1-may-8)
+
+[![Ningaloo reef off the western coast of Australia.](https://media.cnn.com/api/v1/images/stellar/prod/nush-freedman-photography-26.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+Nush Freedman for CNN](https://www.cnn.com/interactive/2025/05/climate/ningaloo-reef-cnnphotos-c2e/)
+[This ancient Australian reef is sending a silent distress call](https://www.cnn.com/interactive/2025/05/climate/ningaloo-reef-cnnphotos-c2e/)
+
+Paid Partner Content
+--------------------
+
+[CNN Games + Quizzes
+-------------------
+
+Show all](https://www.cnn.com/games?utm_source=games_acq_web_homepage_morezone)
+
+[![CNN Games card_Crossword.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-crossword.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Today's crossword
+Today's crossword
+
+CNN](https://www.cnn.com/games/play/daily-crossword?utm_source=games_acq_web_homepage_morezone)
+[Today's crossword
+No pencil or eraser required](https://www.cnn.com/games/play/daily-crossword?utm_source=games_acq_web_homepage_morezone)
+
+[![CNN Games card_Sudoblock.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-sudoblock.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Sudoblock
+Sudoblock
+
+CNN](https://www.cnn.com/games/play/sudoblock?utm_source=games_acq_web_homepage_morezone)
+[Sudoblock
+Sudoku + Blocks = addictive tile-matching puzzle](https://www.cnn.com/games/play/sudoblock?utm_source=games_acq_web_homepage_morezone)
+
+[![CNN Games card_JumbleCrossword.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-jumblecrossword.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Jumble Crossword
+Jumble Crossword
+
+CNN](https://www.cnn.com/games/play/jumble-crossword-daily)
+[Jumble Crossword
+Test your smarts with this scrambled word game](https://www.cnn.com/games/play/jumble-crossword-daily)
+
+[![CNN Games-card-02.jpg](https://media.cnn.com/api/v1/images/stellar/prod/cnn-games-card-02.jpg?c=16x9&q=h_270,w_480,c_fill)
+
+•
+Weekly news quiz
+Weekly news quiz
+
+cnn](https://cnn.it/5thingsquiz?utm_source=games_acq_web_homepage_morezone)
+[Weekly news quiz
+What do you remember from the week that was?](https://cnn.it/5thingsquiz?utm_source=games_acq_web_homepage_morezone)
+
+In case you missed it
+---------------------
+
+[[
+
+](https://media.cnn.com/api/v1/loops/stellar/prod/underwatervolcanoloopv2-compressed.mp4?c=original)
+
+Axial Seamount's hydrothermal vents are teeming with small plants, animals and microbes that thrive off plumes of mineral-rich gases.
+
+
+UW/NSF-OOI/WHOI, V18](/2025/05/08/science/underwater-volcano-erupt-oregon-coast)
+[Mile-wide underwater volcano ready to erupt off the West Coast](/2025/05/08/science/underwater-volcano-erupt-oregon-coast)
+
+[Founder of crypto lender Celsius sentenced to 12 years in prison](/2025/05/09/business/founder-crypto-celsius-network-prison-sentence-intl)
+
+[Analysis
+One trade ‘deal’ done, 199 to go](/2025/05/08/economy/trade-deal)
+
+[Gallery
+A burst of applause. The bells of St. Peter’s Basilica ringing. The news of a pope elected, in photos](https://www.cnn.com/interactive/2025/05/world/conclave-pope-cnnphotos/)
+
+[Before Coco Chanel and Elsa Schiaparelli, there was only one name in fashion](/2025/05/09/style/charles-frederick-worth-fashion-petit-palais-exhibition)
+
+[Virtual lobster museum gives visitors a pinch of Maine](/2025/05/09/travel/virtual-lobster-museum-maine)
+
+[He was killed in a road rage incident. His family used AI to bring him to the courtroom to address his killer](/2025/05/09/tech/ai-courtroom-victim-impact-statement-arizona)
+
+[Global Airlines promised luxurious flights on a fleet of A380 superjumbos. The launch is somewhat different](/2025/05/09/travel/global-airlines-a380-superjumbos-fleet-launch)
+
+[This motorcycle racer broke his back in a crash — and it ended up saving his life](/2025/05/09/sport/austin-forkner-supercross-racing-profile-spt)
+
+[Shortlisted designs for Queen Elizabeth II’s official London memorial unveiled](/2025/05/09/style/queen-elizabeth-ii-memorial-london-shortlist)
+
+Subscribe
+
+Sign in
+
+My Account
+
+* [Settings](/account/settings)
+* [Newsletters](/newsletters)
+* [Topics you follow](/follow?iid=fw_var-nav)
+* [Sign out](#)
+
+Your CNN account
+Sign in to your CNN account
+
+---
+
+[Live TV](https://www.cnn.com/live-tv)
+[Listen](https://www.cnn.com/audio)
+[Watch](https://www.cnn.com/video)
+
+
+---
+
+* [US](https://www.cnn.com/us)
+  + [Crime + Justice](https://www.cnn.com/us/crime-and-justice)
+* [World](https://www.cnn.com/world)
+  + [Africa](https://www.cnn.com/world/africa)
+  + [Americas](https://www.cnn.com/world/americas)
+  + [Asia](https://www.cnn.com/world/asia)
+  + [Australia](https://www.cnn.com/world/australia)
+  + [China](https://www.cnn.com/world/china)
+  + [Europe](https://www.cnn.com/world/europe)
+  + [India](https://www.cnn.com/world/india)
+  + [Middle East](https://www.cnn.com/world/middle-east)
+  + [United Kingdom](https://www.cnn.com/world/united-kingdom)
+* [Politics](https://www.cnn.com/politics)
+  + [Trump](https://www.cnn.com/politics/president-donald-trump-47)
+  + [Facts First](https://www.cnn.com/politics/fact-check)
+  + [CNN Polls](https://www.cnn.com/polling)
+  + [2025 Elections](https://www.cnn.com/election/2025)
+* [Business](https://www.cnn.com/business)
+  + [Tech](https://www.cnn.com/business/tech)
+  + [Media](https://www.cnn.com/business/media)
+  + [Calculators](https://www.cnn.com/business/financial-calculators)
+  + [Videos](https://www.cnn.com/business/videos)
+* [Markets](https://www.cnn.com/markets)
+  + [Pre-markets](https://www.cnn.com/markets/premarkets)
+  + [After-Hours](https://www.cnn.com/markets/after-hours)
+  + [Fear & Greed](https://www.cnn.com/markets/fear-and-greed)
+  + [Investing](https://www.cnn.com/business/investing)
+  + [Markets Now](https://www.cnn.com/business/markets-now)
+  + [Nightcap](https://www.cnn.com/business/markets/nightcap)
+* [Health](https://www.cnn.com/health)
+  + [Life, But Better](https://www.cnn.com/interactive/life-but-better/)
+  + [Fitness](https://www.cnn.com/health/life-but-better/fitness)
+  + [Food](https://www.cnn.com/health/life-but-better/food)
+  + [Sleep](https://www.cnn.com/health/life-but-better/sleep)
+  + [Mindfulness](https://www.cnn.com/health/life-but-better/mindfulness)
+  + [Relationships](https://www.cnn.com/health/life-but-better/relationships)
+* [Entertainment](https://www.cnn.com/entertainment)
+  + [Movies](https://www.cnn.com/entertainment/movies)
+  + [Television](https://www.cnn.com/entertainment/tv-shows)
+  + [Celebrity](https://www.cnn.com/entertainment/celebrities)
+* [Tech](https://www.cnn.com/business/tech)
+  + [Innovate](https://www.cnn.com/business/tech/innovate)
+  + [Foreseeable Future](https://www.cnn.com/business/tech/foreseeable-future)
+  + [Mission: Ahead](https://www.cnn.com/business/tech/mission-ahead)
+  + [Work Transformed](https://www.cnn.com/business/work-transformed)
+  + [Innovative Cities](https://www.cnn.com/business/tech/innovative-cities)
+* [Style](https://www.cnn.com/style)
+  + [Arts](https://www.cnn.com/style/arts)
+  + [Design](https://www.cnn.com/style/design)
+  + [Fashion](https://www.cnn.com/style/fashion)
+  + [Architecture](https://www.cnn.com/style/architecture)
+  + [Luxury](https://www.cnn.com/style/luxury)
+  + [Beauty](https://www.cnn.com/style/beauty)
+  + [Video](https://www.cnn.com/style/videos)
+* [Travel](https://www.cnn.com/travel)
+  + [Destinations](https://www.cnn.com/travel/destinations)
+  + [Food & Drink](https://www.cnn.com/travel/food-and-drink)
+  + [Stay](https://www.cnn.com/travel/stay)
+  + [News](https://www.cnn.com/travel/news)
+  + [Videos](https://www.cnn.com/travel/videos)
+* [Sports](https://www.cnn.com/sports)
+  + [Pro Football](https://bleacherreport.com/nfl)
+  + [College Football](https://bleacherreport.com/college-football)
+  + [Basketball](https://bleacherreport.com/nba)
+  + [Baseball](https://bleacherreport.com/mlb)
+  + [Soccer](https://bleacherreport.com/world-football)
+  + [Olympics](https://www.cnn.com/sport/paris-olympics-2024)
+  + [Hockey](https://bleacherreport.com/nhl)
+* [Science](https://www.cnn.com/science)
+  + [Space](https://www.cnn.com/science/space)
+  + [Life](https://www.cnn.com/science/life)
+  + [Unearthed](https://www.cnn.com/science/unearthed)
+* [Climate](https://www.cnn.com/climate)
+  + [Solutions](https://www.cnn.com/climate/solutions)
+  + [Weather](https://www.cnn.com/weather)
+* [Weather](https://www.cnn.com/weather)
+  + [Video](https://www.cnn.com/weather/video)
+  + [Climate](https://www.cnn.com/climate)
+* [Ukraine-Russia War](https://www.cnn.com/world/europe/ukraine)
+* [Israel-Hamas War](https://www.cnn.com/world/middleeast/israel)
+* [Watch](https://www.cnn.com/videos)
+  + [Live TV](https://www.cnn.com/live-tv)
+  + [CNN Headlines](https://www.cnn.com/videos/fast/cnn-headlines)
+  + [CNN Shorts](https://www.cnn.com/shorts/cnn-shorts)
+  + [Shows A-Z](https://www.cnn.com/specials/tv/all-shows)
+  + [CNN10](https://www.cnn.com/cnn10)
+  + [CNN Max](https://www.max.com/channel/cnn-max)
+  + [CNN TV Schedules](https://www.cnn.com/tv/schedule/cnn)
+  + [FlashDocs](https://www.cnn.com/subscription/video/flashdocs/library)
+* [Listen](https://www.cnn.com/audio)
+  + [CNN 5 Things](https://www.cnn.com/audio/podcasts/5-things)
+  + [Chasing Life with Dr. Sanjay Gupta](https://www.cnn.com/audio/podcasts/chasing-life)
+  + [The Assignment with Audie Cornish](https://www.cnn.com/audio/podcasts/the-assignment)
+  + [One Thing](https://www.cnn.com/audio/podcasts/one-thing)
+  + [Tug of War](https://www.cnn.com/audio/podcasts/tug-of-war)
+  + [CNN Political Briefing](https://www.cnn.com/audio/podcasts/political-briefing)
+  + [The Axe Files](https://www.cnn.com/audio/podcasts/axe-files)
+  + [All There Is with Anderson Cooper](https://www.cnn.com/audio/podcasts/all-there-is-with-anderson-cooper)
+  + [All CNN Audio podcasts](https://www.cnn.com/audio)
+* [CNN Underscored](https://www.cnn.com/cnn-underscored)
+  + [Electronics](https://www.cnn.com/cnn-underscored/electronics)
+  + [Fashion](https://www.cnn.com/cnn-underscored/fashion)
+  + [Beauty](https://www.cnn.com/cnn-underscored/beauty)
+  + [Health & Fitness](https://www.cnn.com/cnn-underscored/health-fitness)
+  + [Home](https://www.cnn.com/cnn-underscored/home)
+  + [Reviews](https://www.cnn.com/cnn-underscored/reviews)
+  + [Deals](https://www.cnn.com/cnn-underscored/deals)
+  + [Gifts](https://www.cnn.com/cnn-underscored/gifts)
+  + [Travel](https://www.cnn.com/cnn-underscored/travel)
+  + [Outdoors](https://www.cnn.com/cnn-underscored/outdoors)
+  + [Pets](https://www.cnn.com/cnn-underscored/pets)
+* [Games](https://www.cnn.com/games)
+  + [Daily Crossword](https://www.cnn.com/games/play/cnn-crossword)
+  + [Jumble Crossword](https://www.cnn.com/games/play/jumble-crossword-daily)
+  + [Sudoblock](https://www.cnn.com/games/play/sudoblock)
+  + [Sudoku](https://www.cnn.com/games/play/gd-sudoku-a197ee3904d04e9d8b64dcd9fa3ace63)
+  + [5 Things Quiz](https://cnn.it/5thingsquiz)
+* [About CNN](https://www.cnn.com/about)
+  + [Subscribe](https://www.cnn.com/subscription?source=sub_web_footersubnav-link)
+  + [Photos](https://www.cnn.com/world/photos)
+  + [Investigations](https://www.cnn.com/us/cnn-investigates)
+  + [CNN Profiles](https://www.cnn.com/profiles)
+  + [CNN Leadership](https://www.cnn.com/profiles/cnn-leadership)
+  + [CNN Newsletters](https://www.cnn.com/newsletters)
+  + [Work for CNN](https://careers.wbd.com/cnnjobs)
+
+---
+
+[Watch](https://www.cnn.com/video)
+[Listen](https://www.cnn.com/audio)
+[Live TV](https://www.cnn.com/live-tv)
+
+
+---
+
+Follow CNN
+
+Subscribe
+
+Sign in
+
+My Account
+
+* [Settings](/account/settings)
+* [Newsletters](/newsletters)
+* [Topics you follow](/follow?iid=fw_var-nav)
+* [Sign out](#)
+
+Your CNN account
+Sign in to your CNN account
+
+---
+
+
+[Terms of Use](https://www.cnn.com/terms)
+[Privacy Policy](https://www.cnn.com/privacy)
+[Cookie Settings](#)
+[Ad Choices](https://www.cnn.com/ad-choices)
+[Accessibility & CC](https://www.cnn.com/accessibility)
+[About](https://www.cnn.com/about)
+[Subscribe](https://www.cnn.com/subscription?source=sub_web_footerlink-link)
+[Newsletters](https://www.cnn.com/newsletters)
+[Transcripts](https://www.cnn.com/transcripts)
+[Help Center](https://help.cnn.com/)
+
+© 2025 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.   
+ CNN Sans ™ & © 2016 Cable News Network.
+
+![](https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=456059511&iiqidtype=2&iiqpcid=6e32c080-1487-4906-822b-c39e070aec56&iiqpciddate=1746939159824&tsrnd=420_1746939159825&vrref=&jsver=5.082)
+![](https://ad-delivery.net/px.gif?ch=2)![](https://ad.doubleclick.net/favicon.ico?ad=300x250&ad_box_=1&adnet=1&showad=1&size=250x250)![](https://ad-delivery.net/px.gif?ch=1&e=0.3979072834888445)![iiq_pixel](https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=967415132&iiqidtype=2&iiqpcid=6e32c080-1487-4906-822b-c39e070aec56&iiqpciddate=1746939159824&tsrnd=596_1746939163393&pcid=3722573d-6dd2-4374-99c0-3a47719e29c2&idtype=0&jsver=6.11&cz=0%3A936%2C1%3A1279%2C2%3A1%2C3%3A1024%2C4%3A1280%2C5%3Aen-US&dw=1280&dh=1024&dpr=1&lan=en-US&testPercentage=95&testGroup=A&uh=%7B%220%22%3A%22%5C%22Not.A%2FBrand%5C%22%3Bv%3D%5C%2299%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22136%5C%22%22%2C%221%22%3A%22%3F0%22%2C%222%22%3A%22%5C%22Windows%5C%22%22%2C%223%22%3A%22%5C%22x64%5C%22%22%2C%224%22%3A%22%5C%2264%5C%22%22%2C%226%22%3A%22%5C%2210.0%5C%22%22%2C%227%22%3A%22%3F0%22%2C%228%22%3A%22%5C%22Not.A%2FBrand%5C%22%3Bv%3D%5C%2299.0.0.0%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22136.0.7103.25%5C%22%22%7D&vrref=https%3A%2F%2Fwww.cnn.com%2F&us_privacy=1---&gpc=undefined&gdpr=0)
+
+![CNN Logo](/wbdotp/consent/3d9a6f21-8e47-43f8-8d58-d86150f3e92b/0195f3ba-6603-7128-a578-04165ae93e2f/logos/9651e1f6-c35b-4377-be7f-5a0c93f0ecb8/fd2c628a-153d-49d4-b7b4-92a834c64b28/507420f5-a79f-4038-baea-bb890032307c/CNN_logo.png)
+
+#### Privacy Policy
+
+For privacy options, please see our privacy policy:  
+<https://www.cnn.com/privacy>.
+
+Back Button
+
+### Cookie List
+
+Search Icon
+
+Filter Icon
+
+Clear
+
+checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+checkbox label label
+
+checkbox label label
+
+checkbox label label
+
+Close
+
+[![Powered by Onetrust](/wbdotp/consent/3d9a6f21-8e47-43f8-8d58-d86150f3e92b/0195f3ba-6603-7128-a578-04165ae93e2f/logos/static/powered_by_logo.svg "Powered by OneTrust Opens in a new Tab")](https://www.onetrust.com/products/cookie-consent/)
+
+![](https://bea4.v.fwmrm.net/ad/u?mode=echo&cr=https://umto.www.cnn.com/user-sync%3Fbea4%3D%23%7Buser.id%7D%26domain%3Dcnn.com)![](https://image8.pubmatic.com/AdServer/ImgSync?p=161163&gdpr=0&gdpr_consent=&us_privacy=&pu=https%3A%2F%2Fimage4.pubmatic.com%2FAdServer%2FSPug%3Fp%3D161163%26mpc%3D4%26fp%3D1%26pmc%3DPM_PMC%26%26pr%3Dhttps%253A%252F%252Fwww.cnn.com%252Fuser-sync%253Fdomain%253Dcnn.com%2526kfyn%253D%2523PMUID)![](https://pixel-us-east.rubiconproject.com/exchange/sync.php?p=www)![](https://eq97f.publishers.tremorhub.com/pubsync?redir=https://umto.www.cnn.com/user-sync?goiz=%5Btvid%5D%26domain=cnn.com)
+
+IFRAME about:blank:
+
+
+IFRAME about:blank:
+
+
+IFRAME https://a125375509.cdn.optimizely.com/client_storage/a125375509.html:
+
+
+IFRAME https://healthguides.cnn.com/ucms/rss/cnn-hp-health-link-1?renderer=html:
+CNN HP Health Link 1
+
+CNN HP Health Link 1
+
+* [Cardiomyopathy: high blood pressure, low pulse](https://healthguides.cnn.com/treating-hypertrophic-cardiomyopathy/high-blood-pressure-low-pulse?did=t1_rss5)
+
+IFRAME https://postrelease.com/iframes/topics.html:
+
+
+IFRAME about:blank:
+
+
+IFRAME about:blank:
+
+
+IFRAME https://widgets.outbrain.com/nanoWidget/externals/topics/topics.html?r=https%3A%2F%2Fwww.cnn.com:
+Outbrain Topics Frame
+
+IFRAME about:blank:
+
+
+IFRAME https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=185&dmpenabled=true&filterDMP=OEN&d=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&cmpNeeded=false&gdprVer=null&ccpa=1---&country=US&obRecsAbtestAndVars=1537-5725,1538-5734,1539-5744,1508-5548,1540-5752,1733-6818,1702-6666,1323-4539,1164-3777,1551-5797,1169-3791,1431-5163,792-2427,1149-3716,1726-6773&initiator=ob&attributionSrc=true:
+OB user sync![](https://idsync.rlcdn.com/420046.gif?partner_uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://b1sync.zemanta.com/usersync/outbrain/?puid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://ib.adnxs.com/getuid?https://sync.outbrain.com/cookie-sync?p=appnexus&uid=$UID&obUid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://dpm.demdex.net/ibs:dpid=133726&dpuuid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_pd=1&gdpr_consent=)![](https://sync-jp.im-apps.net/imid/set?cid=1000047&tid=obid&uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://match.adsrvr.org/track/cmf/generic?ttd_pid=icco6m5&ttd_tpi=1&gdpr=0&gdpr_consent=&us_privacy=1---&ttd_passthrough=initiator%3Dob%26us_privacy%3D1---)![](https://beacon.krxd.net/usermatch.gif?partner=outbrain&partner_uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://aa.agkn.com/adscores/g.pixel?sid=9212295978&puid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://rtb.mfadsrvr.com/sync?ssp=outbrain&ssp_user_id=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://x.bidswitch.net/sync?ssp=outbrain&user_id=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&us_privacy=1---&gdpr=0&gdpr_pd=1&gdpr_consent=&initiator=ob)![](https://dis.criteo.com/dis/usersync.aspx?r=74&p=126&cp=outbrain&cu=1&url=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dcriteo%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob%26uid%3D%40%40CRITEO_USERID%40%40)![](https://cm.g.doubleclick.net/pixel?google_nid=bidswitch_dbm&google_cm&google_sc&google_dbm)![](https://dsp-cookie.adfarm1.adition.com?ssp=25&gdpr=0&gdpr_consent=&rurl=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dactiveagent%26uid%3D%7Bglobalid%7D%26us_privacy%3D1---%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://ps.eyeota.net/match?bid=1mpn7m0&uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---)![](https://id.geistm.com/m/OB/IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://creativecdn.com/cm-notify?pi=outbrain&obUid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://pixel.rubiconproject.com/exchange/sync.php?p=outbrain&obUid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://sync.crwdcntrl.net/map/c=14516/tp=OBRN/tpid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://loadus.exelator.com/load/?p=580&g=2&j=0&buid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://ssum-sec.casalemedia.com/usermatchredir?s=193091&cb=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dindxexcg%26uid%3D%24%7BUSER%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://image8.pubmatic.com/AdServer/ImgSync?p=160065&gdpr=0&gdpr_consent=&pu=https%3A%2F%2Fimage4.pubmatic.com%2FAdServer%2FSPug%3Fp%3D160065%26mpc%3D4%26fp%3D1%26pmc%3DPM_PMC%26pr%3Dhttps%253A%252F%252Fsync.outbrain.com%252Fcookie-sync%253Fp%253Dpubmatic%2526obUid%253DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%2526gdpr%253D0%2526initiator%253Dob%2526gdpr_consent%253D%2526us_privacy%253D1---%2526uid%253D%2523PMUID)![](https://u.openx.net/w/1.0/cm?id=00df9f64-6f67-4cae-aeb2-d951da52047c&r=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dopenx%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26uid%3D)![](https://ups.analytics.yahoo.com/ups/58523/occ?gdpr=0&gdpr_consent=&us_privacy=1---&redir=true)![](https://ad.360yield.com/server_match?partner_id=1863&gdpr=0&gdpr_consent=&r=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dimprove_digital%26uid%3D%7BPUB_USER_ID%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://s.ad.smaato.net/c/?adExInit=o&gdpr=0&gdpr_consent=&redir=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dsmaato%26uid%3D%24UID%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://ssbsync.smartadserver.com/api/sync?callerId=30&gdpr=0&gdpr_consent=&us_privacy=1---&redirectUri=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dsmart%26uid%3D%5Bssb_sync_pid%5D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://c.bing.com/c.gif?red3=MSOB_pd&uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://id.rlcdn.com/711945.gif?ct=4&cv=)![](https://pixel-sync.sitescout.com/dmp/pixelSync?nid=127&gdpr=0&gdpr_consent=&us_privacy=1---&redir=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dcentro%26uid%3D%7BuserId%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://cms.quantserve.com/pixel/p-cxanv6hYFn1kw.gif?idmatch=0&partner_user_id=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://bh.contextweb.com/bh/rtset?pid=562709&ev=1&obUid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&rurl=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dpulsepoint%26uid%3D%25%25VGUID%25%25%26initiator%3Dob)![](https://trace.mediago.io/ju/cs/outbrain?cb=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dbaidu%26uid%3D%7Buserid%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://id5-sync.com/s/164/9.gif?puid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---)![](https://cm.rtbsystem.com/usermatch/ob?redirect=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Drtbsystem%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26uid%3D%7Buserid%7D%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://rtb.adentifi.com/CookieOutbrain?redirect=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dadtheorent%26uid%3D%24%7BUSER%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://match.sharethrough.com/universal/v1?supply_id=vviA7jzZ&source_user_id=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob)![](https://pxl.iqm.com/i/ck/outbrain?cid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&redir=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Diqm%26uid%3D%7BIQM_COOKIE%7D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://sync.1rx.io/usersync2/rmpssp?sub=outbrain&redir=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dunruly%26uid%3D%5BRX_UUID%5D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://cs.media.net/cksync?cs=83&type=oub&gdpr=0&gdpr_consent=&US_PRIVACY=1---&redirect=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dmedianet%26uid%3D%3Cvsid%3E%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://cs.admanmedia.com/sync/outbrain?puid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&ccpa=1---&redir=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dadmanmedia%26uid%3D%5BUID%5D%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---%26initiator%3Dob)![](https://csync.loopme.me/?pubid=11552&gdpr=0&gdpr_consent=&redirect=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dloopme%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26us_privacy%3D1---%26uid%3D%7Bviewer_token%7D)![](https://a.usbrowserspeed.com/cs?pid=a888b7f2f438f7f3709b4eec23ac88aab864f8b1b0fc3ccd834d0c83eaed3c5f&puid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://sync.srv.stackadapt.com/sync?nid=304&gdpr=0&gdpr_consent=&us_privacy=1---&initiator=ob&obuid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://www.temu.com/api/adx/cm/pixel-outbrain?obUid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&cb=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dtemu%26uid%3D%7Bdsp_user_id%7D%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---)![](https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&dpi=1494805541&pcid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU)![](https://sync.teads.tv/um?ssb_provider_id=5&uid=IJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU&gdpr=0&gdpr_consent=&us_privacy=1---&fb=https%3A%2F%2Fsync.outbrain.com%2Fcookie-sync%3Fp%3Dteads%26uid%3D%5BVID%5D%26initiator%3Dob%26obUid%3DIJAvbpLcCMA21t0twxvJJrPoOLDmFqPkRts3ogeuwcuCLzdqxVhx5udo19ySWxWU%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D1---)
+
+IFRAME https://lightning.warnermediacdn.com/cdp/psmtk/getcdpid.html:
+iFrame Loaded
+=============
+
+IFRAME https://securepubads.g.doubleclick.net/static/topics/topics_frame.html:
+Topics Frame
+
+IFRAME https://assets.bounceexchange.com/assets/bounce/local_storage_frame17.min.html#340:
+
+
+IFRAME about:blank:
+
+
+IFRAME about:blank:
+
+
+IFRAME about:blank:
+[![Advertisement](https://s0.2mdn.net/simgad/11009534672480978672)](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuKvhn20-KCMu5FzhOzf7QPpp0PrKwmdbz2rOdqGfKrzH2x721lrUDTwYPiraWOsbXQlRGJUaOsTuk1lmjVIiwEpefPs0dmczhYxZlC7bDpnGcOZ3SHQpJOamju7L7NiXTp3OugcuN-uKKwaoLfEl1s2XJoqqj2MRGjXHaSXpumBaPCviTvHDEIr1dtffBuKYveHyEyhxOXzvMR71ly9ri4HYmwr252mZpfWLSNOGqZ1BdG80Z2k0qJYykiDmQymmz31bYjwHPhj8aiSgS39We6q4p4DBNICDkFbFV0_Q5rpiHIltAOZ87YtGRTquYe2wcWLcQJ_5lEeiapAHbFqPxfsxKSEB6_ui7tvTRLye45eip-gdDCKKG4GhD7ZSOGugwJOQws3bTFher8ecDSWCysu3qHOmjswuWLOFMfXjzpV2x3Nx4bam7PA1-cFtk7xHqK06M16r635qHZvanffU9qd39z0OU1QA&sai=AMfl-YTTF_qKFZJ-ZZjexMhDerFELwDWbwBXwE_ImmUrb8H-gIW18Zk65jJgyi_IPYJwYP2Kk9gk3wvqmKsYYFFMD3Wupc5EEkbWwIPaC1m9WXMhbs85Io3az9_bVik&sig=Cg0ArKJSzOw2zVlDs4YT&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://d.agkn.com/pixel/10691/%3Fche%3D3899185662%26cmid%3D30632187%26sid%3D8845954%26pid%3D414897072%26cgid%3D606816033%26cid%3D232858888%26aid%3D13623228%26gdpr%3D%24%7BGDPR%7D%26gdpr_consent%3D%24%7BGDPR_CONSENT_468%7D%26l1%3Dhttps://www.max.com/shows/hacks/67e940b7-aab2-46ce-a62b-c7308cde9de7%3Futm_source%3DN1957659.2125102CNNNETWORK%26utm_medium%3Doo%26utm_id%3Dcm%7C30632187%7C8845954%7C414897072%7C232858888%26dclid%3D%25edclid!)
+
+IFRAME https://js-sec.indexww.com/um/ixmatch.html:
+
+
+IFRAME https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156512:
+![](https://idsync.rlcdn.com/420486.gif?partner_uid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B)![](https://pixel.onaudience.com/?partner=214&mapped=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&gdpr=0&gdpr_consent=)![](https://uipglob.semasio.net/pubmatic/1/info?sType=sync&sExtCookieId=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&sInitiator=external&gdpr=0&gdpr_consent=)![](https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=zw_WkQM5S1aKQgISrA7qGw%3D%3D&gdpr=0&gdpr_consent=&google_cm)![](https://cm.g.doubleclick.net/pixel?google_nid=pubmatic&google_cm&google_sc&gdpr=0&gdpr_consent=)![](https://um.simpli.fi/pubmatic?https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9ODA2JnRsPTUxODQwMA==&piggybackCookie=uid:$UID&gdpr=0&gdpr_consent=)![](https://match.adsrvr.org/track/cmf/generic?ttd_pid=pubmatic&ttd_tpi=1&gdpr=0&gdpr_consent=)![](https://ups.analytics.yahoo.com/ups/58292/sync?_origin=1&uid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&redir=true&gdpr=0&gdpr_consent=)![](https://pr-bh.ybp.yahoo.com/sync/pubmatic/CF0FD691-0339-4B56-8A42-0212AC0EEA1B?gdpr=0&gdpr_consent=)![](https://sync.ipredictive.com/d/sync/cookie/generic?https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MzI1MCZ0bD0xMjk2MDA=&piggybackCookie=${ADELPHIC_CUID}&gdpr=0&gdpr_consent=)![](https://pubmatic-match.dotomi.com/match/bounce/current?networkId=17100&version=1&nuid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&gdpr=0&gdpr_consent=)![](https://rtb.adentifi.com/CookieSyncPubMatic&gdpr=0&gdpr_consent=)![](https://pixel-sync.sitescout.com/dmp/pixelSync?nid=3&gdpr=0&gdpr_consent=)![](https://ad.turn.com/r/cs?pid=1&gdpr=0&gdpr_consent=)![](https://pmp.mxptint.net/sn.ashx?&gdpr=0&gdpr_consent=)![](https://us01.z.antigena.com/l/FZt5psomz79DGe~O1V5PkX7S8-NVJIdw0INR-k~Duu9c36GyIDyElf4y8fa2~-9InNSq4BCadyu-8tQSiIkaVleT~Yh8GI4ocNSeo4~API4DJEsYNIMg2sPMMXvjcckTUFy53ZYw3gzv35jSAchydRkSr2XFgqe-kzzlKTlv1VT7-TlAc0PcX7nFzbKlHypwbpU3AWUAJgUx CF0FD691-0339-4B56-8A42-0212AC0EEA1B&rnd=RND)![](https://match.adsby.bidtheatre.com/pubmaticmatch?redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNjImdGw9MTI5NjAw&piggybackCookie=uid:$UID&gdpr=0&gdpr_consent=)
+
+IFRAME https://eus.rubiconproject.com/usync.html?p=20986&endpoint=us-east:
+User-Sync
+
+IFRAME about:srcdoc:
+
+
+IFRAME :
+
+
+IFRAME https://tpc.googlesyndication.com/sodar/62bHydCX.html:
+
+
+IFRAME https://ssum-sec.casalemedia.com/usermatch?us_privacy=1---&d=https%3A%2F%2Fwww.cnn.com%2F&s=184674&cb=https%3A%2F%2Fcdn.indexww.com%2Fht%2Fhtw-pixel.gif%3F:
+![](https://match.adsrvr.org/track/cmf/casale?us_privacy=1---)![](https://cm.g.doubleclick.net/pixel?google_nid=index&google_cm&google_hm=aCAtG8AoIkYAF4r0AHnAtQAAB-UAAAAB&gdpr_consent=&us_privacy=1---&gdpr=&gpp=&gpp_sid=)![](https://dsum-sec.casalemedia.com/rrum?ixi=1&cm_dsp_id=85&cb=https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dcasale_media2_dbm%26google_cm%26google_sc%26google_hm%3D&us_privacy=1---)![](https://s.amazon-adsystem.com/dcm?pid=78af914c-e755-4b90-bded-1b172aedc763&us_privacy=1---&gdpr=&gdpr_consent=&id=aCAtG8AoIkYAF4r0AHnAtQAAB-UAAAAB&gpp=&gpp_sid=)![](https://csync.loopme.me/?pubid=11466&redirect=https%3A%2F%2Fdsum-sec.casalemedia.com%2Frum%3Fcm_dsp_id%3D24%26external_user_id%3D%7Bviewer_token%7D&us_privacy=1---&gdpr=&gdpr_consent=&gpp=&gpp_sid=)![](https://dsp.360yield.com/dsp_match/275?ssp=10&gdpr=&gdpr_consent=&r=https%3A%2F%2Fdsum-sec.casalemedia.com%2Fcrum%3Fcm_dsp_id%3D15%26external_user_id%3D%7BDSP_USER_ID%7D&userId=aCAtG8AoIkYAF4r0AHnAtQAA%262021&us_privacy=1---)![](https://d.adroll.com/cm/index/tp_out?advertisable=3GMDZMBFQREVBC75SYYKWH&us_privacy=1---)![](https://cdn.indexww.com/ht/htw-pixel.gif?aCAtG8AoIkYAF4r0AHnAtQAA%262021=&us_privacy=1---)
+
+IFRAME https://c1.adform.net/serving/cookie/match?CC=1&party=14&cid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&gdpr=0&gdpr_consent=:
+match (1×1)![](https://c1.adform.net/serving/cookie/match?CC=1&party=14&cid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&gdpr=0&gdpr_consent=)
+
+IFRAME https://s.amazon-adsystem.com/dcm?pid=3b882453-6770-4785-baf8-a598533c054a&id=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&redir=true&gdpr=0&gdpr_consent=&dcc=t:
+dcm (1×1)![](https://s.amazon-adsystem.com/dcm?pid=3b882453-6770-4785-baf8-a598533c054a&id=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&redir=true&gdpr=0&gdpr_consent=&dcc=t)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTc4JnRsPTE1NzY4MDA=&piggybackCookie=773979155131964628&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTc4JnRsPTE1NzY4MDA=&piggybackCookie=773979155131964628&gdpr=0&gdpr_consent=)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyOTcmdGw9MTI5NjAw&piggybackCookie=AAOPG07QQFoAABrMvV0QQQ&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyOTcmdGw9MTI5NjAw&piggybackCookie=AAOPG07QQFoAABrMvV0QQQ&gdpr=0&gdpr_consent=)
+
+IFRAME https://match.deepintent.com/usersync/141?gdpr=0&gdpr_consent=:
+
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MzEmdGw9MTI5NjAw&piggybackCookie=BakZUcaRWzNGD_p-xMOwsgOArUo&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MzEmdGw9MTI5NjAw&piggybackCookie=BakZUcaRWzNGD_p-xMOwsgOArUo&gdpr=0&gdpr_consent=)
+
+IFRAME https://sync-tm.everesttech.net/ct/upi/pid/b9pj45k4?redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MjE5MSZ0bD0yNTkyMDA=&piggybackCookie=${TM_USER_ID}&gdpr=0&gdpr_consent=&_test=aCAtHAAA8ABzygAw:
+b9pj45k4 (1×1)![](https://sync-tm.everesttech.net/ct/upi/pid/b9pj45k4?redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MjE5MSZ0bD0yNTkyMDA=&piggybackCookie=${TM_USER_ID}&gdpr=0&gdpr_consent=&_test=aCAtHAAA8ABzygAw)
+
+IFRAME chrome-error://chromewebdata/:
+ad.mrtnsvr.com
+
+
+
+This site can’t be reached
+==========================
+
+**ad.mrtnsvr.com** unexpectedly closed the connection.
+
+Try:
+
+* Checking the connection
+* [Checking the proxy and the firewall](#buttons)
+
+ERR\_CONNECTION\_CLOSED
+
+Reload
+
+
+Details
+
+Check your Internet connection
+
+Check any cables and reboot any routers, modems, or other network
+devices you may be using.
+
+Allow Chromium to access the network in your firewall or antivirus
+settings.
+
+If it is already listed as a program allowed to access the network, try
+removing it from the list and adding it again.
+
+If you use a proxy server…
+
+Go to
+the Chromium menu >
+Settings
+>
+Show advanced settings…
+>
+Change proxy settings…
+and make sure your configuration is set to "no proxy" or "direct."
+
+**ad.mrtnsvr.com** unexpectedly closed the connection.
+
+![](data:image/png;base64,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)
+![](data:image/png;base64,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)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI3MzkmdGw9MTI5NjAw&piggybackCookie=1783777345563579789:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI3MzkmdGw9MTI5NjAw&piggybackCookie=1783777345563579789)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9Mjk0NSZ0bD0xMjk2MDA=&piggybackCookie=5c6e3441-a7cd-49a1-8faf-33c51d590947&gdpr=&gdpr_consent=&gdpr_pd=&us_privacy=#US_PRIVACY:
+
+
+IFRAME https://beacon.lynx.cognitivlabs.com/pbmtc.gif?puid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B:
+pbmtc.gif (1×1)![](https://beacon.lynx.cognitivlabs.com/pbmtc.gif?puid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0ODkmdGw9NDMyMDA=&piggybackCookie=OPUaa78e063877f469e852aedca19cb0308:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0ODkmdGw9NDMyMDA=&piggybackCookie=OPUaa78e063877f469e852aedca19cb0308)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?gdpr=0&vcode=bz0yJnR5cGU9MSZjb2RlPTExMTMmdGw9NDMyMDA=&piggybackCookie=xEBeo8AcXfHfT1v3kRlB9sVBCvXfTFygykrrriwt:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?gdpr=0&vcode=bz0yJnR5cGU9MSZjb2RlPTExMTMmdGw9NDMyMDA=&piggybackCookie=xEBeo8AcXfHfT1v3kRlB9sVBCvXfTFygykrrriwt)
+
+IFRAME https://sync.resetdigital.co/csync/pubmatichttps://sync.resetdigital.co/csync/pubmatic&gdpr=0&gdpr_consent=:
+
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMDEmdGw9MTI5NjAw&piggybackCookie=c7110756-2e23-11f0-a7e8-06b7f337b043:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMDEmdGw9MTI5NjAw&piggybackCookie=c7110756-2e23-11f0-a7e8-06b7f337b043)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM4NTgmdGw9NDMyMDA=&piggybackCookie=ec1b5677-8478-5127-a64c-728a5a765637&gdpr=0&gdpr_consent=[GDPR_CONSENT]&us_privacy=[CCPA]:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM4NTgmdGw9NDMyMDA=&piggybackCookie=ec1b5677-8478-5127-a64c-728a5a765637&gdpr=0&gdpr_consent=[GDPR_CONSENT]&us_privacy=[CCPA])
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMjYmdGw9MTI5NjAw:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMzMjYmdGw9MTI5NjAw)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode&gdpr_consent=null&piggybackCookie={viewer_token}&gdpr=0:
+
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNTQmdGw9NDMyMDA%3D&piggybackCookie=WQyQHc1Kph5McIVL70_iJUPsV5EbzVZfJVb8rFbhW8g&pi=pubmatic&gdpr=0&gdpr_consent=&us_privacy=1---&gpp=&gpp_sid=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNTQmdGw9NDMyMDA%3D&piggybackCookie=WQyQHc1Kph5McIVL70_iJUPsV5EbzVZfJVb8rFbhW8g&pi=pubmatic&gdpr=0&gdpr_consent=&us_privacy=1---&gpp=&gpp_sid=)
+
+IFRAME https://dsum-sec.casalemedia.com/crum?cm_dsp_id=40&external_user_id=0689672b-a8fa-4ca7-a523-81a7584c058a&expiration=1754887964:
+crum (1×1)![](https://dsum-sec.casalemedia.com/crum?cm_dsp_id=40&external_user_id=0689672b-a8fa-4ca7-a523-81a7584c058a&expiration=1754887964)
+
+IFRAME about:blank:
+
+
+IFRAME https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&p=162932&us_privacy=1---:
+![](https://aa.agkn.com/adscores/g.pixel?sid=9212308278&puid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B)![](https://sync.crwdcntrl.net/qmap?c=240&tp=PUBM&tpid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B&gdpr=0&gdpr_consent=)![](https://pixel.tapad.com/idsync/ex/receive?partner_id=3371&partner_device_id=CF0FD691-0339-4B56-8A42-0212AC0EEA1B)![](https://i.liadm.com/s/75145?bidder_id=195755&bidder_uuid=CF0FD691-0339-4B56-8A42-0212AC0EEA1B)
+
+IFRAME https://eus.rubiconproject.com/usync.html?us_privacy=1---:
+User-Sync
+
+IFRAME https://eb2.3lift.com/sync?us_privacy=1---&:
+![](https://match.adsrvr.org/track/cmf/generic?ttd_pid=svx9t50&ttd_tpi=1&gdpr=0&gdpr_consent=&gpp=&gpp_sid=)
+![](https://cm.g.doubleclick.net/pixel?google_nid=triplelift&google_cm&google_sc&gdpr=0&gdpr_consent=)
+![](https://eb2.3lift.com/sync/google/demand?sync=1&gdpr=0&gdpr_consent=)
+![](https://eb2.3lift.com/ebda?sync=1&gdpr=0&gdpr_consent=)
+![](https://px.ads.linkedin.com/setuid?partner=tripleliftdbredirect&tlUid=3049252138443336279866&dbredirect=true&gdpr=0&consent=)
+![](https://i.liadm.com/s/88342?bidder_id=246498&bidder_uuid=3049252138443336279866)
+![](https://pr-bh.ybp.yahoo.com/sync/triplelift/3049252138443336279866?gdpr=0&gdpr_consent=)
+![](https://c.bing.com/c.gif?xid=3049252138443336279866&Red3=TLMS_pd)
+![](https://triplelift-match.dotomi.com/match/bounce/current?networkId=74572&version=1&gdpr=0&gdpr_consent=)
+![](https://sync.srv.stackadapt.com/sync?nid=13&gdpr=0&gdpr_consent=&gpp=&gpp_sid=)
+
+IFRAME https://js-sec.indexww.com/um/ixmatch.html:
+
+
+IFRAME https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.cnn.com&us_privacy=1---&gpp=#{%22bundle%22:%22EmsH9l9zRzNBSWZCMFlkQXR4ZDlEWlcxMkVWZ0ExVkpZSUZwJTJCR1FNQlpoOUdQZWd4UWlLcTRPaFZ5SlhpSTJUJTJCZFBRJTJGRlNod2RLaGI3bzFodlQzZno5dVklMkZIUVM4U3lDOVQ4UXJIajE2RnE3cCUyRm8lM0Q%22,%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.8576366799060077%22,%22tld%22:%22www.cnn.com%22,%22topUrl%22:%22www.cnn.com%22,%22version%22:%229_30_0%22}:
+
+
+IFRAME https://ssum-sec.casalemedia.com/usermatch?us_privacy=1---&d=https%3A%2F%2Fwww.cnn.com%2F&s=184674&cb=https%3A%2F%2Fcdn.indexww.com%2Fht%2Fhtw-pixel.gif%3F:
+![](https://i.liadm.com/s/31327?bidder_id=14481&bidder_uuid=aCAtG8AoIkYAF4r0AHnAtQAA%262021&gpdr=&gdpr_consent=&us_privacy=1---&gpp=&gpp_sid=)![](https://pr-bh.ybp.yahoo.com/sync/casale/aCAtG8AoIkYAF4r0AHnAtQAAB-UAAAAB?gdpr_consent=&us_privacy=1---&gdpr=&gpp=&gpp_sid=)![](https://secure.adnxs.com/getuid?https://dsum-sec.casalemedia.com/crum?cm_dsp_id=46&external_user_id=$UID&us_privacy=1---)![](https://cms.quantserve.com/pixel/p-Z8PuJEk6U7Hyq.gif?idmatch=0&us_privacy=1---)![](https://match.deepintent.com/usersync/113?us_privacy=1---)![](https://b1sync.zemanta.com/usersync/index/?puid=aCAtG8AoIkYAF4r0AHnAtQAA%262021&cb=https%3A%2F%2Fdsum-sec.casalemedia.com%2Fcrum%3Fexternal_user_id%3D_ZUID_&gdpr=&gdpr_consent=&us_privacy=1---)![](https://sync.mathtag.com/sync/img?mt_exid=15&redir=https%3A%2F%2Fdsum-sec.casalemedia.com%2Fcrum%3Fcm_dsp_id%3D3%26external_user_id%3D%5BMM_UUID%5D&us_privacy=1---&gdpr=&gdpr_consent=)![](https://s.company-target.com/s/ix?cm_dsp_id=18&us_privacy=1---&gdpr=&gdpr_consent=&gpp=&gpp_sid=)![](https://cdn.indexww.com/ht/htw-pixel.gif?aCAtG8AoIkYAF4r0AHnAtQAA%262021=&us_privacy=1---)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD0xMjk2MDA==&piggybackCookie=uid:d52c6820-2d1e-4100-9c8e-1fd896f9cdfe&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MiZ0bD0xMjk2MDA==&piggybackCookie=uid:d52c6820-2d1e-4100-9c8e-1fd896f9cdfe&gdpr=0&gdpr_consent=)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyMDMmdGw9NDMyMDA=&piggybackCookie=OPTOUT:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyMDMmdGw9NDMyMDA=&piggybackCookie=OPTOUT)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI4NzUmdGw9NDMyMDA=&gdpr=0&gdpr_consent=&piggybackCookie=6219525045717698388:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTI4NzUmdGw9NDMyMDA=&gdpr=0&gdpr_consent=&piggybackCookie=6219525045717698388)
+
+IFRAME https://ipac.ctnsnet.com/int/cm?exc=14&redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MTEmdGw9MjAxNjA=&piggybackCookie=[user_id]&gdpr=0&gdpr_consent=:
+cm (1×1)![](https://ipac.ctnsnet.com/int/cm?exc=14&redir=https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM0MTEmdGw9MjAxNjA=&piggybackCookie=[user_id]&gdpr=0&gdpr_consent=)
+
+IFRAME :
+
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTE5MjgmdGw9NDMyMDA=&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTE5MjgmdGw9NDMyMDA=&gdpr=0&gdpr_consent=)
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MTgmdGw9MjAxNjA=:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MTgmdGw9MjAxNjA=)
+
+IFRAME https://sync.adkernel.com/user-sync?zone=218872&r=https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTM2MjgmdGw9MjE2MDA=&piggybackCookie={UID}&gdpr=0&gdpr_consent=&us_privacy=1---:
+```
+{UID} macro not found
+```
+
+IFRAME https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyMDImdGw9MTI5NjAw&piggybackCookie=Q5IPpRLbCX2FJHa1Hi0gaA:
+Pug (1×1)![](https://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyMDImdGw9MTI5NjAw&piggybackCookie=Q5IPpRLbCX2FJHa1Hi0gaA)
+
+IFRAME https://core.iprom.net/cookiesync?gdpr=0&gdpr_consent=:
+cookiesync (1×1)![](https://core.iprom.net/cookiesync?gdpr=0&gdpr_consent=)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNzQmdGw9MTI5NjAw&piggybackCookie=uid:Q8e5rKaU1UdYGb5&gdpr=0&gdpr_consent=:
+Pug (1×1)![](https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMwNzQmdGw9MTI5NjAw&piggybackCookie=uid:Q8e5rKaU1UdYGb5&gdpr=0&gdpr_consent=)
+
+IFRAME https://simage2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MjkzNiZ0bD00MzIwMA==&piggybackCookie=uid:974BB93A951544F7BC94D11204C4DBA9&gdpr=0&gdpr_consent=:
+
+
+IFRAME https://gum.criteo.com/syncframe?origin=publishertag&topUrl=www.cnn.com#{%22bundle%22:{%22value%22:%22GB5HNV9zRzNBSWZCMFlkQXR4ZDlEWlcxMkVVMDNZYmRoWmVaa3ZackxzQzNwanZhZ0FhaFg1NGMxek1DUm5uZEdrQVZuTTlIQWxmYVdUMDl5M3IlMkJpSGhmaHhGcVdzRVZ0R3VxRWpMaDNib0Vnd2hmcDdsOUQlMkYwbW1RRHp5YlBwTnpBcG82TkJYR25qQVFsc1F6MmVxa2ZRZkl3JTNEJTNE%22,%22origin%22:3},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22cnn.com%22,%22topUrl%22:%22www.cnn.com%22,%22version%22:160,%22origin%22:%22publishertag%22,%22requestId%22:%220.6599282501643008%22}:
+
+
+IFRAME https://www.google.com/recaptcha/api2/aframe:
+![](https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=235&li=gpt_m202505060101&jk=8189517713752917&rc=)
+
+📍 Step 3
+👍 Eval: Success - I extracted the top headlines from the CNN homepage
+🧠 Memory: The CNN homepage contains various headlines and sections. Step 4/15.
+🎯 Next goal: Scroll down to see more headlines and gather additional information
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 4
+Failed to parse model output: {"name": "AgentOutput", "parameters": {"current_state": {"evaluation_previous_goal": "Success - I scrolled down the page to see more headlines", "memory": "Task: Retrieve today's top 20 headlines from CNN. Step 5/15. Current URL: https://www.cnn.com/. Scrolled down to see more content.", "next_goal": "Continue scrolling to gather more headlines"}, "action": [{"scroll_down": {}}]}} IPAI-output with Extra data: line 1 column 385 (char 384), could not extract JSON.
+Failed to parse model output: content='{"name": "AgentOutput", "parameters": {"current_state": {"evaluation_previous_goal": "Success - I scrolled down the page to see more headlines", "memory": "Task: Retrieve today\'s top 20 headlines from CNN. Step 5/15. Current URL: https://www.cnn.com/. Scrolled down to see more content.", "next_goal": "Continue scrolling to gather more headlines"}, "action": [{"scroll_down": {}}]}} IPAI-output' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 102, 'prompt_tokens': 6034, 'total_tokens': 6136, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'meta-llama/llama-4-maverick', 'system_fingerprint': None, 'id': 'gen-1746939666-OTPEQjZlTOLcPlYUxbDu', 'finish_reason': 'stop', 'logprobs': None} id='run-07e15921-66a1-4124-90a5-0a8c9475ce82-0' usage_metadata={'input_tokens': 6034, 'output_tokens': 102, 'total_tokens': 6136, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 6/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 5
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 7/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 6
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 8/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 7
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 9/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 8
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 10/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 9
+👍 Eval: Success - I scrolled down the page to see more headlines
+🧠 Memory: Task: Retrieve today's top 20 headlines from CNN. Step 11/15. Current URL: https://www.cnn.com/. Extracted some headlines but need more.
+🎯 Next goal: Continue scrolling down to gather additional headlines
+🛠️  Action 1/1: {"scroll_down":{}}
+🔍  Scrolled down the page by one page
+📍 Step 10
+Creating procedural memory at step 10
+Messages consolidated: 9 messages converted to procedural memory
+👍 Eval: Success - Successfully navigated to CNN and scrolled down to view more content
+🧠 Memory: Navigated to https://www.cnn.com and scrolled down multiple times to view various headlines and articles. Current step: 11/15
+🎯 Next goal: Extract the top 20 headlines from the CNN homepage
+🛠️  Action 1/1: {"extract_content":{"goal":"Extract the top 20 headlines from CNN","should_strip_link_urls":false}}
+📄  Extracted from page
+: ```json
+{
+  "top_20_headlines": [
+    "India and Pakistan agree to a ceasefire, but will it hold? Here's what to know",
+    "Putin says Russia ready for 'direct talks' with Ukraine as US and European leaders press for a ceasefire",
+    "Authorities arrest over 100 people on Tennessee roads in support of Trump's deportation plan",
+    "Trump says 'great progress made' between US and China following first day of trade talks",
+    "For Subscribers: Business leaders and foreign governments are taking notice of changing dynamics in obtaining access to Trump",
+    "Vance called Indian PM to encourage ceasefire talks after receiving alarming intelligence, sources say",
+    "Trump isn't the only one targeting federal employees. House Republicans are pushing cuts to pension benefits",
+    "'I take responsibility': Biden addresses Trump's presidential win",
+    "See CEO's reaction after Trump's remark about the steep drop in US trade",
+    "Five fishermen who survived 55 days adrift by drinking rain and parboiling passing fish arrive in Galapagos",
+    "Tufts University student Rümeysa Öztürk arrives back home after spending six weeks at a Louisiana detention center",
+    "3 Chinese nationals arrested in Japan after thousands of protected hermit crabs found smuggled in suitcases",
+    "Homeland Security Dept. accuses lawmakers of 'storming' an ICE facility despite oversight laws saying they could be there",
+    "Key prosecutor in Trump's classified documents case to testify in front of House Judiciary Committee",
+    "Newark mayor responds to Alina Habba's claims about his arrest",
+    "US communities brace for potential impact if their Ukrainian refugee neighbors are forced to leave",
+    "Pope Leo explains why he chose his papal name during first meeting with cardinals",
+    "Pope Leo XIV: A White Sox fan who calls his brother daily from Rome",
+    "These moms are facing dark times in their lives. A photographer following them saw something unexpected",
+    "European leaders visit Kyiv, and tell Russia: 30-day ceasefire now or face massive sanctions",
+    "Trains held, roads blocked and events canceled: Toxic cloud of chlorine forced 160,000 people in Spain to stay inside after fire"
+  ]
+}
+```
+
+📍 Step 11
+👍 Eval: Success - Successfully extracted the top 20 headlines from CNN
+🧠 Memory: Extracted 20 headlines from CNN homepage. Current step: 12/15
+🎯 Next goal: Complete the task by providing the extracted headlines
+🛠️  Action 1/1: {"done":{"text":"Here are today's top 20 headlines from CNN:\n1. India and Pakistan agree to a ceasefire, but will it hold? Here's what to know\n2. Putin says Russia ready for 'direct talks' with Ukraine as US and European leaders press for a ceasefire\n3. Authorities arrest over 100 people on Tennessee roads in support of Trump's deportation plan\n4. Trump says 'great progress made' between US and China following first day of trade talks\n5. For Subscribers: Business leaders and foreign governments are taking notice of changing dynamics in obtaining access to Trump\n6. Vance called Indian PM to encourage ceasefire talks after receiving alarming intelligence, sources say\n7. Trump isn't the only one targeting federal employees. House Republicans are pushing cuts to pension benefits\n8. 'I take responsibility': Biden addresses Trump's presidential win\n9. See CEO's reaction after Trump's remark about the steep drop in US trade\n10. Five fishermen who survived 55 days adrift by drinking rain and parboiling passing fish arrive in Galapagos\n11. Tufts University student Rümeysa Öztürk arrives back home after spending six weeks at a Louisiana detention center\n12. 3 Chinese nationals arrested in Japan after thousands of protected hermit crabs found smuggled in suitcases\n13. Homeland Security Dept. accuses lawmakers of 'storming' an ICE facility despite oversight laws saying they could be there\n14. Key prosecutor in Trump's classified documents case to testify in front of House Judiciary Committee\n15. Newark mayor responds to Alina Habba's claims about his arrest\n16. US communities brace for potential impact if their Ukrainian refugee neighbors are forced to leave\n17. Pope Leo explains why he chose his papal name during first meeting with cardinals\n18. Pope Leo XIV: A White Sox fan who calls his brother daily from Rome\n19. These moms are facing dark times in their lives. A photographer following them saw something unexpected\n20. European leaders visit Kyiv, and tell Russia: 30-day ceasefire now or face massive sanctions","success":true}}
+📄 Result: Here are today's top 20 headlines from CNN:
+1. India and Pakistan agree to a ceasefire, but will it hold? Here's what to know
+2. Putin says Russia ready for 'direct talks' with Ukraine as US and European leaders press for a ceasefire
+3. Authorities arrest over 100 people on Tennessee roads in support of Trump's deportation plan
+4. Trump says 'great progress made' between US and China following first day of trade talks
+5. For Subscribers: Business leaders and foreign governments are taking notice of changing dynamics in obtaining access to Trump
+6. Vance called Indian PM to encourage ceasefire talks after receiving alarming intelligence, sources say
+7. Trump isn't the only one targeting federal employees. House Republicans are pushing cuts to pension benefits
+8. 'I take responsibility': Biden addresses Trump's presidential win
+9. See CEO's reaction after Trump's remark about the steep drop in US trade
+10. Five fishermen who survived 55 days adrift by drinking rain and parboiling passing fish arrive in Galapagos
+11. Tufts University student Rümeysa Öztürk arrives back home after spending six weeks at a Louisiana detention center
+12. 3 Chinese nationals arrested in Japan after thousands of protected hermit crabs found smuggled in suitcases
+13. Homeland Security Dept. accuses lawmakers of 'storming' an ICE facility despite oversight laws saying they could be there
+14. Key prosecutor in Trump's classified documents case to testify in front of House Judiciary Committee
+15. Newark mayor responds to Alina Habba's claims about his arrest
+16. US communities brace for potential impact if their Ukrainian refugee neighbors are forced to leave
+17. Pope Leo explains why he chose his papal name during first meeting with cardinals
+18. Pope Leo XIV: A White Sox fan who calls his brother daily from Rome
+19. These moms are facing dark times in their lives. A photographer following them saw something unexpected
+20. European leaders visit Kyiv, and tell Russia: 30-day ceasefire now or face massive sanctions
+✅ Task completed
+✅ Successfully

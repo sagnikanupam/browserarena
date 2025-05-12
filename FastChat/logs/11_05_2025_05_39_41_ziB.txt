@@ -1,0 +1,68 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: what are todays top 10 headlines on anchorage daily news?
+📍 Step 1
+🤷 Eval: Unknown - starting new task
+🧠 Memory: Started task to find today's top 10 headlines on Anchorage Daily News. 0 out of 1 search executed.
+🎯 Next goal: Search Google for today's top 10 headlines on Anchorage Daily News
+🛠️  Action 1/1: {"search_google":{"query":"today's top 10 headlines Anchorage Daily News"}}
+🔍  Searched for "today's top 10 headlines Anchorage Daily News" in Google
+📍 Step 2
+👍 Eval: Success - Google search executed
+🧠 Memory: Started task to find today's top 10 headlines on Anchorage Daily News. Completed search step (1/2).
+🎯 Next goal: Click on the first search result to go to the Anchorage Daily News homepage
+🛠️  Action 1/1: {"click_element_by_index":{"index":33}}
+🖱️  Clicked button with index 33: 
+📍 Step 3
+👍 Eval: Success - Navigated to Anchorage Daily News homepage
+🧠 Memory: Started task to find today's top 10 headlines. Completed Google search and navigation to ADN homepage. 0 out of 3 interactions done (accept cookies, scroll, extract headlines).
+🎯 Next goal: Accept the cookie banner to clear it
+🛠️  Action 1/3: {"click_element_by_index":{"index":1}}
+🛠️  Action 2/3: {"scroll_down":{"amount":null}}
+🛠️  Action 3/3: {"extract_content":{"goal":"Get the top 10 headlines from the Anchorage Daily News homepage","should_strip_link_urls":true}}
+🖱️  Clicked button with index 1: I Accept
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: {"top_headlines":[  
+  {"position":1,"headline":"Dunleavy opposes tax bills, urges creation of joint fiscal group after legislative session"},  
+  {"position":2,"headline":"Alaska State Trooper shoots and seriously injures woman in Meadow Lakes area, agency says"},  
+  {"position":3,"headline":"State will continue killing Southwest Alaska bears despite court order calling program ‘unlawful’"},  
+  {"position":4,"headline":"Survey of Alaska’s small businesses shows ‘dramatic’ confidence drop as political uncertainty grew"},  
+  {"position":5,"headline":"Conservation group’s lawsuit seeks to speed listing of Alaska king salmon under Endangered Species Act"},  
+  {"position":6,"headline":"Trump team mulls suspending the constitutional right of habeas corpus to speed deportations. Can it?"},  
+  {"position":7,"headline":"Anchorage Wolverines top Wisconsin to even Midwest Division Finals at 2-2"},  
+  {"position":8,"headline":"Anchorage’s Alani Makihele will end his college football journey back where it began"},  
+  {"position":9,"headline":"Arctic refuge oil exploration could begin as soon as this winter, court documents indicate"},  
+  {"position":10,"headline":"How a Pacific Northwest delicacy got caught in the crossfire of Trump’s trade war with China"}  
+]}
+
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"Today’s top 10 Anchorage Daily News headlines:\\n1. Dunleavy opposes tax bills, urges creation of joint fiscal group after legislative session\\n2. Alaska State Trooper shoots and seriously injures woman in Meadow Lakes area, agency says\\n3. State will continue killing Southwest Alaska bears despite court order calling program ‘unlawful’\\n4. Survey of Alaska’s small businesses shows ‘dramatic’ confidence drop as political uncertainty grew\\n5. Conservation group’s lawsuit seeks to speed listing of Alaska king salmon under Endangered Species Act\\n6. Trump team mulls suspending the constitutional right of habeas corpus to speed deportations. Can it?\\n7. Anchorage Wolverines top Wisconsin to even Midwest Division Finals at 2-2\\n8. Anchorage’s Alani Makihele will end his college football journey back where it began\\n9. Arctic refuge oil exploration could begin as soon as this winter, court documents indicate\\n10. How a Pacific Northwest delicacy got caught in the crossfire of Trump’s trade war with China","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 690, 'prompt_tokens': 6095, 'total_tokens': 6785, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 448, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2560}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746942045-RtTNoLHFWETP8ibwSlQn', 'finish_reason': 'stop', 'logprobs': None} id='run-6a14475e-4aaf-4f5b-b0ff-66c4c70be0dc-0' usage_metadata={'input_tokens': 6095, 'output_tokens': 690, 'total_tokens': 6785, 'input_token_details': {'cache_read': 2560}, 'output_token_details': {'reasoning': 448}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Today...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Today...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done": {"text": "Today’s top 10 headlines on Anchorage Daily News:\\n1. Dunleavy opposes tax bills, urges creation of joint fiscal group after legislative session\\n2. Alaska State Trooper shoots and seriously injures woman in Meadow Lakes area, agency says\\n3. State will continue killing Southwest Alaska bears despite court order calling program ‘unlawful’\\n4. Survey of Alaska’s small businesses shows ‘dramatic’ confidence drop as political uncertainty grew\\n5. Conservation group’s lawsuit seeks to speed listing of Alaska king salmon under Endangered Species Act\\n6. Trump team mulls suspending the constitutional right of habeas corpus to speed deportations. Can it?\\n7. Anchorage Wolverines top Wisconsin to even Midwest Division Finals at 2-2\\n8. Anchorage’s Alani Makihele will end his college football journey back where it began\\n9. Arctic refuge oil exploration could begin as soon as this winter, court documents indicate\\n10. How a Pacific Northwest delicacy got caught in the crossfire of Trump’s trade war with China", "success": true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 566, 'prompt_tokens': 6122, 'total_tokens': 6688, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 320, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2432}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746942055-ehvfh8NVhxkuUjxpTHbQ', 'finish_reason': 'stop', 'logprobs': None} id='run-cd5feff3-6f66-4a94-a197-a6d6ba1bec09-0' usage_metadata={'input_tokens': 6122, 'output_tokens': 566, 'total_tokens': 6688, 'input_token_details': {'cache_read': 2432}, 'output_token_details': {'reasoning': 320}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Today...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Today...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 4
+Failed to parse model output: content='{"done":{"text":"Here are today’s top 10 headlines from the Anchorage Daily News:\\n\\n1. Dunleavy opposes tax bills, urges creation of joint fiscal group after legislative session\\n2. Alaska State Trooper shoots and seriously injures woman in Meadow Lakes area, agency says\\n3. State will continue killing Southwest Alaska bears despite court order calling program ‘unlawful’\\n4. Survey of Alaska’s small businesses shows ‘dramatic’ confidence drop as political uncertainty grew\\n5. Conservation group’s lawsuit seeks to speed listing of Alaska king salmon under Endangered Species Act\\n6. Trump team mulls suspending the constitutional right of habeas corpus to speed deportations. Can it?\\n7. Anchorage Wolverines top Wisconsin to even Midwest Division Finals at 2-2\\n8. Anchorage’s Alani Makihele will end his college football journey back where it began\\n9. Arctic refuge oil exploration could begin as soon as this winter, court documents indicate\\n10. How a Pacific Northwest delicacy got caught in the crossfire of Trump’s trade war with China","success":true}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 503, 'prompt_tokens': 6139, 'total_tokens': 6642, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 256, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 2304}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746942064-1wBCrIPNmyYChPjv0Nlr', 'finish_reason': 'stop', 'logprobs': None} id='run-51f2438e-2a4b-4329-8917-8c4070464cb9-0' usage_metadata={'input_tokens': 6139, 'output_tokens': 503, 'total_tokens': 6642, 'input_token_details': {'cache_read': 2304}, 'output_token_details': {'reasoning': 256}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'Here a...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'Here a...hina', 'success': True}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

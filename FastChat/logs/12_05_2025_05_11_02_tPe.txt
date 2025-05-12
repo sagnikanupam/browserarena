@@ -1,0 +1,87 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: find me the first featured recipe on food.com 
+📍 Step 1
+🤷 Eval: Unknown
+🧠 Memory: The task is to find the first featured recipe on food.com. I'm starting by navigating to the website.
+🎯 Next goal: Navigate to food.com
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.food.com"}}
+🔗  Navigated to https://www.food.com
+📍 Step 2
+👍 Eval: Success
+🧠 Memory: Navigated to food.com. The task is to find the first featured recipe. I see a section titled "88 All-Time Best Dinner Recipes".
+🎯 Next goal: Click on 'See Them All' to view the featured recipes.
+🛠️  Action 1/1: {"click_element_by_index":{"index":4}}
+🖱️  Clicked button with index 4: See Them All
+📍 Step 3
+Failed to parse model output: Task: find me the first featured recipe on food.com
+Previous steps:
+1. {"go_to_url": {"url": "https://www.food.com"}}
+2. {"click_element_by_index": {"index": 4}}
+Current URL: https://www.food.com/ideas/all-time-best-dinner-recipes-6009
+Open Tabs:
+TabInfo(page_id=0, title='88 All-Time Best Dinner Recipes - Food.com', url='https.://www.food.com/ideas/all-time-best-dinner-recipes-6009')
+Interactive Elements:
+[0]<a Home/>
+Recipes
+Popular
+Meat & Seafood
+Healthy & Diet
+Holidays
+Cuisine
+Seasonal
+[1]<a search/>
+[2]<a saves/>
+[3]<button sign in/>
+PART OF
+[4]<a Kids & Family: Easy Weeknight Dinners/>
+88 All-Time Best Dinner Recipes
+It's easy to get something
+[5]<a simple/>
+and
+[6]<a nutritious/>
+on the table with our community's
+[7]<a top dinner recipes/>
+. We've rounded up our most-popular main dishes, sides and salads — here's what you want to eat for dinner right now.
+[8]<a Share on Pinterest/>
+[9]<i />
+[10]<a Share on Facebook/>
+[11]<i />
+[12]<a Share via Email/>
+[13]<i />
+[14]<div />
+[15]<div Ground Beef Gyros
+"Super yummy. I love that I can recreate one of my favorite foods so easily at home."
+-Logans Mommy/>
+[16]<div />
+[17]<div />
+[18]<a Share on pinterest/>
+[19]<i />
+[20]<div />
+[21]<div />
+[22]<img />
+[23]<label recipe/>
+[24]<a />
+[25]<img />
+[26]<label Advertisement/>
+... 43430 pixels below - scroll or extract content to see more ...
+
+{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have navigated to the '88 All-Time Best Dinner Recipes' page. The first recipe visible appears to be 'Ground Beef Gyros'", "next_goal": "Extract the name of the first featured recipe and complete the task."}, "action": [{"extract_content": {"goal": "Extract the name of the first featured recipe."}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Task: find me the first featured recipe on food.com\nPrevious steps:\n1. {"go_to_url": {"url": "https://www.food.com"}}\n2. {"click_element_by_index": {"index": 4}}\nCurrent URL: https://www.food.com/ideas/all-time-best-dinner-recipes-6009\nOpen Tabs:\nTabInfo(page_id=0, title=\'88 All-Time Best Dinner Recipes - Food.com\', url=\'https.://www.food.com/ideas/all-time-best-dinner-recipes-6009\')\nInteractive Elements:\n[0]<a Home/>\nRecipes\nPopular\nMeat & Seafood\nHealthy & Diet\nHolidays\nCuisine\nSeasonal\n[1]<a search/>\n[2]<a saves/>\n[3]<button sign in/>\nPART OF\n[4]<a Kids & Family: Easy Weeknight Dinners/>\n88 All-Time Best Dinner Recipes\nIt\'s easy to get something\n[5]<a simple/>\nand\n[6]<a nutritious/>\non the table with our community\'s\n[7]<a top dinner recipes/>\n. We\'ve rounded up our most-popular main dishes, sides and salads — here\'s what you want to eat for dinner right now.\n[8]<a Share on Pinterest/>\n[9]<i />\n[10]<a Share on Facebook/>\n[11]<i />\n[12]<a Share via Email/>\n[13]<i />\n[14]<div />\n[15]<div Ground Beef Gyros\n"Super yummy. I love that I can recreate one of my favorite foods so easily at home."\n-Logans Mommy/>\n[16]<div />\n[17]<div />\n[18]<a Share on pinterest/>\n[19]<i />\n[20]<div />\n[21]<div />\n[22]<img />\n[23]<label recipe/>\n[24]<a />\n[25]<img />\n[26]<label Advertisement/>\n... 43430 pixels below - scroll or extract content to see more ...\n\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "I have navigated to the \'88 All-Time Best Dinner Recipes\' page. The first recipe visible appears to be \'Ground Beef Gyros\'", "next_goal": "Extract the name of the first featured recipe and complete the task."}, "action": [{"extract_content": {"goal": "Extract the name of the first featured recipe."}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747026704-q5RMHoXs47SmleKE5wJi', 'finish_reason': 'error', 'logprobs': None} id='run-c5acc040-0223-4a77-aed2-51136898ab93-0' with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: content='```json\n{"current_state": {"evaluation_previous_goal": "Success", "memory": "Navigated to the \'88 All-Time Best Dinner Recipes\' page. The task is to find the first featured recipe. The first recipe on this page is \'Ground Beef Gyros\'.", "next_goal": "Extract the name of the first featured recipe and complete the task."}, "action": [{"extract_content": {"goal": "the name of the first recipe displayed on the page"}}, {"done": {"text": "The first featured recipe on food.com is \'Ground Beef Gyros\'.", "success": true}}]}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 211, 'prompt_tokens': 3755, 'total_tokens': 3966, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747026714-0pBjFvgKqksJFxE1QNF5', 'finish_reason': 'stop', 'logprobs': None} id='run-e6100bdd-7e6c-46de-a459-62d8e27900f4-0' usage_metadata={'input_tokens': 3755, 'output_tokens': 211, 'total_tokens': 3966, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.0.extract_content.should_strip_link_urls
+  Field required [type=missing, input_value={'goal': 'the name of the... displayed on the page'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 3
+Failed to parse model output: Previous step was to click 'See Them All' to view the featured recipes. Now I am on the page with 88 recipes.
+The first recipe is "Ground Beef Gyros".
+My ultimtate task is: find me the first featured recipe on food.com
+I will complete the task with the found recipe.{"current_state": {"evaluation_previous_goal": "Success", "memory": "I clicked 'See Them All' and landed on a page with 88 recipes. The first recipe is 'Ground Beef Gyros'. This seems to be the first featured recipe.", "next_goal": "Complete the task with the found recipe."}, "action": [{"done": {"text": "The first featured recipe on food.com is Ground Beef Gyros.", "success": true}}]} with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='Previous step was to click \'See Them All\' to view the featured recipes. Now I am on the page with 88 recipes.\nThe first recipe is "Ground Beef Gyros".\nMy ultimtate task is: find me the first featured recipe on food.com\nI will complete the task with the found recipe.{"current_state": {"evaluation_previous_goal": "Success", "memory": "I clicked \'See Them All\' and landed on a page with 88 recipes. The first recipe is \'Ground Beef Gyros\'. This seems to be the first featured recipe.", "next_goal": "Complete the task with the found recipe."}, "action": [{"done": {"text": "The first featured recipe on food.com is Ground Beef Gyros.", "success": true}}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 168, 'prompt_tokens': 3769, 'total_tokens': 3937, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747026722-oaO82Y49fQYuFHo0odFA', 'finish_reason': 'stop', 'logprobs': None} id='run-ddaa9035-4129-4a2a-b7d6-067f071a5112-0' usage_metadata={'input_tokens': 3769, 'output_tokens': 168, 'total_tokens': 3937, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures

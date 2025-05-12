@@ -1,0 +1,45 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Go to YouTube, search for 'machine learning tutorials,' click on the first video in the results, and tell me how many likes it has.
+📍 Step 1
+🤷 Eval: Unknown - Starting fresh session at blank page
+🧠 Memory: Step 1/15: Need to navigate to YouTube first. 0/4 sub-steps completed
+🎯 Next goal: Navigate to YouTube homepage
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.youtube.com"}}
+🔗  Navigated to https://www.youtube.com
+📍 Step 2
+👍 Eval: Success - YouTube homepage loaded
+🧠 Memory: Step 2/15: On YouTube homepage. Next step: Perform search. 1/4 sub-steps completed (navigation done)
+🎯 Next goal: Input search query and execute search
+🛠️  Action 1/2: {"input_text":{"index":12,"text":"machine learning tutorials"}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":13}}
+⌨️  Input machine learning tutorials into index 12
+Element index changed after action 1 / 2, because page changed.
+📍 Step 3
+⚠ Eval: Failed - Search input attempt led to unexpected page state change
+🧠 Memory: Step 3/15: At YouTube homepage after failed search attempt. Need to retry search using correct input element (index 16). 1/4 sub-steps completed (navigation done)
+🎯 Next goal: Properly execute search for 'machine learning tutorials'
+🛠️  Action 1/2: {"input_text":{"index":16,"text":"machine learning tutorials"}}
+🛠️  Action 2/2: {"click_element_by_index":{"index":21}}
+⌨️  Input machine learning tutorials into index 16
+🖱️  Clicked button with index 21: 
+📍 Step 4
+Failed to parse model output: content='{"current_state": {"evaluation_previous_goal": "Success - Search results page loaded for \'machine learning tutorials\'", "memory": "Step 4/15: On search results page. Need to locate and click first video. 2/4 sub-steps completed (navigation, search done)", "next_goal": "Scroll to load video results and click first video"}, "action": [{"scroll_down": {"amount": 2000}}, {"wait": {"seconds": 2}}, {"click_element_by_index": 63}]}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 3281, 'prompt_tokens': 3976, 'total_tokens': 7257, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': '', 'id': 'gen-1747029582-r7TR7gIUMe4q2Wr1QzlI', 'finish_reason': 'stop', 'logprobs': None} id='run-7c6feb86-f572-438b-bd7b-59e201da268e-0' usage_metadata={'input_tokens': 3976, 'output_tokens': 3281, 'total_tokens': 7257, 'input_token_details': {}, 'output_token_details': {}} with error 1 validation error for AgentOutput
+action.2.click_element_by_index
+  Input should be a valid dictionary or instance of ClickElementAction [type=model_type, input_value=63, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 4
+👍 Eval: Success - Search results for 'machine learning tutorials' loaded
+🧠 Memory: Step 4/15: On search results page. First video found at index 117. 2/4 sub-steps completed (navigation + search done)
+🎯 Next goal: Click first video in search results
+🛠️  Action 1/1: {"click_element_by_index":{"index":117}}
+🖱️  Clicked button with index 117: 
+📍 Step 5
+👍 Eval: Success - First video in search results was successfully opened
+🧠 Memory: Step 5/15: On video playback page. Located likes count at index 47. 3/4 sub-steps completed (navigation + search + video opened)
+🎯 Next goal: Extract and report the likes count from the video page
+🛠️  Action 1/1: {"done":{"text":"The video 'Machine Learning for Everybody – Full Course' has 87,526 likes","success":true}}
+📄 Result: The video 'Machine Learning for Everybody – Full Course' has 87,526 likes
+✅ Task completed
+✅ Successfully
