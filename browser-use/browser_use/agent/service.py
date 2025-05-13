@@ -58,6 +58,36 @@ from browser_use.exceptions import LLMException
 #	AgentStepTelemetryEvent,
 #)
 from browser_use.utils import check_env_variables, time_execution_async, time_execution_sync
+from browser_use.logging_utils import SensitiveDataFilter
+
+# ------------------------------------------------------------------ #
+#  Model / company name anonymisation (FastChat helper)
+# ------------------------------------------------------------------ #
+try:
+	# FastChat is an optional dependency; fall back to a no-op if absent.
+	from fastchat.utils import anonymize_identity  # type: ignore
+except Exception:  # pragma: no cover
+
+	def anonymize_identity(text: str, replacement: str = "anonymous LLM company") -> str:  # type: ignore
+		return text
+
+
+class _IdentityAnonymizerFilter(logging.Filter):
+	"""
+	Logging filter that scrubs model / company identifiers from every
+	log record using :pyfunc:`fastchat.utils.anonymize_identity`.
+	"""
+
+	def filter(self, record: logging.LogRecord) -> bool:  # noqa: D401
+		try:
+			# Format the message first, then anonymise, then overwrite.
+			cleaned = anonymize_identity(record.getMessage())
+			record.msg = cleaned
+			record.args = ()  # message already formatted
+		except Exception:
+			# Never block logging due to sanitisation problems.
+			pass
+		return True
 
 load_dotenv()
 #logger = logging.getLogger(__name__)
@@ -155,19 +185,46 @@ class Agent(Generic[Context]):
         max_steps: int = 20,
         conversion: bool = False,
         anonymous: bool = False,
+        logger: logging.Logger = logging.getLogger(__name__),
 	):
 		if page_extraction_llm is None:
 			page_extraction_llm = llm
 		self.unique_run_index = unique_run_index
-		self.logger = logging.getLogger(f'{__name__}.{type(self).__name__}.{self.unique_run_index}')
+		self.logger = logger
 		self.fl = logging.FileHandler(f"logs/{self.unique_run_index}.txt")
 		self.logger.addHandler(self.fl)
+
+		# ------------------------------------------------------------------ #
+		# NEW: anonymise everything that goes to the logs / viewer
+		# ------------------------------------------------------------------ #
+		self._sensitive_data: Dict[str, str] = sensitive_data or {}
+
+		# ➊  Keep backwards-compat alias for anything that still uses the old name
+		self.sensitive_data = self._sensitive_data
+
+		root_logger = logging.getLogger()
+
+		# ---------- redact user-provided sensitive strings -----------------
+		if self._sensitive_data:  # only add the filter once we actually have data
+			sensitive_filter = SensitiveDataFilter(self._sensitive_data)
+
+			if not any(isinstance(f, SensitiveDataFilter) for f in self.logger.filters):
+				self.logger.addFilter(sensitive_filter)
+			if not any(isinstance(f, SensitiveDataFilter) for f in root_logger.filters):
+				root_logger.addFilter(sensitive_filter)
+
+		# ---------- anonymise model / company identifiers ------------------
+		identity_filter = _IdentityAnonymizerFilter()
+		if not any(isinstance(f, _IdentityAnonymizerFilter) for f in self.logger.filters):
+			self.logger.addFilter(identity_filter)
+		if not any(isinstance(f, _IdentityAnonymizerFilter) for f in root_logger.filters):
+			root_logger.addFilter(identity_filter)
+		# ------------------------------------------------------------------ #
 
 		# Core components
 		self.task = task
 		self.llm = llm
 		self.controller = Controller(logger=self.logger)
-		self.sensitive_data = sensitive_data
 
 		self.settings = AgentSettings(
 			use_vision=use_vision,

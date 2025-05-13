@@ -11,7 +11,7 @@ import os
 import platform
 import sys
 import time
-from typing import AsyncGenerator, Generator
+from typing import AsyncGenerator, Generator, Dict
 import warnings
 import re
 
@@ -493,7 +493,7 @@ def image_moderation_filter(image):
 IDENTITY_WORDS_LITERAL = [
     "vicuna", "lmsys", "koala", "uc berkeley", "open assistant",
     "laion", "chatglm", "chatgpt", "gpt-4", "openai", "anthropic",
-    "claude", "bard", "palm", "lamda", "google", "gemini", "llama",
+    "claude", "bard", "palm", "lamda", "gemini", "llama",
     "qianwan", "qwen", "alibaba", "mistral", "zhipu", "keg lab",
     "01.ai", "ai2", "tülu", "tulu", "deepseek", "hermes", "cohere",
     "dbrx", "databricks",
@@ -509,8 +509,6 @@ IDENTITY_WORDS_LITERAL = [
     "grok-3",
     "x-ai",
     "xai",
-    "google-"
-    "google/"
 ]
 
 # cooked up by o3
@@ -522,6 +520,7 @@ IDENTITY_REGEX_PATTERNS = [
     r"claude[-\d\.]*[\w\-]*",                       # claude-3.5-sonnet, claude-3.7-sonnet:thinking
     r"gemini[\w\-\.]*",                             # gemini-2.5-pro-preview-03-25
     r"grok[\w\-\.]*",                               # grok-3-beta
+    r"x[-_/ ]?ai[\w\-\.]*",                          # xai, x-ai, xAI ...
 ]
 
 # 3.  Compile once at import time
@@ -550,12 +549,27 @@ def anonymize_identity(text: str,
     str
         The cleaned text (safe to display to user).
     """
-    # ----- literal pass -------------------------------------------------
+    # ----- literal pass (case-insensitive) ------------------------------
+    # Use regex so that "OpenAI", "OPENAI", "openai" ... are all caught.
     for w in IDENTITY_WORDS_LITERAL:
-        text = text.replace(w, replacement)
+        text = re.compile(re.escape(w), flags=re.IGNORECASE).sub(replacement, text)
 
     # ----- regex pass ---------------------------------------------------
     for rx in _COMPILED_IDENTITY_REGEX:
         text = rx.sub(replacement, text)
 
     return text
+
+
+class SensitiveDataFilter(logging.Filter):
+    def __init__(self, sensitive_data: Dict[str, str]):
+        super().__init__()
+        self.sensitive_data = sensitive_data
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        msg = record.getMessage()
+        for key, replacement in self.sensitive_data.items():
+            msg = msg.replace(key, replacement)
+        record.msg = msg
+        record.args = ()
+        return True
