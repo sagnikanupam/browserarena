@@ -47,6 +47,7 @@ from fastchat.utils import (
     moderation_filter,
     parse_gradio_auth_creds,
     load_image,
+    anonymize_identity,
 )
 
 from fastchat.serve.browser_use_functions import call_browser
@@ -631,11 +632,15 @@ def bot_response(
         image = '\n' + f'<img src="/gradio_api/file=gifs/{unique_run_index}.gif" alt="GIF" />'
         with open(f"prompts_and_outputs/{unique_run_index}.json", "w") as f:
             json.dump({"prompt_id": prompt_id_text, "prompt": prompt, "output": text_output, "image": image, "unique_run_index": f"{unique_run_index}", "user_id": user_id_text, "model_name": model_name}, f)
+            # ---------- clean formatting ----------
             text_output = text_output.replace("```", "\n```\n")
             text_output = text_output.replace("$$", "\n$$\n")
+
+            # ---------- anonymise model names ----------
+            #  1) exact currently-selected model
             text_output = text_output.replace(model_name, "anonymized model")
-            for word in IDENTITY_WORDS:
-                text_output = text_output.replace(word, "anonymous LLM company")
+            #  2) robust regex / literal scrubber
+            text_output = anonymize_identity(text_output)
         output = text_output + image + "\n Log ID: " + unique_run_index
     
     conv.update_last_message(output)

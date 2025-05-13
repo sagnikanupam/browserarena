@@ -13,6 +13,7 @@ import sys
 import time
 from typing import AsyncGenerator, Generator
 import warnings
+import re
 
 import requests
 
@@ -483,3 +484,78 @@ def image_moderation_filter(image):
         csam_flagged = image_moderation_provider(image_bytes, "csam")
 
     return nsfw_flagged, csam_flagged
+
+
+#####################################################################
+#  Model / company name anonymisation helpers
+#####################################################################
+
+IDENTITY_WORDS_LITERAL = [
+    "vicuna", "lmsys", "koala", "uc berkeley", "open assistant",
+    "laion", "chatglm", "chatgpt", "gpt-4", "openai", "anthropic",
+    "claude", "bard", "palm", "lamda", "google", "gemini", "llama",
+    "qianwan", "qwen", "alibaba", "mistral", "zhipu", "keg lab",
+    "01.ai", "ai2", "tülu", "tulu", "deepseek", "hermes", "cohere",
+    "dbrx", "databricks",
+    # added
+    "meta",           
+    "maverick",
+    "-r1",
+    "-v3",
+    "o4",
+    "o4-mini",
+    "claude-3.7-sonnet",
+    "gemini-2.5",
+    "grok-3",
+    "x-ai",
+    "xai",
+    "google-"
+    "google/"
+]
+
+# cooked up by o3
+IDENTITY_REGEX_PATTERNS = [
+    r"meta[-_/ ]?llama[\w\-\.]*",                   # meta-llama/llama-4-maverick
+    r"llama[-_/ ]?\d+[^\s/]*",                      # llama-3-70b-instruct ...
+    r"deepseek[\w\-\.]*",                           # deepseek-r1, deepseek-chat ...
+    r"o4[-_/ ]?mini[\w\-\.]*",                      # o4-mini, openai/o4-mini ...
+    r"claude[-\d\.]*[\w\-]*",                       # claude-3.5-sonnet, claude-3.7-sonnet:thinking
+    r"gemini[\w\-\.]*",                             # gemini-2.5-pro-preview-03-25
+    r"grok[\w\-\.]*",                               # grok-3-beta
+]
+
+# 3.  Compile once at import time
+_COMPILED_IDENTITY_REGEX = [
+    re.compile(pat, flags=re.IGNORECASE) for pat in IDENTITY_REGEX_PATTERNS
+]
+
+
+def anonymize_identity(text: str,
+                       replacement: str = "anonymous LLM company") -> str:
+    """
+    Scrub model / company identifiers from *text*.
+
+    1.  Cheap literal `.replace` for known tokens.
+    2.  Regex pass for versioned or path-style mentions.
+
+    Parameters
+    ----------
+    text : str
+        Text that may contain model or company names.
+    replacement : str, default ``"anonymous LLM company"``
+        String that will replace every match.
+
+    Returns
+    -------
+    str
+        The cleaned text (safe to display to user).
+    """
+    # ----- literal pass -------------------------------------------------
+    for w in IDENTITY_WORDS_LITERAL:
+        text = text.replace(w, replacement)
+
+    # ----- regex pass ---------------------------------------------------
+    for rx in _COMPILED_IDENTITY_REGEX:
+        text = rx.sub(replacement, text)
+
+    return text
