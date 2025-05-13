@@ -62,11 +62,14 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
         num_valid_steps_right = 0
         max_steps_left = 0
         max_steps_right = 0
-        if "Yes" in row["Q4"]:
-            if row["ResponseId"] in replaced_log_ids.keys():
-                row['Q7'] = replaced_log_ids[row["ResponseId"]]["left_log_id"]
-                row['Q25'] = replaced_log_ids[row["ResponseId"]]["right_log_id"]
-            if "Yes" in row["Q5"]:
+        if "Yes" in str(row["Q4"]):
+            if str(row["ResponseId"]) in replaced_log_ids.keys():
+                if "left_log_id" in replaced_log_ids[row["ResponseId"]].keys() and "right_log_id" in replaced_log_ids[row["ResponseId"]].keys():
+                    row['Q7'] = replaced_log_ids[row["ResponseId"]]["left_log_id"]
+                    row['Q25'] = replaced_log_ids[row["ResponseId"]]["right_log_id"]
+                if "Q2" in replaced_log_ids[row["ResponseId"]].keys():
+                    row['Q2'] = replaced_log_ids[row["ResponseId"]]["Q2"]
+            if "Yes" in str(row["Q5"]):
                 for i in range(15):
                     if str(row[f"Q{i+8}"]).lower().find("n/a") == -1 and str(row[f"Q{i+8}"]) != "" and str(row[f"Q{i+8}"]) != "nan":
                         num_valid_steps_left += 1
@@ -80,7 +83,7 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
                         print(f"Num_valid_steps_left != max_steps_left for index {index}, user {row['Q1']}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with num_valid_steps_left {num_valid_steps_left} and max_steps_left {max_steps_left}.")
                 except Exception as e:
                     print(f"Error processing left data entry for index {index}, user {row['Q1']}: {row['Q7']} with log ID {get_log_id(str(row['Q7']))} with error {e}.")
-            if "Yes" in row["Q23"]:
+            if "Yes" in str(row["Q23"]):
                 for i in range(15):
                     if str(row[f"Q{i+26}"]).lower().find("n/a") == -1 and str(row[f"Q{i+26}"]) != "" and str(row[f"Q{i+26}"]) != "nan":
                         num_valid_steps_right += 1
@@ -131,6 +134,6 @@ if __name__ == "__main__":
     # Specify the path to your JSONL file
     #file_path = "data/pilot_dataset.csv"
     #file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 7, 2025_10.24.csv" 
-    file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 9, 2025_09.16.csv"
+    file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 12, 2025_08.32.csv"
     # Call the function to analyze the data
     analyze_data(file_path)
