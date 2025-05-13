@@ -3,8 +3,8 @@ import os
 import json 
 import re
 
-
-verified_df = pd.read_csv("data/ProlificBrowserArenaGIFFeedbackForm_May 12, 2025_08.32_usable.csv", header=0)
+file_path = "data/ProlificBrowserArenaGIFFeedbackForm_May 12, 2025_08.32_usable.csv"
+verified_df = pd.read_csv(file_path, header=0)
 verified_df = verified_df.drop(0, axis=0)
 print(verified_df.head())
 
@@ -164,4 +164,6 @@ print(len([x for x in interactions if x["type"].lower() == "rightvote"]))
 with open("FastChat/verified_conv_log/verified_interactions-conv.json", "w") as f:
     for interaction in interactions:
         f.write(json.dumps(interaction) + "\n")
-        
+
+output_file_path = file_path.replace("usable.csv", "_votes.csv")
+verified_df.to_csv(output_file_path, index=False) 
