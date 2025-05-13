@@ -339,7 +339,6 @@ def report_elo_analysis_results(
     tqdm.pandas(desc=f"Processing using {filter_func.__name__}")
     filtered_indices = battles.progress_apply(filter_func, axis=1)
     battles = battles[filtered_indices]
-
     battles = battles.sort_values(ascending=True, by=["tstamp"])
 
     if len(langs) > 0:

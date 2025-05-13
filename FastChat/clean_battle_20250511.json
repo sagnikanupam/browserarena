@@ -1,0 +1,1262 @@
+[
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_b",
+    "judge": "arena_user_82.43.106.11",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_b",
+    "judge": "arena_user_76.29.6.53",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_174.211.163.231",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_63.140.92.91",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_188.210.215.15",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_84.69.251.95",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_86.164.87.50",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_71.57.53.83",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 0.0
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_190.101.62.25",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746247703.7235
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_191.57.49.49",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746248142.9079
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_105.245.20.245",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746248274.8068
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_41.13.14.130",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746249200.5599
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_143.58.129.174",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746306454.3049
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.80.50.194",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746306874.8402
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.11.107.183",
+    "turn": 3,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746307177.1776
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.11.107.183",
+    "turn": 3,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746307177.1776
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_172.59.211.20",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746307277.4533
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_143.159.181.49",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746307942.2482
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_45.139.7.183",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746307944.9006
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_92.233.97.14",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746308284.6084
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_174.90.223.210",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746309570.2109
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_172.59.193.238",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746592597.9168
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_86.109.85.54",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746631669.1775
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_84.9.78.163",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746632069.8848
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_23.153.64.244",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746632237.463
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_86.109.83.99",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746633167.3692
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_107.189.207.5",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746633986.4539
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "tie",
+    "judge": "arena_user_72.1.182.4",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746634398.8877
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "openai/o4-mini",
+    "winner": "tie",
+    "judge": "arena_user_2.99.206.95",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746640540.8146
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.34.208.221",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746641743.439
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "tie",
+    "judge": "arena_user_207.230.114.250",
+    "turn": 4,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746641813.176
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "tie",
+    "judge": "arena_user_207.230.114.250",
+    "turn": 4,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746641813.176
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_82.31.50.181",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746641827.1237
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_152.37.122.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746642923.2828
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_86.136.186.137",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746643905.3428
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_92.113.40.149",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746644376.656
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_152.37.122.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746647692.6633
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_80.7.87.176",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746821006.6013
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_174.138.215.19",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746822322.3479
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_73.214.111.135",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746822476.4109
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_185.111.174.129",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746825203.2996
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_71.57.53.83",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746826515.146
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_24.150.120.249",
+    "turn": 2,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746826661.9121
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_5.151.145.20",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746827398.8713
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_99.255.104.245",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746827438.1582
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.46.16.73",
+    "turn": 2,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746827867.5757
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_24.46.16.73",
+    "turn": 2,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746827867.5757
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_87.114.73.241",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746828298.0031
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_216.120.189.104",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746828544.149
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_142.186.128.103",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746829254.0851
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_216.120.189.163",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746829989.9058
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_82.39.167.4",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746830775.4647
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_73.80.203.104",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746831197.8378
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_136.55.181.8",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746832256.3194
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_172.59.78.118",
+    "turn": 4,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746832846.5709
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_154.6.177.46",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746834700.8483
+  },
+  {
+    "model_a": "### Model A: x-ai/grok-3-beta",
+    "model_b": "### Model B: meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_154.6.177.46",
+    "turn": 1,
+    "anony": false,
+    "language": "English",
+    "tstamp": 1746834824.9235
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_50.38.254.100",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746835044.6833
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_27.33.82.146",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746835046.0505
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_82.39.167.4",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746836034.0556
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "tie",
+    "judge": "arena_user_86.140.203.231",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746836149.9579
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "tie",
+    "judge": "arena_user_68.0.135.227",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746837081.3369
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_109.157.29.93",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746837578.8012
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_99.232.11.125",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746838277.2837
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_162.236.247.182",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746839222.5523
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_136.55.233.48",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746839399.9273
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_86.109.86.205",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746840701.7282
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_99.236.248.138",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746841452.1835
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_24.192.168.61",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746841831.3611
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_149.18.54.44",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746842620.3036
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_99.233.184.75",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746846051.2893
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_174.160.189.164",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746846861.8286
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_99.228.8.14",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746847969.5989
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_161.8.175.56",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746848132.2077
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_99.227.244.11",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746849122.5291
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_76.144.34.160",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746849500.8526
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_73.153.29.76",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746849958.2545
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_47.146.2.169",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746937438.3207
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_222.154.72.63",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746937981.5652
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_99.51.185.211",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746938159.158
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_70.49.191.123",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746939569.8982
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_68.205.2.80",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746940843.3483
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_161.8.175.56",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746941366.2029
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_68.204.132.241",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746944346.7373
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_168.235.144.51",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746944809.3331
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_188.29.223.173",
+    "turn": 2,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746945256.1902
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_168.235.146.181",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746945625.9003
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_193.36.163.153",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746945819.9641
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_188.253.31.224",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746946388.5478
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_90.251.166.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746947856.7716
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_84.69.164.148",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746948418.1844
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_47.6.1.21",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746948690.6928
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_86.177.25.124",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746949338.975
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_90.251.166.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746949539.0535
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_5.69.194.14",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746951133.4018
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_86.177.25.124",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746951739.4487
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_168.235.145.236",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746953081.7639
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_99.72.62.51",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746953811.4266
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_a",
+    "judge": "arena_user_120.22.230.46",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746954069.742
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_a",
+    "judge": "arena_user_86.187.231.213",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746956617.1673
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_92.113.15.160",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746959339.9457
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_5.69.194.14",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746973654.9316
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_154.6.177.46",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746973666.3827
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_5.69.95.149",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746974003.0042
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_92.40.142.161",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746974615.2169
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "tie",
+    "judge": "arena_user_161.8.161.114",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746974762.8556
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_72.1.182.4",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746974771.6003
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_5.69.194.14",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746975331.2197
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_24.192.168.61",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746975733.358
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "meta-llama/llama-4-maverick",
+    "winner": "model_b",
+    "judge": "arena_user_90.251.166.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746977319.2644
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_86.16.151.214",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746981593.9572
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_90.251.166.216",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746981998.1126
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_77.101.130.32",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746982048.9666
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_b",
+    "judge": "arena_user_173.53.77.177",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746982502.3915
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "x-ai/grok-3-beta",
+    "winner": "model_a",
+    "judge": "arena_user_172.59.172.223",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746982846.1709
+  },
+  {
+    "model_a": "anthropic/claude-3.7-sonnet:thinking",
+    "model_b": "openai/o4-mini",
+    "winner": "model_b",
+    "judge": "arena_user_87.114.73.241",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746984393.5019
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_90.200.228.28",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746986094.7352
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "deepseek/deepseek-r1",
+    "winner": "model_b",
+    "judge": "arena_user_172.58.135.182",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746986575.6043
+  },
+  {
+    "model_a": "meta-llama/llama-4-maverick",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_81.132.63.194",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1746988361.889
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_73.152.181.143",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747021486.0002
+  },
+  {
+    "model_a": "x-ai/grok-3-beta",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_b",
+    "judge": "arena_user_68.52.14.243",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747022014.3529
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "openai/o4-mini",
+    "winner": "model_a",
+    "judge": "arena_user_203.164.218.78",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747022545.1301
+  },
+  {
+    "model_a": "openai/o4-mini",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_76.138.229.205",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747022688.5483
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_88.97.162.131",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747022899.8521
+  },
+  {
+    "model_a": "deepseek/deepseek-r1",
+    "model_b": "google/gemini-2.5-pro-preview-03-25",
+    "winner": "model_a",
+    "judge": "arena_user_76.105.168.78",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747022974.0166
+  },
+  {
+    "model_a": "google/gemini-2.5-pro-preview-03-25",
+    "model_b": "anthropic/claude-3.7-sonnet:thinking",
+    "winner": "model_a",
+    "judge": "arena_user_71.190.128.103",
+    "turn": 1,
+    "anony": true,
+    "language": "English",
+    "tstamp": 1747027849.3718
+  }
+]

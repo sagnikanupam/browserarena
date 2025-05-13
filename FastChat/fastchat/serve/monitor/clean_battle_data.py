@@ -38,7 +38,9 @@ IDENTITY_WORDS = [
     "bard",
     "palm",
     "lamda",
-    "google",
+    "xAI",
+    "grok"
+    #"google",
     "gemini",
     "llama",
     "qianwan",
@@ -222,14 +224,16 @@ def process_data(
                 if msg:
                     messages += msg.lower()
                 else:
-                    flag_none_msg = True
+                    #print(f"None msg for {state['model_name']} and {state['messages']}")
+                    #flag_none_msg = True
+                    pass
 
         for word in IDENTITY_WORDS:
             if word in messages:
                 if word not in count_leak:
                     count_leak[word] = 0
                 count_leak[word] += 1
-                flag_leaked_identity = True
+                #flag_leaked_identity = True
                 break
 
         for word in ERROR_WORDS:
@@ -239,7 +243,7 @@ def process_data(
 
         for word in UNFINISHED_WORDS:
             if word in messages:
-                flag_unfinished = True
+                #flag_unfinished = True
                 break
 
         if flag_none_msg:

@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 NUM_SERVERS = 14
 #LOG_ROOT_DIR = "~/fastchat_logs"
-LOG_ROOT_DIR = "conv_logs"
+LOG_ROOT_DIR = "verified_conv_log"
 
 def get_log_files(max_num_files=None):
     """

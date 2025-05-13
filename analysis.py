@@ -69,6 +69,8 @@ def analyze_data(file_path: str, banned_ids: list[str] = banned_id_list):
                     row['Q25'] = replaced_log_ids[row["ResponseId"]]["right_log_id"]
                 if "Q2" in replaced_log_ids[row["ResponseId"]].keys():
                     row['Q2'] = replaced_log_ids[row["ResponseId"]]["Q2"]
+            row["Q7"] = get_log_id(str(row["Q7"]))
+            row["Q25"] = get_log_id(str(row["Q25"]))
             if "Yes" in str(row["Q5"]):
                 for i in range(15):
                     if str(row[f"Q{i+8}"]).lower().find("n/a") == -1 and str(row[f"Q{i+8}"]) != "" and str(row[f"Q{i+8}"]) != "nan":
