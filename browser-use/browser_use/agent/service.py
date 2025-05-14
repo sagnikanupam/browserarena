@@ -190,7 +190,7 @@ class Agent(Generic[Context]):
 		if page_extraction_llm is None:
 			page_extraction_llm = llm
 		self.unique_run_index = unique_run_index
-		self.logger = logger
+		self.logger = logging.getLogger(f'{__name__}.{type(self).__name__}.{self.unique_run_index}')
 		self.fl = logging.FileHandler(f"logs/{self.unique_run_index}.txt")
 		self.logger.addHandler(self.fl)
 
