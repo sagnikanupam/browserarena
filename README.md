@@ -9,25 +9,36 @@ A live open-web agent evaluation platform that collects user-submitted tasks and
 
 ### Prerequisites
 
-PostGreSQL, Rust, Cmake
+PostGreSQL, Rust, Cmake, UV (Python package manager)
 
 For Mac:
-```
-brew install postgresql (or equivalent installation on Linux)
-brew install rust cmake
-brew reinstall pkg-config icu4c
-ls /opt/homebrew/opt/icu4c/bin
-ls /opt/homebrew/opt/icu4c/sbin
+```bash
+# Install system dependencies
+brew install postgresql rust cmake pkg-config icu4c
+
+# Set up environment variables for icu4c
 export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"
 unset CC CXX
+
+# Install UV (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install Python 3.11 and create virtual environment
+uv python install 3.11
+uv venv --python 3.11
+
+# Install FastChat
 cd FastChat
-python3.11 -m pip install --upgrade pip  # enable PEP 660 support
-python3.11 -m pip install -e ".[model_worker,webui]"
+uv pip install -e ".[model_worker,webui]" --python ../.venv/bin/python
 cd ..
-python3.11 -m pip install -e browser-use
-playwright install chromium
-python3.11 -m pip install polyglot pyicu pycld2
+
+# Install browser-use and additional dependencies
+uv pip install -e browser-use --python .venv/bin/python
+uv pip install polyglot pyicu pycld2 --python .venv/bin/python
+
+# Install Playwright browser
+.venv/bin/playwright install chromium
 ```
 
 For Ubuntu:
