@@ -1,0 +1,37 @@
+{
+    "deepseek/deepseek-r1": {
+        "model_name": "deepseek/deepseek-r1",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": false
+    },
+    "meta-llama/llama-4-maverick": {
+        "model_name": "meta-llama/llama-4-maverick",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": false
+    },
+    "anthropic/claude-3.7-sonnet:thinking": {
+        "model_name": "anthropic/claude-3.7-sonnet:thinking",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": false
+    },
+    "google/gemini-2.5-pro-preview-03-25": {
+        "model_name": "google/gemini-2.5-pro-preview-03-25",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": false
+    },
+    "openai/o4-mini": {
+        "model_name": "openai/o4-mini",
+        "api_base": "",
+        "api_type": "",
+        "api_key": "",
+        "anony_only": false
+    }
+}
