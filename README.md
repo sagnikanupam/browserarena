@@ -100,7 +100,7 @@ python3.11 fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_batt
 ```
 
 ## Acknowledgements
-Our codebase is derived from the [FastChat](https://github.com/lm-sys/FastChat) and [BrowserUser](https://github.com/browser-use/browser-use) codebases. Please also cite the following works if you find this repository helpful.
+Our codebase is derived from the [FastChat](https://github.com/lm-sys/FastChat) and [BrowserUse](https://github.com/browser-use/browser-use) codebases. Please also cite the following works if you find this repository helpful.
 
 ```
 @misc{zheng2023judging,
