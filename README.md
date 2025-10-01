@@ -9,76 +9,72 @@ A live open-web agent evaluation platform that collects user-submitted tasks and
 
 ### Prerequisites
 
-PostGreSQL, Rust, Cmake, UV (Python package manager)
+- PostgreSQL
+- Rust
+- CMake
+- uv
 
-For Mac:
+### Quick Start
+
+**Mac:**
 ```bash
-# Install system dependencies
+# Install system dependencies and start PostgreSQL service
 brew install postgresql rust cmake pkg-config icu4c
+brew services start postgresql
 
-# Set up environment variables for icu4c
+# Set up environment variables for icu4c (add these to ~/.zshrc or ~/.bashrc for persistence)
 export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"
 unset CC CXX
+echo 'export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"' >> ~/.zshrc
+echo 'export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"' >> ~/.zshrc
 
-# Install UV (if not already installed)
+# Install UV (if not already installed), then restart terminal or run: source ~/.zshrc (or ~/.bashrc)
 curl -LsSf https://astral.sh/uv/install.sh | sh
+uv sync
 
-# Install Python 3.11 and create virtual environment
-uv python install 3.11
-uv venv --python 3.11
-
-# Install FastChat
-cd FastChat
-uv pip install -e ".[model_worker,webui]" --python ../.venv/bin/python
-cd ..
-
-# Install browser-use and additional dependencies
-uv pip install -e browser-use --python .venv/bin/python
-uv pip install polyglot pyicu pycld2 --python .venv/bin/python
+mkdir -p logs
 
 # Install Playwright browser
 uv run playwright install chromium
 ```
 
-For Ubuntu:
+**Ubuntu:**
 ```bash
 # Install system dependencies
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install postgresql rustc cmake pkg-config libicu-dev
 
-# Install UV (if not already installed)
+# Start and enable PostgreSQL service
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+# Install UV (if not already installed), then restart terminal or run: source ~/.bashrc
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install Python 3.11 and create virtual environment
-uv python install 3.11
-uv venv --python 3.11
+# Install all Python dependencies with uv sync (this installs FastChat, browser-use, and all requirements)
+# Note: Large downloads (torch, etc.) may require UV_HTTP_TIMEOUT=300
+uv sync
 
-# Install FastChat
-cd FastChat
-uv pip install -e ".[model_worker,webui]" --python ../.venv/bin/python
-cd ..
-
-# Install browser-use and additional dependencies
-uv pip install -e browser-use --python .venv/bin/python
-uv pip install polyglot pyicu pycld2 --python .venv/bin/python
+# Create required directories
+mkdir -p logs
 
 # Install Playwright dependencies and browser
 uv run playwright install-deps
 uv run playwright install chromium
 ```
 
-**Troubleshooting:**
+### Troubleshooting
 
-If there is a `pyo3_runtime.PanicException: Python API call failed` error, it can be fixed by running:
+**Timeout during large downloads:**
 ```bash
-uv pip install pyopenssl cryptography --upgrade --python .venv/bin/python
+UV_HTTP_TIMEOUT=300 uv sync
 ```
 
-If there is an error regarding missing `sentence-transformers` library, run:
+**Python runtime error (pyo3_runtime.PanicException):**
 ```bash
-uv pip install sentence-transformers --python .venv/bin/python
+uv pip install pyopenssl cryptography --upgrade
 ```
 
 ## Execute BrowserArena
@@ -103,30 +99,29 @@ Then, export your OpenRouter API Key as follows:
 export OPENROUTER_API_KEY=""
 ```
 
-In a terminal, run the following two commands in two separate windows:
+In a terminal, run the following two commands in two separate windows (from root dir):
 ```bash
 uv run python -m fastchat.serve.controller
 ```
 
 ```bash
-uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
+uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file FastChat/api_endpoint.json
 ```
 
 For headless rendering:
 ```bash
-xvfb-run -a uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
+xvfb-run -a uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file FastChat/api_endpoint.json
 ```
 
 ## Compute Leaderboard
 ```bash
-uv run python fastchat/serve/monitor/clean_battle_data.py
+uv run python FastChat/fastchat/serve/monitor/clean_battle_data.py
 ```
 
-This generates a battles file at clean_battle_<date>.json in the FastChat directory.
+This generates a battles file at `clean_battle_<date>.json` in the FastChat directory.
 
 ```bash
-cd FastChat
-uv run python fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
+uv run python FastChat/fastchat/serve/monitor/elo_analysis.py --clean-battle-file FastChat/clean_battle_<date>.json
 ```
 
 ## Acknowledgements
