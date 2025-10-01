@@ -38,30 +38,48 @@ uv pip install -e browser-use --python .venv/bin/python
 uv pip install polyglot pyicu pycld2 --python .venv/bin/python
 
 # Install Playwright browser
-.venv/bin/playwright install chromium
+uv run playwright install chromium
 ```
 
 For Ubuntu:
-```
+```bash
+# Install system dependencies
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
-sudo apt install python3.11
-sudo apt install postgresql rustc cmake python3-pip
+sudo apt install postgresql rustc cmake pkg-config libicu-dev
+
+# Install UV (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install Python 3.11 and create virtual environment
+uv python install 3.11
+uv venv --python 3.11
+
+# Install FastChat
 cd FastChat
-python3.11 -m pip install -e ".[model_worker,webui]" --use-pep517   
+uv pip install -e ".[model_worker,webui]" --python ../.venv/bin/python
 cd ..
-python3.11 -m pip install -e browser-use --use-pep517
+
+# Install browser-use and additional dependencies
+uv pip install -e browser-use --python .venv/bin/python
+uv pip install polyglot pyicu pycld2 --python .venv/bin/python
+
+# Install Playwright dependencies and browser
+uv run playwright install-deps
+uv run playwright install chromium
 ```
 
-Add `export PATH="/usr/bin/python3.11:$PATH"` to `~/.bashrc` and `source ~/.bashrc` and restart terminal.
-```
-playwright install-deps
-playwright install chromium
+**Troubleshooting:**
+
+If there is a `pyo3_runtime.PanicException: Python API call failed` error, it can be fixed by running:
+```bash
+uv pip install pyopenssl cryptography --upgrade --python .venv/bin/python
 ```
 
-If there is a `pyo3_runtime.PanicException: Python API call failed` error, it can be fixed by `python3.11 -m pip install pyopenssl cryptography --upgrade`.
-
-If there is an error regarding missing `sentence-transformers` library, run `python3.11 -m pip install sentence-transformers`.
+If there is an error regarding missing `sentence-transformers` library, run:
+```bash
+uv pip install sentence-transformers --python .venv/bin/python
+```
 
 ## Execute BrowserArena
 
@@ -86,28 +104,29 @@ export OPENROUTER_API_KEY=""
 ```
 
 In a terminal, run the following two commands in two separate windows:
+```bash
+uv run python -m fastchat.serve.controller
 ```
-python3.11 -m fastchat.serve.controller
-````
 
+```bash
+uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
 ```
-python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
-```
+
 For headless rendering:
-```
-xvfb-run -a python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
+```bash
+xvfb-run -a uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
 ```
 
 ## Compute Leaderboard
-```
-python3.11 fastchat/serve/monitor/clean_battle_data.py
+```bash
+uv run python fastchat/serve/monitor/clean_battle_data.py
 ```
 
-This generates a battles file at clean_battle_<date>.json in the FastChat directory. 
+This generates a battles file at clean_battle_<date>.json in the FastChat directory.
 
-```
+```bash
 cd FastChat
-python3.11 fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
+uv run python fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
 ```
 
 ## Acknowledgements
