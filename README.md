@@ -13,10 +13,10 @@ PostGreSQL, Rust, Cmake
 
 We provide two installation methods:
 
-- **Option 1 (pip)**: Traditional Python installation using pip and requirements files. Choose this if you're familiar with standard Python workflows or need more control over the installation.
+- **Option 1 (pip)**: installation using pip and requirements files.
 
-- **Option 2 (uv - recommended)**: Modern, streamlined installation using [UV](https://docs.astral.sh/uv/), a fast Python package manager. UV automatically handles Python version management, virtual environments, and dependencies with a single `uv sync` command.
-
+- **Option 2 (uv - recommended)**: installation using [uv](https://docs.astral.sh/uv/), a fast Python package manager
+  
 ### Option 1: pip
 
 **Mac:**
