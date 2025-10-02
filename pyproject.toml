@@ -5,9 +5,9 @@ description = "A live open-web agent evaluation platform with user-submitted tas
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    # Local editable packages
-    "fschat[model_worker,webui] @ file:///${PROJECT_ROOT}/FastChat",
-    "browser-use @ file:///${PROJECT_ROOT}/browser-use",
+    # Local editable packages (paths defined in [tool.uv.sources])
+    "fschat[model_worker,webui]",
+    "browser-use",
 
     # Additional required dependencies
     "polyglot==16.7.4",
