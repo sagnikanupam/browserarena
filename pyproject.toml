@@ -1,0 +1,28 @@
+[project]
+name = "browserarena"
+version = "0.1.0"
+description = "A live open-web agent evaluation platform with user-submitted tasks and preferences"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Local editable packages (paths defined in [tool.uv.sources])
+    "fschat[model_worker,webui]",
+    "browser-use",
+
+    # Additional required dependencies
+    "polyglot==16.7.4",
+    "pyicu==2.15.3",
+    "pycld2==0.42",
+    "sentence-transformers>=4.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false  # This is a workspace/application, not a library
+
+[tool.uv.sources]
+fschat = { path = "FastChat", editable = true }
+browser-use = { path = "browser-use", editable = true }

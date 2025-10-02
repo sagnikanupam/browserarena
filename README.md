@@ -11,13 +11,18 @@ A live open-web agent evaluation platform that collects user-submitted tasks and
 
 PostGreSQL, Rust, Cmake
 
-For Mac:
-```
-brew install postgresql (or equivalent installation on Linux)
-brew install rust cmake
+We provide two installation methods:
+
+- **Option 1 (pip)**: Traditional Python installation using pip and requirements files. Choose this if you're familiar with standard Python workflows or need more control over the installation.
+
+- **Option 2 (uv - recommended)**: Modern, streamlined installation using [UV](https://docs.astral.sh/uv/), a fast Python package manager. UV automatically handles Python version management, virtual environments, and dependencies with a single `uv sync` command.
+
+### Option 1: pip
+
+**Mac:**
+```bash
+brew install postgresql rust cmake
 brew reinstall pkg-config icu4c
-ls /opt/homebrew/opt/icu4c/bin
-ls /opt/homebrew/opt/icu4c/sbin
 export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"
 unset CC CXX
@@ -28,31 +33,108 @@ cd ..
 python3.11 -m pip install -e browser-use
 playwright install chromium
 python3.11 -m pip install polyglot pyicu pycld2
+mkdir -p logs
 ```
 
-For Ubuntu:
-```
+**Ubuntu:**
+```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.11
 sudo apt install postgresql rustc cmake python3-pip
 cd FastChat
-python3.11 -m pip install -e ".[model_worker,webui]" --use-pep517   
+python3.11 -m pip install -e ".[model_worker,webui]" --use-pep517
 cd ..
 python3.11 -m pip install -e browser-use --use-pep517
 ```
 
 Add `export PATH="/usr/bin/python3.11:$PATH"` to `~/.bashrc` and `source ~/.bashrc` and restart terminal.
-```
+```bash
 playwright install-deps
 playwright install chromium
+mkdir -p logs
 ```
 
-If there is a `pyo3_runtime.PanicException: Python API call failed` error, it can be fixed by `python3.11 -m pip install pyopenssl cryptography --upgrade`.
+**Troubleshooting:**
 
-If there is an error regarding missing `sentence-transformers` library, run `python3.11 -m pip install sentence-transformers`.
+If there is a `pyo3_runtime.PanicException: Python API call failed` error, run:
+```bash
+python3.11 -m pip install pyopenssl cryptography --upgrade
+```
+
+If there is an error regarding missing `sentence-transformers` library, run:
+```bash
+python3.11 -m pip install sentence-transformers
+```
+
+### Option 2: uv
+
+**Mac:**
+```bash
+# Install system dependencies and start PostgreSQL service
+brew install postgresql rust cmake pkg-config icu4c
+brew services start postgresql
+
+# Set up environment variables for icu4c (add these to ~/.zshrc or ~/.bashrc for persistence)
+export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"
+unset CC CXX
+echo 'export PATH="/opt/homebrew/opt/icu4c/bin:/opt/homebrew/opt/icu4c/sbin:${PATH}"' >> ~/.zshrc
+echo 'export PKG_CONFIG_PATH="/opt/homebrew/opt/icu4c/lib/pkgconfig:${PKG_CONFIG_PATH}"' >> ~/.zshrc
+
+# Install UV (if not already installed), then restart terminal or run: source ~/.zshrc
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install all dependencies with one command
+uv sync
+
+# Create required directories
+mkdir -p logs
+
+# Install Playwright browser
+uv run playwright install chromium
+```
+
+**Ubuntu:**
+```bash
+# Install system dependencies
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install postgresql rustc cmake pkg-config libicu-dev
+
+# Start and enable PostgreSQL service
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+# Install UV, then restart terminal or run: source ~/.bashrc
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install all dependencies with one command
+uv sync
+
+# Create required directories
+mkdir -p logs
+
+# Install Playwright dependencies and browser
+uv run playwright install-deps
+uv run playwright install chromium
+```
+
+**Troubleshooting:**
+
+If `uv sync` times out during large downloads (especially torch):
+```bash
+UV_HTTP_TIMEOUT=300 uv sync
+```
+
+If there is a Python runtime error:
+```bash
+uv pip install pyopenssl cryptography --upgrade
+```
 
 ## Execute BrowserArena
+
+**Note for UV users:** Run all commands from the root directory of the repository. UV automatically manages the virtual environment, so you don't need to activate it manually.
 
 First, in `FastChat/api_endpoint.json`, add the OpenRouter Models you want to evaluate on:
 
@@ -75,26 +157,56 @@ export OPENROUTER_API_KEY=""
 ```
 
 In a terminal, run the following two commands in two separate windows:
-```
-python3.11 -m fastchat.serve.controller
-````
 
+**With UV (from root directory):**
+```bash
+uv run python -m fastchat.serve.controller
 ```
+
+```bash
+uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file FastChat/api_endpoint.json
+```
+
+**With pip:**
+```bash
+python3.11 -m fastchat.serve.controller
+```
+
+```bash
 python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
 ```
-For headless rendering:
+
+For headless rendering (UV):
+```bash
+xvfb-run -a uv run python -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file FastChat/api_endpoint.json
 ```
+
+For headless rendering (pip):
+```bash
 xvfb-run -a python3.11 -m fastchat.serve.gradio_web_server_multi --register-api-endpoint-file api_endpoint.json
 ```
 
 ## Compute Leaderboard
+
+**With UV (from root directory):**
+```bash
+uv run python FastChat/fastchat/serve/monitor/clean_battle_data.py
 ```
+
+This generates a battles file at `clean_battle_<date>.json` in the FastChat directory.
+
+```bash
+uv run python FastChat/fastchat/serve/monitor/elo_analysis.py --clean-battle-file FastChat/clean_battle_<date>.json
+```
+
+**With pip:**
+```bash
 python3.11 fastchat/serve/monitor/clean_battle_data.py
 ```
 
-This generates a battles file at clean_battle_<date>.json in the FastChat directory. 
+This generates a battles file at `clean_battle_<date>.json` in the FastChat directory.
 
-```
+```bash
 cd FastChat
 python3.11 fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
 ```
