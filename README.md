@@ -211,7 +211,24 @@ cd FastChat
 python3.11 fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
 ```
 
+##Citation
+
+The code in this repository was developed for the following paper. Please cite it if you find this repository helpful. 
+
+```
+@misc{anupam2025browserarenaevaluatingllmagents,
+      title={BrowserArena: Evaluating LLM Agents on Real-World Web Navigation Tasks}, 
+      author={Sagnik Anupam and Davis Brown and Shuo Li and Eric Wong and Hamed Hassani and Osbert Bastani},
+      year={2025},
+      eprint={2510.02418},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2510.02418}, 
+}
+```
+
 ## Acknowledgements
+
 Our codebase is derived from the [FastChat](https://github.com/lm-sys/FastChat) and [BrowserUse](https://github.com/browser-use/browser-use) codebases. Please also cite the following works if you find this repository helpful.
 
 ```
