@@ -211,7 +211,7 @@ cd FastChat
 python3.11 fastchat/serve/monitor/elo_analysis.py --clean-battle-file clean_battle_<date>.json
 ```
 
-##Citation
+## Citation
 
 The code in this repository was developed for the following paper. Please cite it if you find this repository helpful. 
 
