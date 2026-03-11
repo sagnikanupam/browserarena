@@ -1,0 +1,20 @@
+question,task,has_agent1_output,has_agent2_output,baseline_winner
+Q1,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them?",True,True,Agent 1
+Q2,Create a summary for the wikipedia article about Manchester Metrolink,True,True,Agent 1
+Q3,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items including their titles and prices.",True,True,Agent 1
+Q4,find me any recipe on food.com,True,True,Agent 1
+Q5,visit the New York Times homepage and summarize the main story currently featured at the top of the page,True,True,Agent 1
+Q6,Name the Top 10 headlines from BBC News,True,True,Agent 1
+Q7,What are the today's top headlines from Fox News?,True,True,Agent 1
+Q8,"Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Maryland and include the hourly rate.",True,True,Agent 1
+Q9,create a list of the top 20 best selling nintendo switch games,True,True,Agent 1
+Q10,a list of top 10 churches,True,True,Agent 1
+Q11,What are the top video titles on youtube homepage?,True,True,Agent 1
+Q12,Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth on the 20th of May,True,True,Agent 1
+Q13,List out the symptoms of Vitamin D deficiency from WebMd and any other medical website,True,True,Agent 1
+Q16,"give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.",True,True,Agent 1
+Q17,Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa,True,True,Agent 1
+Q18,Compare prices of HP laptop model across different online retailers,True,True,Agent 1
+Q19,get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa along with price from samsung website,True,True,Agent 2
+Q20,Give me a summary of this week's best-selling crypto coins.,True,True,Agent 1
+Q22,What are today's top 10 most popular articles on buzzfeed?,True,True,Tie

@@ -1,0 +1,20 @@
+Question,Task,Baseline,Human_V2,GPT4o_Proper,GPT4o_Confidence,Human_Agreement_Rate,All_Agree,Baseline_GPT4o_Agree,Human_GPT4o_Agree
+Q1,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines opera...",Agent 1,Agent 1,Agent 1,0.9,0.4788076385654402,True,True,True
+Q2,Create a summary for the wikipedia article about Manchester Metrolink,Agent 1,Agent 1,Agent 1,0.9,0.9824561403508772,True,True,True
+Q3,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items inclu...",Agent 1,Agent 1,Tie,0.6,0.448067070330694,False,False,False
+Q4,find me any recipe on food.com,Agent 1,Agent 1,Agent 1,0.9,0.8818506443098898,True,True,True
+Q5,visit the New York Times homepage and summarize the main story currently featured at the top of the ...,Agent 1,Tie,Agent 2,0.9,0.5458779692594318,False,False,False
+Q6,Name the Top 10 headlines from BBC News,Agent 1,Agent 1,Agent 1,0.9,0.6576618537494178,True,True,True
+Q7,What are the today's top headlines from Fox News?,Agent 1,Tie,Agent 1,0.9,0.4496196242819438,False,True,False
+Q8,"Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Mary...",Agent 1,Agent 1,Agent 2,0.9,0.720540288775035,False,False,False
+Q9,create a list of the top 20 best selling nintendo switch games,Agent 1,Agent 1,Agent 2,0.9,0.5530197174351809,False,False,False
+Q10,a list of top 10 churches,Agent 1,Agent 1,Agent 1,0.9,0.6769135227449153,True,True,True
+Q11,What are the top video titles on youtube homepage?,Agent 1,Tie,Tie,0.8,0.5292656419810589,False,False,True
+Q12,Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth ...,Agent 1,Tie,Agent 1,0.9,0.4188790560471976,False,True,False
+Q13,List out the symptoms of Vitamin D deficiency from WebMd and any other medical website,Agent 1,Agent 1,Agent 1,0.8,0.7076540909796616,True,True,True
+Q16,"give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmental...",Agent 1,Tie,Agent 1,0.8,0.4924701133364384,False,True,False
+Q17,Tell me different Plane ticket price from different websites for a one way trip from Ontario to Otta...,Agent 1,Tie,Agent 1,0.8,0.4626610774724422,False,True,False
+Q18,Compare prices of HP laptop model across different online retailers,Agent 1,Tie,Agent 1,0.8,0.4300574444961962,False,True,False
+Q19,get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa al...,Agent 2,Agent 2,Agent 2,0.8,0.5474305232106815,True,True,True
+Q20,Give me a summary of this week's best-selling crypto coins.,Agent 1,Agent 1,Agent 1,0.9,0.8660145940071418,True,True,True
+Q22,What are today's top 10 most popular articles on buzzfeed?,Tie,Tie,Agent 2,0.9,0.4067691352274492,False,False,False

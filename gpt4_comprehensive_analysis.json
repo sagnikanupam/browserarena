@@ -1,0 +1,210 @@
+{
+  "summary": {
+    "total_evaluated": 25,
+    "gpt4_vote_distribution": {
+      "Left": 19,
+      "Right": 4,
+      "Tie": 2
+    },
+    "survey_agreement_rate": 0.47368421052631576,
+    "baseline_agreement_rate": 0.7368421052631579,
+    "all_three_agree": 9,
+    "tie_rates": {
+      "gpt4": 0.08,
+      "survey": 0.42105263157894735,
+      "baseline": 0.05263157894736842
+    }
+  },
+  "detailed_results": [
+    {
+      "id": "interaction_01",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_02",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_03",
+      "gpt": "Tie",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": false
+    },
+    {
+      "id": "interaction_04",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_05",
+      "gpt": "Left",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_06",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_07",
+      "gpt": "Left",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_08",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_09",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_10",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_11",
+      "gpt": "Left",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_12",
+      "gpt": "Left",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_13",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_14",
+      "gpt": "Right",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": false
+    },
+    {
+      "id": "interaction_15",
+      "gpt": "Right",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": false
+    },
+    {
+      "id": "interaction_16",
+      "gpt": "Left",
+      "survey": "Tie",
+      "baseline": "Left",
+      "survey_match": false,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_17",
+      "gpt": "Left",
+      "survey": "Right",
+      "baseline": "Right",
+      "survey_match": false,
+      "baseline_match": false
+    },
+    {
+      "id": "interaction_18",
+      "gpt": "Left",
+      "survey": "Left",
+      "baseline": "Left",
+      "survey_match": true,
+      "baseline_match": true
+    },
+    {
+      "id": "interaction_19",
+      "gpt": "Right",
+      "survey": "Tie",
+      "baseline": "Tie",
+      "survey_match": false,
+      "baseline_match": false
+    }
+  ],
+  "model_matchup_agreement": {
+    "o4-mini vs gemini-2.5-pro-preview-03-25": {
+      "total": 3,
+      "gpt_agrees": 2
+    },
+    "deepseek-r1 vs gemini-2.5-pro-preview-03-25": {
+      "total": 4,
+      "gpt_agrees": 2
+    },
+    "gemini-2.5-pro-preview-03-25 vs claude-3.7-sonnet:thinking": {
+      "total": 1,
+      "gpt_agrees": 1
+    },
+    "llama-4-maverick vs deepseek-r1": {
+      "total": 1,
+      "gpt_agrees": 1
+    },
+    "gemini-2.5-pro-preview-03-25 vs o4-mini": {
+      "total": 1,
+      "gpt_agrees": 1
+    },
+    "claude-3.7-sonnet:thinking vs gemini-2.5-pro-preview-03-25": {
+      "total": 4,
+      "gpt_agrees": 4
+    },
+    "llama-4-maverick vs claude-3.7-sonnet:thinking": {
+      "total": 2,
+      "gpt_agrees": 1
+    },
+    "deepseek-r1 vs claude-3.7-sonnet:thinking": {
+      "total": 2,
+      "gpt_agrees": 2
+    },
+    "o4-mini vs llama-4-maverick": {
+      "total": 1,
+      "gpt_agrees": 0
+    }
+  }
+}

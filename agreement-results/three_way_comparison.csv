@@ -1,0 +1,20 @@
+Question,Original_Baseline,Human_V2_Majority,GPT4_Eval,V2_Agent1_Votes,V2_Agent2_Votes,V2_Tie_Votes,V2_Total,V2_Agreement_Rate
+Q1,Agent 1,Agent 1,Agent 1,63,3,48,114,55.3%
+Q10,Agent 1,Agent 1,Agent 1,92,3,19,114,80.7%
+Q11,Agent 1,Tie,Agent 1,28,8,78,114,68.4%
+Q12,Agent 1,Tie,Agent 1,31,18,65,114,57.0%
+Q13,Agent 1,Agent 1,Agent 1,95,13,6,114,83.3%
+Q16,Agent 1,Tie,Agent 1,41,4,69,114,60.5%
+Q17,Agent 1,Tie,Agent 1,37,9,68,114,59.6%
+Q18,Agent 1,Tie,Agent 1,47,9,58,114,50.9%
+Q19,Agent 2,Agent 2,Agent 2,11,81,22,114,71.1%
+Q2,Agent 1,Agent 1,Agent 1,113,1,0,114,99.1%
+Q20,Agent 1,Agent 1,Agent 1,106,3,5,114,93.0%
+Q22,Tie,Tie,Tie,23,27,64,114,56.1%
+Q3,Agent 1,Agent 1,Agent 1,70,19,25,114,61.4%
+Q4,Agent 1,Agent 1,Agent 1,107,4,3,114,93.9%
+Q5,Agent 1,Tie,Agent 1,21,12,81,114,71.1%
+Q6,Agent 1,Agent 1,Agent 1,91,7,16,114,79.8%
+Q7,Agent 1,Tie,Agent 1,36,11,67,114,58.8%
+Q8,Agent 1,Agent 1,Agent 1,96,6,12,114,84.2%
+Q9,Agent 1,Agent 1,Agent 1,82,15,17,114,71.9%

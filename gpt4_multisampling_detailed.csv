@@ -1,0 +1,26 @@
+Interaction_ID,Task,GPT4_Sample1,GPT4_Sample2,GPT4_Sample3,GPT4_Sample4,GPT4_Sample5,GPT4_Majority,Consistency_Score,Survey_Majority,Survey_Agreement,Baseline_Vote,Baseline_Agreement
+interaction_01,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and...",Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_02,Create a summary for the wikipedia article about Manchester Metrolink,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_03,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most...",Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_04,find me any recipe on food.com,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_05,visit the New York Times homepage and summarize the main story currently feature...,Left,Left,Left,Left,Right,Left,0.545,Tie,No,Left,Yes
+interaction_06,Name the Top 10 headlines from BBC News,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_07,What are the today's top headlines from Fox News?,Right,Right,Right,Left,Right,Right,0.545,Tie,No,Left,No
+interaction_08,Please provide a list of the types of boats that can be rented at Piney Run Park...,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_09,create a list of the top 20 best selling nintendo switch games,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_10,a list of top 10 churches,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_11,What are the top video titles on youtube homepage?,Left,Left,Left,Left,Left,Left,1.000,Tie,No,Left,Yes
+interaction_12,Check all ticket touting websites and find the cheapest ticket I can get to Man ...,Left,Left,Left,Left,Left,Left,1.000,Tie,No,Left,Yes
+interaction_13,List out the symptoms of Vitamin D deficiency from WebMd and any other medical w...,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_14,What is the best Arcade Fire albums listed from best to worst?,Right,Right,Right,Right,Right,Right,1.000,Tie,No,Left,No
+interaction_15,What is the best Arcade Fire albums listed from best to worst?,Right,Right,Right,Right,Right,Right,1.000,Tie,No,Left,No
+interaction_16,"give me a recipe for making pasta with cheese from the top 3 cooking websites, m...",Left,Left,Left,Left,Left,Left,1.000,Tie,No,Left,Yes
+interaction_17,Tell me different Plane ticket price from different websites for a one way trip ...,Left,Left,Left,Left,Left,Left,1.000,Right,No,Right,No
+interaction_18,Compare prices of HP laptop model across different online retailers,Left,Left,Left,Left,Left,Left,1.000,Left,Yes,Left,Yes
+interaction_19,get me online price details comparison of samsung qled 75 inch tv from 5 leading...,Right,Right,Right,Right,Right,Right,1.000,Tie,No,Tie,No
+interaction_20,Give me a summary of this week's best-selling crypto coins.,Left,Left,Left,Left,Left,Left,1.000,N/A,N/A,N/A,N/A
+interaction_21,how is the weather today,Left,Left,Left,Left,Left,Left,1.000,N/A,N/A,N/A,N/A
+interaction_22,What are today's top 10 most popular articles on buzzfeed?,Left,Left,Left,Left,Left,Left,1.000,N/A,N/A,N/A,N/A
+interaction_23,Find the titles and authors of the top 3 bestselling fiction books on Amazon's h...,Left,Left,Left,Left,Left,Left,1.000,N/A,N/A,N/A,N/A
+interaction_24,What are the names of the top 20 most frequently visited lakes in the world curr...,Tie,Tie,Tie,Tie,Tie,Tie,1.000,N/A,N/A,N/A,N/A
+interaction_25,Go to the New York Times website and find the most recent op-ed article related ...,Tie,Right,Right,Tie,Right,Right,0.387,N/A,N/A,N/A,N/A

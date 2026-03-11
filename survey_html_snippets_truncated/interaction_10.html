@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> a list of top 10 churches</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_30_52_Eso.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: a list of top 10 churches <br>📍 Step 1<br>🤷 Eval: Unknown - Starting the task. No previous actions taken yet.<br>🧠 Memory: Initiating search for top 10 churches. Step 1/15. Next: Extract list from Google results.<br>🎯 Next goal: Search Google for &#39;top 10 most famous churches worldwide&#39; to find a list.<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;top 10 most famous churches worldwide&quot;}}<br>🔍  Searched for &quot;top 10 most famous churches worldwide&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Google search returned multiple relevant results with potential lists of churches<br>🧠 Memory: Step 2/15. Search completed. Identified 5 potential sources: 1) VisitedApp (index 33), 2) Celebrity Cruises (47), 3) W<br><br>[... truncated for brevity ...]<br><br> Vatican sites.<br>🎯 Next goal: Finalize list with no missing elements<br>🛠️  Action 1/1: {&quot;done&quot;:{&quot;text&quot;:&quot;Top 10 Churches from VisitedApp data: 1. Notre Dame Cathedral (Paris) 2. Pantheon (Rome) 3. Sagrada Familia (Barcelona) 4. St. Peter’s Basilica (Vatican) 5. Sistine Chapel (Vatican) 6. Sacre-Coeur (Paris) 7. Westminster Abbey (London) 8. Milan Cathedral (Italy) 9. St. Paul’s Cathedral (London) 10. St. Mark’s Basilica (Venice)&quot;,&quot;success&quot;:true}}<br>📄 Result: Top 10 Churches from VisitedApp data: 1. Notre Dame Cathedral (Paris) 2. Pantheon (Rome) 3. Sagrada Familia (Barcelona) 4. St. Peter’s Basilica (Vatican) 5. Sistine Chapel (Vatican) 6. Sacre-Coeur (Paris) 7. Westminster Abbey (London) 8. Milan Cathedral (Italy) 9. St. Paul’s Cathedral (London) 10. St. Mark’s Basilica (Venice)<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_30_52_wcO.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: a list of top 10 churches <br>📍 Step 1<br>🤷 Eval: Unknown - I&#39;m starting with a blank page, so there&#39;s no previous action to evaluate.<br>🧠 Memory: I&#39;m starting a task to find a list of top 10 churches. I&#39;m beginning with a blank page and need to search for this information.<br>🎯 Next goal: Search Google for information about top 10 churches<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;top 10 most famous churches in the world&quot;}}<br>🔍  Searched for &quot;top 10 most famous churches in the world&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - I successfully searched for &#39;top 10 most famous churches in the world&#39; and Google has returned relevant search results showing several links that appe<br><br>[... truncated for brevity ...]<br><br>&#39;anthropic/claude-3.7-sonnet:thinking&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826438-eYyWAPPLOoKd0baCLiHI&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-d60b31a0-f317-4d88-b1aa-cdc699e118cb-0&#39; usage_metadata={&#39;input_tokens&#39;: 5849, &#39;output_tokens&#39;: 593, &#39;total_tokens&#39;: 6442, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error 1 validation error for AgentOutput<br>action.0.extract_content.should_strip_link_urls<br>  Field required [type=missing, input_value={&#39;goal&#39;: &#39;extract the com...nd any key information&#39;}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

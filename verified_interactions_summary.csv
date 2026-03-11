@@ -1,0 +1,253 @@
+interaction_num,vote_type,user_task,side,model_name,gif_id,log_id,status
+1,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,12_05_2025_03_54_21_KhV.gif,12_05_2025_03_54_21_KhV,FAILED
+1,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,12_05_2025_03_54_21_dPl.gif,12_05_2025_03_54_21_dPl,FAILED
+2,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,12_05_2025_04_05_21_mCX.gif,12_05_2025_04_05_21_mCX,SUCCESS
+2,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,12_05_2025_04_05_21_eYC.gif,12_05_2025_04_05_21_eYC,FAILED
+3,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,12_05_2025_03_56_29_aty.gif,12_05_2025_03_56_29_aty,FAILED
+3,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,12_05_2025_03_56_29_nGd.gif,12_05_2025_03_56_29_nGd,FAILED
+4,leftvote,find me any recipe on food.com,LEFT,google/gemini-2.5-pro-preview-03-25,12_05_2025_05_13_04_KAL.gif,12_05_2025_05_13_04_KAL,FAILED
+4,leftvote,find me any recipe on food.com,RIGHT,anthropic/claude-3.7-sonnet:thinking,12_05_2025_05_13_04_yaD.gif,12_05_2025_05_13_04_yaD,FAILED
+5,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_15_10_56_EiU.gif,07_05_2025_15_10_56_EiU,SUCCESS
+5,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,07_05_2025_15_10_56_hQu.gif,07_05_2025_15_10_56_hQu,SUCCESS
+6,leftvote,Name the Top 10 headlines from BBC News,LEFT,google/gemini-2.5-pro-preview-03-25,09_05_2025_19_57_33_HgY.gif,09_05_2025_19_57_33_HgY,SUCCESS
+6,leftvote,Name the Top 10 headlines from BBC News,RIGHT,openai/o4-mini,09_05_2025_19_57_33_CFM.gif,09_05_2025_19_57_33_CFM,FAILED
+7,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,09_05_2025_20_13_59_XFw.gif,09_05_2025_20_13_59_XFw,FAILED
+7,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_20_13_59_wLl.gif,09_05_2025_20_13_59_wLl,FAILED
+8,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_20_11_09_SCY.gif,09_05_2025_20_11_09_SCY,FAILED
+8,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_20_11_09_FrD.gif,09_05_2025_20_11_09_FrD,FAILED
+9,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,09_05_2025_20_58_23_Idv.gif,09_05_2025_20_58_23_Idv,FAILED
+9,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_20_58_23_unx.gif,09_05_2025_20_58_23_unx,FAILED
+10,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_21_30_52_Eso.gif,09_05_2025_21_30_52_Eso,SUCCESS
+10,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_21_30_52_wcO.gif,09_05_2025_21_30_52_wcO,FAILED
+11,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_21_21_06_MSm.gif,09_05_2025_21_21_06_MSm,FAILED
+11,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_21_21_06_kAA.gif,09_05_2025_21_21_06_kAA,FAILED
+12,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_21_28_12_OnA.gif,09_05_2025_21_28_12_OnA,FAILED
+12,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_21_28_12_RJD.gif,09_05_2025_21_28_12_RJD,FAILED
+13,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_21_40_30_XjR.gif,09_05_2025_21_40_30_XjR,FAILED
+13,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_21_40_30_YEs.gif,09_05_2025_21_40_30_YEs,FAILED
+14,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,09_05_2025_21_53_08_BHP.gif,09_05_2025_21_53_08_BHP,FAILED
+14,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,09_05_2025_21_53_08_Zvg.gif,09_05_2025_21_53_08_Zvg,SUCCESS
+15,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,09_05_2025_21_53_08_BHP.gif,09_05_2025_21_53_08_BHP,FAILED
+15,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,09_05_2025_21_53_08_Zvg.gif,09_05_2025_21_53_08_Zvg,SUCCESS
+16,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_21_36_59_crp.gif,09_05_2025_21_36_59_crp,FAILED
+16,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_21_36_59_AvQ.gif,09_05_2025_21_36_59_AvQ,FAILED
+17,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,09_05_2025_21_41_14_YwM.gif,09_05_2025_21_41_14_YwM,FAILED
+17,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_21_41_14_DvE.gif,09_05_2025_21_41_14_DvE,FAILED
+18,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_22_23_29_cgB.gif,09_05_2025_22_23_29_cgB,FAILED
+18,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_22_23_29_IXB.gif,09_05_2025_22_23_29_IXB,FAILED
+19,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,09_05_2025_22_44_26_YNT.gif,09_05_2025_22_44_26_YNT,FAILED
+19,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,09_05_2025_22_44_26_xEk.gif,09_05_2025_22_44_26_xEk,FAILED
+20,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_22_39_53_FuI.gif,09_05_2025_22_39_53_FuI,SUCCESS
+20,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_22_39_53_htb.gif,09_05_2025_22_39_53_htb,FAILED
+21,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_23_09_20_BUj.gif,09_05_2025_23_09_20_BUj,SUCCESS
+21,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_23_09_20_MfC.gif,09_05_2025_23_09_20_MfC,FAILED
+22,tievote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,10_05_2025_00_00_27_IAX.gif,10_05_2025_00_00_27_IAX,FAILED
+22,tievote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,10_05_2025_00_00_27_TVe.gif,10_05_2025_00_00_27_TVe,FAILED
+23,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,10_05_2025_01_14_08_PHv.gif,10_05_2025_01_14_08_PHv,FAILED
+23,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,10_05_2025_01_14_08_RLX.gif,10_05_2025_01_14_08_RLX,FAILED
+24,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,10_05_2025_01_25_04_TAY.gif,10_05_2025_01_25_04_TAY,FAILED
+24,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,10_05_2025_01_25_04_TTJ.gif,10_05_2025_01_25_04_TTJ,FAILED
+25,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,10_05_2025_01_37_05_xIM.gif,10_05_2025_01_37_05_xIM,FAILED
+25,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,10_05_2025_01_37_05_jxR.gif,10_05_2025_01_37_05_jxR,FAILED
+26,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,10_05_2025_02_04_43_gWk.gif,10_05_2025_02_04_43_gWk,FAILED
+26,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,10_05_2025_02_04_43_lFr.gif,10_05_2025_02_04_43_lFr,FAILED
+27,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,10_05_2025_03_04_51_sSy.gif,10_05_2025_03_04_51_sSy,SUCCESS
+27,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,10_05_2025_03_04_51_idu.gif,10_05_2025_03_04_51_idu,FAILED
+28,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,10_05_2025_03_16_40_dQm.gif,10_05_2025_03_16_40_dQm,FAILED
+28,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,10_05_2025_03_16_40_fSK.gif,10_05_2025_03_16_40_fSK,FAILED
+29,rightvote,what are today's top 10 sports news headlines,LEFT,google/gemini-2.5-pro-preview-03-25,10_05_2025_03_41_38_tUR.gif,10_05_2025_03_41_38_tUR,FAILED
+29,rightvote,what are today's top 10 sports news headlines,RIGHT,deepseek/deepseek-r1,10_05_2025_03_41_38_ygE.gif,10_05_2025_03_41_38_ygE,FAILED
+30,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_04_28_09_hSQ.gif,11_05_2025_04_28_09_hSQ,SUCCESS
+30,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,11_05_2025_04_28_09_efj.gif,11_05_2025_04_28_09_efj,FAILED
+31,rightvote,Create a list of the top 10 highest rated video games from IGN.,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_04_50_35_dLM.gif,11_05_2025_04_50_35_dLM,FAILED
+31,rightvote,Create a list of the top 10 highest rated video games from IGN.,RIGHT,meta-llama/llama-4-maverick,11_05_2025_04_50_35_pjT.gif,11_05_2025_04_50_35_pjT,FAILED
+32,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_04_36_50_zuh.gif,11_05_2025_04_36_50_zuh,FAILED
+32,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_04_36_50_kRW.gif,11_05_2025_04_36_50_kRW,FAILED
+33,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_06_10_26_Lck.gif,11_05_2025_06_10_26_Lck,FAILED
+33,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_06_10_26_QpD.gif,11_05_2025_06_10_26_QpD,FAILED
+34,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_06_12_22_ScT.gif,11_05_2025_06_12_22_ScT,FAILED
+34,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_06_12_22_GuP.gif,11_05_2025_06_12_22_GuP,FAILED
+35,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_06_38_30_pBK.gif,11_05_2025_06_38_30_pBK,FAILED
+35,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,11_05_2025_06_38_30_Yxu.gif,11_05_2025_06_38_30_Yxu,FAILED
+36,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_06_11_16_bVY.gif,11_05_2025_06_11_16_bVY,FAILED
+36,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,11_05_2025_06_11_16_zDI.gif,11_05_2025_06_11_16_zDI,FAILED
+37,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_06_47_08_gAp.gif,11_05_2025_06_47_08_gAp,FAILED
+37,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_06_47_08_Erz.gif,11_05_2025_06_47_08_Erz,FAILED
+38,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_07_28_41_LZs.gif,11_05_2025_07_28_41_LZs,FAILED
+38,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,11_05_2025_07_28_41_zYJ.gif,11_05_2025_07_28_41_zYJ,FAILED
+39,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_07_31_35_GLU.gif,11_05_2025_07_31_35_GLU,FAILED
+39,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,11_05_2025_07_31_35_atF.gif,11_05_2025_07_31_35_atF,FAILED
+40,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_08_09_43_nJw.gif,11_05_2025_08_09_43_nJw,FAILED
+40,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_08_09_43_LcZ.gif,11_05_2025_08_09_43_LcZ,FAILED
+41,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_08_10_03_OcQ.gif,11_05_2025_08_10_03_OcQ,FAILED
+41,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_08_10_03_qWU.gif,11_05_2025_08_10_03_qWU,FAILED
+42,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_08_39_43_kNs.gif,11_05_2025_08_39_43_kNs,FAILED
+42,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_08_39_43_xKr.gif,11_05_2025_08_39_43_xKr,FAILED
+43,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_05_43_38_Axf.gif,11_05_2025_05_43_38_Axf,FAILED
+43,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_05_43_38_xXO.gif,11_05_2025_05_43_38_xXO,FAILED
+44,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_08_38_16_sbS.gif,11_05_2025_08_38_16_sbS,SUCCESS
+44,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,11_05_2025_08_38_16_UpM.gif,11_05_2025_08_38_16_UpM,FAILED
+45,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_09_27_37_oRg.gif,11_05_2025_09_27_37_oRg,FAILED
+45,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_09_27_37_ppp.gif,11_05_2025_09_27_37_ppp,FAILED
+46,rightvote,"Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150.",LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_09_47_02_VYi.gif,11_05_2025_09_47_02_VYi,SUCCESS
+46,rightvote,"Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150.",RIGHT,deepseek/deepseek-r1,11_05_2025_09_47_02_HsO.gif,11_05_2025_09_47_02_HsO,FAILED
+47,rightvote,what are today's top 10 sports news headlines,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_14_25_19_YhJ.gif,11_05_2025_14_25_19_YhJ,FAILED
+47,rightvote,what are today's top 10 sports news headlines,RIGHT,meta-llama/llama-4-maverick,11_05_2025_14_25_19_FIv.gif,11_05_2025_14_25_19_FIv,FAILED
+48,tievote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_14_34_53_PCs.gif,11_05_2025_14_34_53_PCs,FAILED
+48,tievote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_14_34_53_tdO.gif,11_05_2025_14_34_53_tdO,FAILED
+49,rightvote,What are the 10 ways to save the planet while gardening according to rhs.org.uk?,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_14_47_18_Era.gif,11_05_2025_14_47_18_Era,FAILED
+49,rightvote,What are the 10 ways to save the planet while gardening according to rhs.org.uk?,RIGHT,deepseek/deepseek-r1,11_05_2025_14_47_18_ZxX.gif,11_05_2025_14_47_18_ZxX,FAILED
+50,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_14_32_29_BvX.gif,11_05_2025_14_32_29_BvX,FAILED
+50,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_14_32_29_iUd.gif,11_05_2025_14_32_29_iUd,FAILED
+51,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_16_31_49_Ibq.gif,11_05_2025_16_31_49_Ibq,FAILED
+51,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_16_31_49_uth.gif,11_05_2025_16_31_49_uth,FAILED
+52,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_16_33_04_asV.gif,11_05_2025_16_33_04_asV,FAILED
+52,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_16_33_04_ERr.gif,11_05_2025_16_33_04_ERr,SUCCESS
+53,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_17_06_51_Omm.gif,11_05_2025_17_06_51_Omm,FAILED
+53,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,11_05_2025_17_06_51_uKJ.gif,11_05_2025_17_06_51_uKJ,FAILED
+54,rightvote,List all the UK airports fly that internationally,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_17_51_33_HXH.gif,11_05_2025_17_51_33_HXH,FAILED
+54,rightvote,List all the UK airports fly that internationally,RIGHT,deepseek/deepseek-r1,11_05_2025_17_51_33_qse.gif,11_05_2025_17_51_33_qse,SUCCESS
+55,rightvote,provide me 4 list of journal on wood treatment,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_17_35_23_AUA.gif,11_05_2025_17_35_23_AUA,FAILED
+55,rightvote,provide me 4 list of journal on wood treatment,RIGHT,deepseek/deepseek-r1,11_05_2025_17_35_23_ErL.gif,11_05_2025_17_35_23_ErL,FAILED
+56,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_18_05_49_bNN.gif,11_05_2025_18_05_49_bNN,FAILED
+56,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_18_05_49_qWj.gif,11_05_2025_18_05_49_qWj,FAILED
+57,leftvote,Give me a list of PS5 games that are on sale on the American PSN right now.,LEFT,x-ai/grok-3-beta,03_05_2025_04_39_44_lfl.gif,03_05_2025_04_39_44_lfl,SUCCESS
+57,leftvote,Give me a list of PS5 games that are on sale on the American PSN right now.,RIGHT,google/gemini-2.5-pro-preview-03-25,03_05_2025_04_39_44_LpZ.gif,03_05_2025_04_39_44_LpZ,FAILED
+58,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,03_05_2025_05_09_32_ews.gif,03_05_2025_05_09_32_ews,FAILED
+58,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,03_05_2025_05_09_32_cgp.gif,03_05_2025_05_09_32_cgp,SUCCESS
+59,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,03_05_2025_21_13_18_MuP.gif,03_05_2025_21_13_18_MuP,FAILED
+59,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,03_05_2025_21_13_18_maG.gif,03_05_2025_21_13_18_maG,SUCCESS
+60,leftvote,What was the trending price of gold in comparison to nasdaq in the last 60 days?,LEFT,google/gemini-2.5-pro-preview-03-25,03_05_2025_21_12_20_pzJ.gif,03_05_2025_21_12_20_pzJ,FAILED
+60,leftvote,What was the trending price of gold in comparison to nasdaq in the last 60 days?,RIGHT,openai/o4-mini,03_05_2025_21_12_20_HMD.gif,03_05_2025_21_12_20_HMD,FAILED
+61,rightvote,What is the top 10 stream song currently on apple music?,LEFT,deepseek/deepseek-r1,NOT_FOUND,NOT_FOUND,SUCCESS
+61,rightvote,What is the top 10 stream song currently on apple music?,RIGHT,x-ai/grok-3-beta,NOT_FOUND,NOT_FOUND,SUCCESS
+62,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,09_05_2025_23_54_56_qXn.gif,09_05_2025_23_54_56_qXn,FAILED
+62,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,09_05_2025_23_54_56_lGf.gif,09_05_2025_23_54_56_lGf,FAILED
+63,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,10_05_2025_03_50_52_aUr.gif,10_05_2025_03_50_52_aUr,FAILED
+63,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,10_05_2025_03_50_52_mxm.gif,10_05_2025_03_50_52_mxm,FAILED
+64,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_04_18_25_WsH.gif,11_05_2025_04_18_25_WsH,FAILED
+64,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_04_18_25_ZyS.gif,11_05_2025_04_18_25_ZyS,FAILED
+65,leftvote,what guitar does acousticguitarforum.com recommend as best for beginners,LEFT,meta-llama/llama-4-maverick,NOT_FOUND,NOT_FOUND,FAILED
+65,leftvote,what guitar does acousticguitarforum.com recommend as best for beginners,RIGHT,anthropic/claude-3.7-sonnet:thinking,NOT_FOUND,NOT_FOUND,FAILED
+66,rightvote,What are the top five songs on cmt.com?,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_07_24_02_guO.gif,11_05_2025_07_24_02_guO,FAILED
+66,rightvote,What are the top five songs on cmt.com?,RIGHT,deepseek/deepseek-r1,11_05_2025_07_24_02_PwH.gif,11_05_2025_07_24_02_PwH,FAILED
+67,rightvote,Compare flight prices from washington DC to Paris france to flights from washington DC to Kyoto Japan,LEFT,deepseek/deepseek-r1,NOT_FOUND,NOT_FOUND,SUCCESS
+67,rightvote,Compare flight prices from washington DC to Paris france to flights from washington DC to Kyoto Japan,RIGHT,google/gemini-2.5-pro-preview-03-25,12_05_2025_03_44_04_AeP.gif,12_05_2025_03_44_04_AeP,FAILED
+68,rightvote,Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.,LEFT,x-ai/grok-3-beta,12_05_2025_03_49_08_znz.gif,12_05_2025_03_49_08_znz,FAILED
+68,rightvote,Create a list of the 10 best horror movies and include 3 Stephen King movies in that list.,RIGHT,google/gemini-2.5-pro-preview-03-25,12_05_2025_03_49_08_ZIj.gif,12_05_2025_03_49_08_ZIj,FAILED
+69,rightvote,What is the hottest weather report in the UK today from BBC weather?,LEFT,x-ai/grok-3-beta,07_05_2025_15_28_05_yOU.gif,07_05_2025_15_28_05_yOU,FAILED
+69,rightvote,What is the hottest weather report in the UK today from BBC weather?,RIGHT,meta-llama/llama-4-maverick,07_05_2025_15_28_05_EbZ.gif,07_05_2025_15_28_05_EbZ,FAILED
+70,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,07_05_2025_15_13_54_flC.gif,07_05_2025_15_13_54_flC,FAILED
+70,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,07_05_2025_15_13_54_ndq.gif,07_05_2025_15_13_54_ndq,FAILED
+71,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,07_05_2025_15_45_37_FDR.gif,07_05_2025_15_45_37_FDR,FAILED
+71,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,07_05_2025_15_45_37_RfJ.gif,07_05_2025_15_45_37_RfJ,FAILED
+72,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_15_41_55_LST.gif,07_05_2025_15_41_55_LST,FAILED
+72,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_15_41_55_OKo.gif,07_05_2025_15_41_55_OKo,FAILED
+73,tievote,Give me a summary of top 10 philanonymous LLM company foundations that give grants in  favor of LGBTQI community.,LEFT,x-ai/grok-3-beta,07_05_2025_16_08_42_cZf.gif,07_05_2025_16_08_42_cZf,FAILED
+73,tievote,Give me a summary of top 10 philanonymous LLM company foundations that give grants in  favor of LGBTQI community.,RIGHT,meta-llama/llama-4-maverick,07_05_2025_16_08_42_ceu.gif,07_05_2025_16_08_42_ceu,FAILED
+74,tievote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_17_17_20_xqV.gif,07_05_2025_17_17_20_xqV,FAILED
+74,tievote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,07_05_2025_17_17_20_jBO.gif,07_05_2025_17_17_20_jBO,FAILED
+75,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_18_05_35_okT.gif,07_05_2025_18_05_35_okT,FAILED
+75,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,07_05_2025_18_05_35_iPJ.gif,07_05_2025_18_05_35_iPJ,FAILED
+76,tievote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_17_52_02_oTk.gif,07_05_2025_17_52_02_oTk,SUCCESS
+76,tievote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,07_05_2025_17_52_02_FAG.gif,07_05_2025_17_52_02_FAG,FAILED
+77,tievote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_17_52_02_oTk.gif,07_05_2025_17_52_02_oTk,SUCCESS
+77,tievote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,07_05_2025_17_52_02_FAG.gif,07_05_2025_17_52_02_FAG,FAILED
+78,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_17_43_01_THR.gif,07_05_2025_17_43_01_THR,FAILED
+78,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,07_05_2025_17_43_01_aZt.gif,07_05_2025_17_43_01_aZt,FAILED
+79,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,07_05_2025_18_12_48_HXx.gif,07_05_2025_18_12_48_HXx,FAILED
+79,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,07_05_2025_18_12_48_NLl.gif,07_05_2025_18_12_48_NLl,FAILED
+80,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_18_14_47_bzD.gif,07_05_2025_18_14_47_bzD,FAILED
+80,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,07_05_2025_18_14_47_xLQ.gif,07_05_2025_18_14_47_xLQ,FAILED
+81,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,07_05_2025_18_47_35_WyF.gif,07_05_2025_18_47_35_WyF,FAILED
+81,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,07_05_2025_18_47_35_nMx.gif,07_05_2025_18_47_35_nMx,FAILED
+82,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,09_05_2025_21_42_22_kZY.gif,09_05_2025_21_42_22_kZY,FAILED
+82,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,09_05_2025_21_42_22_SdT.gif,09_05_2025_21_42_22_SdT,FAILED
+83,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,09_05_2025_21_42_45_OpM.gif,09_05_2025_21_42_45_OpM,SUCCESS
+83,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,09_05_2025_21_42_45_IxH.gif,09_05_2025_21_42_45_IxH,FAILED
+84,rightvote,is deportation the best solution for illegal migrants?,LEFT,x-ai/grok-3-beta,09_05_2025_23_49_59_oZV.gif,09_05_2025_23_49_59_oZV,FAILED
+84,rightvote,is deportation the best solution for illegal migrants?,RIGHT,meta-llama/llama-4-maverick,09_05_2025_23_49_59_ugh.gif,09_05_2025_23_49_59_ugh,FAILED
+85,rightvote,is deportation the best solution for illegal migrants?,LEFT,x-ai/grok-3-beta,09_05_2025_23_49_59_oZV.gif,09_05_2025_23_49_59_oZV,FAILED
+85,rightvote,is deportation the best solution for illegal migrants?,RIGHT,meta-llama/llama-4-maverick,09_05_2025_23_49_59_ugh.gif,09_05_2025_23_49_59_ugh,FAILED
+86,rightvote,"Can you find me the shortest and most comfortable flight from Show Low, AZ to Wellington, New Zealand?",LEFT,x-ai/grok-3-beta,09_05_2025_23_51_28_cJD.gif,09_05_2025_23_51_28_cJD,FAILED
+86,rightvote,"Can you find me the shortest and most comfortable flight from Show Low, AZ to Wellington, New Zealand?",RIGHT,openai/o4-mini,09_05_2025_23_51_28_LOj.gif,09_05_2025_23_51_28_LOj,FAILED
+87,rightvote,What are today's top 5 political news in UK,LEFT,x-ai/grok-3-beta,10_05_2025_00_01_48_pTG.gif,10_05_2025_00_01_48_pTG,FAILED
+87,rightvote,What are today's top 5 political news in UK,RIGHT,openai/o4-mini,10_05_2025_00_01_48_LVO.gif,10_05_2025_00_01_48_LVO,SUCCESS
+88,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,10_05_2025_00_21_07_kiE.gif,10_05_2025_00_21_07_kiE,FAILED
+88,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,10_05_2025_00_21_07_EWr.gif,10_05_2025_00_21_07_EWr,FAILED
+89,rightvote,What are today's top 5 headlines from Korea JoongAng Daily?,LEFT,x-ai/grok-3-beta,10_05_2025_00_34_36_wqu.gif,10_05_2025_00_34_36_wqu,FAILED
+89,rightvote,What are today's top 5 headlines from Korea JoongAng Daily?,RIGHT,openai/o4-mini,10_05_2025_00_34_36_jIN.gif,10_05_2025_00_34_36_jIN,FAILED
+90,rightvote,Give me a summary of current measures in place to curb climate change in United states.,LEFT,x-ai/grok-3-beta,10_05_2025_00_52_29_AYh.gif,10_05_2025_00_52_29_AYh,FAILED
+90,rightvote,Give me a summary of current measures in place to curb climate change in United states.,RIGHT,anthropic/claude-3.7-sonnet:thinking,10_05_2025_00_52_29_BZG.gif,10_05_2025_00_52_29_BZG,FAILED
+91,rightvote,create a list of the current Stanley Cup playoff match ups.,LEFT,x-ai/grok-3-beta,10_05_2025_01_17_27_zKf.gif,10_05_2025_01_17_27_zKf,FAILED
+91,rightvote,create a list of the current Stanley Cup playoff match ups.,RIGHT,openai/o4-mini,10_05_2025_01_17_27_KXl.gif,10_05_2025_01_17_27_KXl,FAILED
+92,leftvote,"Go to the New York Times website, navigate to the 'Books' section, and summarize the review of the current week's featured fiction book.",LEFT,google/gemini-2.5-pro-preview-03-25,10_05_2025_03_03_55_vsV.gif,10_05_2025_03_03_55_vsV,FAILED
+92,leftvote,"Go to the New York Times website, navigate to the 'Books' section, and summarize the review of the current week's featured fiction book.",RIGHT,x-ai/grok-3-beta,10_05_2025_03_03_55_Umi.gif,10_05_2025_03_03_55_Umi,FAILED
+93,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,10_05_2025_03_33_17_FeF.gif,10_05_2025_03_33_17_FeF,FAILED
+93,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,10_05_2025_03_33_17_MBI.gif,10_05_2025_03_33_17_MBI,FAILED
+94,rightvote,List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least.,LEFT,x-ai/grok-3-beta,11_05_2025_04_22_35_TKg.gif,11_05_2025_04_22_35_TKg,FAILED
+94,rightvote,List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least.,RIGHT,deepseek/deepseek-r1,11_05_2025_04_22_35_YOe.gif,11_05_2025_04_22_35_YOe,SUCCESS
+95,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_04_31_42_NTW.gif,11_05_2025_04_31_42_NTW,FAILED
+95,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,11_05_2025_04_31_42_xwx.gif,11_05_2025_04_31_42_xwx,FAILED
+96,rightvote,Create a list of top 100 rappers in UK,LEFT,google/gemini-2.5-pro-preview-03-25,11_05_2025_06_11_25_JlO.gif,11_05_2025_06_11_25_JlO,FAILED
+96,rightvote,Create a list of top 100 rappers in UK,RIGHT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_06_11_25_ckK.gif,11_05_2025_06_11_25_ckK,FAILED
+97,rightvote,Compare the flight price for a round trip ticket from Los Angeles to Tokyo next Sunday on different ticket purchasing websites.,LEFT,x-ai/grok-3-beta,11_05_2025_06_23_26_pIG.gif,11_05_2025_06_23_26_pIG,FAILED
+97,rightvote,Compare the flight price for a round trip ticket from Los Angeles to Tokyo next Sunday on different ticket purchasing websites.,RIGHT,openai/o4-mini,11_05_2025_06_23_26_uTs.gif,11_05_2025_06_23_26_uTs,FAILED
+98,rightvote,What are the top 10 best family friendly restaurants in the Sondrio area of Italy?,LEFT,x-ai/grok-3-beta,11_05_2025_07_25_13_oaF.gif,11_05_2025_07_25_13_oaF,FAILED
+98,rightvote,What are the top 10 best family friendly restaurants in the Sondrio area of Italy?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_07_25_13_Hoh.gif,11_05_2025_07_25_13_Hoh,SUCCESS
+99,rightvote,What is the best rated Samsung TV according to which?,LEFT,x-ai/grok-3-beta,11_05_2025_14_19_12_TeJ.gif,11_05_2025_14_19_12_TeJ,FAILED
+99,rightvote,What is the best rated Samsung TV according to which?,RIGHT,meta-llama/llama-4-maverick,11_05_2025_14_19_12_veF.gif,11_05_2025_14_19_12_veF,FAILED
+100,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,11_05_2025_14_22_03_XJs.gif,11_05_2025_14_22_03_XJs,FAILED
+100,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,11_05_2025_14_22_03_UuM.gif,11_05_2025_14_22_03_UuM,FAILED
+101,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,11_05_2025_14_26_48_bdr.gif,11_05_2025_14_26_48_bdr,FAILED
+101,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,11_05_2025_14_26_48_nYP.gif,11_05_2025_14_26_48_nYP,FAILED
+102,rightvote,Find the current top 5 trending indie games on Steam's 'Popular Upcoming' list and summarize their genres and release dates.,LEFT,x-ai/grok-3-beta,11_05_2025_15_23_15_HWs.gif,11_05_2025_15_23_15_HWs,FAILED
+102,rightvote,Find the current top 5 trending indie games on Steam's 'Popular Upcoming' list and summarize their genres and release dates.,RIGHT,meta-llama/llama-4-maverick,11_05_2025_15_23_15_iFQ.gif,11_05_2025_15_23_15_iFQ,FAILED
+103,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_16_37_10_TjY.gif,11_05_2025_16_37_10_TjY,FAILED
+103,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,11_05_2025_16_37_10_Qis.gif,11_05_2025_16_37_10_Qis,FAILED
+104,rightvote,Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk,LEFT,x-ai/grok-3-beta,11_05_2025_16_36_02_yKE.gif,11_05_2025_16_36_02_yKE,FAILED
+104,rightvote,Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk,RIGHT,deepseek/deepseek-r1,11_05_2025_16_36_02_Exa.gif,11_05_2025_16_36_02_Exa,SUCCESS
+105,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,11_05_2025_16_44_24_wEl.gif,11_05_2025_16_44_24_wEl,SUCCESS
+105,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,11_05_2025_16_44_24_StO.gif,11_05_2025_16_44_24_StO,FAILED
+106,rightvote,Provide me a list of 3-letter words that begin with the letter w,LEFT,x-ai/grok-3-beta,03_05_2025_04_36_24_hCn.gif,03_05_2025_04_36_24_hCn,FAILED
+106,rightvote,Provide me a list of 3-letter words that begin with the letter w,RIGHT,google/gemini-2.5-pro-preview-03-25,03_05_2025_04_36_24_DPn.gif,03_05_2025_04_36_24_DPn,SUCCESS
+107,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,03_05_2025_04_41_09_QzZ.gif,03_05_2025_04_41_09_QzZ,FAILED
+107,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,03_05_2025_04_41_09_Gqg.gif,03_05_2025_04_41_09_Gqg,SUCCESS
+108,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,03_05_2025_20_57_58_Nih.gif,03_05_2025_20_57_58_Nih,FAILED
+108,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,google/gemini-2.5-pro-preview-03-25,03_05_2025_20_57_58_cSG.gif,03_05_2025_20_57_58_cSG,FAILED
+109,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,03_05_2025_20_57_54_VhL.gif,03_05_2025_20_57_54_VhL,FAILED
+109,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,03_05_2025_20_57_54_dkz.gif,03_05_2025_20_57_54_dkz,FAILED
+110,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,03_05_2025_21_14_53_lsB.gif,03_05_2025_21_14_53_lsB,FAILED
+110,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,03_05_2025_21_14_53_hgh.gif,03_05_2025_21_14_53_hgh,FAILED
+111,rightvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,openai/o4-mini,03_05_2025_21_14_53_lsB.gif,03_05_2025_21_14_53_lsB,FAILED
+111,rightvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,meta-llama/llama-4-maverick,03_05_2025_21_14_53_hgh.gif,03_05_2025_21_14_53_hgh,FAILED
+112,rightvote,What is the lowest critic review score for Octopath Traveler on Metacritic?,LEFT,x-ai/grok-3-beta,03_05_2025_21_08_57_AQd.gif,03_05_2025_21_08_57_AQd,FAILED
+112,rightvote,What is the lowest critic review score for Octopath Traveler on Metacritic?,RIGHT,deepseek/deepseek-r1,03_05_2025_21_08_57_Imc.gif,03_05_2025_21_08_57_Imc,SUCCESS
+113,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,03_05_2025_21_22_53_VdC.gif,03_05_2025_21_22_53_VdC,FAILED
+113,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,03_05_2025_21_22_53_yqc.gif,03_05_2025_21_22_53_yqc,FAILED
+114,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,03_05_2025_21_30_18_JgL.gif,03_05_2025_21_30_18_JgL,FAILED
+114,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,deepseek/deepseek-r1,03_05_2025_21_30_18_bUN.gif,03_05_2025_21_30_18_bUN,FAILED
+115,rightvote,give me ten recent news headlines in sports and news from bbc.co.uk,LEFT,google/gemini-2.5-pro-preview-03-25,NOT_FOUND,NOT_FOUND,FAILED
+115,rightvote,give me ten recent news headlines in sports and news from bbc.co.uk,RIGHT,x-ai/grok-3-beta,NOT_FOUND,NOT_FOUND,FAILED
+116,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_04_32_00_JSV.gif,07_05_2025_04_32_00_JSV,FAILED
+116,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,07_05_2025_04_32_00_iTj.gif,07_05_2025_04_32_00_iTj,FAILED
+117,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,07_05_2025_18_43_04_XGu.gif,07_05_2025_18_43_04_XGu,FAILED
+117,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,anthropic/claude-3.7-sonnet:thinking,07_05_2025_18_43_04_ppN.gif,07_05_2025_18_43_04_ppN,FAILED
+118,tievote,"""Find the top 5 best-selling fiction books on the New York Times Best Sellers list and summarize their descriptions.""",LEFT,x-ai/grok-3-beta,10_05_2025_00_23_41_Oeo.gif,10_05_2025_00_23_41_Oeo,FAILED
+118,tievote,"""Find the top 5 best-selling fiction books on the New York Times Best Sellers list and summarize their descriptions.""",RIGHT,deepseek/deepseek-r1,10_05_2025_00_23_41_NPb.gif,10_05_2025_00_23_41_NPb,FAILED
+119,leftvote,gifts under $25 for mother's day,LEFT,google/gemini-2.5-pro-preview-03-25,10_05_2025_01_06_39_yrs.gif,10_05_2025_01_06_39_yrs,FAILED
+119,leftvote,gifts under $25 for mother's day,RIGHT,x-ai/grok-3-beta,10_05_2025_01_06_39_PrQ.gif,10_05_2025_01_06_39_PrQ,FAILED
+120,rightvote,Go to the ESPN website and find the latest power rankings for MLB teams. List the top 5 teams and provide a brief analysis of why each team is ranked where they are.,LEFT,google/gemini-2.5-pro-preview-03-25,NOT_FOUND,NOT_FOUND,FAILED
+120,rightvote,Go to the ESPN website and find the latest power rankings for MLB teams. List the top 5 teams and provide a brief analysis of why each team is ranked where they are.,RIGHT,meta-llama/llama-4-maverick,NOT_FOUND,NOT_FOUND,FAILED
+121,leftvote,what are todays top 10 headlines on anchorage daily news?,LEFT,openai/o4-mini,NOT_FOUND,NOT_FOUND,FAILED
+121,leftvote,what are todays top 10 headlines on anchorage daily news?,RIGHT,deepseek/deepseek-r1,NOT_FOUND,NOT_FOUND,FAILED
+122,rightvote,Can you compile the list of the most affordable new built properties in manchester across different websites- specifically 3 to 4 bedroom houses with separate,LEFT,google/gemini-2.5-pro-preview-03-25,NOT_FOUND,NOT_FOUND,FAILED
+122,rightvote,Can you compile the list of the most affordable new built properties in manchester across different websites- specifically 3 to 4 bedroom houses with separate,RIGHT,meta-llama/llama-4-maverick,NOT_FOUND,NOT_FOUND,FAILED
+123,leftvote,Tell me the exact times and prices for trains leaving West Byfleet station for London Waterloo next Sunday around 9am on www.nationalrail.co.uk,LEFT,deepseek/deepseek-r1,NOT_FOUND,NOT_FOUND,FAILED
+123,leftvote,Tell me the exact times and prices for trains leaving West Byfleet station for London Waterloo next Sunday around 9am on www.nationalrail.co.uk,RIGHT,anthropic/claude-3.7-sonnet:thinking,NOT_FOUND,NOT_FOUND,FAILED
+124,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,meta-llama/llama-4-maverick,11_05_2025_14_31_41_EqG.gif,11_05_2025_14_31_41_EqG,FAILED
+124,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,x-ai/grok-3-beta,11_05_2025_14_31_41_TJc.gif,11_05_2025_14_31_41_TJc,FAILED
+125,leftvote,Got any creative ideas for a 10 year old’s birthday?,LEFT,deepseek/deepseek-r1,12_05_2025_03_51_49_OXc.gif,12_05_2025_03_51_49_OXc,FAILED
+125,leftvote,Got any creative ideas for a 10 year old’s birthday?,RIGHT,openai/o4-mini,12_05_2025_03_51_49_tJF.gif,12_05_2025_03_51_49_tJF,FAILED
+126,rightvote,top 5 wildlife rescue,LEFT,anthropic/claude-3.7-sonnet:thinking,NOT_FOUND,NOT_FOUND,FAILED
+126,rightvote,top 5 wildlife rescue,RIGHT,openai/o4-mini,NOT_FOUND,NOT_FOUND,FAILED

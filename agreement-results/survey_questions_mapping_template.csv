@@ -1,0 +1,20 @@
+question,task_description,task_id,agent1_output_file,agent2_output_file,baseline_winner,agent1_model,agent2_model
+Q1,,,,,Agent 1,openai/o4-mini,google/gemini-2.5-pro-preview-03-25
+Q2,,,,,Agent 1,deepseek/deepseek-r1,google/gemini-2.5-pro-preview-03-25
+Q3,,,,,Agent 1,deepseek/deepseek-r1,google/gemini-2.5-pro-preview-03-25
+Q4,,,,,Agent 1,google/gemini-2.5-pro-preview-03-25,anthropic/claude-3.7-sonnet:thinking
+Q5,,,,,Agent 1,meta-llama/llama-4-maverick,deepseek/deepseek-r1
+Q6,,,,,Agent 1,google/gemini-2.5-pro-preview-03-25,openai/o4-mini
+Q7,,,,,Agent 1,openai/o4-mini,google/gemini-2.5-pro-preview-03-25
+Q8,,,,,Agent 1,anthropic/claude-3.7-sonnet:thinking,google/gemini-2.5-pro-preview-03-25
+Q9,,,,,Agent 1,meta-llama/llama-4-maverick,anthropic/claude-3.7-sonnet:thinking
+Q10,,,,,Agent 1,deepseek/deepseek-r1,anthropic/claude-3.7-sonnet:thinking
+Q11,,,,,Agent 1,anthropic/claude-3.7-sonnet:thinking,google/gemini-2.5-pro-preview-03-25
+Q12,,,,,Agent 1,anthropic/claude-3.7-sonnet:thinking,google/gemini-2.5-pro-preview-03-25
+Q13,,,,,Agent 1,deepseek/deepseek-r1,anthropic/claude-3.7-sonnet:thinking
+Q16,,,,,Agent 1,deepseek/deepseek-r1,google/gemini-2.5-pro-preview-03-25
+Q17,,,,,Agent 1,openai/o4-mini,google/gemini-2.5-pro-preview-03-25
+Q18,,,,,Agent 1,anthropic/claude-3.7-sonnet:thinking,google/gemini-2.5-pro-preview-03-25
+Q19,,,,,Agent 2,meta-llama/llama-4-maverick,anthropic/claude-3.7-sonnet:thinking
+Q20,,,,,Agent 1,deepseek/deepseek-r1,google/gemini-2.5-pro-preview-03-25
+Q22,,,,,Tie,openai/o4-mini,meta-llama/llama-4-maverick

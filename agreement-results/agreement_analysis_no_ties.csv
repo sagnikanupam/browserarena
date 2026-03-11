@@ -1,0 +1,20 @@
+question,original_label,majority_label_no_ties,n_responses_no_ties,agent_1_votes,agent_2_votes,ties_excluded,majority_percentage
+Q1,Agent 1,Agent 1,16,14,2,10,87.5%
+Q10,Agent 1,Agent 1,28,22,6,4,78.6%
+Q11,Agent 1,Agent 1,6,4,2,18,66.7%
+Q12,Agent 1,Agent 1,12,7,5,12,58.3%
+Q13,Agent 1,Agent 1,35,31,4,1,88.6%
+Q16,Agent 1,Agent 1,11,8,3,13,72.7%
+Q17,Agent 1,Agent 1,12,8,4,12,66.7%
+Q18,Agent 1,Agent 1,12,8,4,8,66.7%
+Q19,Agent 2,Agent 2,25,7,18,9,72.0%
+Q2,Agent 1,Agent 1,24,23,1,2,95.8%
+Q20,Agent 1,Agent 1,19,18,1,1,94.7%
+Q22,Tie,Agent 2,13,4,9,15,69.2%
+Q3,Agent 1,Agent 1,22,17,5,7,77.3%
+Q4,Agent 1,Agent 1,30,26,4,1,86.7%
+Q5,Agent 1,Agent 1,13,8,5,11,61.5%
+Q6,Agent 1,Agent 1,25,21,4,1,84.0%
+Q7,Agent 1,Agent 1,13,11,2,14,84.6%
+Q8,Agent 1,Agent 1,25,19,6,0,76.0%
+Q9,Agent 1,Agent 1,27,22,5,2,81.5%

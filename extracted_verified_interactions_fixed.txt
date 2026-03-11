@@ -1,0 +1,2145 @@
+=== VERIFIED BROWSERARENA INTERACTIONS ===
+Total interactions: 126
+==================================================
+
+INTERACTION 1
+Date/Time: 2025-05-12 00:04:48
+Vote Type: leftvote
+User Task: How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 12_05_2025_03_54_21_KhV.gif
+  Log ID: 12_05_2025_03_54_21_KhV
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_03_54_21_dPl.gif
+  Log ID: 12_05_2025_03_54_21_dPl
+
+--------------------------------------------------------------------------------
+
+INTERACTION 2
+Date/Time: 2025-05-12 00:08:19
+Vote Type: leftvote
+User Task: Create a summary for the wikipedia article about Manchester Metrolink
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 12_05_2025_04_05_21_mCX.gif
+  Log ID: 12_05_2025_04_05_21_mCX
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_04_05_21_eYC.gif
+  Log ID: 12_05_2025_04_05_21_eYC
+
+--------------------------------------------------------------------------------
+
+INTERACTION 3
+Date/Time: 2025-05-12 00:09:34
+Vote Type: leftvote
+User Task: Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items including their titles and prices.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 12_05_2025_03_56_29_aty.gif
+  Log ID: 12_05_2025_03_56_29_aty
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_03_56_29_nGd.gif
+  Log ID: 12_05_2025_03_56_29_nGd
+
+--------------------------------------------------------------------------------
+
+INTERACTION 4
+Date/Time: 2025-05-12 01:30:49
+Vote Type: leftvote
+User Task: find me any recipe on food.com 
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_05_13_04_KAL.gif
+  Log ID: 12_05_2025_05_13_04_KAL
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 12_05_2025_05_13_04_yaD.gif
+  Log ID: 12_05_2025_05_13_04_yaD
+
+--------------------------------------------------------------------------------
+
+INTERACTION 5
+Date/Time: 2025-05-07 11:27:49
+Vote Type: leftvote
+User Task: visit the New York Times homepage and summarize the main story currently featured at the top of the page
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_15_10_56_EiU.gif
+  Log ID: 07_05_2025_15_10_56_EiU
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_15_10_56_hQu.gif
+  Log ID: 07_05_2025_15_10_56_hQu
+
+--------------------------------------------------------------------------------
+
+INTERACTION 6
+Date/Time: 2025-05-09 16:03:26
+Vote Type: leftvote
+User Task: Name the Top 10 headlines from BBC News
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_19_57_33_HgY.gif
+  Log ID: 09_05_2025_19_57_33_HgY
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_19_57_33_CFM.gif
+  Log ID: 09_05_2025_19_57_33_CFM
+
+--------------------------------------------------------------------------------
+
+INTERACTION 7
+Date/Time: 2025-05-09 16:25:22
+Vote Type: leftvote
+User Task: What are the today's top headlines from Fox News?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_20_13_59_XFw.gif
+  Log ID: 09_05_2025_20_13_59_XFw
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_20_13_59_wLl.gif
+  Log ID: 09_05_2025_20_13_59_wLl
+
+--------------------------------------------------------------------------------
+
+INTERACTION 8
+Date/Time: 2025-05-09 16:27:56
+Vote Type: leftvote
+User Task: Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Maryland and include the hourly rate. 
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_20_11_09_SCY.gif
+  Log ID: 09_05_2025_20_11_09_SCY
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_20_11_09_FrD.gif
+  Log ID: 09_05_2025_20_11_09_FrD
+
+--------------------------------------------------------------------------------
+
+INTERACTION 9
+Date/Time: 2025-05-09 17:13:23
+Vote Type: leftvote
+User Task: create a list of the top 20 best selling nintendo switch games
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_20_58_23_Idv.gif
+  Log ID: 09_05_2025_20_58_23_Idv
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_20_58_23_unx.gif
+  Log ID: 09_05_2025_20_58_23_unx
+
+--------------------------------------------------------------------------------
+
+INTERACTION 10
+Date/Time: 2025-05-09 17:35:15
+Vote Type: leftvote
+User Task: a list of top 10 churches 
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_21_30_52_Eso.gif
+  Log ID: 09_05_2025_21_30_52_Eso
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_21_30_52_wcO.gif
+  Log ID: 09_05_2025_21_30_52_wcO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 11
+Date/Time: 2025-05-09 17:37:41
+Vote Type: leftvote
+User Task: What are the top video titles on youtube homepage?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_21_21_06_MSm.gif
+  Log ID: 09_05_2025_21_21_06_MSm
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_21_21_06_kAA.gif
+  Log ID: 09_05_2025_21_21_06_kAA
+
+--------------------------------------------------------------------------------
+
+INTERACTION 12
+Date/Time: 2025-05-09 17:49:58
+Vote Type: leftvote
+User Task: Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth on the 20th of May
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_21_28_12_OnA.gif
+  Log ID: 09_05_2025_21_28_12_OnA
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_21_28_12_RJD.gif
+  Log ID: 09_05_2025_21_28_12_RJD
+
+--------------------------------------------------------------------------------
+
+INTERACTION 13
+Date/Time: 2025-05-09 17:50:38
+Vote Type: leftvote
+User Task: List out the symptoms of Vitamin D deficiency from WebMd and any other medical website
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_21_40_30_XjR.gif
+  Log ID: 09_05_2025_21_40_30_XjR
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_21_40_30_YEs.gif
+  Log ID: 09_05_2025_21_40_30_YEs
+
+--------------------------------------------------------------------------------
+
+INTERACTION 14
+Date/Time: 2025-05-09 17:57:47
+Vote Type: rightvote
+User Task: What is the best Arcade Fire albums listed from best to worst?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_21_53_08_BHP.gif
+  Log ID: 09_05_2025_21_53_08_BHP
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_53_08_Zvg.gif
+  Log ID: 09_05_2025_21_53_08_Zvg
+
+--------------------------------------------------------------------------------
+
+INTERACTION 15
+Date/Time: 2025-05-09 17:57:47
+Vote Type: rightvote
+User Task: What is the best Arcade Fire albums listed from best to worst?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_21_53_08_BHP.gif
+  Log ID: 09_05_2025_21_53_08_BHP
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_53_08_Zvg.gif
+  Log ID: 09_05_2025_21_53_08_Zvg
+
+--------------------------------------------------------------------------------
+
+INTERACTION 16
+Date/Time: 2025-05-09 18:09:04
+Vote Type: leftvote
+User Task: give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_21_36_59_crp.gif
+  Log ID: 09_05_2025_21_36_59_crp
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_21_36_59_AvQ.gif
+  Log ID: 09_05_2025_21_36_59_AvQ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 17
+Date/Time: 2025-05-09 18:20:54
+Vote Type: leftvote
+User Task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa 
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_21_41_14_YwM.gif
+  Log ID: 09_05_2025_21_41_14_YwM
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_21_41_14_DvE.gif
+  Log ID: 09_05_2025_21_41_14_DvE
+
+--------------------------------------------------------------------------------
+
+INTERACTION 18
+Date/Time: 2025-05-09 18:46:15
+Vote Type: leftvote
+User Task: Compare prices of HP laptop model across different online retailers
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_22_23_29_cgB.gif
+  Log ID: 09_05_2025_22_23_29_cgB
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_22_23_29_IXB.gif
+  Log ID: 09_05_2025_22_23_29_IXB
+
+--------------------------------------------------------------------------------
+
+INTERACTION 19
+Date/Time: 2025-05-09 18:53:17
+Vote Type: rightvote
+User Task: get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa along with price from samsung website 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_22_44_26_YNT.gif
+  Log ID: 09_05_2025_22_44_26_YNT
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_22_44_26_xEk.gif
+  Log ID: 09_05_2025_22_44_26_xEk
+
+--------------------------------------------------------------------------------
+
+INTERACTION 20
+Date/Time: 2025-05-09 19:10:56
+Vote Type: leftvote
+User Task: Give me a summary of this week's best-selling crypto coins.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_22_39_53_FuI.gif
+  Log ID: 09_05_2025_22_39_53_FuI
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_22_39_53_htb.gif
+  Log ID: 09_05_2025_22_39_53_htb
+
+--------------------------------------------------------------------------------
+
+INTERACTION 21
+Date/Time: 2025-05-09 19:20:46
+Vote Type: leftvote
+User Task: how is the weather today
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_23_09_20_BUj.gif
+  Log ID: 09_05_2025_23_09_20_BUj
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_23_09_20_MfC.gif
+  Log ID: 09_05_2025_23_09_20_MfC
+
+--------------------------------------------------------------------------------
+
+INTERACTION 22
+Date/Time: 2025-05-09 20:15:49
+Vote Type: tievote
+User Task: What are today's top 10 most popular articles on buzzfeed?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_00_00_27_IAX.gif
+  Log ID: 10_05_2025_00_00_27_IAX
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_00_00_27_TVe.gif
+  Log ID: 10_05_2025_00_00_27_TVe
+
+--------------------------------------------------------------------------------
+
+INTERACTION 23
+Date/Time: 2025-05-09 21:31:41
+Vote Type: leftvote
+User Task: Find the titles and authors of the top 3 bestselling fiction books on Amazon's homepage today.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_01_14_08_PHv.gif
+  Log ID: 10_05_2025_01_14_08_PHv
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_01_14_08_RLX.gif
+  Log ID: 10_05_2025_01_14_08_RLX
+
+--------------------------------------------------------------------------------
+
+INTERACTION 24
+Date/Time: 2025-05-09 21:50:31
+Vote Type: leftvote
+User Task: What are the names of the top 20 most frequently visited lakes in the world currently?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_01_25_04_TAY.gif
+  Log ID: 10_05_2025_01_25_04_TAY
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_01_25_04_TTJ.gif
+  Log ID: 10_05_2025_01_25_04_TTJ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 25
+Date/Time: 2025-05-09 22:03:40
+Vote Type: rightvote
+User Task: Go to the New York Times website and find the most recent op-ed article related to climate change. Summarize the main argument of the piece.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_01_37_05_xIM.gif
+  Log ID: 10_05_2025_01_37_05_xIM
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_01_37_05_jxR.gif
+  Log ID: 10_05_2025_01_37_05_jxR
+
+--------------------------------------------------------------------------------
+
+INTERACTION 26
+Date/Time: 2025-05-09 23:00:51
+Vote Type: rightvote
+User Task: Check the IKEA website and find three coffee tables priced under $150 that are available for delivery. Write down their names, prices and one unique feature or material for each. 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 10_05_2025_02_04_43_gWk.gif
+  Log ID: 10_05_2025_02_04_43_gWk
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_02_04_43_lFr.gif
+  Log ID: 10_05_2025_02_04_43_lFr
+
+--------------------------------------------------------------------------------
+
+INTERACTION 27
+Date/Time: 2025-05-09 23:14:21
+Vote Type: leftvote
+User Task: What are today's top 20 headlines from Fox News?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_03_04_51_sSy.gif
+  Log ID: 10_05_2025_03_04_51_sSy
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 10_05_2025_03_04_51_idu.gif
+  Log ID: 10_05_2025_03_04_51_idu
+
+--------------------------------------------------------------------------------
+
+INTERACTION 28
+Date/Time: 2025-05-09 23:32:49
+Vote Type: leftvote
+User Task: what are the fastest-growing tech startups in Toronto?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_03_16_40_dQm.gif
+  Log ID: 10_05_2025_03_16_40_dQm
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 10_05_2025_03_16_40_fSK.gif
+  Log ID: 10_05_2025_03_16_40_fSK
+
+--------------------------------------------------------------------------------
+
+INTERACTION 29
+Date/Time: 2025-05-09 23:52:02
+Vote Type: rightvote
+User Task: what are today's top 10 sports news headlines
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 10_05_2025_03_41_38_tUR.gif
+  Log ID: 10_05_2025_03_41_38_tUR
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_03_41_38_ygE.gif
+  Log ID: 10_05_2025_03_41_38_ygE
+
+--------------------------------------------------------------------------------
+
+INTERACTION 30
+Date/Time: 2025-05-11 00:33:01
+Vote Type: leftvote
+User Task: Please provide me with the top 5 articles which are displayed on stuff nz homepage
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_04_28_09_hSQ.gif
+  Log ID: 11_05_2025_04_28_09_hSQ
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_04_28_09_efj.gif
+  Log ID: 11_05_2025_04_28_09_efj
+
+--------------------------------------------------------------------------------
+
+INTERACTION 31
+Date/Time: 2025-05-11 00:59:29
+Vote Type: rightvote
+User Task: Create a list of the top 10 highest rated video games from IGN.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_04_50_35_dLM.gif
+  Log ID: 11_05_2025_04_50_35_dLM
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_04_50_35_pjT.gif
+  Log ID: 11_05_2025_04_50_35_pjT
+
+--------------------------------------------------------------------------------
+
+INTERACTION 32
+Date/Time: 2025-05-11 01:29:26
+Vote Type: leftvote
+User Task: Go to the BestBuy website and find the current top-rated wireless headphones under $200. Summarize the product name, price, and average customer rating of the top three options.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_04_36_50_zuh.gif
+  Log ID: 11_05_2025_04_36_50_zuh
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_04_36_50_kRW.gif
+  Log ID: 11_05_2025_04_36_50_kRW
+
+--------------------------------------------------------------------------------
+
+INTERACTION 33
+Date/Time: 2025-05-11 02:19:06
+Vote Type: leftvote
+User Task: Go to nba.com and compile a list of the top 10 NBA players with the most points scored over the past week.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_06_10_26_Lck.gif
+  Log ID: 11_05_2025_06_10_26_Lck
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_06_10_26_QpD.gif
+  Log ID: 11_05_2025_06_10_26_QpD
+
+--------------------------------------------------------------------------------
+
+INTERACTION 34
+Date/Time: 2025-05-11 02:26:49
+Vote Type: leftvote
+User Task: Go to the BBC News homepage, in the ''World' section, and list the top 5 headlines currently featured there.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_06_12_22_ScT.gif
+  Log ID: 11_05_2025_06_12_22_ScT
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_06_12_22_GuP.gif
+  Log ID: 11_05_2025_06_12_22_GuP
+
+--------------------------------------------------------------------------------
+
+INTERACTION 35
+Date/Time: 2025-05-11 02:40:25
+Vote Type: leftvote
+User Task: Who is the richest musician in the united states
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_06_38_30_pBK.gif
+  Log ID: 11_05_2025_06_38_30_pBK
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_06_38_30_Yxu.gif
+  Log ID: 11_05_2025_06_38_30_Yxu
+
+--------------------------------------------------------------------------------
+
+INTERACTION 36
+Date/Time: 2025-05-11 02:43:39
+Vote Type: leftvote
+User Task: What is today's most trending movies on netflix
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_06_11_16_bVY.gif
+  Log ID: 11_05_2025_06_11_16_bVY
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_06_11_16_zDI.gif
+  Log ID: 11_05_2025_06_11_16_zDI
+
+--------------------------------------------------------------------------------
+
+INTERACTION 37
+Date/Time: 2025-05-11 03:17:36
+Vote Type: leftvote
+User Task: Find the top 5 most expensive books currently listed on AbeBooks.com and provide their titles, authors, and prices. Then compare these prices with listings for the same books on BookFinder.com if available.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_06_47_08_gAp.gif
+  Log ID: 11_05_2025_06_47_08_gAp
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_06_47_08_Erz.gif
+  Log ID: 11_05_2025_06_47_08_Erz
+
+--------------------------------------------------------------------------------
+
+INTERACTION 38
+Date/Time: 2025-05-11 03:42:18
+Vote Type: rightvote
+User Task: Find the current top 10 trending movies on IMDb and list their titles along with their user ratings
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_07_28_41_LZs.gif
+  Log ID: 11_05_2025_07_28_41_LZs
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_07_28_41_zYJ.gif
+  Log ID: 11_05_2025_07_28_41_zYJ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 39
+Date/Time: 2025-05-11 03:45:39
+Vote Type: rightvote
+User Task: Find the top 5 most-viewed movies currently playing in theaters, according to IMDb's 'Most Popular Movies' list, and list their IMDb ratings.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_07_31_35_GLU.gif
+  Log ID: 11_05_2025_07_31_35_GLU
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_07_31_35_atF.gif
+  Log ID: 11_05_2025_07_31_35_atF
+
+--------------------------------------------------------------------------------
+
+INTERACTION 40
+Date/Time: 2025-05-11 04:12:13
+Vote Type: rightvote
+User Task: what is the third most read article on which.com?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_08_09_43_nJw.gif
+  Log ID: 11_05_2025_08_09_43_nJw
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_08_09_43_LcZ.gif
+  Log ID: 11_05_2025_08_09_43_LcZ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 41
+Date/Time: 2025-05-11 04:22:19
+Vote Type: rightvote
+User Task: Find the current top 10 trending movies on IMDb and list their titles along with their user ratings
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_08_10_03_OcQ.gif
+  Log ID: 11_05_2025_08_10_03_OcQ
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_08_10_03_qWU.gif
+  Log ID: 11_05_2025_08_10_03_qWU
+
+--------------------------------------------------------------------------------
+
+INTERACTION 42
+Date/Time: 2025-05-11 04:44:41
+Vote Type: rightvote
+User Task: Who are the winners of ballon d'or for the last 5 years?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_08_39_43_kNs.gif
+  Log ID: 11_05_2025_08_39_43_kNs
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_08_39_43_xKr.gif
+  Log ID: 11_05_2025_08_39_43_xKr
+
+--------------------------------------------------------------------------------
+
+INTERACTION 43
+Date/Time: 2025-05-11 04:56:51
+Vote Type: leftvote
+User Task: Compare the plane ticket planes price for round trip airfare from New York To Hawaii on different plane ticket purchasing websites. 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_05_43_38_Axf.gif
+  Log ID: 11_05_2025_05_43_38_Axf
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_05_43_38_xXO.gif
+  Log ID: 11_05_2025_05_43_38_xXO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 44
+Date/Time: 2025-05-11 05:01:09
+Vote Type: leftvote
+User Task: Compare the specifications of smartphones on the honor magic 7 pro to the Iqoo 13.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_08_38_16_sbS.gif
+  Log ID: 11_05_2025_08_38_16_sbS
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_08_38_16_UpM.gif
+  Log ID: 11_05_2025_08_38_16_UpM
+
+--------------------------------------------------------------------------------
+
+INTERACTION 45
+Date/Time: 2025-05-11 05:43:37
+Vote Type: leftvote
+User Task: Find me the last available train from Cardiff Central to Barry Docks station today on trainline
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_09_27_37_oRg.gif
+  Log ID: 11_05_2025_09_27_37_oRg
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_09_27_37_ppp.gif
+  Log ID: 11_05_2025_09_27_37_ppp
+
+--------------------------------------------------------------------------------
+
+INTERACTION 46
+Date/Time: 2025-05-11 06:28:59
+Vote Type: rightvote
+User Task: Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_09_47_02_VYi.gif
+  Log ID: 11_05_2025_09_47_02_VYi
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_09_47_02_HsO.gif
+  Log ID: 11_05_2025_09_47_02_HsO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 47
+Date/Time: 2025-05-11 10:43:35
+Vote Type: rightvote
+User Task: what are today's top 10 sports news headlines
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_14_25_19_YhJ.gif
+  Log ID: 11_05_2025_14_25_19_YhJ
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_14_25_19_FIv.gif
+  Log ID: 11_05_2025_14_25_19_FIv
+
+--------------------------------------------------------------------------------
+
+INTERACTION 48
+Date/Time: 2025-05-11 10:46:02
+Vote Type: tievote
+User Task: Go to Tripadvisor and find the top 3 rated hotels in Barcelona, Spain with free Wi-Fi and breakfast included. List their names, average user rating, and the starting price per night.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_14_34_53_PCs.gif
+  Log ID: 11_05_2025_14_34_53_PCs
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_14_34_53_tdO.gif
+  Log ID: 11_05_2025_14_34_53_tdO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 49
+Date/Time: 2025-05-11 10:55:31
+Vote Type: rightvote
+User Task: What are the 10 ways to save the planet while gardening according to rhs.org.uk?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_14_47_18_Era.gif
+  Log ID: 11_05_2025_14_47_18_Era
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_14_47_18_ZxX.gif
+  Log ID: 11_05_2025_14_47_18_ZxX
+
+--------------------------------------------------------------------------------
+
+INTERACTION 50
+Date/Time: 2025-05-11 11:02:13
+Vote Type: rightvote
+User Task: What are the top 20 rarest vintage bottle caps in the world?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_14_32_29_BvX.gif
+  Log ID: 11_05_2025_14_32_29_BvX
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_14_32_29_iUd.gif
+  Log ID: 11_05_2025_14_32_29_iUd
+
+--------------------------------------------------------------------------------
+
+INTERACTION 51
+Date/Time: 2025-05-11 12:39:53
+Vote Type: leftvote
+User Task: Compare prices for different brands of laptops using sites like Amazon or Best Buy let you compare specs, reviews, and costs.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_31_49_Ibq.gif
+  Log ID: 11_05_2025_16_31_49_Ibq
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_16_31_49_uth.gif
+  Log ID: 11_05_2025_16_31_49_uth
+
+--------------------------------------------------------------------------------
+
+INTERACTION 52
+Date/Time: 2025-05-11 12:55:02
+Vote Type: rightvote
+User Task: Make me a list of the top most played heroes in Overwatch 2
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_33_04_asV.gif
+  Log ID: 11_05_2025_16_33_04_asV
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_16_33_04_ERr.gif
+  Log ID: 11_05_2025_16_33_04_ERr
+
+--------------------------------------------------------------------------------
+
+INTERACTION 53
+Date/Time: 2025-05-11 13:26:33
+Vote Type: rightvote
+User Task: Please return the total number of competitive goals Henrik Larsson scored for Glasgow Celtic football club giving subtotals by the teams he scored against.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_17_06_51_Omm.gif
+  Log ID: 11_05_2025_17_06_51_Omm
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_17_06_51_uKJ.gif
+  Log ID: 11_05_2025_17_06_51_uKJ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 54
+Date/Time: 2025-05-11 13:54:54
+Vote Type: rightvote
+User Task: List all the UK airports fly that internationally
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_17_51_33_HXH.gif
+  Log ID: 11_05_2025_17_51_33_HXH
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_17_51_33_qse.gif
+  Log ID: 11_05_2025_17_51_33_qse
+
+--------------------------------------------------------------------------------
+
+INTERACTION 55
+Date/Time: 2025-05-11 14:02:55
+Vote Type: rightvote
+User Task: provide me 4 list of journal on wood treatment 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_17_35_23_AUA.gif
+  Log ID: 11_05_2025_17_35_23_AUA
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_17_35_23_ErL.gif
+  Log ID: 11_05_2025_17_35_23_ErL
+
+--------------------------------------------------------------------------------
+
+INTERACTION 56
+Date/Time: 2025-05-11 14:32:41
+Vote Type: leftvote
+User Task: What are the top 10 Rides at alton towers for families ranging from ages 2 to adults?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_18_05_49_bNN.gif
+  Log ID: 11_05_2025_18_05_49_bNN
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_18_05_49_qWj.gif
+  Log ID: 11_05_2025_18_05_49_qWj
+
+--------------------------------------------------------------------------------
+
+INTERACTION 57
+Date/Time: 2025-05-03 00:55:42
+Vote Type: leftvote
+User Task: N/A
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_39_44_LpZ.gif
+  Log ID: 03_05_2025_04_39_44_LpZ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 58
+Date/Time: 2025-05-03 01:13:20
+Vote Type: rightvote
+User Task: How do I reset my browser on Chrome?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_05_09_32_ews.gif
+  Log ID: 03_05_2025_05_09_32_ews
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 03_05_2025_05_09_32_cgp.gif
+  Log ID: 03_05_2025_05_09_32_cgp
+
+--------------------------------------------------------------------------------
+
+INTERACTION 59
+Date/Time: 2025-05-03 17:21:17
+Vote Type: rightvote
+User Task: As a naturalist and a climate change enthusiast,  I want you to  book a sustainable and eco-friendly vacation package to a national park in the United States by ranking them from five Stars to two stars. Here is the description of the task. Find and compare eco-friendly accommodations and guided tours within the park, and plan a daily itinerary that includes sustainable activities while minimizing carbon footprint.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_21_13_18_MuP.gif
+  Log ID: 03_05_2025_21_13_18_MuP
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_21_13_18_maG.gif
+  Log ID: 03_05_2025_21_13_18_maG
+
+--------------------------------------------------------------------------------
+
+INTERACTION 60
+Date/Time: 2025-05-03 17:38:04
+Vote Type: leftvote
+User Task: What was the trending price of gold in comparison to nasdaq in the last 60 days?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_21_12_20_pzJ.gif
+  Log ID: 03_05_2025_21_12_20_pzJ
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 03_05_2025_21_12_20_HMD.gif
+  Log ID: 03_05_2025_21_12_20_HMD
+
+--------------------------------------------------------------------------------
+
+INTERACTION 61
+Date/Time: N/A
+Vote Type: rightvote
+User Task: What is the top 10 stream song currently on apple music?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 62
+Date/Time: 2025-05-09 19:57:26
+Vote Type: leftvote
+User Task: With Leeds United recent promotion to the Premier League, give me five new players that Leeds should look at recruiting for next season.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_23_54_56_qXn.gif
+  Log ID: 09_05_2025_23_54_56_qXn
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_23_54_56_lGf.gif
+  Log ID: 09_05_2025_23_54_56_lGf
+
+--------------------------------------------------------------------------------
+
+INTERACTION 63
+Date/Time: 2025-05-10 00:05:58
+Vote Type: rightvote
+User Task: Visit different running websites and compare running hats for men and find an option that has a fun design, is primarily white, and has sun protection.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_03_50_52_aUr.gif
+  Log ID: 10_05_2025_03_50_52_aUr
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_03_50_52_mxm.gif
+  Log ID: 10_05_2025_03_50_52_mxm
+
+--------------------------------------------------------------------------------
+
+INTERACTION 64
+Date/Time: 2025-05-11 00:23:58
+Vote Type: rightvote
+User Task: What are the propabilities of the Federal reserve cutting rates one, two, or three times in 2025 and what are the odds of when will they do it
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_04_18_25_WsH.gif
+  Log ID: 11_05_2025_04_18_25_WsH
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_04_18_25_ZyS.gif
+  Log ID: 11_05_2025_04_18_25_ZyS
+
+--------------------------------------------------------------------------------
+
+INTERACTION 65
+Date/Time: N/A
+Vote Type: leftvote
+User Task: what guitar does acousticguitarforum.com recommend as best for beginners 
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: meta-llama/llama-4-maverick
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 66
+Date/Time: 2025-05-11 03:31:30
+Vote Type: rightvote
+User Task: What are the top five songs on cmt.com?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_07_24_02_guO.gif
+  Log ID: 11_05_2025_07_24_02_guO
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_07_24_02_PwH.gif
+  Log ID: 11_05_2025_07_24_02_PwH
+
+--------------------------------------------------------------------------------
+
+INTERACTION 67
+Date/Time: 2025-05-11 23:44:46
+Vote Type: rightvote
+User Task: Compare flight prices from washington DC to Paris france to flights from washington DC to Kyoto Japan
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_03_44_04_AeP.gif
+  Log ID: 12_05_2025_03_44_04_AeP
+
+--------------------------------------------------------------------------------
+
+INTERACTION 68
+Date/Time: 2025-05-11 23:53:34
+Vote Type: rightvote
+User Task: N/A
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_03_49_08_ZIj.gif
+  Log ID: 12_05_2025_03_49_08_ZIj
+
+--------------------------------------------------------------------------------
+
+INTERACTION 69
+Date/Time: 2025-05-07 11:34:29
+Vote Type: rightvote
+User Task: What is the hottest weather report in the UK today from BBC weather?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_15_28_05_EbZ.gif
+  Log ID: 07_05_2025_15_28_05_EbZ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 70
+Date/Time: 2025-05-07 11:37:17
+Vote Type: rightvote
+User Task: Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 07_05_2025_15_13_54_flC.gif
+  Log ID: 07_05_2025_15_13_54_flC
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_15_13_54_ndq.gif
+  Log ID: 07_05_2025_15_13_54_ndq
+
+--------------------------------------------------------------------------------
+
+INTERACTION 71
+Date/Time: 2025-05-07 11:52:47
+Vote Type: leftvote
+User Task: Find the top-rated laptop under $1000 on BestBuy.com and summarize its key features
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 07_05_2025_15_45_37_FDR.gif
+  Log ID: 07_05_2025_15_45_37_FDR
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 72
+Date/Time: 2025-05-07 12:06:26
+Vote Type: leftvote
+User Task: Please compare the cost of flights between Toronto, Canada and London, England across different sites, including baggage charges.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_15_41_55_LST.gif
+  Log ID: 07_05_2025_15_41_55_LST
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_15_41_55_OKo.gif
+  Log ID: 07_05_2025_15_41_55_OKo
+
+--------------------------------------------------------------------------------
+
+INTERACTION 73
+Date/Time: 2025-05-07 12:13:18
+Vote Type: tievote
+User Task: Give me a summary of top 10 philanonymous LLM company foundations that give grants in  favor of LGBTQI community.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_16_08_42_ceu.gif
+  Log ID: 07_05_2025_16_08_42_ceu
+
+--------------------------------------------------------------------------------
+
+INTERACTION 74
+Date/Time: 2025-05-07 13:55:40
+Vote Type: tievote
+User Task: Go to Amazon.com and find the three best-rated unlocked smartphones under £200
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_17_17_20_xqV.gif
+  Log ID: 07_05_2025_17_17_20_xqV
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 07_05_2025_17_17_20_jBO.gif
+  Log ID: 07_05_2025_17_17_20_jBO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 75
+Date/Time: 2025-05-07 14:15:43
+Vote Type: rightvote
+User Task: Create a list of the top 10 things to do on a trip to Cape Cod using travel websites.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_18_05_35_okT.gif
+  Log ID: 07_05_2025_18_05_35_okT
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_18_05_35_iPJ.gif
+  Log ID: 07_05_2025_18_05_35_iPJ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 76
+Date/Time: 2025-05-07 14:16:53
+Vote Type: tievote
+User Task: what is the fastest car in the world?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_17_52_02_oTk.gif
+  Log ID: 07_05_2025_17_52_02_oTk
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_17_52_02_FAG.gif
+  Log ID: 07_05_2025_17_52_02_FAG
+
+--------------------------------------------------------------------------------
+
+INTERACTION 77
+Date/Time: 2025-05-07 14:16:53
+Vote Type: tievote
+User Task: what is the fastest car in the world?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_17_52_02_oTk.gif
+  Log ID: 07_05_2025_17_52_02_oTk
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_17_52_02_FAG.gif
+  Log ID: 07_05_2025_17_52_02_FAG
+
+--------------------------------------------------------------------------------
+
+INTERACTION 78
+Date/Time: 2025-05-07 14:17:07
+Vote Type: rightvote
+User Task: Go to BBC.com and summarize the top story featured on their homepage today. Include the headline and a short description of what the article is about. Make sure to click through to the full article to get the details.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_17_43_01_THR.gif
+  Log ID: 07_05_2025_17_43_01_THR
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 07_05_2025_17_43_01_aZt.gif
+  Log ID: 07_05_2025_17_43_01_aZt
+
+--------------------------------------------------------------------------------
+
+INTERACTION 79
+Date/Time: 2025-05-07 14:35:23
+Vote Type: rightvote
+User Task: Create a list of NBA Basketball MVPs sorted in teams.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 07_05_2025_18_12_48_HXx.gif
+  Log ID: 07_05_2025_18_12_48_HXx
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_18_12_48_NLl.gif
+  Log ID: 07_05_2025_18_12_48_NLl
+
+--------------------------------------------------------------------------------
+
+INTERACTION 80
+Date/Time: 2025-05-07 14:59:36
+Vote Type: rightvote
+User Task: Create a list of the top-ranked e-books on oceanofpdf.com from the United Kingdom.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_18_14_47_bzD.gif
+  Log ID: 07_05_2025_18_14_47_bzD
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 07_05_2025_18_14_47_xLQ.gif
+  Log ID: 07_05_2025_18_14_47_xLQ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 81
+Date/Time: 2025-05-07 15:54:52
+Vote Type: rightvote
+User Task: Compare the prices of the latest NVIDIA and AMD graphic cards (UK stores only).
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_18_47_35_WyF.gif
+  Log ID: 07_05_2025_18_47_35_WyF
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_18_47_35_nMx.gif
+  Log ID: 07_05_2025_18_47_35_nMx
+
+--------------------------------------------------------------------------------
+
+INTERACTION 82
+Date/Time: 2025-05-09 18:04:58
+Vote Type: leftvote
+User Task: Please review Glasgow Celtic's fixtures from this season 2024/2025 so far and tell me how many goals they have scored across all competitive competitions and then review the goals and give me the distribution of goals in 10 minute intervals of games, e.g.0-10 minutes, 11-20 minutes21-30 minutes etc all the way up to 90 minutes and then include injury time as a separate interval.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_21_42_22_kZY.gif
+  Log ID: 09_05_2025_21_42_22_kZY
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 83
+Date/Time: 2025-05-09 18:33:09
+Vote Type: leftvote
+User Task: Give me a list and details of trending cars on Wikipedia.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_42_45_OpM.gif
+  Log ID: 09_05_2025_21_42_45_OpM
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_21_42_45_IxH.gif
+  Log ID: 09_05_2025_21_42_45_IxH
+
+--------------------------------------------------------------------------------
+
+INTERACTION 84
+Date/Time: 2025-05-09 19:51:40
+Vote Type: rightvote
+User Task: is deportation the best solution for illegal migrants?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_23_49_59_ugh.gif
+  Log ID: 09_05_2025_23_49_59_ugh
+
+--------------------------------------------------------------------------------
+
+INTERACTION 85
+Date/Time: 2025-05-09 19:53:44
+Vote Type: rightvote
+User Task: is deportation the best solution for illegal migrants?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_23_49_59_ugh.gif
+  Log ID: 09_05_2025_23_49_59_ugh
+
+--------------------------------------------------------------------------------
+
+INTERACTION 86
+Date/Time: 2025-05-09 19:57:24
+Vote Type: rightvote
+User Task: Can you find me the shortest and most comfortable flight from Show Low, AZ to Wellington, New Zealand?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 09_05_2025_23_51_28_LOj.gif
+  Log ID: 09_05_2025_23_51_28_LOj
+
+--------------------------------------------------------------------------------
+
+INTERACTION 87
+Date/Time: 2025-05-09 20:13:54
+Vote Type: rightvote
+User Task: What are today's top 5 political news in UK
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_00_01_48_LVO.gif
+  Log ID: 10_05_2025_00_01_48_LVO
+
+--------------------------------------------------------------------------------
+
+INTERACTION 88
+Date/Time: 2025-05-09 20:39:38
+Vote Type: leftvote
+User Task: Write me 5 sentences in Ukrainian language using the verb "to lie".
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 10_05_2025_00_21_07_kiE.gif
+  Log ID: 10_05_2025_00_21_07_kiE
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 89
+Date/Time: 2025-05-09 20:51:17
+Vote Type: rightvote
+User Task: What are today's top 5 headlines from Korea JoongAng Daily?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_00_34_36_jIN.gif
+  Log ID: 10_05_2025_00_34_36_jIN
+
+--------------------------------------------------------------------------------
+
+INTERACTION 90
+Date/Time: 2025-05-09 21:09:59
+Vote Type: rightvote
+User Task: Give me a summary of current measures in place to curb climate change in United states.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 10_05_2025_00_52_29_BZG.gif
+  Log ID: 10_05_2025_00_52_29_BZG
+
+--------------------------------------------------------------------------------
+
+INTERACTION 91
+Date/Time: 2025-05-09 21:44:12
+Vote Type: rightvote
+User Task: create a list of the current Stanley Cup playoff match ups.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 10_05_2025_01_17_27_KXl.gif
+  Log ID: 10_05_2025_01_17_27_KXl
+
+--------------------------------------------------------------------------------
+
+INTERACTION 92
+Date/Time: 2025-05-09 23:35:32
+Vote Type: leftvote
+User Task: N/A
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 10_05_2025_03_03_55_vsV.gif
+  Log ID: 10_05_2025_03_03_55_vsV
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 93
+Date/Time: 2025-05-09 23:58:20
+Vote Type: leftvote
+User Task: What is the cheapest Hertz car rental currently available from anywhere in Portland Oregon for May 14 12:00 PM to May 16 12:00 PM?
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_03_33_17_FeF.gif
+  Log ID: 10_05_2025_03_33_17_FeF
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 94
+Date/Time: 2025-05-11 00:35:59
+Vote Type: rightvote
+User Task: List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_04_22_35_YOe.gif
+  Log ID: 11_05_2025_04_22_35_YOe
+
+--------------------------------------------------------------------------------
+
+INTERACTION 95
+Date/Time: 2025-05-11 01:20:43
+Vote Type: leftvote
+User Task: Give me a detailed breakdown of the next 10 professional combat sports (other than professional wrestling)events in Florida and in Colorado. Include prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on a reasonably significant platform (examples: DAZN, ESPN plus, ONE)
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_04_31_42_NTW.gif
+  Log ID: 11_05_2025_04_31_42_NTW
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 96
+Date/Time: 2025-05-11 02:34:16
+Vote Type: rightvote
+User Task: Create a list of top 100 rappers in UK
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_06_11_25_JlO.gif
+  Log ID: 11_05_2025_06_11_25_JlO
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_06_11_25_ckK.gif
+  Log ID: 11_05_2025_06_11_25_ckK
+
+--------------------------------------------------------------------------------
+
+INTERACTION 97
+Date/Time: 2025-05-11 02:53:08
+Vote Type: rightvote
+User Task: Compare the flight price for a round trip ticket from Los Angeles to Tokyo next Sunday on different ticket purchasing websites.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_06_23_26_uTs.gif
+  Log ID: 11_05_2025_06_23_26_uTs
+
+--------------------------------------------------------------------------------
+
+INTERACTION 98
+Date/Time: 2025-05-11 03:26:58
+Vote Type: rightvote
+User Task: What are the top 10 best family friendly restaurants in the Sondrio area of Italy?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_07_25_13_Hoh.gif
+  Log ID: 11_05_2025_07_25_13_Hoh
+
+--------------------------------------------------------------------------------
+
+INTERACTION 99
+Date/Time: 2025-05-11 10:27:34
+Vote Type: rightvote
+User Task: What is the best rated Samsung TV according to which?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_14_19_12_veF.gif
+  Log ID: 11_05_2025_14_19_12_veF
+
+--------------------------------------------------------------------------------
+
+INTERACTION 100
+Date/Time: 2025-05-11 10:27:46
+Vote Type: leftvote
+User Task: give me the list of the last ten national teams to win the world cup
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_14_22_03_XJs.gif
+  Log ID: 11_05_2025_14_22_03_XJs
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_14_22_03_UuM.gif
+  Log ID: 11_05_2025_14_22_03_UuM
+
+--------------------------------------------------------------------------------
+
+INTERACTION 101
+Date/Time: 2025-05-11 10:46:11
+Vote Type: leftvote
+User Task: Give me a comparison of different lodges in Masaai mara game reserve, in Kenya and their accommodation charges.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 11_05_2025_14_26_48_bdr.gif
+  Log ID: 11_05_2025_14_26_48_bdr
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 102
+Date/Time: 2025-05-11 11:28:39
+Vote Type: rightvote
+User Task: Find the current top 5 trending indie games on Steam's 'Popular Upcoming' list and summarize their genres and release dates.
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_15_23_15_iFQ.gif
+  Log ID: 11_05_2025_15_23_15_iFQ
+
+--------------------------------------------------------------------------------
+
+INTERACTION 103
+Date/Time: 2025-05-11 12:46:38
+Vote Type: leftvote
+User Task: Go to Amazon.com, search for '4K TVs,' sort by 'Avg. Customer Reviews,' and list the top 5 models along with their star ratings and prices.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_16_37_10_TjY.gif
+  Log ID: 11_05_2025_16_37_10_TjY
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 104
+Date/Time: 2025-05-11 12:47:28
+Vote Type: rightvote
+User Task: Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_36_02_Exa.gif
+  Log ID: 11_05_2025_16_36_02_Exa
+
+--------------------------------------------------------------------------------
+
+INTERACTION 105
+Date/Time: 2025-05-11 13:00:46
+Vote Type: leftvote
+User Task: Head over to freeCodeCamp’s news page and find the 5 most recent articles that talk about JavaScript. I want the titles, who wrote them, and when they were published.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_44_24_wEl.gif
+  Log ID: 11_05_2025_16_44_24_wEl
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 106
+Date/Time: 2025-05-03 00:48:23
+Vote Type: rightvote
+User Task: N/A
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_36_24_DPn.gif
+  Log ID: 03_05_2025_04_36_24_DPn
+
+--------------------------------------------------------------------------------
+
+INTERACTION 107
+Date/Time: 2025-05-03 00:57:54
+Vote Type: rightvote
+User Task: I’m feeling really overwhelmed lately with school and personal stuff. I was wondering if the university counseling unit can help with that?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_04_41_09_QzZ.gif
+  Log ID: 03_05_2025_04_41_09_QzZ
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_41_09_Gqg.gif
+  Log ID: 03_05_2025_04_41_09_Gqg
+
+--------------------------------------------------------------------------------
+
+INTERACTION 108
+Date/Time: 2025-05-03 17:07:34
+Vote Type: rightvote
+User Task: Which summer dresses are the most popular currently in the high street shops? Please show me the  top 10, under £50.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 03_05_2025_20_57_58_Nih.gif
+  Log ID: 03_05_2025_20_57_58_Nih
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_20_57_58_cSG.gif
+  Log ID: 03_05_2025_20_57_58_cSG
+
+--------------------------------------------------------------------------------
+
+INTERACTION 109
+Date/Time: 2025-05-03 17:14:34
+Vote Type: rightvote
+User Task: Compare hotel prices for Caesar Palace in Las Vegas across different hotel booking websites. 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 03_05_2025_20_57_54_VhL.gif
+  Log ID: 03_05_2025_20_57_54_VhL
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_20_57_54_dkz.gif
+  Log ID: 03_05_2025_20_57_54_dkz
+
+--------------------------------------------------------------------------------
+
+INTERACTION 110
+Date/Time: 2025-05-03 17:19:37
+Vote Type: rightvote
+User Task: What are the different names of the clouds in the sky?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 03_05_2025_21_14_53_lsB.gif
+  Log ID: 03_05_2025_21_14_53_lsB
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_21_14_53_hgh.gif
+  Log ID: 03_05_2025_21_14_53_hgh
+
+--------------------------------------------------------------------------------
+
+INTERACTION 111
+Date/Time: 2025-05-03 17:19:37
+Vote Type: rightvote
+User Task: What are the different names of the clouds in the sky?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 03_05_2025_21_14_53_lsB.gif
+  Log ID: 03_05_2025_21_14_53_lsB
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_21_14_53_hgh.gif
+  Log ID: 03_05_2025_21_14_53_hgh
+
+--------------------------------------------------------------------------------
+
+INTERACTION 112
+Date/Time: 2025-05-03 17:32:22
+Vote Type: rightvote
+User Task: What is the lowest critic review score for Octopath Traveler on Metacritic?
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_21_08_57_Imc.gif
+  Log ID: 03_05_2025_21_08_57_Imc
+
+--------------------------------------------------------------------------------
+
+INTERACTION 113
+Date/Time: 2025-05-03 17:32:24
+Vote Type: leftvote
+User Task: Compare the stats of C Ronaldo and Lionel Messi
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_21_22_53_VdC.gif
+  Log ID: 03_05_2025_21_22_53_VdC
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: 03_05_2025_21_22_53_yqc.gif
+  Log ID: 03_05_2025_21_22_53_yqc
+
+--------------------------------------------------------------------------------
+
+INTERACTION 114
+Date/Time: 2025-05-03 17:59:30
+Vote Type: leftvote
+User Task: what are 5 upcoming rock concerts in the state of California and what are the ticket prices from ticketmaster and other ticket retailers
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_21_30_18_JgL.gif
+  Log ID: 03_05_2025_21_30_18_JgL
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_21_30_18_bUN.gif
+  Log ID: 03_05_2025_21_30_18_bUN
+
+--------------------------------------------------------------------------------
+
+INTERACTION 115
+Date/Time: N/A
+Vote Type: rightvote
+User Task: give me ten recent news headlines in sports and news from bbc.co.uk
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 116
+Date/Time: 2025-05-07 00:36:37
+Vote Type: leftvote
+User Task: What are the top 10 songs on Spotify today?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_04_32_00_JSV.gif
+  Log ID: 07_05_2025_04_32_00_JSV
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 117
+Date/Time: 2025-05-07 14:51:45
+Vote Type: leftvote
+User Task: Create a list of the top 10 darts players in the United Kingdom, including their win rates
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_18_43_04_XGu.gif
+  Log ID: 07_05_2025_18_43_04_XGu
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 07_05_2025_18_43_04_ppN.gif
+  Log ID: 07_05_2025_18_43_04_ppN
+
+--------------------------------------------------------------------------------
+
+INTERACTION 118
+Date/Time: 2025-05-09 20:31:21
+Vote Type: tievote
+User Task: "Find the top 5 best-selling fiction books on the New York Times Best Sellers list and summarize their descriptions."
+
+📱 MODEL ATTEMPT 1: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_00_23_41_NPb.gif
+  Log ID: 10_05_2025_00_23_41_NPb
+
+--------------------------------------------------------------------------------
+
+INTERACTION 119
+Date/Time: 2025-05-09 21:07:02
+Vote Type: leftvote
+User Task: N/A
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 10_05_2025_01_06_39_yrs.gif
+  Log ID: 10_05_2025_01_06_39_yrs
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 120
+Date/Time: N/A
+Vote Type: rightvote
+User Task: Go to the ESPN website and find the latest power rankings for MLB teams. List the top 5 teams and provide a brief analysis of why each team is ranked where they are.
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 121
+Date/Time: N/A
+Vote Type: leftvote
+User Task: what are todays top 10 headlines on anchorage daily news?
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: deepseek/deepseek-r1
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 122
+Date/Time: N/A
+Vote Type: rightvote
+User Task: Can you compile the list of the most affordable new built properties in manchester across different websites- specifically 3 to 4 bedroom houses with separate 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: google/gemini-2.5-pro-preview-03-25
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: meta-llama/llama-4-maverick
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 123
+Date/Time: N/A
+Vote Type: leftvote
+User Task: Tell me the exact times and prices for trains leaving West Byfleet station for London Waterloo next Sunday around 9am on www.nationalrail.co.uk
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 124
+Date/Time: 2025-05-11 10:33:23
+Vote Type: leftvote
+User Task: Compare prices of flights from London to benidorn on different websites
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_14_31_41_EqG.gif
+  Log ID: 11_05_2025_14_31_41_EqG
+
+📱 MODEL ATTEMPT 2: ❓ Unknown
+  Model: x-ai/grok-3-beta
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------
+
+INTERACTION 125
+Date/Time: 2025-05-12 00:02:25
+Vote Type: leftvote
+User Task: Go to Wikipedia and find out the 5 worst cases of genocide in human history.
+
+📱 MODEL ATTEMPT 1: ✅ Success
+  Model: deepseek/deepseek-r1
+  GIF ID: 12_05_2025_03_51_49_OXc.gif
+  Log ID: 12_05_2025_03_51_49_OXc
+
+📱 MODEL ATTEMPT 2: ❌ Failed
+  Model: openai/o4-mini
+  GIF ID: 12_05_2025_03_51_49_tJF.gif
+  Log ID: 12_05_2025_03_51_49_tJF
+
+--------------------------------------------------------------------------------
+
+INTERACTION 126
+Date/Time: N/A
+Vote Type: rightvote
+User Task: top 5 wildlife rescue 
+
+📱 MODEL ATTEMPT 1: ❌ Failed
+  Model: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: N/A
+  Log ID: N/A
+
+📱 MODEL ATTEMPT 2: ✅ Success
+  Model: openai/o4-mini
+  GIF ID: N/A
+  Log ID: N/A
+
+--------------------------------------------------------------------------------

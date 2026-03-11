@@ -1,0 +1,13 @@
+Model,Ablation,N,Agreement (%),Avg Confidence,Tie Rate (%),Agent 1 (%),Agent 2 (%)
+gpt-4o,"Full
+(GIF+Trace)",5,60.0,0.840,0.0,60.0,40.0
+gpt-4o,Trace Only,5,60.0,0.800,0.0,60.0,40.0
+gpt-4o,"Truncated
+Trace",5,40.0,0.680,40.0,40.0,20.0
+gpt-4o,GIF Only,5,0.0,0.900,0.0,0.0,100.0
+o4-mini,"Full
+(GIF+Trace)",5,40.0,0.788,40.0,40.0,20.0
+o4-mini,Trace Only,5,40.0,0.702,40.0,40.0,20.0
+o4-mini,"Truncated
+Trace",5,40.0,0.624,40.0,40.0,20.0
+o4-mini,GIF Only,5,0.0,0.670,100.0,0.0,0.0

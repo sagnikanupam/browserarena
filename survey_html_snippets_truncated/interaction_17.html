@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_41_14_YwM.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa <br>📍 Step 1<br>🤷 Eval: Unknown - starting task<br>🧠 Memory: 0 out of 3 websites processed (Expedia, Kayak, Skyscanner)<br>🎯 Next goal: Search Google for one-way flight prices from Ontario to Ottawa<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;Ontario to Ottawa one-way flight price&quot;}}<br>🔍  Searched for &quot;Ontario to Ottawa one-way flight price&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Performed Google search for flight prices<br>🧠 Memory: 0 out of 3 websites processed (Expedia, Kayak, Skyscanner)<br>🎯 Next goal: Click on the Expedia result to extract its one-way price<br>🛠️  Action 1/1: {&quot;click_e<br><br>[... truncated for brevity ...]<br><br>etadata={&#39;input_tokens&#39;: 8356, &#39;output_tokens&#39;: 835, &#39;total_tokens&#39;: 9191, &#39;input_token_details&#39;: {&#39;cache_read&#39;: 2304}, &#39;output_token_details&#39;: {&#39;reasoning&#39;: 704}} with error 2 validation errors for AgentOutput<br>current_state<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...tes.&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing<br>action<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...tes.&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 2/3 times:<br> Could not parse response.<br>❌ Failed to complete task in maximum steps<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_41_14_DvE.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa <br>📍 Step 1<br>Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.<br>Failed to parse model output: content=&#39;&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 0, &#39;prompt_tokens&#39;: 3106, &#39;total_tokens&#39;: 3106, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;google/gemini-2.5-pro-preview&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746827196-JDCmre0HOV9h1fNlTUlP&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#<br><br>[... truncated for brevity ...]<br><br>hts.<br>[116]&lt;a link/&gt;<br>[117]&lt;a link/&gt;<br>Other Flight Options<br>[118]&lt;a Cheap flights from Ontario to Calgary›/&gt;<br>[119]&lt;a Cheap flights from Ontario to Edmonton›/&gt;<br>More results<br>[120]&lt;a link/&gt;<br>[121]&lt;span Show more about/&gt;<br>[122]&lt;span Next/&gt;<br>[123]&lt;div /&gt;<br>[End of page]&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: None, &#39;model_name&#39;: &#39;google/gemini-2.5-pro-preview&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746827264-GsgyIwIjYAzfeIQcDZSU&#39;, &#39;finish_reason&#39;: &#39;error&#39;, &#39;logprobs&#39;: None} id=&#39;run-acb6f2f2-00f7-4937-ac77-10580f10ed90-0&#39; with error Could not parse response., try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

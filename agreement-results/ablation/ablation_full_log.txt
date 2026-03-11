@@ -1,0 +1,812 @@
+=== RUNNING FULL ABLATION STUDY (ALL 19 QUESTIONS) ===
+Loaded existing GPT-4o full results: 19 questions
+Using ALL 19 questions
+
+=== Running GIF Only ablation ===
+
+Evaluating with gpt-4o...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_03_54_21_KhV.gif (759276 chars)
+  Successfully encoded GIF: 12_05_2025_03_54_21_dPl.gif (44240 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 1/114 (0.9%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_04_05_21_mCX.gif (635408 chars)
+  Successfully encoded GIF: 12_05_2025_04_05_21_eYC.gif (30552 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 2/114 (1.8%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_03_56_29_aty.gif (707824 chars)
+  Successfully encoded GIF: 12_05_2025_03_56_29_nGd.gif (969608 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 3/114 (2.6%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_05_13_04_KAL.gif (1866968 chars)
+  Successfully encoded GIF: 12_05_2025_05_13_04_yaD.gif (1800996 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 4/114 (3.5%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 07_05_2025_15_10_56_EiU.gif (645816 chars)
+  Successfully encoded GIF: 07_05_2025_15_10_56_hQu.gif (563864 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 5/114 (4.4%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_19_57_33_HgY.gif (678360 chars)
+  Successfully encoded GIF: 09_05_2025_19_57_33_CFM.gif (1145404 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 6/114 (5.3%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_13_59_XFw.gif (1237432 chars)
+  Successfully encoded GIF: 09_05_2025_20_13_59_wLl.gif (2431864 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 7/114 (6.1%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_11_09_SCY.gif (1489296 chars)
+  Successfully encoded GIF: 09_05_2025_20_11_09_FrD.gif (209272 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 1 (conf: 0.900)
+    Progress: 8/114 (7.0%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_58_23_Idv.gif (892980 chars)
+  Successfully encoded GIF: 09_05_2025_20_58_23_unx.gif (1130240 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 9/114 (7.9%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_30_52_Eso.gif (414384 chars)
+  Successfully encoded GIF: 09_05_2025_21_30_52_wcO.gif (539740 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 10/114 (8.8%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_21_06_MSm.gif (1016900 chars)
+  Successfully encoded GIF: 09_05_2025_21_21_06_kAA.gif (1658828 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 11/114 (9.6%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_28_12_OnA.gif (3235800 chars)
+  Successfully encoded GIF: 09_05_2025_21_28_12_RJD.gif (562532 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 12/114 (10.5%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_40_30_XjR.gif (982012 chars)
+  Successfully encoded GIF: 09_05_2025_21_40_30_YEs.gif (305848 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 13/114 (11.4%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_36_59_crp.gif (441944 chars)
+  Successfully encoded GIF: 09_05_2025_21_36_59_AvQ.gif (44396 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 14/114 (12.3%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_41_14_YwM.gif (2123124 chars)
+  Successfully encoded GIF: 09_05_2025_21_41_14_DvE.gif (473184 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 15/114 (13.2%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_23_29_cgB.gif (2145120 chars)
+  Successfully encoded GIF: 09_05_2025_22_23_29_IXB.gif (27720 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 16/114 (14.0%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_44_26_YNT.gif (2063240 chars)
+  Successfully encoded GIF: 09_05_2025_22_44_26_xEk.gif (2269500 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 17/114 (14.9%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_39_53_FuI.gif (554016 chars)
+  Successfully encoded GIF: 09_05_2025_22_39_53_htb.gif (26764 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 2 (conf: 0.900)
+    Progress: 18/114 (15.8%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with gpt-4o, ablation=gif_only
+  Successfully encoded GIF: 10_05_2025_00_00_27_IAX.gif (2068988 chars)
+  Successfully encoded GIF: 10_05_2025_00_00_27_TVe.gif (1830312 chars)
+    Added 2 GIFs to evaluation
+    Result: Agent 1 (conf: 0.900)
+    Progress: 19/114 (16.7%)
+
+Completed gpt-4o GIF Only:
+  Agreement with baseline: 10.5%
+  Average confidence: 0.900
+  Vote distribution:
+    Agent 1: 10.5%
+    Agent 2: 89.5%
+    Tie: 0.0%
+
+Evaluating with o4-mini...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_03_54_21_KhV.gif (759276 chars)
+  Successfully encoded GIF: 12_05_2025_03_54_21_dPl.gif (44240 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 20/114 (17.5%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_04_05_21_mCX.gif (635408 chars)
+  Successfully encoded GIF: 12_05_2025_04_05_21_eYC.gif (30552 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 21/114 (18.4%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_03_56_29_aty.gif (707824 chars)
+  Successfully encoded GIF: 12_05_2025_03_56_29_nGd.gif (969608 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.900)
+    Progress: 22/114 (19.3%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 12_05_2025_05_13_04_KAL.gif (1866968 chars)
+  Successfully encoded GIF: 12_05_2025_05_13_04_yaD.gif (1800996 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.870)
+    Progress: 23/114 (20.2%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 07_05_2025_15_10_56_EiU.gif (645816 chars)
+  Successfully encoded GIF: 07_05_2025_15_10_56_hQu.gif (563864 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.820)
+    Progress: 24/114 (21.1%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_19_57_33_HgY.gif (678360 chars)
+  Successfully encoded GIF: 09_05_2025_19_57_33_CFM.gif (1145404 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 25/114 (21.9%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_13_59_XFw.gif (1237432 chars)
+  Successfully encoded GIF: 09_05_2025_20_13_59_wLl.gif (2431864 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 26/114 (22.8%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_11_09_SCY.gif (1489296 chars)
+  Successfully encoded GIF: 09_05_2025_20_11_09_FrD.gif (209272 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.500)
+    Progress: 27/114 (23.7%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_20_58_23_Idv.gif (892980 chars)
+  Successfully encoded GIF: 09_05_2025_20_58_23_unx.gif (1130240 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.300)
+    Progress: 28/114 (24.6%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_30_52_Eso.gif (414384 chars)
+  Successfully encoded GIF: 09_05_2025_21_30_52_wcO.gif (539740 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.030)
+    Progress: 29/114 (25.4%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_21_06_MSm.gif (1016900 chars)
+  Successfully encoded GIF: 09_05_2025_21_21_06_kAA.gif (1658828 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.900)
+    Progress: 30/114 (26.3%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_28_12_OnA.gif (3235800 chars)
+  Successfully encoded GIF: 09_05_2025_21_28_12_RJD.gif (562532 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.900)
+    Progress: 31/114 (27.2%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_40_30_XjR.gif (982012 chars)
+  Successfully encoded GIF: 09_05_2025_21_40_30_YEs.gif (305848 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 32/114 (28.1%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_36_59_crp.gif (441944 chars)
+  Successfully encoded GIF: 09_05_2025_21_36_59_AvQ.gif (44396 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.800)
+    Progress: 33/114 (28.9%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_21_41_14_YwM.gif (2123124 chars)
+  Successfully encoded GIF: 09_05_2025_21_41_14_DvE.gif (473184 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 34/114 (29.8%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_23_29_cgB.gif (2145120 chars)
+  Successfully encoded GIF: 09_05_2025_22_23_29_IXB.gif (27720 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.620)
+    Progress: 35/114 (30.7%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_44_26_YNT.gif (2063240 chars)
+  Successfully encoded GIF: 09_05_2025_22_44_26_xEk.gif (2269500 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.800)
+    Progress: 36/114 (31.6%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 09_05_2025_22_39_53_FuI.gif (554016 chars)
+  Successfully encoded GIF: 09_05_2025_22_39_53_htb.gif (26764 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.800)
+    Progress: 37/114 (32.5%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with o4-mini, ablation=gif_only
+  Successfully encoded GIF: 10_05_2025_00_00_27_IAX.gif (2068988 chars)
+  Successfully encoded GIF: 10_05_2025_00_00_27_TVe.gif (1830312 chars)
+    Added 2 GIFs to evaluation
+    Result: Tie (conf: 0.850)
+    Progress: 38/114 (33.3%)
+
+Completed o4-mini GIF Only:
+  Agreement with baseline: 5.3%
+  Average confidence: 0.747
+  Vote distribution:
+    Agent 1: 0.0%
+    Agent 2: 0.0%
+    Tie: 100.0%
+
+=== Running Trace Only ablation ===
+
+Evaluating with gpt-4o...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 39/114 (34.2%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 40/114 (35.1%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.700)
+    Progress: 41/114 (36.0%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 42/114 (36.8%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 2 (conf: 0.900)
+    Progress: 43/114 (37.7%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 44/114 (38.6%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 45/114 (39.5%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 2 (conf: 0.900)
+    Progress: 46/114 (40.4%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 2 (conf: 0.900)
+    Progress: 47/114 (41.2%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 48/114 (42.1%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 49/114 (43.0%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 50/114 (43.9%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.700)
+    Progress: 51/114 (44.7%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.700)
+    Progress: 52/114 (45.6%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 53/114 (46.5%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.700)
+    Progress: 54/114 (47.4%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 2 (conf: 0.700)
+    Progress: 55/114 (48.2%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 56/114 (49.1%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with gpt-4o, ablation=trace_only
+    Result: Agent 2 (conf: 0.800)
+    Progress: 57/114 (50.0%)
+
+Completed gpt-4o Trace Only:
+  Agreement with baseline: 78.9%
+  Average confidence: 0.811
+  Vote distribution:
+    Agent 1: 73.7%
+    Agent 2: 26.3%
+    Tie: 0.0%
+
+Evaluating with o4-mini...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 58/114 (50.9%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 59/114 (51.8%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.820)
+    Progress: 60/114 (52.6%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 61/114 (53.5%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 62/114 (54.4%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.850)
+    Progress: 63/114 (55.3%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 64/114 (56.1%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 65/114 (57.0%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 2 (conf: 0.910)
+    Progress: 66/114 (57.9%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 67/114 (58.8%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.700)
+    Progress: 68/114 (59.6%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 69/114 (60.5%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 70/114 (61.4%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.710)
+    Progress: 71/114 (62.3%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.900)
+    Progress: 72/114 (63.2%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 73/114 (64.0%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 2 (conf: 0.800)
+    Progress: 74/114 (64.9%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Agent 1 (conf: 0.800)
+    Progress: 75/114 (65.8%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with o4-mini, ablation=trace_only
+    Result: Tie (conf: 0.500)
+    Progress: 76/114 (66.7%)
+
+Completed o4-mini Trace Only:
+  Agreement with baseline: 52.6%
+  Average confidence: 0.673
+  Vote distribution:
+    Agent 1: 42.1%
+    Agent 2: 10.5%
+    Tie: 47.4%
+
+=== Running Truncated Trace ablation ===
+
+Evaluating with gpt-4o...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 77/114 (67.5%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 78/114 (68.4%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.700)
+    Progress: 79/114 (69.3%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.600)
+    Progress: 80/114 (70.2%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.700)
+    Progress: 81/114 (71.1%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 82/114 (71.9%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 83/114 (72.8%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 84/114 (73.7%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 2 (conf: 0.700)
+    Progress: 85/114 (74.6%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.600)
+    Progress: 86/114 (75.4%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.600)
+    Progress: 87/114 (76.3%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 2 (conf: 0.700)
+    Progress: 88/114 (77.2%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.600)
+    Progress: 89/114 (78.1%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 90/114 (78.9%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 91/114 (79.8%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 92/114 (80.7%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 93/114 (81.6%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 94/114 (82.5%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with gpt-4o, ablation=truncated_trace
+    Result: Agent 2 (conf: 0.800)
+    Progress: 95/114 (83.3%)
+
+Completed gpt-4o Truncated Trace:
+  Agreement with baseline: 42.1%
+  Average confidence: 0.689
+  Vote distribution:
+    Agent 1: 42.1%
+    Agent 2: 15.8%
+    Tie: 42.1%
+
+Evaluating with o4-mini...
+
+  Q1: How many nonstop flights to Las Vegas de...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.860)
+    Progress: 96/114 (84.2%)
+
+  Q2: Create a summary for the wikipedia artic...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.850)
+    Progress: 97/114 (85.1%)
+
+  Q3: Go to Etsy.com, browse the trending home...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.780)
+    Progress: 98/114 (86.0%)
+
+  Q4: find me any recipe on food.com...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 99/114 (86.8%)
+
+  Q5: visit the New York Times homepage and su...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 2 (conf: 0.620)
+    Progress: 100/114 (87.7%)
+
+  Q6: Name the Top 10 headlines from BBC News...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.720)
+    Progress: 101/114 (88.6%)
+
+  Q7: What are the today's top headlines from ...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.850)
+    Progress: 102/114 (89.5%)
+
+  Q8: Please provide a list of the types of bo...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.850)
+    Progress: 103/114 (90.4%)
+
+  Q9: create a list of the top 20 best selling...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 2 (conf: 0.820)
+    Progress: 104/114 (91.2%)
+
+  Q10: a list of top 10 churches...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.120)
+    Progress: 105/114 (92.1%)
+
+  Q11: What are the top video titles on youtube...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.230)
+    Progress: 106/114 (93.0%)
+
+  Q12: Check all ticket touting websites and fi...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 107/114 (93.9%)
+
+  Q13: List out the symptoms of Vitamin D defic...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.600)
+    Progress: 108/114 (94.7%)
+
+  Q16: give me a recipe for making pasta with c...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.850)
+    Progress: 109/114 (95.6%)
+
+  Q17: Tell me different Plane ticket price fro...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.800)
+    Progress: 110/114 (96.5%)
+
+  Q18: Compare prices of HP laptop model across...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.870)
+    Progress: 111/114 (97.4%)
+
+  Q19: get me online price details comparison o...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 112/114 (98.2%)
+
+  Q20: Give me a summary of this week's best-se...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Agent 1 (conf: 0.900)
+    Progress: 113/114 (99.1%)
+
+  Q22: What are today's top 10 most popular art...
+    Evaluating with o4-mini, ablation=truncated_trace
+    Result: Tie (conf: 0.500)
+    Progress: 114/114 (100.0%)
+
+Completed o4-mini Truncated Trace:
+  Agreement with baseline: 57.9%
+  Average confidence: 0.669
+  Vote distribution:
+    Agent 1: 52.6%
+    Agent 2: 10.5%
+    Tie: 36.8%
+
+=== FULL ABLATION STUDY COMPLETE ===
+Total evaluations: 152
+
+=== SUMMARY STATISTICS ===
+
+gpt-4o:
+  Full:
+    Agreement: 68.4%
+    Confidence: 0.842
+    Agent 1: 63.2%
+    Agent 2: 26.3%
+    Tie: 10.5%
+  Trace Only:
+    Agreement: 78.9%
+    Confidence: 0.811
+    Agent 1: 73.7%
+    Agent 2: 26.3%
+    Tie: 0.0%
+  Truncated Trace:
+    Agreement: 42.1%
+    Confidence: 0.689
+    Agent 1: 42.1%
+    Agent 2: 15.8%
+    Tie: 42.1%
+  GIF Only:
+    Agreement: 10.5%
+    Confidence: 0.900
+    Agent 1: 10.5%
+    Agent 2: 89.5%
+    Tie: 0.0%
+
+o4-mini:
+  Full:
+    Agreement: 57.9%
+    Confidence: 0.799
+    Agent 1: 52.6%
+    Agent 2: 5.3%
+    Tie: 42.1%
+  Trace Only:
+    Agreement: 52.6%
+    Confidence: 0.673
+    Agent 1: 42.1%
+    Agent 2: 10.5%
+    Tie: 47.4%
+  Truncated Trace:
+    Agreement: 57.9%
+    Confidence: 0.669
+    Agent 1: 52.6%
+    Agent 2: 10.5%
+    Tie: 36.8%
+  GIF Only:
+    Agreement: 5.3%
+    Confidence: 0.747
+    Agent 1: 0.0%
+    Agent 2: 0.0%
+    Tie: 100.0%
+
+Results saved in ablation/ directory

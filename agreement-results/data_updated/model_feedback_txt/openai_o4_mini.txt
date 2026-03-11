@@ -1,0 +1,685 @@
+openai/o4-mini
+ Task Prompt: Compare hotel prices for Caesar Palace in Las Vegas across different hotel booking websites.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_20_57_54_VhL.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Wrong, couldn't find results
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Wrong, couldn't find prices
+ Step 8 feedback: Correct
+ Step 9 feedback: Wrong, couldn't find prices
+ Step 10 feedback: Wrong, couldn't get date availability
+ Step 11 feedback: Wrong, couldn't get date availability
+ Step 12 feedback: Wrong, couldn't get date availability
+ Step 13 feedback: Wrong, didn't need to scroll
+ Step 14 feedback: Correct
+ Step 15 feedback: Wrong, couldn't finish task
+ 
+
+ Task Prompt: What are the different names of the clouds in the sky? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_14_53_lsB.json
+ User Stepwise Feedback: 
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Failed/Correct
+ Step 5 feedback: N/
+ 
+
+ Task Prompt: Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_13_54_flC.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: Find the top-rated laptop under $1000 on BestBuy.com and summarize its key features 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_45_37_FDR.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ 
+
+ Task Prompt: Create a list of NBA Basketball MVPs sorted in teams. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_12_48_HXx.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Incorrectly executed as the AI agent could not parse their extracted data from step 3.
+ 
+
+ Task Prompt: What are the today's top headlines from Fox News? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_20_13_59_XFw.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Incorrect. Failed step 3 3 times
+ 
+
+ Task Prompt: Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_41_14_YwM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct 
+ Step 3 feedback: Evaluation failed because Expedia, one of the website restricted a bot from performing tasks 
+ Step 4 feedback: Success
+ Step 5 feedback: Correct 
+ Step 6 feedback: Correct 
+ Step 7 feedback: Evaluation failed because it landed on a different site instead of the one it wa searching on initially 
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct 
+ Step 10 feedback: Page was blocked cause of Captcha but a few information was extracted from the page with few flights options 
+ Step 11 feedback: Correct 
+ Step 12 feedback: Page was blocked cause of Captcha but a few information was extracted from the page with few flights options 
+ Step 13 feedback: Correct 
+ Step 14 feedback: Failed to get prices from Expedia but tried again and could not parse response 
+ 
+
+ Task Prompt: What are today's top 10 most popular articles on buzzfeed? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_00_27_IAX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ 
+
+ Task Prompt: Find the titles and authors of the top 3 bestselling fiction books on Amazon's homepage today. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_14_08_PHv.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Incorrect. The agent encountered a throttling message from Amazon and failed to load the Best Sellers list as intended in this step.
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: Go to the New York Times website and find the most recent op-ed article related to climate change. Summarize the main argument of the piece. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_37_05_xIM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: What are the propabilities of the Federal reserve cutting rates one, two, or three times in 2025 and what are the odds of when will they do it 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_18_25_WsH.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+❌ Result failed 1/3 times:
+Error executing action wait_for_element: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+❌ Result failed 1/3 times:
+Error executing action wait_for_element: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+ Step 7 feedback: Correct
+ Step 8 feedback:  Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+❌ Result failed 1/3 times:
+Error executing action wait_for_element: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+ Step 9 feedback:  Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+❌ Result failed 2/3 times:
+Error executing action wait_for_element: ❌ Failed to wait for element "table" within 10000ms: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+
+waiting for locator("table") to be visible
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Result failed 1/3 times:
+Could not parse response.
+❌ Failed to complete task in maximum steps
+ 
+
+ Task Prompt: What are today's top 10 headlines from Anchorage daily news? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_05_39_41_ziB.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Step 4 repeated 3 times with the error, "Failed to parse model output: content=". Stopped after 3 consecutive failed attempts.
+ 
+
+ Task Prompt: what is the third most read article on which.com? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_08_09_43_nJw.json
+ User Stepwise Feedback: 
+ Step 1 feedback: This step returned failed
+ Step 2 feedback: This step returned failed
+ Step 3 feedback: This step returned failed
+ Step 4 feedback: This step returned failed
+ Step 5 feedback: This step returned failed
+ Step 6 feedback: This step returned failed
+ Step 7 feedback: This step returned failed
+ Step 8 feedback: This step returned failed
+ Step 9 feedback: This step returned failed
+ 
+
+ Task Prompt: Find the current top 10 trending movies on IMDb and list their titles along with their user ratings 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_08_10_03_OcQ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct 
+ Step 2 feedback: could not parse response
+ Step 3 feedback: could not parse response
+ Step 4 feedback: did not even show this step 
+ Step 5 feedback: did not show step
+ Step 6 feedback: did not show step
+ Step 7 feedback: did not show step
+ Step 8 feedback: did not show step
+ Step 9 feedback: step not shown 
+ Step 10 feedback: step not shown 
+ Step 11 feedback: step not shown 
+ Step 12 feedback: step not  shown 
+ Step 13 feedback: step not shown 
+ Step 14 feedback: step not shown 
+ Step 15 feedback: step not shown 
+ 
+
+ Task Prompt: Who are the winners of ballon d'or for the last 5 years? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_08_39_43_kNs.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: Compare the specifications of smartphones on the honor magic 7 pro to the Iqoo 13.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_08_38_16_sbS.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Give me a comparison of different lodges in Masaai mara game reserve, in Kenya and their accommodation charges. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_26_48_bdr.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: Failed: The search did not execute as expected; the page remains on the Google homepage without results.
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: Unknown - Identified relevant result showing starting price but haven’t extracted it yet
+ Step 8 feedback: Unknown - Page is currently showing Cloudflare verification and not the lodge details
+ Step 9 feedback: Failed 
+ Step 10 feedback: Failed - No price extracted for Porini Lion Camp, need to refine search via SafariBookings filter
+ Step 11 feedback: correct
+ Step 12 feedback: Failed - No SafariBookings result found in current viewport after scrolling
+ Step 13 feedback: Failed - No SafariBookings result on first page for Porini Lion Camp price
+ Step 14 feedback: correct
+ Step 15 feedback: failed: identified the following 15 lodges in the Masai Mara and attempted to retrieve their per-night accommodation charges but was unable to find pricing information via SafariBookings
+ 
+
+ Task Prompt: What are the top 20 rarest vintage bottle caps in the world? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_32_29_BvX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 was incorrectly executed because it said "Eval: Unknown - no previous goal to evaluate" in Step 1
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Step 8 was incorrectly executed because it said "Eval: Failed - Navigated to a generic resource guide, not a list of the rarest vintage bottle caps" in Step 8
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Step 15 was incorrectly executed because it said "Failed to parse model output" and "Failed to complete task in maximum steps" in Step 15
+ 
+
+ Task Prompt: How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_54_21_KhV.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Step 4 failed 3 times.  It is failing to parse the model's output in order to deliver the results I asked for.  It then stopped after the 3 attempts that failed.
+ 
+
+ Task Prompt: Go to the BBC News website and list the top five headlines currently featured on the homepage 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_09_52_42_Acd.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Incorrect
+The agent successfully extracted the content with the five headlines from the page. However, the error was in the response. While the correct headlines were identified, the system was unable to properly format the extracted information. This is why it failed to provide a usable result.
+
+
+ 
+
+ Task Prompt: Give me a list of four highly rated hotels in Los Angeles, California. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_21_56_17_HBv.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect. No result
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: What was the trending price of gold in comparison to nasdaq in the last 60 days? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_12_20_HMD.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: Compare the stats of C Ronaldo and Lionel Messi 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_22_53_yqc.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Element not clickable.
+ Step 3 feedback: Element was not clickable.
+ Step 4 feedback: There was no visible element with text.
+ Step 5 feedback: Could not parse response and stopped due to three consecutive failures.
+ 
+
+ Task Prompt: Provide a list of the top ten ranked hotels in California 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_14_22_SRU.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Wrong
+ 
+
+ Task Prompt: Go to Amazon.com and find the three best-rated unlocked smartphones under £200 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_17_17_20_jBO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ 
+
+ Task Prompt: Create a list of the top-ranked e-books on oceanofpdf.com from the United Kingdom. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_14_47_xLQ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Wrong. Information collected in a previous step was incorrect.
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Wrong. Information collected in a previous step was incorrect.
+ Step 10 feedback: Correct
+ Step 11 feedback: Wrong. Information collected in a previous step was incorrect.
+ Step 12 feedback: Correct
+ Step 13 feedback: Wrong. Information collected in a previous step was incorrect.
+ Step 14 feedback: Wrong. Information collected in a previous step was incorrect.
+ 
+
+ Task Prompt: Name the Top 10 headlines from BBC News 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_19_57_33_CFM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Incorrect - Failed to Parse model output (1/3)
+ Step 5 feedback: Incorrect - Failed to Parse model (2/3) and (3/3)
+ 
+
+ Task Prompt: What is the best Arcade Fire albums listed from best to worst? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_53_08_BHP.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Give me a list and details of trending cars on Wikipedia. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_42_45_IxH.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: This step failed many times and was unsuccessful.
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: This step failed and was repeated 2 times. However, the second attempt was successful.
+ Step 8 feedback: This step also failed 2 times, and was successfully done on the third attempt.
+ Step 9 feedback: Correct
+ Step 10 feedback: Step 10 was not successful, but it gave relevant results that relate to the task.
+ 
+
+ Task Prompt: Can you find me the shortest and most comfortable flight from Show Low, AZ to Wellington, New Zealand? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_23_51_28_LOj.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: needed to fix the destination entry
+ Step 9 feedback: needed to scroll through several pages
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ Step 12 feedback: correct
+ Step 13 feedback: correct
+ Step 14 feedback: correct
+ Step 15 feedback: correct
+ 
+
+ Task Prompt: What are today's top 5 political news in UK 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_01_48_LVO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: What are today's top 5 headlines from Korea JoongAng Daily? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_34_36_jIN.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: The first attempt of this step failed to parse model output content. This agent could not parse a response when extracting content regarding the top 5 headlines from the Latest News section on the Korea JoongAng Daily homepage. 
+
+The 3rd attempt of Step 3 was a success. The agent started its task to find the top 5 headlines by navigating to the homepage and extracting headlines, completing its task with the extracted headlines.
+ 
+
+ Task Prompt: create a list of the current Stanley Cup playoff match ups. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_17_27_KXl.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Failed as it did extract content from the page but the content extracted did not provide the requested information.
+ Step 7 feedback: Correct.
+ 
+
+ Task Prompt: Who is the richest musician in the united states 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_38_30_Yxu.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 :correct
+ Step 2 feedback: Step 2 : Correct
+ Step 3 feedback: Step 3 : Failed to parse model output
+ 
+
+ Task Prompt: Compare the flight price for a round trip ticket from Los Angeles to Tokyo next Sunday on different ticket purchasing websites. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_23_26_uTs.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: The agent couldn't pass the bot verification, and was unable to access flight search results
+ Step 8 feedback: The agent couldn't pass the bot verification, and was unable to access flight search results
+ Step 9 feedback: Correct
+ Step 10 feedback: Agent blocked by captcha, and cannot access flight data
+ Step 11 feedback: Correct
+ Step 12 feedback: Agent blocked by CAPTCHA, and unable to retrieve pricing 
+ 
+
+ Task Prompt: What is today's most trending movies on netflix 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_11_16_zDI.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Failed.
+Could not parse response.
+
+ 
+
+ Task Prompt: Find the top 5 most-viewed movies currently playing in theaters, according to IMDb's 'Most Popular Movies' list, and list their IMDb ratings. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_07_31_35_atF.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Incorrect - Failed to extract 5th movie's data dues to navigation issues
+ Step 9 feedback: Incorrect - Tried to go back to the list but encountered a timeout.
+ Step 10 feedback: Incorrect - Failed to re-navigate to the "Most Popular Movies" list after errors.
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Incorrect - Failed to finalize the task due to JSON parsing errors when generating the output.
+ 
+
+ Task Prompt: Please return the total number of competitive goals Henrik Larsson scored for Glasgow Celtic football club giving subtotals by the teams he scored against. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_17_06_51_uKJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Failed - Says "failed" but step 6 appears to have actually done what the query asked for 
+ 
+
+ Task Prompt: Go to Wikipedia and find out the 5 worst cases of genocide in human history. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_51_49_tJF.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: top 5 wildlife rescue 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_04_04_11_fyc.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: could only identify keyword but not exact search input
+ 
+
+ Task Prompt: please search for the names of all presidents from Wikipedia  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_07_38_08_vYz.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: incorrect - did not list all names - Could not parse response
+ Step 5 feedback: incorrect - did not list all names - Could not parse response
+ Step 6 feedback: incorrect - did not list all names - Could not parse response
+ 
+
+ Task Prompt: what are the top 5 headlines today on CP24? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_16_51_15_rqG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Corret
+ Step 4 feedback: This step failed. The AI was able to navigate to CP24 website, but this model could not properly interpret and recognize the headlines on the homepage, thus it was not able to tell me what the top headlines where
+ 
+
+ Task Prompt: Compare flight prices to a one way trip to Montreal next Friday on different booking websites to find the cheapest flight 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_17_11_59_xtG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Model was unable to complete the task in 15 steps. It basically took all 15 steps to navigate through just one booking site, so many more steps are needed if the AI model was to parse through several different booking sites
+ 
+
+ Task Prompt: Compare the train prices for one-way tickets from London Euston to Manchester next Saturday on national rail and trainline websites 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_18_03_01_Clw.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: compare the prices of the latest PC graphics cards 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_17_53_58_gTF.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: It got stopped by the Cloudflare verification so waited 5 seconds
+ Step 4 feedback: Couldn't access PC part picker due to human verification required
+ Step 5 feedback: Went to NewEgg to try and find graphics cards shows the entire site in the output 
+ Step 6 feedback: Failed to invoke the model getting error code: 400. Then scrolled up and down the page looking for GPU information
+ Step 7 feedback: Found the filter section and tried to find GPU's there
+ Step 8 feedback: Got stuck in a loop trying to do the same thing as step 7 again
+ Step 9 feedback: Got stuck in a loop trying to do the same thing as step 7 again
+ Step 10 feedback: Found some more product listings and extracted relevant information for three graphics cards
+ Step 11 feedback: Picked a card out of the three it extracted and gave information on it
+ Step 12 feedback: Failed to parse the model output and gives an error that it has failed to complete in maximum steps
+ 
+
+ Task Prompt: What are the top 10 french wines from vintage 1996? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_20_30_27_tLY.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: compare scholarships available in canada 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_15_52_wyN.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Incorrect - wasn't able to access the website due to Cloudflare verification
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Incorrect - "Clicking on the span didn’t navigate to the Student Awards tool as expected"
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Incorrect - "Failed to complete task in maximum steps" searched across too many websites and wasn't able to finish the job within the allotted number of steps
+ 
+
+ Task Prompt: Give me the top 5 recipes for chicken noodle soup from 5 different websites. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_03_25_18_lkG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Goal was to extract title and URL for Allrecipes' chicken noodle soup recipe, returned a URL to "page not found"
+ Step 6 feedback: Did not extract Allrecipes' chicken noodle soup recipe - instead extracted the "Ultra-Satisfying Chicken Noodle Soup" from Inspired Taste.
+ Step 7 feedback: Did not open the Kitchn website, instead opened the Damn Delicious website and extracted the URL.
+ Step 8 feedback: Did not return to search results and open next recipe.
+ Step 9 feedback: Was not able to open Kitchn website and extract recipe due to bot protection.
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Assigned to extract the title and URL when the title and URL had already been extracted in step 11 so this step couldn't be completed.
+ 
+
+ 
+

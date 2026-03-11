@@ -1,0 +1,808 @@
+deepseek/deepseek-r1
+ Task Prompt: Compare the stats of C Ronaldo and Lionel Messi 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_22_53_VdC.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: What is the top 10 selling album currently on apple music? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_04_30_10_HuX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Incorrect, it try to pull song from a curated playlist instead of the official chart. Also, the playlists is top 100 hits 2025 in Canada.
+ Step 3 feedback: Incorrect same feedback from step 2 where it get the wrong information.
+ Step 4 feedback: Incorrect same feedback from step 2 where it get the wrong information.
+ 
+
+ Task Prompt: Create a list of the top 10 darts players in the United Kingdom, including their win rates 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_43_04_XGu.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Partial Success - Player stats table found but contains mixed nationalities and unclear win rates
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: a list of top 10 churches  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_30_52_Eso.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: Please review Glasgow Celtic's fixtures from this season 2024/2025 so far and tell me how many goals they have scored across all competitive competitions and then review the goals and give me the distribution of goals in 10 minute intervals of games, e.g.0-10 minutes, 11-20 minutes21-30 minutes etc all the way up to 90 minutes and then include injury time as a separate interval. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_42_22_kZY.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Step 5 says official site only shows scores and not goal data. It does but it requires a click into each result to find this, The whole task failed at this point.
+ 
+
+ Task Prompt: give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_36_59_crp.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: failed to parse model output, result failed 1/3 times. could not parse response. Ai agent couldn't proceed with this "json\n{\n  "current_state": {\n    "evaluation_previous_goal": "Success - Accessed BBC GoodFood recipe with sustainability focus (\'super-green\' ingredients)",\n    "memory": "1/3 websites processed (BBC GoodFood). Sustainability indicators found: leafy greens reduce food waste. Next targets: AllRecipes & Epicurious",\n    "next_goal": "Extract recipe details and sustainability notes from current page"\n  },\n  "action": [\n    {\n      "extract_content": {\n        "goal": "Ingredients list and any sustainability notes about reduced dairy/energy/transportation"\n      }\n    },\n    {\n      "go_back": {}\n    }\n  ]\n}\n"
+ 
+
+ Task Prompt: List out the symptoms of Vitamin D deficiency from WebMd and any other medical website 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_40_30_XjR.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: An element was missing , leading to evaluation failure, that was possibly due to loading issues
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: Give me a summary of this week's best-selling crypto coins. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_22_39_53_FuI.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: The agent reviewed a 24-hour data instead of the past 7 days.
+ Step 4 feedback: Agent was still unable to do a 7-day selection
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: how is the weather today 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_23_09_20_BUj.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ Step 12 feedback: correct
+ Step 13 feedback: correct
+ Step 14 feedback: correct
+ Step 15 feedback: correct
+ 
+
+ Task Prompt: What are today's top 20 headlines from Fox News? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_04_51_sSy.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 14 feedback: N/AN/A
+ 
+
+ Task Prompt: What is the cheapest Hertz car rental currently available from anywhere in Portland Oregon for May 14 12:00 PM to May 16 12:00 PM? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_33_17_FeF.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: was not able to input dates after selecting location
+ Step 5 feedback: could not find the date inputs, gif shows a map instead
+ Step 6 feedback: could not clear overlay to input dates
+ Step 7 feedback: Could not get to the main booking interface
+ 
+
+ Task Prompt: Go to the BestBuy website and find the current top-rated wireless headphones under $200. Summarize the product name, price, and average customer rating of the top three options. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_36_50_zuh.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ 
+
+ Task Prompt: Go to the BBC News homepage, in the ''World' section, and list the top 5 headlines currently featured there. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_12_22_ScT.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: The step was partially incorrect. The agent extracted headlines from the general homepage instead of the dedicated "World" section, which it acknowledged in the evaluation. Although it recognized the mistake, the extraction was incorrect for the stated goal.
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: What is today's most trending movies on netflix 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_11_16_bVY.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed.browser_use.agent.views.AgentOutput() argument after ** must be a mapping, not list
+ Step 2 feedback: Correct
+ Step 3 feedback: Failed. 
+Cookie policy page loaded instead of Top 10 list
+ Step 4 feedback: Unknown 
+Page appears empty but URL suggests correct Top 10 list location
+ Step 5 feedback: Failed.
+Failed to parse model output: content='
+
+
+
+ Step 6 feedback: Correct
+ Step 7 feedback: Failed
+Rotten Tomatoes filters couldn't isolate Netflix movies
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: Find the top 5 most expensive books currently listed on AbeBooks.com and provide their titles, authors, and prices. Then compare these prices with listings for the same books on BookFinder.com if available. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_47_08_gAp.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Incorrect. Tried clicking non-interactive ISBN label (index 10). Need to properly configure search fields
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct. Task was partially completed, only compared 2 out of 5 books before reaching step limit.
+ 
+
+ Task Prompt: Tell me the exact times and prices for trains leaving West Byfleet Station for London Waterloo next Sunday around 9am on www.nationalrail.co.uk 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_07_39_21_Zvc.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Incorrect - error executing output
+ Step 4 feedback: Incorrect - failed to parse model output
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Incorrect - format error detected
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Incorrect - partial error
+ Step 12 feedback: Correct
+ 
+
+ Task Prompt: Find me the last available train from Cardiff Central to Barry Docks station today on trainline 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_09_27_37_oRg.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: Compare prices for different brands of laptops using sites like Amazon or Best Buy let you compare specs, reviews, and costs. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_31_49_Ibq.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: Make me a list of the top most played heroes in Overwatch 2 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_33_04_asV.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: It claimed that it closed the cookie consent banner that was blocking page visibility, but it doesn't seem like it actually ever closed the cookie consent pop-up window.
+ Step 4 feedback: Disregarded Juno's pick rates for not being an 'official hero', but Juno is a playable hero whose pick rates matter for the prompt.
+ 
+
+ Task Prompt: Head over to freeCodeCamp’s news page and find the 5 most recent articles that talk about JavaScript. I want the titles, who wrote them, and when they were published. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_44_24_wEl.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: Compare flight prices from Washington DC to Paris, France vs Washington DC to Kyoto Japan in 2025 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_47_09_Uhi.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct 
+ Step 3 feedback: Correct 
+ 
+
+ Task Prompt: Create a summary for the wikipedia article about Manchester Metrolink 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_04_05_21_mCX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Go to Wikipedia and find out the 5 worst cases of genocide in human history. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_51_49_OXc.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items including their titles and prices. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_56_29_aty.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+
+ Step 2 feedback: Correct 
+ Step 3 feedback: Incorrect: The agent waited but didn’t detect page elements. It did not check or accept the cookie popup early, causing a stall.
+ Step 4 feedback: Incorrect: Tried to scroll and interact but still couldn’t detect input box; failed to resolve the page visibility issue properly.
+ Step 5 feedback: Incorrect: Tried again with a new wait and cookie selector, but failed to interact with or identify the cookie popup correctly.
+ Step 6 feedback: Incorrect: Multiple attempts to detect "Accept" button failed, and content was still blocked.
+ Step 7 feedback:  Incorrect: Direct URL access failed due to .v2-listing-card__info selector timing out. No product info appeared.
+ Step 8 feedback: Incorrect: Emergency scroll and extract strategy initiated but resulted in incomplete and scrambled product info. Extraction failed due to CAPTCHA and content blocks.
+ 
+
+ Task Prompt: Find me the cheapest per count neutral white A19 LED light bulbs on Amazon.com 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_05_10_20_GJx.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct on the third attempt.
+ Step 4 feedback: Correct, though I am not sure this step is necessary, but it should not change the results. It just seems like an unnecessary step to me.
+ Step 5 feedback: It seems it intended to do the right thing and I can verify most of the items it shows as being in the search results, but it appear to give the wrong overall answer for the task.  I can't find that item in the search results and the link provided that is supposed to be the product page is instead  for the search results.  I tried to search for that item directly and could not find it either.  Interestingly, the price it gives is the same price for the first item shown, but that item is not a 12 pack but only contains 1 bulb and is by a different brand.   It doesn't give enough detail about its chosen answer to really figure out where it came up with it or what exact product it even is.
+
+I also don't understand what it means when it says there are 3 visible products/listings. It itself shows more than 3 items being in the results so I do not know what it means by only 3 being visible.  No idea which 3 it is even considering to be visible besides I guess the one it gives as its answer.  In another spot it refers to these as the top 3, but all should have been analyzed and not just the top 3.
+ Step 6 feedback: It reports the incorrect answer derived in step 5.  So I guess this step worked correctly, it just was tasked with reporting a previously found incorrect answer.  It seems the mistake actually occurred in step 5 as I explained
+ 
+
+ Task Prompt: Go to nba.com, find the box score for yesterday's Indiana Pacers vs Cleveland Cavaliers game, and then relay the top 5 performers of that game. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_21_50_23_OEq.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Failed to parse box score content.
+ 
+
+ Task Prompt: Find the current best-selling fiction books on Amazon and note their prices and user ratings. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_21_56_09_Kin.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Throttling error
+ Step 7 feedback: Persisting throttling error
+ Step 8 feedback: Persisting throttling error
+ 
+
+ Task Prompt: What are the first five upcoming events listed on the home page of the Meridian Library District website? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_07_18_dqY.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: what are the top 10 high scores on typeracer currently 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_52_49_SZo.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect - failed google CAPTCHA check
+ Step 2 feedback: Incorrect - failed google CAPTCHA check
+ Step 3 feedback: Incorrect - failed google CAPTCHA check
+ Step 4 feedback: Incorrect - failed google CAPTCHA check
+ Step 5 feedback: Incorrect - failed google CAPTCHA check
+ Step 6 feedback: Correct
+ Step 7 feedback: Incorrect - tried to access leaderboard through Pit Stop section
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: I’m feeling really overwhelmed lately with school and personal stuff. I was wondering if the university counseling unit can help with that? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_04_41_09_QzZ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct 
+ Step 2 feedback: Correct 
+ Step 3 feedback: Incorrect 
+ Step 4 feedback: Incorrect 
+ 
+
+ Task Prompt: What is the lowest critic review score for Octopath Traveler on Metacritic? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_08_57_Imc.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: what are 5 upcoming rock concerts in the state of California and what are the ticket prices from ticketmaster and other ticket retailers 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_30_18_bUN.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ 
+
+ Task Prompt: visit the New York Times homepage and summarize the main story currently featured at the top of the page 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_10_56_hQu.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_13_54_ndq.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ 
+
+ Task Prompt: what is the fastest car in the world? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_17_52_02_FAG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ Step 12 feedback: correct
+ Step 13 feedback: correct
+ Step 14 feedback: correct
+ Step 15 feedback: correct
+ 
+
+ Task Prompt: Compare the prices of the latest NVIDIA and AMD graphic cards (UK stores only). 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_47_35_nMx.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ 
+
+ Task Prompt: "Find the top 5 best-selling fiction books on the New York Times Best Sellers list and summarize their descriptions." 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_23_41_NPb.json
+ User Stepwise Feedback: 
+ Step 1 feedback: It gave me 🤷 Eval: Unknown - Starting fresh session on blank page
+🧠 Memory: Step 1/15. Need to navigate to NYT Best Sellers fiction list. 0/5 books collected.
+🎯 Next goal: Access NYT Best Sellers list via direct URL
+🛠️ Action 1/1: {"go_to_url":{"url":"https://www.nytimes.com/books/best-sellers/"}}
+🔗 Navigated to https://www.nytimes.com/books/best-sellers/
+ Step 2 feedback: It gave me Failed to parse model output: content='{\n "current_state":
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: What are the names of the top 20 most frequently visited lakes in the world currently? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_25_04_TTJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Step 2 was incorrectly executed because it said that the "Result failed 1/3 times" during Step 2
+ Step 3 feedback: Correct
+ Step 4 feedback: Step 4 was incorrectly executed because it said in Step 4 that "Eval: Failed - 'Unlock Full List' interaction didn't reveal content"
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: Find the titles and authors of the top 3 bestselling fiction books on Amazon's homepage today. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_14_08_RLX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Incorrect. Scrolling failed to reveal 'Best Sellers' section.
+ Step 5 feedback: Incorrect. Navigation menu remained inaccessible after scrolling.
+ Step 6 feedback: Incorrect. Found 1 book but required additional filtering.
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: Go to the New York Times website and find the most recent op-ed article related to climate change. Summarize the main argument of the piece. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_37_05_jxR.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ 
+
+ Task Prompt: find the top trending videos on youtubes homepage 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_25_46_DOO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: It says that it failed but further down it says it was completed succesfully
+ 
+
+ Task Prompt: what are today's top 10 sports news headlines 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_41_38_ygE.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: the agent tried to collect the news form the very first page but was unable to do so.It retried with a different step in memory and was able to complete successfully.
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: Visit different running websites and compare running hats for men and find an option that has a fun design, is primarily white, and has sun protection. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_50_52_mxm.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: It failed because the first search didn't meet my search criteria.
+ Step 4 feedback: Correct
+ Step 5 feedback: It failed because it didn't return the criteria I wanted.
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: It failed because it returned the wrong hat - I asked for mens and it returned womens.
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ 
+
+ Task Prompt: Go to BBC News’ homepage and list the titles of the top three stories in the "World" section, along with their publication times. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_04_47_15_Agp.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_22_35_YOe.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: Please provide me with the top 5 articles which are displayed on stuff nz homepage 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_28_09_efj.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: What are today's top 10 headlines from Anchorage daily news? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_05_39_41_zPi.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Step 3 attempted 3 times with the error, "Failed to parse model output". Stopped after 3 consecutive failed attempts.
+ 
+
+ Task Prompt: What are the top five songs on cmt.com? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_07_24_02_PwH.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ 
+
+ Task Prompt: Compare the specifications of smartphones on the honor magic 7 pro to the Iqoo 13.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_08_38_16_UpM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: I can't see the page anymore as I accidentally right-clicked then left on the mouse while scrolling and it backed or reloaded the page. But I remember Step 3 failed multiple times not being able to either click or view correctly on the GSMarena website.
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ 
+
+ Task Prompt: Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_09_47_02_HsO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+
+ Step 2 feedback: Correct
+
+ Step 3 feedback: Correct
+
+ Step 4 feedback: Correct
+
+ Step 5 feedback: Correct
+
+ Step 6 feedback: Correct
+
+ Step 7 feedback: Correct
+
+ Step 8 feedback: Correct
+
+ Step 9 feedback: Correct
+
+ Step 10 feedback: Correct
+
+ Step 11 feedback: Correct
+
+ Step 12 feedback: Correct
+
+ Step 13 feedback: Correct
+
+ Step 14 feedback: Correct
+
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: What are the 10 ways to save the planet while gardening according to rhs.org.uk? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_47_18_ZxX.json
+ User Stepwise Feedback: 
+ Step 1 feedback: WRONG
+ Step 2 feedback: CORRECT
+ Step 3 feedback: CORRECT
+ Step 4 feedback: WRONG
+ Step 5 feedback: CORRECT
+ 
+
+ Task Prompt: Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_36_02_Exa.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ 
+
+ Task Prompt: provide me 4 list of journal on wood treatment  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_17_35_23_ErL.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ 
+
+ Task Prompt: List all the UK airports fly that internationally 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_17_51_33_qse.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Go to the New York Times website and find the main feature article on the homepage. Click on the article, read it, and summarize the main points in 3-5 bullet points. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_17_59_52_QEL.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: 📍 Step 3
+⚠ Eval: Failed - The article page appears empty of interactive elements. Could indicate a paywall/login requirement or content loading issue.
+🧠 Memory: 3/15 steps completed. Reached article URL but found no interactive elements. Need to verify content accessibility before proceeding.
+🎯 Next goal: Check if article content is visible despite empty element list
+🛠️ Action 1/2: {"extract_content":{"goal":"Extract full text of Supreme Court birthright citizenship article","should_strip_link_urls":true}}
+🛠️ Action 2/2: {"scroll_down":{"amount":800}}
+📄 Extracted from page
+:
+
+
+json
+{
+  "status": "blocked_by_captcha",
+  "message": "The page requires solving a CAPTCHA to access the content. The full text of the article cannot be extracted due to the security verification barrier. The page includes a visual/audio CAPTCHA prompt and a support contact form for blocked users.",
+  "captcha_details": {
+    "verification_methods": ["visual_puzzle", "audio_verification"],
+    "support_reference_id": "81c2c0b1-cfe3-f730-83a5-f4d3507ca76c",
+    "user_ip": "3.128.173.74"
+  }
+}
+🔍 Scrolled down the page by 800 pixels
+ Step 4 feedback: 📍 Step 4
+⚠ Eval: Failed - CAPTCHA blocked content access. Need alternative approach to bypass security check.
+🧠 Memory: 4/15 steps completed. Encountered CAPTCHA on article page. Attempting to access article via Google search referral in new tab (1st alternative method). Remaining attempts: 2/3
+🎯 Next goal: Open Google search for article in new tab and access through search results
+🛠️ Action 1/3: {"open_tab":{"url":"https://www.google.com/search?q=%22At+Supreme+Court%2C+a+Fringe+Birthright+Theory%22+site:nytimes.com"}}
+🛠️ Action 2/3: {"switch_tab":{"page_id":1}}
+🛠️ Action 3/3: {"wait":{"seconds":5}}
+🔗 Opened new tab with https://www.google.com/search?q=%22At+Supreme+Court%2C+a+Fringe+Birthright+Theory%22+site:nytimes.com
+🔄 Switched to tab 1
+🕒 Waiting for 5 seconds
+ Step 5 feedback: 📍 Step 5
+👍 Eval: Partial Success - Found relevant NYT article in Google search results (index 35) but not yet accessed
+🧠 Memory: 5/15 steps completed. Using Google search referral method (attempt 1/3). Identified target article in results: 'At Supreme Court, a Once-Fringe Birthright Citizenship...' at index 35. Next: Access article through search result.
+🎯 Next goal: Open target article from Google search results to bypass CAPTCHA/paywall
+🛠️ Action 1/3: {"click_element_by_index":{"index":35}}
+🛠️ Action 2/3: {"wait":{"seconds":5}}
+🛠️ Action 3/3: {"extract_content":{"goal":"Extract full text of article about Supreme Court birthright citizenship theory","should_strip_link_urls":true}}
+🖱️ Clicked button with index 35: At Supreme Court, a Once-Fringe Birthright Citizenship ...
+🕒 Waiting for 5 seconds
+📄 Extracted from page
+:
+
+
+json
+{
+  "summary": "The page provided is a CAPTCHA verification page from The New York Times, indicating that access to the article about Supreme Court birthright citizenship theory is blocked due to automated traffic detection. The page prompts the user to confirm they are human via visual or audio verification. No article content is accessible in the provided input.",
+  "relevant_information": [],
+  "status": "Access blocked by CAPTCHA; no article content available for extraction."
+}
+
+ Step 6 feedback: 📍 Step 6
+⚠ Eval: Failed - CAPTCHA persists despite Google referral method. Security measures prevent article access.
+🧠 Memory: 6/15 steps completed. 2 alternative methods attempted (direct access, Google search). Last remaining method: Try accessing article via social media referral link.
+🎯 Next goal: Attempt Twitter/X referral by searching trending NYT article shares
+🛠️ Action 1/4: {"close_tab":{"page_id":1}}
+🛠️ Action 2/4: {"open_tab":{"url":"https://twitter.com/search?q=%22Supreme%20Court%20birthright%22%20(from%3Anytimes)&f=live"}}
+🛠️ Action 3/4: {"switch_tab":{"page_id":2}}
+🛠️ Action 4/4: {"wait":{"seconds":5}}
+❌ Closed tab #1 with url https://www.nytimes.com/2025/05/14/us/politics/supreme-court-birthright-citizenship.html
+🔗 Opened new tab with https://twitter.com/search?q=%22Supreme%20Court%20birthright%22%20(from%3Anytimes)&f=live
+❌ Result failed 1/3 times:
+Error executing action switch_tab: No tab found with page_id: 2
+ Step 7 feedback: 📍 Step 7
+⚠ Eval: Failed - Redirected to X/Twitter login instead of public search results
+🧠 Memory: 7/15 steps completed. Alternative method 2/3 failed (social media referral). Remaining attempt: Return to original article tab to explore content recovery. Captcha bypass attempts remaining: 1
+🎯 Next goal: Handle X login redirect and attempt fallback content extraction
+🛠️ Action 1/6: {"close_tab":{"page_id":1}}
+🛠️ Action 2/6: {"switch_tab":{"page_id":0}}
+🛠️ Action 3/6: {"wait":{"seconds":8}}
+🛠️ Action 4/6: {"scroll_down":{"amount":1200}}
+🛠️ Action 5/6: {"send_keys":{"keys":"Escape"}}
+🛠️ Action 6/6: {"extract_content":{"goal":"Find any accessible article text about Supreme Court birthright case","should_strip_link_urls":true}}
+❌ Closed tab #1 with url https://x.com/i/flow/login?redirect_after_login=%2Fsearch%3Fq%3D%2522Supreme%2520Court%2520birthright%2522%2520(from%253Anytimes)%26f%3Dlive
+🔄 Switched to tab 0
+🕒 Waiting for 8 seconds
+🔍 Scrolled down the page by 1200 pixels
+⌨️ Sent keys: Escape
+📄 Extracted from page
+:
+
+
+json
+{
+  "extracted_content": {
+    "access_status": "Blocked by CAPTCHA verification",
+    "article_text": null,
+    "verification_message": "To continue to The New York Times, please confirm that you are human. The visual verification might not be accessible. Use the audio verification instead.",
+    "technical_details": {
+      "ip_address": "3.128.173.74",
+      "support_id": "81c2c0b1-cfe3-f730-83a5-f4d3507ca76c",
+      "error": "No accessible article content due to CAPTHA block"
+    }
+  },
+  "summary": "The page is inaccessible due to a CAPTCHA block preventing access to content. No article text about the Supreme Court birthright case could be retrieved."
+}
+
+ Step 8 feedback: 📍 Step 8
+⚠ Eval: Failed - CAPTCHA verification remains unresolved despite multiple access attempts
+🧠 Memory: 8/15 steps completed. All bypass methods exhausted: 1) Direct access 2) Google referral 3) Social media referral. CAPTCHA remains active. Unable to proceed with article extraction.
+🎯 Next goal: Terminate task due to insurmountable security barrier
+🛠️ Action 1/1: {"done":{"text":"Failed to complete task due to persistent CAPTCHA requirements blocking article access. The New York Times security system (Support ID: 81c2c0b1-cfe3-f730-83a5-f4d3507ca76c) prevents automated access. Manual human verification required to view: 'At Supreme Court, a Once-Fringe Birthright Citizenship Theory Takes Center Stage' (2025-05-14).","success":false}}
+📄 Result: Failed to complete task due to persistent CAPTCHA requirements blocking article access. The New York Times security system (Support ID: 81c2c0b1-cfe3-f730-83a5-f4d3507ca76c) prevents automated access. Manual human verification required to view: 'At Supreme Court, a Once-Fringe Birthright Citizenship Theory Takes Center Stage' (2025-05-14).
+✅ Task completed
+❌ Unfinished
+
+ 
+
+ Task Prompt: Narrow down the 3 or more TUV Rheinland certifications for eye care/health on the Honor Magic 7 Pro and list what they all are. Then search trusted and reputable websites to cross-reference and look for any other smartphones that offer at least the same eye health benefits or more, or number of eye health benefits or more, for a smartphone screen. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_00_41_RxH.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: This step failed to begin with on the first try but was successful on the second attempt.
+ Step 3 feedback: This step again failed to begin with on the first try but was successful on the second attempt..so Correct? Although a little vague on whether it had found 3/3 remaining certifications to verify or it was just looking for 3 still as it had found 1 already from step 2
+ Step 4 feedback: Correct (failed on the eval part but I guess this is normal as there isn't enough info to eval at this point)
+ Step 5 feedback: Correct but (Eval: Failed - Attempted wrong phone analysis (vivo X100s Pro instead of HONOR Magic7 Pro)
+ Step 6 feedback: Correct (but Eval failed as certification evidence still missing after checking specs and 3rd-party sites)
+ Step 7 feedback: Eval: Failed - TUV Rheinland search interface requires cookie acceptance and proper navigation
+ Step 8 feedback: Correct
+ Step 9 feedback: Eval: Failed ...Certifications confirmed: 0/3
+ Step 10 feedback: Eval failed but Correct as steps were still performed for cross-referencing
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ 
+
+ Task Prompt: Can you tell me the top 5 rated anime tv series in the last 10 years on imdb.com  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_45_49_xXw.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct 
+ Step 3 feedback: Failed to parse model output
+Failed again because The current list covers 2010-2019 but needs 2015-2024 data. List is outdated for last 10 years requirement
+ Step 4 feedback: Correct
+ 
+
+ 
+

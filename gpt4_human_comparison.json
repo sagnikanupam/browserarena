@@ -1,0 +1,216 @@
+{
+  "comparison_results": [
+    {
+      "interaction_id": "interaction_01",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 14,
+        "Right": 2,
+        "Tie": 10
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_02",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 23,
+        "Right": 1,
+        "Tie": 2
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_03",
+      "gpt_vote": "Tie",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 17,
+        "Right": 5,
+        "Tie": 7
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_04",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 26,
+        "Right": 4,
+        "Tie": 1
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_05",
+      "gpt_vote": "Left",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 8,
+        "Right": 5,
+        "Tie": 11
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_06",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 21,
+        "Right": 4,
+        "Tie": 1
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_07",
+      "gpt_vote": "Left",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 11,
+        "Right": 2,
+        "Tie": 14
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_08",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 19,
+        "Right": 6,
+        "Tie": 0
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_09",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 22,
+        "Right": 5,
+        "Tie": 2
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_10",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 22,
+        "Right": 6,
+        "Tie": 4
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_11",
+      "gpt_vote": "Left",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 4,
+        "Right": 2,
+        "Tie": 18
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_12",
+      "gpt_vote": "Left",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 7,
+        "Right": 5,
+        "Tie": 12
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_13",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 31,
+        "Right": 4,
+        "Tie": 1
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_14",
+      "gpt_vote": "Right",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 8,
+        "Right": 3,
+        "Tie": 13
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_15",
+      "gpt_vote": "Right",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 8,
+        "Right": 4,
+        "Tie": 12
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_16",
+      "gpt_vote": "Left",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 8,
+        "Right": 4,
+        "Tie": 8
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_17",
+      "gpt_vote": "Left",
+      "human_majority": "Right",
+      "human_counts": {
+        "Left": 7,
+        "Right": 18,
+        "Tie": 9
+      },
+      "agrees": false
+    },
+    {
+      "interaction_id": "interaction_18",
+      "gpt_vote": "Left",
+      "human_majority": "Left",
+      "human_counts": {
+        "Left": 18,
+        "Right": 1,
+        "Tie": 1
+      },
+      "agrees": true
+    },
+    {
+      "interaction_id": "interaction_19",
+      "gpt_vote": "Right",
+      "human_majority": "Tie",
+      "human_counts": {
+        "Left": 4,
+        "Right": 9,
+        "Tie": 15
+      },
+      "agrees": false
+    }
+  ],
+  "agreement_rate": 0.47368421052631576,
+  "agreement_count": 9,
+  "total_compared": 19
+}

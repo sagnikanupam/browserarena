@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> What are the today's top headlines from Fox News?</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_20_13_59_XFw.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: What are the today&#39;s top headlines from Fox News?<br>📍 Step 1<br>🤷 Eval: Unknown - starting new task<br>🧠 Memory: Started task: retrieve today&#39;s top headlines from Fox News. 0/1 pages navigated.<br>🎯 Next goal: Navigate to Fox News homepage<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.foxnews.com&quot;}}<br>🔗  Navigated to https://www.foxnews.com<br>📍 Step 2<br>👍 Eval: Success - Navigated to Fox News homepage<br>🧠 Memory: Started task: retrieve today&#39;s top headlines from Fox News. 0/1 pages processed.<br>🎯 Next goal: Scroll down to reveal the top headlines section<br>🛠️  Action 1/2: {&quot;scroll_down&quot;:{&quot;amount&quot;:1200}}<br>🛠️  Action 2/2: {&quot;extract_content&quot;:{&quot;goal&quot;:&<br><br>[... truncated for brevity ...]<br><br>age_metadata={&#39;input_tokens&#39;: 6858, &#39;output_tokens&#39;: 963, &#39;total_tokens&#39;: 7821, &#39;input_token_details&#39;: {&#39;cache_read&#39;: 0}, &#39;output_token_details&#39;: {&#39;reasoning&#39;: 256}} with error 2 validation errors for AgentOutput<br>current_state<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...age.&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing<br>action<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...age.&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_20_13_59_wLl.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: What are the today&#39;s top headlines from Fox News?<br>📍 Step 1<br>🤷 Eval: Unknown<br>🧠 Memory: Starting the task. I need to find the today&#39;s top headlines from Fox News.<br>🎯 Next goal: Search for &#39;Fox News&#39; on Google.<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;Fox News&quot;}}<br>🔍  Searched for &quot;Fox News&quot; in Google<br>📍 Step 2<br>Failed to parse model output: [Current state ends here] with Expecting value: line 1 column 2 (char 1), could not extract JSON.<br>Failed to parse model output: content=&#39;[Current state ends here]&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: None, &#39;model_name&#39;: &#39;google/gemini-2.5-pro-preview&#39;, &#39;s<br><br>[... truncated for brevity ...]<br><br>ro-preview&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746821960-iL70YcbTyZ3MhEhyZ3IK&#39;, &#39;finish_reason&#39;: &#39;error&#39;, &#39;logprobs&#39;: None} id=&#39;run-47c76ca3-fe97-4e65-8c23-086e1fc88d07-0&#39; with error 2 validation errors for AgentOutput<br>current_state<br>  Field required [type=missing, input_value={&#39;top_headlines&#39;: [{&#39;titl...KAREN READ&#39;, &#39;REAL ID&#39;]}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing<br>action<br>  Field required [type=missing, input_value={&#39;top_headlines&#39;: [{&#39;titl...KAREN READ&#39;, &#39;REAL ID&#39;]}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

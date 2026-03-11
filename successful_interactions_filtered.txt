@@ -1,0 +1,548 @@
+================================================================================
+FILTERED VERIFIED INTERACTIONS - ONLY INTERACTIONS WITH AT LEAST ONE SUCCESS
+================================================================================
+Total interactions: 30
+Total successful attempts: 32 out of 60 attempts
+Note: Interactions marked with ⭐ indicate successful attempts
+================================================================================
+
+INTERACTION #2
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 12_05_2025_04_05_21_mCX.gif
+  Log ID: 12_05_2025_04_05_21_mCX
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_04_05_21_eYC.gif
+  Log ID: 12_05_2025_04_05_21_eYC
+  Status: FAILED
+================================================================================
+
+INTERACTION #5
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_15_10_56_EiU.gif
+  Log ID: 07_05_2025_15_10_56_EiU
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_15_10_56_hQu.gif
+  Log ID: 07_05_2025_15_10_56_hQu
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #6
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Name the Top 10 headlines from BBC News
+
+LEFT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_19_57_33_HgY.gif
+  Log ID: 09_05_2025_19_57_33_HgY
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 09_05_2025_19_57_33_CFM.gif
+  Log ID: 09_05_2025_19_57_33_CFM
+  Status: FAILED
+================================================================================
+
+INTERACTION #10
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_21_30_52_Eso.gif
+  Log ID: 09_05_2025_21_30_52_Eso
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 09_05_2025_21_30_52_wcO.gif
+  Log ID: 09_05_2025_21_30_52_wcO
+  Status: FAILED
+================================================================================
+
+INTERACTION #14
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 09_05_2025_21_53_08_BHP.gif
+  Log ID: 09_05_2025_21_53_08_BHP
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_53_08_Zvg.gif
+  Log ID: 09_05_2025_21_53_08_Zvg
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #15
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 09_05_2025_21_53_08_BHP.gif
+  Log ID: 09_05_2025_21_53_08_BHP
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_53_08_Zvg.gif
+  Log ID: 09_05_2025_21_53_08_Zvg
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #20
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_22_39_53_FuI.gif
+  Log ID: 09_05_2025_22_39_53_FuI
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_22_39_53_htb.gif
+  Log ID: 09_05_2025_22_39_53_htb
+  Status: FAILED
+================================================================================
+
+INTERACTION #21
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 09_05_2025_23_09_20_BUj.gif
+  Log ID: 09_05_2025_23_09_20_BUj
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 09_05_2025_23_09_20_MfC.gif
+  Log ID: 09_05_2025_23_09_20_MfC
+  Status: FAILED
+================================================================================
+
+INTERACTION #27
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 10_05_2025_03_04_51_sSy.gif
+  Log ID: 10_05_2025_03_04_51_sSy
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 10_05_2025_03_04_51_idu.gif
+  Log ID: 10_05_2025_03_04_51_idu
+  Status: FAILED
+================================================================================
+
+INTERACTION #30
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_04_28_09_hSQ.gif
+  Log ID: 11_05_2025_04_28_09_hSQ
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_04_28_09_efj.gif
+  Log ID: 11_05_2025_04_28_09_efj
+  Status: FAILED
+================================================================================
+
+INTERACTION #44
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 11_05_2025_08_38_16_sbS.gif
+  Log ID: 11_05_2025_08_38_16_sbS
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_08_38_16_UpM.gif
+  Log ID: 11_05_2025_08_38_16_UpM
+  Status: FAILED
+================================================================================
+
+INTERACTION #46
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150.
+
+LEFT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_09_47_02_VYi.gif
+  Log ID: 11_05_2025_09_47_02_VYi
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_09_47_02_HsO.gif
+  Log ID: 11_05_2025_09_47_02_HsO
+  Status: FAILED
+================================================================================
+
+INTERACTION #52
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_33_04_asV.gif
+  Log ID: 11_05_2025_16_33_04_asV
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 11_05_2025_16_33_04_ERr.gif
+  Log ID: 11_05_2025_16_33_04_ERr
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #54
+--------------------------------------------------
+Vote Type: rightvote
+User Task: List all the UK airports fly that internationally
+
+LEFT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 11_05_2025_17_51_33_HXH.gif
+  Log ID: 11_05_2025_17_51_33_HXH
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_17_51_33_qse.gif
+  Log ID: 11_05_2025_17_51_33_qse
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #57
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Give me a list of PS5 games that are on sale on the American PSN right now.
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 03_05_2025_04_39_44_lfl.gif
+  Log ID: 03_05_2025_04_39_44_lfl
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_39_44_LpZ.gif
+  Log ID: 03_05_2025_04_39_44_LpZ
+  Status: FAILED
+================================================================================
+
+INTERACTION #58
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_05_09_32_ews.gif
+  Log ID: 03_05_2025_05_09_32_ews
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: anthropic/claude-3.7-sonnet:thinking
+  GIF ID: 03_05_2025_05_09_32_cgp.gif
+  Log ID: 03_05_2025_05_09_32_cgp
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #59
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 03_05_2025_21_13_18_MuP.gif
+  Log ID: 03_05_2025_21_13_18_MuP
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_21_13_18_maG.gif
+  Log ID: 03_05_2025_21_13_18_maG
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #61
+--------------------------------------------------
+Vote Type: rightvote
+User Task: What is the top 10 stream song currently on apple music?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: NOT_FOUND
+  Log ID: NOT_FOUND
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: NOT_FOUND
+  Log ID: NOT_FOUND
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #67
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Compare flight prices from washington DC to Paris france to flights from washington DC to Kyoto Japan
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: NOT_FOUND
+  Log ID: NOT_FOUND
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 12_05_2025_03_44_04_AeP.gif
+  Log ID: 12_05_2025_03_44_04_AeP
+  Status: FAILED
+================================================================================
+
+INTERACTION #76
+--------------------------------------------------
+Vote Type: tievote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_17_52_02_oTk.gif
+  Log ID: 07_05_2025_17_52_02_oTk
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_17_52_02_FAG.gif
+  Log ID: 07_05_2025_17_52_02_FAG
+  Status: FAILED
+================================================================================
+
+INTERACTION #77
+--------------------------------------------------
+Vote Type: tievote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 07_05_2025_17_52_02_oTk.gif
+  Log ID: 07_05_2025_17_52_02_oTk
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 07_05_2025_17_52_02_FAG.gif
+  Log ID: 07_05_2025_17_52_02_FAG
+  Status: FAILED
+================================================================================
+
+INTERACTION #83
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 09_05_2025_21_42_45_OpM.gif
+  Log ID: 09_05_2025_21_42_45_OpM
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 09_05_2025_21_42_45_IxH.gif
+  Log ID: 09_05_2025_21_42_45_IxH
+  Status: FAILED
+================================================================================
+
+INTERACTION #87
+--------------------------------------------------
+Vote Type: rightvote
+User Task: What are today's top 5 political news in UK
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 10_05_2025_00_01_48_pTG.gif
+  Log ID: 10_05_2025_00_01_48_pTG
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: openai/o4-mini
+  GIF ID: 10_05_2025_00_01_48_LVO.gif
+  Log ID: 10_05_2025_00_01_48_LVO
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #94
+--------------------------------------------------
+Vote Type: rightvote
+User Task: List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least.
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 11_05_2025_04_22_35_TKg.gif
+  Log ID: 11_05_2025_04_22_35_TKg
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_04_22_35_YOe.gif
+  Log ID: 11_05_2025_04_22_35_YOe
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #98
+--------------------------------------------------
+Vote Type: rightvote
+User Task: What are the top 10 best family friendly restaurants in the Sondrio area of Italy?
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 11_05_2025_07_25_13_oaF.gif
+  Log ID: 11_05_2025_07_25_13_oaF
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: meta-llama/llama-4-maverick
+  GIF ID: 11_05_2025_07_25_13_Hoh.gif
+  Log ID: 11_05_2025_07_25_13_Hoh
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #104
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 11_05_2025_16_36_02_yKE.gif
+  Log ID: 11_05_2025_16_36_02_yKE
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_36_02_Exa.gif
+  Log ID: 11_05_2025_16_36_02_Exa
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #105
+--------------------------------------------------
+Vote Type: leftvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 11_05_2025_16_44_24_wEl.gif
+  Log ID: 11_05_2025_16_44_24_wEl
+  Status: SUCCESS ⭐
+
+RIGHT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 11_05_2025_16_44_24_StO.gif
+  Log ID: 11_05_2025_16_44_24_StO
+  Status: FAILED
+================================================================================
+
+INTERACTION #106
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Provide me a list of 3-letter words that begin with the letter w
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 03_05_2025_04_36_24_hCn.gif
+  Log ID: 03_05_2025_04_36_24_hCn
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_36_24_DPn.gif
+  Log ID: 03_05_2025_04_36_24_DPn
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #107
+--------------------------------------------------
+Vote Type: rightvote
+User Task: Got any creative ideas for a 10 year old’s birthday?
+
+LEFT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_04_41_09_QzZ.gif
+  Log ID: 03_05_2025_04_41_09_QzZ
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: google/gemini-2.5-pro-preview-03-25
+  GIF ID: 03_05_2025_04_41_09_Gqg.gif
+  Log ID: 03_05_2025_04_41_09_Gqg
+  Status: SUCCESS ⭐
+================================================================================
+
+INTERACTION #112
+--------------------------------------------------
+Vote Type: rightvote
+User Task: What is the lowest critic review score for Octopath Traveler on Metacritic?
+
+LEFT MODEL:
+  Model Name: x-ai/grok-3-beta
+  GIF ID: 03_05_2025_21_08_57_AQd.gif
+  Log ID: 03_05_2025_21_08_57_AQd
+  Status: FAILED
+
+RIGHT MODEL:
+  Model Name: deepseek/deepseek-r1
+  GIF ID: 03_05_2025_21_08_57_Imc.gif
+  Log ID: 03_05_2025_21_08_57_Imc
+  Status: SUCCESS ⭐
+================================================================================
+

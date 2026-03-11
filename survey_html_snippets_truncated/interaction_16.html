@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_36_59_crp.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.<br>📍 Step 1<br>🤷 Eval: Unknown - Starting fresh with a blank page<br>🧠 Memory: Initiating search for sustainable cheese pasta recipes on top cooking websites. 0 out of 3 websites processed.<br>🎯 Next goal: Search Google for sustainable cheese pasta recipes targeting AllRecipes, Epicurious, and BBC GoodFood<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;sustainable cheese pasta recipe site:allrecipes.com OR site:epicurious.com OR site:bbcgoodfood.com&quot;}}<br>🔍  Searched for &quot;sustainable cheese pasta recipe site:allrecipes.com OR site:epicurious.com OR site:bbcgoodfood.com&quot; in Google<br>📍 Step 2<br><br>[... truncated for brevity ...]<br><br>#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826860-HPOxI98vRa8TaY9OW3Da&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: {&#39;content&#39;: [], &#39;refusal&#39;: []}} id=&#39;run-b5bda88b-28bb-4b5b-8fe5-be9fdbeb3a8e-0&#39; usage_metadata={&#39;input_tokens&#39;: 3497, &#39;output_tokens&#39;: 834, &#39;total_tokens&#39;: 4331, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error 1 validation error for AgentOutput<br>action.0.extract_content.should_strip_link_urls<br>  Field required [type=missing, input_value={&#39;goal&#39;: &#39;Recipe ingredie...ients, low-waste tips)&#39;}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_36_59_AvQ.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.<br>📍 Step 1<br>Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.<br>Failed to parse model output: content=&#39;&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 0, &#39;prompt_tokens&#39;: 3109, &#39;total_tokens&#39;: 3109, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;google/gemini-2.5-pro-preview&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826889-YA2ad0Bdd19mgSezvQk6&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#3<br><br>[... truncated for brevity ...]<br><br>ditional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 6, &#39;prompt_tokens&#39;: 3137, &#39;total_tokens&#39;: 3143, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;google/gemini-2.5-pro-preview&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826893-EZXoqaAQWKWoM4m8yAMS&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-d50ee625-42af-4247-9d77-bcc6ad2c880a-0&#39; usage_metadata={&#39;input_tokens&#39;: 3137, &#39;output_tokens&#39;: 6, &#39;total_tokens&#39;: 3143, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error Could not parse response., try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "response_id": "R_5L4LEZv1oCOD6FP",
+    "task_question": "What are today's top 20 headlines from Fox News?",
+    "left_case_id": "10_05_2025_03_04_51_sSy",
+    "right_case_id": "\uf8ff\u00fc\u00ec\u00e7 Step 1\n\uf8ff\u00fc\u00a7\u2211 Eval: Unknown - I am starting with a blank page. No previous actions have been taken yet.\n\uf8ff\u00fc\u00df\u2020 Memory: Task: Get today's top 20 headlines from Fox News. I'm at step 1/15 with a blank browser page. I need to navigate to Fox News website first.\n\uf8ff\u00fc\u00e9\u00d8 Next goal: Navigate to Fox News website\n\uf8ff\u00fc\u00f5\u2020\u00d4\u220f\u00e8 Action 1/1: {\"go_to_url\":{\"url\":\"https://www.foxnews.com\"}}\n\u201a\u00f9\u00e5 Result failed 1/3 times:"
+  },
+  {
+    "response_id": "R_2L08NUT9qXaHRUF",
+    "task_question": "Create a summary for the wikipedia article about Manchester Metrolink",
+    "left_case_id": "12_05_2025_04_05_21_mCX",
+    "right_case_id": "\uf8ff\u00fc\u00ec\u00e7 Step 1\nFailed to parse model output: with Expecting value: line 1 column 1 (char 0), could not extract JSON.\nFailed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3099, 'total_tokens': 3099, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'anonymous LLM company/anonymous LLM company-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1747022860-ilEhJZRNPdPGEGg9EeYB', 'finish_reason': 'stop', 'logprobs': None} id='run-e51bbdf3-3bad-46e6-a8fe-c43619bd782d-0' usage_metadata={'input_tokens': 3099, 'output_tokens': 0, 'total_tokens': 3099, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.\n\u201a\u00f9\u00e5 Result failed 1/3 times:\nCould not parse response."
+  }
+]

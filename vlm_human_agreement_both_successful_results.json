@@ -1,0 +1,190 @@
+{
+  "summary": {
+    "total_interactions": 18,
+    "agreements": 8,
+    "disagreements": 10,
+    "agreement_rate": 0.4444444444444444
+  },
+  "interactions": [
+    {
+      "interaction_id": "interaction_01",
+      "task": "How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines opera...",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 14,
+      "human_right": 2,
+      "human_tie": 10,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_02",
+      "task": "Create a summary for the wikipedia article about Manchester Metrolink",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 23,
+      "human_right": 1,
+      "human_tie": 2,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_03",
+      "task": "Go to Etsy.com, browse the trending home d\u00e9cor category, and list the top 5 most popular items inclu...",
+      "gpt4_vote": "Tie",
+      "human_majority": "Left",
+      "human_left": 17,
+      "human_right": 5,
+      "human_tie": 7,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_04",
+      "task": "find me any recipe on food.com",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 26,
+      "human_right": 4,
+      "human_tie": 1,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_05",
+      "task": "visit the New York Times homepage and summarize the main story currently featured at the top of the ...",
+      "gpt4_vote": "Left",
+      "human_majority": "Tie",
+      "human_left": 8,
+      "human_right": 5,
+      "human_tie": 11,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_06",
+      "task": "Name the Top 10 headlines from BBC News",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 21,
+      "human_right": 4,
+      "human_tie": 1,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_07",
+      "task": "What are the today's top headlines from Fox News?",
+      "gpt4_vote": "Left",
+      "human_majority": "Tie",
+      "human_left": 11,
+      "human_right": 2,
+      "human_tie": 14,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_08",
+      "task": "Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Mary...",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 19,
+      "human_right": 6,
+      "human_tie": 0,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_09",
+      "task": "create a list of the top 20 best selling nintendo switch games",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 22,
+      "human_right": 5,
+      "human_tie": 2,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_10",
+      "task": "a list of top 10 churches",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 22,
+      "human_right": 6,
+      "human_tie": 4,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_11",
+      "task": "What are the top video titles on youtube homepage?",
+      "gpt4_vote": "Left",
+      "human_majority": "Tie",
+      "human_left": 4,
+      "human_right": 2,
+      "human_tie": 18,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_12",
+      "task": "Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth ...",
+      "gpt4_vote": "Left",
+      "human_majority": "Tie",
+      "human_left": 7,
+      "human_right": 5,
+      "human_tie": 12,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_13",
+      "task": "List out the symptoms of Vitamin D deficiency from WebMd and any other medical website",
+      "gpt4_vote": "Left",
+      "human_majority": "Left",
+      "human_left": 31,
+      "human_right": 4,
+      "human_tie": 1,
+      "agrees": "Yes"
+    },
+    {
+      "interaction_id": "interaction_14",
+      "task": "What is the best Arcade Fire albums listed from best to worst?",
+      "gpt4_vote": "Right",
+      "human_majority": "Tie",
+      "human_left": 8,
+      "human_right": 3,
+      "human_tie": 13,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_15",
+      "task": "What is the best Arcade Fire albums listed from best to worst?",
+      "gpt4_vote": "Right",
+      "human_majority": "Tie",
+      "human_left": 8,
+      "human_right": 4,
+      "human_tie": 12,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_16",
+      "task": "give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmental...",
+      "gpt4_vote": "Left",
+      "human_majority": "Tie",
+      "human_left": 8,
+      "human_right": 4,
+      "human_tie": 8,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_17",
+      "task": "Tell me different Plane ticket price from different websites for a one way trip from Ontario to Otta...",
+      "gpt4_vote": "Left",
+      "human_majority": "Right",
+      "human_left": 7,
+      "human_right": 18,
+      "human_tie": 9,
+      "agrees": "No"
+    },
+    {
+      "interaction_id": "interaction_19",
+      "task": "get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa al...",
+      "gpt4_vote": "Right",
+      "human_majority": "Tie",
+      "human_left": 4,
+      "human_right": 9,
+      "human_tie": 15,
+      "agrees": "No"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Interaction_ID,Task,GPT4_Vote,Human_Majority,Human_Left,Human_Right,Human_Tie,Agrees
+interaction_01,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines opera...",Left,Left,14,2,10,Yes
+interaction_02,Create a summary for the wikipedia article about Manchester Metrolink,Left,Left,23,1,2,Yes
+interaction_03,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items inclu...",Tie,Left,17,5,7,No
+interaction_04,find me any recipe on food.com,Left,Left,26,4,1,Yes
+interaction_05,visit the New York Times homepage and summarize the main story currently featured at the top of the ...,Left,Tie,8,5,11,No
+interaction_06,Name the Top 10 headlines from BBC News,Left,Left,21,4,1,Yes
+interaction_07,What are the today's top headlines from Fox News?,Left,Tie,11,2,14,No
+interaction_08,"Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Mary...",Left,Left,19,6,0,Yes
+interaction_09,create a list of the top 20 best selling nintendo switch games,Left,Left,22,5,2,Yes
+interaction_10,a list of top 10 churches,Left,Left,22,6,4,Yes
+interaction_11,What are the top video titles on youtube homepage?,Left,Tie,4,2,18,No
+interaction_12,Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth ...,Left,Tie,7,5,12,No
+interaction_13,List out the symptoms of Vitamin D deficiency from WebMd and any other medical website,Left,Left,31,4,1,Yes
+interaction_14,What is the best Arcade Fire albums listed from best to worst?,Right,Tie,8,3,13,No
+interaction_15,What is the best Arcade Fire albums listed from best to worst?,Right,Tie,8,4,12,No
+interaction_16,"give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmental...",Left,Tie,8,4,8,No
+interaction_17,Tell me different Plane ticket price from different websites for a one way trip from Ontario to Otta...,Left,Right,7,18,9,No
+interaction_18,Compare prices of HP laptop model across different online retailers,Left,Left,18,1,1,Yes
+interaction_19,get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa al...,Right,Tie,4,9,15,No

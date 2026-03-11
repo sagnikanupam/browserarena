@@ -1,0 +1,20 @@
+question,original_label,majority_label,n_responses,majority_percentage,agent_1_votes,agent_2_votes,tie_votes
+Q1,Agent 1,Agent 1,26,53.8%,14,2,10
+Q10,Agent 1,Agent 1,32,68.8%,22,6,4
+Q11,Agent 1,Tie,24,75.0%,4,2,18
+Q12,Agent 1,Tie,24,50.0%,7,5,12
+Q13,Agent 1,Agent 1,36,86.1%,31,4,1
+Q16,Agent 1,Tie,24,54.2%,8,3,13
+Q17,Agent 1,Tie,24,50.0%,8,4,12
+Q18,Agent 1,Tie,20,40.0%,8,4,8
+Q19,Agent 2,Agent 2,34,52.9%,7,18,9
+Q2,Agent 1,Agent 1,26,88.5%,23,1,2
+Q20,Agent 1,Agent 1,20,90.0%,18,1,1
+Q22,Tie,Tie,28,53.6%,4,9,15
+Q3,Agent 1,Agent 1,29,58.6%,17,5,7
+Q4,Agent 1,Agent 1,31,83.9%,26,4,1
+Q5,Agent 1,Tie,24,45.8%,8,5,11
+Q6,Agent 1,Agent 1,26,80.8%,21,4,1
+Q7,Agent 1,Tie,27,51.9%,11,2,14
+Q8,Agent 1,Agent 1,25,76.0%,19,6,0
+Q9,Agent 1,Agent 1,29,75.9%,22,5,2

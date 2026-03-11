@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> create a list of the top 20 best selling nintendo switch games</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_20_58_23_Idv.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: create a list of the top 20 best selling nintendo switch games<br>📍 Step 1<br>🤷 Eval: No previous goal to evaluate. Starting fresh.<br>🧠 Memory: Task: Create a list of the top 20 best-selling Nintendo Switch games. Step 1/15. Current URL: about:blank. No interactive elements available.<br>🎯 Next goal: Navigate to Google and search for the top 20 best-selling Nintendo Switch games<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.google.com&quot;}}<br>🔗  Navigated to https://www.google.com<br>📍 Step 2<br>Failed to parse model output: &lt;function=AgentOutput&gt;{&quot;current_state&quot;: {&quot;evaluation_previous_goal&quot;: &quot;Success - Navigated to Google homepage&quot;, &quot;memory&quot;: &quot;Task: Create a<br><br>[... truncated for brevity ...]<br><br>>5. Super Mario Odyssey - 29.28 million<br>6. Pokémon Scarlet and Violet - 26.79 million<br>7. Pokémon Sword and Shield - 26.72 million<br>8. The Legend of Zelda: Tears of the Kingdom - 21.73 million<br>9. Super Mario Party - 21.16 million<br>10. New Super Mario Bros. U Deluxe - 18.25 million<br>11. Nintendo Switch Sports - 16.27 million<br>12. Super Mario Bros. Wonder - 16.03 million<br>13. Ring Fit Adventure - 15.38 million<br>14. Pokémon: Let&#39;s Go, Pikachu! and Let&#39;s Go, Eevee! - 15.07 million<br>15. Pokémon Brilliant Diamond and Shining Pearl - 15.06 million<br>16. Pokémon Legends: Arceus - 14.83 million<br>17. Luigi&#39;s Mansion 3 - 14.25 million<br>18. Mario Party Superstars - 14.00 million<br>19. Splatoon 2 - 13.60 million<br>20. Super Mario 3D World + Bowser&#39;s Fury - 13.47 million<br><br>Success: true<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_20_58_23_unx.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: create a list of the top 20 best selling nintendo switch games<br>📍 Step 1<br>🤷 Eval: Unknown - This is the first step and I&#39;m starting with a blank page.<br>🧠 Memory: I need to create a list of the top 20 best selling Nintendo Switch games. I&#39;m starting from a blank page and will need to search for this information.<br>🎯 Next goal: Search for information about top 20 best selling Nintendo Switch games<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;top 20 best selling nintendo switch games&quot;}}<br>🔍  Searched for &quot;top 20 best selling nintendo switch games&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - I&#39;ve successfully searched for &#39;top 20 best selling nintendo switch games&#39; and have severa<br><br>[... truncated for brevity ...]<br><br>gs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 1035, &#39;prompt_tokens&#39;: 7715, &#39;total_tokens&#39;: 8750, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;anthropic/claude-3.7-sonnet:thinking&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746824513-tsTYymJnPHFq3BVjOu5h&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-7fe575b7-decc-4c40-9321-3312d1bbc193-0&#39; usage_metadata={&#39;input_tokens&#39;: 7715, &#39;output_tokens&#39;: 1035, &#39;total_tokens&#39;: 8750, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error Could not parse response., try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

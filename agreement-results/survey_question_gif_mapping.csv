@@ -1,0 +1,20 @@
+question,task,agent1_gif_path,agent2_gif_path,match_score
+Q1,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines opera",../FastChat/gifs/12_05_2025_03_54_21_KhV.gif,../FastChat/gifs/12_05_2025_03_54_21_dPl.gif,18
+Q2,Create a summary for the wikipedia article about Manchester Metrolink,../FastChat/gifs/12_05_2025_04_05_21_mCX.gif,../FastChat/gifs/12_05_2025_04_05_21_eYC.gif,10
+Q3,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items inclu",../FastChat/gifs/12_05_2025_03_56_29_aty.gif,../FastChat/gifs/12_05_2025_03_56_29_nGd.gif,19
+Q4,find me any recipe on food.com,../FastChat/gifs/12_05_2025_05_13_04_KAL.gif,../FastChat/gifs/12_05_2025_05_13_04_yaD.gif,6
+Q5,visit the New York Times homepage and summarize the main story currently featured at the top of the ,../FastChat/gifs/07_05_2025_15_10_56_EiU.gif,../FastChat/gifs/07_05_2025_15_10_56_hQu.gif,16
+Q6,Name the Top 10 headlines from BBC News,../FastChat/gifs/09_05_2025_19_57_33_HgY.gif,../FastChat/gifs/09_05_2025_19_57_33_CFM.gif,8
+Q7,What are the today's top headlines from Fox News?,../FastChat/gifs/09_05_2025_20_13_59_XFw.gif,../FastChat/gifs/09_05_2025_20_13_59_wLl.gif,9
+Q8,"Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Mary",../FastChat/gifs/09_05_2025_20_11_09_SCY.gif,../FastChat/gifs/09_05_2025_20_11_09_FrD.gif,23
+Q9,create a list of the top 20 best selling nintendo switch games,../FastChat/gifs/09_05_2025_20_58_23_Idv.gif,../FastChat/gifs/09_05_2025_20_58_23_unx.gif,12
+Q10,a list of top 10 churches,../FastChat/gifs/09_05_2025_21_30_52_Eso.gif,../FastChat/gifs/09_05_2025_21_30_52_wcO.gif,6
+Q11,What are the top video titles on youtube homepage?,../FastChat/gifs/09_05_2025_21_21_06_MSm.gif,../FastChat/gifs/09_05_2025_21_21_06_kAA.gif,8
+Q12,Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth ,../FastChat/gifs/09_05_2025_21_28_12_OnA.gif,../FastChat/gifs/09_05_2025_21_28_12_RJD.gif,21
+Q13,List out the symptoms of Vitamin D deficiency from WebMd and any other medical website,../FastChat/gifs/09_05_2025_21_40_30_XjR.gif,../FastChat/gifs/09_05_2025_21_40_30_YEs.gif,15
+Q16,"give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmental",../FastChat/gifs/09_05_2025_21_36_59_crp.gif,../FastChat/gifs/09_05_2025_21_36_59_AvQ.gif,19
+Q17,Tell me different Plane ticket price from different websites for a one way trip from Ontario to Otta,../FastChat/gifs/09_05_2025_21_41_14_YwM.gif,../FastChat/gifs/09_05_2025_21_41_14_DvE.gif,16
+Q18,Compare prices of HP laptop model across different online retailers,../FastChat/gifs/09_05_2025_22_23_29_cgB.gif,../FastChat/gifs/09_05_2025_22_23_29_IXB.gif,10
+Q19,get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa al,../FastChat/gifs/09_05_2025_22_44_26_YNT.gif,../FastChat/gifs/09_05_2025_22_44_26_xEk.gif,21
+Q20,Give me a summary of this week's best-selling crypto coins.,../FastChat/gifs/09_05_2025_22_39_53_FuI.gif,../FastChat/gifs/09_05_2025_22_39_53_htb.gif,10
+Q22,What are today's top 10 most popular articles on buzzfeed?,../FastChat/gifs/10_05_2025_00_00_27_IAX.gif,../FastChat/gifs/10_05_2025_00_00_27_TVe.gif,10

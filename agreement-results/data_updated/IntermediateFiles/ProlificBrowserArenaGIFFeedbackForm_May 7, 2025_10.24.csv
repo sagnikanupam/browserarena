@@ -1,0 +1,473 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q1,Q2,Q3,Q4,Q52,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,Q31,Q32,Q33,Q34,Q35,Q36,Q37,Q38,Q39,Q40,Q41,PROLIFIC_PID
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Please enter your Prolific ID here before beginning the survey.,"The goal of this survey is to understand how well AI can perform everyday web browsing tasks, so you will be asked to enter a task involving searching and navigating through websites. AI agents will then try to execute the task and return the results to you. We ask you to enter tasks that involve clicking and interacting with different parts of various websites (which we call ""interactive tasks"") and NOT just a simple Google search query (which we call ""search tasks"") where the answer is easily provided by Google, is in the texts and links alongside search results, or is an open-ended question that a chatbot can answer without clicking on any website. 
+
+An example of an interactive task is: ""Give me a summary of the featured article on Wikipedia's homepage"". This is because a human trying to do the task would need to go to Wikipedia's website, identify the featured article, click on it to read the complete article, and then summarize the information. An example of a search task is: ""What is the capital of France?"". A human trying to do this task would Google the answer, and Google would present the exact answer in a box, as well as in the links and short summary text under each search result. 
+
+Here are some examples of valid interactive tasks, which involve interacting with specific websites and clicking on them:
+1. What are today's top 20 headlines from CNN?
+2. Compare the bus prices for one-way tickets from Boston to New York next Saturday on different ticket purchasing websites.
+3. Create a list of the top-ranked chess players on chess.com from Belgium.
+
+Here are some examples of invalid search tasks (and why they are invalid):
+1. How do I increase my concentration while working?
+This is invalid because it can be answered using a chatbot and does not require clicking on a specific website.
+2. What is the weather today? 
+Google will output this answer in a box displayed at the top of search results, again does not require clicking on a specific website
+3. Who are the members of the Beatles?
+Google provides a lot of links with the text containing the answer to this question under those links, so you do not need to click on a website to answer this question.
+
+Please only submit interactive tasks (search tasks will be counted as INVALID submissions and rejected on Prolific), and do not resubmit the example tasks we described above (we already have them). To make sure your task is counted, check that Googling your search query requires at least one click on a website link to successfully complete the task.
+
+Currently, our system cannot interact with websites that require login IDs and passwords, so do not submit any tasks requiring logging into a website. Do not enter any sensitive information (such as usernames, passwords, or personal or financial information of any kind) at any point, either on this form or in the web app interface with the agent. We will only ask you for your Prolific IDs on this form and the web app for payment and cross-verification of answers. Also please avoid submitting tasks involving controversial or political topics, or questions about specific individuals - it is very likely that the system will reject tasks on those topics and you will be unable to complete the survey.
+
+In the text box underneath, enter the description of the interactive task that is to be submitted to the AI agent. Your task must be in English. This is for our own records - you will submit the task to the actual AI agent on another website. Before submitting the answer to this question, copy the text you have entered here. We will check to make sure that the text entered here is identical to the text submitted to the agent.","Now, go to https://bit.ly/BrowserArena. Make sure that you are on the Arena (battle) tab - you can change tabs by clicking through them on the top. Only responses submitted in the Arena (battle) tab will be counted. Do not close this website until you have completed the rest of this Qualtrics form - you will need to refer to it to answer the remaining questions.
+
+
+
+Scroll down to where it says ""Enter your prompt"". Paste the task description you submitted in Question 1 in the box. Next to that box there is a User ID box - enter your Prolific ID there. Next to that, there is a Task ID box, for which you should create a unique description (like ""wikipedia_1"") to differentiate it from any other tasks you submit. You can rephrase the language of a previously submitted task to make the task description more specific or more general. We ask that if you are rephrasing a previous task, please reuse the task ID so that we know that you are rephrasing a previous task. You are permitted to submit at most 3 versions of the same task with the same task ID. 
+
+
+
+Before pressing the Send button, enter the task ID you are submitting as the answer to this question.","Now press the Send button. Make sure that you submit the task on https://bit.ly/BrowserArena to ensure that your response is recorded - if we do not see a submission on that website, this Qualtrics form submission will be considered invalid and will be rejected on Prolific.  
+
+
+
+The task has been sent to two AI agents - you will be asked to rank their outputs. It might take a while for the agents to generate their responses. If after 20 minutes, no response has been generated, or you see only the word ""Error"" on both panes, please end the survey here and let us know. Note: If you submit the form before 20 minutes and tell us that no text was generated, we will count the response as invalid because it might take a while for the response to be generated when there are many users using the app. Please note that you should continue the survey if any text other than the word ""Error"" was generated - if the agent fails to do the task or says that it failed to do a part of the task, you will be able to tell us that in a later section. If only one pane shows an error, please continue with the form and select Yes - you can tell us about the error at a later point in the survey.
+
+
+
+If you select No output here, it will end the survey, and any subsequent attempts to retake the survey will be considered invalid. We will check with your prompt to make sure that we can reproduce any errors to verify this survey submission.
+
+
+
+Were any outputs produced by the AI agents in the grey textbox?","If you have any feedback about the survey or any additional information about any of your responses, please enter the feedback here.
+
+Please click the next button to submit your survey and be redirected to Prolific - the survey will not be submitted otherwise. Thank you so much for taking the survey!","Both panes for both AI agents should have generated some text demonstrating the steps and actions taken by the AI agent. 
+
+An example of the text that might be generated is as follows:
+
+
+ 🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+
+
+🚀 Starting task: What is the capital of France?
+📍 Step 1
+ 🤷 Eval: Unknown - Starting fresh session with blank page
+🧠 Memory: Initiating Google search for the answer. Step 1/15 completed.
+🎯 Next goal: Retrieve capital of France from search results 🛠️ Action 1/1: {""search_google"":{""query"":""capital of France""}} 🔍 Searched for ""capital of France"" in Google
+
+Can you clearly identify the steps in at least one of the agent responses, or is there some other text produced?
+
+For the agent on the left side, does the generated text have clear steps like this, or was the output some very differently formatted text? By clear steps, we mean that you should be able to clearly identify where one step ends and the next step begins because each step will have a line starting with ""📍 Step"" at its start.","If no steps are clearly identifiable, what text was generated by the AI agent on the left side?","Scroll to the very end of the left-side agent's output. It will have produced a log ID, which the text after the phrase: ""Log ID: "". Copy the log ID and paste it here. If no log ID was generated, enter ""N/A"". The log ID will be used to verify that this query was submitted on the BrowserArena website, so please fill this field accurately to avoid your response being marked as invalid and rejected on Prolific.","Now, examine the output of the left-side AI agent. There are several steps, each of which should describe a ""Next Goal"" and an ""Eval"". The Eval sentence is the agent's attempt to evaluate whether it achieved the goal it had set for itself in the previous step. Your next task is to provide a human evaluation of whether the agent correctly performed each step. If the agent said that it will visit a website in a previous step but is unable to click on the link to get there in this step, mark this step wrong. If the agent said that it will collect some information in a previous step, but collects incorrect information in this step, mark this step wrong. There is a GIF generated at the bottom of the agent's output that should show the agent visiting different websites and clicking on different links - use it to see exactly what the agent was doing.
+
+The total number of steps for the left-side AI agent is the largest number X which appears in the output of the model as ""📍 Step X"". For example, the output may contain 5 lines (lines in between the steps have been replaced by ellipses): 
+
+📍 Step 1 
+...
+📍 Step 2
+...
+📍 Step 3 
+..
+📍 Step 3
+...
+📍 Step 4 
+...
+Result:
+
+In this example, note that the text ""📍 Step 3"" is repeated. Despite that, the total number of steps in this example is 4, since it is the largest number appearing next to ""📍 Step "". The maximum number of possible steps is 15.
+
+You will now be asked to provide feedback about each step. Please make sure to provide feedback for each individual step and not for all the steps in one box - if feedback is missing for individual steps the response will be rejected. If the step was correctly performed according to you, simply enter the word ""Correct"". If it was performed incorrectly, explain why you think the step was incorrect. Sometimes, the agent will produce multiple lines that have the same step number i.e. multiple lines ""Step 3"" in the previous example. This is because the agent tried to execute Step 3, failed, and then retried. In that case, combine your feedback for all lines with the same step number, i.e. put all your feedback for those steps in the box for Step 3. If this form is asking you about feedback for a step larger than the total number of steps, write ""N/A"". In the previous example, since the total number of steps is 4, all steps from 5-15 should have ""N/A"" in their boxes.  In this example, steps 1-4 should not have ""N/A"" - they should either have ""Correct"" or your own feedback on the step.
+
+Here are some examples of questions whose answers may help you provide feedback for individual steps: did the agent search for the wrong term, or visit the wrong website? Was it unable to click on a particular part of the website? Did the agent generate text that the system could not translate into an action to take on the website?
+
+Please do not write anything except ""N/A"" for any step numbers beyond the total number of steps in the agent's output. We will cross reference these answers with the agent outputs and it is important that feedback is provided only for the steps that the agent generates.
+
+In the below text box, enter your feedback for Step 1. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 2. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 3. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 4. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 5. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 6. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 7. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 8. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 9. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 10. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 11. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 12. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 13. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 14. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 15. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Both panes for both AI agents should have generated some text demonstrating the steps and actions taken by the AI agent. 
+
+An example of the text that might be generated is as follows:
+
+
+ 🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+
+🚀 Starting task: What is the capital of France?
+
+📍 Step 1
+ 🤷 Eval: Unknown - Starting fresh session with blank page
+
+🧠 Memory: Initiating Google search for the answer. Step 1/15 completed.
+
+🎯 Next goal: Retrieve capital of France from search results 🛠️ Action 1/1: {""search_google"":{""query"":""capital of France""}} 🔍 Searched for ""capital of France"" in Google
+
+Can you clearly identify the steps in at least one of the agent responses, or is there some other text produced?
+
+For the agent on the right side, does the generated text have clear steps like this, or was the output some very differently formatted text? By clear steps, we mean that you should be able to clearly identify where one step ends and the next step begins because each step will have a line starting with ""📍 Step"" at its start.","If no steps are clearly identifiable, what text was generated by the AI agent on the right side?","Scroll to the very end of the right-side agent's output. It will have produced a log ID, which the text after the phrase: ""Log ID: "". Copy the log ID and paste it here. If no log ID was generated, enter ""N/A"". The log ID will be used to verify that this query was submitted on the BrowserArena website, so please fill this field accurately to avoid your response being marked as invalid and rejected on Prolific.","Now, examine the output of the right-side AI agent. There are several steps, each of which should describe a ""Next Goal"" and an ""Eval"". The ""Eval"" sentence is the agent's attempts to evaluate whether it achieved the goal it had set for itself in the previous step. Your next task is to provide a human evaluation of whether the agent correctly performed each step. If the agent said that it will visit a website in a previous step but is unable to click on the link to get there in this step, mark this step wrong. If the agent said that it will collect some information in a previous step, but collects incorrect information in this step, mark this step wrong. There is a GIF generated at the bottom of the agent's output that should show the agent visiting different websites and clicking on different links - use it to see exactly what the agent was doing.
+
+
+The total number of steps for the right-side AI agent is the largest number X which appears in the output of the model as ""📍 Step X"". For example, the output may contain 5 lines (lines in between the steps have been replaced by ellipses):
+
+
+📍 Step 1
+
+...
+
+📍 Step 2
+
+...
+
+📍 Step 3
+
+... 
+📍 Step 3
+
+...
+
+📍 Step 4
+ ...
+
+Result:
+
+
+In this example, note that the text ""📍 Step 3"" is repeated. Despite that, the total number of steps in this example is 4, since it is the largest number appearing next to ""📍 Step "". The maximum number of possible steps is 15.
+
+
+You will now be asked to provide feedback about each step. Please make sure to provide feedback for each individual step and not for all the steps in one box - if feedback is missing for individual steps the response will be rejected. If the step was correctly performed according to you, simply enter the word ""Correct"". If it was performed incorrectly, explain why you think the step was incorrect. Sometimes, the agent will produce multiple lines that have the same step number i.e. multiple lines ""Step 3"" in the previous example. This is because the agent tried to execute Step 3, failed, and then retried. In that case, combine your feedback for all lines with the same step number, i.e. put all your feedback for those steps in the box for Step 3. If this form is asking you about feedback for a step larger than the total number of steps, write ""N/A"". In the previous example, since the total number of steps is 4, all steps from 5-15 should have ""N/A"" in their boxes. In this example, steps 1-4 should not have ""N/A"" - they should either have ""Correct"" or your own feedback on the step.
+
+Here are some examples of questions whose answers may help you provide feedback for individual steps: did the agent search for the wrong term, or visit the wrong website? Was it unable to click on a particular part of the website? Did the agent generate text that the system could not translate into an action to take on the website?
+
+
+Please do not write anything except ""N/A"" for any step numbers beyond the total number of steps in the agent's output. We will cross reference these answers with the agent outputs and it is important that feedback is provided only for the steps that the agent generates. 
+
+
+In the below text box, enter your feedback for Step 1. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 2. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 3. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 4. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 5. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 6. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 7. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 8. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 9. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 10. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 11. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 12. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 13. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 14. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Enter your feedback for Step 15. Enter ""Correct"" if the step was correctly executed, provide your feedback if the step was incorrectly executed, and enter ""N/A"" if it is larger than the total number of steps.","Now, on the website, vote for the best response between the two models by clicking the Left, Right, or Tie buttons there. Then, enter your vote here as ""Left"", ""Right"", or ""Tie"".  Use your best judgement to analyze which model did better on your task - if both models did not succeed in completing the task, vote for the model that got the closest to completing the task.  Do not click on the button marking both responses as bad - the goal is to evaluate which model gets closest to completion.",PROLIFIC_PID
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID50_TEXT""}","{""ImportId"":""QID2_TEXT""}","{""ImportId"":""QID3_TEXT""}","{""ImportId"":""QID1""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID7""}","{""ImportId"":""QID6_TEXT""}","{""ImportId"":""QID10_TEXT""}","{""ImportId"":""QID15_TEXT""}","{""ImportId"":""QID16_TEXT""}","{""ImportId"":""QID17_TEXT""}","{""ImportId"":""QID18_TEXT""}","{""ImportId"":""QID19_TEXT""}","{""ImportId"":""QID20_TEXT""}","{""ImportId"":""QID21_TEXT""}","{""ImportId"":""QID22_TEXT""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID24_TEXT""}","{""ImportId"":""QID25_TEXT""}","{""ImportId"":""QID26_TEXT""}","{""ImportId"":""QID27_TEXT""}","{""ImportId"":""QID28_TEXT""}","{""ImportId"":""QID29_TEXT""}","{""ImportId"":""QID32""}","{""ImportId"":""QID33_TEXT""}","{""ImportId"":""QID34_TEXT""}","{""ImportId"":""QID35_TEXT""}","{""ImportId"":""QID36_TEXT""}","{""ImportId"":""QID37_TEXT""}","{""ImportId"":""QID38_TEXT""}","{""ImportId"":""QID39_TEXT""}","{""ImportId"":""QID40_TEXT""}","{""ImportId"":""QID41_TEXT""}","{""ImportId"":""QID42_TEXT""}","{""ImportId"":""QID43_TEXT""}","{""ImportId"":""QID44_TEXT""}","{""ImportId"":""QID45_TEXT""}","{""ImportId"":""QID46_TEXT""}","{""ImportId"":""QID47_TEXT""}","{""ImportId"":""QID48_TEXT""}","{""ImportId"":""QID49_TEXT""}","{""ImportId"":""QID30_TEXT""}","{""ImportId"":""PROLIFIC_PID""}"
+5/2/25 22:22,5/2/25 22:22,Survey Preview,,100,29,TRUE,5/2/25 22:22,R_5DByr5mGz3KgXst,,,,,39.9597,-75.1995,preview,EN, A, A, A,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5/2/25 22:22,5/2/25 22:23,Survey Preview,,100,58,TRUE,5/2/25 22:23,R_54N7y2YDnKtAVd2,,,,,39.9597,-75.1995,preview,EN,A,A,A,Yes - text was produced showing the agent working through the task,A,"Yes, I can identify the steps from the model's output",,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,"Yes, I can identify the steps from the model's output",,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,
+5/2/25 22:33,5/2/25 22:48,IP Address,190.101.62.25,100,921,TRUE,5/2/25 22:48,R_3bTosQFDBqtDctM,,,,,-33.4521,-70.6536,anonymous,EN,5f34731aaf13c1394166f29b,Provide me a list of 3-letter words that begin with the letter w,wordswithwlist_1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,03_05_2025_04_36_24_hCn,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,03_05_2025_04_36_24_DPn,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,5f34731aaf13c1394166f29b
+5/2/25 22:32,5/2/25 22:56,IP Address,191.57.49.49,100,1406,TRUE,5/2/25 22:56,R_5WTsQMyixQ131gQ,,,,,-22.9072,-43.1883,anonymous,EN,6719637f62cec965e1fcb4fa,Give me a list of PS5 games that are on sale on the American PSN right now.,psn_sale,Yes - text was produced showing the agent working through the task,"It was time consuming to wait for the agent to load, and to read all the descriptions.","Yes, I can identify the steps from the model's output",,03_05_2025_04_39_44_lfl,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,03_05_2025_04_39_44_LpZ,Correct,Correct,Correct,Correct,Correct,Correct,"The agent clicked on the wrong page, landing on the ""PS5 Pro Enhanced Games"" instead of PS5 deals.",Correct,"The agent failed to reach the PS5 games deals page again, landing on the ""Add-ons by Game"" one.",Correct,"The agent clicked on the wrong page, landing on the ""PS5 Pro Enhanced Games"" instead of PS5 deals.",Correct,"The agent landed on a page listing every PS5 game, not only the ones on sale.",Correct,Correct,Left,6719637f62cec965e1fcb4fa
+5/2/25 22:39,5/2/25 22:58,IP Address,105.245.20.245,100,1147,TRUE,5/2/25 22:58,R_8vdfcNt0UYCu4mW,,,,,-26.2309,28.0583,anonymous,EN,67d7ef67392ea169a7d970a8,I’m feeling really overwhelmed lately with school and personal stuff. I was wondering if the university counseling unit can help with that?,Interactive task 1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_04_41_09_Gqg,Correct,Correct ,Correct ,N/A,N/A,N/A,N/A,N/A,N/A,N//A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_04_41_09_QzZ,Correct ,Correct ,Incorrect ,Incorrect ,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,67d7ef67392ea169a7d970a8
+5/2/25 22:56,5/2/25 23:04,IP Address,105.12.2.158,100,497,TRUE,5/2/25 23:04,R_7WEL6rqRFyV1jdn,,,,,-26.1917,28.0523,anonymous,EN,67da6c21bcd71cf297d8db10,Searching and navigating through website ,A battle of arena for Al agents to perform web search  tasks,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,N/A,Correct ,Correct ,Correct,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct,Correct ,Correct ,Correct ,Correct ,Correct ,"No, I cannot identify any steps clearly from the model's output",Llama 4 maverick ,,,,,,,,,,,,,,,,,Tie,67da6c21bcd71cf297d8db10
+5/2/25 23:09,5/2/25 23:10,IP Address,41.122.128.241,100,87,TRUE,5/2/25 23:10,R_2Cx7PAr56JkgGIx,,,,,-26.2309,28.0583,anonymous,EN,67d11644421446068e1fec14,Give me a summary of the featured article on Arise page about Trumps Election.,Fa1234,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67d11644421446068e1fec14
+5/2/25 23:00,5/2/25 23:24,IP Address,41.13.14.130,100,1437,TRUE,5/2/25 23:24,R_1EwZWvVDZhq4x3P,,,,,-26.2309,28.0583,anonymous,EN,67ee7e81aab6033ac314db9b,How do I reset my browser on Chrome?,How do I reset my browser on Chrome?,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_05_09_32_cgp,Correct,correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_05_09_32_cgp,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,67ee7e81aab6033ac314db9b
+5/2/25 22:58,5/2/25 23:26,IP Address,41.114.110.253,100,1693,TRUE,5/2/25 23:26,R_2U2UuIVmcePkNYw,,,,,-26.2309,28.0583,anonymous,EN,67f7bb9aaa1cb67247023347,What can we do to improve our daily exercises ,"Set Clear Goals 
+
+Specific Goals: Rather than vague goals like ""get fit,"" aim for specific, measurable targets, such as ""run 3 miles in 30 minutes"" or ""do 20 push-ups without stopping.""
+
+",Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,N/A,N\A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A ,"Yes, I can identify the steps from the model's output",,N/A,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Right ,67f7bb9aaa1cb67247023347
+5/2/25 23:41,5/2/25 23:49,IP Address,41.116.94.11,100,493,TRUE,5/2/25 23:49,R_3ONbDY8Jpf17FJ2,,,,,-26.1833,28.3167,anonymous,EN,67dbb1fef3c51a422079a857, What are the benefits of using browsers,67dbb1fef3c51a422079a857,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,67dbb1fef3c51a422079a857,correct,N/A,Correct,N/A,N/A,N/AN/A,N/A,N/A,coreect,correct,N/A,N/A,correct,correct,N/A,"Yes, I can identify the steps from the model's output",,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,correct,correct,correct,correct,correct,Correct,correct,Correct,Right,67dbb1fef3c51a422079a857
+5/2/25 23:47,5/2/25 23:58,IP Address,41.114.110.253,100,638,TRUE,5/2/25 23:58,R_26IRMyv56pXNH3z,,,,,-26.2309,28.0583,anonymous,EN,6813ee94347bb13e5862b369,I want to use AI for studying. What are a couple of ways you can help?,Gemini,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,N/A,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,N/A,Correct ,Correct ,Correct ,"Yes, I can identify the steps from the model's output",,N/A,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Left ,6813ee94347bb13e5862b369
+5/3/25 0:41,5/3/25 0:56,IP Address,197.185.159.187,100,912,TRUE,5/3/25 0:56,R_3NRmSOqCiUk1UXo,,,,,-26.2309,28.0583,anonymous,EN,67d6f21e07069bfe931bd51b,"Go to the IMDb website, find the most popular movie this week, and tell me the top 3 user reviews.",Wikipedia 1,"No - there was either no text produced or both panes show the output ""Error""","Ooh i did receive a response after refreshing and entering the prompt again ,although it took long",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67d6f21e07069bfe931bd51b
+5/3/25 1:56,5/3/25 2:13,IP Address,41.116.184.195,100,1032,TRUE,5/3/25 2:13,R_3EH46NVyaivk7gj,,,,,-29,24,anonymous,EN,67e1152fe716c33597b9184a,How can I design a math game for first graders,How can I design a math game for first graders,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,N/A,N/A,Correct,Correct,Correct,N/A,Correct,Correct ,N/A,N/A,N/A,Correct ,Correct ,Correct,N/A,Correct,"Yes, I can identify the steps from the model's output",,N/A,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Correct ,Tie,67e1152fe716c33597b9184a
+5/3/25 14:47,5/3/25 14:47,Survey Preview,,100,22,TRUE,5/3/25 14:47,R_5mRgFasd1dJtyKZ,,,,,39.9597,-75.1995,preview,EN,A,A,A,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5/3/25 15:04,5/3/25 15:12,IP Address,151.225.224.239,100,525,TRUE,5/3/25 15:12,R_8OTuLVct6CVy7U9,,,,,51.6004,-0.1168,anonymous,EN,6170cb31c3656859cca7cc57,"On the Elden Ring Wiki by fextralife, what is the title of the first video posted?",EldenRingWiki_1,"No - there was either no text produced or both panes show the output ""Error""","It was interesting. I did get an error, and then on the top right, I think it said something about a value, so I guess it could not do what I was trying to tell it to do.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6170cb31c3656859cca7cc57
+5/3/25 14:58,5/3/25 15:13,IP Address,94.8.115.9,100,859,TRUE,5/3/25 15:13,R_2mr3SAtbAV14XTO,,,,,53.5884,-2.2188,anonymous,EN,668914213741d9029705d8b1,where you interact with certain websites and click on them to answer,task 1,"No - there was either no text produced or both panes show the output ""Error""","The instructions were really complicated and having 3 windows open, so I could copy my prolific ID and keep flicking back to the questions was a pain.  I also didn't get any answers to my questions.  Did I do it right?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,668914213741d9029705d8b1
+5/3/25 14:52,5/3/25 15:14,IP Address,24.80.50.194,100,1330,TRUE,5/3/25 15:14,R_5oaK9CRQgLCO0GM,,,,,49.2311,-122.956,anonymous,EN,66c0e527746d984d9bff5f3f,Compare hotel prices for Caesar Palace in Las Vegas across different hotel booking websites. ,CaesarPalacePrices,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,03_05_2025_20_57_54_VhL,Correct,Correct,Correct,"Wrong, couldn't find results",Correct,Correct,"Wrong, couldn't find prices",Correct,"Wrong, couldn't find prices","Wrong, couldn't get date availability","Wrong, couldn't get date availability","Wrong, couldn't get date availability","Wrong, didn't need to scroll",Correct,"Wrong, couldn't finish task","Yes, I can identify the steps from the model's output",,03_05_2025_20_57_54_dkz,"Wrong, blank page",Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,Right,66c0e527746d984d9bff5f3f
+5/3/25 14:52,5/3/25 15:16,IP Address,147.161.166.99,100,1402,TRUE,5/3/25 15:16,R_12q2HjAaDmMM8AV,,,,,51.5081,-0.1278,anonymous,EN,612adba08b8235b31539c704,"Which summer dresses are the most popular currently in the high street shops? Please show me the  top 10, under £50.",summerdresses_1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_20_57_58_Nih,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_20_57_58_cSG,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,612adba08b8235b31539c704
+5/3/25 15:20,5/3/25 15:31,IP Address,24.11.107.183,100,711,TRUE,5/3/25 15:31,R_3Bb5xQSlFbCAyB5,,,,,40.598,-111.9619,anonymous,EN,66b3e2632fcc33666e7a8574,What are the different names of the clouds in the sky?,66b3e2632fcc33666e7a8574,Yes - text was produced showing the agent working through the task,I enjoyed taking the time to add my opinion on this study. I look forward to doing more in the future.,"Yes, I can identify the steps from the model's output",,03_05_2025_21_14_53_lsB,N/a,Correct,Correct,Failed/Correct,N/,N/a,N/a,N/a,N/a,N/a,N/a,N/a,N/a,N/a,N/a,"Yes, I can identify the steps from the model's output",,03_05_2025_21_14_53_hgh,N/a,Correct,Correct,Correct,Correct,Correct,Correct,Correct,N/a,N/a,N/a,N/a,N/a,N/a,N/a,Right,66b3e2632fcc33666e7a8574
+5/3/25 15:01,5/3/25 15:34,IP Address,143.159.181.49,100,1986,TRUE,5/3/25 15:34,R_2rChKyQxW6CsarA,,,,,51.167,0.2383,anonymous,EN,63d190d52bb71e0e81d868f2,What is the lowest critic review score for Octopath Traveler on Metacritic?,Metacritic_1,Yes - text was produced showing the agent working through the task,The space for the completion code is blank.,"Yes, I can identify the steps from the model's output",,03_05_2025_21_08_57_AQd,Correct,Correct,"Agent seems to correctly identify the next step, but does not carry it out.",Agent still hasn't entered the page for Metacritic.,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,03_05_2025_21_08_57_Imc,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,63d190d52bb71e0e81d868f2
+5/3/25 15:07,5/3/25 15:38,IP Address,92.233.97.14,100,1871,TRUE,5/3/25 15:38,R_27HW36c49iQaHPc,,,,,51.6187,-0.1154,anonymous,EN,5d595e7b6c04b2001a1edb29,What was the trending price of gold in comparison to nasdaq in the last 60 days?,GoldNasdaq,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_12_20_pzJ,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,N/A,Correct,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_12_20_HMD,Correct,Correct,Correct,Correct,Correct,N/A,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Left,5d595e7b6c04b2001a1edb29
+5/3/25 15:10,5/3/25 15:44,IP Address,172.59.212.128,100,2061,TRUE,5/3/25 15:44,R_3rrjdbbXKfklsnT,,,,,40.7337,-74.1941,anonymous,EN,67ef6e8e9bfc15c060497365,"As a naturalist and a climate change enthusiast,  I want you to  book a sustainable and eco-friendly vacation package to a national park in the United States by ranking them from five Stars to two stars. Here is the description of the task. Find and compare eco-friendly accommodations and guided tours within the park, and plan a daily itinerary that includes sustainable activities while minimizing carbon footprint.",Encyclopedia_1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_23_34_vsx,Correct,Correct,"I expect the model to plan a daily itinerary with sustainable activities, minimizing carbon footprint, and considering park rules and regulations.","I expect the model to  book the selected accommodation and tour, providing confirmation details and itinerary summary.",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_23_34_Vqi,Correct,Correct,"I expect it to plan a daily itinerary with sustainable activities, minimizing carbon footprint, and considering park rules and regulations.","I expect the model to book the selected accommodation and tour, providing confirmation details and itinerary summary.",N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,67ef6e8e9bfc15c060497365
+5/3/25 15:26,5/3/25 16:00,IP Address,174.90.223.125,100,2041,TRUE,5/3/25 16:00,R_18FIdAXrKz50kLu,,,,,51.1202,-113.9429,anonymous,EN,67be31866f5cf32a9c47a58f,what are 5 upcoming rock concerts in the state of California and what are the ticket prices from ticketmaster and other ticket retailers,Ticketmaster,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_30_18_JgL,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,NA,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_30_18_bUN,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,na,na,na,na,left,67be31866f5cf32a9c47a58f
+5/3/25 15:11,5/3/25 16:06,IP Address,45.139.7.183,100,3285,TRUE,5/3/25 16:06,R_3CoVwnGK8hAuDuQ,,,,,40.7876,-74.06,anonymous,EN,67e6b4c78b8b457f3bc6a866,Compare the stats of C Ronaldo and Lionel Messi,Ronessi,Yes - text was produced showing the agent working through the task,"There was nothing in completion code just ""Your Prolific Completion code is , which you can enter in Prolific for payment""","Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_22_53_VdC,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,Log ID: 03_05_2025_21_22_53_yqc,Correct,Element not clickable.,Element was not clickable.,There was no visible element with text.,Could not parse response and stopped due to three consecutive failures.,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Left,67e6b4c78b8b457f3bc6a866
+5/6/25 22:33,5/6/25 22:51,IP Address,89.41.26.54,100,1051,TRUE,5/6/25 22:51,R_7vuIM7w906cSQgh,,,,,34.0481,-118.2531,anonymous,EN,641e62a8191451d08e6c08f7,"The current price of the 'AirPods Pro (2nd generation)' is $249.00 on the Apple website.
+
+On the Best Buy website, the current price of the 'Apple AirPods Pro 2, Wireless Active Noise Cancelling Earbuds with Hearing Aid Feature - White' is listed as $169.99 (with a comparison value of $249.99).",airpods_price_comparison_1,Yes - text was produced showing the agent working through the task,good study,"Yes, I can identify the steps from the model's output",,66399924c302745f72b0575f,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,66399925c302745f72b05761,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,641e62a8191451d08e6c08f7
+5/6/25 22:25,5/6/25 22:53,IP Address,82.43.106.11,100,1657,TRUE,5/6/25 22:53,R_8RlJZchfkyM8I6M,,,,,51.1189,-0.0818,anonymous,EN,63d79fcd741f9cfb2f87152f,give me ten recent news headlines in sports and news from bbc.co.uk.,63d79fcd741f9cfb2f87152f_1,Yes - text was produced showing the agent working through the task,,"No, I cannot identify any steps clearly from the model's output","🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: give me ten recent news headlines in sports and news from bbc.co.uk
+📍 Step 1
+Failed to parse model output: with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3104, 'total_tokens': 3104, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746592445-q9xhkDktwQRixeX6Wp8z', 'finish_reason': 'stop', 'logprobs': None} id='run-25b73d69-00f3-4bf3-ab01-60ae21d2f18e-0' usage_metadata={'input_tokens': 3104, 'output_tokens': 0, 'total_tokens': 3104, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+Could not parse response.
+📍 Step 1
+Failed to parse model output: with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 0, 'prompt_tokens': 3118, 'total_tokens': 3118, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746592448-nqRPprrSKeMVf9eoqqMC', 'finish_reason': 'stop', 'logprobs': None} id='run-53344d05-0339-4ac5-aad1-ebb03fb2d51c-0' usage_metadata={'input_tokens': 3118, 'output_tokens': 0, 'total_tokens': 3118, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+Could not parse response.
+📍 Step 1
+Failed to parse model output: Previous steps:
+
+Step 1: I am trying to accomplish the task. My ultimate goal is to find ten recent news headlines from bbc.co.uk, specifically from the sports and news sections. I will start by navigating to the bbc.co.uk website.
+Step 2: I have navigated to bbc.co.uk. I need to find the sports and news sections of the website. I will look for links to 'Sport' and 'News'.
+Ultimate task: give me ten recent news headlines in sports and news from bbc.co.uk
+[Current state ends here] with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content=""Previous steps:\n- Step 1: I am trying to accomplish the task. My ultimate goal is to find ten recent news headlines from bbc.co.uk, specifically from the sports and news sections. I will start by navigating to the bbc.co.uk website.\n- Step 2: I have navigated to bbc.co.uk. I need to find the sports and news sections of the website. I will look for links to 'Sport' and 'News'.\nUltimate task: give me ten recent news headlines in sports and news from bbc.co.uk\n[Current state ends here]"" additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 127, 'prompt_tokens': 3132, 'total_tokens': 3259, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'google/gemini-2.5-pro-preview', 'system_fingerprint': None, 'id': 'gen-1746592450-ylXTQUHfO6gP6cNKZ9kp', 'finish_reason': 'stop', 'logprobs': None} id='run-529cfa0f-7140-42c0-8034-434871b973ff-0' usage_metadata={'input_tokens': 3132, 'output_tokens': 127, 'total_tokens': 3259, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+Could not parse response.
+❌ Stopping due to 3 consecutive failures
+
+Log ID: 07_05_2025_04_34_02_rNO
+
+",,,,,,,,,,,,,,,,,"Yes, I can identify the steps from the model's output",,Log ID: 07_05_2025_04_34_02_sTM,Correct,Correct,Correct,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,63d79fcd741f9cfb2f87152f
+5/6/25 22:22,5/6/25 22:55,IP Address,185.69.144.39,100,1947,TRUE,5/6/25 22:55,R_214EkGz5lbNPI0M,,,,,51.4964,-0.1224,anonymous,EN,6396044f6ae489bb820c67a5,Create a detailed comparison of the top 5 streaming services,streaming_service_1,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6396044f6ae489bb820c67a5
+5/6/25 22:29,5/6/25 22:59,IP Address,86.109.83.184,100,1815,TRUE,5/6/25 22:59,R_58JAENrGOSN317z,,,,,35.0737,-78.8883,anonymous,EN,67f59c77f837ba443d96bc47,What are the main headlines in aljazeera in contras with those in bbc regarding the war in gaza over the last few days,aljazeera_1,Yes - text was produced showing the agent working through the task,,"No, I cannot identify any steps clearly from the model's output",Error,,,,,,,,,,,,,,,,,"No, I cannot identify any steps clearly from the model's output",Error,,,,,,,,,,,,,,,,,Tie,67f59c77f837ba443d96bc47
+5/6/25 22:52,5/6/25 22:59,IP Address,45.150.81.126,100,454,TRUE,5/6/25 22:59,R_3x4jAanqKp2O1zz,,,,,47.6492,-99.6293,anonymous,EN,67ddd5ed0c68ca2f9c5ce73b,Go to the New York Times homepage and list the titles and authors of the top 5 articles currently featured in the 'World News' section,New York 1,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67ddd5ed0c68ca2f9c5ce73b
+5/6/25 22:23,5/6/25 23:00,IP Address,76.29.6.53,100,2238,TRUE,5/6/25 23:00,R_7fxjid81FRxhXsO,,,,,41.8486,-87.6288,anonymous,EN,67d2184896b0a15484e937da,What is the top 10 selling album currently on apple music?,music_1,Yes - text was produced showing the agent working through the task,The survey took longer than expected.,"Yes, I can identify the steps from the model's output",,07_05_2025_04_30_10_HuX,Correct,"Incorrect, it try to pull song from a curated playlist instead of the official chart. Also, the playlists is top 100 hits 2025 in Canada.",Incorrect same feedback from step 2 where it get the wrong information.,Incorrect same feedback from step 2 where it get the wrong information.,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_04_30_10_Auk,Correct,Correct,Correct,Correct,Incorrect It repeat the last step,Incorrect Same action was step 4 and 5,Incorrect Redundant Step,Incorrect  Redundant Step,Incorrect Redundant Step,Correct,Correct,Correct,N/A,N/A,N/A,Right,67d2184896b0a15484e937da
+5/6/25 22:26,5/6/25 23:03,IP Address,188.28.191.72,100,2214,TRUE,5/6/25 23:03,R_2fHI8H4YgDT6pc3,,,,,53.7981,-1.7623,anonymous,EN,6647e8618c77f7b938865d25,"The reason AI has been used so much is because of the game capabilities it opens up. One limitation in making games is keeping file size compatible with technology a consumer could be expected to own to run the game, and the storage capacity of the hardware physical copies of a game are purchased on. One solution to this is to use AI, specifically a machine learning AI that could generate background scenery, NPC movement, appearance, or behaviour, or strategy for the player to play against.
+
+The way a machine learning AI learns from past experience means it can personalise strategy the longer the user plays against it. AI that is designed to play chess can learn to beat even the best human chess players by learning the rules of chess and playing against different real people. The famous match of Kasparov vs. Deep Blue was the first in which a chess grandmaster lost to a specifically designed AI.",scienceandmediamuseum_1,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6647e8618c77f7b938865d25
+5/6/25 22:27,5/6/25 23:04,IP Address,118.93.169.149,100,2228,TRUE,5/6/25 23:04,R_4pnZ4DeWrZXFHUc,,,,,-37.7837,175.2824,anonymous,EN,655be887bea58a8fa4cc9a48,"Compare airline fares for a roundtrip flight from Auckland to Seoul on November 17, 2025 on different airline company websites.",airfare1,"No - there was either no text produced or both panes show the output ""Error""","After more than 20 minutes, there was still no response from both the AI agents.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,655be887bea58a8fa4cc9a48
+5/6/25 22:25,5/6/25 23:04,IP Address,100.15.118.183,100,2372,TRUE,5/6/25 23:04,R_7c5UAIhY2p3K9j3,,,,,39.0013,-76.888,anonymous,EN,5d0a8a22c0fd80001626e38d,What are the five titles listed as having been awarded or nominated for Lodestar and/or Mythopoeic Awards on Ursula Vernon's Wikipedia page?,digger_1,"No - there was either no text produced or both panes show the output ""Error""",I continued as advised because the responses were no loading. Currently Model A and B as well as the three smaller spaces below all read 1425 seconds and counting,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5d0a8a22c0fd80001626e38d
+5/6/25 22:25,5/6/25 23:06,IP Address,172.59.193.238,100,2473,TRUE,5/6/25 23:06,R_6R8uBMWyaOBq4iV,,,,,32.9247,-96.8917,anonymous,EN,5cbe04b4f429ff00159de30e,What are the top 10 songs on Spotify today?,Spotify_1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,07_05_2025_04_32_00_JSV,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_04_32_00_iTj,Correct,Correct,Correct,Correct,Correct,Correct,Correct,The login attempt was unsuccessful due to an incorrect username or password.,Failed to parse model output., Failed to navigate to Billboard's Spotify Viral 50 Global chart page resulted in a 404 Page Not Found error.,Correct,Correct,Correct,Failed to parse model output,N/A,Left,5cbe04b4f429ff00159de30e
+5/6/25 22:36,5/6/25 23:06,IP Address,69.133.145.22,100,1814,TRUE,5/6/25 23:06,R_7rB9eYeRhCvyBAw,,,,,34.9879,-79.2169,anonymous,EN,6782e521cbe48b635ea6bf98,Find a Japanese copy of the Pokemon card Mew from the set mystery of the Fossils for sale for under $20. List them from highest to lowest. ,MEW 151,"No - there was either no text produced or both panes show the output ""Error""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6782e521cbe48b635ea6bf98
+5/7/25 9:00,5/7/25 9:23,IP Address,89.46.180.162,100,1397,TRUE,5/7/25 9:23,R_7zGzHuIi7zNDFVT,,,,,34.9458,-81.9334,anonymous,EN,67eade9122bddfb4cd165d09,Who was the first president of the United State of America,67eade9122bddfb4cd165d09,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,N/A,correct,correct,N/A,Correct,Correct,N/A,Correct,N/A,Correct,Correct,N/A,N/A,N/A,Correct,Correct,"Yes, I can identify the steps from the model's output",,N/A,Correct,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Tie,67eade9122bddfb4cd165d09
+5/7/25 8:58,5/7/25 9:29,IP Address,86.109.85.54,100,1866,TRUE,5/7/25 9:29,R_6Nt89OLCdLufee1,,,,,35.0737,-78.8883,anonymous,EN,67edb211a7c1d23c1535d6b2,visit the New York Times homepage and summarize the main story currently featured at the top of the page,NYC Times_1,Yes - text was produced showing the agent working through the task,Great Survey,"Yes, I can identify the steps from the model's output",,07_05_2025_15_10_56_EiU,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_15_10_56_hQu,Correct,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Left,67edb211a7c1d23c1535d6b2
+5/7/25 9:08,5/7/25 9:38,IP Address,23.153.64.244,100,1767,TRUE,5/7/25 9:38,R_51KKV1niahmvtPh,,,,,37.751,-97.822,anonymous,EN,67dcb605238f96c9e73abec2,Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May,California - Michigan ticket,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,"🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May
+📍 Step 1
+🤷 Eval: Unknown - no previous actions executed
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 0 searches performed.
+🎯 Next goal: Search Google for cheap flights California to Michigan on May 10 2025
+🛠️  Action 1/1: {""search_google"":{""query"":""cheap flights California to Michigan May 10 2025""}}
+🔍  Searched for ""cheap flights California to Michigan May 10 2025"" in Google
+📍 Step 2
+👍 Eval: Success - Google search results loaded with filters
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed. 0 airline sites checked, will use Google Flights to get initial prices then visit each airline. 0/5 airlines processed.
+🎯 Next goal: Open Google Flights to set up the search
+🛠️  Action 1/1: {""click_element_by_index"":{""index"":22,""xpath"":null}}
+🖱️  Clicked button with index 22: Flights
+📍 Step 3
+👍 Eval: Success - Google Flights search page loaded
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed via Google. 0 airline sites processed so far.
+🎯 Next goal: Set trip to one-way, enter origin and destination, and perform the search
+🛠️  Action 1/10: {""click_element_by_index"":{""index"":13,""xpath"":null}}
+🛠️  Action 2/10: {""click_element_by_text"":{""text"":""One-way"",""element_type"":""div"",""nth"":0}}
+🛠️  Action 3/10: {""click_element_by_index"":{""index"":17,""xpath"":null}}
+🛠️  Action 4/10: {""input_text"":{""index"":17,""text"":""Los Angeles"",""xpath"":null}}
+🛠️  Action 5/10: {""wait"":{""seconds"":2}}
+🛠️  Action 6/10: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 7/10: {""click_element_by_index"":{""index"":18,""xpath"":null}}
+🛠️  Action 8/10: {""input_text"":{""index"":18,""text"":""Detroit"",""xpath"":null}}
+🛠️  Action 9/10: {""wait"":{""seconds"":2}}
+🛠️  Action 10/10: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🖱️  Clicked button with index 13: 
+No visible element with text 'One-way' found.
+📍 Step 4
+👍 Eval: Success - Google Flights page loaded
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed via Google. 0 airlines processed so far.
+🎯 Next goal: Set trip type to one-way and input departure airport
+🛠️  Action 1/7: {""click_element_by_index"":{""index"":12,""xpath"":null}}
+🛠️  Action 2/7: {""click_element_by_index"":{""index"":16,""xpath"":null}}
+🛠️  Action 3/7: {""click_element_by_index"":{""index"":21,""xpath"":null}}
+🛠️  Action 4/7: {""input_text"":{""index"":21,""text"":""Los Angeles"",""xpath"":null}}
+🛠️  Action 5/7: {""wait"":{""seconds"":2}}
+🛠️  Action 6/7: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 7/7: {""click_element_by_index"":{""index"":27,""xpath"":null}}
+🖱️  Clicked button with index 12: 
+Element index changed after action 1 / 7, because page changed.
+📍 Step 5
+👍 Eval: Success - Google Flights page loaded and ready for input
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed via Google. 0 airlines processed so far.
+🎯 Next goal: Set trip to one-way, input origin 'Los Angeles', and search flights
+🛠️  Action 1/7: {""click_element_by_index"":{""index"":12,""xpath"":null}}
+🛠️  Action 2/7: {""click_element_by_text"":{""text"":""One-way"",""element_type"":""div"",""nth"":0}}
+🛠️  Action 3/7: {""click_element_by_index"":{""index"":17,""xpath"":null}}
+🛠️  Action 4/7: {""input_text"":{""index"":17,""text"":""Los Angeles"",""xpath"":null}}
+🛠️  Action 5/7: {""wait"":{""seconds"":2}}
+🛠️  Action 6/7: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 7/7: {""click_element_by_index"":{""index"":23,""xpath"":null}}
+🖱️  Clicked button with index 12: 
+No visible element with text 'One-way' found.
+📍 Step 6
+👍 Eval: Success - Google Flights page loaded and ready for input
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed via Google. Google Flights search parameters configured. 0 airlines processed so far.
+🎯 Next goal: Execute the flight search on Google Flights
+🛠️  Action 1/9: {""click_element_by_index"":{""index"":12,""xpath"":null}}
+🛠️  Action 2/9: {""click_element_by_index"":{""index"":16,""xpath"":null}}
+🛠️  Action 3/9: {""click_element_by_index"":{""index"":21,""xpath"":null}}
+🛠️  Action 4/9: {""input_text"":{""index"":21,""text"":""Los Angeles"",""xpath"":null}}
+🛠️  Action 5/9: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 6/9: {""click_element_by_index"":{""index"":22,""xpath"":null}}
+🛠️  Action 7/9: {""input_text"":{""index"":22,""text"":""Detroit"",""xpath"":null}}
+🛠️  Action 8/9: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 9/9: {""click_element_by_index"":{""index"":27,""xpath"":null}}
+🖱️  Clicked button with index 12: 
+Element index changed after action 1 / 9, because page changed.
+📍 Step 7
+👍 Eval: Success - Google Flights parameters configured for Michigan and date
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 search performed via Google, Google Flights input parameters set. 0 airlines processed so far.
+🎯 Next goal: Set origin to California and execute the flight search
+🛠️  Action 1/5: {""click_element_by_index"":{""index"":17,""xpath"":null}}
+🛠️  Action 2/5: {""input_text"":{""index"":17,""text"":""California"",""xpath"":null}}
+🛠️  Action 3/5: {""wait"":{""seconds"":2}}
+🛠️  Action 4/5: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 5/5: {""click_element_by_index"":{""index"":23,""xpath"":null}}
+🖱️  Clicked button with index 17: 
+Element index changed after action 1 / 5, because page changed.
+📍 Step 8
+🤷 Eval: Unknown - Google Flights origin not set
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 Google search performed. Google Flights search page loaded. 0 airline quotes retrieved so far.
+🎯 Next goal: Set origin to Los Angeles (LAX) and perform search for one-way flights
+🛠️  Action 1/5: {""click_element_by_index"":{""index"":17,""xpath"":null}}
+🛠️  Action 2/5: {""input_text"":{""index"":17,""text"":""Los Angeles"",""xpath"":null}}
+🛠️  Action 3/5: {""wait"":{""seconds"":2}}
+🛠️  Action 4/5: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 5/5: {""click_element_by_index"":{""index"":23,""xpath"":null}}
+🖱️  Clicked button with index 17: 
+⌨️  Input Los Angeles into index 17
+🕒  Waiting for 2 seconds
+Something new appeared after action 4 / 5
+📍 Step 9
+👍 Eval: Success - Destination set to Michigan, date is correct but origin not set
+🧠 Memory: Started new task: check cheapest plane tickets California to Michigan for May 10, 2025. 1 Google search performed, Google Flights parameters partially configured. 0 airline sites checked so far.
+🎯 Next goal: Set origin to California and perform the search
+🛠️  Action 1/5: {""click_element_by_index"":{""index"":17,""xpath"":null}}
+🛠️  Action 2/5: {""input_text"":{""index"":17,""text"":""California"",""xpath"":null}}
+🛠️  Action 3/5: {""wait"":{""seconds"":2}}
+🛠️  Action 4/5: {""click_element_by_xpath"":{""xpath"":""(//li[@role='option'])[1]""}}
+🛠️  Action 5/5: {""click_element_by_index"":{""index"":23,""xpath"":null}}
+🖱️  Clicked button with index 17: 
+Element index changed after action 1 / 5, because page changed.
+📍 Step 10
+Creating procedural memory at step 10
+Messages consolidated: 16 messages converted to procedural memory
+👍 Eval: Success - Origin field focused and set to Los Angeles (LAX)
+🧠 Memory: Origin set (1/1), destination preset (Michigan), departure date set (1/1). Completed 10 of estimated 15 steps.
+🎯 Next goal: Click the Search button to retrieve flight options
+🛠️  Action 1/1: {""click_element_by_index"":{""index"":23,""xpath"":null}}
+🖱️  Clicked button with index 23: Search
+📍 Step 11
+👍 Eval: Success - Search button clicked and flight results should be displayed
+🧠 Memory: Executed search for flights on Google Flights (11/15 steps completed). Need to extract flight options to identify the cheapest ticket.
+🎯 Next goal: Scroll down to load flight results and extract airline names, ticket prices, and booking links from the search results
+🛠️  Action 1/2: {""scroll_down"":{""amount"":null}}
+🛠️  Action 2/2: {""extract_content"":{""goal"":""Extract airline names, ticket prices, and booking links from Google Flights search results"",""should_strip_link_urls"":false}}
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: 
+```
+json
+{
+  ""flights"": []
+}
+
+```
+
+
+📍 Step 12
+⚠ Eval: Failed - No flight data was extracted in the previous step, likely because the flight cards were not in view
+🧠 Memory: Performed search and attempted extraction (12/15 steps). Flight results are not visible to extractor. Need to scroll to reveal the flight listings.
+🎯 Next goal: Scroll up to the top of the page and then scroll down to display the flight cards for extraction
+🛠️  Action 1/3: {""scroll_up"":{""amount"":null}}
+🛠️  Action 2/3: {""scroll_down"":{""amount"":null}}
+🛠️  Action 3/3: {""extract_content"":{""goal"":""Extract airline names, ticket prices, and booking links from Google Flights flight results"",""should_strip_link_urls"":false}}
+🔍  Scrolled up the page by one page
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: 
+```
+json
+{
+  ""flights"": []
+}
+
+```
+
+
+📍 Step 13
+⚠ Eval: Failed - Flight listings not in view after scrolling; extractor found no flight data
+🧠 Memory: Performed search and extraction attempts (12/15 steps). Need to bring flight cards into viewport. Continue scrolling adjustments (step 13 of 15).
+🎯 Next goal: Scroll up to reveal the Google Flights result cards and then extract flight details (airline, price, booking link)
+🛠️  Action 1/3: {""scroll_up"":{""amount"":null}}
+🛠️  Action 2/3: {""scroll_up"":{""amount"":null}}
+🛠️  Action 3/3: {""extract_content"":{""goal"":""Extract airline names, ticket prices, and booking links from Google Flights search results"",""should_strip_link_urls"":false}}
+🔍  Scrolled up the page by one page
+🔍  Scrolled up the page by one page
+📄  Extracted from page
+: {""flights"":[]}
+
+📍 Step 14
+⚠ Eval: Failed - Flight listings still not visible after multiple scroll attempts, no data extracted
+🧠 Memory: Searched flights and attempted extraction 3 times with insufficient scrolling (steps 12/15). Need to scroll further to bring flight cards into view.
+🎯 Next goal: Scroll down further to reveal flight results and extract airline names, prices, and booking links
+🛠️  Action 1/3: {""scroll_down"":{""amount"":null}}
+🛠️  Action 2/3: {""scroll_down"":{""amount"":null}}
+🛠️  Action 3/3: {""extract_content"":{""goal"":""Extract airline names, ticket prices, and booking links from Google Flights search results"",""should_strip_link_urls"":false}}
+🔍  Scrolled down the page by one page
+🔍  Scrolled down the page by one page
+📄  Extracted from page
+: 
+```
+json
+{
+  ""flights"": []
+}
+
+```
+
+
+📍 Step 15
+Last step finishing up
+Failed to parse model output: content='{""done"":{""text"":""I searched for cheap flights from Los Angeles (LAX), California to Michigan on May 10, 2025 using Google Flights. I successfully set the origin to Los Angeles (LAX), destination to Michigan, and date to May 10, 2025, then clicked Search. However, I was unable to extract any flight listings (airline names, prices, or booking links) from the results page—multiple scroll and extract attempts returned no data."",""success"":false}}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 314, 'prompt_tokens': 8274, 'total_tokens': 8588, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 192, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'openai/o4-mini', 'system_fingerprint': None, 'id': 'gen-1746631118-V3mwgK1MhSz6fDHRJR90', 'finish_reason': 'stop', 'logprobs': None} id='run-7b6be0be-4a0f-48b3-81fb-6d9d59826cc3-0' usage_metadata={'input_tokens': 8274, 'output_tokens': 314, 'total_tokens': 8588, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 192}} with error 2 validation errors for AgentOutput
+current_state
+  Field required [type=missing, input_value={'done': {'text': 'I sear...ta.', 'success': False}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+action
+  Field required [type=missing, input_value={'done': {'text': 'I sear...ta.', 'success': False}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+❌ Failed to complete task in maximum steps
+
+<img src=""/gradio_api/file=gifs/07_05_2025_15_13_54_flC.gif"" alt=""GIF"" />
+ Log ID: 07_05_2025_15_13_54_flC",Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,"Yes, I can identify the steps from the model's output",,"🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Check the cheapest plane ticket on the different airline websites for flying from California to Michigan for travelling on Saturday 10th May
+📍 Step 1
+🤷 Eval: Unknown - Starting fresh task from blank page
+🧠 Memory: 0/7 major airlines checked (Delta, United, American, Southwest, Alaska, Frontier, Spirit). Begin with first airline.
+🎯 Next goal: Navigate to Delta Airlines website to check flights
+🛠️  Action 1/1: {""go_to_url"":{""url"":""https://www.delta.com""}}
+🔗  Navigated to https://www.delta.com
+📍 Step 2
+Failed to parse model output: {
+  ""current_state"": {
+    ""evaluation_previous_goal"": ""Success - Navigated to Delta Airlines website"",
+    ""memory"": ""1/7 airlines checked (Delta). Next: United, American, Southwest, Alaska, Frontier, Spirit. Current progress: Filling Delta search form"",
+    ""next_goal"": ""Input flight search parameters for California->Michigan on May 10th""
+  },
+  ""action"": [
+    {""click_element_by_index"": {""index"": 72}},  // Accept cookies
+    {""click_element_by_index"": {""index"": 45}},  // Click departure field
+    {""input_text"": {""index"": 45, ""text"": ""LAX""}},  // Los Angeles Intl
+    {""click_element_by_index"": {""index"": 48}},  // Click destination field
+    {""input_text"": {""index"": 48, ""text"": ""DTW""}},  // Detroit Metro
+    {""click_element_by_index"": {""index"": 52}},  // Open trip type dropdown
+    {""click_element_by_text"": {""text"": ""One Way"", ""element_type"": ""span""}},  // Select one-way
+    {""click_element_by_index"": {""index"": 55}},  // Open date picker
+    {""click_element_by_text"": {""text"": ""10"", ""element_type"": ""button""}},  // Select May 10
+    {""click_element_by_index"": {""index"": 67}}  // Initiate search
+  ]
+} with Expecting value: line 8 column 49 (char 410), could not extract JSON.
+Failed to parse model output: content='{\n  ""current_state"": {\n    ""evaluation_previous_goal"": ""Success - Navigated to Delta Airlines website"",\n    ""memory"": ""1/7 airlines checked (Delta). Next: United, American, Southwest, Alaska, Frontier, Spirit. Current progress: Filling Delta search form"",\n    ""next_goal"": ""Input flight search parameters for California->Michigan on May 10th""\n  },\n  ""action"": [\n    {""click_element_by_index"": {""index"": 72}},  // Accept cookies\n    {""click_element_by_index"": {""index"": 45}},  // Click departure field\n    {""input_text"": {""index"": 45, ""text"": ""LAX""}},  // Los Angeles Intl\n    {""click_element_by_index"": {""index"": 48}},  // Click destination field\n    {""input_text"": {""index"": 48, ""text"": ""DTW""}},  // Detroit Metro\n    {""click_element_by_index"": {""index"": 52}},  // Open trip type dropdown\n    {""click_element_by_text"": {""text"": ""One Way"", ""element_type"": ""span""}},  // Select one-way\n    {""click_element_by_index"": {""index"": 55}},  // Open date picker\n    {""click_element_by_text"": {""text"": ""10"", ""element_type"": ""button""}},  // Select May 10\n    {""click_element_by_index"": {""index"": 67}}  // Initiate search\n  ]\n}' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 3100, 'prompt_tokens': 3796, 'total_tokens': 6896, 'completion_tokens_details': None, 'prompt_tokens_details': None}, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': '', 'id': 'gen-1746631229-Y7xTGwsN4tfdhFeU2qJn', 'finish_reason': 'stop', 'logprobs': None} id='run-36447b24-1cdc-4b75-a9ec-0cebc9a2aaaf-0' usage_metadata={'input_tokens': 3796, 'output_tokens': 3100, 'total_tokens': 6896, 'input_token_details': {}, 'output_token_details': {}} with error Could not parse response., try again.
+❌ Result failed 1/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': None, 'id': 'gen-1746631351-3IVHSfrX14hZ7Dr8hw1F', 'finish_reason': 'error', 'logprobs': None} id='run-61470f62-f45f-4215-9b6f-1b80a296c50c-0' with error Could not parse response., try again.
+❌ Result failed 2/3 times:
+ Could not parse response.
+📍 Step 2
+Failed to parse model output:  with Expecting value: line 1 column 1 (char 0), could not extract JSON.
+Failed to parse model output: content='' additional_kwargs={'refusal': None} response_metadata={'token_usage': None, 'model_name': 'deepseek/deepseek-r1', 'system_fingerprint': None, 'id': 'gen-1746631502-yfOQPaVjjg2P5BXImylz', 'finish_reason': 'error', 'logprobs': None} id='run-c9e5ad5e-02f1-4f04-bfe7-43d43f542283-0' with error Could not parse response., try again.
+❌ Result failed 3/3 times:
+ Could not parse response.
+❌ Stopping due to 3 consecutive failures
+
+<img src=""/gradio_api/file=gifs/07_05_2025_15_13_54_ndq.gif"" alt=""GIF"" />
+ Log ID: 07_05_2025_15_13_54_ndq",Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Right,67dcb605238f96c9e73abec2
+5/7/25 9:02,5/7/25 9:40,IP Address,45.134.8.81,100,2293,TRUE,5/7/25 9:40,R_7fcLRbC5lXAhYDn,,,,,25.7701,-80.1928,anonymous,EN,6647847aebad277cab0e44a9,The task require navigating and clinking to best buys website,6647847aebad277cab0e44a9,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,6647847aebad277cab0e44a9,the agent successfully performed the task it intended 4,Yes was executed correctly,yes the step were correct,yes is correct ,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,6647847aebad277cab0e44a9,Yes is correct the agent performed the task ,was correctly completed,was correctly completed,yes was correctly completed,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Left,6647847aebad277cab0e44a9
+5/7/25 9:24,5/7/25 9:42,IP Address,84.9.78.163,100,1060,TRUE,5/7/25 9:42,R_8e3HiY4oyJo0sLH,,,,,52.1073,-0.4649,anonymous,EN,57b248d52075e2000113ba3d,What is the hottest weather report in the UK today from BBC weather?,57b248d52075e2000113ba3d,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,07_05_2025_15_28_05_yOU,Correct,Correct,Correct,Correct,Correct," The search for 'UK' did not return any results as expected. The page displays a message 'We couldn't find any results for ""UK""'.",Correct,Correct,Correct," I navigated to the weather page for Cornwall, but it appears to be Cornwall, Canada, not Cornwall, UK as intended for the task. The URL and page content indicate a location outside the UK."," The previous action of inputting 'Cornwall, UK' into the search field was successful, but I am still on the page for Cornwall, Canada as per the URL (https://www.bbc.com/weather/5928065) and page content. I need to ensure the correct location is selected.","I input 'Cornwall, UK' into the search field, but I am still on the page for Cornwall, Canada as per the URL (https://www.bbc.com/weather/5928065) and page content."," I input 'Cornwall, UK' into the search field, but I am still on the page for Cornwall, Canada as indicated by the URL (https://www.bbc.com/weather/5928065) and page content. The search action was not triggered.",Could not parse response.,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_15_28_05_EbZ,Correct,Correct,Correct,The search for 'UK' did not yield any results,Correct,Correct,Correct,Correct,Could not parse response.,The previous action did not provide the required information about the hottest weather in the UK.,Correct,Correct,Correct,N/A,N/A,Right,57b248d52075e2000113ba3d
+5/7/25 9:23,5/7/25 9:46,IP Address,86.109.80.105,100,1372,TRUE,5/7/25 9:46,R_5eWMuzltaLMhivs,,,,,33.6988,-78.916,anonymous,EN,68126e4de7ac5948d1c7013b,"Find the top-rated wireless headphones on BestBuy.com and summarize the three most common pros and cons mentioned in customer reviews.
+
+""Find three breakfast recipes with oatmeal as the main ingredient on epicurious.com. Summarize each one with prep time and ingredients.
+
+""Find three of the most popular tourist attractions in Tokyo according to TripAdvisor and summarize one user review for each.""
+
+
+
+
+
+",arena@1,Yes - text was produced showing the agent working through the task,,"No, I cannot identify any steps clearly from the model's output",some broken codes and disorganised information that was hard to follow ,,,,,,,,,,,,,,,,,"No, I cannot identify any steps clearly from the model's output",disorganized steps but towards the end there are clear top three pros and cons and the summary feedback,,,,,,,,,,,,,,,,,right,68126e4de7ac5948d1c7013b
+5/7/25 9:14,5/7/25 9:55,IP Address,161.77.224.108,100,2441,TRUE,5/7/25 9:55,R_7imLe5hKPIP1iZV,,,,,37.751,-97.822,anonymous,EN,67d719970f1f220b3f2a7146,Provide a list of the top ten ranked hotels in California,Wikipedia 4,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,07_05_2025_15_14_22_iEe,Correct,correct,Wrong,Correct,Correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_15_14_22_SRU,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Wrong,N/A,N/A,N/A,N/A,left,67d719970f1f220b3f2a7146
+5/7/25 9:24,5/7/25 10:04,IP Address,86.109.83.99,100,2438,TRUE,5/7/25 10:04,R_1EfVdrEn8rio17m,,,,,35.0737,-78.8883,anonymous,EN,67def1ffa304d6e7be52ae22,Find the top-rated laptop under $1000 on BestBuy.com and summarize its key features,BestBuy_1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,07_05_2025_15_45_37_FDR,correct,correct,correct,correct,correct,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_15_45_37_RfJ,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,correct,N/A,N/A,N/A,Left,67def1ffa304d6e7be52ae22
+5/7/25 9:36,5/7/25 10:07,IP Address,107.189.207.5,100,1818,TRUE,5/7/25 10:07,R_1b0MQzUt0cX2Cyt,,,,,44.4006,-79.6676,anonymous,EN,665486f73c9f68e40025d1d6,"Please compare the cost of flights between Toronto, Canada and London, England across different sites, including baggage charges.",Flightcomparsion_1,Yes - text was produced showing the agent working through the task,n/a,"Yes, I can identify the steps from the model's output",,Log ID: 07_05_2025_15_41_55_LST,correct,correct,correct,correct,correct,correct,attempted to solve captcha instead of navigation to another site to compare,correct,correct,correct,correct,correct,correct,correct,correct,"Yes, I can identify the steps from the model's output",,Log ID: 07_05_2025_15_41_55_OKo,correct,correct,correct,correct,elected to check Portugal flight for baggage charges rather than toronto to london flight. ,correct,correct,step 8 totally missing,"Persistent Failed to parse model output error, Stopped due to 3 consecutive failures",N/A,N/A,N/A,N/A,N/A,N/A,Left,665486f73c9f68e40025d1d6
+5/7/25 10:00,5/7/25 10:20,IP Address,72.1.182.4,100,1195,TRUE,5/7/25 10:20,R_1ZJBCXBRz7wvcNr,,,,,37.751,-97.822,anonymous,EN,67ef4c37f1e3a6b457d0e046,Give me a summary of top 10 philanthropic foundations that give grants in  favor of LGBTQI community.,philanthropy foundations-1,Yes - text was produced showing the agent working through the task,,"Yes, I can identify the steps from the model's output",,07_05_2025_16_08_42_cZf,CORRECT,The task was successfully completed with clear steps,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,N/A,N/A,N/A,"Yes, I can identify the steps from the model's output",,07_05_2025_16_08_42_ceu,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,CORRECT,N/A,N/A,N/A,N/A,N/A,N/A,N/A,TIE,67ef4c37f1e3a6b457d0e046

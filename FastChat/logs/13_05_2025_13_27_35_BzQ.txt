@@ -1,0 +1,48 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Please find me the cost per token of anonymous LLM company-mini and compare to the closest anonymous LLM company model, in terms of speed/performance.
+📍 Step 1
+🤷 Eval: Unknown - Starting with a blank page
+🧠 Memory: Starting the task to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. Currently on step 1/15
+🎯 Next goal: Search for information about anonymous LLM company-mini cost per token
+🛠️  Action 1/1: {"search_anonymous LLM company":{"query":"anonymous LLM company-mini cost per token"}}
+❌ Result failed 1/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+📍 Step 2
+⚠ Eval: Failed - The action 'search_anonymous LLM company' failed due to an attribute error.
+🧠 Memory: The task is to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. Currently on step 2/15. The previous action failed due to an attribute error.
+🎯 Next goal: Retry searching for information about anonymous LLM company-mini cost per token using a different approach.
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.anonymous LLM company.com"}}
+❌ Result failed 2/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+📍 Step 3
+⚠ Eval: Failed - The previous actions failed due to an attribute error.
+🧠 Memory: The task is to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. Currently on step 3/15. Previous actions failed.
+🎯 Next goal: Navigate to anonymous LLM company and search for information about anonymous LLM company-mini cost per token.
+🛠️  Action 1/1: {"go_to_url":{"url":"https://www.anonymous LLM company.com"}}
+❌ Result failed 3/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+❌ Stopping due to 3 consecutive failures
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: Please find me the cost per token of anonymous LLM company-mini and compare to the closest anonymous LLM company model, in terms of speed/performance.
+📍 Step 1
+🤷 Eval: No previous goal to evaluate
+🧠 Memory: Starting with the new task. I need to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. I will begin by searching for information about anonymous LLM company-mini cost per token.
+🎯 Next goal: Search for 'anonymous LLM company-mini cost per token' in anonymous LLM company
+🛠️  Action 1/1: {"search_anonymous LLM company":{"query":"anonymous LLM company-mini cost per token"}}
+❌ Result failed 1/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+📍 Step 2
+🤷 Eval: No previous goal to evaluate
+🧠 Memory: Starting with the new task. I need to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. I will begin by searching for information about anonymous LLM company-mini cost per token.
+🎯 Next goal: Search for 'anonymous LLM company-mini cost per token' in anonymous LLM company
+🛠️  Action 1/1: {"search_anonymous LLM company":{"query":"anonymous LLM company-mini cost per token"}}
+❌ Result failed 2/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+📍 Step 3
+🤷 Eval: No previous goal to evaluate
+🧠 Memory: Starting with the new task. I need to find the cost per token of anonymous LLM company-mini and compare it to the closest anonymous LLM company model in terms of speed/performance. I will begin by searching for information about anonymous LLM company-mini cost per token.
+🎯 Next goal: Search for 'anonymous LLM company-mini cost per token' in anonymous LLM company
+🛠️  Action 1/1: {"search_anonymous LLM company":{"query":"anonymous LLM company-mini cost per token"}}
+❌ Result failed 3/3 times:
+ 'Agent' object has no attribute 'sensitive_data'
+❌ Stopping due to 3 consecutive failures

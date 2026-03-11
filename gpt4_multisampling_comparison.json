@@ -1,0 +1,486 @@
+{
+  "comparison_results": [
+    {
+      "interaction_id": "interaction_01",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 14,
+        "Right": 2,
+        "Tie": 10
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "openai/o4-mini vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_02",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 23,
+        "Right": 1,
+        "Tie": 2
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_03",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 17,
+        "Right": 5,
+        "Tie": 7
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_04",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 26,
+        "Right": 4,
+        "Tie": 1
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "google/gemini-2.5-pro-preview-03-25 vs anthropic/claude-3.7-sonnet:thinking"
+    },
+    {
+      "interaction_id": "interaction_05",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Right"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 0.5445140849964047,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 8,
+        "Right": 5,
+        "Tie": 11
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "meta-llama/llama-4-maverick vs deepseek/deepseek-r1"
+    },
+    {
+      "interaction_id": "interaction_06",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 21,
+        "Right": 4,
+        "Tie": 1
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "google/gemini-2.5-pro-preview-03-25 vs openai/o4-mini"
+    },
+    {
+      "interaction_id": "interaction_07",
+      "gpt_samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "gpt_majority": "Right",
+      "consistency_score": 0.5445140849964047,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 11,
+        "Right": 2,
+        "Tie": 14
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "openai/o4-mini vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_08",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 19,
+        "Right": 6,
+        "Tie": 0
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "anthropic/claude-3.7-sonnet:thinking vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_09",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 22,
+        "Right": 5,
+        "Tie": 2
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "meta-llama/llama-4-maverick vs anthropic/claude-3.7-sonnet:thinking"
+    },
+    {
+      "interaction_id": "interaction_10",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 22,
+        "Right": 6,
+        "Tie": 4
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs anthropic/claude-3.7-sonnet:thinking"
+    },
+    {
+      "interaction_id": "interaction_11",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 4,
+        "Right": 2,
+        "Tie": 18
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "anthropic/claude-3.7-sonnet:thinking vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_12",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 7,
+        "Right": 5,
+        "Tie": 12
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "anthropic/claude-3.7-sonnet:thinking vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_13",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 31,
+        "Right": 4,
+        "Tie": 1
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs anthropic/claude-3.7-sonnet:thinking"
+    },
+    {
+      "interaction_id": "interaction_14",
+      "gpt_samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "gpt_majority": "Right",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 8,
+        "Right": 3,
+        "Tie": 13
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_15",
+      "gpt_samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "gpt_majority": "Right",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 8,
+        "Right": 4,
+        "Tie": 12
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "openai/o4-mini vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_16",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 8,
+        "Right": 4,
+        "Tie": 8
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "anthropic/claude-3.7-sonnet:thinking vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_17",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Right",
+      "survey_counts": {
+        "Left": 7,
+        "Right": 18,
+        "Tie": 9
+      },
+      "baseline_vote": "Right",
+      "baseline_models": "meta-llama/llama-4-maverick vs anthropic/claude-3.7-sonnet:thinking"
+    },
+    {
+      "interaction_id": "interaction_18",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0,
+      "survey_majority": "Left",
+      "survey_counts": {
+        "Left": 18,
+        "Right": 1,
+        "Tie": 1
+      },
+      "baseline_vote": "Left",
+      "baseline_models": "deepseek/deepseek-r1 vs google/gemini-2.5-pro-preview-03-25"
+    },
+    {
+      "interaction_id": "interaction_19",
+      "gpt_samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "gpt_majority": "Right",
+      "consistency_score": 1.0,
+      "survey_majority": "Tie",
+      "survey_counts": {
+        "Left": 4,
+        "Right": 9,
+        "Tie": 15
+      },
+      "baseline_vote": "Tie",
+      "baseline_models": "openai/o4-mini vs meta-llama/llama-4-maverick"
+    },
+    {
+      "interaction_id": "interaction_20",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0
+    },
+    {
+      "interaction_id": "interaction_21",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0
+    },
+    {
+      "interaction_id": "interaction_22",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0
+    },
+    {
+      "interaction_id": "interaction_23",
+      "gpt_samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "gpt_majority": "Left",
+      "consistency_score": 1.0
+    },
+    {
+      "interaction_id": "interaction_24",
+      "gpt_samples": [
+        "Tie",
+        "Tie",
+        "Tie",
+        "Tie",
+        "Tie"
+      ],
+      "gpt_majority": "Tie",
+      "consistency_score": 1.0
+    },
+    {
+      "interaction_id": "interaction_25",
+      "gpt_samples": [
+        "Tie",
+        "Right",
+        "Right",
+        "Tie",
+        "Right"
+      ],
+      "gpt_majority": "Right",
+      "consistency_score": 0.3873983807106558
+    }
+  ],
+  "survey_agreement": {
+    "majority_agreement_rate": 0.5263157894736842,
+    "majority_agreement_count": 10,
+    "per_sample_agreement": [
+      0.5263157894736842,
+      0.5263157894736842,
+      0.5263157894736842,
+      0.5263157894736842,
+      0.5263157894736842
+    ],
+    "total_compared": 19
+  },
+  "baseline_agreement": {
+    "majority_agreement_rate": 0.7368421052631579,
+    "majority_agreement_count": 14,
+    "per_sample_agreement": [
+      0.7368421052631579,
+      0.7368421052631579,
+      0.7368421052631579,
+      0.7894736842105263,
+      0.6842105263157895
+    ],
+    "total_compared": 19
+  },
+  "consistency_analysis": {
+    "mean_consistency": 0.9390570620281387,
+    "min_consistency": 0.3873983807106558,
+    "max_consistency": 1.0,
+    "unanimous_rate": 0.88
+  }
+}

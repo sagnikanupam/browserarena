@@ -1,0 +1,20 @@
+question,pairwise_agreement,gpt4o_confidence,baseline_winner,gpt4o_preference,agrees_with_baseline
+Q2,0.982,0.95,Agent 1,Agent 1,True
+Q4,0.882,0.75,Agent 1,Agent 2,False
+Q20,0.866,0.9,Agent 1,Agent 1,True
+Q8,0.721,0.95,Agent 1,Agent 2,False
+Q13,0.708,0.75,Agent 1,Agent 2,False
+Q10,0.677,0.85,Agent 1,Agent 1,True
+Q6,0.658,0.9,Agent 1,Agent 1,True
+Q9,0.553,0.9,Agent 1,Agent 2,False
+Q19,0.547,0.8,Agent 2,Agent 2,True
+Q5,0.546,0.85,Agent 1,Agent 2,False
+Q11,0.529,0.5,Agent 1,Tie,False
+Q16,0.492,0.9,Agent 1,Agent 1,True
+Q1,0.479,0.95,Agent 1,Agent 1,True
+Q17,0.463,0.9,Agent 1,Agent 1,True
+Q7,0.45,0.9,Agent 1,Agent 1,True
+Q3,0.448,0.6,Agent 1,Agent 1,True
+Q18,0.43,0.8,Agent 1,Agent 1,True
+Q12,0.419,0.8,Agent 1,Agent 1,True
+Q22,0.407,0.8,Tie,Agent 2,False

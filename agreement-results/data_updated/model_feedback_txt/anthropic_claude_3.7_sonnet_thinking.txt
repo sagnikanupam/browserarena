@@ -1,0 +1,562 @@
+anthropic/claude-3.7-sonnet:thinking
+ Task Prompt: Which summer dresses are the most popular currently in the high street shops? Please show me the  top 10, under £50. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_20_57_58_Nih.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ 
+
+ Task Prompt: What are the top 10 songs on Spotify today? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_04_32_00_JSV.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Go to Amazon.com and find the three best-rated unlocked smartphones under £200 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_17_17_20_xqV.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: Create a list of the top 10 things to do on a trip to Cape Cod using travel websites. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_05_35_okT.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Step failed
+ 
+
+ Task Prompt: Go to BBC.com and summarize the top story featured on their homepage today. Include the headline and a short description of what the article is about. Make sure to click through to the full article to get the details. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_17_43_01_THR.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: the agent could not execute this step as there is large output of error messages. The agent tried 3 times to excute clicking a link to view an article but failed each time.
+ 
+
+ Task Prompt: Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Maryland and include the hourly rate.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_20_11_09_SCY.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: What are the first 5 video titles on youtube homepage? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_21_06_MSm.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Bot was unable to properly record or interpret the title of the videos appearing
+ 
+
+ Task Prompt: Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth on the 20th of May 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_28_12_OnA.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Incorrect - essentially repeated step 4. Bot recognizes this
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Incorrect - repeated previous step
+ Step 13 feedback: Correct
+ Step 14 feedback: Incorrect - task failed to parse
+ 
+
+ Task Prompt: Compare prices of HP laptop model across different online retailers 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_22_23_29_cgB.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ 
+
+ Task Prompt: Check the IKEA website and find three coffee tables priced under $150 that are available for delivery. Write down their names, prices and one unique feature or material for each.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_02_04_43_gWk.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Step 3 failed three consecutive times because the AI's responses were either blank or malformed, and the system couldn't parse them. This consistent failure suggests the Ai agent had trouble processing the page or formatting its output correctly.
+ 
+
+ Task Prompt: Go to nba.com and compile a list of the top 10 NBA players with the most points scored over the past week. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_10_26_Lck.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Instead of clicking on the stats page it stayed at or went back to the homepage.
+ Step 3 feedback: Instead of clicking on the stats page it stayed at or went back to the homepage.
+ Step 4 feedback: Instead of clicking on the stats page it stayed at or went back to the homepage.
+ Step 5 feedback: Instead of clicking on the stats page it stayed at or went back to the homepage.
+ Step 6 feedback: Instead of clicking on the stats page it stayed at or went back to the homepage.
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ 
+
+ Task Prompt: give me the list of the last ten national teams to win the world cup 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_22_03_XJs.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ 
+
+ Task Prompt: Go to Tripadvisor and find the top 3 rated hotels in Barcelona, Spain with free Wi-Fi and breakfast included. List their names, average user rating, and the starting price per night. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_34_53_PCs.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 5 feedback: Correct
+ Step 7 feedback: correct
+ 
+
+ Task Prompt: Please return the total number of competitive goals Henrik Larsson scored for Glasgow Celtic football club giving subtotals by the teams he scored against. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_17_06_51_Omm.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Failed to parse model output: with Expecting value - no real output from step 4
+ 
+
+ Task Prompt: top 5 wildlife rescue 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_04_04_11_JDJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: JavaScript couldn't read first try but then succeeded. 
+ Step 5 feedback: failed to parse
+ 
+
+ Task Prompt: please search for the names of all presidents from Wikipedia  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_07_38_08_bTo.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: incorrect- Failed to parse model output. did not connect to website
+ Step 4 feedback: correct
+ Step 5 feedback: incorrect - did not scroll down - Failed to parse model output
+ Step 6 feedback: incorrect - did not scroll down - Failed to parse model output
+ Step 7 feedback: incorrect - did not scroll down - Failed to parse model output
+ 
+
+ Task Prompt: Compare the train prices for one-way tickets from London Euston to Manchester next Saturday on national rail and trainline websites 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_18_03_01_nKI.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ 
+
+ Task Prompt: Narrow down the 3 or more TUV Rheinland certifications for eye care/health on the Honor Magic 7 Pro and list what they all are. Then search trusted and reputable websites to cross-reference and look for any other smartphones that offer at least the same eye health benefits or more, or number of eye health benefits or more, for a smartphone screen. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_00_41_aPL.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Failed to gather more specific details about these certifications and then find other smartphones with similar or better eye health features. Returning this prompt at the beginning of Step 4 - Failed to parse model output:
+ 
+
+ Task Prompt: What are today's top 5 headlines from the Peninsula Clarion? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_20_29_51_HNC.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Failed: encountered Cliudflare human security check. 
+ Step 5 feedback: Failed: Still failed human security check. Step required human interaction for the process to continue. 
+ Step 6 feedback: Correct
+ Step 7 feedback: Failed: encountered Cloudflare human security check again after attempting to access the web page through a different route. 
+ Step 8 feedback: Failed: could not parse. Stopped after 3 consecutive failures.
+ 
+
+ Task Prompt: What are the top 10 french wines from vintage 1996? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_20_30_27_HOH.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Failed to parse model output
+ Step 8 feedback: Failed to parse model output
+ Step 9 feedback: Correct
+ Step 10 feedback: Failed to parse model output
+ Step 11 feedback: Unfinished -- Ai only see the top 3.
+Due to the step limitations, AI was only able to view the first portion of the list. To see the complete top 10, further scrolling would be required to view the remaining wines on the page.
+ 
+
+ Task Prompt: Can you give me a rundown of the lore from the video game series Halo, from Halo CE to Halo 3 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_22_34_20_ZOi.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Cloudflare verification stopped the agent from accessing this part of the website. Agent navigated back which was good.
+ Step 7 feedback: Correct
+ Step 8 feedback: Agent could not access the quora website, i believe there is AI/robot verification protection on this website too that the agent could not progress past
+ 
+
+ Task Prompt: List the 7 eye-care features for greater comfort and each of their attributes listed on the website honor.com for the Honor Magic 7 Pro. Then search google and gsmarena to find any other smartphones that have at least 6 eye-care features or more only. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_37_40_QEa.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct (Although by this step it was still struggling to find the standard model for this phone not the RSR version for the Honor, consider I just did a Google search for the model of phone and one click took me to honor.com on their homepage straight to the specs for the Magic 7 Pro scrolling down the page it had all the info on the phone)
+ Step 5 feedback: Failed to parse model output (3x) then - Stopping due to 3 consecutive failures
+ 
+
+ Task Prompt: Can you tell me the top 5 rated anime tv series in the last 10 years on imdb.com  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_45_49_bkN.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Failed to parse model output
+Failed to parse model output
+Failed to parse model output
+ 
+
+ Task Prompt: Tell me the names of the top 5 nba players from nba.com 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_03_14_33_Pbg.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: First attempt failed, 2nd attempt was correct
+ Step 5 feedback: Correct
+ Step 6 feedback: This was the last step and failed 3 times and stopped trying. The error was "failed to parse model output"
+ 
+
+ Task Prompt: Please compare the cost of flights between Toronto, Canada and London, England across different sites, including baggage charges. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_41_55_OKo.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: elected to check Portugal flight for baggage charges rather than toronto to london flight. 
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: step 8 totally missing
+ Step 9 feedback: Persistent Failed to parse model output error, Stopped due to 3 consecutive failures
+ 
+
+ Task Prompt: Create a list of the top 10 darts players in the United Kingdom, including their win rates 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_18_43_04_ppN.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Failed with Failed to parse model output then reran and was correct
+ Step 6 feedback: Failed with Failed to parse model output then reran and was correct
+ Step 7 feedback: Failed with Failed to parse model output then reran and was correct
+ Step 8 feedback: Failed with Failed to parse model output, failed 3 times then model stopped
+ 
+
+ Task Prompt: create a list of the top 20 best selling nintendo switch games 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_20_58_23_unx.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Coorect
+ Step 6 feedback: Correct
+ Step 7 feedback: Incorrect - it was unable to complete the goal of scrolling to see the next 10 best selling games
+ 
+
+ Task Prompt: a list of top 10 churches  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_30_52_wcO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct"
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: failed to put keyword in position 
+ 
+
+ Task Prompt: List out the symptoms of Vitamin D deficiency from WebMd and any other medical website 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_40_30_YEs.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Extraction failed, three times. task aborted 
+ 
+
+ Task Prompt: get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa along with price from samsung website  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_22_44_26_xEk.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: it says link not clickable.
+ Step 5 feedback: Failed to parse model output
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ Step 12 feedback: correct
+ Step 13 feedback: Failed to parse model output.
+incomplete
+ Step 14 feedback: none
+ Step 15 feedback: none
+ 
+
+ Task Prompt: Give me a summary of current measures in place to curb climate change in United states. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_52_29_BZG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Agent could not parse response.
+ 
+
+ Task Prompt: What are today's top 20 headlines from Fox News? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_04_51_idu.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: I want to ask which guitar is recommended for beginners on the acousticguitarforum.com 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_07_59_UZs.json
+ User Stepwise Feedback: 
+ Step 1 feedback:  Unknown - This is the first step of the task. I'm starting with a blank page and need to begin searching for beginner guitar recommendations from acousticguitarforum.com.
+ Step 2 feedback: Failed - I successfully navigated to acousticguitarforum.com, but we're now facing a Cloudflare security check that's verifying we're human before allowing access to the site.
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Failed−Iclickedonthesearchresultbutwe 
+′
+ reencounteringanotherCloudflaresecuritycheckpage,preventingaccesstotheforumcontentdirectly. The format for this one was weird, hard to read 
+ 
+
+ Task Prompt: Create a list of top 100 rappers in UK 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_11_25_ckK.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Incorrect. The agent could not parse the website it had intended to visit even with multiple tries. 
+ 
+
+ Task Prompt: Go to the BBC News homepage, in the ''World' section, and list the top 5 headlines currently featured there. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_12_22_GuP.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Incorrect – The agent's response lacked a properly formatted action, resulting in an empty command ("action 1/1": {}) and a parsing error that prevented execution.
+ Step 6 feedback: Incorrect – The agent issued a malformed click_element_by_index: 55 action, which caused repeated JSON parsing errors due to improper structuring of the response.Incorrect – The agent issued a malformed click_element_by_index: 55 action, which caused repeated JSON parsing errors due to improper structuring of the response.
+ 
+
+ Task Prompt: Tell me the exact times and prices for trains leaving West Byfleet Station for London Waterloo next Sunday around 9am on www.nationalrail.co.uk 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_07_39_21_INb.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct 
+ Step 2 feedback: Correct
+ Step 3 feedback: Incorrect - failed to parse model results failed 1/3 times
+ Step 4 feedback: Incorrect  - failed to parse model
+ Step 5 feedback: Incorrect - failed to parse model
+ 
+
+ Task Prompt: Compare the plane ticket planes price for round trip airfare from New York To Hawaii on different plane ticket purchasing websites.  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_05_43_38_xXO.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: It failed to parse model output.  It has logprobs and it has token details with error. New York is set as departure location.
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: It failed to parse model output.  It has logprobs and it has token details with error. It has errors when selecting a departure date.
+ Step 12 feedback: They encountered errors when trying to select travel dates.
+ 
+
+ Task Prompt: What are the top 20 rarest vintage bottle caps in the world? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_32_29_iUd.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 was incorrectly executed because it said this in Step 1: "Eval: Unknown - I am just starting the task. I need to search for information about rare vintage bottle caps."
+ Step 2 feedback: Correct
+ Step 3 feedback: Step 3 was incorrectly executed because it said "Failed to parse model output" in Step 3
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Step 6 was incorrectly executed because it said "Eval: Failed - I clicked on the Reddit thread but I'm blocked by Reddit's network security. I need to go back and try another source" in Step 6
+ Step 7 feedback: Correct
+ Step 8 feedback: Step 8 was incorrectly executed because it said "Result failed 3/3 times:
+Could not parse response" and also said "Stopping due to 3 consecutive failures" in Step 8
+ 
+
+ Task Prompt: Make me a list of the top most played heroes in Overwatch 2 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_33_04_ERr.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: find me any recipe on food.com  
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_05_13_04_yaD.json
+ User Stepwise Feedback: 
+ Step 1 feedback: incorrect
+ Step 2 feedback: incorrect
+ Step 3 feedback: incorrect
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: incorrect
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: incorrect
+ Step 11 feedback: incorrect
+ Step 12 feedback: incorrect
+ 
+
+ Task Prompt: Go to the New York Times website, navigate to the 'World' section, and tell me the headline of the top story.
+ 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_06_15_45_pDI.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: Visit the official Nike website and find three different men's running shoes priced under $100. List their names, prices, and available sizes. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_02_27_zun.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 is Correct. The agent's goal in Step 1 was to navigate to the official Nike website, which it did successfully. The evaluation confirms that the action (visiting the website) was achieved as expected. The agent's memory and next goal align with this task, so there was no issue here.
+ Step 2 feedback: Step 2 is Correct. The agent successfully navigated to the Nike homepage, as indicated in the evaluation. The goal set in the memory aligns with this, and the agent correctly acknowledges its current location (on the homepage) and the next goal (to navigate to the men's running shoes section). 
+
+ Step 3 feedback: Step 3 is Correct. The agent correctly identifies the "Shoes 100 & Under" section in the Men’s menu and notes it as a helpful feature for finding running shoes under \$100. The goal in the memory and the next action align, as the agent now needs to navigate to that section to proceed with the task.
+
+ Step 4 feedback: Step 4 is Correct. The agent successfully navigated the homepage and identified the relevant section to find the shoes.
+
+ Step 5 feedback: Step 5 is Correct. The agent successfully clicked the correct menu option to access the men's section.
+
+ Step 6 feedback: Step 6 is Correct. The agent successfully clicked on the "Shoes" option in the men's section to proceed with finding running shoes under $100.
+
+ Step 7 feedback: Step 7 is Incorrect. The action to click on "Shoes" was successful, but parsing the response failed, preventing progress.
+
+ 
+
+ Task Prompt: Visit the official Nike website and find three different men's running shoes priced under $100. List their names, prices, and available sizes. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_02_27_zun.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 is Correct.
+The agent's goal in Step 1 was to navigate to the official Nike website, which it did successfully. The evaluation confirms that the action (visiting the website) was achieved as expected. The agent's memory and next goal align with this task, so there was no issue here.
+ Step 2 feedback: Step 2 is Correct.
+
+The agent successfully navigated to the Nike homepage, as indicated in the evaluation. The goal set in the memory aligns with this, and the agent correctly acknowledges its current location (on the homepage) and the next goal (to navigate to the men's running shoes section).
+ Step 3 feedback: Step 3 is Correct.
+
+The agent correctly identifies the "Shoes 100 & Under" section in the Men’s menu and notes it as a helpful feature for finding running shoes under $100. The goal in the memory and the next action align, as the agent now needs to navigate to that section to proceed with the task. 
+ Step 4 feedback: Step 4 is Correct. The agent successfully navigated the homepage and identified the relevant section to find the shoes.
+ Step 5 feedback: Step 5 is Correct. The agent successfully clicked the correct menu option to access the men's section.
+
+ Step 6 feedback: Step 6 is Correct. The agent successfully clicked on the "Shoes" option in the men's section to proceed with finding running shoes under \$100.
+
+ Step 7 feedback: Step 7 is Incorrect. The action to click on "Shoes" was successful, but parsing the response failed, preventing progress.
+
+ 
+
+ Task Prompt: Find the current best-selling fiction books on Amazon and note their prices and user ratings. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_21_56_09_zIi.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct on second attempt
+ Step 3 feedback: Correct
+ Step 4 feedback: Throttling error
+ Step 5 feedback: Correct on second attempt
+ Step 6 feedback: Throttling error
+ Step 7 feedback: Parse error
+ 
+
+ Task Prompt: Explore the National Park Service’s virtual tour of Ellis Island and write a short paragraph (3-5 sentences) describing what immigrants might have experienced upon arrival in the early 20th century. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_19_08_WLM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ 
+

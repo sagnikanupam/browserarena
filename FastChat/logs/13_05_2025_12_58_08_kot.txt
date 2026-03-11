@@ -1,0 +1,10 @@
+🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized
+🚀 Starting task: asfasdfsdf
+📍 Step 1
+🤷 Eval: Unknown - Ultimate task appears to be invalid/unintelligible text
+🧠 Memory: Received invalid task string 'asfasdfsdf' which cannot be processed
+🎯 Next goal: Terminate execution due to invalid task
+🛠️  Action 1/1: {"done":{"text":"Critical error: Provided task 'asfasdfsdf' does not contain valid instructions. Please provide a clear task in natural language to continue","success":false}}
+📄 Result: Critical error: Provided task 'asfasdfsdf' does not contain valid instructions. Please provide a clear task in natural language to continue
+✅ Task completed
+❌ Unfinished

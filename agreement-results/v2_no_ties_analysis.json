@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "total_comparisons": 122379,
+    "comparisons_with_ties": 60692,
+    "comparisons_without_ties": 61687,
+    "agreements_no_ties": 51493,
+    "disagreements_no_ties": 10194,
+    "agreement_rate_no_ties": 0.834746380923047
+  },
+  "per_question": {
+    "Q1": {
+      "total": 6441,
+      "with_ties": 4296,
+      "without_ties": 2145,
+      "agreements": 1956,
+      "disagreements": 189
+    },
+    "Q2": {
+      "total": 6441,
+      "with_ties": 0,
+      "without_ties": 6441,
+      "agreements": 6328,
+      "disagreements": 113
+    },
+    "Q3": {
+      "total": 6441,
+      "with_ties": 2525,
+      "without_ties": 3916,
+      "agreements": 2586,
+      "disagreements": 1330
+    },
+    "Q4": {
+      "total": 6441,
+      "with_ties": 336,
+      "without_ties": 6105,
+      "agreements": 5677,
+      "disagreements": 428
+    },
+    "Q5": {
+      "total": 6441,
+      "with_ties": 5913,
+      "without_ties": 528,
+      "agreements": 276,
+      "disagreements": 252
+    },
+    "Q6": {
+      "total": 6441,
+      "with_ties": 1688,
+      "without_ties": 4753,
+      "agreements": 4116,
+      "disagreements": 637
+    },
+    "Q7": {
+      "total": 6441,
+      "with_ties": 5360,
+      "without_ties": 1081,
+      "agreements": 685,
+      "disagreements": 396
+    },
+    "Q8": {
+      "total": 6441,
+      "with_ties": 1290,
+      "without_ties": 5151,
+      "agreements": 4575,
+      "disagreements": 576
+    },
+    "Q9": {
+      "total": 6441,
+      "with_ties": 1785,
+      "without_ties": 4656,
+      "agreements": 3426,
+      "disagreements": 1230
+    },
+    "Q10": {
+      "total": 6441,
+      "with_ties": 1976,
+      "without_ties": 4465,
+      "agreements": 4189,
+      "disagreements": 276
+    },
+    "Q11": {
+      "total": 6441,
+      "with_ties": 5811,
+      "without_ties": 630,
+      "agreements": 406,
+      "disagreements": 224
+    },
+    "Q12": {
+      "total": 6441,
+      "with_ties": 5265,
+      "without_ties": 1176,
+      "agreements": 618,
+      "disagreements": 558
+    },
+    "Q13": {
+      "total": 6441,
+      "with_ties": 663,
+      "without_ties": 5778,
+      "agreements": 4543,
+      "disagreements": 1235
+    },
+    "Q16": {
+      "total": 6441,
+      "with_ties": 5451,
+      "without_ties": 990,
+      "agreements": 826,
+      "disagreements": 164
+    },
+    "Q17": {
+      "total": 6441,
+      "with_ties": 5406,
+      "without_ties": 1035,
+      "agreements": 702,
+      "disagreements": 333
+    },
+    "Q18": {
+      "total": 6441,
+      "with_ties": 4901,
+      "without_ties": 1540,
+      "agreements": 1117,
+      "disagreements": 423
+    },
+    "Q19": {
+      "total": 6441,
+      "with_ties": 2255,
+      "without_ties": 4186,
+      "agreements": 3295,
+      "disagreements": 891
+    },
+    "Q20": {
+      "total": 6441,
+      "with_ties": 555,
+      "without_ties": 5886,
+      "agreements": 5568,
+      "disagreements": 318
+    },
+    "Q22": {
+      "total": 6441,
+      "with_ties": 5216,
+      "without_ties": 1225,
+      "agreements": 604,
+      "disagreements": 621
+    }
+  }
+}

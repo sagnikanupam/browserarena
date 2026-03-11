@@ -1,0 +1,7 @@
+Source,Total Votes,Agent 1 (%),Agent 2 (%),Tie (%),Baseline Agreement (%),Avg Confidence
+Baseline,19,89.5,5.3,5.3,100.0,N/A
+V1 Human,19,52.6,5.3,42.1,63.2,N/A
+V2 Human,19,52.6,5.3,42.1,63.2,N/A
+O4-mini,19,52.6,5.3,42.1,57.9,0.799
+GPT-4o,19,63.2,26.3,10.5,68.4,0.853
+Gemini,19,0.0,0.0,100.0,5.3,0.500

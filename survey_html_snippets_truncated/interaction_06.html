@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> Name the Top 10 headlines from BBC News</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_19_57_33_HgY.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Name the Top 10 headlines from BBC News<br>📍 Step 1<br>🤷 Eval: Unknown<br>🧠 Memory: I have just started the task. I need to find the top 10 headlines from BBC News.<br>🎯 Next goal: Go to the BBC News website.<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.bbc.com/news&quot;}}<br>🔗  Navigated to https://www.bbc.com/news<br>📍 Step 2<br>👍 Eval: Success<br>🧠 Memory: I have navigated to the BBC News website. Now I need to extract the top 10 headlines.<br>🎯 Next goal: Extract the top 10 headlines from the current page.<br>🛠️  Action 1/1: {&quot;extract_content&quot;:{&quot;goal&quot;:&quot;Extract the top 10 headlines from the page. Headlines are usually in h2 or h3 tags. The current page seems to have a lot of headline<br><br>[... truncated for brevity ...]<br><br>of trade talks&quot;,&quot;success&quot;:true}}<br>📄 Result: The Top 10 headlines from BBC News are:<br>1. Pope Leo XIV calls Church &#39;a beacon to illuminate dark nights&#39; in first Mass<br>2. Steve Rosenberg at Victory Day parade: Russia wants to be seen as unbeatable<br>3. The first drone war opens a new chapter in India-Pakistan conflict<br>4. US confirms plan for private firms to deliver Gaza aid despite UN alarm<br>5. How a park ranger alerted world to fate of famous UK tree<br>6. Mexico sues Google over &#39;Gulf of America&#39; name change<br>7. South Africa criticises US plan to accept white Afrikaners as refugees<br>8. Turkish Tufts University student Rumeysa Ozturk to be released<br>9. Sweden&#39;s national security adviser quits over Grindr images<br>10. Trump proposes 80% China tariff ahead of trade talks<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_19_57_33_CFM.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Name the Top 10 headlines from BBC News<br>📍 Step 1<br>🤷 Eval: Unknown - no actions taken yet<br>🧠 Memory: Started task to find Top 10 BBC News headlines. 0 out of required steps completed.<br>🎯 Next goal: Search Google for BBC News top headlines<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;BBC News top headlines&quot;}}<br>🔍  Searched for &quot;BBC News top headlines&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Google search performed successfully<br>🧠 Memory: Started task to find Top 10 BBC News headlines. 0 out of 10 steps completed.<br>🎯 Next goal: Navigate to the BBC News homepage by clicking the first search result<br>🛠️  Action 1/1: {&quot;click_element_by_index&quot;:{&quot;index&quot;:32,&quot;xpath&quot;<br><br>[... truncated for brevity ...]<br><br>metadata={&#39;input_tokens&#39;: 7434, &#39;output_tokens&#39;: 712, &#39;total_tokens&#39;: 8146, &#39;input_token_details&#39;: {&#39;cache_read&#39;: 0}, &#39;output_token_details&#39;: {&#39;reasoning&#39;: 512}} with error 2 validation errors for AgentOutput<br>current_state<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &quot;Top 10...alks&quot;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing<br>action<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &quot;Top 10...alks&quot;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

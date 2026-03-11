@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> What is the best Arcade Fire albums listed from best to worst?</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_53_08_BHP.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: What is the best Arcade Fire albums listed from best to worst?<br>📍 Step 1<br>🤷 Eval: Unknown - starting the ultimate task<br>🧠 Memory: 0 out of 10 steps completed. Preparing to search for best Arcade Fire albums ranking.<br>🎯 Next goal: Search Google for best Arcade Fire albums ranking<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;best Arcade Fire albums ranked&quot;}}<br>🔍  Searched for &quot;best Arcade Fire albums ranked&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Search results displayed<br>🧠 Memory: 1 out of 10 steps completed. Ready to open a reliable ranking source for Arcade Fire albums.<br>🎯 Next goal: Click on the Best Ever Albums result to view their ranked list of Arcade Fire albums.<br>🛠️  Action 1/1<br><br>[... truncated for brevity ...]<br><br>_metadata={&#39;input_tokens&#39;: 6076, &#39;output_tokens&#39;: 406, &#39;total_tokens&#39;: 6482, &#39;input_token_details&#39;: {&#39;cache_read&#39;: 2304}, &#39;output_token_details&#39;: {&#39;reasoning&#39;: 320}} with error 2 validation errors for AgentOutput<br>current_state<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...hant&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing<br>action<br>  Field required [type=missing, input_value={&#39;done&#39;: {&#39;text&#39;: &#39;Here a...hant&#39;, &#39;success&#39;: True}}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_53_08_Zvg.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: What is the best Arcade Fire albums listed from best to worst?<br>📍 Step 1<br>🤷 Eval: No previous goal to evaluate. Starting fresh.<br>🧠 Memory: Task: Determine the best Arcade Fire albums listed from best to worst. Step 1/15. Current URL: about:blank. Interactive elements: None.<br>🎯 Next goal: Navigate to Google to search for the best Arcade Fire albums ranked.<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.google.com&quot;}}<br>🔗  Navigated to https://www.google.com<br>📍 Step 2<br>👍 Eval: Success - Navigated to Google homepage<br>🧠 Memory: Task: Determine the best Arcade Fire albums listed from best to worst. Step 2/15. Current URL: https://www.google.com/. Interactive elements: Various Google links and buttons<br><br>[... truncated for brevity ...]<br><br>n appearing at the top of the lists. Other highly-regarded albums include &#39;The Suburbs&#39;, &#39;Neon Bible&#39;, and &#39;Reflektor&#39;.&quot;,&quot;success&quot;:true}}<br>📄 Result: Based on the extracted rankings from multiple sources, here is a summary of the best Arcade Fire albums listed from best to worst:<br><br>1. Funeral (2004)<br>2. Neon Bible (2007)<br>3. The Suburbs (2010)<br>4. Reflektor (2013)<br>5. Everything Now (2017)<br>6. We (2022)<br><br>This ranking is derived from aggregating rankings from various sources including Reddit discussions, music blogs, and album review sites. &#39;Funeral&#39; is consistently ranked as one of the band&#39;s best albums, often appearing at the top of the lists. Other highly-regarded albums include &#39;The Suburbs&#39;, &#39;Neon Bible&#39;, and &#39;Reflektor&#39;.<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

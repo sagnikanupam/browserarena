@@ -1,0 +1,3 @@
+# Figure Caption
+
+**Model confidence versus human consensus strength.** Scatter plots showing the relationship between model confidence scores and the percentage of human annotators agreeing on the majority vote for each browser automation task. Green points indicate cases where the model agreed with the baseline evaluation; red points indicate disagreement. Despite high confidence scores (GPT-4o: 60-90%, o4-mini: 50-93%), both models show negligible correlation with task difficulty as measured by human consensus (GPT-4o: r² = 0.126, o4-mini: r² = 0.004), suggesting that model confidence is not calibrated to evaluation difficulty and cannot serve as a reliable indicator of judgment quality in browser agent evaluation.

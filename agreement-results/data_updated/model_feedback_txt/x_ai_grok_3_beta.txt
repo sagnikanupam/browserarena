@@ -1,0 +1,417 @@
+x-ai/grok-3-beta
+ Task Prompt: Provide me a list of 3-letter words that begin with the letter w 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_04_36_24_hCn.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ 
+
+ Task Prompt: Give me a list of PS5 games that are on sale on the American PSN right now. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_04_39_44_lfl.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: What is the lowest critic review score for Octopath Traveler on Metacritic? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/03_05_2025_21_08_57_AQd.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Agent seems to correctly identify the next step, but does not carry it out.
+ Step 4 feedback: Agent still hasn't entered the page for Metacritic.
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: What is the hottest weather report in the UK today from BBC weather? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_28_05_yOU.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback:  The search for 'UK' did not return any results as expected. The page displays a message 'We couldn't find any results for "UK"'.
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback:  I navigated to the weather page for Cornwall, but it appears to be Cornwall, Canada, not Cornwall, UK as intended for the task. The URL and page content indicate a location outside the UK.
+ Step 11 feedback:  The previous action of inputting 'Cornwall, UK' into the search field was successful, but I am still on the page for Cornwall, Canada as per the URL (https://www.bbc.com/weather/5928065) and page content. I need to ensure the correct location is selected.
+ Step 12 feedback: I input 'Cornwall, UK' into the search field, but I am still on the page for Cornwall, Canada as per the URL (https://www.bbc.com/weather/5928065) and page content.
+ Step 13 feedback:  I input 'Cornwall, UK' into the search field, but I am still on the page for Cornwall, Canada as indicated by the URL (https://www.bbc.com/weather/5928065) and page content. The search action was not triggered.
+ Step 14 feedback: Could not parse response.
+ 
+
+ Task Prompt: Provide a list of the top ten ranked hotels in California 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_14_22_iEe.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: correct
+ Step 3 feedback: Wrong
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ 
+
+ Task Prompt: Give me a summary of top 10 philanthropic foundations that give grants in  favor of LGBTQI community. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_16_08_42_cZf.json
+ User Stepwise Feedback: 
+ Step 1 feedback: CORRECT
+ Step 2 feedback: The task was successfully completed with clear steps
+ Step 3 feedback: CORRECT
+ Step 4 feedback: CORRECT
+ Step 5 feedback: CORRECT
+ Step 6 feedback: CORRECT
+ Step 7 feedback: CORRECT
+ Step 8 feedback: CORRECT
+ Step 9 feedback: CORRECT
+ Step 10 feedback: CORRECT
+ Step 11 feedback: CORRECT
+ Step 12 feedback: CORRECT
+ 
+
+ Task Prompt: Can you find me the shortest and most comfortable flight from Show Low, AZ to Wellington, New Zealand? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_23_51_28_cJD.json
+ User Stepwise Feedback: 
+ Step 1 feedback: 3 listings for Step 1, all marked as "failed to invoke model". Stopped after failing the 3 times, no futher steps.
+ 
+
+ Task Prompt: What are today's top 5 political news in UK 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_01_48_pTG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed to invoke model
+ 
+
+ Task Prompt: is deportation the best solution for illegal migrants? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_23_49_59_oZV.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: "Find the top 5 best-selling fiction books on the New York Times Best Sellers list and summarize their descriptions." 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_23_41_Oeo.json
+ User Stepwise Feedback: 
+ Step 1 feedback: It was executed incorrectly. It failed to invoke model.
+ 
+
+ Task Prompt: What are today's top 5 headlines from Korea JoongAng Daily? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_34_36_wqu.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: Give me a summary of current measures in place to curb climate change in United states. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_52_29_AYh.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Error 401: LLM API call failed
+ 
+
+ Task Prompt: create a list of the current Stanley Cup playoff match ups. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_17_27_zKf.json
+ User Stepwise Feedback: 
+ Step 1 feedback: it indicates it failed to invoke model and that the provider returned error code 400.  It also indicates "Error 401: LLM API call failed". it also indicates that image inputs are not supported. Step 1 is repeated 3 times until it indicates that it is stopping due to 3 consecutive failures.
+ 
+
+ Task Prompt: Go to BBC News’ homepage and list the titles of the top three stories in the "World" section, along with their publication times. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_04_47_15_JTZ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Result failed
+ Step 2 feedback: Result failed
+ Step 3 feedback: Result failed
+ 
+
+ Task Prompt: List the name of the top-grossing films of the 2010s from Wikipedia in order from highest-grossing to least. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_22_35_TKg.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrectly executed due to "LLM API call failed". Stopped executing after attempting 3 times due to "3 consecutive failures". Therefore, it did not execute beyond Step 1, in spite there being at least 4 core steps.
+ 
+
+ Task Prompt: Compare the flight price for a round trip ticket from Los Angeles to Tokyo next Sunday on different ticket purchasing websites. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_06_23_26_pIG.json
+ User Stepwise Feedback: 
+ Step 1 feedback: The agent ran into some errors while trying to get information from the visited website and couldn't get past the first step.
+ 
+
+ Task Prompt: What are the top 10 best family friendly restaurants in the Sondrio area of Italy? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_07_25_13_oaF.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step tried to initiate and failed 3 times
+ 
+
+ Task Prompt: What is the best rated Samsung TV according to which? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_19_12_TeJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Wrong
+ 
+
+ Task Prompt: Find the current top 5 trending indie games on Steam's 'Popular Upcoming' list and summarize their genres and release dates. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_15_23_15_HWs.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect - Failed due to API Error
+ Step 2 feedback: Incorrect - Repeated API Error
+ Step 3 feedback: Incorrect - Repeated API Error
+ 
+
+ Task Prompt: Please identify which famous person is mentioned the most in BBC articles today using bbc.co.uk 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_36_02_yKE.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1: Agent failed to get any information from the website. It said it could not invoke the model or support any image imports. 
+
+I did not mention anything to do with images in the prompt or use an image in my prompt. So i'm guessing it cannot support any websites with images which is incredibly limiting. 
+ 
+
+ Task Prompt: Create a list of the 10 best horror movies and include 3 Stephen King movies in that list. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/12_05_2025_03_49_08_znz.json
+ User Stepwise Feedback: 
+ Step 1 feedback: 📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'xAI'}} for model anonymized
+❌ Result failed 1/3 times:
+Error 401: LLM API call failed
+ Step 2 feedback: ❌ Result failed 2/3 times:
+Error 401: LLM API call failed
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'xAI'}} for model anonymized
+❌ Result failed 3/3 times:
+Error 401: LLM API call failed
+❌ Stopping due to 3 consecutive failures
+ 
+
+ Task Prompt: Go to the New York Times website and find the main feature article on the homepage. Click on the article, read it, and summarize the main points in 3-5 bullet points. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_17_59_52_cUE.json
+ User Stepwise Feedback: 
+ Step 1 feedback: 📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'anonymous LLM companydata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'anonymous LLM company'}} for model anonymized
+❌ Result failed 1/3 times:
+Error 401: LLM API call failed
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'anonymous LLM companydata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'anonymous LLM company'}} for model anonymized
+❌ Result failed 2/3 times:
+Error 401: LLM API call failed
+📍 Step 1
+Failed to invoke model: {'message': 'Provider returned error', 'code': 400, 'anonymous LLM companydata': {'raw': '{"code":"Client specified an invalid argument","error":"Invalid request content: Image inputs are not supported by this model."}', 'provider_name': 'anonymous LLM company'}} for model anonymized
+❌ Result failed 3/3 times:
+Error 401: LLM API call failed
+❌ Stopping due to 3 consecutive failures
+
+ 
+
+ Task Prompt: Visit the official Nike website and find three different men's running shoes priced under $100. List their names, prices, and available sizes. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_02_27_sEq.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect
+The model failed to invoke correctly, with repeated error messages indicating that the LLM API call failed due to invalid request content and image input issues. The task could not progress because of these failures, leading to a stop after 3 consecutive failures.
+ 
+
+ Task Prompt: Visit the official Nike website and find three different men's running shoes priced under $100. List their names, prices, and available sizes. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_19_02_27_sEq.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Step 1 is incorrect. he model failed to invoke correctly, with repeated error messages indicating that the LLM API call failed due to invalid request content and image input issues. The task could not progress because of these failures, leading to a stop after 3 consecutive failures.
+ 
+
+ Task Prompt: Go to the New York Times website and find the most recent book review in the "Books" section. Summarize the main points of the review and identify the title and author of the book being reviewed.
+
+Make sure to copy and paste this exact text both into the answer box on this page and when submitting the task to the AI agent on the other website. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_20_23_48_mmZ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct 
+ Step 4 feedback: Incorrect – The agent failed to click the required link to access the site it mentioned.  
+ Step 5 feedback: Correct
+ Step 6 feedback: N\A
+ 
+
+ Task Prompt: Find me a one-way ticket from ATL to ORD on June 24, 2025 and make sure it is nonstop. Compare different airline prices. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_22_16_02_rnf.json
+ User Stepwise Feedback: 
+ Step 1 feedback: The step failed to search for a flight.
+ 
+
+ Task Prompt: compare scholarships available in canada 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_15_52_BkR.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect, "invalid content request", 3 consecutive failures
+ 
+
+ Task Prompt: Explore the National Park Service’s virtual tour of Ellis Island and write a short paragraph (3-5 sentences) describing what immigrants might have experienced upon arrival in the early 20th century. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_19_08_jWZ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: Correct
+ Step 9 feedback: Correct
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Correct
+ Step 15 feedback: Correct
+ 
+
+ Task Prompt: 1. Go to the IMDb website and list the top 5 highest-rated movies released in the past year.
+2. Visit Airbnb and find the average nightly price for a private room in Paris, France, for a weekend two months from now. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/15_05_2025_02_48_47_Okl.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: give me ten recent news headlines in sports and news from bbc.co.uk. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_04_34_02_sTM.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ 
+
+ Task Prompt: What is the top 10 selling album currently on apple music? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_04_30_10_Auk.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Incorrect It repeat the last step
+ Step 6 feedback: Incorrect Same action was step 4 and 5
+ Step 7 feedback: Incorrect Redundant Step
+ Step 8 feedback: Incorrect  Redundant Step
+ Step 9 feedback: Incorrect Redundant Step
+ Step 10 feedback: Correct
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ 
+
+ Task Prompt: What are the top 10 songs on Spotify today? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_04_32_00_iTj.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Correct
+ Step 2 feedback: Correct
+ Step 3 feedback: Correct
+ Step 4 feedback: Correct
+ Step 5 feedback: Correct
+ Step 6 feedback: Correct
+ Step 7 feedback: Correct
+ Step 8 feedback: The login attempt was unsuccessful due to an incorrect username or password.
+ Step 9 feedback: Failed to parse model output.
+ Step 10 feedback:  Failed to navigate to Billboard's Spotify Viral 50 Global chart page resulted in a 404 Page Not Found error.
+ Step 11 feedback: Correct
+ Step 12 feedback: Correct
+ Step 13 feedback: Correct
+ Step 14 feedback: Failed to parse model output
+ 
+
+ Task Prompt: Find the top-rated laptop under $1000 on BestBuy.com and summarize its key features 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/07_05_2025_15_45_37_RfJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: correct
+ Step 2 feedback: correct
+ Step 3 feedback: correct
+ Step 4 feedback: correct
+ Step 5 feedback: correct
+ Step 6 feedback: correct
+ Step 7 feedback: correct
+ Step 8 feedback: correct
+ Step 9 feedback: correct
+ Step 10 feedback: correct
+ Step 11 feedback: correct
+ Step 12 feedback: correct
+ 
+
+ Task Prompt: Please review Glasgow Celtic's fixtures from this season 2024/2025 so far and tell me how many goals they have scored across all competitive competitions and then review the goals and give me the distribution of goals in 10 minute intervals of games, e.g.0-10 minutes, 11-20 minutes21-30 minutes etc all the way up to 90 minutes and then include injury time as a separate interval. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/09_05_2025_21_42_22_SdT.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed to invoke model - result failed on 3 attempts at step 1.
+ 
+
+ Task Prompt: Write me 5 sentences in Ukrainian language using the verb "to lie". 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_00_21_07_EWr.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed to invoke model, Result failed 1/3 times:
+Error 401: LLM API call failed. I dont really know what that means it looked like it instantly got an error 400 three times in a row and then gave up. Stopping due to 3 consecutive failures
+ 
+
+ Task Prompt: gifts under $25 for mother's day 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_01_06_39_PrQ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Model B was not invoked because image inputs are not supported by this model.
+Stopping due to 3 consecutive failures
+ 
+
+ Task Prompt: Go to the New York Times website, navigate to the 'Books' section, and summarize the review of the current week's featured fiction book. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_03_55_Umi.json
+ User Stepwise Feedback: 
+ Step 1 feedback: The model fails to proceed past Step 1 due to invocation errors, meaning no tasks were accomplished. The goal of visiting the New York Times website and gathering the relevant review information could not be achieved.
+ 
+
+ Task Prompt: What is the cheapest Hertz car rental currently available from anywhere in Portland Oregon for May 14 12:00 PM to May 16 12:00 PM? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/10_05_2025_03_33_17_MBI.json
+ User Stepwise Feedback: 
+ Step 1 feedback: It says failed to invoke model. Error 401: LLM API call failed. The gif only contains my query, could not even begin.
+ 
+
+ Task Prompt: Give me a detailed breakdown of the next 10 professional combat sports (other than professional wrestling)events in Florida and in Colorado. Include prices, cheapest, best value, and most expensive for each event. Only include events that will be televised or streamed on a reasonably significant platform (examples: DAZN, ESPN plus, ONE) 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_04_31_42_xwx.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Agent failed on the first step. LLM API call failed. "Invalid request content: Image inputs are not supported by this model." all 3 failures identical. 
+ 
+
+ Task Prompt: Give me a comparison of different lodges in Masaai mara game reserve, in Kenya and their accommodation charges. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_26_48_nYP.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed to invoke mode
+ Step 2 feedback: Failed
+ Step 3 feedback: Failed
+ Step 4 feedback: Failed after several failed attempts
+ Step 5 feedback: Failed after several failed attempts
+ Step 6 feedback: Failed after several failed attempts
+ Step 7 feedback: Failed after several failed attempts
+ Step 8 feedback: Failed after several failed attempts
+ Step 9 feedback: Failed after several failed attempts
+ Step 10 feedback: Failed after several failed attempts
+ Step 11 feedback: Failed after several failed attempts
+ Step 12 feedback: Failed after several failed attempts
+ Step 13 feedback: Failed after several failed attempts
+ Step 14 feedback: Failed after several failed attempts
+ Step 15 feedback: Failed after several failed attempts
+ 
+
+ Task Prompt: Compare prices of flights from London to benidorn on different websites 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_14_31_41_TJc.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: Go to Amazon.com, search for '4K TVs,' sort by 'Avg. Customer Reviews,' and list the top 5 models along with their star ratings and prices. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_37_10_Qis.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect - Failed 3 attempts due to API Errors.
+ 
+
+ Task Prompt: Head over to freeCodeCamp’s news page and find the 5 most recent articles that talk about JavaScript. I want the titles, who wrote them, and when they were published. 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/11_05_2025_16_44_24_StO.json
+ User Stepwise Feedback: 
+ 
+
+ Task Prompt: What are today's top 5 headlines from the Peninsula Clarion? 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_20_29_51_SPJ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Failed: failed to invoke model on step 1. "Invalid request content: Image inputs are not supported by this model." Stopped after 3 consecutive failed attempts. 
+ 
+
+ Task Prompt: what are today's top 20 headlines from CBC 
+ Agent Trace: https://github.com/sagnikanupam/browserarena/blob/main/FastChat/prompts_and_outputs/14_05_2025_23_44_09_RFZ.json
+ User Stepwise Feedback: 
+ Step 1 feedback: Incorrect - model did not search google for CBC, stating "invalid request content".
+ 
+
+ 
+

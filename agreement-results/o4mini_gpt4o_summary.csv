@@ -1,0 +1,7 @@
+Metric,o4-mini,GPT-4o
+Baseline Agreement,57.9%,68.4%
+Average Confidence,0.799,0.853
+Inter-model Agreement,68.4%,68.4%
+Agent 1 Preferences,10,12
+Agent 2 Preferences,1,5
+Tie Preferences,8,2

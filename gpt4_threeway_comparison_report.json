@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "total_interactions": 25,
+    "total_compared": 19,
+    "vote_distributions": {
+      "gpt4": {
+        "Left": 19,
+        "Right": 5,
+        "Tie": 1
+      },
+      "survey": {
+        "Left": 10,
+        "Right": 1,
+        "Tie": 8
+      },
+      "baseline": {
+        "Left": 19,
+        "Right": 2,
+        "Tie": 1
+      }
+    },
+    "agreement_rates": {
+      "gpt4_survey": 0.5263157894736842,
+      "gpt4_baseline": 0.7368421052631579,
+      "survey_baseline": 0.631578947368421,
+      "all_three": 0.5263157894736842
+    },
+    "gpt4_consistency": {
+      "mean_score": 0.9390570620281387,
+      "unanimous_rate": 0.88
+    }
+  },
+  "patterns": {
+    "all_agree": [
+      "interaction_01",
+      "interaction_01",
+      "interaction_02",
+      "interaction_02",
+      "interaction_03",
+      "interaction_03",
+      "interaction_04",
+      "interaction_04",
+      "interaction_06",
+      "interaction_06",
+      "interaction_08",
+      "interaction_08",
+      "interaction_09",
+      "interaction_09",
+      "interaction_10",
+      "interaction_10",
+      "interaction_13",
+      "interaction_13",
+      "interaction_18",
+      "interaction_18"
+    ],
+    "gpt4_alone": [
+      "interaction_07",
+      "interaction_14",
+      "interaction_15"
+    ],
+    "survey_alone": [],
+    "baseline_alone": [],
+    "gpt4_survey": [],
+    "gpt4_baseline": [
+      "interaction_05",
+      "interaction_11",
+      "interaction_12",
+      "interaction_16"
+    ],
+    "survey_baseline": [
+      "interaction_17",
+      "interaction_19"
+    ]
+  },
+  "survey_tie_analysis": [
+    {
+      "id": "interaction_05",
+      "gpt4": "Left",
+      "baseline": "Left",
+      "survey_breakdown": "L:8 R:5 T:11"
+    },
+    {
+      "id": "interaction_07",
+      "gpt4": "Right",
+      "baseline": "Left",
+      "survey_breakdown": "L:11 R:2 T:14"
+    },
+    {
+      "id": "interaction_11",
+      "gpt4": "Left",
+      "baseline": "Left",
+      "survey_breakdown": "L:4 R:2 T:18"
+    },
+    {
+      "id": "interaction_12",
+      "gpt4": "Left",
+      "baseline": "Left",
+      "survey_breakdown": "L:7 R:5 T:12"
+    },
+    {
+      "id": "interaction_14",
+      "gpt4": "Right",
+      "baseline": "Left",
+      "survey_breakdown": "L:8 R:3 T:13"
+    },
+    {
+      "id": "interaction_15",
+      "gpt4": "Right",
+      "baseline": "Left",
+      "survey_breakdown": "L:8 R:4 T:12"
+    },
+    {
+      "id": "interaction_16",
+      "gpt4": "Left",
+      "baseline": "Left",
+      "survey_breakdown": "L:8 R:4 T:8"
+    },
+    {
+      "id": "interaction_19",
+      "gpt4": "Right",
+      "baseline": "Tie",
+      "survey_breakdown": "L:4 R:9 T:15"
+    }
+  ]
+}

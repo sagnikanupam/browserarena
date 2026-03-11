@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> find me any recipe on food.com</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/12_05_2025_05_13_04_KAL.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: find me any recipe on food.com <br>📍 Step 1<br>Failed to parse model output: [Current state ends]{&quot;current_state&quot;: {&quot;evaluation_previous_goal&quot;: &quot;Unknown&quot;,<br>&quot;memory&quot;: &quot;Starting the task. The goal is to find a recipe on food.com.&quot;,<br>&quot;next_goal&quot;: &quot;Navigate to food.com&quot;},<br>&quot;action&quot;:[{&quot;go_to_url&quot;: {&quot;url&quot;: &quot;https://www.food.com&quot;}}]} with Expecting value: line 1 column 2 (char 1), could not extract JSON.<br>Failed to parse model output: content=&#39;[Current state ends]{&quot;current_state&quot;: {&quot;evaluation_previous_goal&quot;: &quot;Unknown&quot;,<br>&quot;memory&quot;: &quot;Starting the task. The goal is to find a recipe on fo<br><br>[... truncated for brevity ...]<br><br>🎯 Next goal: Click on the &#39;Ground Beef Gyros&#39; recipe link to view the recipe details.<br>🛠️  Action 1/1: {&quot;click_element_by_index&quot;:{&quot;index&quot;:25}}<br>🖱️  Clicked button with index 25: Ground Beef Gyros<br>New tab opened - switching to it<br>📍 Step 6<br>👍 Eval: Success<br>🧠 Memory: I have successfully navigated to the &#39;Ground Beef Gyros&#39; recipe page on food.com. This fulfills the task of finding a recipe.<br>🎯 Next goal: Complete the task by providing the recipe found.<br>🛠️  Action 1/1: {&quot;done&quot;:{&quot;text&quot;:&quot;Found the &#39;Ground Beef Gyros&#39; recipe on food.com: https://www.food.com/recipe/ground-beef-gyros-30081&quot;,&quot;success&quot;:true}}<br>📄 Result: Found the &#39;Ground Beef Gyros&#39; recipe on food.com: https://www.food.com/recipe/ground-beef-gyros-30081<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/12_05_2025_05_13_04_yaD.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: find me any recipe on food.com <br>📍 Step 1<br>🤷 Eval: Unknown - This is the first step, so there is no previous goal to evaluate.<br>🧠 Memory: I am starting with a new task to find a recipe on food.com. I&#39;m currently on a blank page and need to navigate to food.com to find a recipe.<br>🎯 Next goal: Navigate to food.com website<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.food.com/&quot;}}<br>❌ Result failed 1/3 times:<br> Error executing action go_to_url: Page.goto: Timeout 30000ms exceeded.<br>Call log:<br>  - navigating to &quot;https://www.food.com/&quot;, waiting until &quot;load&quot;<br><br>📍 Step 2<br>❌  Failed to update state: Timeout 30000ms exceeded.<br>⚠ Eval: Failed - I tried to navigate directl<br><br>[... truncated for brevity ...]<br><br>or &#39;food.com recipes&#39; on Google, I encountered a CAPTCHA challenge that prevented me from proceeding to the website. Despite multiple attempts to solve the verification, I couldn&#39;t bypass the security check to access food.com and retrieve any recipes. The Google security system detected unusual traffic from the network and blocked access.&quot;,&quot;success&quot;:false}}<br>📄 Result: I was unable to find recipes on food.com as requested. While attempting to search for &#39;food.com recipes&#39; on Google, I encountered a CAPTCHA challenge that prevented me from proceeding to the website. Despite multiple attempts to solve the verification, I couldn&#39;t bypass the security check to access food.com and retrieve any recipes. The Google security system detected unusual traffic from the network and blocked access.<br>✅ Task completed<br>❌ Unfinished<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> a list of top 10 churches</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_30_52_Eso.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: a list of top 10 churches <br>📍 Step 1<br>🤷 Eval: Unknown - Starting the task. No previous actions taken yet.<br>🧠 Memory: Initiating search for top 10 churches. Step 1/15. Next: Extract list from Google results.<br>🎯 Next goal: Search Google for &#39;top 10 most famous churches worldwide&#39; to find a list.<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;top 10 most famous churches worldwide&quot;}}<br>🔍  Searched for &quot;top 10 most famous churches worldwide&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Google search returned multiple relevant results with potential lists of churches<br>🧠 Memory: Step 2/15. Search completed. Identified 5 potential sources: 1) VisitedApp (index 33), 2) Celebrity Cruises (47), 3) Wikipedia (63), 4) A Capone Connection (79), 5) YouTube video (95). First source being prioritized.<br>🎯 Next goal: Access first comprehensive list from VisitedApp (index 33) to extract top 10 churches<br>🛠️  Action 1/2: {&quot;click_element_by_index&quot;:{&quot;index&quot;:33}}<br>🛠️  Action 2/2: {&quot;extract_content&quot;:{&quot;goal&quot;:&quot;Extract full list of top 10 churches from article body&quot;,&quot;should_strip_link_urls&quot;:true}}<br>🖱️  Clicked button with index 33: Top 10 Most Popular Churches<br>📄  Extracted from page<br>: ```json<br>{<br>  &quot;churches&quot;: [<br>    {<br>      &quot;name&quot;: &quot;Notre Dame Cathedral&quot;,<br>      &quot;location&quot;: &quot;Paris, France&quot;,<br>      &quot;description&quot;: &quot;Most visited church in the world, built in French Gothic style (completed 1345). Suffered a fire in 2019 and is under restoration.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;The Pantheon&quot;,<br>      &quot;location&quot;: &quot;Rome, Italy&quot;,<br>      &quot;description&quot;: &quot;One of the best-preserved ancient Roman buildings, converted into a church in 609. Originally a Roman temple.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;Sagrada Familia&quot;,<br>      &quot;location&quot;: &quot;Barcelona, Spain&quot;,<br>      &quot;description&quot;: &quot;Still under construction, designed by Antoni Gaudi. Combines Gothic Revival, Art Nouveau, and Modernism styles.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;St. Peter’s Basilica&quot;,<br>      &quot;location&quot;: &quot;Vatican&quot;,<br>      &quot;description&quot;: &quot;Largest Catholic church in the world, located in Vatican City. Designed by multiple architects including Michelangelo and Carlo Maderno.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;The Sistine Chapel&quot;,<br>      &quot;location&quot;: &quot;Vatican&quot;,<br>      &quot;description&quot;: &quot;Famous for Michelangelo’s ceiling frescoes. Part of the Vatican Museum, completed in 1508.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;Sacre- Coeur&quot;,<br>      &quot;location&quot;: &quot;Paris, France&quot;,<br>      &quot;description&quot;: &quot;Second most visited church in Paris, constructed with Travertine stone. Located atop Montmartre, offering panoramic views.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;Westminster Abbey&quot;,<br>      &quot;location&quot;: &quot;London, England&quot;,<br>      &quot;description&quot;: &quot;Gothic-style church used for coronations since 1066. Burial site of figures like Isaac Newton and Charles Darwin.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;Duomo, Milan Cathedral&quot;,<br>      &quot;location&quot;: &quot;Milan, Italy&quot;,<br>      &quot;description&quot;: &quot;Combines Gothic and Renaissance architecture. Largest cathedral in Italy, constructed from 1386 to 1965.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;St. Paul’s Cathedral&quot;,<br>      &quot;location&quot;: &quot;London, England&quot;,<br>      &quot;description&quot;: &quot;Anglican cathedral in English Baroque style, completed in 1710. Dominated London’s skyline at 111 meters tall until 1963.&quot;<br>    },<br>    {<br>      &quot;name&quot;: &quot;St. Mark’s Basilica&quot;,<br>      &quot;location&quot;: &quot;Venice, Italy&quot;,<br>      &quot;description&quot;: &quot;Byzantine and Italian Gothic styles, completed in 836. Located in Saint Mark’s Square, opened in 1094.&quot;<br>    }<br>  ]<br>}<br>```<br><br>📍 Step 3<br>👍 Eval: Success - Successfully extracted full list of 10 churches from VisitedApp source<br>🧠 Memory: Step 4/15. Completed initial list extraction (1 source processed). Verified partial list matches full JSON data. Strict criteria met with 10 verified entries including Notre Dame, Sagrada Familia and Vatican sites.<br>🎯 Next goal: Finalize list with no missing elements<br>🛠️  Action 1/1: {&quot;done&quot;:{&quot;text&quot;:&quot;Top 10 Churches from VisitedApp data: 1. Notre Dame Cathedral (Paris) 2. Pantheon (Rome) 3. Sagrada Familia (Barcelona) 4. St. Peter’s Basilica (Vatican) 5. Sistine Chapel (Vatican) 6. Sacre-Coeur (Paris) 7. Westminster Abbey (London) 8. Milan Cathedral (Italy) 9. St. Paul’s Cathedral (London) 10. St. Mark’s Basilica (Venice)&quot;,&quot;success&quot;:true}}<br>📄 Result: Top 10 Churches from VisitedApp data: 1. Notre Dame Cathedral (Paris) 2. Pantheon (Rome) 3. Sagrada Familia (Barcelona) 4. St. Peter’s Basilica (Vatican) 5. Sistine Chapel (Vatican) 6. Sacre-Coeur (Paris) 7. Westminster Abbey (London) 8. Milan Cathedral (Italy) 9. St. Paul’s Cathedral (London) 10. St. Mark’s Basilica (Venice)<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/09_05_2025_21_30_52_wcO.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: a list of top 10 churches <br>📍 Step 1<br>🤷 Eval: Unknown - I&#39;m starting with a blank page, so there&#39;s no previous action to evaluate.<br>🧠 Memory: I&#39;m starting a task to find a list of top 10 churches. I&#39;m beginning with a blank page and need to search for this information.<br>🎯 Next goal: Search Google for information about top 10 churches<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;top 10 most famous churches in the world&quot;}}<br>🔍  Searched for &quot;top 10 most famous churches in the world&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - I successfully searched for &#39;top 10 most famous churches in the world&#39; and Google has returned relevant search results showing several links that appear to contain lists of top churches.<br>🧠 Memory: I&#39;m looking for a list of top 10 churches. I searched Google for &#39;top 10 most famous churches in the world&#39; and found several promising results. The first result titled &#39;Top 10 Most Popular Churches&#39; from visitedapp.com shows Notre Dame Cathedral (Paris, France) as #1. Other results include &#39;12 of the Most Beautiful Churches&#39; from Celebrity Cruises, &#39;5 of the Most Famous Churches&#39; listing St. Peter&#39;s Basilica, and a YouTube video titled &#39;Top 10 Famous Churches in the World&#39;.<br>🎯 Next goal: Click on the &#39;Top 10 Most Popular Churches&#39; link to view the complete list<br>🛠️  Action 1/1: {}<br>📍 Step 3<br>👍 Eval: Success - I successfully searched for &#39;top 10 most famous churches in the world&#39; in Google and now have several promising search results.<br>🧠 Memory: I&#39;m looking for a list of top 10 churches. I searched Google for &#39;top 10 most famous churches in the world&#39; and have found several promising results. The first result from Visited App shows &#39;Top 10 Most Popular Churches&#39; with Notre Dame Cathedral (Paris, France) listed as #1. Other results include &#39;12 of the Most Beautiful Churches&#39; from Celebrity Cruises, &#39;5 of the Most Famous Churches&#39; listing St. Peter&#39;s Basilica, and a YouTube video titled &#39;Top 10 Famous Churches in the World&#39;.<br>🎯 Next goal: Click on the &#39;Top 10 Most Popular Churches&#39; link to view the complete list<br>🛠️  Action 1/1: {&quot;click_element_by_index&quot;:{&quot;index&quot;:33}}<br>🖱️  Clicked button with index 33: Top 10 Most Popular Churches<br>📍 Step 4<br>Failed to parse model output: content=&#39;```json<br>{<br>  &quot;current_state&quot;: {<br>    &quot;evaluation_previous_goal&quot;: &quot;Success - I successfully clicked on the \&#39;Top 10 Most Popular Churches\&#39; link and the page has loaded with the content I need.&quot;,<br>    &quot;memory&quot;: &quot;I\&#39;m looking for a list of top 10 churches. I found and clicked on a promising link from Visited App. The page shows \&#39;Top 10 Most Popular Churches\&#39; and has started listing them with Notre Dame Cathedral (Paris, France) as #1. The list is based on data from over one million travelers who use the Visited app. According to the page, all 10 churches are found in Europe. The rest of the list is below the visible portion of the page.&quot;,<br>    &quot;next_goal&quot;: &quot;Extract the complete list of top 10 churches from this page&quot;<br>  },<br>  &quot;action&quot;: [<br>    {<br>      &quot;extract_content&quot;: {<br>        &quot;goal&quot;: &quot;Extract the complete list of top 10 churches with their descriptions&quot;<br>      }<br>    }<br>  ]<br>}<br>```&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 541, &#39;prompt_tokens&#39;: 5821, &#39;total_tokens&#39;: 6362, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;anthropic/claude-3.7-sonnet:thinking&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826411-vfc6y69XJatgE7VFHHT0&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-05d56d40-ff4b-42f5-9516-9a9138ca53c8-0&#39; usage_metadata={&#39;input_tokens&#39;: 5821, &#39;output_tokens&#39;: 541, &#39;total_tokens&#39;: 6362, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error 1 validation error for AgentOutput<br>action.0.extract_content.should_strip_link_urls<br>  Field required [type=missing, input_value={&#39;goal&#39;: &#39;Extract the com...ith their descriptions&#39;}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 1/3 times:<br> Could not parse response.<br>📍 Step 4<br>Failed to parse model output: content=&#39;```json<br>{<br>  &quot;current_state&quot;: {<br>    &quot;evaluation_previous_goal&quot;: &quot;Success - I successfully clicked on the \&#39;Top 10 Most Popular Churches\&#39; link and navigated to the Visited App website that contains the list I\&#39;m looking for.&quot;,<br>    &quot;memory&quot;: &quot;I\&#39;m looking for a list of top 10 churches. I searched Google for \&#39;top 10 most famous churches in the world\&#39; and clicked on a promising result from Visited App. I\&#39;m now on the page that contains the \&#39;Top 10 Most Popular Churches\&#39; list. So far I can see that Notre Dame Cathedral (Paris, France) is listed as #1, but I need to extract the complete list of all 10 churches.&quot;,<br>    &quot;next_goal&quot;: &quot;Extract the complete content of the page to get the full list of top 10 churches&quot;<br>  },<br>  &quot;action&quot;: [<br>    {<br>      &quot;extract_content&quot;: {<br>        &quot;goal&quot;: &quot;Extract the complete list of top 10 most popular churches with their locations and any descriptions provided&quot;<br>      }<br>    }<br>  ]<br>}<br>```&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 467, &#39;prompt_tokens&#39;: 5835, &#39;total_tokens&#39;: 6302, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;anthropic/claude-3.7-sonnet:thinking&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826424-YbNaIUnJlyYzmVtbsiha&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-dfe475a3-c808-485d-b96c-58d4575d7be8-0&#39; usage_metadata={&#39;input_tokens&#39;: 5835, &#39;output_tokens&#39;: 467, &#39;total_tokens&#39;: 6302, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error 1 validation error for AgentOutput<br>action.0.extract_content.should_strip_link_urls<br>  Field required [type=missing, input_value={&#39;goal&#39;: &#39;Extract the com... descriptions provided&#39;}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 2/3 times:<br> Could not parse response.<br>📍 Step 4<br>Failed to parse model output: content=&#39;```json<br>{<br>  &quot;current_state&quot;: {<br>    &quot;evaluation_previous_goal&quot;: &quot;Success - I successfully navigated to the \&#39;Top 10 Most Popular Churches\&#39; page on Visited App which contains the information I need for my task.&quot;,<br>    &quot;memory&quot;: &quot;I\&#39;m looking for a list of top 10 churches. I searched Google for \&#39;top 10 most famous churches in the world\&#39; and clicked on the \&#39;Top 10 Most Popular Churches\&#39; from Visited App. I can now see Notre Dame Cathedral (Paris, France) is listed as #1, but I need to see the complete list of all 10 churches which appears to continue below the viewport.&quot;,<br>    &quot;next_goal&quot;: &quot;Extract the complete list of top 10 churches from this page&quot;<br>  },<br>  &quot;action&quot;: [{&quot;extract_content&quot;: {&quot;goal&quot;: &quot;extract the complete list of top 10 most popular churches with their locations and any key information&quot;}}]<br>}<br>```&#39; additional_kwargs={&#39;refusal&#39;: None} response_metadata={&#39;token_usage&#39;: {&#39;completion_tokens&#39;: 593, &#39;prompt_tokens&#39;: 5849, &#39;total_tokens&#39;: 6442, &#39;completion_tokens_details&#39;: None, &#39;prompt_tokens_details&#39;: None}, &#39;model_name&#39;: &#39;anthropic/claude-3.7-sonnet:thinking&#39;, &#39;system_fingerprint&#39;: None, &#39;id&#39;: &#39;gen-1746826438-eYyWAPPLOoKd0baCLiHI&#39;, &#39;finish_reason&#39;: &#39;stop&#39;, &#39;logprobs&#39;: None} id=&#39;run-d60b31a0-f317-4d88-b1aa-cdc699e118cb-0&#39; usage_metadata={&#39;input_tokens&#39;: 5849, &#39;output_tokens&#39;: 593, &#39;total_tokens&#39;: 6442, &#39;input_token_details&#39;: {}, &#39;output_token_details&#39;: {}} with error 1 validation error for AgentOutput<br>action.0.extract_content.should_strip_link_urls<br>  Field required [type=missing, input_value={&#39;goal&#39;: &#39;extract the com...nd any key information&#39;}, input_type=dict]<br>    For further information visit https://errors.pydantic.dev/2.10/v/missing, try again.<br>❌ Result failed 3/3 times:<br> Could not parse response.<br>❌ Stopping due to 3 consecutive failures<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

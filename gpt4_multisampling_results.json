@@ -1,0 +1,485 @@
+{
+  "model": "gpt-4-turbo-preview",
+  "num_samples": 5,
+  "timestamp": "2025-07-18T13:23:36.970181",
+  "evaluations": {
+    "interaction_01": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_02": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_03": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_04": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_05": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 4,
+          "Right": 1
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 0.8,
+        "entropy": 0.7219280948873623,
+        "normalized_entropy": 0.45548591500359525,
+        "consistency_score": 0.5445140849964047
+      }
+    },
+    "interaction_06": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_07": {
+      "samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Right": 4,
+          "Left": 1
+        },
+        "majority_vote": "Right",
+        "agreement_rate": 0.8,
+        "entropy": 0.7219280948873623,
+        "normalized_entropy": 0.45548591500359525,
+        "consistency_score": 0.5445140849964047
+      }
+    },
+    "interaction_08": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_09": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_10": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_11": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_12": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_13": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_14": {
+      "samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Right": 5
+        },
+        "majority_vote": "Right",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_15": {
+      "samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Right": 5
+        },
+        "majority_vote": "Right",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_16": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_17": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_18": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_19": {
+      "samples": [
+        "Right",
+        "Right",
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Right": 5
+        },
+        "majority_vote": "Right",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_20": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_21": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_22": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_23": {
+      "samples": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Left": 5
+        },
+        "majority_vote": "Left",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_24": {
+      "samples": [
+        "Tie",
+        "Tie",
+        "Tie",
+        "Tie",
+        "Tie"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Tie": 5
+        },
+        "majority_vote": "Tie",
+        "agreement_rate": 1.0,
+        "entropy": 0.0,
+        "normalized_entropy": 0.0,
+        "consistency_score": 1.0
+      }
+    },
+    "interaction_25": {
+      "samples": [
+        "Tie",
+        "Right",
+        "Right",
+        "Tie",
+        "Right"
+      ],
+      "consistency": {
+        "vote_counts": {
+          "Tie": 2,
+          "Right": 3
+        },
+        "majority_vote": "Right",
+        "agreement_rate": 0.6,
+        "entropy": 0.9709505944546686,
+        "normalized_entropy": 0.6126016192893442,
+        "consistency_score": 0.3873983807106558
+      }
+    }
+  }
+}

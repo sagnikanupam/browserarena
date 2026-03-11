@@ -1,0 +1,1401 @@
+{
+  "all_cases": [
+    {
+      "response_id": "R_3bTosQFDBqtDctM",
+      "left_task": "03_05_2025_04_36_24_hCn",
+      "right_task": "03_05_2025_04_36_24_DPn",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5WTsQMyixQ131gQ",
+      "left_task": "03_05_2025_04_39_44_lfl",
+      "right_task": "03_05_2025_04_39_44_LpZ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8vdfcNt0UYCu4mW",
+      "left_task": "03_05_2025_04_41_09_Gqg",
+      "right_task": "03_05_2025_04_41_09_QzZ",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5oaK9CRQgLCO0GM",
+      "left_task": "03_05_2025_20_57_54_VhL",
+      "right_task": "03_05_2025_20_57_54_dkz",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_12q2HjAaDmMM8AV",
+      "left_task": "03_05_2025_20_57_58_Nih",
+      "right_task": "03_05_2025_20_57_58_cSG",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3Bb5xQSlFbCAyB5",
+      "left_task": "03_05_2025_21_14_53_lsB",
+      "right_task": "03_05_2025_21_14_53_hgh",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2rChKyQxW6CsarA",
+      "left_task": "03_05_2025_21_08_57_AQd",
+      "right_task": "03_05_2025_21_08_57_Imc",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_27HW36c49iQaHPc",
+      "left_task": "03_05_2025_21_12_20_pzJ",
+      "right_task": "03_05_2025_21_12_20_HMD",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3rrjdbbXKfklsnT",
+      "left_task": "03_05_2025_21_23_34_vsx",
+      "right_task": "03_05_2025_21_23_34_Vqi",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_18FIdAXrKz50kLu",
+      "left_task": "03_05_2025_21_30_18_JgL",
+      "right_task": "03_05_2025_21_30_18_bUN",
+      "vote": "left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3CoVwnGK8hAuDuQ",
+      "left_task": "03_05_2025_21_22_53_VdC",
+      "right_task": "03_05_2025_21_22_53_yqc",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8RlJZchfkyM8I6M",
+      "left_task": "07_05_2025_04_34_02_rNO",
+      "right_task": "07_05_2025_04_34_02_sTM",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7fxjid81FRxhXsO",
+      "left_task": "07_05_2025_04_30_10_HuX",
+      "right_task": "07_05_2025_04_30_10_Auk",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6R8uBMWyaOBq4iV",
+      "left_task": "07_05_2025_04_32_00_JSV",
+      "right_task": "07_05_2025_04_32_00_iTj",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6Nt89OLCdLufee1",
+      "left_task": "07_05_2025_15_10_56_EiU",
+      "right_task": "07_05_2025_15_10_56_hQu",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_51KKV1niahmvtPh",
+      "left_task": "07_05_2025_15_13_54_flC",
+      "right_task": "07_05_2025_15_13_54_ndq",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8e3HiY4oyJo0sLH",
+      "left_task": "07_05_2025_15_28_05_yOU",
+      "right_task": "07_05_2025_15_28_05_EbZ",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7imLe5hKPIP1iZV",
+      "left_task": "07_05_2025_15_14_22_iEe",
+      "right_task": "07_05_2025_15_14_22_SRU",
+      "vote": "left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1EfVdrEn8rio17m",
+      "left_task": "07_05_2025_15_45_37_FDR",
+      "right_task": "07_05_2025_15_45_37_RfJ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1b0MQzUt0cX2Cyt",
+      "left_task": "07_05_2025_15_41_55_LST",
+      "right_task": "07_05_2025_15_41_55_OKo",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1ZJBCXBRz7wvcNr",
+      "left_task": "07_05_2025_16_08_42_cZf",
+      "right_task": "07_05_2025_16_08_42_ceu",
+      "vote": "TIE",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_1hs9eJDPDU6c2yr",
+      "left_task": "07_05_2025_17_17_20_xqV",
+      "right_task": "07_05_2025_17_17_20_jBO",
+      "vote": "Tie",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7K2orvMBCopRT1N",
+      "left_task": "07_05_2025_18_05_35_okT",
+      "right_task": "07_05_2025_18_05_35_iPJ",
+      "vote": "The right model got closest to completion. While it did fail, it offered several websites I could go to in order to find the information I needed to find.",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8YmkJsrW1YWTd98",
+      "left_task": "07_05_2025_17_43_01_THR",
+      "right_task": "07_05_2025_17_43_01_aZt",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1Ltyh905MFDkebO",
+      "left_task": "07_05_2025_17_52_02_oTk",
+      "right_task": "07_05_2025_17_52_02_FAG",
+      "vote": "tie",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2hSXC5dxsPC3Snv",
+      "left_task": "07_05_2025_18_12_48_HXx",
+      "right_task": "07_05_2025_18_12_48_NLl",
+      "vote": "Right / B is better",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7vyp35D6IvlEwk9",
+      "left_task": "07_05_2025_18_14_47_bzD",
+      "right_task": "07_05_2025_18_14_47_xLQ",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8HOHDMYqTNVF1f3",
+      "left_task": "07_05_2025_18_43_04_XGu",
+      "right_task": "07_05_2025_18_43_04_ppN",
+      "vote": "left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_86l0vBX4zm0dSO5",
+      "left_task": "07_05_2025_18_47_35_WyF",
+      "right_task": "07_05_2025_18_47_35_nMx",
+      "vote": "Right / B is better",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2V8SR0DJbtPGI1g",
+      "left_task": "09_05_2025_19_54_50_EpN",
+      "right_task": "09_05_2025_19_54_50_ZIp",
+      "vote": "A",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2PiuMN7fPUZGvf3",
+      "left_task": "09_05_2025_19_57_33_HgY",
+      "right_task": "09_05_2025_19_57_33_CFM",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7HwtIQMgAzumcr7",
+      "left_task": "09_05_2025_20_13_59_XFw",
+      "right_task": "09_05_2025_20_13_59_wLl",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7dqjXh90ZvIa3rH",
+      "left_task": "09_05_2025_20_11_09_SCY",
+      "right_task": "09_05_2025_20_11_09_FrD",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2pngZLZTEoWzKeV",
+      "left_task": "09_05_2025_20_58_23_Idv",
+      "right_task": "09_05_2025_20_58_23_unx",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7eDlNGi2GIol4WD",
+      "left_task": "09_05_2025_21_21_06_MSm",
+      "right_task": "09_05_2025_21_21_06_kAA",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2ozlzIOko5qUQiB",
+      "left_task": "09_05_2025_21_28_12_OnA",
+      "right_task": "09_05_2025_21_28_12_RJD",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5niMk8Hq8OAK5OW",
+      "left_task": "09_05_2025_21_30_52_Eso",
+      "right_task": "09_05_2025_21_30_52_wcO",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2dMiJQNgGTesd84",
+      "left_task": "09_05_2025_21_42_22_kZY",
+      "right_task": "09_05_2025_21_42_22_SdT",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3o1WyOFNcFMo5IR",
+      "left_task": "09_05_2025_21_53_08_Zvg",
+      "right_task": "09_05_2025_21_53_08_BHP",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8wt7STKtbJLAHS3",
+      "left_task": "09_05_2025_21_36_59_crp",
+      "right_task": "09_05_2025_21_36_59_AvQ",
+      "vote": "left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1eUEZ3u2lJxihkN",
+      "left_task": "09_05_2025_21_40_30_XjR",
+      "right_task": "09_05_2025_21_40_30_YEs",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3TyGUyodtUotDX6",
+      "left_task": "09_05_2025_21_41_14_YwM",
+      "right_task": "09_05_2025_21_41_14_DvE",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8P6toEpNAYdOKhS",
+      "left_task": "09_05_2025_21_42_45_OpM",
+      "right_task": "09_05_2025_21_42_45_IxH",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8NxLR6b2kD3g2a8",
+      "left_task": "09_05_2025_22_23_29_cgB",
+      "right_task": "09_05_2025_22_23_29_IXB",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3rpl48fPJZaVoos",
+      "left_task": "09_05_2025_22_41_59_tRO",
+      "right_task": "09_05_2025_22_41_59_YQp",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7K1ysv6mGjgpiNj",
+      "left_task": "09_05_2025_22_39_53_FuI",
+      "right_task": "09_05_2025_22_39_53_htb",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3Ea1qGxtNBUB1sx",
+      "left_task": "09_05_2025_22_44_26_YNT",
+      "right_task": "09_05_2025_22_44_26_xEk",
+      "vote": "right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5r2m2MDD1lxdbeV",
+      "left_task": "09_05_2025_23_09_20_BUj",
+      "right_task": "09_05_2025_23_09_20_MfC",
+      "vote": "left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_92G6fqPTUWevtfL",
+      "left_task": "09_05_2025_23_54_56_qXn",
+      "right_task": "09_05_2025_23_54_56_lGf",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1dDKEZjC28fJ1kT",
+      "left_task": "09_05_2025_23_51_28_cJD",
+      "right_task": "09_05_2025_23_51_28_LOj",
+      "vote": "Right by far",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2X6ddrI1v9IKBvF",
+      "left_task": "10_05_2025_00_01_48_pTG",
+      "right_task": "10_05_2025_00_01_48_LVO",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2CCU5Z8Ziyymst9",
+      "left_task": "10_05_2025_00_00_27_IAX",
+      "right_task": "10_05_2025_00_00_27_TVe",
+      "vote": "Tie",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1vrlsMfeylfab3H",
+      "left_task": "09_05_2025_23_49_59_oZV",
+      "right_task": "09_05_2025_23_49_59_ugh",
+      "vote": "right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2YWJybn1HIf5lQi",
+      "left_task": "10_05_2025_00_21_07_kiE",
+      "right_task": "10_05_2025_00_21_07_EWr",
+      "vote": "Left (A is better)",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1HpZ6JVauYl0juX",
+      "left_task": "10_05_2025_00_23_41_Oeo",
+      "right_task": "10_05_2025_00_23_41_NPb",
+      "vote": "Both were bad because they did not fulfill prompt ",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5CfmqY9QLPgLKk6",
+      "left_task": "10_05_2025_00_34_36_wqu",
+      "right_task": "10_05_2025_00_34_36_jIN",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_67OkOD6ZmuDkGiE",
+      "left_task": "10_05_2025_00_52_29_AYh",
+      "right_task": "10_05_2025_00_52_29_BZG",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7thtmcmOTUC7i9n",
+      "left_task": "10_05_2025_01_17_27_zKf",
+      "right_task": "10_05_2025_01_17_27_KXl",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7WxuNjopoBhjby8",
+      "left_task": "10_05_2025_01_25_04_TAY",
+      "right_task": "10_05_2025_01_25_04_TTJ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7QFMEAaLV7eZEtF",
+      "left_task": "10_05_2025_01_14_08_PHv",
+      "right_task": "10_05_2025_01_14_08_RLX",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3Xp8VrfL51JTxeo",
+      "left_task": "10_05_2025_01_06_39_yrs",
+      "right_task": "10_05_2025_01_06_39_PrQ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_37EEMMd99k5uhHD",
+      "left_task": "10_05_2025_01_37_05_xIM",
+      "right_task": "10_05_2025_01_37_05_jxR",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3tUgVlbxBbjqdj3",
+      "left_task": "10_05_2025_02_04_43_gWk",
+      "right_task": "10_05_2025_02_04_43_lFr",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5L4LEZv1oCOD6FP",
+      "left_task": "10_05_2025_03_04_51_sSy",
+      "right_task": "10_05_2025_03_04_51_idu",
+      "vote": "left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7Cq0uOthuNR4isb",
+      "left_task": "10_05_2025_03_16_40_dQm",
+      "right_task": "10_05_2025_03_16_40_fSK",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_605IJ0dBgW5ys6J",
+      "left_task": "10_05_2025_03_09_13_kcm",
+      "right_task": "10_05_2025_03_09_13_Abi",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_1jj4WPk55sTbvZK",
+      "left_task": "10_05_2025_03_25_46_SXU",
+      "right_task": "10_05_2025_03_25_46_DOO",
+      "vote": "right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_18IZK9dYB7HlvI2",
+      "left_task": "10_05_2025_03_03_55_vsV",
+      "right_task": "10_05_2025_03_03_55_Umi",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5QlszhiupiORqrA",
+      "left_task": "10_05_2025_03_33_17_FeF",
+      "right_task": "10_05_2025_03_33_17_MBI",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6pEzMd1pozCN2rl",
+      "left_task": "10_05_2025_03_41_38_tUR",
+      "right_task": "10_05_2025_03_41_38_ygE",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5OkJTqasjmyBqG2",
+      "left_task": "10_05_2025_03_50_52_aUr",
+      "right_task": "10_05_2025_03_50_52_mxm",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8TAcNC1yB5ZbaMh",
+      "left_task": "10_05_2025_04_47_15_JTZ",
+      "right_task": "10_05_2025_04_47_15_Agp",
+      "vote": "B which is on the right gave the best response.",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3pDpXk5DhcagGlu",
+      "left_task": "11_05_2025_04_22_35_TKg",
+      "right_task": "11_05_2025_04_22_35_YOe",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_4WOnkY90BzTg0S5",
+      "left_task": "11_05_2025_04_28_09_hSQ",
+      "right_task": "11_05_2025_04_28_09_efj",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1zNOzpeVNwegNfg",
+      "left_task": "11_05_2025_04_18_25_WsH",
+      "right_task": "11_05_2025_04_18_25_ZyS",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6q1T9Wjy4I7V6wz",
+      "left_task": "11_05_2025_04_31_42_NTW",
+      "right_task": "11_05_2025_04_31_42_xwx",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3iTaibaxR3aK2Jj",
+      "left_task": "11_05_2025_04_36_50_zuh",
+      "right_task": "11_05_2025_04_36_50_kRW",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_6f1c7Nucq5MKYZd",
+      "left_task": "11_05_2025_04_50_35_dLM",
+      "right_task": "11_05_2025_04_50_35_pjT",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7OlyRwFjQXMv1v1",
+      "left_task": "11_05_2025_05_39_41_ziB",
+      "right_task": "11_05_2025_05_39_41_zPi",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2CJZc8hehXkBLnv",
+      "left_task": "11_05_2025_05_49_58_jgb",
+      "right_task": "11_05_2025_05_49_58_HzF",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8IBQO4jawl5217X",
+      "left_task": "11_05_2025_06_07_59_mKb",
+      "right_task": "11_05_2025_06_07_59_UZs",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8XqX4fDEawtuKmB",
+      "left_task": "11_05_2025_06_11_25_JlO",
+      "right_task": "11_05_2025_06_11_25_ckK",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3eL8qVFifCN6Qen",
+      "left_task": "11_05_2025_06_10_26_Lck",
+      "right_task": "11_05_2025_06_10_26_QpD",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3lga3THKv4zmVNt",
+      "left_task": "11_05_2025_06_12_22_ScT",
+      "right_task": "11_05_2025_06_12_22_GuP",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1VmcdsM747OpghX",
+      "left_task": "11_05_2025_06_38_30_pBK",
+      "right_task": "11_05_2025_06_38_30_Yxu",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_60d9L2g2xbK7XQM",
+      "left_task": "11_05_2025_06_23_26_pIG",
+      "right_task": "11_05_2025_06_23_26_uTs",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5mxW8phloxcPrYi",
+      "left_task": "11_05_2025_06_11_16_bVY",
+      "right_task": "11_05_2025_06_11_16_zDI",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2ZHym94qdXsdQ2H",
+      "left_task": "11_05_2025_06_47_08_gAp",
+      "right_task": "11_05_2025_06_47_08_Erz",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8CIxfZjybPcuBzL",
+      "left_task": "11_05_2025_07_25_13_oaF",
+      "right_task": "11_05_2025_07_25_13_Hoh",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5SBRXBWyxN3Hlrr",
+      "left_task": "11_05_2025_07_24_02_guO",
+      "right_task": "11_05_2025_07_24_02_PwH",
+      "vote": "Right ",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2s6KSWLBvk6DQKd",
+      "left_task": "11_05_2025_07_31_35_GLU",
+      "right_task": "11_05_2025_07_31_35_atF",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8CkohlPVxuxQ0j0",
+      "left_task": "11_05_2025_07_39_21_Zvc",
+      "right_task": "11_05_2025_07_39_21_INb",
+      "vote": "Model A completed more steps. Model B failed at step 5",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2LgXZENYLorndUl",
+      "left_task": "11_05_2025_08_09_43_nJw",
+      "right_task": "11_05_2025_08_09_43_LcZ",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_21bljU2eT4NPAEa",
+      "left_task": "11_05_2025_08_10_03_OcQ",
+      "right_task": "11_05_2025_08_10_03_qWU",
+      "vote": "right ",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_1r0wZgD2xeT0DdL",
+      "left_task": "11_05_2025_08_39_43_kNs",
+      "right_task": "11_05_2025_08_39_43_xKr",
+      "vote": "RIGHT",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_338EynY5SfnF5sV",
+      "left_task": "11_05_2025_05_43_38_Axf",
+      "right_task": "11_05_2025_05_43_38_xXO",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_9v2F62HjBNMmOG5",
+      "left_task": "11_05_2025_08_38_16_sbS",
+      "right_task": "11_05_2025_08_38_16_UpM",
+      "vote": "left - as I voted earlier",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2pZ3k5IDmfaTbLp",
+      "left_task": "11_05_2025_09_27_37_oRg",
+      "right_task": "11_05_2025_09_27_37_ppp",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_1hShwFWxg2fxi2m",
+      "left_task": "11_05_2025_09_47_02_VYi",
+      "right_task": "11_05_2025_09_47_02_HsO",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2Ph3pnHhmCcIF34",
+      "left_task": "11_05_2025_14_19_12_TeJ",
+      "right_task": "11_05_2025_14_19_12_veF",
+      "vote": "RIGHT (B)",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2RyekFYYDKT6sla",
+      "left_task": "11_05_2025_14_25_19_YhJ",
+      "right_task": "11_05_2025_14_25_19_FIv",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3MYCEfXsDI1UZPb",
+      "left_task": "11_05_2025_14_22_03_XJs",
+      "right_task": "11_05_2025_14_22_03_UuM",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5NPRDinMw8qYIr8",
+      "left_task": "11_05_2025_14_26_48_bdr",
+      "right_task": "11_05_2025_14_26_48_nYP",
+      "vote": "Model A is better",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8KfnqUjZfnE1Pxu",
+      "left_task": "11_05_2025_14_31_41_EqG",
+      "right_task": "11_05_2025_14_31_41_TJc",
+      "vote": "A is better",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8YS92ZKgQ2WHrS9",
+      "left_task": "11_05_2025_14_47_18_Era",
+      "right_task": "11_05_2025_14_47_18_ZxX",
+      "vote": "Right (B)",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1Vp4cRcvaxht3mF",
+      "left_task": "11_05_2025_14_34_53_PCs",
+      "right_task": "11_05_2025_14_34_53_tdO",
+      "vote": "Tie",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7wT4TcWjBGOHz2l",
+      "left_task": "11_05_2025_14_32_29_BvX",
+      "right_task": "11_05_2025_14_32_29_iUd",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8g5r59VanA7hz3N",
+      "left_task": "11_05_2025_15_23_15_HWs",
+      "right_task": "11_05_2025_15_23_15_iFQ",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8oFoh3h4LclS5N7",
+      "left_task": "11_05_2025_16_37_10_TjY",
+      "right_task": "11_05_2025_16_37_10_Qis",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2dSEMbPHcAjB04a",
+      "left_task": "11_05_2025_16_31_49_Ibq",
+      "right_task": "11_05_2025_16_31_49_uth",
+      "vote": "Left: Cause it actually produced a result and an output. The other one did not even get past step 1",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3P6rWZrIwB8cAet",
+      "left_task": "11_05_2025_16_33_04_asV",
+      "right_task": "11_05_2025_16_33_04_ERr",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2e4E87UzOR5KlGx",
+      "left_task": "11_05_2025_16_36_02_yKE",
+      "right_task": "11_05_2025_16_36_02_Exa",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3LW99PHdcQgNGqB",
+      "left_task": "11_05_2025_16_44_24_wEl",
+      "right_task": "11_05_2025_16_44_24_StO",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_8qEXxFEPnt7uWFJ",
+      "left_task": "11_05_2025_17_06_51_Omm",
+      "right_task": "11_05_2025_17_06_51_uKJ",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_63y1jFz2LxF8SEp",
+      "left_task": "11_05_2025_17_35_23_AUA",
+      "right_task": "11_05_2025_17_35_23_ErL",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2L8g0f26qkfqMI9",
+      "left_task": "11_05_2025_17_51_33_HXH",
+      "right_task": "11_05_2025_17_51_33_qse",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8PndC7ldN3OSzL2",
+      "left_task": "11_05_2025_18_05_49_bNN",
+      "right_task": "11_05_2025_18_05_49_qWj",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_1wR0r3h1yaNxAtP",
+      "left_task": "12_05_2025_03_54_21_KhV",
+      "right_task": "12_05_2025_03_54_21_dPl",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_7G81SMQWK8DnwzP",
+      "left_task": "12_05_2025_03_47_09_Uhi",
+      "right_task": "12_05_2025_03_47_09_SDo",
+      "vote": "Right is better",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2L08NUT9qXaHRUF",
+      "left_task": "12_05_2025_04_05_21_mCX",
+      "right_task": "12_05_2025_04_05_21_eYC",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5M3xnxNlKKupqdk",
+      "left_task": "12_05_2025_03_49_08_znz",
+      "right_task": "12_05_2025_03_49_08_ZIj",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_42YnGBsIkss0yAh",
+      "left_task": "12_05_2025_03_51_49_OXc",
+      "right_task": "12_05_2025_03_51_49_tJF",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_6qqxafCTL8kGuZz",
+      "left_task": "12_05_2025_04_04_11_JDJ",
+      "right_task": "12_05_2025_04_04_11_fyc",
+      "vote": "right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_1At0oj41Bb2OUw1",
+      "left_task": "12_05_2025_03_56_29_aty",
+      "right_task": "12_05_2025_03_56_29_nGd",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5dzatrzwdT0pK13",
+      "left_task": "12_05_2025_05_13_04_KAL",
+      "right_task": "12_05_2025_05_13_04_yaD",
+      "vote": "left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3TzzEr0UXdTIDdV",
+      "left_task": "12_05_2025_06_15_45_jad",
+      "right_task": "12_05_2025_06_15_45_pDI",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_699Ry5EM2jidygJ",
+      "left_task": "12_05_2025_05_10_20_GJx",
+      "right_task": "12_05_2025_05_10_20_VeZ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2q4ALLuFQtgNQ4A",
+      "left_task": "14_05_2025_07_38_08_bTo",
+      "right_task": "14_05_2025_07_38_08_vYz",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_2DjLaBInEh8hOa5",
+      "left_task": "14_05_2025_09_52_42_Acd",
+      "right_task": "14_05_2025_09_52_42_Xhc",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6aVUSHPETeKbJGF",
+      "left_task": "14_05_2025_16_51_15_cDL",
+      "right_task": "14_05_2025_16_51_15_rqG",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3qam7YuFMP3s59D",
+      "left_task": "14_05_2025_17_11_59_jbE",
+      "right_task": "14_05_2025_17_11_59_xtG",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2YYGiL2bHLYala1",
+      "left_task": "14_05_2025_17_59_52_cUE",
+      "right_task": "14_05_2025_17_59_52_QEL",
+      "vote": "RIght is better",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_87stMmj6CwJEaPS",
+      "left_task": "14_05_2025_18_03_01_nKI",
+      "right_task": "14_05_2025_18_03_01_Clw",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8KWBgwxFkvPy9Ut",
+      "left_task": "14_05_2025_17_53_58_prF",
+      "right_task": "14_05_2025_17_53_58_gTF",
+      "vote": "Left (A is better)",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_4LSV0bxQPMZ1EXk",
+      "left_task": "14_05_2025_19_00_41_aPL",
+      "right_task": "14_05_2025_19_00_41_RxH",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_3jdqSVNYG7D55KI",
+      "left_task": "14_05_2025_19_02_27_sEq",
+      "right_task": "14_05_2025_19_02_27_zun",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8EaKaHIS3kyxw7c",
+      "left_task": "14_05_2025_19_02_27_sEq",
+      "right_task": "14_05_2025_19_02_27_zun",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_2FEWmLmXpVNEn6J",
+      "left_task": "14_05_2025_20_23_48_mmZ",
+      "right_task": "14_05_2025_20_23_48_qjz",
+      "vote": "RIGTH",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5yrcSyYKqOMLtBa",
+      "left_task": "14_05_2025_20_29_51_HNC",
+      "right_task": "14_05_2025_20_29_51_SPJ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_50pkWKFgYI9CdZf",
+      "left_task": "14_05_2025_20_30_27_HOH",
+      "right_task": "14_05_2025_20_30_27_tLY",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_5O0RVUwXS0h3Onr",
+      "left_task": "14_05_2025_21_50_23_OEq",
+      "right_task": "14_05_2025_21_50_23_MEE",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_6mCNFOX8ur1e2cV",
+      "left_task": "14_05_2025_21_56_17_HBv",
+      "right_task": "14_05_2025_21_56_17_GHu",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_7oXdF0GowimODV8",
+      "left_task": "14_05_2025_21_56_09_Kin",
+      "right_task": "14_05_2025_21_56_09_zIi",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6W3Ql9hqj5uc9MJ",
+      "left_task": "14_05_2025_22_16_02_rnf",
+      "right_task": "14_05_2025_22_16_02_KKp",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_8BX1EEOHK2R0rW9",
+      "left_task": "14_05_2025_22_34_20_ZOi",
+      "right_task": "14_05_2025_22_34_20_wQY",
+      "vote": "Tie",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6eFVHKHDK1OM4Jw",
+      "left_task": "14_05_2025_23_44_09_sck",
+      "right_task": "14_05_2025_23_44_09_RFZ",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_531E9gLCW0Q2cvj",
+      "left_task": "15_05_2025_02_15_52_BkR",
+      "right_task": "15_05_2025_02_15_52_wyN",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_3CUp1idQurStXNL",
+      "left_task": "15_05_2025_02_07_18_dqY",
+      "right_task": "15_05_2025_02_07_18_ySh",
+      "vote": "I marked the left model as more successful because it didn't fail to complete any of the steps. The right model failed to complete most of the steps.",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_323Ijx58tsYvzHj",
+      "left_task": "15_05_2025_02_19_08_jWZ",
+      "right_task": "15_05_2025_02_19_08_WLM",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_4OvssAh49ZfIVGR",
+      "left_task": "15_05_2025_02_37_40_QEa",
+      "right_task": "15_05_2025_02_37_40_CQB",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6jjqmyxRJ91sfZE",
+      "left_task": "15_05_2025_02_52_49_SZo",
+      "right_task": "15_05_2025_02_52_49_Lnw",
+      "vote": "Left",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_34ecPss7ZKELgMP",
+      "left_task": "15_05_2025_02_48_47_Okl",
+      "right_task": "15_05_2025_02_48_47_tOt",
+      "vote": "Right",
+      "left_correct": false,
+      "right_correct": true,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5BfE8QpW0UonR2Y",
+      "left_task": "15_05_2025_02_45_49_bkN",
+      "right_task": "15_05_2025_02_45_49_xXw",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": false,
+      "both_succeeded": false
+    },
+    {
+      "response_id": "R_5a15Gp7L4TiXWMx",
+      "left_task": "15_05_2025_03_14_33_Pbg",
+      "right_task": "15_05_2025_03_14_33_CWU",
+      "vote": "Left",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    },
+    {
+      "response_id": "R_6BcJdU1gIO4AfyV",
+      "left_task": "15_05_2025_03_25_18_RUV",
+      "right_task": "15_05_2025_03_25_18_lkG",
+      "vote": "Right",
+      "left_correct": true,
+      "right_correct": true,
+      "both_succeeded": true
+    }
+  ],
+  "total_cases": 155,
+  "both_succeeded_count": 97
+}

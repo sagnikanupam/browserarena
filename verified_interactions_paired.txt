@@ -1,0 +1,78 @@
+VERIFIED INTERACTIONS - PAIRED USER REQUESTS WITH MODEL ATTEMPTS
+================================================================
+
+This file contains verified interactions from the BrowserArena pipeline where two models attempted to complete user requests. Each entry includes:
+- User task/request
+- Attempt 1 details (model, outcome, GIF link)
+- Attempt 2 details (model, outcome, GIF link) 
+- Vote/preference information from human evaluators
+
+Data Structure:
+- Each interaction contains "states" with two model attempts
+- GIFs show browser automation recordings
+- Log IDs link to detailed logs and prompts
+- Verified interactions have been cleaned for model identity
+
+Source Files:
+- FastChat/verified_conv_log/verified_interactions-clean.json (126 total interactions)
+- FastChat/gifs/ (GIF recordings of each attempt)
+- FastChat/logs/ (detailed execution logs)
+- FastChat/prompts_and_outputs/ (model prompts and outputs)
+
+Example Structure:
+================
+
+INTERACTION 1:
+Task: "How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them?"
+Vote: leftvote (left model preferred)
+
+Attempt 1 (Left):
+- Model: openai/o4-mini
+- Status: Partial success (completed task but had parsing failures)
+- GIF: gifs/12_05_2025_03_54_21_KhV.gif
+- Log ID: 12_05_2025_03_54_21_KhV
+- Result: Successfully found 8-11 daily flights from 4 airlines (Alaska, Spirit, Southwest, Frontier)
+
+Attempt 2 (Right):
+- Model: google/gemini-2.5-pro-preview-03-25  
+- Status: Failed (3 consecutive parsing failures)
+- GIF: gifs/12_05_2025_03_54_21_dPl.gif
+- Log ID: 12_05_2025_03_54_21_dPl
+- Result: Complete failure - could not parse model output
+
+---
+
+INTERACTION 2:
+Task: "Create a summary for the wikipedia article about Manchester Metrolink"
+Vote: leftvote (left model preferred)
+
+Attempt 1 (Left):
+- Model: deepseek/deepseek-r1
+- Status: Success
+- GIF: gifs/12_05_2025_04_05_21_mCX.gif
+- Log ID: 12_05_2025_04_05_21_mCX
+- Result: Successfully created comprehensive summary with all key details
+
+Attempt 2 (Right):
+- Model: google/gemini-2.5-pro-preview-03-25
+- Status: Failed (3 consecutive parsing failures)
+- GIF: gifs/12_05_2025_04_05_21_eYC.gif  
+- Log ID: 12_05_2025_04_05_21_eYC
+- Result: Complete failure - could not parse model output
+
+---
+
+File Name Pattern:
+All related files use the format: DD_MM_YYYY_HH_MM_SS_XXX
+Where XXX is a 3-letter identifier that links:
+- The GIF recording
+- The execution log
+- The prompts/outputs JSON
+- The verified interaction entry
+
+For complete interaction details, reference:
+- FastChat/verified_conv_log/verified_interactions-clean.json for full conversation data
+- preference-agreement-surveys.ipynb for analysis of human evaluator feedback
+- Qualtrics survey data for detailed human preference votes
+
+This file structure enables linking user requests with model performance comparisons and human evaluation data for research on AI agent capabilities in web browsing tasks.

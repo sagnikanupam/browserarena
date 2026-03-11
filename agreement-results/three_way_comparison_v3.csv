@@ -1,0 +1,20 @@
+Question,Original_Baseline,Human_V2_Majority,GPT4o_Exact,GPT4o_Confidence,V2_Agent1_Votes,V2_Agent2_Votes,V2_Tie_Votes,V2_Total,V2_Agreement_Rate,All_Three_Agree,Baseline_Human_Agree,Baseline_GPT4o_Agree,Human_GPT4o_Agree
+Q1,Agent 1,Agent 1,Agent 1,0.95,63,3,48,114,55.3%,True,True,True,True
+Q2,Agent 1,Agent 1,Agent 1,0.95,113,1,0,114,99.1%,True,True,True,True
+Q3,Agent 1,Agent 1,Agent 1,0.6,70,19,25,114,61.4%,True,True,True,True
+Q4,Agent 1,Agent 1,Agent 2,0.75,107,4,3,114,93.9%,False,True,False,False
+Q5,Agent 1,Tie,Agent 2,0.85,21,12,81,114,71.1%,False,False,False,False
+Q6,Agent 1,Agent 1,Agent 1,0.9,91,7,16,114,79.8%,True,True,True,True
+Q7,Agent 1,Tie,Agent 1,0.9,36,11,67,114,58.8%,False,False,True,False
+Q8,Agent 1,Agent 1,Agent 2,0.95,96,6,12,114,84.2%,False,True,False,False
+Q9,Agent 1,Agent 1,Agent 2,0.9,82,15,17,114,71.9%,False,True,False,False
+Q10,Agent 1,Agent 1,Agent 1,0.85,92,3,19,114,80.7%,True,True,True,True
+Q11,Agent 1,Tie,Tie,0.5,28,8,78,114,68.4%,False,False,False,True
+Q12,Agent 1,Tie,Agent 1,0.8,31,18,65,114,57.0%,False,False,True,False
+Q13,Agent 1,Agent 1,Agent 2,0.75,95,13,6,114,83.3%,False,True,False,False
+Q16,Agent 1,Tie,Agent 1,0.9,41,4,69,114,60.5%,False,False,True,False
+Q17,Agent 1,Tie,Agent 1,0.9,37,9,68,114,59.6%,False,False,True,False
+Q18,Agent 1,Tie,Agent 1,0.8,47,9,58,114,50.9%,False,False,True,False
+Q19,Agent 2,Agent 2,Agent 2,0.8,11,81,22,114,71.1%,True,True,True,True
+Q20,Agent 1,Agent 1,Agent 1,0.9,106,3,5,114,93.0%,True,True,True,True
+Q22,Tie,Tie,Agent 2,0.8,23,27,64,114,56.1%,False,True,False,False

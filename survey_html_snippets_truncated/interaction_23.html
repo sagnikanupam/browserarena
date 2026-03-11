@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .task-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .task-header h3 {
+            color: #1a73e8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .task-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .comparison-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-output {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .agent-header {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .output-content {
+            padding: 16px;
+            background: #fafafa;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .output-text {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            word-wrap: break-word;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .agent-output {
+                min-width: 100%;
+            }
+            
+            .task-header h3 {
+                font-size: 16px;
+            }
+            
+            .task-text {
+                font-size: 14px;
+            }
+            
+            .output-text {
+                font-size: 12px;
+            }
+            
+            .output-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-header">
+            <div class="task-text"><strong>Task:</strong> Find the titles and authors of the top 3 bestselling fiction books on Amazon's homepage today.</div>
+        </div>
+        
+        <div class="comparison-container">
+            <div class="agent-output">
+                <div class="agent-header">Agent 1</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/10_05_2025_01_14_08_PHv.gif" alt="Agent 1 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Find the titles and authors of the top 3 bestselling fiction books on Amazon&#39;s homepage today.<br>📍 Step 1<br>🤷 Eval: Unknown - Beginning the task, no prior actions yet<br>🧠 Memory: Started ultimate task to find top 3 bestselling fiction books on Amazon. 0 out of 15 steps completed.<br>🎯 Next goal: Navigate directly to Amazon’s Best Sellers in Fiction page<br>🛠️  Action 1/1: {&quot;go_to_url&quot;:{&quot;url&quot;:&quot;https://www.amazon.com/Best-Sellers-Books-Fiction/zgbs/books/17&quot;}}<br>🔗  Navigated to https://www.amazon.com/Best-Sellers-Books-Fiction/zgbs/books/17<br>📍 Step 2<br>⚠ Eval: Failed - Amazon responded with a throttling message instead of the best sellers list<br>🧠 Memory: Started ultimate task to find top 3 bestselling f<br><br>[... truncated for brevity ...]<br><br>iction/zgbs/books/17&quot;}}<br>🕒  Waiting for 5 seconds<br>🔗  Navigated to https://www.amazon.com/Best-Sellers-Books-Fiction/zgbs/books/17<br>📍 Step 3<br>👍 Eval: Success - Identified the titles and authors for the top 3 books<br>🧠 Memory: Extracted top 3 bestselling fiction books: 3/3 obtained. No further steps remaining.<br>🎯 Next goal: Complete task<br>🛠️  Action 1/1: {&quot;done&quot;:{&quot;text&quot;:&quot;Top 3 Bestselling Fiction Books on Amazon Today:<br>1. The Tenant by Freida McFadden<br>2. Great Big Beautiful Life by Emily Henry<br>3. Death Row (Alibis collection) by Freida McFadden&quot;,&quot;success&quot;:true}}<br>📄 Result: Top 3 Bestselling Fiction Books on Amazon Today:<br>1. The Tenant by Freida McFadden<br>2. Great Big Beautiful Life by Emily Henry<br>3. Death Row (Alibis collection) by Freida McFadden<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+            
+            <div class="agent-output">
+                <div class="agent-header">Agent 2</div>
+                <div style="padding: 15px; background: #f8f9fa; text-align: center;">
+                    <img src="https://davisrbr.github.io/verified-gifs-only/gifs/10_05_2025_01_14_08_RLX.gif" alt="Agent 2 Browser Interaction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                
+                <div class="output-content">
+                    <div class="output-text">🧠 Starting an agent with main_model=anonymized, planner_model=anonymized, extraction_model=anonymized<br>🚀 Starting task: Find the titles and authors of the top 3 bestselling fiction books on Amazon&#39;s homepage today.<br>📍 Step 1<br>🤷 Eval: Unknown - Starting fresh session with empty page<br>🧠 Memory: Step 1/15. Need to reach Amazon&#39;s homepage to find bestsellers. First action: search Google for Amazon entry point.<br>🎯 Next goal: Search Google to navigate to Amazon&#39;s main site<br>🛠️  Action 1/1: {&quot;search_google&quot;:{&quot;query&quot;:&quot;amazon&quot;}}<br>🔍  Searched for &quot;amazon&quot; in Google<br>📍 Step 2<br>👍 Eval: Success - Google search for &#39;amazon&#39; returned relevant results<br>🧠 Memory: Step 2/15. Found Amazon.com link in search results. Next: Navigate to Amazon&#39;s homepage to locate bestsellers section.<br>🎯 Next goal: C<br><br>[... truncated for brevity ...]<br><br>r>📍 Step 7<br>👍 Eval: Success - Extracted 3 fiction bestsellers from filtered Books category<br>🧠 Memory: Step 7/15. Successfully gathered 3 fiction bestsellers. Completed 3/3 required book extractions. Task requirements fulfilled<br>🎯 Next goal: Finalize task with collected data<br>🛠️  Action 1/1: {&quot;done&quot;:{&quot;text&quot;:&quot;Top 3 Amazon Fiction Bestsellers:<br>1. &#39;The Lost Bookshop&#39; by Evie Woods<br>2. &#39;The God of the Woods&#39; by Liz Moore, Saskia Maarleveld et al.<br>3. &#39;The Women&#39; by Kristin Hannah, Julia Whelan et al.&quot;,&quot;success&quot;:true}}<br>📄 Result: Top 3 Amazon Fiction Bestsellers:<br>1. &#39;The Lost Bookshop&#39; by Evie Woods<br>2. &#39;The God of the Woods&#39; by Liz Moore, Saskia Maarleveld et al.<br>3. &#39;The Women&#39; by Kristin Hannah, Julia Whelan et al.<br>✅ Task completed<br>✅ Successfully<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

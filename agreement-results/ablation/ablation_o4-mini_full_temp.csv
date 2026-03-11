@@ -1,0 +1,6 @@
+question,task,baseline_winner,model_preference,model_confidence,model_reasoning,agrees_with_baseline,ablation_type,model
+Q1,"How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them?",Agent 1,Tie,0.5,Error during evaluation,False,full,o4-mini
+Q2,Create a summary for the wikipedia article about Manchester Metrolink,Agent 1,Tie,0.5,Error during evaluation,False,full,o4-mini
+Q3,"Go to Etsy.com, browse the trending home décor category, and list the top 5 most popular items including their titles and prices.",Agent 1,Tie,0.5,Error during evaluation,False,full,o4-mini
+Q4,find me any recipe on food.com,Agent 1,Agent 1,0.84,"Agent 1 successfully navigated to food.com and clicked through toward the recipes section, while Agent 2 repeatedly failed to reach the site due to timeouts and CAPTCHA blocks. Although Agent 1’s trace has some parsing hiccups, it nonetheless made substantive progress on the core task (reaching and interacting with food.com), whereas Agent 2 never overcame its navigation errors.",True,full,o4-mini
+Q5,visit the New York Times homepage and summarize the main story currently featured at the top of the page,Agent 1,Tie,0.5,Error during evaluation,False,full,o4-mini

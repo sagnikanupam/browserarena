@@ -1,0 +1,716 @@
+[
+  {
+    "response_id": "R_3bTosQFDBqtDctM",
+    "task_question": "Provide me a list of 3-letter words that begin with the letter w",
+    "left_case_id": "03_05_2025_04_36_24_hCn",
+    "right_case_id": "03_05_2025_04_36_24_DPn",
+    "combined_case_id": "03_05_2025_04_36_24_hCn_03_05_2025_04_36_24_DPn"
+  },
+  {
+    "response_id": "R_5WTsQMyixQ131gQ",
+    "task_question": "Give me a list of PS5 games that are on sale on the American PSN right now.",
+    "left_case_id": "03_05_2025_04_39_44_lfl",
+    "right_case_id": "03_05_2025_04_39_44_LpZ",
+    "combined_case_id": "03_05_2025_04_39_44_lfl_03_05_2025_04_39_44_LpZ"
+  },
+  {
+    "response_id": "R_2rChKyQxW6CsarA",
+    "task_question": "What is the lowest critic review score for Octopath Traveler on Metacritic?",
+    "left_case_id": "03_05_2025_21_08_57_AQd",
+    "right_case_id": "03_05_2025_21_08_57_Imc",
+    "combined_case_id": "03_05_2025_21_08_57_AQd_03_05_2025_21_08_57_Imc"
+  },
+  {
+    "response_id": "R_27HW36c49iQaHPc",
+    "task_question": "What was the trending price of gold in comparison to nasdaq in the last 60 days?",
+    "left_case_id": "03_05_2025_21_12_20_pzJ",
+    "right_case_id": "03_05_2025_21_12_20_HMD",
+    "combined_case_id": "03_05_2025_21_12_20_pzJ_03_05_2025_21_12_20_HMD"
+  },
+  {
+    "response_id": "R_8RlJZchfkyM8I6M",
+    "task_question": "give me ten recent news headlines in sports and news from bbc.co.uk.",
+    "left_case_id": "07_05_2025_04_34_02_rNO",
+    "right_case_id": "07_05_2025_04_34_02_sTM",
+    "combined_case_id": "07_05_2025_04_34_02_rNO_07_05_2025_04_34_02_sTM"
+  },
+  {
+    "response_id": "R_7fxjid81FRxhXsO",
+    "task_question": "What is the top 10 selling album currently on apple music?",
+    "left_case_id": "07_05_2025_04_30_10_HuX",
+    "right_case_id": "07_05_2025_04_30_10_Auk",
+    "combined_case_id": "07_05_2025_04_30_10_HuX_07_05_2025_04_30_10_Auk"
+  },
+  {
+    "response_id": "R_6Nt89OLCdLufee1",
+    "task_question": "visit the New York Times homepage and summarize the main story currently featured at the top of the page",
+    "left_case_id": "07_05_2025_15_10_56_EiU",
+    "right_case_id": "07_05_2025_15_10_56_hQu",
+    "combined_case_id": "07_05_2025_15_10_56_EiU_07_05_2025_15_10_56_hQu"
+  },
+  {
+    "response_id": "R_2PiuMN7fPUZGvf3",
+    "task_question": "Name the Top 10 headlines from BBC News",
+    "left_case_id": "09_05_2025_19_57_33_HgY",
+    "right_case_id": "09_05_2025_19_57_33_CFM",
+    "combined_case_id": "09_05_2025_19_57_33_HgY_09_05_2025_19_57_33_CFM"
+  },
+  {
+    "response_id": "R_7HwtIQMgAzumcr7",
+    "task_question": "What are the today's top headlines from Fox News?",
+    "left_case_id": "09_05_2025_20_13_59_XFw",
+    "right_case_id": "09_05_2025_20_13_59_wLl",
+    "combined_case_id": "09_05_2025_20_13_59_XFw_09_05_2025_20_13_59_wLl"
+  },
+  {
+    "response_id": "R_7dqjXh90ZvIa3rH",
+    "task_question": "Please provide a list of the types of boats that can be rented at Piney Run Park in Eldersburg, Maryland and include the hourly rate. ",
+    "left_case_id": "09_05_2025_20_11_09_SCY",
+    "right_case_id": "09_05_2025_20_11_09_FrD",
+    "combined_case_id": "09_05_2025_20_11_09_SCY_09_05_2025_20_11_09_FrD"
+  },
+  {
+    "response_id": "R_2pngZLZTEoWzKeV",
+    "task_question": "create a list of the top 20 best selling nintendo switch games",
+    "left_case_id": "09_05_2025_20_58_23_Idv",
+    "right_case_id": "09_05_2025_20_58_23_unx",
+    "combined_case_id": "09_05_2025_20_58_23_Idv_09_05_2025_20_58_23_unx"
+  },
+  {
+    "response_id": "R_7eDlNGi2GIol4WD",
+    "task_question": "What are the first 5 video titles on youtube homepage?",
+    "left_case_id": "09_05_2025_21_21_06_MSm",
+    "right_case_id": "09_05_2025_21_21_06_kAA",
+    "combined_case_id": "09_05_2025_21_21_06_MSm_09_05_2025_21_21_06_kAA"
+  },
+  {
+    "response_id": "R_2ozlzIOko5qUQiB",
+    "task_question": "Check all ticket touting websites and find the cheapest ticket I can get to Man City vs Bournemouth on the 20th of May",
+    "left_case_id": "09_05_2025_21_28_12_OnA",
+    "right_case_id": "09_05_2025_21_28_12_RJD",
+    "combined_case_id": "09_05_2025_21_28_12_OnA_09_05_2025_21_28_12_RJD"
+  },
+  {
+    "response_id": "R_5niMk8Hq8OAK5OW",
+    "task_question": "a list of top 10 churches ",
+    "left_case_id": "09_05_2025_21_30_52_Eso",
+    "right_case_id": "09_05_2025_21_30_52_wcO",
+    "combined_case_id": "09_05_2025_21_30_52_Eso_09_05_2025_21_30_52_wcO"
+  },
+  {
+    "response_id": "R_2dMiJQNgGTesd84",
+    "task_question": "Please review Glasgow Celtic's fixtures from this season 2024/2025 so far and tell me how many goals they have scored across all competitive competitions and then review the goals and give me the distribution of goals in 10 minute intervals of games, e.g.0-10 minutes, 11-20 minutes21-30 minutes etc all the way up to 90 minutes and then include injury time as a separate interval.",
+    "left_case_id": "09_05_2025_21_42_22_kZY",
+    "right_case_id": "09_05_2025_21_42_22_SdT",
+    "combined_case_id": "09_05_2025_21_42_22_kZY_09_05_2025_21_42_22_SdT"
+  },
+  {
+    "response_id": "R_8wt7STKtbJLAHS3",
+    "task_question": "give me a recipe for making pasta with cheese from the top 3 cooking websites, make it environmentally sustainable.",
+    "left_case_id": "09_05_2025_21_36_59_crp",
+    "right_case_id": "09_05_2025_21_36_59_AvQ",
+    "combined_case_id": "09_05_2025_21_36_59_crp_09_05_2025_21_36_59_AvQ"
+  },
+  {
+    "response_id": "R_1eUEZ3u2lJxihkN",
+    "task_question": "List out the symptoms of Vitamin D deficiency from WebMd and any other medical website",
+    "left_case_id": "09_05_2025_21_40_30_XjR",
+    "right_case_id": "09_05_2025_21_40_30_YEs",
+    "combined_case_id": "09_05_2025_21_40_30_XjR_09_05_2025_21_40_30_YEs"
+  },
+  {
+    "response_id": "R_3TyGUyodtUotDX6",
+    "task_question": "Tell me different Plane ticket price from different websites for a one way trip from Ontario to Ottawa ",
+    "left_case_id": "09_05_2025_21_41_14_YwM",
+    "right_case_id": "09_05_2025_21_41_14_DvE",
+    "combined_case_id": "09_05_2025_21_41_14_YwM_09_05_2025_21_41_14_DvE"
+  },
+  {
+    "response_id": "R_8NxLR6b2kD3g2a8",
+    "task_question": "Compare prices of HP laptop model across different online retailers",
+    "left_case_id": "09_05_2025_22_23_29_cgB",
+    "right_case_id": "09_05_2025_22_23_29_IXB",
+    "combined_case_id": "09_05_2025_22_23_29_cgB_09_05_2025_22_23_29_IXB"
+  },
+  {
+    "response_id": "R_7K1ysv6mGjgpiNj",
+    "task_question": "Give me a summary of this week's best-selling crypto coins.",
+    "left_case_id": "09_05_2025_22_39_53_FuI",
+    "right_case_id": "09_05_2025_22_39_53_htb",
+    "combined_case_id": "09_05_2025_22_39_53_FuI_09_05_2025_22_39_53_htb"
+  },
+  {
+    "response_id": "R_3Ea1qGxtNBUB1sx",
+    "task_question": "get me online price details comparison of samsung qled 75 inch tv from 5 leading retailers in usa along with price from samsung website ",
+    "left_case_id": "09_05_2025_22_44_26_YNT",
+    "right_case_id": "09_05_2025_22_44_26_xEk",
+    "combined_case_id": "09_05_2025_22_44_26_YNT_09_05_2025_22_44_26_xEk"
+  },
+  {
+    "response_id": "R_5r2m2MDD1lxdbeV",
+    "task_question": "how is the weather today",
+    "left_case_id": "09_05_2025_23_09_20_BUj",
+    "right_case_id": "09_05_2025_23_09_20_MfC",
+    "combined_case_id": "09_05_2025_23_09_20_BUj_09_05_2025_23_09_20_MfC"
+  },
+  {
+    "response_id": "R_2X6ddrI1v9IKBvF",
+    "task_question": "What are today's top 5 political news in UK",
+    "left_case_id": "10_05_2025_00_01_48_pTG",
+    "right_case_id": "10_05_2025_00_01_48_LVO",
+    "combined_case_id": "10_05_2025_00_01_48_pTG_10_05_2025_00_01_48_LVO"
+  },
+  {
+    "response_id": "R_2CCU5Z8Ziyymst9",
+    "task_question": "What are today's top 10 most popular articles on buzzfeed?",
+    "left_case_id": "10_05_2025_00_00_27_IAX",
+    "right_case_id": "10_05_2025_00_00_27_TVe",
+    "combined_case_id": "10_05_2025_00_00_27_IAX_10_05_2025_00_00_27_TVe"
+  },
+  {
+    "response_id": "R_1vrlsMfeylfab3H",
+    "task_question": "is deportation the best solution for illegal migrants?",
+    "left_case_id": "09_05_2025_23_49_59_oZV",
+    "right_case_id": "09_05_2025_23_49_59_ugh",
+    "combined_case_id": "09_05_2025_23_49_59_oZV_09_05_2025_23_49_59_ugh"
+  },
+  {
+    "response_id": "R_7WxuNjopoBhjby8",
+    "task_question": "What are the names of the top 20 most frequently visited lakes in the world currently?",
+    "left_case_id": "10_05_2025_01_25_04_TAY",
+    "right_case_id": "10_05_2025_01_25_04_TTJ",
+    "combined_case_id": "10_05_2025_01_25_04_TAY_10_05_2025_01_25_04_TTJ"
+  },
+  {
+    "response_id": "R_7QFMEAaLV7eZEtF",
+    "task_question": "Find the titles and authors of the top 3 bestselling fiction books on Amazon's homepage today.",
+    "left_case_id": "10_05_2025_01_14_08_PHv",
+    "right_case_id": "10_05_2025_01_14_08_RLX",
+    "combined_case_id": "10_05_2025_01_14_08_PHv_10_05_2025_01_14_08_RLX"
+  },
+  {
+    "response_id": "R_3Xp8VrfL51JTxeo",
+    "task_question": "gifts under $25 for mother's day",
+    "left_case_id": "10_05_2025_01_06_39_yrs",
+    "right_case_id": "10_05_2025_01_06_39_PrQ",
+    "combined_case_id": "10_05_2025_01_06_39_yrs_10_05_2025_01_06_39_PrQ"
+  },
+  {
+    "response_id": "R_37EEMMd99k5uhHD",
+    "task_question": "Go to the New York Times website and find the most recent op-ed article related to climate change. Summarize the main argument of the piece.",
+    "left_case_id": "10_05_2025_01_37_05_xIM",
+    "right_case_id": "10_05_2025_01_37_05_jxR",
+    "combined_case_id": "10_05_2025_01_37_05_xIM_10_05_2025_01_37_05_jxR"
+  },
+  {
+    "response_id": "R_3tUgVlbxBbjqdj3",
+    "task_question": "Check the IKEA website and find three coffee tables priced under $150 that are available for delivery. Write down their names, prices and one unique feature or material for each. ",
+    "left_case_id": "10_05_2025_02_04_43_gWk",
+    "right_case_id": "10_05_2025_02_04_43_lFr",
+    "combined_case_id": "10_05_2025_02_04_43_gWk_10_05_2025_02_04_43_lFr"
+  },
+  {
+    "response_id": "R_5L4LEZv1oCOD6FP",
+    "task_question": "What are today's top 20 headlines from Fox News?",
+    "left_case_id": "10_05_2025_03_04_51_sSy",
+    "right_case_id": "10_05_2025_03_04_51_idu",
+    "combined_case_id": "10_05_2025_03_04_51_sSy_10_05_2025_03_04_51_idu"
+  },
+  {
+    "response_id": "R_7Cq0uOthuNR4isb",
+    "task_question": "what are the fastest-growing tech startups in Toronto?",
+    "left_case_id": "10_05_2025_03_16_40_dQm",
+    "right_case_id": "10_05_2025_03_16_40_fSK",
+    "combined_case_id": "10_05_2025_03_16_40_dQm_10_05_2025_03_16_40_fSK"
+  },
+  {
+    "response_id": "R_18IZK9dYB7HlvI2",
+    "task_question": "Go to the New York Times website, navigate to the 'Books' section, and summarize the review of the current week's featured fiction book.",
+    "left_case_id": "10_05_2025_03_03_55_vsV",
+    "right_case_id": "10_05_2025_03_03_55_Umi",
+    "combined_case_id": "10_05_2025_03_03_55_vsV_10_05_2025_03_03_55_Umi"
+  },
+  {
+    "response_id": "R_6pEzMd1pozCN2rl",
+    "task_question": "what are today's top 10 sports news headlines",
+    "left_case_id": "10_05_2025_03_41_38_tUR",
+    "right_case_id": "10_05_2025_03_41_38_ygE",
+    "combined_case_id": "10_05_2025_03_41_38_tUR_10_05_2025_03_41_38_ygE"
+  },
+  {
+    "response_id": "R_4WOnkY90BzTg0S5",
+    "task_question": "Please provide me with the top 5 articles which are displayed on stuff nz homepage",
+    "left_case_id": "11_05_2025_04_28_09_hSQ",
+    "right_case_id": "11_05_2025_04_28_09_efj",
+    "combined_case_id": "11_05_2025_04_28_09_hSQ_11_05_2025_04_28_09_efj"
+  },
+  {
+    "response_id": "R_3iTaibaxR3aK2Jj",
+    "task_question": "Go to the BestBuy website and find the current top-rated wireless headphones under $200. Summarize the product name, price, and average customer rating of the top three options.",
+    "left_case_id": "11_05_2025_04_36_50_zuh",
+    "right_case_id": "11_05_2025_04_36_50_kRW",
+    "combined_case_id": "11_05_2025_04_36_50_zuh_11_05_2025_04_36_50_kRW"
+  },
+  {
+    "response_id": "R_6f1c7Nucq5MKYZd",
+    "task_question": "Create a list of the top 10 highest rated video games from IGN.",
+    "left_case_id": "11_05_2025_04_50_35_dLM",
+    "right_case_id": "11_05_2025_04_50_35_pjT",
+    "combined_case_id": "11_05_2025_04_50_35_dLM_11_05_2025_04_50_35_pjT"
+  },
+  {
+    "response_id": "R_2CJZc8hehXkBLnv",
+    "task_question": "Can you compile the list of the most affordable new built properties in manchester across different websites- specifically 3 to 4 bedroom houses with separate kitchens",
+    "left_case_id": "11_05_2025_05_49_58_jgb",
+    "right_case_id": "11_05_2025_05_49_58_HzF",
+    "combined_case_id": "11_05_2025_05_49_58_jgb_11_05_2025_05_49_58_HzF"
+  },
+  {
+    "response_id": "R_8IBQO4jawl5217X",
+    "task_question": "I want to ask which guitar is recommended for beginners on the acousticguitarforum.com",
+    "left_case_id": "11_05_2025_06_07_59_mKb",
+    "right_case_id": "11_05_2025_06_07_59_UZs",
+    "combined_case_id": "11_05_2025_06_07_59_mKb_11_05_2025_06_07_59_UZs"
+  },
+  {
+    "response_id": "R_3eL8qVFifCN6Qen",
+    "task_question": "Go to nba.com and compile a list of the top 10 NBA players with the most points scored over the past week.",
+    "left_case_id": "11_05_2025_06_10_26_Lck",
+    "right_case_id": "11_05_2025_06_10_26_QpD",
+    "combined_case_id": "11_05_2025_06_10_26_Lck_11_05_2025_06_10_26_QpD"
+  },
+  {
+    "response_id": "R_3lga3THKv4zmVNt",
+    "task_question": "Go to the BBC News homepage, in the ''World' section, and list the top 5 headlines currently featured there.",
+    "left_case_id": "11_05_2025_06_12_22_ScT",
+    "right_case_id": "11_05_2025_06_12_22_GuP",
+    "combined_case_id": "11_05_2025_06_12_22_ScT_11_05_2025_06_12_22_GuP"
+  },
+  {
+    "response_id": "R_1VmcdsM747OpghX",
+    "task_question": "Who is the richest musician in the united states",
+    "left_case_id": "11_05_2025_06_38_30_pBK",
+    "right_case_id": "11_05_2025_06_38_30_Yxu",
+    "combined_case_id": "11_05_2025_06_38_30_pBK_11_05_2025_06_38_30_Yxu"
+  },
+  {
+    "response_id": "R_5mxW8phloxcPrYi",
+    "task_question": "What is today's most trending movies on netflix",
+    "left_case_id": "11_05_2025_06_11_16_bVY",
+    "right_case_id": "11_05_2025_06_11_16_zDI",
+    "combined_case_id": "11_05_2025_06_11_16_bVY_11_05_2025_06_11_16_zDI"
+  },
+  {
+    "response_id": "R_2ZHym94qdXsdQ2H",
+    "task_question": "Find the top 5 most expensive books currently listed on AbeBooks.com and provide their titles, authors, and prices. Then compare these prices with listings for the same books on BookFinder.com if available.",
+    "left_case_id": "11_05_2025_06_47_08_gAp",
+    "right_case_id": "11_05_2025_06_47_08_Erz",
+    "combined_case_id": "11_05_2025_06_47_08_gAp_11_05_2025_06_47_08_Erz"
+  },
+  {
+    "response_id": "R_5SBRXBWyxN3Hlrr",
+    "task_question": "What are the top five songs on cmt.com?",
+    "left_case_id": "11_05_2025_07_24_02_guO",
+    "right_case_id": "11_05_2025_07_24_02_PwH",
+    "combined_case_id": "11_05_2025_07_24_02_guO_11_05_2025_07_24_02_PwH"
+  },
+  {
+    "response_id": "R_2s6KSWLBvk6DQKd",
+    "task_question": "Find the top 5 most-viewed movies currently playing in theaters, according to IMDb's 'Most Popular Movies' list, and list their IMDb ratings.",
+    "left_case_id": "11_05_2025_07_31_35_GLU",
+    "right_case_id": "11_05_2025_07_31_35_atF",
+    "combined_case_id": "11_05_2025_07_31_35_GLU_11_05_2025_07_31_35_atF"
+  },
+  {
+    "response_id": "R_2LgXZENYLorndUl",
+    "task_question": "what is the third most read article on which.com?",
+    "left_case_id": "11_05_2025_08_09_43_nJw",
+    "right_case_id": "11_05_2025_08_09_43_LcZ",
+    "combined_case_id": "11_05_2025_08_09_43_nJw_11_05_2025_08_09_43_LcZ"
+  },
+  {
+    "response_id": "R_21bljU2eT4NPAEa",
+    "task_question": "Find the current top 10 trending movies on IMDb and list their titles along with their user ratings",
+    "left_case_id": "11_05_2025_08_10_03_OcQ",
+    "right_case_id": "11_05_2025_08_10_03_qWU",
+    "combined_case_id": "11_05_2025_08_10_03_OcQ_11_05_2025_08_10_03_qWU"
+  },
+  {
+    "response_id": "R_1r0wZgD2xeT0DdL",
+    "task_question": "Who are the winners of ballon d'or for the last 5 years?",
+    "left_case_id": "11_05_2025_08_39_43_kNs",
+    "right_case_id": "11_05_2025_08_39_43_xKr",
+    "combined_case_id": "11_05_2025_08_39_43_kNs_11_05_2025_08_39_43_xKr"
+  },
+  {
+    "response_id": "R_338EynY5SfnF5sV",
+    "task_question": "Compare the plane ticket planes price for round trip airfare from New York To Hawaii on different plane ticket purchasing websites. ",
+    "left_case_id": "11_05_2025_05_43_38_Axf",
+    "right_case_id": "11_05_2025_05_43_38_xXO",
+    "combined_case_id": "11_05_2025_05_43_38_Axf_11_05_2025_05_43_38_xXO"
+  },
+  {
+    "response_id": "R_9v2F62HjBNMmOG5",
+    "task_question": "Compare the specifications of smartphones on the honor magic 7 pro to the Iqoo 13. ",
+    "left_case_id": "11_05_2025_08_38_16_sbS",
+    "right_case_id": "11_05_2025_08_38_16_UpM",
+    "combined_case_id": "11_05_2025_08_38_16_sbS_11_05_2025_08_38_16_UpM"
+  },
+  {
+    "response_id": "R_2pZ3k5IDmfaTbLp",
+    "task_question": "Find me the last available train from Cardiff Central to Barry Docks station today on trainline",
+    "left_case_id": "11_05_2025_09_27_37_oRg",
+    "right_case_id": "11_05_2025_09_27_37_ppp",
+    "combined_case_id": "11_05_2025_09_27_37_oRg_11_05_2025_09_27_37_ppp"
+  },
+  {
+    "response_id": "R_1hShwFWxg2fxi2m",
+    "task_question": "Give me three names, prices, and one feature or material used in each of three Coffee tables from the IKEA website priced under $150.",
+    "left_case_id": "11_05_2025_09_47_02_VYi",
+    "right_case_id": "11_05_2025_09_47_02_HsO",
+    "combined_case_id": "11_05_2025_09_47_02_VYi_11_05_2025_09_47_02_HsO"
+  },
+  {
+    "response_id": "R_2Ph3pnHhmCcIF34",
+    "task_question": "What is the best rated Samsung TV according to which?",
+    "left_case_id": "11_05_2025_14_19_12_TeJ",
+    "right_case_id": "11_05_2025_14_19_12_veF",
+    "combined_case_id": "11_05_2025_14_19_12_TeJ_11_05_2025_14_19_12_veF"
+  },
+  {
+    "response_id": "R_2RyekFYYDKT6sla",
+    "task_question": "what are today's top 10 sports news headlines",
+    "left_case_id": "11_05_2025_14_25_19_YhJ",
+    "right_case_id": "11_05_2025_14_25_19_FIv",
+    "combined_case_id": "11_05_2025_14_25_19_YhJ_11_05_2025_14_25_19_FIv"
+  },
+  {
+    "response_id": "R_3MYCEfXsDI1UZPb",
+    "task_question": "give me the list of the last ten national teams to win the world cup",
+    "left_case_id": "11_05_2025_14_22_03_XJs",
+    "right_case_id": "11_05_2025_14_22_03_UuM",
+    "combined_case_id": "11_05_2025_14_22_03_XJs_11_05_2025_14_22_03_UuM"
+  },
+  {
+    "response_id": "R_8YS92ZKgQ2WHrS9",
+    "task_question": "What are the 10 ways to save the planet while gardening according to rhs.org.uk?",
+    "left_case_id": "11_05_2025_14_47_18_Era",
+    "right_case_id": "11_05_2025_14_47_18_ZxX",
+    "combined_case_id": "11_05_2025_14_47_18_Era_11_05_2025_14_47_18_ZxX"
+  },
+  {
+    "response_id": "R_1Vp4cRcvaxht3mF",
+    "task_question": "Go to Tripadvisor and find the top 3 rated hotels in Barcelona, Spain with free Wi-Fi and breakfast included. List their names, average user rating, and the starting price per night.",
+    "left_case_id": "11_05_2025_14_34_53_PCs",
+    "right_case_id": "11_05_2025_14_34_53_tdO",
+    "combined_case_id": "11_05_2025_14_34_53_PCs_11_05_2025_14_34_53_tdO"
+  },
+  {
+    "response_id": "R_7wT4TcWjBGOHz2l",
+    "task_question": "What are the top 20 rarest vintage bottle caps in the world?",
+    "left_case_id": "11_05_2025_14_32_29_BvX",
+    "right_case_id": "11_05_2025_14_32_29_iUd",
+    "combined_case_id": "11_05_2025_14_32_29_BvX_11_05_2025_14_32_29_iUd"
+  },
+  {
+    "response_id": "R_8g5r59VanA7hz3N",
+    "task_question": "Find the current top 5 trending indie games on Steam's 'Popular Upcoming' list and summarize their genres and release dates.",
+    "left_case_id": "11_05_2025_15_23_15_HWs",
+    "right_case_id": "11_05_2025_15_23_15_iFQ",
+    "combined_case_id": "11_05_2025_15_23_15_HWs_11_05_2025_15_23_15_iFQ"
+  },
+  {
+    "response_id": "R_8oFoh3h4LclS5N7",
+    "task_question": "Go to Amazon.com, search for '4K TVs,' sort by 'Avg. Customer Reviews,' and list the top 5 models along with their star ratings and prices.",
+    "left_case_id": "11_05_2025_16_37_10_TjY",
+    "right_case_id": "11_05_2025_16_37_10_Qis",
+    "combined_case_id": "11_05_2025_16_37_10_TjY_11_05_2025_16_37_10_Qis"
+  },
+  {
+    "response_id": "R_2dSEMbPHcAjB04a",
+    "task_question": "Compare prices for different brands of laptops using sites like Amazon or Best Buy let you compare specs, reviews, and costs.",
+    "left_case_id": "11_05_2025_16_31_49_Ibq",
+    "right_case_id": "11_05_2025_16_31_49_uth",
+    "combined_case_id": "11_05_2025_16_31_49_Ibq_11_05_2025_16_31_49_uth"
+  },
+  {
+    "response_id": "R_3P6rWZrIwB8cAet",
+    "task_question": "Make me a list of the top most played heroes in Overwatch 2",
+    "left_case_id": "11_05_2025_16_33_04_asV",
+    "right_case_id": "11_05_2025_16_33_04_ERr",
+    "combined_case_id": "11_05_2025_16_33_04_asV_11_05_2025_16_33_04_ERr"
+  },
+  {
+    "response_id": "R_8qEXxFEPnt7uWFJ",
+    "task_question": "Please return the total number of competitive goals Henrik Larsson scored for Glasgow Celtic football club giving subtotals by the teams he scored against.",
+    "left_case_id": "11_05_2025_17_06_51_Omm",
+    "right_case_id": "11_05_2025_17_06_51_uKJ",
+    "combined_case_id": "11_05_2025_17_06_51_Omm_11_05_2025_17_06_51_uKJ"
+  },
+  {
+    "response_id": "R_63y1jFz2LxF8SEp",
+    "task_question": "provide me 4 list of journal on wood treatment ",
+    "left_case_id": "11_05_2025_17_35_23_AUA",
+    "right_case_id": "11_05_2025_17_35_23_ErL",
+    "combined_case_id": "11_05_2025_17_35_23_AUA_11_05_2025_17_35_23_ErL"
+  },
+  {
+    "response_id": "R_2L8g0f26qkfqMI9",
+    "task_question": "List all the UK airports fly that internationally",
+    "left_case_id": "11_05_2025_17_51_33_HXH",
+    "right_case_id": "11_05_2025_17_51_33_qse",
+    "combined_case_id": "11_05_2025_17_51_33_HXH_11_05_2025_17_51_33_qse"
+  },
+  {
+    "response_id": "R_8PndC7ldN3OSzL2",
+    "task_question": "What are the top 10 Rides at alton towers for families ranging from ages 2 to adults?",
+    "left_case_id": "11_05_2025_18_05_49_bNN",
+    "right_case_id": "11_05_2025_18_05_49_qWj",
+    "combined_case_id": "11_05_2025_18_05_49_bNN_11_05_2025_18_05_49_qWj"
+  },
+  {
+    "response_id": "R_1wR0r3h1yaNxAtP",
+    "task_question": "How many nonstop flights to Las Vegas depart from Portland, Oregon every day and what airlines operate them?",
+    "left_case_id": "12_05_2025_03_54_21_KhV",
+    "right_case_id": "12_05_2025_03_54_21_dPl",
+    "combined_case_id": "12_05_2025_03_54_21_KhV_12_05_2025_03_54_21_dPl"
+  },
+  {
+    "response_id": "R_7G81SMQWK8DnwzP",
+    "task_question": "Compare flight prices from Washington DC to Paris, France vs Washington DC to Kyoto Japan in 2025",
+    "left_case_id": "12_05_2025_03_47_09_Uhi",
+    "right_case_id": "12_05_2025_03_47_09_SDo",
+    "combined_case_id": "12_05_2025_03_47_09_Uhi_12_05_2025_03_47_09_SDo"
+  },
+  {
+    "response_id": "R_2L08NUT9qXaHRUF",
+    "task_question": "Create a summary for the wikipedia article about Manchester Metrolink",
+    "left_case_id": "12_05_2025_04_05_21_mCX",
+    "right_case_id": "12_05_2025_04_05_21_eYC",
+    "combined_case_id": "12_05_2025_04_05_21_mCX_12_05_2025_04_05_21_eYC"
+  },
+  {
+    "response_id": "R_6qqxafCTL8kGuZz",
+    "task_question": "top 5 wildlife rescue",
+    "left_case_id": "12_05_2025_04_04_11_JDJ",
+    "right_case_id": "12_05_2025_04_04_11_fyc",
+    "combined_case_id": "12_05_2025_04_04_11_JDJ_12_05_2025_04_04_11_fyc"
+  },
+  {
+    "response_id": "R_1At0oj41Bb2OUw1",
+    "task_question": "Go to Etsy.com, browse the trending home d\u221a\u00a9cor category, and list the top 5 most popular items including their titles and prices.",
+    "left_case_id": "12_05_2025_03_56_29_aty",
+    "right_case_id": "12_05_2025_03_56_29_nGd",
+    "combined_case_id": "12_05_2025_03_56_29_aty_12_05_2025_03_56_29_nGd"
+  },
+  {
+    "response_id": "R_5dzatrzwdT0pK13",
+    "task_question": "find me any recipe on food.com ",
+    "left_case_id": "12_05_2025_05_13_04_KAL",
+    "right_case_id": "12_05_2025_05_13_04_yaD",
+    "combined_case_id": "12_05_2025_05_13_04_KAL_12_05_2025_05_13_04_yaD"
+  },
+  {
+    "response_id": "R_3TzzEr0UXdTIDdV",
+    "task_question": "Go to the New York Times website, navigate to the 'World' section, and tell me the headline of the top story.\n",
+    "left_case_id": "12_05_2025_06_15_45_jad",
+    "right_case_id": "12_05_2025_06_15_45_pDI",
+    "combined_case_id": "12_05_2025_06_15_45_jad_12_05_2025_06_15_45_pDI"
+  },
+  {
+    "response_id": "R_699Ry5EM2jidygJ",
+    "task_question": "Find me the cheapest per count neutral white A19 LED light bulbs on Amazon.com",
+    "left_case_id": "12_05_2025_05_10_20_GJx",
+    "right_case_id": "12_05_2025_05_10_20_VeZ",
+    "combined_case_id": "12_05_2025_05_10_20_GJx_12_05_2025_05_10_20_VeZ"
+  },
+  {
+    "response_id": "R_2q4ALLuFQtgNQ4A",
+    "task_question": "please search for the names of all presidents from Wikipedia ",
+    "left_case_id": "14_05_2025_07_38_08_bTo",
+    "right_case_id": "14_05_2025_07_38_08_vYz",
+    "combined_case_id": "14_05_2025_07_38_08_bTo_14_05_2025_07_38_08_vYz"
+  },
+  {
+    "response_id": "R_2DjLaBInEh8hOa5",
+    "task_question": "Go to the BBC News website and list the top five headlines currently featured on the homepage",
+    "left_case_id": "14_05_2025_09_52_42_Acd",
+    "right_case_id": "14_05_2025_09_52_42_Xhc",
+    "combined_case_id": "14_05_2025_09_52_42_Acd_14_05_2025_09_52_42_Xhc"
+  },
+  {
+    "response_id": "R_6aVUSHPETeKbJGF",
+    "task_question": "what are the top 5 headlines today on CP24?",
+    "left_case_id": "14_05_2025_16_51_15_cDL",
+    "right_case_id": "14_05_2025_16_51_15_rqG",
+    "combined_case_id": "14_05_2025_16_51_15_cDL_14_05_2025_16_51_15_rqG"
+  },
+  {
+    "response_id": "R_3qam7YuFMP3s59D",
+    "task_question": "Compare flight prices to a one way trip to Montreal next Friday on different booking websites to find the cheapest flight",
+    "left_case_id": "14_05_2025_17_11_59_jbE",
+    "right_case_id": "14_05_2025_17_11_59_xtG",
+    "combined_case_id": "14_05_2025_17_11_59_jbE_14_05_2025_17_11_59_xtG"
+  },
+  {
+    "response_id": "R_2YYGiL2bHLYala1",
+    "task_question": "Go to the New York Times website and find the main feature article on the homepage. Click on the article, read it, and summarize the main points in 3-5 bullet points.",
+    "left_case_id": "14_05_2025_17_59_52_cUE",
+    "right_case_id": "14_05_2025_17_59_52_QEL",
+    "combined_case_id": "14_05_2025_17_59_52_cUE_14_05_2025_17_59_52_QEL"
+  },
+  {
+    "response_id": "R_87stMmj6CwJEaPS",
+    "task_question": "Compare the train prices for one-way tickets from London Euston to Manchester next Saturday on national rail and trainline websites",
+    "left_case_id": "14_05_2025_18_03_01_nKI",
+    "right_case_id": "14_05_2025_18_03_01_Clw",
+    "combined_case_id": "14_05_2025_18_03_01_nKI_14_05_2025_18_03_01_Clw"
+  },
+  {
+    "response_id": "R_8KWBgwxFkvPy9Ut",
+    "task_question": "compare the prices of the latest PC graphics cards",
+    "left_case_id": "14_05_2025_17_53_58_prF",
+    "right_case_id": "14_05_2025_17_53_58_gTF",
+    "combined_case_id": "14_05_2025_17_53_58_prF_14_05_2025_17_53_58_gTF"
+  },
+  {
+    "response_id": "R_4LSV0bxQPMZ1EXk",
+    "task_question": "Narrow down the 3 or more TUV Rheinland certifications for eye care/health on the Honor Magic 7 Pro and list what they all are. Then search trusted and reputable websites to cross-reference and look for any other smartphones that offer at least the same eye health benefits or more, or number of eye health benefits or more, for a smartphone screen.",
+    "left_case_id": "14_05_2025_19_00_41_aPL",
+    "right_case_id": "14_05_2025_19_00_41_RxH",
+    "combined_case_id": "14_05_2025_19_00_41_aPL_14_05_2025_19_00_41_RxH"
+  },
+  {
+    "response_id": "R_3jdqSVNYG7D55KI",
+    "task_question": "Visit the official Nike website and find three different men's running shoes priced under $100. List their names, prices, and available sizes.",
+    "left_case_id": "14_05_2025_19_02_27_sEq",
+    "right_case_id": "14_05_2025_19_02_27_zun",
+    "combined_case_id": "14_05_2025_19_02_27_sEq_14_05_2025_19_02_27_zun"
+  },
+  {
+    "response_id": "R_2FEWmLmXpVNEn6J",
+    "task_question": "Go to the New York Times website and find the most recent book review in the \"Books\" section. Summarize the main points of the review and identify the title and author of the book being reviewed.\n\nMake sure to copy and paste this exact text both into the answer box on this page and when submitting the task to the AI agent on the other website.",
+    "left_case_id": "14_05_2025_20_23_48_mmZ",
+    "right_case_id": "14_05_2025_20_23_48_qjz",
+    "combined_case_id": "14_05_2025_20_23_48_mmZ_14_05_2025_20_23_48_qjz"
+  },
+  {
+    "response_id": "R_5yrcSyYKqOMLtBa",
+    "task_question": "What are today's top 5 headlines from the Peninsula Clarion?",
+    "left_case_id": "14_05_2025_20_29_51_HNC",
+    "right_case_id": "14_05_2025_20_29_51_SPJ",
+    "combined_case_id": "14_05_2025_20_29_51_HNC_14_05_2025_20_29_51_SPJ"
+  },
+  {
+    "response_id": "R_50pkWKFgYI9CdZf",
+    "task_question": "What are the top 10 french wines from vintage 1996?",
+    "left_case_id": "14_05_2025_20_30_27_HOH",
+    "right_case_id": "14_05_2025_20_30_27_tLY",
+    "combined_case_id": "14_05_2025_20_30_27_HOH_14_05_2025_20_30_27_tLY"
+  },
+  {
+    "response_id": "R_5O0RVUwXS0h3Onr",
+    "task_question": "Go to nba.com, find the box score for yesterday's Indiana Pacers vs Cleveland Cavaliers game, and then relay the top 5 performers of that game.",
+    "left_case_id": "14_05_2025_21_50_23_OEq",
+    "right_case_id": "14_05_2025_21_50_23_MEE",
+    "combined_case_id": "14_05_2025_21_50_23_OEq_14_05_2025_21_50_23_MEE"
+  },
+  {
+    "response_id": "R_6mCNFOX8ur1e2cV",
+    "task_question": "Give me a list of four highly rated hotels in Los Angeles, California.",
+    "left_case_id": "14_05_2025_21_56_17_HBv",
+    "right_case_id": "14_05_2025_21_56_17_GHu",
+    "combined_case_id": "14_05_2025_21_56_17_HBv_14_05_2025_21_56_17_GHu"
+  },
+  {
+    "response_id": "R_7oXdF0GowimODV8",
+    "task_question": "Find the current best-selling fiction books on Amazon and note their prices and user ratings.",
+    "left_case_id": "14_05_2025_21_56_09_Kin",
+    "right_case_id": "14_05_2025_21_56_09_zIi",
+    "combined_case_id": "14_05_2025_21_56_09_Kin_14_05_2025_21_56_09_zIi"
+  },
+  {
+    "response_id": "R_6W3Ql9hqj5uc9MJ",
+    "task_question": "Find me a one-way ticket from ATL to ORD on June 24, 2025 and make sure it is nonstop. Compare different airline prices.",
+    "left_case_id": "14_05_2025_22_16_02_rnf",
+    "right_case_id": "14_05_2025_22_16_02_KKp",
+    "combined_case_id": "14_05_2025_22_16_02_rnf_14_05_2025_22_16_02_KKp"
+  },
+  {
+    "response_id": "R_8BX1EEOHK2R0rW9",
+    "task_question": "Can you give me a rundown of the lore from the video game series Halo, from Halo CE to Halo 3",
+    "left_case_id": "14_05_2025_22_34_20_ZOi",
+    "right_case_id": "14_05_2025_22_34_20_wQY",
+    "combined_case_id": "14_05_2025_22_34_20_ZOi_14_05_2025_22_34_20_wQY"
+  },
+  {
+    "response_id": "R_6eFVHKHDK1OM4Jw",
+    "task_question": "what are today's top 20 headlines from CBC",
+    "left_case_id": "14_05_2025_23_44_09_sck",
+    "right_case_id": "14_05_2025_23_44_09_RFZ",
+    "combined_case_id": "14_05_2025_23_44_09_sck_14_05_2025_23_44_09_RFZ"
+  },
+  {
+    "response_id": "R_531E9gLCW0Q2cvj",
+    "task_question": "compare scholarships available in canada",
+    "left_case_id": "15_05_2025_02_15_52_BkR",
+    "right_case_id": "15_05_2025_02_15_52_wyN",
+    "combined_case_id": "15_05_2025_02_15_52_BkR_15_05_2025_02_15_52_wyN"
+  },
+  {
+    "response_id": "R_3CUp1idQurStXNL",
+    "task_question": "What are the first five upcoming events listed on the home page of the Meridian Library District website?",
+    "left_case_id": "15_05_2025_02_07_18_dqY",
+    "right_case_id": "15_05_2025_02_07_18_ySh",
+    "combined_case_id": "15_05_2025_02_07_18_dqY_15_05_2025_02_07_18_ySh"
+  },
+  {
+    "response_id": "R_323Ijx58tsYvzHj",
+    "task_question": "Explore the National Park Service\u201a\u00c4\u00f4s virtual tour of Ellis Island and write a short paragraph (3-5 sentences) describing what immigrants might have experienced upon arrival in the early 20th century.",
+    "left_case_id": "15_05_2025_02_19_08_jWZ",
+    "right_case_id": "15_05_2025_02_19_08_WLM",
+    "combined_case_id": "15_05_2025_02_19_08_jWZ_15_05_2025_02_19_08_WLM"
+  },
+  {
+    "response_id": "R_4OvssAh49ZfIVGR",
+    "task_question": "List the 7 eye-care features for greater comfort and each of their attributes listed on the website honor.com for the Honor Magic 7 Pro. Then search google and gsmarena to find any other smartphones that have at least 6 eye-care features or more only.",
+    "left_case_id": "15_05_2025_02_37_40_QEa",
+    "right_case_id": "15_05_2025_02_37_40_CQB",
+    "combined_case_id": "15_05_2025_02_37_40_QEa_15_05_2025_02_37_40_CQB"
+  },
+  {
+    "response_id": "R_6jjqmyxRJ91sfZE",
+    "task_question": "what are the top 10 high scores on typeracer currently",
+    "left_case_id": "15_05_2025_02_52_49_SZo",
+    "right_case_id": "15_05_2025_02_52_49_Lnw",
+    "combined_case_id": "15_05_2025_02_52_49_SZo_15_05_2025_02_52_49_Lnw"
+  },
+  {
+    "response_id": "R_34ecPss7ZKELgMP",
+    "task_question": "1. Go to the IMDb website and list the top 5 highest-rated movies released in the past year.\n2. Visit Airbnb and find the average nightly price for a private room in Paris, France, for a weekend two months from now.",
+    "left_case_id": "15_05_2025_02_48_47_Okl",
+    "right_case_id": "15_05_2025_02_48_47_tOt",
+    "combined_case_id": "15_05_2025_02_48_47_Okl_15_05_2025_02_48_47_tOt"
+  },
+  {
+    "response_id": "R_5BfE8QpW0UonR2Y",
+    "task_question": "Can you tell me the top 5 rated anime tv series in the last 10 years on imdb.com ",
+    "left_case_id": "15_05_2025_02_45_49_bkN",
+    "right_case_id": "15_05_2025_02_45_49_xXw",
+    "combined_case_id": "15_05_2025_02_45_49_bkN_15_05_2025_02_45_49_xXw"
+  },
+  {
+    "response_id": "R_5a15Gp7L4TiXWMx",
+    "task_question": "Tell me the names of the top 5 nba players from nba.com",
+    "left_case_id": "15_05_2025_03_14_33_Pbg",
+    "right_case_id": "15_05_2025_03_14_33_CWU",
+    "combined_case_id": "15_05_2025_03_14_33_Pbg_15_05_2025_03_14_33_CWU"
+  },
+  {
+    "response_id": "R_6BcJdU1gIO4AfyV",
+    "task_question": "Give me the top 5 recipes for chicken noodle soup from 5 different websites.",
+    "left_case_id": "15_05_2025_03_25_18_RUV",
+    "right_case_id": "15_05_2025_03_25_18_lkG",
+    "combined_case_id": "15_05_2025_03_25_18_RUV_15_05_2025_03_25_18_lkG"
+  }
+]
