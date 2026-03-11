@@ -1022,7 +1022,6 @@ def build_single_model_ui(models, add_promotion_links=False):
             elem_id="chatbot",
             label="Scroll down and start chatting",
             height=650,
-            show_copy_button=True,
             latex_delimiters=[
                 {"left": "$$", "right": "$$", "display": True},
                 {"left": r"\(", "right": r"\)", "display": False},

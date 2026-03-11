@@ -6,11 +6,19 @@ It supports chatting with a single model or chatting with two models side-by-sid
 import argparse
 import gradio as gr
 
+from fastchat.serve.gif_arena import (
+    DEFAULT_DB_DSN,
+    DEFAULT_GIF_DIR,
+    DEFAULT_SURVEY_PATH,
+    GifArenaError,
+    GifArenaStore,
+)
 from fastchat.serve.gradio_block_arena_anony import (
     build_side_by_side_ui_anony,
     load_demo_side_by_side_anony,
     set_global_vars_anony,
 )
+from fastchat.serve.gradio_block_gif_arena import build_gif_arena_ui
 from fastchat.serve.gradio_block_arena_named import (
     build_side_by_side_ui_named,
     load_demo_side_by_side_named,
@@ -118,12 +126,14 @@ def load_demo(context: Context, request: gr.Request):
         inner_selected = 0
     elif "compare" in request.query_params:
         inner_selected = 1
-    elif "direct" in request.query_params or "model" in request.query_params:
+    elif "gif-arena" in request.query_params:
         inner_selected = 2
-    elif "leaderboard" in request.query_params:
+    elif "direct" in request.query_params or "model" in request.query_params:
         inner_selected = 3
-    elif "about" in request.query_params:
+    elif "leaderboard" in request.query_params:
         inner_selected = 4
+    elif "about" in request.query_params:
+        inner_selected = 5
 
     if args.model_list_mode == "reload":
         context.text_models, context.all_text_models = get_model_list(
@@ -167,7 +177,12 @@ def load_demo(context: Context, request: gr.Request):
 
 
 def build_demo(
-    context: Context, elo_results_file: str, leaderboard_table_file, arena_hard_table
+    context: Context,
+    elo_results_file: str,
+    leaderboard_table_file,
+    arena_hard_table,
+    gif_arena_store: GifArenaStore | None,
+    gif_arena_error: str | None,
 ):
     if args.show_terms_of_use:
         load_js = get_window_url_params_with_tos_js
@@ -210,7 +225,13 @@ window.__gradio_mode__ = "app";
                         context, random_questions=args.random_questions
                     )
 
-                with gr.Tab("💬 Direct Chat", id=2) as direct_tab:
+                with gr.Tab("🎞️ GIF Arena", id=2):
+                    build_gif_arena_ui(
+                        gif_arena_store,
+                        setup_error=gif_arena_error,
+                    )
+
+                with gr.Tab("💬 Direct Chat", id=3) as direct_tab:
                     direct_tab.select(None, None, None, js=alert_js)
                     single_model_list = build_single_vision_language_model_ui(
                         context,
@@ -231,7 +252,13 @@ window.__gradio_mode__ = "app";
                         context.text_models
                     )
 
-                with gr.Tab("💬 Direct Chat", id=2) as direct_tab:
+                with gr.Tab("🎞️ GIF Arena", id=2):
+                    build_gif_arena_ui(
+                        gif_arena_store,
+                        setup_error=gif_arena_error,
+                    )
+
+                with gr.Tab("💬 Direct Chat", id=3) as direct_tab:
                     direct_tab.select(None, None, None, js=alert_js)
                     single_model_list = build_single_model_ui(
                         context.text_models, add_promotion_links=True
@@ -245,7 +272,7 @@ window.__gradio_mode__ = "app";
             )
 
             if elo_results_file:
-                with gr.Tab("🏆 Leaderboard", id=3):
+                with gr.Tab("🏆 Leaderboard", id=4):
                     build_leaderboard_tab(
                         elo_results_file,
                         leaderboard_table_file,
@@ -253,10 +280,10 @@ window.__gradio_mode__ = "app";
                         show_plot=True,
                     )
             if args.show_visualizer:
-                with gr.Tab("🔍 Arena Visualizer", id=5):
+                with gr.Tab("🔍 Arena Visualizer", id=6):
                     build_visualizer()
 
-            with gr.Tab("ℹ️ About Us", id=4):
+            with gr.Tab("ℹ️ About Us", id=5):
                 build_about()
 
         context_state = gr.State(context)
@@ -368,6 +395,24 @@ if __name__ == "__main__":
         default=False,
         help="Show the Data Visualizer tab",
     )
+    parser.add_argument(
+        "--gif-arena-survey-file",
+        type=str,
+        default=str(DEFAULT_SURVEY_PATH),
+        help="Path to the archived GIF survey interactions file.",
+    )
+    parser.add_argument(
+        "--gif-arena-gif-dir",
+        type=str,
+        default=str(DEFAULT_GIF_DIR),
+        help="Directory containing archived GIF files for the GIF arena.",
+    )
+    parser.add_argument(
+        "--gif-arena-db-dsn",
+        type=str,
+        default=DEFAULT_DB_DSN,
+        help="Postgres DSN used to persist GIF arena votes.",
+    )
     args = parser.parse_args()
     logger.info(f"args: {args}")
 
@@ -416,12 +461,26 @@ if __name__ == "__main__":
                 import os
                 os.environ["OPENAI_API_KEY"] = register_api_endpoints[endpoint]["api_key"]
         
+    gif_arena_store = None
+    gif_arena_error = None
+    try:
+        gif_arena_store = GifArenaStore(
+            survey_path=args.gif_arena_survey_file,
+            gif_dir=args.gif_arena_gif_dir,
+            dsn=args.gif_arena_db_dsn,
+        )
+    except GifArenaError as exc:
+        gif_arena_error = str(exc)
+        logger.exception("Failed to initialize the GIF arena")
+
     # Launch the demo
     demo = build_demo(
         context,
         args.elo_results_file,
         args.leaderboard_table_file,
         args.arena_hard_table,
+        gif_arena_store,
+        gif_arena_error,
     )
     demo.queue(
         default_concurrency_limit=args.concurrency_count,
@@ -434,5 +493,4 @@ if __name__ == "__main__":
         max_threads=200,
         auth=auth,
         root_path=args.gradio_root_path,
-        show_api=False,
     )
